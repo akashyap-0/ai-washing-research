@@ -155,9 +155,9 @@ def _decode_html(raw_bytes):
     """Decode filing HTML ourselves instead of handing raw bytes to
     BeautifulSoup. Its auto-detection has been observed to mis-guess plain
     'ascii' on real UTF-8 SEC filings, which silently mangles curly quotes
-    and dashes. Try UTF-8 first (virtually all current filings), falling
-    back to Windows-1252 -- a full single-byte codec that never raises --
-    for older filings that really are legacy-encoded.
+    and dashes. Try UTF-8 first, since that covers virtually all current
+    filings, and fall back to Windows-1252 for older filings that really
+    are legacy-encoded (it's a full single-byte codec, so it never raises).
     """
     try:
         return raw_bytes.decode("utf-8")
@@ -178,40 +178,93 @@ def fetch_filing_text(url):
     return text.strip()
 
 
-# Item-heading heuristics, in filing order. Used both to locate the sections we
-# want and to find the next boundary that ends them.
+# Item-heading heuristics, in filing order. Used both to locate the sections
+# we want and to find the next boundary that ends them.
+#
+# Real filings turn out to be messier than a simple "Item 7. Management's
+# Discussion" pattern can handle. The separator style varies: some filers
+# use "Item 7." with a period, others use "ITEM 7 - MANAGEMENT'S DISCUSSION"
+# in all caps with a dash. And some filers' HTML wraps individual characters
+# in their own inline tag, like a page-break or superscript span, which
+# get_text() then renders as a stray newline in the middle of a word. One
+# real Oracle heading came through as literally "R\nisk Factors".
+#
+# `_SEP` tolerates junk punctuation and whitespace between tokens.
+# `_loose_word` and `_loose_phrase` tolerate whitespace injected between
+# individual letters.
+_SEP = r"[^A-Za-z0-9]{0,8}"
+
+
+def _loose_word(word):
+    return r"\s*".join(re.escape(c) for c in word)
+
+
+def _loose_phrase(phrase):
+    return r"\s+".join(_loose_word(w) for w in phrase.split(" "))
+
+
 _ITEM_PATTERNS = {
-    "Item 1 Business": r"item\s*1\.?\s+business",
-    "Item 1A Risk Factors": r"item\s*1a\.?\s+risk\s+factors",
-    "Item 7 MD&A": r"item\s*7\.?\s+management.{0,3}s\s+discussion",
-    "Item 7A": r"item\s*7a\.?\s+quantitative",
-    "Item 8 Financial Statements": r"item\s*8\.?\s+financial\s+statements",
+    "Item 1 Business": r"item\s*1\b" + _SEP + _loose_word("business"),
+    "Item 1A Risk Factors": r"item\s*1a\b" + _SEP + _loose_phrase("risk factors"),
+    "Item 7 MD&A": (r"item\s*7\b" + _SEP + _loose_word("management") + _SEP
+                     + "s" + _SEP + _loose_word("discussion")),
+    "Item 7A": r"item\s*7a\b" + _SEP + _loose_word("quantitative"),
+    "Item 8 Financial Statements": r"item\s*8\b" + _SEP + _loose_phrase("financial statements"),
 }
 
 
-def extract_sections(text, sections=("Item 1A Risk Factors", "Item 7 MD&A")):
-    """Slice requested 10-K item sections out of plain text.
+def _is_heading_anchored(text, pos):
+    """True if `pos` opens its own line (ignoring any spaces or nbsp right
+    before it) instead of sitting in the middle of a sentence. Real section
+    headings and Table-of-Contents entries are both anchored this way,
+    while inline cross-references like "...see Item 7, Management's
+    Discussion..." aren't, since they're embedded in running prose.
+    Filtering down to line-anchored matches gets rid of those cross-
+    references before we even try to tell a TOC entry apart from the real
+    heading (see `extract_sections` below)."""
+    prefix = text[:pos].rstrip(" \t\xa0")
+    return prefix == "" or prefix.endswith("\n")
 
-    Returns {section_label: section_text}. Uses the *last* occurrence of each
-    heading to skip the table-of-contents mention, then reads to the next
-    heading. Heuristic -- verify on real filings.
+
+def extract_sections(text, sections=("Item 1A Risk Factors", "Item 7 MD&A")):
+    """Slice the requested 10-K item sections out of plain text.
+
+    Returns {section_label: section_text}. A heading can legitimately show
+    up several times in one filing: once in the Table of Contents, and once
+    (or more, as a repeated running header) in the real body. Cross-
+    references to other items, like "see Item 7...", can also match the
+    pattern. We first drop any match that isn't line-anchored (see
+    `_is_heading_anchored`) to get rid of those inline cross-references.
+    Among what's left, we pick whichever occurrence is followed by the
+    longest run of text before the next heading-like match shows up: a real
+    section runs for thousands of characters before the next item starts,
+    while a Table-of-Contents entry is followed almost immediately, within a
+    couple hundred characters, by the next item's TOC line. This is still a
+    heuristic, so it's worth spot-checking against real filings.
     """
     lowered = text.lower()
     marks = []
     for label, pat in _ITEM_PATTERNS.items():
         for m in re.finditer(pat, lowered):
-            marks.append((m.start(), label))
+            if _is_heading_anchored(text, m.start()):
+                marks.append((m.start(), label))
     marks.sort()
+    all_positions = [pos for pos, _ in marks]
+
+    def next_mark_after(pos):
+        for p in all_positions:
+            if p > pos:
+                return p
+        return len(text)
 
     out = {}
     for want in sections:
-        positions = [pos for pos, lab in marks if lab == want]
-        if not positions:
+        candidates = [pos for pos, lab in marks if lab == want]
+        if not candidates:
             continue
-        start = positions[-1]
-        after = [pos for pos, _ in marks if pos > start]
-        end = min(after) if after else len(text)
-        out[want] = text[start:end].strip()
+        best_start = max(candidates, key=lambda pos: next_mark_after(pos) - pos)
+        end = next_mark_after(best_start)
+        out[want] = text[best_start:end].strip()
     return out
 
 

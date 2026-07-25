@@ -60,7 +60,7 @@ def from_challenger(report, text, sentence=None):
 
 
 def from_serper(company, hit):
-    """An earnings-call search hit -- URL + short snippet only (see
+    """An earnings-call search hit: URL plus a short snippet only (see
     sources/serper_search.py for the copyright boundary)."""
     return _base(
         company=company, source_type="earnings_call_snippet",

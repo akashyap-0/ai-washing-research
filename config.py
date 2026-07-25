@@ -21,7 +21,7 @@ SERPER_API_KEY = os.environ.get("SERPER_API_KEY", "")
 SEC_USER_AGENT = os.environ.get("SEC_USER_AGENT", "")
 # Local staging directory where grouped CSV/JSON files are written before
 # being uploaded to Drive. Kept local (not a Drive mount) so this also works
-# outside Colab -- see gdrive.py for the upload step.
+# outside Colab. See gdrive.py for the upload step.
 EXPORT_DIR = os.environ.get("EXPORT_DIR", "./export")
 
 # --- Google Drive (OAuth) -----------------------------------------------------
@@ -67,7 +67,7 @@ def validate():
             f"GDRIVE_CREDENTIALS_PATH ('{GDRIVE_CREDENTIALS_PATH}') does not "
             "exist. Create an OAuth client (Desktop app) in Google Cloud "
             "Console with the Drive API enabled, download its JSON, and save "
-            "it at that path -- otherwise Drive upload will fail."
+            "it at that path, otherwise Drive upload will fail."
         )
     if not SERPER_API_KEY:
         warnings.append(

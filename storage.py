@@ -4,7 +4,7 @@ No external database. Each source_type ("10-K", "10-Q", "8-K",
 challenger_report, earnings_call_snippet) is kept in its own pair of
 CSV/JSON files under config.EXPORT_DIR. Dedup works by re-reading whatever
 group files already exist at the start of a run and skipping any doc_id
-already present -- so re-running is safe without a separate index/service.
+already present, so re-running is safe without a separate index/service.
 
 Upload the resulting EXPORT_DIR to Drive with gdrive.upload_export_dir().
 """
@@ -23,10 +23,10 @@ _EXPORT_FIELDS = ["doc_id", "company", "ticker", "source_type", "filing_date",
 def make_doc_id(document):
     """Deterministic id so re-pulling the same source doesn't duplicate rows.
 
-    Dedup keys on source_type + company + url + section -- a single filing
-    URL can legitimately yield multiple distinct documents (e.g. Item 1A and
-    Item 7 of one 10-K share a URL) and those shouldn't collide/overwrite
-    each other.
+    Dedup keys on source_type + company + url + section, since a single
+    filing URL can legitimately yield multiple distinct documents (e.g.
+    Item 1A and Item 7 of one 10-K share a URL) and those shouldn't
+    collide or overwrite each other.
     """
     basis = "|".join([
         str(document.get("source_type", "")),

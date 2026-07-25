@@ -1,7 +1,7 @@
 """Turn the raw filing/exhibit text in export/ai_washing_*.csv into a flat,
 sentence-level CSV ready for hand-labeling.
 
-Each source CSV (grouped by source_type -- see storage.py) has one row per
+Each source CSV (grouped by source_type, see storage.py) has one row per
 document with a `text` field holding the whole risk-factors section, press
 release, etc. This script splits that text into individual sentences with
 nltk's Punkt tokenizer (not naive period-splitting, since financial text is
@@ -16,7 +16,7 @@ labels you've already filled in) are kept exactly as-is. Only sentences not
 already in that file get appended underneath, with sentence_id continuing on
 from the existing max. Nothing already there is ever rewritten or dropped.
 
-The earnings_call_snippet file is skipped -- it only holds short Google
+The earnings_call_snippet file is skipped since it only holds short Google
 search snippets, not real source text.
 
 Run:
@@ -37,8 +37,8 @@ import config
 def _raise_csv_field_limit():
     """csv's default per-field size cap (131072 bytes) is too small for a
     whole 10-K risk-factors section or 8-K exhibit. Raise it as high as the
-    platform's C long allows -- sys.maxsize can overflow that on some
-    platforms (notably Windows), so back off by 10x until it's accepted.
+    platform's C long allows. sys.maxsize can overflow that on some
+    platforms, notably Windows, so back off by 10x until it's accepted.
     """
     limit = sys.maxsize
     while True:
@@ -129,7 +129,7 @@ def extract_sentences(rows, seen=None):
     """Return new, qualifying, deduplicated sentences from `rows`.
 
     `seen` is a set of sentence strings to treat as already-captured (e.g.
-    ones already sitting in labeling_dataset.csv from a prior run) -- they're
+    ones already sitting in labeling_dataset.csv from a prior run). They're
     skipped here so the caller only gets genuinely new sentences back.
     """
     seen = set() if seen is None else set(seen)

@@ -6,7 +6,7 @@ earnings-call transcript URLs via Serper, normalize everything to the schema,
 dedup against previously exported files, write each source_type to its own
 CSV/JSON, then upload the export dir to Google Drive.
 
-Examples (env vars must be set first -- see README):
+Examples (env vars must be set first, see README):
     python main.py --companies IBM,DELL,SAP
     python main.py --companies IBM --forms 10-K,10-Q,8-K --challenger
     python main.py --challenger --challenger-pages 3 --companies ""

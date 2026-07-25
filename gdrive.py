@@ -5,7 +5,7 @@ One-time setup:
      Drive API, and create an OAuth client ID of type "Desktop app".
   2. Download its JSON and save it at config.GDRIVE_CREDENTIALS_PATH
      (default: ./credentials.json).
-  3. The first run opens a browser -- sign in as advikkashyap1@gmail.com or
+  3. The first run opens a browser. Sign in as advikkashyap1@gmail.com or
      ecfarmer12@gmail.com and grant access. The refresh token is cached at
      config.GDRIVE_TOKEN_PATH so later runs don't need the browser again.
 

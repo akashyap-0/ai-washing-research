@@ -29,9 +29,9 @@ def _decode_html(raw_bytes):
     """Decode page HTML ourselves instead of handing raw bytes to
     BeautifulSoup. Its auto-detection has been observed to mis-guess plain
     'ascii' on real UTF-8 pages, which silently mangles curly quotes and
-    dashes. Try UTF-8 first, falling back to Windows-1252 -- a full
-    single-byte codec that never raises -- for pages that really are
-    legacy-encoded.
+    dashes. Try UTF-8 first, falling back to Windows-1252 for pages that
+    really are legacy-encoded (it's a full single-byte codec, so it never
+    raises).
     """
     try:
         return raw_bytes.decode("utf-8")

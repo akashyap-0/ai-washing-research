@@ -1,61 +1,64 @@
-"""Measure the sentiment gap between each company's 8-K press release and the
-10-K covering the same fiscal period, as a bias-free stand-in for hand-labeling
+"""Measures how far apart a company's 8-K press release and its matching
+10-K sound in tone, as a less subjective stand-in for hand-labeling
 AI-washing language.
 
-Why this approach (per advisor feedback): hand-scoring sentences for
-"AI-washing" bakes in the scorer's own judgment about which words count as
-hype, which a reviewer can challenge. Comparing a company's tone in two
-SEC filings about the *same period* sidesteps that: the 8-K press release is
-written to move the stock (promotional), while the 10-K is drafted by/with
-counsel under liability exposure (legally cautious, hedged). A large gap
-between how positive/confident the same company sounds across the two filings
-is evidence of promotional framing without requiring us to personally judge
-any individual sentence.
+Why this approach: my advisor's feedback was that hand-scoring sentences
+for "AI-washing" bakes in my own judgment about which words count as hype,
+and a reviewer could easily push back on that. Comparing a company's tone
+across two SEC filings about the same period sidesteps this problem. The
+8-K press release is written to move the stock, so it reads as promotional.
+The 10-K is drafted with counsel under liability exposure, so it reads
+legally cautious and hedged. A big gap between how positive or confident
+the same company sounds in each filing is evidence of promotional framing,
+and it doesn't require me to personally judge any individual sentence.
 
 Pipeline:
-  1. Load export/ai_washing_10-K.csv and export/ai_washing_8-K.csv (written by
-     main.py / storage.py). Each row is one *section* of a filing (10-Ks are
-     split into "Item 1A Risk Factors" / "Item 7 MD&A"; 8-Ks are split into
-     one row per EX-99.* exhibit). We first collapse those back into one
-     record per actual filing (grouped by company + filing_date), so a 10-K
-     with two sections and an 8-K with two exhibits are each treated as a
-     single document.
-  2. Fiscal-year matching (see `build_fiscal_windows` below for the exact
-     rule and the assumption it relies on).
+  1. Load export/ai_washing_10-K.csv and export/ai_washing_8-K.csv, written
+     by main.py and storage.py. Each row is one section of a filing (10-Ks
+     are split into "Item 1A Risk Factors" and "Item 7 MD&A"; 8-Ks are split
+     into one row per EX-99 exhibit). The first step collapses these back
+     into one record per actual filing, grouped by company and filing_date,
+     so a 10-K with two sections and an 8-K with two exhibits are each
+     treated as a single document.
+  2. Match each 8-K to the 10-K covering the same fiscal year (see
+     `build_fiscal_windows` below for the exact rule and the assumption
+     behind it).
   3. Run FinBERT (ProsusAI/finbert) on each document's full text, chunked to
      fit the model's 512-token limit, and average the resulting
      positive/negative/neutral probabilities across chunks.
-  4. Reduce each document's distribution to a single net-tone scalar
-     (P(positive) - P(negative); see `net_tone_score` for why) and take
-     8-K score minus 10-K score as the distance.
+  4. Reduce each document's distribution to a single net-tone scalar,
+     P(positive) minus P(negative) (see `net_tone_score` for why), and take
+     the 8-K score minus the 10-K score as the distance.
   5. Write export/sentiment_distance_results.csv and print a summary.
 
 Fiscal-year-matching assumption (read this before trusting the output):
-Our data only has `filing_date` for each document -- not the fiscal period a
-10-K actually covers. But 10-Ks are filed annually, shortly after fiscal
-year-end (e.g. Oracle's fiscal year ends ~May 31 and its 10-K is filed each
-~June 20; IBM's calendar fiscal year ends Dec 31 and its 10-K is filed each
-~February). That means the stretch of time between one 10-K's filing_date and
-the *next* 10-K's filing_date is a good proxy for "the fiscal year that next
-10-K reports on" -- it starts right after the prior year's annual report was
-filed and ends when this year's annual report is filed (capturing that year's
-Q1-Q3 earnings releases plus the Q4/full-year release, which is often filed
-just weeks before the 10-K itself). So: for company C, sort its 10-Ks by
-filing_date; 10-K_i's fiscal-year window is (10-K_{i-1}.filing_date,
-10-K_i.filing_date]. Every 8-K whose filing_date falls in that window is
-matched to 10-K_i. For a company's *earliest* 10-K in our dataset there is no
-prior 10-K to anchor the window's start, so we fall back to
-(that 10-K's filing_date - 400 days) as a stand-in for "about one fiscal year
-back" -- generous enough to catch an early Q4/full-year earnings 8-K filed
-well before the 10-K, without reaching back far enough to sweep in an
-unrelated earlier fiscal year. 8-Ks filed after a company's most recent 10-K
-in our dataset (i.e. during a fiscal year that hasn't been closed out by a
-10-K yet) have no valid match and are skipped and logged, not guessed at.
+The data only has a filing_date for each document, not the actual fiscal
+period a 10-K covers. But 10-Ks are filed annually, shortly after fiscal
+year end. Oracle's fiscal year ends around May 31 and its 10-K is filed
+each year around June 20; IBM's fiscal year ends Dec 31 and its 10-K is
+filed each year around February. That means the stretch of time between
+one 10-K's filing_date and the next one is a good proxy for the fiscal
+year that next 10-K reports on. It starts right after the prior year's
+annual report was filed and ends when this year's annual report is filed,
+which captures that year's Q1 through Q3 earnings releases plus the
+Q4/full-year release (often filed just weeks before the 10-K itself). So
+for company C, sort its 10-Ks by filing_date: 10-K_i's fiscal-year window
+is (10-K_{i-1}.filing_date, 10-K_i.filing_date]. Every 8-K whose filing_date
+falls in that window gets matched to 10-K_i. For a company's earliest 10-K
+in the dataset there's no prior 10-K to anchor the start of the window, so
+it falls back to (that 10-K's filing_date minus 400 days) as a stand-in for
+"about one fiscal year back." That's generous enough to catch an early
+Q4/full-year earnings 8-K filed well before the 10-K, without reaching back
+far enough to sweep in an unrelated earlier fiscal year. 8-Ks filed after a
+company's most recent 10-K in the dataset, meaning that fiscal year hasn't
+been closed out by a 10-K yet, have no valid match, so they get skipped and
+logged rather than guessed at.
 
 Run:
-    python sentiment_distance.py            # full run
-    python sentiment_distance.py --dry-run   # pairing only, no FinBERT (fast;
-                                              # use this to sanity-check matches)
+    python sentiment_distance.py             full run
+    python sentiment_distance.py --dry-run   pairing only, no FinBERT (fast;
+                                              use this to sanity-check the
+                                              matches first)
 """
 import argparse
 import csv
@@ -67,9 +70,8 @@ from datetime import datetime, timedelta
 
 import config
 
-# --- CSV field size: 10-K/8-K `text` fields hold whole filing sections and
-# blow past csv's default 131072-byte-per-field cap. Same fix as
-# extract_sentences.py. -----------------------------------------------------
+# 10-K/8-K text fields hold whole filing sections, which blows past csv's
+# default 131072-byte-per-field cap. Same fix as extract_sentences.py.
 
 
 def _raise_csv_field_limit():
@@ -93,8 +95,9 @@ FINBERT_MODEL = "ProsusAI/finbert"
 MAX_TOKENS = 512  # FinBERT's (BERT-base) hard sequence limit
 CHUNK_TOKENS = MAX_TOKENS - 2  # leave room for [CLS]/[SEP] on every chunk
 
-# Fallback window (see module docstring) for a company's earliest 10-K, which
-# has no prior 10-K in our dataset to anchor its fiscal-year window's start.
+# Fallback window (see the module docstring) for a company's earliest 10-K,
+# since there's no prior 10-K in the dataset to anchor where its fiscal-year
+# window starts.
 EARLIEST_WINDOW_FALLBACK_DAYS = 400
 
 OUTPUT_FIELDS = [
@@ -104,11 +107,11 @@ OUTPUT_FIELDS = [
 ]
 
 
-# --- Step 1: load + collapse section/exhibit rows into one row per filing --
+# Step 1: load the CSVs and collapse section/exhibit rows into one row per filing
 
 def _load_csv(path):
     if not os.path.exists(path):
-        print(f"[error] {path} not found -- run main.py first.")
+        print(f"[error] {path} not found. Run main.py first.")
         return []
     with open(path, newline="", encoding="utf-8-sig") as f:
         return list(csv.DictReader(f))
@@ -119,15 +122,15 @@ def _parse_date(s):
 
 
 def group_filings(rows):
-    """Collapse per-section/per-exhibit rows into one record per actual
+    """Collapse the per-section/per-exhibit rows into one record per actual
     filing, keyed by (company, filing_date).
 
-    A 10-K's two item sections share one url (verified against the real
-    export/ data), so grouping just concatenates their text. An 8-K's
-    exhibits (e.g. ex99.1 press release + ex99.2 prepared remarks) live at
-    *different* urls, so we join urls/doc_ids with "; " to keep both
-    traceable while still producing the single distance-worthy document the
-    professor's method calls for.
+    A 10-K's two item sections share the same url (checked this against the
+    real export data), so grouping them just means concatenating the text.
+    An 8-K's exhibits, like the ex99.1 press release and ex99.2 prepared
+    remarks, live at different urls, so urls and doc_ids get joined with
+    "; " to keep both traceable while still producing the single document
+    the professor's method needs.
     """
     groups = defaultdict(list)
     for row in rows:
@@ -148,10 +151,10 @@ def group_filings(rows):
     return filings
 
 
-# --- Step 2: fiscal-year window matching ------------------------------------
+# Step 2: fiscal-year window matching
 
 def build_fiscal_windows(tenk_filings):
-    """For one company's sorted 10-Ks, return a list of
+    """For one company's 10-Ks, sorted by filing date, return a list of
     (window_start_exclusive, window_end_inclusive, tenk) tuples."""
     windows = []
     prev_filing_date = None
@@ -176,7 +179,7 @@ def match_8k_to_10k(eightk, windows):
             return tenk, None
     if date > windows[-1][1]:
         return None, ("filed after the company's most recent 10-K in this "
-                       "dataset -- that fiscal year hasn't been closed out "
+                       "dataset, so that fiscal year hasn't been closed out "
                        "by a 10-K yet")
     return None, ("filed before the earliest 10-K's estimated fiscal-year "
                   "window in this dataset")
@@ -209,14 +212,15 @@ def print_pairing_preview(pairs, skipped):
         print(f"\n  Skipped 8-Ks ({len(skipped)}):")
         for s in sorted(skipped, key=lambda s: (s["eightk"]["company"], s["eightk"]["filing_date"])):
             print(f"    {s['eightk']['company']:<40} 8-K {s['eightk']['filing_date']} "
-                  f"-- {s['reason']}")
+                  f": {s['reason']}")
 
 
-# --- Step 3+4: FinBERT sentiment + net-tone scalar --------------------------
+# Steps 3 and 4: run FinBERT and reduce its output to a net-tone scalar
 
 def load_finbert():
-    """Load FinBERT once, on GPU if available (nice-to-have speedup on this
-    dataset's size; CPU works fine too, just slower)."""
+    """Load FinBERT once. Uses the GPU if one's available, which speeds
+    things up a bit for a dataset this size, but CPU works fine too, just
+    slower."""
     import torch
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
@@ -237,17 +241,18 @@ def _chunk_token_ids(token_ids, chunk_size):
 
 def document_sentiment(text, tokenizer, model, device, label_index):
     """Run FinBERT over `text`, chunked to CHUNK_TOKENS, and return the
-    average (positive, negative, neutral) probability across chunks.
+    average positive/negative/neutral probability across chunks.
 
-    FinBERT's standard output is a 3-way softmax distribution over
-    positive/negative/neutral -- there's no single "official" scalar, so we
-    keep the full distribution here and reduce it to one number in
-    `net_tone_score` (see that function for the reduction we chose and why).
-    Chunks are averaged with equal weight rather than weighted by length:
-    with FinBERT's small (510-token) chunk size, unequal weighting would
-    mostly just up-weight whichever chunk happens to be the last, no-longer
-    full one -- equal weighting is simpler and standard practice for
-    document-level aggregation of sentence/paragraph-level classifiers.
+    FinBERT's output is a 3-way softmax over positive, negative, and
+    neutral. There's no single official scalar for it, so the full
+    distribution gets kept here and reduced to one number later in
+    `net_tone_score` (see that function for the reasoning). Chunks are
+    averaged with equal weight instead of being weighted by length.
+    FinBERT's chunk size is small, 510 tokens, so weighting by length would
+    mostly just give extra influence to whichever chunk happens to be the
+    last, shorter one. Equal weighting is simpler and is standard practice
+    for aggregating sentence- or paragraph-level classifiers up to the
+    document level.
     """
     import torch
 
@@ -281,27 +286,28 @@ def document_sentiment(text, tokenizer, model, device, label_index):
 
 
 def net_tone_score(dist):
-    """Reduce FinBERT's 3-class distribution to one scalar: P(positive) -
-    P(negative), ignoring the neutral mass.
+    """Reduce FinBERT's 3-class distribution to one scalar: P(positive)
+    minus P(negative), ignoring the neutral mass.
 
-    This is the standard reduction used for finance-text sentiment scalars
-    (the FinBERT-based analog of a Loughran-McDonald net-tone score): it
-    ranges from -1 (entirely negative) to +1 (entirely positive), reads
-    intuitively, and -- crucially for a distance metric -- differences of
-    this scalar are directly interpretable as "how much more positive one
-    document is than another." A pure P(positive) scalar would instead
-    conflate "genuinely negative" and "hedged/neutral" text into the same
-    low score, which would blur exactly the 8-K-vs-10-K contrast (promotional
-    vs. legally cautious) this analysis is trying to isolate.
+    This is the standard reduction for finance-text sentiment scalars,
+    basically the FinBERT equivalent of a Loughran-McDonald net-tone score.
+    It ranges from -1 (entirely negative) to +1 (entirely positive), it
+    reads intuitively, and differences between two of these scalars are
+    directly interpretable as how much more positive one document is than
+    another, which matters since this is being used as a distance metric. A
+    plain P(positive) scalar wouldn't work as well here, since it would
+    lump genuinely negative text and hedged/neutral text into the same low
+    score, blurring exactly the contrast between promotional 8-Ks and
+    legally cautious 10-Ks that this analysis is trying to isolate.
     """
     return dist["positive"] - dist["negative"]
 
 
-# --- Step 5: compute distances, write output, summarize --------------------
+# Step 5: compute the distances, write the output, and summarize
 
 def compute_results(pairs, tokenizer, model, device, label_index):
     results = []
-    sentiment_cache = {}  # doc_id -> (dist, scalar); 10-Ks get reused across their matched 8-Ks
+    sentiment_cache = {}  # doc_id -> net tone score; a 10-K gets reused across all of its matched 8-Ks
 
     total = len(pairs)
     for i, pair in enumerate(pairs, start=1):
@@ -360,8 +366,8 @@ def print_summary(results, skipped):
     print("\n=== Top 5 highest-distance pairs per company ===")
     print("(distance = 8-K net tone minus 10-K net tone; large positive "
           "values mean the press release sounded far more upbeat than the "
-          "matched annual report -- the AI-washing signal per the advisor's "
-          "hypothesis)")
+          "matched annual report, which is the AI-washing signal per the "
+          "advisor's hypothesis)")
     by_company = defaultdict(list)
     for r in results:
         by_company[r["company"]].append(r)
