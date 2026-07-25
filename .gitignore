@@ -1,6 +1,7 @@
 credentials.json
-   token.json
-   .env
-   __pycache__/
-   *.pyc
-   export/
+token.json
+.env
+__pycache__/
+*.pyc
+.history/
+.claude/
