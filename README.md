@@ -1,11 +1,9 @@
 # AI-Washing Research Scraper
 
 A small, well-scoped data-collection pipeline for the "AI washing in corporate
-layoffs" research project. It pulls raw disclosure text from **public** sources,
+layoffs" research project. It pulls raw disclosure text from public sources,
 normalizes it to one schema, groups and deduplicates it into per-category
-CSV/JSON files, and uploads that human-readable dataset to Google Drive — the
-raw material you'll hand-label to train the disclosure classifier described in
-the methods extension.
+CSV/JSON files, and uploads that human-readable dataset to Google Drive.
 
 This is a research tool for a methods appendix, not a production system. Keep it
 simple and be able to explain every step.
@@ -19,7 +17,7 @@ simple and be able to explain every step.
 | Challenger, Gray & Christmas | Monthly job-cuts blog posts (AI-attribution stats) | The firm's own public blog |
 | Earnings-call transcripts | **URLs + short Google snippets only**, via Serper | See the copyright note below |
 
-## ⚠️ Copyright / Terms-of-Service boundary (read this)
+## Copyright / Terms-of-Service boundary (read this)
 
 Full earnings-call transcripts on **Motley Fool / Seeking Alpha** are paywalled
 and ToS-protected. This pipeline **does not** scrape their full text, and you
