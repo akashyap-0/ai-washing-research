@@ -91,12 +91,29 @@ MIN_AI_SENTENCES = 5
 # AI-specific terms (LLMs, neural nets, cognitive computing) that show up in
 # this dataset's tech-company filings but weren't needed for the broader
 # workforce-focused labeling task extract_sentences.py was built for.
+# spotcheck_excluded_sentences.py found real Item 1A/8-K sentences about AI
+# capabilities that this pattern was missing entirely because they use a
+# branded product name instead of a generic AI term: Salesforce's
+# "Agentforce" (e.g. "the markets and monetization strategies for certain
+# offerings, including Agentforce and Data Cloud, remain relatively new and
+# uncertain") and IBM's "watsonx" (e.g. "one billion dollars since we
+# launched watsonx in mid-2023") both appear repeatedly with no nearby "AI"/
+# "machine learning"/etc. in the same sentence. "Watson" (IBM's older,
+# pre-watsonx branding) is added on the same reasoning even though this
+# dataset's 2024-2025 sample didn't happen to catch a miss for it -- at the
+# cost of occasionally matching an unrelated "Watson" surname, which is an
+# acceptable false-positive rate for a keyword filter. Checked Oracle's and
+# Dell's filings the same way: every Oracle product name found (Autonomous
+# Database, Oracle AI Database, Clinical Digital Assistant, etc.) always
+# co-occurs with "AI"/"automat" in the same sentence already, and Dell's
+# "APEX" is a general as-a-service/consumption brand, not AI-specific -- so
+# neither needed a product-name addition here.
 AI_KEYWORD_PATTERN = re.compile(
     r"\b("
     r"AI|artificial intelligence|generative AI|genAI|"
     r"machine learning|deep learning|neural network\w*|"
     r"large language model\w*|LLM\w*|automat\w*|"
-    r"cognitive computing"
+    r"cognitive computing|Agentforce|watsonx|Watson"
     r")\b",
     re.IGNORECASE,
 )
