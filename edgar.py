@@ -289,6 +289,25 @@ def list_filing_documents(cik, accession):
     return docs
 
 
+# Most filers (IBM, Oracle, Dell, Salesforce, ...) name their earnings-release
+# exhibit with "ex99"/"ex-99" or tag it EX-99.* in the type field, which the
+# check below catches. A few don't: expanding to 6 more companies for the
+# firm-characteristics cross-section turned up NVIDIA, which files its
+# earnings press release and CFO commentary as e.g. "q4fy26pr.htm" /
+# "q4fy26cfocommentary.htm" with no EX-99 marker at all, and UnitedHealth,
+# which uses names like "earningsrelease2q26_7152.htm" or
+# "exhibit991pressrelease.htm" (the latter has "991" but not the literal
+# "ex99" substring). This second pattern is purely about recognizing these
+# filers' own naming conventions for the same kind of document (the earnings
+# press release / prepared remarks) already being pulled for every other
+# company -- it doesn't change what counts as AI-related or how sentiment is
+# scored.
+_EARNINGS_DOC_PATTERN = re.compile(
+    r"pressrelease|earningsrelease|cfocommentary|q\dfy\d{2}(pr|commentary)",
+    re.IGNORECASE,
+)
+
+
 def fetch_8k_exhibits(cik, accession):
     """Return EX-99.* exhibits (typically the earnings press release / prepared
     remarks) from an 8-K, each with extracted text."""
@@ -296,7 +315,8 @@ def fetch_8k_exhibits(cik, accession):
     for doc in list_filing_documents(cik, accession):
         t = (doc.get("type") or "").upper()
         name = (doc.get("name") or "").lower()
-        is_pr = t.startswith("EX-99") or "ex99" in name or "ex-99" in name
+        is_pr = (t.startswith("EX-99") or "ex99" in name or "ex-99" in name
+                 or _EARNINGS_DOC_PATTERN.search(name))
         if is_pr and name.endswith((".htm", ".html", ".txt")):
             try:
                 doc_text = fetch_filing_text(doc["url"])

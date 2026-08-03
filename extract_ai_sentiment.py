@@ -69,6 +69,18 @@ TENK_PATH = os.path.join(EXPORT_DIR, "ai_washing_10-K.csv")
 EIGHTK_PATH = os.path.join(EXPORT_DIR, "ai_washing_8-K.csv")
 OUTPUT_PATH = os.path.join(EXPORT_DIR, "ai_sentiment_distance_results.csv")
 
+# export/ai_washing_10-K.csv and ai_washing_8-K.csv turned out to carry a
+# Palantir Technologies slice (97 10-K rows, 370 8-K rows) that predates this
+# project's current 4-then-10-company scope entirely -- traced to a single
+# bulk commit ("fixing distance logic", 2026-07-27) that bundled in a much
+# larger exploratory pull (it also added a 10-Q export nothing here uses) and
+# was never trimmed back down. It was never part of the approved company
+# list and its provenance (same section-extraction/encoding fixes as
+# everything else here) isn't verified, so it's explicitly excluded rather
+# than silently included just because it happens to sit in the same file.
+APPROVED_TICKERS = {"IBM", "ORCL", "DELL", "CRM",
+                     "MSFT", "AMD", "NVDA", "VZ", "AXP", "UNH"}
+
 RISK_FACTORS_SECTION = "Item 1A Risk Factors"
 
 # Below this many characters, an Item 1A section is either a parsing artifact
@@ -364,6 +376,12 @@ def main(argv=None):
     eightk_rows = sd._load_csv(EIGHTK_PATH)
     if not tenk_rows or not eightk_rows:
         return
+
+    n_tenk_before, n_8k_before = len(tenk_rows), len(eightk_rows)
+    tenk_rows = [r for r in tenk_rows if r["ticker"] in APPROVED_TICKERS]
+    eightk_rows = [r for r in eightk_rows if r["ticker"] in APPROVED_TICKERS]
+    print(f"Filtered to approved companies: {n_tenk_before} -> {len(tenk_rows)} "
+          f"10-K rows, {n_8k_before} -> {len(eightk_rows)} 8-K rows.")
 
     tenk_filings, skipped_10k = group_tenk_risk_factors(tenk_rows)
     eightk_filings = sd.group_filings(eightk_rows)

@@ -34,8 +34,13 @@ import config
 
 RESULTS_PATH = os.path.join(config.EXPORT_DIR, "ai_sentiment_distance_results.csv")
 
-TICKER_TO_NAME = {"IBM": "IBM", "ORCL": "Oracle", "DELL": "Dell", "CRM": "Salesforce"}
-COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce"]
+TICKER_TO_NAME = {
+    "IBM": "IBM", "ORCL": "Oracle", "DELL": "Dell", "CRM": "Salesforce",
+    "MSFT": "Microsoft", "AMD": "AMD", "NVDA": "NVIDIA",
+    "VZ": "Verizon", "AXP": "Amex", "UNH": "UnitedHealth",
+}
+COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce",
+                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth"]
 
 ALPHA = 0.05
 SMALL_N_CUTOFF = 15  # below this, flag the t-test's normality assumption as questionable

@@ -28,8 +28,15 @@ TICKER_TO_NAME = {
     "ORCL": "Oracle",
     "DELL": "Dell",
     "CRM": "Salesforce",
+    "MSFT": "Microsoft",
+    "AMD": "AMD",
+    "NVDA": "NVIDIA",
+    "VZ": "Verizon",
+    "AXP": "Amex",
+    "UNH": "UnitedHealth",
 }
-COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce"]
+COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce",
+                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth"]
 
 
 def load_rows():

@@ -52,8 +52,13 @@ import spotcheck_excluded_sentences as spot
 
 OUTPUT_PATH = os.path.join(config.EXPORT_DIR, "ai_vs_other_risk_factors_results.csv")
 
-TICKER_SHORT = {"IBM": "IBM", "ORCL": "Oracle", "DELL": "Dell", "CRM": "Salesforce"}
-COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce"]
+TICKER_SHORT = {
+    "IBM": "IBM", "ORCL": "Oracle", "DELL": "Dell", "CRM": "Salesforce",
+    "MSFT": "Microsoft", "AMD": "AMD", "NVDA": "NVIDIA",
+    "VZ": "Verizon", "AXP": "Amex", "UNH": "UnitedHealth",
+}
+COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce",
+                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth"]
 
 OUTPUT_FIELDS = [
     "company", "ticker", "filing_date", "10k_doc_id",
@@ -164,6 +169,9 @@ def main():
     tenk_rows = ais.sd._load_csv(ais.TENK_PATH)
     if not tenk_rows:
         return
+    n_before = len(tenk_rows)
+    tenk_rows = [r for r in tenk_rows if r["ticker"] in ais.APPROVED_TICKERS]
+    print(f"Filtered to approved companies: {n_before} -> {len(tenk_rows)} 10-K rows.")
     filings, skipped = ais.group_tenk_risk_factors(tenk_rows)
     print(f"Loaded {len(filings)} 10-Ks with a usable Item 1A section "
           f"({len(skipped)} excluded).")
