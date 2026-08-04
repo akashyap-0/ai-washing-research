@@ -11,6 +11,16 @@ using the AI-core / AI-peripheral split decided *before* looking at results
 to their current growth narrative vs. companies chosen because it's a minor,
 secondary theme.
 
+export/ai_washing_*.csv also carries a Palantir Technologies slice left over
+from an unrelated earlier bulk commit (see extract_ai_sentiment.py's
+APPROVED_TICKERS comment). It's deliberately excluded here too: spot-
+checking its stored Item 1A text found the 2021 and 2022 sections had
+swallowed Item 1B/2/3 (280K+ characters of unrelated Properties/Legal
+Proceedings text) due to a section-boundary-detection failure specific to
+Palantir's filing structure, plus real encoding corruption in its Item 7
+text. Its numbers aren't trustworthy enough to include even though it would
+otherwise be a clean AI-core data point.
+
     AI-core:       Oracle, Salesforce, Microsoft, AMD, NVIDIA
     AI-peripheral: IBM, Dell, Verizon, Amex, UnitedHealth
 
