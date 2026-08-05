@@ -56,9 +56,51 @@ TICKER_SHORT = {
     "IBM": "IBM", "ORCL": "Oracle", "DELL": "Dell", "CRM": "Salesforce",
     "MSFT": "Microsoft", "AMD": "AMD", "NVDA": "NVIDIA",
     "VZ": "Verizon", "AXP": "Amex", "UNH": "UnitedHealth",
+    "GOOGL": "Alphabet", "AMZN": "Amazon", "AAPL": "Apple", "META": "Meta",
+    "TSLA": "Tesla", "AVGO": "Broadcom", "ACN": "Accenture", "WMT": "Walmart",
+    "JPM": "JPMorgan", "LLY": "EliLilly", "DE": "Deere", "SPGI": "S&PGlobal",
+    "INTU": "Intuit", "NOW": "ServiceNow", "UBER": "Uber",
 }
 COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce",
-                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth"]
+                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth",
+                 "Alphabet", "Amazon", "Apple", "Meta", "Tesla", "Broadcom",
+                 "Accenture", "Walmart", "JPMorgan", "EliLilly", "Deere",
+                 "S&PGlobal", "Intuit", "ServiceNow", "Uber"]
+
+# Filings whose stored Item 1A text is known-bad because of a filer-specific
+# section-boundary extraction failure, NOT because of anything about the
+# company's actual AI disclosure. Excluded here so a parsing artifact can't
+# be read as a substantive finding about the company. This is deliberately a
+# suppression list, not a fix: repairing edgar.extract_sections()'s heading
+# heuristics is explicitly out of scope for this task.
+#
+#   ACN  -- every Accenture 10-K anchors on a repeated running page header
+#           ("Item 1A. Risk Factors \n25\nclaim that we or our clients are
+#           infringing...") instead of the real section heading, yielding an
+#           11-20K-char fragment that starts mid-sentence. Real Item 1A
+#           sections in this dataset run 40-250K chars. All filings affected.
+#   DE   -- Deere's 2014-2018 10-Ks extract only the table-of-contents block
+#           (~380-415 chars: "ITEM 1A. RISK FACTORS 11 ITEM 1B. UNRESOLVED
+#           STAFF COMMENTS 16 ..."). These are already dropped by
+#           MIN_SECTION_CHARS, but they're enumerated here so they get
+#           reported as an extraction failure instead of silently vanishing.
+#           Deere's 2019+ filings parse correctly and are kept.
+KNOWN_EXTRACTION_BUG = {
+    "ACN": "ALL",
+    "DE": {"2014-12-19", "2015-12-18", "2016-12-19",
+           "2017-12-18", "2018-12-17"},
+}
+
+
+def extraction_bug_excluded(ticker, filing_date):
+    """True if this filing's Item 1A text is known-unreliable (see
+    KNOWN_EXTRACTION_BUG). `filing_date` is a date or ISO string."""
+    rule = KNOWN_EXTRACTION_BUG.get(ticker)
+    if rule is None:
+        return False
+    if rule == "ALL":
+        return True
+    return str(filing_date) in rule
 
 OUTPUT_FIELDS = [
     "company", "ticker", "filing_date", "10k_doc_id",
@@ -175,6 +217,30 @@ def main():
     filings, skipped = ais.group_tenk_risk_factors(tenk_rows)
     print(f"Loaded {len(filings)} 10-Ks with a usable Item 1A section "
           f"({len(skipped)} excluded).")
+
+    # Drop filings whose Item 1A text is known-bad from a parsing failure
+    # (see KNOWN_EXTRACTION_BUG). Reported separately from every other
+    # exclusion reason so a data-quality problem never reads as a finding
+    # about the company's AI disclosure.
+    bug_excluded = [f for f in filings
+                    if extraction_bug_excluded(f["ticker"], f["filing_date"])]
+    filings = [f for f in filings
+               if not extraction_bug_excluded(f["ticker"], f["filing_date"])]
+    # MIN_SECTION_CHARS already dropped some of the same filings upstream;
+    # surface those too so the count reconciles.
+    skipped_bug = [s for s in skipped
+                   if extraction_bug_excluded(s["ticker"], s["filing_date"])]
+    if bug_excluded or skipped_bug:
+        print(f"\nExcluded for KNOWN EXTRACTION BUG (parsing failure, not a "
+              f"company characteristic): {len(bug_excluded)} scored-eligible "
+              f"+ {len(skipped_bug)} already dropped upstream")
+        for f in sorted(bug_excluded, key=lambda f: (f["ticker"], f["filing_date"])):
+            print(f"    {TICKER_SHORT.get(f['ticker'], f['ticker']):<12} "
+                  f"{f['filing_date']}  ({len(f['text'])} chars) "
+                  f"-- section-boundary anchoring failure")
+        for s in sorted(skipped_bug, key=lambda s: (s["ticker"], s["filing_date"])):
+            print(f"    {TICKER_SHORT.get(s['ticker'], s['ticker']):<12} "
+                  f"{s['filing_date']}  -- {s['reason']}")
 
     print("\nLoading FinBERT (ProsusAI/finbert)...")
     tokenizer, model, device, label_index = ais.sd.load_finbert()

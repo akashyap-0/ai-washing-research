@@ -78,8 +78,21 @@ OUTPUT_PATH = os.path.join(EXPORT_DIR, "ai_sentiment_distance_results.csv")
 # list and its provenance (same section-extraction/encoding fixes as
 # everything else here) isn't verified, so it's explicitly excluded rather
 # than silently included just because it happens to sit in the same file.
-APPROVED_TICKERS = {"IBM", "ORCL", "DELL", "CRM",
-                     "MSFT", "AMD", "NVDA", "VZ", "AXP", "UNH"}
+#
+# The second block below is the 15-company expansion for Prof. Schloetzer's
+# AI Infrastructure vs. AI Power Adopters framing (see
+# firm_characteristics_test.py for the two grouping variables themselves).
+# TSMC, the 10th firm in his Infrastructure list, is absent because it files
+# 20-F as a foreign private issuer and this pipeline only handles 10-K
+# filers -- the same reason SAP was dropped earlier.
+APPROVED_TICKERS = {
+    # original 4, then the AI-core/AI-peripheral expansion
+    "IBM", "ORCL", "DELL", "CRM",
+    "MSFT", "AMD", "NVDA", "VZ", "AXP", "UNH",
+    # AI Infrastructure / AI Power Adopters expansion
+    "GOOGL", "AMZN", "AAPL", "META", "TSLA", "AVGO",
+    "ACN", "WMT", "JPM", "LLY", "DE", "SPGI", "INTU", "NOW", "UBER",
+}
 
 RISK_FACTORS_SECTION = "Item 1A Risk Factors"
 

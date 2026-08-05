@@ -34,9 +34,16 @@ TICKER_TO_NAME = {
     "VZ": "Verizon",
     "AXP": "Amex",
     "UNH": "UnitedHealth",
+    "GOOGL": "Alphabet", "AMZN": "Amazon", "AAPL": "Apple", "META": "Meta",
+    "TSLA": "Tesla", "AVGO": "Broadcom", "ACN": "Accenture", "WMT": "Walmart",
+    "JPM": "JPMorgan", "LLY": "EliLilly", "DE": "Deere", "SPGI": "S&PGlobal",
+    "INTU": "Intuit", "NOW": "ServiceNow", "UBER": "Uber",
 }
 COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce",
-                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth"]
+                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth",
+                 "Alphabet", "Amazon", "Apple", "Meta", "Tesla", "Broadcom",
+                 "Accenture", "Walmart", "JPMorgan", "EliLilly", "Deere",
+                 "S&PGlobal", "Intuit", "ServiceNow", "Uber"]
 
 
 def load_rows():

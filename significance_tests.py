@@ -38,9 +38,16 @@ TICKER_TO_NAME = {
     "IBM": "IBM", "ORCL": "Oracle", "DELL": "Dell", "CRM": "Salesforce",
     "MSFT": "Microsoft", "AMD": "AMD", "NVDA": "NVIDIA",
     "VZ": "Verizon", "AXP": "Amex", "UNH": "UnitedHealth",
+    "GOOGL": "Alphabet", "AMZN": "Amazon", "AAPL": "Apple", "META": "Meta",
+    "TSLA": "Tesla", "AVGO": "Broadcom", "ACN": "Accenture", "WMT": "Walmart",
+    "JPM": "JPMorgan", "LLY": "EliLilly", "DE": "Deere", "SPGI": "S&PGlobal",
+    "INTU": "Intuit", "NOW": "ServiceNow", "UBER": "Uber",
 }
 COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce",
-                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth"]
+                 "Microsoft", "AMD", "NVIDIA", "Verizon", "Amex", "UnitedHealth",
+                 "Alphabet", "Amazon", "Apple", "Meta", "Tesla", "Broadcom",
+                 "Accenture", "Walmart", "JPMorgan", "EliLilly", "Deere",
+                 "S&PGlobal", "Intuit", "ServiceNow", "Uber"]
 
 ALPHA = 0.05
 SMALL_N_CUTOFF = 15  # below this, flag the t-test's normality assumption as questionable
