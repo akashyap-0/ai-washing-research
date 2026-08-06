@@ -85,11 +85,21 @@ COMPANY_ORDER = ["IBM", "Oracle", "Dell", "Salesforce",
 #           MIN_SECTION_CHARS, but they're enumerated here so they get
 #           reported as an extraction failure instead of silently vanishing.
 #           Deere's 2019+ filings parse correctly and are kept.
-KNOWN_EXTRACTION_BUG = {
-    "ACN": "ALL",
-    "DE": {"2014-12-19", "2015-12-18", "2016-12-19",
-           "2017-12-18", "2018-12-17"},
-}
+# NOW EMPTY: the underlying extract_sections() defect was fixed in edgar.py
+# (four separate root causes -- running page headers being picked over the real
+# heading, a too-tight separator tolerance between the item number and title,
+# line-anchored cross-references masquerading as headings, and same-item
+# running headers being treated as section boundaries). After the fix,
+# Accenture's 3 filings extract at 92.8-108.4K characters and Deere's 2014-2018
+# filings at 38.9-46.6K, all starting at the real heading, so there is nothing
+# left to suppress. Walmart, which was never extracting correctly either
+# (previously a 48K mid-sentence fragment, now 99-108K), was fixed by the same
+# change.
+#
+# The machinery is kept rather than deleted: it is the right place to quarantine
+# any future filer whose text is a parsing artifact rather than a real
+# disclosure, and keeping it documents why these companies were once excluded.
+KNOWN_EXTRACTION_BUG = {}
 
 
 def extraction_bug_excluded(ticker, filing_date):

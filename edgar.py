@@ -192,7 +192,24 @@ def fetch_filing_text(url):
 # `_SEP` tolerates junk punctuation and whitespace between tokens.
 # `_loose_word` and `_loose_phrase` tolerate whitespace injected between
 # individual letters.
-_SEP = r"[^A-Za-z0-9]{0,8}"
+# Tolerance for junk between the item number and the item title. This was
+# originally 8 characters, which turned out to be too tight: Deere's
+# 2014-2018 10-Ks render the heading across table cells as
+# "ITEM 1A.\n" + 13 non-breaking spaces + " \nRISK FACTORS", i.e. 17
+# non-alphanumeric characters, so the real heading never matched at all and
+# only the table-of-contents line survived (which is why those filings
+# extracted as ~400-character TOC fragments). Widened to 40.
+#
+# Widening is safe rather than sloppy because the character class excludes
+# every letter and digit: a match can only span whitespace and punctuation,
+# so no intervening word or page number can be swallowed. Any run this long
+# is necessarily a heading laid out across table cells.
+#
+# Raised again from 40 to 60 after finding Deere's 2014 Item 7 heading uses
+# "ITEM 7.\n" + 47 non-breaking spaces + " \n" (about 50 characters). At 40
+# that heading went undetected, so Item 1A found no following boundary and
+# ran to the end of the document (362K characters).
+_SEP = r"[^A-Za-z0-9]{0,60}"
 
 
 def _loose_word(word):
@@ -226,45 +243,116 @@ def _is_heading_anchored(text, pos):
     return prefix == "" or prefix.endswith("\n")
 
 
+# Any line that opens with an item number, including the items that aren't in
+# _ITEM_PATTERNS (1B, 1C, 2, 3, ...). Used only to find where the text
+# following a heading stops, so that text can be inspected. Kept separate
+# from _ITEM_PATTERNS on purpose -- widening the boundary set itself would
+# shorten every existing section and change output for filings that already
+# parse correctly.
+_ANY_ITEM_LINE = re.compile(r"^[ \t\xa0]*item\s*\d{1,2}[a-c]?\b",
+                            re.IGNORECASE | re.MULTILINE)
+
+# How much lowercase running prose has to follow a heading before it counts as
+# a real section opening.
+#
+# This replaced a flat minimum-character floor, which could not do the job: a
+# Table-of-Contents line and a legitimately one-sentence section are the same
+# length. Accenture's TOC line is followed by 325 characters before the next
+# item heading; IBM's genuine Item 7 -- which incorporates the MD&A by
+# reference and is therefore only ever one sentence long ("Refer to pages 6
+# through 38 of IBM's 2025 Annual Report to Stockholders, which are
+# incorporated herein by reference.") -- is followed by just 211. Any
+# character threshold that drops the first also drops the second.
+#
+# Lowercase word count separates them cleanly instead. A TOC line is followed
+# only by its own Title-Case-or-CAPS title and a page number, so it has almost
+# no lowercase running text; a real sentence has plenty. Same test rejects a
+# running page header stacked directly on the real heading ("Item 1A. Risk
+# Factors \n11\n" -> zero prose words) without needing a special case.
+MIN_PROSE_WORDS = 8
+
+_PROSE_WORD = re.compile(r"\b[a-z]{3,}\b")
+
+# The tail of a quoted cross-reference to another item, e.g.
+#     ... described in "Item 1A. Risk Factors." under the sub-caption ...
+# When such a reference wraps, the quotation mark can land at the start of a
+# line, which makes it indistinguishable from a real heading by line-anchoring
+# alone -- this is why Walmart's Item 1A extracted as a mid-sentence fragment
+# both before and after the running-header fix. A real heading is never
+# immediately followed by a closing quote or by an em/en-dash continuation.
+# Note the period alone is NOT a rejection signal: Deere's real heading is
+# legitimately "RISK FACTORS." -- it's the quote that gives a reference away.
+_XREF_TAIL = re.compile(r'^(?:[.,;:]?\s*["“”]|[—–])')
+
+
 def extract_sections(text, sections=("Item 1A Risk Factors", "Item 7 MD&A")):
     """Slice the requested 10-K item sections out of plain text.
 
-    Returns {section_label: section_text}. A heading can legitimately show
-    up several times in one filing: once in the Table of Contents, and once
-    (or more, as a repeated running header) in the real body. Cross-
-    references to other items, like "see Item 7...", can also match the
-    pattern. We first drop any match that isn't line-anchored (see
-    `_is_heading_anchored`) to get rid of those inline cross-references.
-    Among what's left, we pick whichever occurrence is followed by the
-    longest run of text before the next heading-like match shows up: a real
-    section runs for thousands of characters before the next item starts,
-    while a Table-of-Contents entry is followed almost immediately, within a
-    couple hundred characters, by the next item's TOC line. This is still a
-    heuristic, so it's worth spot-checking against real filings.
+    Returns {section_label: section_text}. A heading can legitimately show up
+    several times in one filing: once in the Table of Contents, once as the
+    real body heading, and often many more times as a repeated running page
+    header. Inline cross-references ("see Item 7...") can also match the
+    pattern; those are dropped first because they aren't line-anchored (see
+    `_is_heading_anchored`).
+
+    Choosing among what's left used to be done by taking whichever occurrence
+    had the most text after it before the next heading-like match. That broke
+    on filers who repeat the heading as a running page header on every page of
+    the section: Accenture emits ~20 line-anchored copies of "Item 1A. Risk
+    Factors <page#>", and the max-gap rule picked whichever page happened to
+    have the most text after it, yielding a fragment starting mid-sentence
+    partway through the section.
+
+    Instead we now walk the candidates in document order and take the FIRST
+    one that actually looks like a section opening, judged by whether real
+    lowercase prose follows it before the next item heading (see
+    MIN_PROSE_WORDS -- this is what separates a TOC line from a genuinely
+    one-sentence section, which a length threshold cannot). Document order
+    matters: the real heading always precedes the running page headers that
+    repeat it, so the earliest qualifying candidate is the right one.
+
+    Matches that are the tail of a quoted cross-reference to another item are
+    dropped up front (see _XREF_TAIL), so they can act as neither a section
+    start nor a section boundary.
+
+    The section end is the next line-anchored heading for a *different* item.
+    Repeats of the same item's own heading are skipped, since a running page
+    header restating this section's title is not a boundary -- treating it as
+    one is what truncated these sections to a single page's worth of text.
+
+    Still a heuristic; worth spot-checking against real filings.
     """
     lowered = text.lower()
     marks = []
     for label, pat in _ITEM_PATTERNS.items():
         for m in re.finditer(pat, lowered):
-            if _is_heading_anchored(text, m.start()):
-                marks.append((m.start(), label))
+            if not _is_heading_anchored(text, m.start()):
+                continue
+            if _XREF_TAIL.match(text[m.end():m.end() + 60].lstrip(" \t\xa0\n")):
+                continue
+            marks.append((m.start(), m.end(), label))
     marks.sort()
-    all_positions = [pos for pos, _ in marks]
 
-    def next_mark_after(pos):
-        for p in all_positions:
-            if p > pos:
+    def next_other_label_after(pos, label):
+        for p, _end, lab in marks:
+            if p > pos and lab != label:
                 return p
         return len(text)
 
+    def next_item_line_after(pos):
+        m = _ANY_ITEM_LINE.search(text, pos)
+        return m.start() if m else len(text)
+
     out = {}
     for want in sections:
-        candidates = [pos for pos, lab in marks if lab == want]
-        if not candidates:
-            continue
-        best_start = max(candidates, key=lambda pos: next_mark_after(pos) - pos)
-        end = next_mark_after(best_start)
-        out[want] = text[best_start:end].strip()
+        for start, match_end, label in marks:
+            if label != want:
+                continue
+            following = text[match_end:next_item_line_after(match_end)]
+            if len(_PROSE_WORD.findall(following)) < MIN_PROSE_WORDS:
+                continue
+            out[want] = text[start:next_other_label_after(start, want)].strip()
+            break
     return out
 
 

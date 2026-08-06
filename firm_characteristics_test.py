@@ -102,6 +102,70 @@ GROUPINGS = [
      AI_STACK_ROLE),
 ]
 
+# ---------------------------------------------------------------------------
+# POST-HOC grouping 3: splitting Schloetzer's "AI Infrastructure" group in two
+# ---------------------------------------------------------------------------
+# THIS IS A POST-HOC, DATA-MOTIVATED HYPOTHESIS. It exists only because
+# GROUPING 2 failed leave-one-out in half its folds and inspecting the
+# per-company numbers suggested Infrastructure was not behaving as one
+# population. It was NOT specified in advance, so it does not carry the same
+# evidentiary weight as GROUPING 1 (which was pre-specified and is robust),
+# and every printout below repeats that caveat on purpose.
+#
+# Membership is fixed by business-model logic BEFORE running the test, not by
+# whichever arrangement maximizes significance:
+#
+#   Hyperscaler/Platform -- cloud/software/platform businesses that sell AI
+#     as a service or an embedded product feature, with software-like gross
+#     margins and revenue that scales without unit manufacturing:
+#       Alphabet, Amazon, Meta, Microsoft
+#
+#   Semiconductor/Hardware -- companies whose AI exposure runs through chip
+#     design, manufacturing, or physical hardware production, with
+#     capital-intensive margin structures tied to unit output:
+#       NVIDIA, AMD, Broadcom, Tesla
+#
+# Sanity check that this split is not reverse-engineered from the results:
+# it places AMD (+0.299, one of the most opportunity-framed companies in the
+# whole dataset) in the "hardware" group and Microsoft (+0.090, near zero) in
+# the "platform" group. Both assignments work AGAINST the hypothesized
+# difference. A split chosen to maximize significance would have done the
+# opposite.
+#
+# TESLA IS FLAGGED AS AMBIGUOUS -- see TESLA_AMBIGUITY_NOTE below. Because of
+# that, the comparison is reported twice: once with Tesla included (following
+# the business-model logic above) and once with Tesla dropped entirely, as a
+# sensitivity check. Apple would arguably belong in Semiconductor/Hardware on
+# this logic (it designs its own A-/M-series silicon), but it has no usable
+# AI data at all (max 4 AI sentences in any filing) so it cannot enter either
+# group regardless.
+AI_INFRA_SUBSPLIT = {
+    "Hyperscaler/Platform": {"Alphabet", "Amazon", "Meta", "Microsoft"},
+    "Semiconductor/Hardware": {"NVIDIA", "AMD", "Broadcom", "Tesla"},
+}
+
+TESLA_AMBIGUITY_NOTE = [
+    "TESLA CLASSIFICATION IS AMBIGUOUS -- flagged deliberately, not resolved",
+    "by its score. Tesla fits the 'Semiconductor/Hardware' definition on",
+    "capital intensity, physical manufacturing, and in-house inference-chip",
+    "design (FSD computer, Dojo). But it is NOT a semiconductor vendor: it",
+    "sells no chips to third parties, and its AI exposure is better described",
+    "as APPLYING AI to a manufactured product -- which is closer to the 'AI",
+    "Power Adopter' concept than to 'AI Infrastructure' at all. Tesla is the",
+    "weakest conceptual fit of the nine companies in Schloetzer's",
+    "Infrastructure list. It is kept in the main test because the",
+    "business-model logic above admits it, and the Tesla-excluded sensitivity",
+    "check below exists precisely so its ambiguity cannot drive the verdict.",
+]
+
+POSTHOC_BANNER = [
+    "*** POST-HOC / EXPLORATORY -- NOT A PRE-REGISTERED COMPARISON ***",
+    "This split was motivated by inspecting GROUPING 2's per-company results",
+    "after the fact. Any p-value below is therefore optimistically biased by",
+    "the fact that the hypothesis was chosen with the data already visible.",
+    "Do NOT report this at the same confidence level as GROUPING 1.",
+]
+
 # 8-K promotional-gap metric: only these newly-added companies have real AI
 # content in their earnings press releases (verified by sampling before the
 # pull). Everything else in the 15-company expansion has ~zero, so no
@@ -222,20 +286,35 @@ def between_group_test(rows, grouping, exclude_companies=(), drop_company=None):
     }
 
 
-def print_grouping_analysis(title, rows, grouping, unusable):
+def print_grouping_analysis(title, rows, grouping, unusable,
+                            banner=None, extra_exclude=frozenset()):
+    """`banner` prints a prominent caveat block (used to mark the post-hoc
+    test). `extra_exclude` drops named companies on top of the unusable set
+    (used for the Tesla-excluded sensitivity run)."""
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
-    # A company with no rows at all contributed nothing -- either every
-    # filing was suppressed for a known extraction bug, or it has no filings
-    # in the dataset. Distinguish that from "measured but too little AI
-    # language" (unusable) so neither reads as the other.
+    if banner:
+        for line in banner:
+            print("  " + line)
+        print("-" * 78)
+    if extra_exclude:
+        print(f"  SENSITIVITY RUN -- additionally excluded by business-model "
+              f"ambiguity: {', '.join(sorted(extra_exclude))}")
+    # Three exclusion reasons, kept visually distinct so none reads as
+    # another: measured-but-too-little-AI-language, zero-rows-from-a-known
+    # parsing bug, and deliberately-dropped-for-ambiguity (sensitivity only).
+    unusable = set(unusable)
+    extra_exclude = set(extra_exclude)
+    all_excluded = unusable | extra_exclude
     present = {r["company"] for r in rows}
     for lab, members in grouping.items():
         included = sorted(m for m in members
-                          if m not in unusable and m in present)
+                          if m not in all_excluded and m in present)
         no_data = sorted(m for m in members if m not in present)
         dropped = sorted(m for m in members if m in unusable and m in present)
+        ambiguous = sorted(m for m in members
+                           if m in extra_exclude and m in present)
         print(f"  {lab}:")
         print(f"     included ({len(included)}): {', '.join(included)}")
         if dropped:
@@ -244,7 +323,11 @@ def print_grouping_analysis(title, rows, grouping, unusable):
         if no_data:
             print(f"     EXCLUDED, zero scored filings -- known extraction "
                   f"bug ({len(no_data)}): {', '.join(no_data)}")
+        if ambiguous:
+            print(f"     EXCLUDED for this sensitivity run only, ambiguous "
+                  f"business model ({len(ambiguous)}): {', '.join(ambiguous)}")
 
+    unusable = all_excluded
     res = between_group_test(rows, grouping, exclude_companies=unusable)
     if res is None:
         print("\n  Not enough data in one or both groups for a between-group test.")
@@ -345,6 +428,28 @@ def main():
     print_per_company(rows, unusable, best_n_ai)
     for title, grouping in GROUPINGS:
         print_grouping_analysis(title, rows, grouping, unusable)
+
+    # Post-hoc grouping 3, reported twice: as specified, then with the
+    # ambiguous company (Tesla) dropped. Banner repeats on both so neither
+    # can be quoted out of context as a pre-registered result.
+    print("\n\n" + "#" * 78)
+    print("#  EVERYTHING BELOW THIS LINE IS POST-HOC AND EXPLORATORY")
+    print("#" * 78)
+    print()
+    for line in TESLA_AMBIGUITY_NOTE:
+        print("  " + line)
+
+    print_grouping_analysis(
+        "GROUPING 3 (POST-HOC) -- splitting 'AI Infrastructure': "
+        "Hyperscaler/Platform vs. Semiconductor/Hardware",
+        rows, AI_INFRA_SUBSPLIT, unusable, banner=POSTHOC_BANNER)
+
+    print_grouping_analysis(
+        "GROUPING 3-S (POST-HOC, SENSITIVITY) -- same split, Tesla removed "
+        "for business-model ambiguity",
+        rows, AI_INFRA_SUBSPLIT, unusable,
+        banner=POSTHOC_BANNER, extra_exclude={"Tesla"})
+
     print_eightk_partial()
 
 
