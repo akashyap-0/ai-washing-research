@@ -6,13 +6,24 @@ Every figure below was pulled fresh from the live CSVs and read-only script outp
 the date this file was generated — not from memory or prior summaries. Sources are named
 per section so any number can be re-verified.
 
+> ⚠️ **Read Section H before writing anything from Sections A, C, D, or E.** Section H was
+> added after Prof. Schloetzer's methodological feedback and it changes how three results
+> must be reported: the AI-centrality headline (A), the Infrastructure comparison (D.1), and
+> the Oracle case study (E). Two of those change materially.
+
 **Data sources**
 - `export/ai_vs_other_risk_factors_results.csv` — within-document severity (Stage 3b)
 - `export/ai_sentiment_distance_results.csv` — 8-K vs. 10-K distance (Stage 3a)
 - `export/ai_washing_10-K.csv`, `export/ai_washing_8-K.csv` — raw extracted filing sections
 - `export/labeling_dataset_llm_labeled.csv` — validation labels (see Section F caveat)
+- `export/permutation_test_results.csv` — firm-level exact permutation tests (Section H.3)
+- `export/risk_factor_composition_panel.csv` — firm-year composition panel (Section H.4)
+- `export/sensitivity_unflagged_filings.csv` — thin-evidence sensitivity (Section H.6)
+- `output/risk_factor_text/*.md` — 150 readable AI risk-factor passage files (Section H.4)
 - Read-only scripts: `significance_tests.py`, `significance_tests_collapsed.py`,
-  `firm_characteristics_test.py`, `validate_finbert_against_labels.py`
+  `firm_characteristics_test.py`, `firm_characteristics_robustness.py`,
+  `validate_finbert_against_labels.py`, `permutation_test.py`,
+  `risk_factor_composition.py`, `sensitivity_unflagged_filings.py`
 
 ---
 
@@ -45,7 +56,35 @@ minus mean net tone of that same filing's non-AI Item 1A sentences. One observat
 - Welch's t-test: **p = 0.0000**
 - Mann-Whitney U: **p = 0.0001**
 
-**Leave-one-out robustness — all 10 folds** (drop one company, re-test):
+> ⚠️ **The two p-values immediately above are filing-level and unclustered, and they are
+> anticonservative.** They treat 58 filings from 10 firms as 58 independent observations.
+> Report the **firm-level permutation test** below as the inferential result instead; keep
+> these only as descriptive. See "Firm-level permutation test" and Section H.
+
+**Firm-level permutation test — this is the result to report.** Each firm is collapsed to
+one value (the mean of its own filings) before group labels are reshuffled, so the test
+matches the level at which the grouping variable actually varies. Source:
+`permutation_test.py` → `export/permutation_test_results.csv`.
+
+| | AI-core | AI-peripheral |
+|---|---|---|
+| firms | 5 | 5 |
+| filings behind them | 31 | 27 |
+| **firm-level mean** | **+0.0440** | **+0.3077** |
+| filing-level mean | −0.0260 | +0.3036 |
+
+- Firm-level mean difference: **−0.2637** (filing-level was −0.3297)
+- **Exact permutation p = 0.0317** — significant. Not a Monte Carlo estimate: with 5 firms
+  per group only C(10,5) = **252** label assignments exist, so all were enumerated. 8 of
+  252 produce a difference this large or larger.
+- Firm-level Welch **p = 0.0433**, Mann-Whitney **p = 0.0317**, Cohen's **d = −1.656**
+
+**Say this explicitly when reporting it:** the **design floor is p = 0.0079**. With 5 firms
+per group, 2/252 is the smallest two-sided p-value attainable *no matter how large the
+effect*. So p = 0.0317 is near the ceiling of what this design permits — it is not a result
+that barely scraped past 0.05. Lowering it requires more firms, not a better test.
+
+**Sensitivity to individual firm removal — all 10 folds** (drop one company, re-test):
 
 | Dropped | Welch p | Mann-Whitney p | Both still significant? |
 |---|---|---|---|
@@ -61,13 +100,31 @@ minus mean net tone of that same filing's non-AI Item 1A sentences. One observat
 | Verizon | 0.0001 | 0.0005 | yes |
 
 Welch p range **0.0000–0.0013**; Mann-Whitney p range **0.0000–0.0015**.
-**Verdict: ROBUST** — significant on both tests in every fold. Weakest fold is dropping
-Oracle (p=0.0013), still comfortably significant.
+**Verdict: INSENSITIVE to single-firm removal** — significant on both tests in every fold.
+Weakest fold is dropping Oracle (p=0.0013).
+
+> ⚠️ **Do not call this "robustness" and do not present it as independent confirmation.**
+> Renamed after Prof. Schloetzer's critique. All 10 folds recompute one statistic on 90% of
+> the same data using the same filing-level unclustered test, so they are near-perfectly
+> correlated with each other and with the full-sample result, and every fold inherits the
+> same inflated n. Passing all 10 is closer to a restatement of the full-sample p-value than
+> to a second test of it. The asymmetry is what makes it still worth running: a FAILED fold
+> would genuinely tell you one firm carries the result; passing folds are weak positive
+> evidence at best. The independence question is answered by the permutation test above,
+> not here.
+
+**Robustness that does count.** The finding survives three independent stress tests:
+1. **Firm-level permutation** (exact p = 0.0317) — removes the pseudo-replication entirely.
+2. **Dropping keyword false positives** — re-running on the 107-filing sample that excludes
+   `automat*`-only matches (Section H) gives **exact p = 0.0317 again**, with the effect
+   *strengthening* (d −1.656 → −1.785, firm-level Welch 0.0433 → 0.0263).
+3. **Extraction-bug independence** — see the writing note below.
 
 **Pooled sample context.** Pooled n across all companies = **118 scored 10-K filings**
-from **24 companies** (26 companies pulled; Palantir excluded, Apple has no usable AI
-data — see Section G). The 58 filings in this comparison are the subset belonging to
-the ten AI-core/AI-peripheral companies.
+from **25 companies** (Palantir excluded from the 26 present in the raw CSVs; Apple is
+retained here because 2 of its filings scored, but it is dropped from group means as
+having no usable AI data — see Section G). The 58 filings in this comparison are the
+subset belonging to the ten AI-core/AI-peripheral companies.
 
 **Writing note.** This finding is *arithmetically independent* of the extraction-bug fix
 described in Section G: none of the three corrected companies (Accenture, Deere, Walmart)
@@ -176,6 +233,18 @@ appears only once the sample is large enough):
 Current pooled: mean AI tone **−0.2438**, mean other-risk tone **−0.3269**, distance
 **+0.0831**, 95% CI **[+0.0260, +0.1403]**.
 
+> ✅ **This is the most durable result in the packet — it gets *stronger* under every
+> restriction.** Section H.6: dropping thin filings raises it to **+0.1288 (p = 0.0000)** on
+> 76 filings, and additionally dropping keyword false positives gives +0.1265. Unlike the
+> group comparisons in A and D, this finding does not depend on single-sentence filings.
+>
+> One caveat to carry: the pooled test still treats each filing as independent (ICC 0.48,
+> effective n ≈ 41 not 118), so quote the direction and magnitude confidently but treat the
+> exact p-value as anticonservative. See H.1–H.2.
+>
+> **If you need one sentence to build the paper's quantitative claim on, build it here** —
+> not on the AI-core/peripheral contrast, which H.6 shows is thin-filing dependent.
+
 **Full per-company table** (all 25 companies with ≥1 scored filing; sorted by mean.
 "flagged" = filings where the AI or non-AI subset had <5 sentences, i.e. low-confidence):
 
@@ -216,6 +285,12 @@ Broadcom (Broadcom in the *negative* direction).
 sentence in Item 1A. Its apparent "existential framing" is heavily driven by
 single-sentence subsets. Same caution applies to IBM (5 of 7 flagged) and Tesla (5 of 8).
 
+> ⚠️ **This caveat is now much stronger than "heavily driven by."** Section H.6 ran the
+> sensitivity: restricted to its 3 filings with ≥5 AI sentences, **Oracle's mean flips sign
+> to +0.0616** — opportunity-framed, not existential. Tesla goes −0.3155 → −0.1823 and
+> Broadcom −0.3481 → −0.1315. Do not write a claim that Oracle systematically frames AI risk
+> as existential. See H.6 and OPEN ITEM #3.
+
 ---
 
 ## SECTION D — Alternative Hypotheses Tested and Not Supported
@@ -246,23 +321,45 @@ SAP was dropped earlier).
 - Mean difference: **−0.1619**
 - Welch's t-test: **p = 0.0109** (significant)
 - Mann-Whitney U: **p = 0.1225** (**not** significant)
-- Leave-one-out: **FRAGILE — 16 of 18 folds lose significance.** Only dropping AMD,
-  Alphabet, or Amazon leaves it significant on both tests. Welch p range 0.0032–0.1454;
-  Mann-Whitney p range 0.0325–0.5991.
+- Sensitivity to individual firm removal: **15 of 18 folds lose significance.** Only
+  dropping AMD, Alphabet, or Amazon leaves it significant on both tests. Welch p range
+  0.0032–0.1454; Mann-Whitney p range 0.0325–0.5991.
 
-**Why it failed — three independent reasons:**
+**⭐ The decisive result: at the firm level there is no effect at all.**
+Source: `permutation_test.py`.
+
+| | AI Infrastructure | AI Power Adopters |
+|---|---|---|
+| firms | 8 | 10 |
+| filings behind them | 41 | 40 |
+| **firm-level mean** | **+0.0662** | **+0.1042** |
+| filing-level mean | −0.0082 | +0.1537 |
+
+- Firm-level mean difference: **−0.0380** — the filing-level −0.1619 shrinks by **77%**
+  purely from weighting each firm once.
+- **Exact permutation p = 0.7324** (all 43,758 assignments enumerated). 32,049 of them beat
+  the observed difference.
+- Firm-level Cohen's **d = −0.164** — negligible. Firm-level Welch p = 0.7471, MWU p = 0.8968.
+- Note the sign: at firm level Infrastructure's mean goes **positive**. There is no
+  difference left to explain.
+
+**Why it failed — four independent reasons:**
 
 1. **The two tests disagree at baseline.** Significant parametrically, not
    non-parametrically. With group distributions this dispersed, the nonparametric result
    is the more trustworthy one.
-2. **Leave-one-out collapse.** 16/18 folds fail. A result that survives only 2 of 18
-   single-company deletions is not a group effect.
-3. **Counterevidence from the best-qualified test cases.** After the extraction bug was
+2. **⭐ It was pseudo-replication, not an effect.** The filing-level "significance" came from
+   Broadcom's 6 filings and Tesla's 8 — 14 of 41 Infrastructure observations, most resting
+   on 1–3 recycled AI sentences — outvoting Alphabet's 3 and Meta's 2. Once each firm counts
+   once, p = 0.73. **This is the cleanest available demonstration that Schloetzer's redirect
+   away from this comparison was correct on the evidence, not merely on principle.**
+3. **Single-firm sensitivity collapse.** 15 of 18 folds fail — consistent with (2).
+4. **Counterevidence from the best-qualified test cases.** After the extraction bug was
    fixed (Section G), Accenture and Walmart entered this comparison with real data for the
    first time — and both landed near zero (**Accenture +0.0209**, **Walmart +0.0778**)
    against an Adopters mean of +0.172, *diluting* the group toward Infrastructure. Adding
    them moved Welch p from 0.0065 → 0.0109, Mann-Whitney from 0.0746 → 0.1225, and
-   leave-one-out failures from 8/16 → 16/18. Accenture is a consulting firm whose entire
+   single-firm-removal failures from 8/16 → 15/18. Accenture is a consulting firm whose entire
    business is deploying technology for clients — arguably the purest "Power Adopter" in
    the set — and it frames AI risk essentially identically to its other risks. That is
    evidence against the grouping's premise, from its strongest theoretical case.
@@ -297,8 +394,36 @@ group** — both assignments work against the hypothesis.
 
 - Mean difference: **+0.3691**
 - Welch's t-test **p = 0.0000**; Mann-Whitney **p = 0.0005**
-- Leave-one-out: **ROBUST**, all 8 folds significant on both tests (Welch 0.0000–0.0026;
-  MWU 0.0000–0.0079)
+- Sensitivity to individual firm removal: **INSENSITIVE**, all 8 folds significant on both
+  tests (Welch 0.0000–0.0026; MWU 0.0000–0.0079)
+
+**⭐ Firm-level permutation test — this changes how D.2 should be characterized.**
+
+- Firm-level means: **+0.2425** vs. **−0.1101**, difference **+0.3526** (filing-level was
+  +0.3691 — barely moved)
+- **Exact permutation p = 0.1143** — *not* significant. Tesla-excluded: **p = 0.2000**.
+- Firm-level Cohen's **d = +1.572** (Tesla-excluded: +1.282) — still a large effect.
+
+**This is underpowered, not refuted, and the distinction matters.** Unlike D.1 — where the
+effect size itself collapsed by 77% and d fell to −0.164 — here the effect size and the mean
+difference are essentially unchanged at the firm level. What defeats it is arithmetic: 4
+firms vs. 4 firms admits only **C(8,4) = 70** distinct label assignments, so the smallest
+attainable two-sided p-value is **2/70 = 0.0286**. With Tesla dropped it is 7 firms, 35
+assignments, floor **0.0571** — above 0.05, meaning *no possible data* could make the
+Tesla-excluded version significant.
+
+**So D.1 and D.2 fail for opposite reasons, and should not be described the same way:**
+
+| | D.1 Infra vs. Adopters | D.2 Hyperscaler vs. Semi |
+|---|---|---|
+| firm-level d | −0.164 (negligible) | +1.572 (large) |
+| effect at firm level | collapsed 77% | essentially unchanged |
+| permutation p | 0.7324 | 0.1143 |
+| design floor | 4.6e-05 (not binding) | 0.0286 (binding) |
+| honest verdict | **no effect** | **effect plausible, sample too small** |
+
+Write D.1 as "tested and not supported." Write D.2 as "suggestive, not testable at this
+sample size" — which is also the strongest available argument for *why* D.1 failed.
 
 **Sensitivity: Tesla removed** (its classification is genuinely ambiguous — it fits on
 capital intensity and in-house inference silicon, but sells no chips to third parties, and
@@ -311,13 +436,16 @@ Adopter; it is the weakest conceptual fit of the nine Infrastructure firms):
 | Semiconductor/Hardware (3 firms) | 16 | −0.0842 |
 
 - Mean difference **+0.2920**; Welch **p = 0.0022**; Mann-Whitney **p = 0.0052**
-- Leave-one-out: **FRAGILE — 2 of 7 folds fail.** Dropping **Broadcom** → Welch 0.1566 /
-  MWU 0.1833; dropping **NVIDIA** → MWU 0.0747.
+- Sensitivity to individual firm removal: **2 of 7 folds fail.** Dropping **Broadcom** →
+  Welch 0.1566 / MWU 0.1833; dropping **NVIDIA** → MWU 0.0747.
+- Firm-level exact permutation **p = 0.2000**, against a **design floor of 0.0571** — i.e.
+  with 3 firms vs. 4 this version cannot reach significance under any data whatsoever.
 
-**Why it is not proposable as a replacement framing:** (a) post-hoc; (b) its robustness is
-contingent on retaining Tesla, the member with the weakest justification — remove it and
-the effect becomes fragile; (c) AMD is a within-group counterexample, a semiconductor firm
-that frames AI risk *less* severely than its other risks, significantly so (p=0.002).
+**Why it is not proposable as a replacement framing:** (a) post-hoc; (b) it is not
+significant at the firm level, and in the Tesla-excluded form it *cannot be* (design floor
+0.0571 > 0.05); (c) its filing-level strength is contingent on retaining Tesla, the member
+with the weakest justification; (d) AMD is a within-group counterexample, a semiconductor
+firm that frames AI risk *less* severely than its other risks, significantly so (p=0.002).
 
 **Recommended framing:** a hypothesis worth testing on an expanded semiconductor/hardware
 sample (Intel, Micron, Qualcomm, Texas Instruments, Applied Materials, Lam Research), not
@@ -328,6 +456,19 @@ a finding. Note Intel currently fails extraction entirely (see Section G).
 ## SECTION E — Oracle Case Study
 
 All text below pulled verbatim from `export/ai_washing_10-K.csv` on the date of this file.
+
+> ⚠️ **Scope limit on this section, from Section H.6.** The verbatim disclosures quoted below
+> are solid — they are direct quotations from filings and their evidentiary value does not
+> depend on any tone statistic. **What cannot be claimed is that Oracle's filings
+> systematically frame AI risk as existential.** Restricted to Oracle's 3 filings with ≥5 AI
+> sentences, its within-document mean flips sign to **+0.0616** (opportunity-framed); the
+> −0.2371 figure comes from 8 filings that each contain a single AI sentence, 2 of which
+> match only on `automat*` and are not about AI at all.
+>
+> **Use this section as: a documented instance of a firm disclosing AI-attributed workforce
+> reduction.** Do not use it as: evidence of a firm-level framing pattern. The
+> quantitative Oracle claim and the qualitative Oracle quotation are separable, and only the
+> quotation survives H.6.
 
 ### E.1 — The citable admission
 
@@ -624,9 +765,192 @@ known-broken companies. No previously-correct Item 1A section changed.
 > significance tests are reported both uncollapsed and collapsed to one observation per
 > unique 10-K; the collapsed figures are the ones we rely on. Significance is assessed with
 > both a parametric test (one-sample or Welch's t) and its nonparametric analogue (Wilcoxon
-> signed-rank or Mann-Whitney U), with the nonparametric result preferred at small n, and
-> group-level comparisons additionally subjected to a leave-one-out check in which each
-> company is dropped in turn.
+> signed-rank or Mann-Whitney U), with the nonparametric result preferred at small n.
+> Because filings are repeated observations on the same firms — firms contribute between one
+> and eleven filings each, the lag-1 within-firm autocorrelation of the within-document
+> measure is +0.66, and the intraclass correlation is 0.48, implying an effective sample size
+> of roughly 41 rather than 118 — filing-level tests of between-group differences are
+> anticonservative. All between-group comparisons are therefore additionally assessed with an
+> exact firm-level permutation test: each firm is collapsed to the mean of its own filings,
+> group labels are reshuffled across firms with group sizes held fixed, and because every
+> comparison admits fewer than 200,000 distinct assignments, all assignments are enumerated
+> rather than sampled, yielding exact p-values. Firm-level permutation results are reported
+> as the inferential test for group comparisons; filing-level results are reported as
+> descriptive. Each comparison is also re-run with one firm dropped at a time, reported as a
+> sensitivity to individual firm removal rather than as independent robustness evidence,
+> since every fold reuses the same data and the same filing-level test.
+
+---
+
+## SECTION H — Independence, Composition, and Thin-Evidence Sensitivity
+
+Added after Prof. Schloetzer's methodological feedback on the AI-centrality result and his
+redirect on Infrastructure vs. Power Adopters. Sources: `permutation_test.py`,
+`risk_factor_composition.py`, `sensitivity_unflagged_filings.py`.
+
+### H.1 — What the unit of observation actually is
+
+Verified against code and data, not assumed. **The unit is one 10-K filing = one firm-year.**
+`export/ai_vs_other_risk_factors_results.csv` has 150 rows and 150 distinct
+`(ticker, filing_date)` keys — zero duplicates. 59,056 sentences (1,507 AI + 57,549 non-AI)
+are averaged down into those 150 rows at
+[`ai_vs_other_risk_factors.py:135-139`](ai_vs_other_risk_factors.py#L135-L139).
+
+**No test anywhere treats a sentence or a passage as an independent observation.** If
+Schloetzer's concern was sentence-level pseudo-replication, the pipeline is clean on that
+point and you can say so directly.
+
+### H.2 — The real problem was firm-level, and it is substantial
+
+Filings are repeated observations on the same firms, and no test clustered by firm:
+
+| diagnostic | value |
+|---|---|
+| filings per firm | 1 (JPMorgan) to 11 (Oracle) |
+| top 5 firms' share of the 118 filings | 34% (from 5 of 25 firms) |
+| lag-1 within-firm autocorrelation | **r = +0.663** (p = 4.5×10⁻¹³, 93 pairs) |
+| intraclass correlation (one-way RE) | **ICC = 0.478** |
+| design effect (mean cluster 4.83) | 2.83 |
+| **effective sample size** | **≈ 41, not 118** |
+
+**10 of 118 scored filings carry a byte-identical `ai_tone` to another filing from the same
+firm** — the same sentence recycled verbatim: Broadcom ×4, Deere ×3, UnitedHealth ×3,
+Oracle ×2 (twice), Uber ×2. Those are duplicate observations, not repeat measurements. This
+is a floor: Tesla 2021–2024 (−0.9411, −0.9434, −0.8519, −0.8520) is near-identical without
+being byte-identical and does not appear in the count.
+
+### H.3 — Firm-level permutation results (all exact)
+
+Every comparison admits fewer than 200,000 label assignments, so all were enumerated. These
+are exact p-values, not Monte Carlo estimates.
+
+| Comparison | filing diff | filing Welch | filing MWU | **firm diff** | **exact perm p** | firm d | design floor |
+|---|---|---|---|---|---|---|---|
+| **1. AI-core vs. peripheral** | −0.3297 | 0.0000 | 0.0001 | **−0.2637** | **0.0317 SIG** | −1.656 | 0.0079 |
+| 2. Infra vs. Adopters | −0.1619 | 0.0109 | 0.1225 | −0.0380 | 0.7324 n.s. | −0.164 | 4.6e-05 |
+| 3. Hyperscaler vs. Semi *(post-hoc)* | +0.3691 | 0.0000 | 0.0005 | +0.3526 | 0.1143 n.s. | +1.572 | 0.0286 |
+| 3-S. same, Tesla dropped | +0.2920 | 0.0022 | 0.0052 | +0.2841 | 0.2000 n.s. | +1.282 | 0.0571 |
+
+### H.4 — Composition measures (replaces the severity scalar for D.1)
+
+`export/risk_factor_composition_panel.csv` — **150 firm-years × 47 columns, 25 firms, FY
+2014–2026.** Readable AI risk-factor passages exported to `output/risk_factor_text/` (150
+markdown files, 3.3 MB), one per firm-year, each with heading-as-filed, ordinal position,
+word count and numeric density.
+
+Risk-factor subsections were recovered from **HTML bold/emphasis markup**, which
+`edgar.fetch_filing_text` discards — blank-line paragraph structure is unusable (Accenture
+2025 is 14 blocks, one of 57,352 characters; Deere's headings arrive shattered across
+blocks). **This worked on 150 of 150 filings, zero fallbacks, median 49 headings per filing.**
+
+| measure | min | p25 | median | p75 | max |
+|---|---|---|---|---|---|
+| AI word share of Item 1A, *subsection* basis | 0.000 | 0.025 | 0.118 | 0.284 | 0.744 |
+| AI word share of Item 1A, *sentence* basis | 0.000 | 0.002 | 0.014 | 0.036 | 0.140 |
+| first AI risk factor, normalized position | 0.020 | 0.060 | 0.085 | 0.333 | 0.841 |
+| mean AI position, normalized | 0.070 | 0.283 | 0.380 | 0.531 | 0.841 |
+| specificity, numeric tokens / 100 words | 0.000 | 0.000 | 0.133 | 0.381 | 5.065 |
+| YoY TF-IDF cosine | 0.234 | 0.918 | **0.961** | 0.984 | 1.000 |
+| YoY 5-gram Jaccard | 0.000 | 0.342 | **0.545** | 0.741 | 1.000 |
+
+Two findings worth writing up directly:
+- **AI risk language is heavily recycled but rewritten at the phrase level.** Median YoY
+  cosine 0.961 (same vocabulary) against median 5-gram Jaccard 0.545 (different sentences).
+  Most recycled: Uber 0.745, UnitedHealth 0.733, IBM 0.718. Most rewritten: Deere 0.270,
+  Dell 0.322, AMD 0.342.
+- **AI content is spread, not concentrated.** Median *first* position 8.5% but median *mean*
+  position 38% — firms raise AI early and then repeatedly. AI comes essentially first for
+  Walmart (0.026), Intuit (0.031), Meta (0.043), Salesforce (0.044), Alphabet (0.048); last
+  for Broadcom (0.541), Deere (0.503), Eli Lilly (0.500).
+
+**A measurement bug found and fixed here:** the stored Item 1A text carried the filing's own
+pagination (`9.` / `Table of Contents` / registrant name) as separate lines. Bare page
+numbers count as numeric tokens, and numeric tokens are rare in risk-factor prose (~1.3 per
+1,000 words). Stripping pagination removed only **0.45% of words** but **halved median
+AI-passage specificity, 0.264 → 0.133**. The specificity measure had been roughly half
+pagination. Now stripped before every measure.
+
+**Not proxied, deliberately:** law-firm/outside-counsel drafting style. No EDGAR field
+identifies it and every candidate proxy (auditor, filer agent, cross-filer boilerplate
+similarity) is confounded with industry, size, and recycling — the very things under study.
+A weak proxy would look like a control while absorbing real variation. Market cap likewise
+absent: EDGAR company facts has shares outstanding but no price, so revenue and total assets
+are the size proxies.
+
+### H.5 — ⚠️ Keyword false positives (`automat*`)
+
+**13 of the 122 filings with "AI content" match only on an `automat*` form**, with no AI, ML,
+or generative-AI term anywhere. Verified example — AMD FY2020's sole "AI risk factor":
+
+> "…subject to **automatic** extension first to January 26, 2022…"
+
+That is a merger-agreement deadline. Full list: AMD 2021/2022, Deere 2020/2021/2022, Oracle
+2016/2017, Tesla 2019/2020/2021, UnitedHealth 2021/2022/2023.
+
+**8 of the 10 byte-identical-`ai_tone` filings from H.2 are on this list.** UnitedHealth's
+three identical −0.1051 filings, Oracle's identical −0.9141 pair, and Deere's identical
++0.0316 triple are all keyword false positives — the "recycled AI risk sentence" was never
+about AI.
+
+`AI_KEYWORD_PATTERN` is **unchanged**: it is the shared definition across the severity and
+composition measures, and editing it would silently move every number in this packet. The
+panel exposes it instead via `ai_match_terms` and `ai_match_automat_only`.
+
+Most common matched terms across all filings: artificial intelligence (84), AI (76), machine
+learning (54), automation (53), automated (44), generative AI (37), automatic (8).
+
+### H.6 — ⚠️ Thin-evidence sensitivity — this one is consequential (answers OPEN ITEM #3)
+
+Three samples, same tests, no threshold or grouping changed. Source
+`export/sensitivity_unflagged_filings.csv`.
+
+| sample | filings | firms |
+|---|---|---|
+| FULL (as published) | 118 | 25 |
+| UNFLAGGED (≥5 AI **and** ≥5 non-AI sentences) | 76 | 24 |
+| UNFLAGGED+ (also drops `automat*`-only matches) | 75 | 24 |
+
+**The pooled within-document finding gets stronger.** +0.0831 (p=0.0047) → **+0.1288
+(p=0.0000)** → +0.1265. Restricting to filings with real AI content *sharpens* the core
+result that firms frame AI risk less severely than their other risks.
+
+**But the AI-centrality headline loses firm-level significance:**
+
+| sample | firm diff | firm d | filing Welch | filing MWU | **exact perm p** |
+|---|---|---|---|---|---|
+| FULL | −0.2637 | −1.656 | 0.0000 | 0.0001 | **0.0317 SIG** |
+| UNFLAGGED | −0.1528 | −1.058 | 0.0169 | 0.0193 | **0.1508 n.s.** |
+| UNFLAGGED+ | −0.1528 | −1.058 | 0.0169 | 0.0193 | 0.1508 n.s. |
+
+Read this carefully before deciding what it means — it is **not** a refutation:
+- **Direction is preserved** and the effect remains **large** (d = −1.058, still |d| > 0.8).
+- The effect **attenuates 42%** (−0.2637 → −0.1528), so it is genuinely partly thin-filing driven.
+- Power collapses: most firms fall to **2–3 filings** (IBM to 2, Oracle 11→3). The
+  permutation goes from 8/252 to 38/252 assignments.
+- Filing-level tests remain significant (Welch 0.0169, MWU 0.0193).
+
+**The single most important number in this table is Oracle's.** Its mean **flips sign**:
+
+| company | FULL | UNFLAGGED | UNFLAGGED+ |
+|---|---|---|---|
+| **Oracle** | **−0.2371** (n=11) | **+0.0616** (n=3) | **+0.0616** (n=3) |
+| IBM | +0.3654 (n=7) | +0.2572 (n=2) | +0.2572 (n=2) |
+| Tesla | −0.3155 (n=8) | −0.0206 (n=3) | −0.1823 (n=2) |
+| Broadcom | −0.3481 (n=6) | −0.1315 (n=2) | −0.1315 (n=2) |
+| Deere | +0.3362 (n=6) | +0.1146 (n=2) | +0.1146 (n=2) |
+| UnitedHealth | +0.3537 (n=6) | +0.4713 (n=3) | +0.4713 (n=3) |
+| Amex | +0.2133 (n=7) | +0.1281 (n=3) | +0.1281 (n=3) |
+
+**Oracle's "existential framing" is entirely an artifact of single-AI-sentence filings.**
+Restricted to its three filings with ≥5 AI sentences, Oracle is *positive* —
+opportunity-framed, like everyone else. This bears directly on **Section E**, where Oracle is
+the case study, and on the per-company Oracle claim in Section C. The Section E *quotation*
+still stands on its own as a citable admission — it is a verbatim disclosure, not a
+statistic — but any sentence claiming Oracle *systematically* frames AI risk as existential
+cannot survive this check and should be cut or heavily qualified.
+
+Tesla and Broadcom attenuate the same way (−0.316 → −0.182, −0.348 → −0.132), so the whole
+"negative-framing" side of the story is thin-filing dependent.
 
 ---
 
@@ -646,12 +970,27 @@ known-broken companies. No previously-correct Item 1A section changed.
    is not robust enough for more, but it is the most concrete future-work direction, and it
    is the honest explanation for *why* D.1 failed.
 
-3. **How to report Oracle's flagged filings.** Oracle's −0.2371 mean rests on 11 filings of
-   which 8 have only a single AI sentence. Options: report as-is with a caveat; report a
-   sensitivity restricted to unflagged filings; or drop the per-company Oracle claim and
-   rely only on the case study. Same question applies to IBM (5/7 flagged) and Tesla (5/8).
-   **No sensitivity analysis restricted to unflagged filings has been run yet** — flagging
-   as an available robustness check, not a completed one.
+3. **✅ THE SENSITIVITY HAS NOW BEEN RUN (Section H.6) — and it changes what you can claim.**
+   The decision is no longer *whether* to run it but *how to report it*. Results:
+   - Pooled within-document finding **strengthens** (+0.0831 → +0.1288, p → 0.0000).
+   - AI-centrality headline **loses firm-level significance** (exact perm p 0.0317 → 0.1508),
+     though direction holds and d stays large at −1.058. Attenuation is 42%; per-firm n falls
+     to 2–3, so this is part effect-attenuation and part power loss.
+   - **Oracle's mean flips sign, −0.2371 → +0.0616.** Its "existential framing" exists only
+     in single-AI-sentence filings.
+
+   **Decision now required (recommend a, and it is not optional to pick one):**
+   (a) report the headline with H.6 as a stated limitation, and cut any claim that Oracle
+   *systematically* frames AI risk as existential — keeping the Section E quotation, which is
+   a verbatim disclosure and stands independently;
+   (b) make UNFLAGGED the primary sample and report the headline as directional-but-not-
+   significant, which is defensible but discards over a third of the data;
+   (c) drop the per-company Oracle/IBM/Tesla claims entirely and rely on the pooled
+   within-document result, which is the one finding that gets *stronger* under every
+   restriction.
+
+   Whichever you pick, **Section E needs editing** and Schloetzer should be shown H.6
+   directly — it is the kind of check he will ask for, and it is better volunteered.
 
 4. **Whether to fold the recovered Deere 2014–2018 filings into any time-trend analysis.**
    They contain zero AI sentences, which is itself a meaningful baseline observation
@@ -659,13 +998,16 @@ known-broken companies. No previously-correct Item 1A section changed.
    If the paper makes a "growth of AI disclosure over time" argument, these are useful; if
    not, they are inert.
 
-5. **⚠️ `firm_characteristics_robustness.py` is currently broken — and I broke it.** When I
-   rewrote `firm_characteristics_test.py` to hold two grouping variables, `group_of()`
-   gained a required second argument, and this script still calls it with one. It now
-   crashes with `TypeError: group_of() missing 1 required positional argument: 'grouping'`.
-   It is a read-only diagnostic, so no data or result was corrupted, but its Oracle/NVIDIA
-   hold-out analysis is unavailable until a one-line fix. I did not repair it because this
-   task was scoped read-only. **Decision:** want it fixed?
+5. **✅ RESOLVED — `firm_characteristics_robustness.py` is fixed.** It had **four**
+   breakages from the `firm_characteristics_test.py` rewrite, not the one visible in the
+   traceback: (a) `group_of()` called with one argument instead of two; (b) `fct.AI_CORE` /
+   `fct.AI_PERIPHERAL` no longer exist; (c) `load_within_doc_rows()` now returns a 3-tuple
+   that was being assigned to one name; (d) its rows key the company as `company`, not
+   `company_short`. Also fixed a formatting bug where the 25-character verdict string
+   overflowed a 20-wide column into the p-value. **The result it produces is unchanged:**
+   all five folds significant on both metrics; the Oracle+NVIDIA-excluded variant still
+   significant on within-doc distance (Welch 0.0133 / MWU 0.0405) but **not** on collapsed
+   sentiment distance (0.1086 / 0.0752). No decision needed.
 
 6. **Correction to a claim I made earlier in our conversation.** I previously told you the
    leave-one-out robustness check "did not previously exist" in the codebase. **That was
@@ -675,6 +1017,11 @@ known-broken companies. No previously-correct Item 1A section changed.
    and holds the peripheral group fixed, whereas the newer one drops companies from both
    groups — so the two are complementary rather than duplicative. But your original framing
    that such a check already existed was correct, and mine was not.
+
+   **Update:** both checks have since been relabeled "sensitivity to individual firm removal"
+   rather than "robustness," per Schloetzer's critique, and neither is presented as
+   independent evidence any more. The wording quoted above is preserved as the historical
+   record of the error. No decision needed.
 
 7. **Stage 2 (whole-document sentiment distance) is not in this packet.**
    `export/sentiment_distance_results.csv` still exists from the abandoned approach, along
