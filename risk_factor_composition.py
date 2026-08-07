@@ -135,6 +135,68 @@ _NUMERIC_TOKEN = re.compile(
 )
 _WORD = re.compile(r"[A-Za-z][A-Za-z'\-]*")
 
+# --- page-break noise ------------------------------------------------------
+# The stored Item 1A text carries the filing's own pagination furniture, which
+# survives HTML-to-text conversion as its own lines: a bare page number, a
+# "Table of Contents" link, and often the registrant's name, repeated at every
+# page break inside the section. Alphabet's 2025 Item 1A interrupts a
+# risk-factor paragraph with "9. / Table of Contents / Alphabet Inc." and does
+# it again two paragraphs later.
+#
+# This is stripped before any measure is computed, not just before display,
+# because it is not neutral for the measures:
+#   - a bare page number is counted as a numeric token, so pagination inflates
+#     the specificity score of exactly the longest passages (the ones spanning
+#     the most page breaks);
+#   - "Table of Contents" repeated 20 times contributes real words to the
+#     denominator of the AI word-share;
+#   - it is the single most reliably recycled text in the whole document, which
+#     biases the year-over-year similarity measures upward.
+# Removing it makes all four measures cleaner, so it is removed everywhere
+# rather than kept for fidelity in one place and dropped in another.
+_PAGE_NOISE_LINE = re.compile(
+    r"^(?:"
+    r"\d{1,4}\.?"                                   # bare page number
+    r"|table\s+of\s+contents"
+    r"|part\s+[ivx]+(?:\s*[-|]?\s*item\s*\d{1,2}[a-c]?\.?)?"
+    r"|item\s*\d{1,2}[a-c]?\.?"                     # running item header alone
+    r"|form\s+10-k"
+    r"|\(?continued\)?"
+    r")$",
+    re.IGNORECASE,
+)
+# "Table of Contents" also appears glued to the front of a continuing
+# paragraph (Deere: "Table of Contents exported products and the profit...").
+_INLINE_TOC = re.compile(r"(?mi)^table\s+of\s+contents[ \t]+")
+
+
+def strip_page_noise(text, company_name=""):
+    """Remove pagination furniture (page numbers, Table-of-Contents links,
+    running headers, registrant name lines) from Item 1A text."""
+    text = _INLINE_TOC.sub("", text)
+    # registrant-name-only lines, e.g. "Alphabet Inc." / "DEERE & COMPANY"
+    name_variants = set()
+    if company_name:
+        base = re.sub(r"[,.]", "", company_name).strip()
+        name_variants.add(base.lower())
+        for suffix in (" inc", " corp", " corporation", " company", " co",
+                       " plc", " ltd", " holdings", " & company"):
+            if base.lower().endswith(suffix):
+                name_variants.add(base.lower()[: -len(suffix)].strip())
+    kept = []
+    for line in text.split("\n"):
+        flat = " ".join(line.split())
+        if not flat:
+            kept.append(line)
+            continue
+        if _PAGE_NOISE_LINE.match(flat):
+            continue
+        probe = re.sub(r"[,.]", "", flat).strip().lower()
+        if probe in name_variants:
+            continue
+        kept.append(line)
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(kept))
+
 
 # ---------------------------------------------------------------------------
 # Caching fetch
@@ -352,6 +414,39 @@ def word_count(text):
     return len(_WORD.findall(text))
 
 
+# Which AI keyword actually fired, and whether that is trustworthy.
+#
+# ais.AI_KEYWORD_PATTERN includes `automat\w*`, which is the right call for the
+# sentence-level severity measure (a sentence about automating work is on-topic
+# even without the word "AI") but is a genuine false-positive source at the
+# SUBSECTION level, where one incidental word tags a whole 300-500 word
+# subsection as AI-related. Verified case: AMD's FY2020 Item 1A has exactly one
+# "AI-related" subsection, and the only match in it is
+#
+#     "...subject to automatic extension first to January 26, 2022..."
+#
+# which is about a merger-agreement deadline and has nothing to do with AI.
+# Amazon FY2020, AMD FY2021, and Apple FY2023 are the same story: one match
+# each, all from `automat*`, and all with zero scoreable AI sentences.
+#
+# The pattern itself is NOT changed here. It is the shared definition of
+# "AI-related" across the severity measure and these composition measures, and
+# editing it would silently move every existing published number. Instead the
+# matched terms are recorded per filing so a reader can see which filings rest
+# entirely on `automat*`, and `ai_match_automat_only` flags them outright.
+_AUTOMAT_ONLY = re.compile(r"^automat", re.IGNORECASE)
+
+
+def ai_match_summary(text):
+    """(distinct matched terms joined, True if every match is an `automat*`
+    form). Used to expose keyword false positives, not to filter them."""
+    hits = [m.group(0).lower() for m in ais.AI_KEYWORD_PATTERN.finditer(text)]
+    if not hits:
+        return "", False
+    distinct = sorted(set(hits))
+    return "|".join(distinct), all(_AUTOMAT_ONLY.match(h) for h in hits)
+
+
 def numeric_density(text):
     """Numeric tokens per 100 words (3d, specificity)."""
     w = word_count(text)
@@ -527,9 +622,19 @@ def write_passage_file(rec, ai_subs, all_subs):
                 f"of Item 1A words)\n")
         f.write(f"- **AI sentences (FinBERT-scored subset):** "
                 f"{rec['n_ai_sentences']}\n")
+        f.write(f"- **AI keywords that matched:** "
+                f"`{rec['ai_match_terms'] or 'none'}`\n")
         f.write(f"- **Source:** {rec['url']}\n\n")
         if rec["position_flag"]:
             f.write(f"> **Flag:** {rec['position_flag']}\n\n")
+        if rec["ai_match_automat_only"]:
+            f.write("> **LIKELY FALSE POSITIVE:** every AI keyword match in "
+                    "this filing is an `automat*` form (e.g. \"automatic "
+                    "extension\", \"automatically\"), with no AI/ML/"
+                    "generative-AI term anywhere. Treat this filing as having "
+                    "no real AI risk-factor disclosure. It is kept in the "
+                    "panel rather than deleted so the keyword pattern's "
+                    "false-positive rate stays visible.\n\n")
         f.write("---\n\n")
         if not ai_subs:
             f.write("_No AI-related risk-factor passage found in this "
@@ -572,11 +677,14 @@ PANEL_FIELDS = [
     # 3c -- ordinal position
     "ai_pos_first", "ai_pos_first_norm", "ai_pos_mean_norm",
     "ai_pos_spread_norm", "ai_content_concentrated", "position_flag",
+    # keyword-match provenance (exposes AI_KEYWORD_PATTERN false positives)
+    "ai_match_terms", "ai_match_automat_only",
     # 3d -- specificity and year-over-year recycling
     "specificity_numeric_per_100w", "item1a_specificity_numeric_per_100w",
     "yoy_tfidf_cosine", "yoy_shingle_jaccard", "yoy_prior_year",
     # provenance
-    "heading_method", "n_headings_found", "url",
+    "heading_method", "n_headings_found",
+    "item1a_words_raw", "page_noise_words_removed", "url",
 ]
 
 
@@ -625,7 +733,8 @@ def main():
                           start=1):
         short = fct.TICKER_SHORT.get(f["ticker"], f["ticker"])
         date = f["filing_date"].isoformat()
-        text = f["text"]
+        raw_text = f["text"]
+        text = strip_page_noise(raw_text, f["company"])
         cik, accession, doc = parse_url(f["url"])
         meta = meta_cache.get(cik, {})
 
@@ -677,6 +786,7 @@ def main():
         ai_text = "\n\n".join(b for _, _, b in ai_subs)
         spec = numeric_density(ai_text) if ai_text else None
         spec_all = numeric_density(text)
+        match_terms, automat_only = ai_match_summary(ai_text)
 
         t = tone.get((f["ticker"], date), {})
         period_end = (meta.get("report_dates", {}).get(accession)
@@ -725,6 +835,8 @@ def main():
             "ai_pos_spread_norm": pos_spread,
             "ai_content_concentrated": concentrated,
             "position_flag": flag,
+            "ai_match_terms": match_terms,
+            "ai_match_automat_only": "yes" if automat_only else "",
             "specificity_numeric_per_100w": (round(spec, 3)
                                              if spec is not None else ""),
             "item1a_specificity_numeric_per_100w": (round(spec_all, 3)
@@ -735,6 +847,8 @@ def main():
             "yoy_prior_year": "",
             "heading_method": method,
             "n_headings_found": n_head,
+            "item1a_words_raw": word_count(raw_text),
+            "page_noise_words_removed": word_count(raw_text) - item1a_words,
             "url": f["url"],
         }
         records.append(rec)
@@ -822,6 +936,31 @@ def report_shape(records, degenerate):
             print(f"    {short:<14}{date}  {nh} bold headings, {ns} windows")
 
     print("\n" + "=" * 78)
+    print("KEYWORD-MATCH QUALITY (AI_KEYWORD_PATTERN false positives)")
+    print("=" * 78)
+    fp = [r for r in records if r["ai_match_automat_only"]]
+    has_ai = [r for r in records if r["n_ai_subsections"] > 0]
+    print(f"  filings with >=1 AI-related subsection: {len(has_ai)}")
+    print(f"  of those, filings where EVERY match is an `automat*` form "
+          f"(no AI/ML term at all): {len(fp)}")
+    for r in sorted(fp, key=lambda r: (r["company_short"], r["filing_date"])):
+        print(f"    {r['company_short']:<14}{r['filing_date']}  "
+              f"{r['n_ai_subsections']:>2} AI subs, "
+              f"n_ai_sentences={r['n_ai_sentences']:>3}, "
+              f"matched: {r['ai_match_terms']}")
+    print(f"\n  These are NOT dropped -- they stay in the panel so the")
+    print(f"  false-positive rate is visible. Exclude them with")
+    print(f"  ai_match_automat_only == '' if you want a clean subsample.")
+    term_counter = Counter()
+    for r in records:
+        for t in (r["ai_match_terms"] or "").split("|"):
+            if t:
+                term_counter[t] += 1
+    print(f"\n  Most common matched terms across all filings:")
+    for t, n in term_counter.most_common(12):
+        print(f"    {t:<28}{n:>4} filings")
+
+    print("\n" + "=" * 78)
     print("PER-FIRM COVERAGE")
     print("=" * 78)
     hdr = (f"{'firm':<14}{'rows':>5}{'yrs':>12}{'AI subs>0':>10}"
@@ -845,7 +984,8 @@ def report_shape(records, degenerate):
     print("\n" + "=" * 78)
     print("MEASURE DISTRIBUTIONS (descriptive only -- no tests run)")
     print("=" * 78)
-    numeric_cols = ["item1a_words", "n_subsections", "n_ai_subsections",
+    numeric_cols = ["item1a_words", "page_noise_words_removed",
+                    "n_subsections", "n_ai_subsections",
                     "ai_word_share_subsection", "ai_word_share_sentences",
                     "ai_pos_first_norm", "ai_pos_mean_norm",
                     "specificity_numeric_per_100w",
