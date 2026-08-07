@@ -42,13 +42,25 @@ Two kinds of exclusion, kept strictly distinct
     table-of-contents truncation). Those filings never reach this script.
     A parsing defect is a data problem, never a company characteristic.
 
-Leave-one-out robustness
-------------------------
-NOTE: this check did NOT exist in the earlier AI-core/peripheral run -- it is
-new here and is applied to BOTH groupings so the two are directly
-comparable. It drops one company at a time from whichever group it belongs
-to and re-runs the between-group tests, so a result that hinges entirely on
-one company can't pass unnoticed (a real risk at these group sizes).
+Sensitivity to individual firm removal (NOT "robustness")
+---------------------------------------------------------
+It drops one company at a time from whichever group it belongs to and re-runs
+the between-group tests, so a result that hinges entirely on one company can't
+pass unnoticed (a real risk at these group sizes).
+
+RENAMED from "leave-one-out robustness" after Prof. Schloetzer's critique.
+This check is NOT independent robustness evidence and must not be reported as
+if it were: every fold re-runs the SAME filing-level unclustered test on
+94-98% of the SAME data, so the folds are near-perfectly correlated with each
+other and all inherit the same inflated n. A FRAGILE/SENSITIVE verdict is
+genuinely informative (one firm carries the result); an
+INSENSITIVE verdict is weak positive evidence at best.
+
+The test that actually addresses independence is the FIRM-LEVEL PERMUTATION
+TEST in permutation_test.py, which collapses each firm to one value before
+reshuffling group labels. Its verdict differs sharply from the filing-level
+one here: GROUPING 1 survives (exact p=0.032) while GROUPING 2 (p=0.73) and
+GROUPING 3 (p=0.11) do not. Read that script's output alongside this one.
 
 Reuses significance_tests.py's helpers rather than reimplementing any test.
 Read-only: no CSVs are modified.
@@ -339,12 +351,17 @@ def print_grouping_analysis(title, rows, grouping, unusable,
     print(f"  Welch's t-test:      p={res['t_p']:.4f}  -> {sigt.sig_label(res['t_p'])}")
     print(f"  Mann-Whitney U test: p={res['u_p']:.4f}  -> {sigt.sig_label(res['u_p'])}")
 
-    # Leave-one-out robustness (new -- see module docstring)
+    # Sensitivity to individual firm removal (see module docstring).
+    # DELIBERATELY NOT CALLED "ROBUSTNESS": see LOO_CAVEAT.
     members = sorted((grouping[la] | grouping[lb]) - set(unusable))
     present = {r["company"] for r in rows}
     members = [m for m in members if m in present]
-    print(f"\n  Leave-one-out robustness (drop each company, re-test; "
-          f"{len(members)} companies):")
+    print(f"\n  SENSITIVITY TO INDIVIDUAL FIRM REMOVAL (drop each company, "
+          f"re-test; {len(members)} companies):")
+    print(f"    NOT independent robustness evidence -- every fold re-runs the "
+          f"same\n    filing-level unclustered test on 94-98% of the same "
+          f"data. See\n    permutation_test.py for the firm-level test that "
+          f"does address independence.")
     print(f"    {'dropped':<14}{'Welch p':>12}{'MWU p':>12}{'both still SIG?':>18}")
     print("    " + "-" * 56)
     t_ps, u_ps, all_hold = [], [], True
@@ -364,11 +381,13 @@ def print_grouping_analysis(title, rows, grouping, unusable,
         print(f"\n    Welch p range: {min(t_ps):.4f} - {max(t_ps):.4f}   "
               f"MWU p range: {min(u_ps):.4f} - {max(u_ps):.4f}")
         if all_hold:
-            summary = ("ROBUST: significant on both tests in every "
-                       "leave-one-out fold.")
+            summary = ("INSENSITIVE to single-firm removal: significant on "
+                       "both tests in every fold.\n       (This is weak "
+                       "positive evidence only -- see the caveat above.)")
         else:
-            summary = ("FRAGILE: at least one leave-one-out fold loses "
-                       "significance (see NO rows above).")
+            summary = ("SENSITIVE to single-firm removal: at least one fold "
+                       "loses significance\n       (see NO rows above). This "
+                       "is informative -- one firm carries the result.")
         print(f"    -> {summary}")
 
 
