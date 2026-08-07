@@ -1,7 +1,28 @@
-"""Robustness check on firm_characteristics_test.py's AI-core vs. AI-peripheral
-result: is it a genuine 5-vs-5 group effect, or mostly Oracle and NVIDIA (the
-two companies whose own within-doc distance was individually negative)
-being described as a group effect?
+"""Sensitivity of firm_characteristics_test.py's AI-core vs. AI-peripheral
+result to individual firm removal: is it a genuine 5-vs-5 group effect, or
+mostly Oracle and NVIDIA (the two companies whose own within-doc distance was
+individually negative) being described as a group effect?
+
+NOT INDEPENDENT ROBUSTNESS EVIDENCE -- renamed from "Robustness check" after
+Prof. Schloetzer's critique, and kept consistent with the same relabeling in
+firm_characteristics_test.py. Every fold here re-runs the same FILING-level
+unclustered Welch/Mann-Whitney test on 80-100% of the same data, so the folds
+are near-perfectly correlated with each other and all inherit the same
+inflated n: 118 filings from 25 firms are treated as 118 independent
+observations, when the lag-1 within-firm autocorrelation is +0.66 and the ICC
+is 0.48 (effective n ~= 41). Repeating a biased test does not remove the bias.
+
+The test that DOES address independence is the firm-level permutation test in
+permutation_test.py, which collapses each firm to one value before reshuffling
+group labels. It agrees with this script's verdict for AI centrality (exact
+p = 0.032, and 0.032 again after dropping keyword false positives), and
+disagrees sharply for the other groupings. Read that script's output alongside
+this one.
+
+Also note this script's leave-one-out is deliberately ONE-SIDED: it drops only
+AI-core members and holds the AI-peripheral side fixed, because the question it
+was written to answer is specifically "is this an Oracle/NVIDIA artifact?".
+firm_characteristics_test.py runs the two-sided version over both groups.
 
 Read-only diagnostic: does not modify export/ai_vs_other_risk_factors_results.csv,
 export/ai_sentiment_distance_results.csv, or the AI-core/AI-peripheral group
@@ -30,17 +51,34 @@ METRICS = {}
 
 
 def load_metrics():
-    """Return {'within_doc': rows, 'sentiment_distance': rows}, each row a
+    """Return (within_doc_rows, collapsed_sentiment_distance_rows), each row a
     dict with at least company_short and the metric value, exactly as
-    firm_characteristics_test.py loads them."""
-    within_doc_rows = fct.load_within_doc_rows()
+    firm_characteristics_test.py loads them.
+
+    Note on the three call sites below that changed when
+    firm_characteristics_test.py was extended to hold several grouping
+    variables side by side:
+      - load_within_doc_rows() now returns (rows, unusable, best_n_ai)
+        rather than just rows;
+      - its rows key the company as "company", not "company_short";
+      - group_of() now takes the grouping to look in as a second argument,
+        since AI-centrality is no longer the only scheme.
+    """
+    within_doc_rows, unusable, _ = fct.load_within_doc_rows()
+    # Companies with too little AI language to measure are dropped rather than
+    # zero-filled, matching firm_characteristics_test.py. None of them are in
+    # the AI-core/AI-peripheral groups today, but filtering here keeps the two
+    # scripts from silently diverging if that changes.
+    within_doc_rows = [dict(r, company_short=r["company"])
+                       for r in within_doc_rows
+                       if r["company"] not in unusable]
 
     uncollapsed = sigt.load_usable_rows()
     for r in uncollapsed:
         r["company_short"] = fct.TICKER_SHORT.get(r["ticker"], r["ticker"])
     collapsed = sigc.collapse_by_tenk(uncollapsed)
     for r in collapsed:
-        r["group"] = fct.group_of(r["company_short"])
+        r["group"] = fct.group_of(r["company_short"], fct.AI_CENTRALITY)
 
     return within_doc_rows, collapsed
 
@@ -89,8 +127,8 @@ def print_result(label, res):
 def main():
     within_doc_rows, sd_rows = load_metrics()
 
-    full_core = set(fct.AI_CORE)
-    periph = set(fct.AI_PERIPHERAL)
+    full_core = set(fct.AI_CENTRALITY["AI-core"])
+    periph = set(fct.AI_CENTRALITY["AI-peripheral"])
     reduced_core = full_core - {"Oracle", "NVIDIA"}
 
     print("=" * 88)
@@ -119,8 +157,11 @@ def main():
         ("sentiment_distance (collapsed)", sd_rows, "sentiment_distance"),
     ]:
         print(f"\n-- {metric_label} --")
+        # 27 wide, not 20: "significant / significant" is 25 characters and was
+        # overflowing into the MWU p-value column.
         header = (f"  {'Dropped':<14}{'n core':>8}{'mean core':>12}{'mean diff':>12}"
-                  f"{'Cohen d':>10}{'t-test p':>11}{'MWU p':>9}{'verdict (t / MWU)':>20}")
+                  f"{'Cohen d':>10}{'t-test p':>11}{'MWU p':>9}"
+                  f"{'verdict (t / MWU)':>27}")
         print(header)
         print("  " + "-" * (len(header) - 2))
 
@@ -130,12 +171,12 @@ def main():
             core_vals = values_for(rows, metric_key, kept)
             res = run_test(core_vals, periph_vals)
             if res is None:
-                print(f"  {dropped:<14}{'--':>8}{'--':>12}{'--':>12}{'--':>10}{'--':>11}{'--':>9}{'n/a':>20}")
+                print(f"  {dropped:<14}{'--':>8}{'--':>12}{'--':>12}{'--':>10}{'--':>11}{'--':>9}{'n/a':>27}")
                 continue
             verdict = f"{sigt.sig_label(res['t_p']).split()[0]} / {sigt.sig_label(res['u_p']).split()[0]}"
             print(f"  {dropped:<14}{res['n_core']:>8}{res['mean_core']:>+12.4f}"
                   f"{res['mean_diff']:>+12.4f}{res['d']:>+10.3f}"
-                  f"{res['t_p']:>11.4f}{res['u_p']:>9.4f}{verdict:>20}")
+                  f"{res['t_p']:>11.4f}{res['u_p']:>9.4f}{verdict:>27}")
 
         # also show the full, unreduced 5-company baseline for reference
         core_vals_full = values_for(rows, metric_key, full_core)
@@ -144,7 +185,7 @@ def main():
             verdict = f"{sigt.sig_label(res_full['t_p']).split()[0]} / {sigt.sig_label(res_full['u_p']).split()[0]}"
             print(f"  {'(none, full 5)':<14}{res_full['n_core']:>8}{res_full['mean_core']:>+12.4f}"
                   f"{res_full['mean_diff']:>+12.4f}{res_full['d']:>+10.3f}"
-                  f"{res_full['t_p']:>11.4f}{res_full['u_p']:>9.4f}{verdict:>20}")
+                  f"{res_full['t_p']:>11.4f}{res_full['u_p']:>9.4f}{verdict:>27}")
 
     print("\n" + "=" * 88)
     print("Done. See conversation for the plain-language read on whether this is a")

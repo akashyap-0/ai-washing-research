@@ -26,8 +26,10 @@ This reuses, rather than reimplements, everything already built for the
     directly without modification.
 
 Pipeline:
-  1. Take the 25 10-Ks with a usable Item 1A section (see
-     extract_ai_sentiment.group_tenk_risk_factors).
+  1. Take every 10-K with a usable Item 1A section (see
+     extract_ai_sentiment.group_tenk_risk_factors). Currently 150 filings
+     across 25 companies -- this said "25 10-Ks" back when the sample was
+     4 companies, and the unit is one filing, not one company.
   2. Split each into all qualifying sentences, then split those into an
      AI-related subset and a non-AI ("other") subset via AI_KEYWORD_PATTERN.
   3. FinBERT-score both subsets per document, average to a per-subset net
@@ -36,8 +38,17 @@ Pipeline:
      MIN_AI_SENTENCES (5) sentences.
   4. Write export/ai_vs_other_risk_factors_results.csv.
   5. Test whether within_doc_distance differs from 0, pooled and per
-     company, with both a t-test and Wilcoxon (n=25 total, and even smaller
-     per company, so the nonparametric check matters here).
+     company, with both a t-test and Wilcoxon (n=118 scored filings of the
+     150 -- the other 32 contain no AI sentence at all, so there is no AI
+     tone to difference -- and as few as 1 per company, so the
+     nonparametric check matters here).
+
+     CAVEAT ON THAT POOLED n: these 118 filings come from only 25 firms and
+     are NOT independent (lag-1 within-firm autocorrelation +0.66, ICC 0.48,
+     effective n ~= 41). The pooled t-test/Wilcoxon below treat each filing
+     as independent and are therefore anticonservative. For between-group
+     comparisons use the firm-level permutation test in permutation_test.py,
+     which collapses each firm to one value first.
 
 Run:
     python ai_vs_other_risk_factors.py

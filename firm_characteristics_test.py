@@ -36,11 +36,19 @@ Two kinds of exclusion, kept strictly distinct
     language to measure (no filing reaches MIN_AI_SENTENCES). Detected from
     the data rather than hardcoded. These are dropped from group means
     instead of being zero-filled, since "we can't measure it" is not the
-    same as "the tone is neutral". Verification predicted Apple and Walmart.
-  - KNOWN EXTRACTION BUG: handled upstream in ai_vs_other_risk_factors.py
-    (Accenture's page-header anchoring failure, Deere's 2014-2018
-    table-of-contents truncation). Those filings never reach this script.
-    A parsing defect is a data problem, never a company characteristic.
+    same as "the tone is neutral". Verification predicted Apple and Walmart;
+    only APPLE actually turned out to be unusable. Walmart's Item 1A was
+    being mis-extracted, and once edgar.extract_sections() was fixed its
+    filings carry 2/5/10 AI sentences, so it is measured normally now.
+  - KNOWN EXTRACTION BUG: this category is now EMPTY.
+    ai_vs_other_risk_factors.KNOWN_EXTRACTION_BUG is an empty dict because the
+    underlying defect (Accenture's page-header anchoring failure, Deere's
+    2014-2018 table-of-contents truncation, Walmart's cross-reference
+    mis-anchoring) was fixed in edgar.extract_sections() rather than
+    suppressed. All of those filings DO reach this script now and are scored
+    like any other. The machinery is kept for any future filer whose text is
+    a parsing artifact: a parsing defect is a data problem, never a company
+    characteristic.
 
 Sensitivity to individual firm removal (NOT "robustness")
 ---------------------------------------------------------
@@ -75,6 +83,7 @@ from collections import defaultdict
 import numpy as np
 from scipy import stats
 
+import ai_vs_other_risk_factors as avo
 import config
 import extract_ai_sentiment as ais
 import significance_tests as sigt
@@ -118,11 +127,21 @@ GROUPINGS = [
 # POST-HOC grouping 3: splitting Schloetzer's "AI Infrastructure" group in two
 # ---------------------------------------------------------------------------
 # THIS IS A POST-HOC, DATA-MOTIVATED HYPOTHESIS. It exists only because
-# GROUPING 2 failed leave-one-out in half its folds and inspecting the
+# GROUPING 2 lost significance in 15 of its 18 single-firm-removal folds, and
 # per-company numbers suggested Infrastructure was not behaving as one
 # population. It was NOT specified in advance, so it does not carry the same
-# evidentiary weight as GROUPING 1 (which was pre-specified and is robust),
-# and every printout below repeats that caveat on purpose.
+# evidentiary weight as GROUPING 1 (which was pre-specified and does survive
+# the firm-level permutation test at exact p=0.032), and every printout below
+# repeats that caveat on purpose.
+#
+# HOW THIS SPLIT ACTUALLY FARES, so the filing-level p-values below aren't read
+# alone: at the FIRM level it does NOT reach significance (exact permutation
+# p=0.114, and p=0.200 with Tesla dropped). The effect size stays large
+# (Cohen's d=+1.57) and the mean difference barely moves, so this is
+# UNDERPOWERED rather than refuted -- 4 firms vs. 4 firms admits only 70
+# distinct label assignments, which puts a hard floor of p=0.029 on any
+# two-sided test of it. Treat it as suggestive and needing more firms, not as
+# tested-and-failed. See permutation_test.py.
 #
 # Membership is fixed by business-model logic BEFORE running the test, not by
 # whichever arrangement maximizes significance:
@@ -440,9 +459,19 @@ def main():
     companies = {r["company"] for r in rows}
     print(f"Loaded {len(rows)} scored 10-K filings across {len(companies)} "
           f"companies from {WITHIN_DOC_PATH}.")
-    print("(Filings excluded upstream for a known extraction bug -- Accenture "
-          "all years,\n Deere 2014-2018 -- never reach this script; see "
-          "ai_vs_other_risk_factors.py.)")
+    # Print what is actually true rather than a hardcoded sentence: the
+    # extraction-bug suppression list is empty now that the defect was fixed in
+    # edgar.extract_sections(), so Accenture and Deere 2014-2018 DO reach this
+    # script. Deriving this from the live dict means it can't go stale again.
+    if avo.KNOWN_EXTRACTION_BUG:
+        print(f"(Filings suppressed upstream for a known extraction bug: "
+              f"{', '.join(sorted(avo.KNOWN_EXTRACTION_BUG))} -- see "
+              f"ai_vs_other_risk_factors.py.)")
+    else:
+        print("(No filings are suppressed for extraction bugs: the underlying "
+              "defect was\n fixed in edgar.extract_sections(), so Accenture, "
+              "Deere 2014-2018, and Walmart\n are extracted correctly and "
+              "scored like any other filing.)")
 
     print_per_company(rows, unusable, best_n_ai)
     for title, grouping in GROUPINGS:
