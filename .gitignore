@@ -7,3 +7,6 @@ __pycache__/
 .claude/
 cache/
 output/
+derived/
+models/
+.venv/

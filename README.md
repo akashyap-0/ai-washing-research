@@ -1,5 +1,27 @@
 # AI-Washing Research Scraper
 
+> **Current direction:** the repository is being extended from the original
+> sentiment study into a company-period AI/workforce/productivity measurement
+> pipeline. The authoritative design, label definitions, statistical plan, and
+> reviewer safeguards are in [`RESEARCH_PIPELINE.md`](RESEARCH_PIPELINE.md).
+
+The first executable stage over the existing exports is:
+
+```bash
+python3 build_passage_dataset.py
+```
+
+It writes a matched, section-aware candidate corpus, annotation template, and
+QA report under `derived/`. After genuine adjudicated labels exist, train and
+apply the multi-label classifier with:
+
+```bash
+python3 finbert_multilabel.py train --annotations path/to/adjudicated.csv
+python3 finbert_multilabel.py score
+python3 aggregate_company_period.py
+python3 merge_financial_panel.py --financials path/to/financial_panel.csv
+```
+
 A small, well-scoped data-collection pipeline for the "AI washing in corporate
 layoffs" research project. It pulls raw disclosure text from public sources,
 normalizes it to one schema, groups and deduplicates it into per-category

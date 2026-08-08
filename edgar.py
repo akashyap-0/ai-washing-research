@@ -112,11 +112,11 @@ def recent_filings(cik, forms=None):
     data = get_submissions(cik)
     recent = data.get("filings", {}).get("recent", {})
     company = data.get("name")
-    cols = ["accessionNumber", "filingDate", "form", "primaryDocument",
-            "primaryDocDescription"]
+    cols = ["accessionNumber", "filingDate", "reportDate", "form",
+            "primaryDocument", "primaryDocDescription"]
     want = set(forms) if forms else None
     filings = []
-    for accession, filing_date, form, primary_doc, desc in zip(
+    for accession, filing_date, report_date, form, primary_doc, desc in zip(
             *[recent.get(c, []) for c in cols]):
         if want and form not in want:
             continue
@@ -127,6 +127,7 @@ def recent_filings(cik, forms=None):
             "accession_nodash": accession.replace("-", ""),
             "form": form,
             "filing_date": filing_date,
+            "period_end": report_date or None,
             "primary_doc": primary_doc,
             "description": desc,
             "url": _archive_url(cik, accession, primary_doc),
@@ -285,7 +286,8 @@ _PROSE_WORD = re.compile(r"\b[a-z]{3,}\b")
 _XREF_TAIL = re.compile(r'^(?:[.,;:]?\s*["“”]|[—–])')
 
 
-def extract_sections(text, sections=("Item 1A Risk Factors", "Item 7 MD&A")):
+def extract_sections(text, sections=("Item 1 Business", "Item 1A Risk Factors",
+                                     "Item 7 MD&A", "Item 8 Financial Statements")):
     """Slice the requested 10-K item sections out of plain text.
 
     Returns {section_label: section_text}. A heading can legitimately show up
@@ -354,6 +356,33 @@ def extract_sections(text, sections=("Item 1A Risk Factors", "Item 7 MD&A")):
             out[want] = text[start:next_other_label_after(start, want)].strip()
             break
     return out
+
+
+_EIGHTK_ITEM_HEADING = re.compile(
+    r"^[ \t\xa0]*item\s+(2\.02|2\.05|7\.01|8\.01)\b[^\n]{0,140}",
+    re.IGNORECASE | re.MULTILINE,
+)
+
+
+def extract_8k_items(text, items=("2.02", "2.05", "7.01", "8.01")):
+    """Extract relevant narrative 8-K items from the primary document.
+
+    The 8-K primary document and its EX-99 exhibits are distinct evidence.
+    This captures restructuring and other disclosures that never appear in an
+    earnings exhibit. Candidates without meaningful prose are rejected.
+    """
+    wanted = set(items)
+    matches = list(_EIGHTK_ITEM_HEADING.finditer(text))
+    output = {}
+    for index, match in enumerate(matches):
+        number = match.group(1)
+        if number not in wanted or number in output:
+            continue
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        candidate = text[match.start():end].strip()
+        if len(_PROSE_WORD.findall(candidate)) >= MIN_PROSE_WORDS:
+            output[f"Item {number}"] = candidate
+    return output
 
 
 # --- 8-K exhibits (press releases / prepared remarks) ------------------------

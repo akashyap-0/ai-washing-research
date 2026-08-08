@@ -2,8 +2,10 @@
 
 Target schema (doc_id + retrieved_at are added later by storage.save_document):
     {
-      "company": str, "ticker": str|None, "source_type": str,
-      "filing_date": ISO date str|None, "section": str,
+      "company": str, "ticker": str|None, "cik": str|None,
+      "accession": str|None, "source_type": str,
+      "filing_date": ISO date str|None, "period_end": ISO date str|None,
+      "section": str,
       "url": str, "text": str
     }
 source_type is one of:
@@ -15,13 +17,16 @@ VALID_SOURCE_TYPES = {
 }
 
 
-def _base(company, source_type, url, text, ticker=None, filing_date=None,
-          section=None):
+def _base(company, source_type, url, text, ticker=None, cik=None,
+          accession=None, filing_date=None, period_end=None, section=None):
     return {
         "company": company,
         "ticker": ticker,
+        "cik": cik,
+        "accession": accession,
         "source_type": source_type,
         "filing_date": filing_date,
+        "period_end": period_end,
         "section": section,
         "url": url,
         "text": text,
@@ -34,18 +39,22 @@ def from_edgar_section(company, ticker, filing, section_label, section_text):
     if form not in VALID_SOURCE_TYPES:
         form = "10-K"
     return _base(
-        company=company, ticker=ticker, source_type=form,
+        company=company, ticker=ticker, cik=filing.get("cik"),
+        accession=filing.get("accession"), source_type=form,
         url=filing.get("url"), text=section_text,
-        filing_date=filing.get("filing_date"), section=section_label,
+        filing_date=filing.get("filing_date"), period_end=filing.get("period_end"),
+        section=section_label,
     )
 
 
 def from_edgar_exhibit(company, ticker, filing, exhibit):
     """An 8-K EX-99 press release / prepared-remarks exhibit."""
     return _base(
-        company=company, ticker=ticker, source_type="8-K",
+        company=company, ticker=ticker, cik=filing.get("cik"),
+        accession=filing.get("accession"), source_type="8-K",
         url=exhibit.get("url"), text=exhibit.get("text", ""),
-        filing_date=filing.get("filing_date"), section="prepared_remarks",
+        filing_date=filing.get("filing_date"), period_end=filing.get("period_end"),
+        section="prepared_remarks",
     )
 
 

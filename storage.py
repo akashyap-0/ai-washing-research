@@ -16,8 +16,9 @@ from datetime import datetime, timezone
 
 import config
 
-_EXPORT_FIELDS = ["doc_id", "company", "ticker", "source_type", "filing_date",
-                  "section", "url", "text", "retrieved_at"]
+_EXPORT_FIELDS = ["doc_id", "company", "ticker", "cik", "accession",
+                  "source_type", "filing_date", "period_end", "section", "url",
+                  "text", "retrieved_at"]
 
 
 def make_doc_id(document):
@@ -92,6 +93,15 @@ class Dataset:
         is_new = doc_id not in existing
         if is_new:
             existing[doc_id] = doc
+        else:
+            # Safe schema migration: a newer collector may know metadata that
+            # old exports did not retain (for example CIK, accession, and SEC
+            # report period). Fill only blank fields; never replace source
+            # text, URLs, dates, or already recorded values during dedup.
+            current = existing[doc_id]
+            for key, value in doc.items():
+                if current.get(key) in (None, "") and value not in (None, ""):
+                    current[key] = value
         return doc_id, is_new
 
     def get_all_documents(self):

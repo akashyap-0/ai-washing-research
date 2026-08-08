@@ -47,7 +47,12 @@ def collect_for_company(company_or_ticker, forms, dataset, do_serper=True):
             try:
                 if form in ("10-K", "10-Q"):
                     text = edgar.fetch_filing_text(filing["url"])
-                    for label, sec_text in edgar.extract_sections(text).items():
+                    sections = (("Item 1 Business", "Item 1A Risk Factors",
+                                 "Item 7 MD&A", "Item 8 Financial Statements")
+                                if form == "10-K" else
+                                ("Item 1A Risk Factors",))
+                    for label, sec_text in edgar.extract_sections(
+                            text, sections=sections).items():
                         if not sec_text:
                             continue
                         doc = normalize.from_edgar_section(
@@ -55,6 +60,12 @@ def collect_for_company(company_or_ticker, forms, dataset, do_serper=True):
                         _, is_new = dataset.save_document(doc)
                         saved += int(is_new)
                 elif form == "8-K":
+                    primary_text = edgar.fetch_filing_text(filing["url"])
+                    for label, sec_text in edgar.extract_8k_items(primary_text).items():
+                        doc = normalize.from_edgar_section(
+                            company, ticker, filing, label, sec_text)
+                        _, is_new = dataset.save_document(doc)
+                        saved += int(is_new)
                     for ex in edgar.fetch_8k_exhibits(cik, filing["accession"]):
                         if not ex.get("text"):
                             continue
