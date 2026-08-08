@@ -1,0 +1,5 @@
+﻿comparison,group_a,group_b,n_firms_a,n_firms_b,n_filings_a,n_filings_b,firm_mean_a,firm_mean_b,firm_diff,filing_mean_a,filing_mean_b,filing_diff,filing_welch_p,filing_mwu_p,firm_welch_p,firm_mwu_p,firm_cohens_d,perm_p,perm_exact,perm_n_assignments,perm_n_evaluated,perm_p_design_floor,excluded
+GROUPING 1,AI-core,AI-peripheral,5,5,31,27,0.044,0.3077,-0.2637,-0.026,0.3036,-0.3297,0.0,0.0001,0.0433,0.0317,-1.656,0.0317,True,252,252,0.00794,Apple
+GROUPING 2,AI Infrastructure,AI Power Adopters,8,10,41,40,0.0662,0.1042,-0.038,-0.0082,0.1537,-0.1619,0.0109,0.1225,0.7471,0.8968,-0.164,0.7324,True,43758,43758,4.57e-05,Apple
+GROUPING 3 (POST-HOC),Hyperscaler/Platform,Semiconductor/Hardware,4,4,17,24,0.2425,-0.1101,0.3526,0.2079,-0.1613,0.3691,0.0,0.0005,0.0945,0.2,1.572,0.1143,True,70,70,0.0286,Apple
+"GROUPING 3-S (POST-HOC, SENSITIVITY)",Hyperscaler/Platform,Semiconductor/Hardware,4,3,17,16,0.2425,-0.0416,0.2841,0.2079,-0.0842,0.292,0.0022,0.0052,0.2654,0.4,1.282,0.2,True,35,35,0.0571,Apple; Tesla
