@@ -337,3 +337,169 @@ does not scrape full paywalled earnings-call transcripts from providers such as
 Motley Fool or Seeking Alpha. Optional Serper integration stores only search
 URLs and short search-result snippets. Earnings-release and prepared-remarks
 text should come from public SEC 8-K exhibits whenever possible.
+
+
+
+New Pipeline:
+
+1. COMPANY UNIVERSE
+   25 approved tickers
+   Same companies and reporting periods
+        ↓
+2. SEC EDGAR COLLECTION
+   10-K:
+   • Item 1 Business
+   • Item 1A Risk Factors
+   • Item 7 MD&A
+   • Item 8 Financial Notes
+
+   8-K:
+   • Items 2.02, 2.05, 7.01, 8.01
+   • EX-99 earnings releases
+   • Prepared remarks
+        ↓
+3. DOCUMENT NORMALIZATION
+   • Remove HTML artifacts
+   • Remove page headers and page numbers
+   • Preserve sections, numbers, and source metadata
+   • Store CIK, ticker, accession, dates, section, and URL
+        ↓
+4. MATCH COMPANY PERIODS
+   • Match each 8-K to its covering 10-K period
+   • Exclude unmatched periods
+   • Apply the same rules to every ticker
+        ↓
+5. PASSAGE CONSTRUCTION
+   • Split text within section boundaries
+   • Keep passages between 20 and 220 words
+   • Generate stable passage IDs
+   • Record source and retrieval reason
+        ↓
+6. CANDIDATE FILTERING
+   Retain passages related to:
+   • AI and machine learning
+   • Automation
+   • Employees and workforce
+   • Layoffs and restructuring
+   • Productivity and efficiency
+        ↓
+7. HUMAN ANNOTATION
+   Multi-label categories:
+   • AI opportunity
+   • AI risk
+   • AI efficiency
+   • AI workforce reduction
+   • AI adoption
+   • Worker augmentation
+   • Generic AI marketing
+   • Explicit AI and job-loss connection
+   • Neutral when no substantive label applies
+
+   Additional attributes:
+   • Realized, ongoing, planned, or hypothetical
+   • Quantified, specific, or vague
+   • Explicit, implied, or co-occurring causal link
+        ↓
+8. ANNOTATION REVIEW
+   • Two independent coders for evaluation data
+   • Resolve disagreements
+   • Mark final rows as adjudicated
+   • Measure coder agreement
+        ↓
+9. FINBERT TRAINING
+   • Multi-label classifier
+   • Split data by company
+   • Select thresholds using validation companies
+   • Test on completely held-out companies
+   • Report precision, recall, F1, and average precision
+        ↓
+10. SCORE EVERY PASSAGE
+    Output one probability and binary prediction per label
+        ↓
+11. AGGREGATE BY COMPANY, PERIOD, AND FORM
+    For each 8-K and 10-K calculate:
+    • Mean label probability
+    • Positive passage share
+    • Positive word share
+    • Number of positive passages
+    • Eligible passage and word counts
+        ↓
+12. CALCULATE FRAMING GAPS
+    For each label:
+
+    framing gap = 8-K score minus 10-K score
+
+    Separate gaps for:
+    • Opportunity
+    • Risk
+    • Efficiency
+    • Workforce reduction
+        ↓
+13. BUILD COMPOSITION MEASURES
+    • AI share of Item 1A
+    • Position of AI risk factors
+    • Quantitative specificity
+    • Year-to-year text similarity
+    • Recycled boilerplate
+    • New versus repeated AI language
+        ↓
+14. MERGE FINANCIAL DATA
+    • Revenue
+    • Profit
+    • Operating margin
+    • Employee count
+    • Employee growth
+    • Revenue per employee
+    • Operating expenses
+    • Labor costs when available
+    • Layoffs
+    • Restructuring charges
+    • Assets, R&D, and capital intensity
+        ↓
+15. BUILD COMPANY-YEAR PANEL
+    One row per company and fiscal year
+        ↓
+16. PRIMARY STATISTICAL TESTS
+    Test whether text scores and framing gaps predict:
+    • Next-year employee growth
+    • Next-year layoffs
+    • Next-year restructuring
+    • Next-year revenue per employee
+    • Next-year margins and expenses
+
+    Include:
+    • Firm fixed effects
+    • Industry-by-year fixed effects
+    • Firm-clustered standard errors
+    • Financial controls
+        ↓
+17. INFRASTRUCTURE VS. ADOPTER TEST
+    Test whether the relationship differs by firm role:
+
+    AI score × infrastructure indicator
+
+    Do not rely on an unadjusted comparison of group averages
+        ↓
+18. ROBUSTNESS TESTS
+    • Alternative score definitions
+    • Minimum evidence thresholds
+    • Keyword false-positive exclusion
+    • Recycled-text exclusion
+    • Leave-one-firm-out sensitivity
+    • Firm-level permutation tests
+    • Threshold sensitivity
+    • Exclude semiconductor firms
+    • Exclude mega-cap technology firms
+    • Multiple-testing correction
+        ↓
+19. PLACEBO TESTS
+    • Future text predicting past outcomes
+    • Generic AI marketing versus substantive adoption
+    • AI adoption without workforce language
+    • Non-AI filing length predicting outcomes
+        ↓
+20. FINAL OUTPUT
+    Test the AI cover-story hypothesis:
+
+    Do companies that promote AI more heavily in 8-Ks than in 10-Ks
+    subsequently experience worse workforce or financial outcomes? 
