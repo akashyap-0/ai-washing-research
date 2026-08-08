@@ -1,168 +1,339 @@
-# AI-Washing Research Scraper
+# AI, Workforce, and Corporate Framing Research Pipeline
 
-> **Current direction:** the repository is being extended from the original
-> sentiment study into a company-period AI/workforce/productivity measurement
-> pipeline. The authoritative design, label definitions, statistical plan, and
-> reviewer safeguards are in [`RESEARCH_PIPELINE.md`](RESEARCH_PIPELINE.md).
+This repository builds a reproducible company-period dataset for studying how
+public companies describe AI adoption, productivity, and workforce effects in
+SEC filings--and whether those disclosures are associated with later changes
+in employment and financial performance.
 
-The first executable stage over the existing exports is:
+The central comparison is a matched 8-K/10-K framing gap. The same versioned
+classifier and aggregation formula are applied to every ticker:
+
+```text
+filing data
+    -> matched company-periods
+    -> normalized, section-aware passages
+    -> human annotation
+    -> multi-label FinBERT classifier
+    -> company-period 8-K and 10-K scores
+    -> 8-K minus 10-K framing gaps
+    -> financial panel
+    -> fixed-effect and robustness tests
+```
+
+The complete definitions, hypotheses, annotation rules, model design,
+statistical specifications, and reviewer safeguards are in
+[`RESEARCH_PIPELINE.md`](RESEARCH_PIPELINE.md). Existing study results and
+their caveats are documented in [`RESULTS_PACKET.md`](RESULTS_PACKET.md).
+
+## Research questions
+
+The pipeline is designed to test whether:
+
+- disclosed AI adoption predicts subsequent employee or productivity changes;
+- explicit AI work-replacement language predicts layoffs, headcount reduction,
+  or restructuring;
+- firms describe AI more opportunistically in 8-K earnings materials than in
+  their legally exposed 10-K disclosures;
+- a larger 8-K/10-K framing gap predicts later workforce or financial outcomes;
+- those relationships differ between AI-infrastructure suppliers and AI
+  adopters.
+
+This is an observational design. Results should be described as associations,
+predictions, or temporal patterns unless a separate causal identification
+strategy is added.
+
+## Current filing coverage
+
+The collector uses public SEC EDGAR endpoints directly. It supports:
+
+| Form | Material collected |
+|---|---|
+| 10-K | Item 1 Business, Item 1A Risk Factors, Item 7 MD&A, Item 8 Financial Statements and Notes |
+| 8-K | Items 2.02, 2.05, 7.01, and 8.01, plus relevant EX-99 earnings and prepared-remarks exhibits |
+| 10-Q | Item 1A Risk Factors; retained for the legacy workflow but not part of the primary matched design |
+
+New EDGAR collection runs retain ticker, CIK, accession number, filing date,
+SEC report-period end, form, section, source URL, and retrieval time. Existing
+rows can be enriched with newly available metadata without replacing their
+original text.
+
+The current checked-in exports mainly reflect the earlier Item 1A, Item 7, and
+EX-99 collection. Rerun collection to populate the expanded section coverage.
+
+## Primary passage labels
+
+Labels are multi-label because one passage may describe both productivity and
+workforce reduction:
+
+- `ai_opportunity`
+- `ai_risk`
+- `ai_efficiency`
+- `ai_workforce_reduction`
+- `ai_adoption`
+- `ai_worker_augmentation`
+- `generic_ai_marketing`
+- `explicit_ai_job_link`
+
+`neutral` is derived only when every substantive label is false. Annotations
+also record actuality, specificity, and causal-link strength. Merely mentioning
+AI and layoffs in the same passage does not qualify as an explicit AI/job link.
+
+The versioned schema is defined in [`label_schema.py`](label_schema.py).
+
+## Statistical measurement
+
+For company `i`, reporting period `t`, and label `k`, the primary form score is
+the mean classifier probability across eligible passages:
+
+```text
+form_score(i,t,k) = mean P(label k | passage j)
+```
+
+The directional framing gap is:
+
+```text
+framing_gap(i,t,k) = 8-K score(i,t,k) - 10-K score(i,t,k)
+```
+
+Opportunity, risk, efficiency, and workforce-reduction gaps remain separate;
+the pipeline does not hide them inside an arbitrary composite index. Supporting
+measures include positive-passage share, positive-word share, evidence count,
+and eligible text volume.
+
+Financial associations are estimated using firm and time controls, normally:
+
+```text
+outcome(i,t+1) = beta * text_measure(i,t)
+               + controls(i,t)
+               + firm fixed effects
+               + industry-by-year fixed effects
+               + error(i,t)
+```
+
+Standard errors are clustered by firm. Infrastructure/adopter status is used
+as an interaction with the changing text measure, not as an unadjusted group
+comparison.
+
+## Setup
+
+Python 3.10 or newer is recommended.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+SEC requests require a descriptive user agent containing a real contact email:
+
+```bash
+export SEC_USER_AGENT="Your Name research your-email@example.com"
+```
+
+Optional configuration:
+
+```bash
+export EXPORT_DIR="./export"
+export SERPER_API_KEY="your-key"                 # optional URL/snippet lookup
+export GDRIVE_CREDENTIALS_PATH="credentials.json" # optional Drive upload
+export GDRIVE_TOKEN_PATH="token.json"
+```
+
+Secrets, OAuth tokens, generated datasets, and trained models are ignored by
+Git.
+
+## Quick start
+
+### 1. Download or refresh SEC data
+
+From the repository root:
+
+```bash
+source .venv/bin/activate
+export SEC_USER_AGENT="Your Name research your-email@example.com"
+
+python3 main.py \
+  --companies IBM,ORCL,DELL,CRM,MSFT,AMD,NVDA,VZ,AXP,UNH,GOOGL,AMZN,AAPL,META,TSLA,AVGO,ACN,WMT,JPM,LLY,DE,SPGI,INTU,NOW,UBER \
+  --forms 10-K,8-K \
+  --no-serper \
+  --no-drive-upload
+```
+
+The collector deduplicates by source type, company, URL, and section. A rerun
+adds new documents and fills blank metadata without overwriting existing text.
+
+### 2. Build the matched passage corpus
 
 ```bash
 python3 build_passage_dataset.py
 ```
 
-It writes a matched, section-aware candidate corpus, annotation template, and
-QA report under `derived/`. After genuine adjudicated labels exist, train and
-apply the multi-label classifier with:
+This command:
+
+- applies the predeclared ticker universe;
+- excludes unapproved exploratory Palantir data;
+- matches 8-Ks to 10-K reporting windows;
+- keeps the same company-period universe;
+- normalizes text and creates 20-220-word section-bounded passages;
+- retrieves broad AI, automation, workforce, restructuring, and productivity
+  candidates;
+- writes an annotation sample and QA report.
+
+Generated outputs:
+
+```text
+derived/clean_passages.csv
+derived/annotation_template.csv
+derived/passage_qa.json
+```
+
+The current build from checked-in exports contains 9,581 candidate passages,
+23 companies, and 128 matched reporting windows. Regenerating after a fresh
+EDGAR pull may change those counts.
+
+### 3. Annotate and validate passages
+
+Fill the label fields in a copy of `derived/annotation_template.csv`. Training
+requires adjudicated labels from at least five companies.
 
 ```bash
-python3 finbert_multilabel.py train --annotations path/to/adjudicated.csv
-python3 finbert_multilabel.py score
-python3 aggregate_company_period.py
-python3 merge_financial_panel.py --financials path/to/financial_panel.csv
+python3 finbert_multilabel.py validate \
+  --annotations path/to/adjudicated_annotations.csv
 ```
 
-A small, well-scoped data-collection pipeline for the "AI washing in corporate
-layoffs" research project. It pulls raw disclosure text from public sources,
-normalizes it to one schema, groups and deduplicates it into per-category
-CSV/JSON files, and uploads that human-readable dataset to Google Drive.
+The validator rejects blank labels, inconsistent `neutral` values, duplicate
+passage IDs, and unadjudicated rows. The existing LLM-generated legacy labels
+are not treated as human validation.
 
-This is a research tool for a methods appendix, not a production system. Keep it
-simple and be able to explain every step.
+### 4. Fine-tune and evaluate FinBERT
 
-## What it collects
-
-| Source | What | Legitimacy |
-|---|---|---|
-| SEC EDGAR 10-K / 10-Q | Item 1A Risk Factors, Item 7 MD&A (section text) | Fully public; SEC encourages programmatic access with a User-Agent |
-| SEC EDGAR 8-K | EX-99 press-release / prepared-remarks exhibits | Fully public |
-| Challenger, Gray & Christmas | Monthly job-cuts blog posts (AI-attribution stats) | The firm's own public blog |
-| Earnings-call transcripts | **URLs + short Google snippets only**, via Serper | See the copyright note below |
-
-## Copyright / Terms-of-Service boundary (read this)
-
-Full earnings-call transcripts on **Motley Fool / Seeking Alpha** are paywalled
-and ToS-protected. This pipeline **does not** scrape their full text, and you
-should not extend it to do so — that's a copyright/ToS problem, not just a
-technical one.
-
-- `sources/serper_search.py` retrieves only the **URL and the short snippet**
-  Google already shows, so you can open and read each source **manually**.
-- For automatable, fully-public earnings-call-adjacent text, use the **8-K
-  EX-99 exhibits** on EDGAR (companies often file prepared remarks / the
-  earnings press release there). `edgar.py` already does this.
-
-SEC EDGAR and Challenger's own public blog are fair game. Anything behind a
-paywall is limited to what a normal person could read and copy by hand.
-
-## Setup (runs locally or in Colab — no database required)
-
-1. **Install dependencies:**
-   ```
-   pip install -r requirements.txt
-   ```
-2. **Get a Serper key (optional):** sign up at <https://serper.dev> (~2,500
-   free queries on signup) and copy your API key. Only used for transcript
-   URL lookups.
-3. **Create a Google Drive OAuth client (one-time, in Google Cloud Console):**
-   - Create/select a project, enable the **Google Drive API**.
-   - Under "Credentials", create an OAuth client ID of type **Desktop app**.
-   - Download its JSON and save it as `credentials.json` next to `main.py`
-     (or point `GDRIVE_CREDENTIALS_PATH` at wherever you put it).
-   - The first time `main.py` runs, it opens a browser — sign in as
-     **advikkashyap1@gmail.com** or **ecfarmer12@gmail.com** and grant
-     access. The script creates/reuses a folder named **"Georgetown
-     Research"** in that account's Drive and uploads the dataset there. A
-     refresh token is cached at `token.json` so later runs don't need the
-     browser again.
-4. **Set environment variables:**
-   ```
-   set SEC_USER_AGENT=Your Name research your@email.com   REM required by SEC
-   set SERPER_API_KEY=your-serper-key                     REM optional
-   set EXPORT_DIR=./export                                REM local staging dir before upload
-   ```
-   (PowerShell: `$env:SEC_USER_AGENT = "..."`, etc.)
-   > `SEC_USER_AGENT` must contain a real name + email. SEC blocks anonymous
-   > requests.
-
-## Running it
-
-```
-python main.py --companies IBM,DELL,SAP --forms 10-K,8-K
-
-# add 10-Qs and the Challenger job-cuts reports; skip Serper
-python main.py --companies IBM,DELL --forms 10-K,10-Q,8-K --challenger --no-serper
-
-# just refresh the Challenger reports (first 3 listing pages)
-python main.py --companies "" --challenger --challenger-pages 3
-
-# stage files locally without touching Drive
-python main.py --companies IBM --no-drive-upload
+```bash
+python3 finbert_multilabel.py train \
+  --annotations path/to/adjudicated_annotations.csv \
+  --output-dir models/finbert-ai-workforce-v1
 ```
 
-Output: documents are grouped by `source_type` and deduped by re-reading
-whatever's already in `$EXPORT_DIR` — the `source_type + company + url +
-section` hash prevents duplicate rows across runs. Each group gets its own
-pair of files:
+Training replaces FinBERT's original sentiment head with a sigmoid multi-label
+classifier. Data are split by company to reduce leakage from repeated filing
+boilerplate. The model directory records:
 
-```
-$EXPORT_DIR/ai_washing_10-K.csv / .json
-$EXPORT_DIR/ai_washing_10-Q.csv / .json
-$EXPORT_DIR/ai_washing_8-K.csv / .json
-$EXPORT_DIR/ai_washing_challenger_report.csv / .json
-$EXPORT_DIR/ai_washing_earnings_call_snippet.csv / .json
-```
+- train, validation, and held-out companies;
+- random seed and base model;
+- validation-selected threshold for each label;
+- held-out precision, recall, F1, and average precision;
+- label-schema version and training history.
 
-After export, all files in `$EXPORT_DIR` are uploaded (created or updated by
-name) into the **"Georgetown Research"** Drive folder, unless
-`--no-drive-upload` is passed.
+### 5. Score every passage
 
-## Data schema
-
-Every stored document:
-```json
-{
-  "doc_id": "auto hash",
-  "company": "IBM",
-  "ticker": "IBM",
-  "source_type": "10-K | 10-Q | 8-K | challenger_report | earnings_call_snippet",
-  "filing_date": "2026-02-01",
-  "section": "Item 1A Risk Factors | Item 7 MD&A | prepared_remarks | job_cuts_report | search_snippet",
-  "url": "https://...",
-  "text": "the pulled text",
-  "retrieved_at": "auto ISO datetime"
-}
+```bash
+python3 finbert_multilabel.py score \
+  --passages derived/clean_passages.csv \
+  --model-dir models/finbert-ai-workforce-v1 \
+  --output derived/passage_predictions.csv
 ```
 
-## Project layout
+### 6. Aggregate company-period scores and framing gaps
 
-```
-gtown_research/
-├── config.py              # env vars + endpoint constants + validate()
-├── storage.py             # file-based dedup + grouped CSV/JSON export
-├── gdrive.py               # OAuth + upload export dir to Drive
-├── normalize.py           # raw text -> schema
-├── main.py                # orchestration + CLI
-├── requirements.txt
-├── edgar.py               # full-text search, submissions, section extract, 8-K exhibits
-├── challenger.py          # public job-cuts blog scraper
-└── serper_search.py       # transcript URL/snippet lookup (no paywall scraping)
+```bash
+python3 aggregate_company_period.py \
+  --predictions derived/passage_predictions.csv \
+  --output derived/company_period_text_scores.csv
 ```
 
-## Things to verify when you first run it (they can't be tested offline)
+### 7. Merge structured financial data
 
-- **EDGAR full-text search response shape.** If `edgar.full_text_search`
-  returns nothing on a query you can see working in the EDGAR web UI, print the
-  raw JSON and adjust the `hits.hits` parsing.
-- **10-K section extraction is heuristic.** `edgar.extract_sections` slices by
-  Item-heading regexes and uses the *last* heading occurrence to skip the table
-  of contents. Spot-check the extracted Item 1A / Item 7 text on a couple of
-  real filings; some filers use layouts that need the patterns tweaked.
-- **Challenger blog selectors.** `challenger.list_reports` guesses common blog
-  markup. If the listing comes back empty, inspect the live page and adjust the
-  `.select(...)` calls.
+The expected fields are shown in
+[`schemas/financial_panel_template.csv`](schemas/financial_panel_template.csv).
+Company-role classification fields are shown in
+[`schemas/company_role_template.csv`](schemas/company_role_template.csv).
 
-## Future additions (not built yet)
+The current merge requires a unique `period_id`. It deliberately refuses to
+guess a fiscal year from a 10-K filing year.
 
-- **WARN Act filings** — state-level public layoff notices; a legitimate,
-  public source worth adding later.
+```bash
+python3 merge_financial_panel.py \
+  --text-scores derived/company_period_text_scores.csv \
+  --financials path/to/financial_panel.csv \
+  --output derived/analysis_panel.csv
+```
+
+### 8. Run panel experiments
+
+Example:
+
+```bash
+python3 run_panel_experiments.py \
+  --panel derived/analysis_panel.csv \
+  --outcomes next_employee_growth,next_revenue_per_employee_growth \
+  --predictors gap_ai_opportunity_mean_probability,gap_ai_workforce_reduction_mean_probability \
+  --controls log_total_assets,revenue_growth,profitability,rd_intensity,capital_intensity
+```
+
+The experiment runner produces Pearson and Spearman diagnostics, year fixed
+effects, firm/year fixed effects, industry-by-year specifications when
+available, infrastructure-role interactions, firm-clustered standard errors,
+and Benjamini-Hochberg-adjusted p-values.
+
+## Tests
+
+Run the local test suite with:
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 -m compileall -q . -x '/\.git/'
+```
+
+Tests cover passage matching and chunking, label consistency, sample-universe
+protection, safe metadata enrichment, aggregation, framing-gap direction,
+financial merge validation, multiple-testing correction, and fixed-effect
+experiment execution.
+
+## Repository layout
+
+```text
+RESEARCH_PIPELINE.md           full research and statistical specification
+RESULTS_PACKET.md              legacy/current results with methodological caveats
+main.py                        SEC/source collection orchestration
+edgar.py                       SEC submissions, filings, sections, and exhibits
+normalize.py                   normalized document schema
+storage.py                     deduplication and CSV/JSON export
+build_passage_dataset.py       matched filtering, normalization, chunking, and QA
+label_schema.py                versioned multi-label annotation schema
+finbert_multilabel.py          validation, training, evaluation, and scoring
+aggregate_company_period.py    form scores and 8-K/10-K framing gaps
+merge_financial_panel.py       strict text/financial company-period merge
+run_panel_experiments.py       panel, interaction, and multiple-testing analysis
+schemas/                       financial and company-role input templates
+tests/                         pipeline regression tests
+export/                        checked-in source and legacy result datasets
+derived/                       generated passages, predictions, and panels (ignored)
+models/                        trained model artifacts (ignored)
+```
+
+## Current limitations
+
+- `edgar.recent_filings()` currently reads the SEC submissions `filings.recent`
+  arrays but does not yet follow older `filings.files` archives. Complete long
+  historical coverage requires that pagination step.
+- Filing section boundaries are heuristic because SEC HTML varies by filer and
+  year. Extraction quality must be manually audited on a stratified sample.
+- Human Capital is currently contained within Item 1 rather than reliably
+  separated as its own subsection.
+- The collector exports normalized text but does not yet preserve an immutable
+  local copy of every original HTML file and retrieval manifest.
+- The checked-in annotation labels are single-pass LLM labels, not independent
+  human validation. The new classifier must use adjudicated annotations.
+- Labor cost and employee definitions are inconsistent across issuers.
+- Disclosure measures what firms say, not necessarily what they do.
+- Revenue per employee is affected by pricing, acquisitions, divestitures,
+  outsourcing, and product mix; it is not direct physical productivity.
+- RAG and vector search may support retrieval and audits, but they are not used
+  to generate the quantitative outcome panel.
+
+## Copyright and access boundaries
+
+SEC filings and Challenger's public reports are public sources. The repository
+does not scrape full paywalled earnings-call transcripts from providers such as
+Motley Fool or Seeking Alpha. Optional Serper integration stores only search
+URLs and short search-result snippets. Earnings-release and prepared-remarks
+text should come from public SEC 8-K exhibits whenever possible.
