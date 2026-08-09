@@ -212,9 +212,14 @@ def group_of(company, grouping):
 
 
 def load_within_doc_rows():
-    """Return (rows, unusable_companies). A company is 'unusable' when none
-    of its filings reach MIN_AI_SENTENCES AI sentences -- too little AI
-    language to measure, so it's reported but kept out of group means."""
+    """Return (rows, unusable_companies, best_n_ai). A company is 'unusable'
+    when none of its filings reach MIN_AI_SENTENCES AI sentences -- too little
+    AI language to measure, so it's reported but kept out of group means.
+    best_n_ai maps company -> the largest AI-sentence count in any one of its
+    filings, so callers can print why a company was ruled unusable.
+
+    Callers must unpack all three values; firm_characteristics_robustness.py
+    and this module's own main() both do."""
     with open(WITHIN_DOC_PATH, newline="", encoding="utf-8-sig") as f:
         raw = list(csv.DictReader(f))
 
