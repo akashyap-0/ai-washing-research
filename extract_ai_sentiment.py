@@ -143,6 +143,69 @@ AI_KEYWORD_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+# ---------------------------------------------------------------------------
+# `automat*`-only exclusion (extraction-time, not a post-hoc flag)
+# ---------------------------------------------------------------------------
+# `automat\w*` above is deliberately broad: a sentence about automating work is
+# on-topic for this paper even when it never says "AI". But an `automat*` form
+# is ALSO ordinary contract and operations boilerplate, and on its own it is not
+# evidence of AI content. Verified false positives, each the sole keyword match
+# in its unit of text:
+#
+#     AMD FY2020      "...subject to automatic extension first to January 26,
+#                      2022..."           (a merger-agreement deadline)
+#     Amazon FY2020, AMD FY2021, Apple FY2023 -- same story, one match each.
+#
+# So the rule applied everywhere downstream is: text counts as AI-related only
+# if at least one matched term is NOT an `automat*` form. An `automat*` hit
+# still counts when a real AI/ML/generative-AI term co-occurs in the SAME unit
+# of text -- the same sentence for the sentence-level severity measure, the same
+# subsection for the composition measures -- which is what `is_ai_related` below
+# enforces by taking the unit of text as its argument.
+#
+# This is an exclusion at extraction time, not a downstream filter. A sentence
+# whose only match is `automat*` is simply not an AI sentence: it falls into the
+# non-AI ("other") subset like any other non-AI risk sentence, and a filing left
+# with fewer than MIN_AI_SENTENCES real AI sentences drops out of the scored
+# sample by the existing threshold, exactly as a filing with no AI content
+# already does. Nothing new is needed to handle it.
+#
+# Supersedes the earlier approach, where the pattern was left alone and
+# risk_factor_composition.py merely recorded an `ai_match_automat_only` column
+# for sensitivity_unflagged_filings.py's "UNFLAGGED+" sample to drop after the
+# fact. That dropped whole filings rather than fixing the match; this fixes the
+# match. `ai_match_automat_only` is retained as a verification column and should
+# now be empty for every scored filing by construction.
+_AUTOMAT_ONLY = re.compile(r"^automat", re.IGNORECASE)
+
+
+def ai_keyword_hits(text):
+    """Every AI_KEYWORD_PATTERN match in `text`, lowercased, in order."""
+    if not text:
+        return []
+    return [m.group(0).lower() for m in AI_KEYWORD_PATTERN.finditer(text)]
+
+
+def is_ai_related(text):
+    """True if `text` contains at least one AI keyword that is not merely an
+    `automat*` form. Pass the unit of text the co-occurrence should be judged
+    within: a single sentence for sentence-level measures, a whole subsection
+    for subsection-level ones.
+
+    Scans lazily and stops at the first qualifying hit rather than calling
+    ai_keyword_hits(), which would materialize every match. That matters
+    because spotcheck_excluded_sentences.get_all_bounded_sentences reuses
+    extract_ai_sentences() by temporarily swapping AI_KEYWORD_PATTERN for a
+    match-anything `.` pattern -- under which an eager finditer yields one
+    match per CHARACTER of every sentence in every filing. Short-circuiting
+    keeps that path O(1) per sentence, as it was when this was a bare
+    .search() call. Same verdict either way; only the work differs.
+    """
+    if not text:
+        return False
+    return any(not _AUTOMAT_ONLY.match(m.group(0).lower())
+               for m in AI_KEYWORD_PATTERN.finditer(text))
+
 OUTPUT_FIELDS = [
     "company", "ticker", "fiscal_year",
     "n_ai_sentences_8k", "ai_sentiment_8k",
@@ -211,7 +274,7 @@ def extract_ai_sentences(text):
         n_words = len(sentence.split())
         if n_words < es.MIN_WORDS or n_words > es.MAX_WORDS:
             continue
-        if not AI_KEYWORD_PATTERN.search(sentence):
+        if not is_ai_related(sentence):
             continue
         if sentence in seen:
             continue

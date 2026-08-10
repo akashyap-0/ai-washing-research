@@ -10,7 +10,7 @@ Salesforce as the latter, but flagged that as speculation, not a finding.
 This reuses, rather than reimplements, everything already built for the
 8-K/10-K comparison:
   - extract_ai_sentiment.py's Item 1A extraction/validation
-    (group_tenk_risk_factors), its AI_KEYWORD_PATTERN (so AI/non-AI
+    (group_tenk_risk_factors), its is_ai_related predicate (so AI/non-AI
     classification here can't drift out of sync with the AI-sentence
     extraction already done), its per-sentence FinBERT scorer
     (score_sentences), and its MIN_AI_SENTENCES low-confidence threshold.
@@ -31,7 +31,8 @@ Pipeline:
      across 25 companies -- this said "25 10-Ks" back when the sample was
      4 companies, and the unit is one filing, not one company.
   2. Split each into all qualifying sentences, then split those into an
-     AI-related subset and a non-AI ("other") subset via AI_KEYWORD_PATTERN.
+     AI-related subset and a non-AI ("other") subset via ais.is_ai_related
+     (AI_KEYWORD_PATTERN minus the `automat*`-only false positives).
   3. FinBERT-score both subsets per document, average to a per-subset net
      tone, and take ai_tone minus other_tone as the within-document
      distance. Flag any document where either subset has fewer than
@@ -132,11 +133,17 @@ OUTPUT_FIELDS = [
 
 def classify_sentences(text):
     """Return (ai_sentences, other_sentences): every bounds-passing sentence
-    in `text`, split by whether AI_KEYWORD_PATTERN matches it."""
+    in `text`, split by whether it is AI-related.
+
+    "AI-related" is ais.is_ai_related, not a bare AI_KEYWORD_PATTERN match: a
+    sentence whose only keyword hit is an `automat*` form ("automatic
+    extension", "automatically") is not AI content and lands in the non-AI
+    subset like any other non-AI risk sentence. See the exclusion note in
+    extract_ai_sentiment.py."""
     all_sentences = spot.get_all_bounded_sentences(text)
     ai_sentences, other_sentences = [], []
     for sentence in all_sentences:
-        if ais.AI_KEYWORD_PATTERN.search(sentence):
+        if ais.is_ai_related(sentence):
             ai_sentences.append(sentence)
         else:
             other_sentences.append(sentence)

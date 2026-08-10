@@ -135,6 +135,51 @@ def recent_filings(cik, forms=None):
     return filings
 
 
+def all_filings(cik, forms=None):
+    """Every filing EDGAR holds for `cik`, not just the most recent ones.
+
+    submissions/CIK##########.json only inlines a company's latest ~1000
+    filings under `filings.recent`; anything older is paged out into the extra
+    JSON shards listed in `filings.files`. recent_filings() reads only the
+    inline block, which silently truncates history for high-volume filers --
+    fine for "pull this year's 10-K", wrong for "how far back does EDGAR go?".
+    This walks the shards too and returns the filings in the same dict shape.
+    """
+    data = get_submissions(cik)
+    company = data.get("name")
+    want = set(forms) if forms else None
+    cols = ["accessionNumber", "filingDate", "reportDate", "form",
+            "primaryDocument", "primaryDocDescription"]
+
+    blocks = [data.get("filings", {}).get("recent", {})]
+    for shard in data.get("filings", {}).get("files", []):
+        name = shard.get("name")
+        if not name:
+            continue
+        blocks.append(_get(f"https://data.sec.gov/submissions/{name}").json())
+
+    filings = []
+    for block in blocks:
+        for accession, filing_date, report_date, form, primary_doc, desc in zip(
+                *[block.get(c, []) for c in cols]):
+            if want and form not in want:
+                continue
+            filings.append({
+                "company": company,
+                "cik": str(int(cik)),
+                "accession": accession,
+                "accession_nodash": accession.replace("-", ""),
+                "form": form,
+                "filing_date": filing_date,
+                "period_end": report_date or None,
+                "primary_doc": primary_doc,
+                "description": desc,
+                "url": _archive_url(cik, accession, primary_doc),
+            })
+    filings.sort(key=lambda f: f["filing_date"])
+    return filings
+
+
 # --- Ticker -> CIK resolution ------------------------------------------------
 
 _TICKER_CACHE = None

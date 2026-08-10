@@ -378,7 +378,7 @@ def subsections_from_sentence_windows(text):
     side, merged when the windows overlap."""
     import nltk
     sents = nltk.sent_tokenize(text)
-    hits = [i for i, s in enumerate(sents) if ais.AI_KEYWORD_PATTERN.search(s)]
+    hits = [i for i, s in enumerate(sents) if ais.is_ai_related(s)]
     if not hits:
         return []
     spans = []
@@ -414,37 +414,45 @@ def word_count(text):
     return len(_WORD.findall(text))
 
 
-# Which AI keyword actually fired, and whether that is trustworthy.
+# Which AI keyword actually fired -- now a VERIFICATION column, not a filter.
 #
-# ais.AI_KEYWORD_PATTERN includes `automat\w*`, which is the right call for the
-# sentence-level severity measure (a sentence about automating work is on-topic
-# even without the word "AI") but is a genuine false-positive source at the
-# SUBSECTION level, where one incidental word tags a whole 300-500 word
-# subsection as AI-related. Verified case: AMD's FY2020 Item 1A has exactly one
-# "AI-related" subsection, and the only match in it is
+# `automat*`-only matches used to be a live false-positive source here: one
+# incidental "automatic extension" tagged a whole 300-500 word subsection as
+# AI-related (AMD FY2020, Amazon FY2020, AMD FY2021, Apple FY2023 were each a
+# single such match with zero scoreable AI sentences). They were recorded and
+# flagged, then dropped downstream by sensitivity_unflagged_filings.py's
+# "UNFLAGGED+" sample.
 #
-#     "...subject to automatic extension first to January 26, 2022..."
+# That is no longer how it works. ais.is_ai_related now excludes `automat*`-only
+# text at extraction time, and every "is this AI-related?" decision in this
+# module goes through it -- so subsections and sentences resting entirely on
+# `automat*` never enter ai_subs or ai_text in the first place. See the
+# exclusion note in extract_ai_sentiment.py for the rule and its rationale.
 #
-# which is about a merger-agreement deadline and has nothing to do with AI.
-# Amazon FY2020, AMD FY2021, and Apple FY2023 are the same story: one match
-# each, all from `automat*`, and all with zero scoreable AI sentences.
-#
-# The pattern itself is NOT changed here. It is the shared definition of
-# "AI-related" across the severity measure and these composition measures, and
-# editing it would silently move every existing published number. Instead the
-# matched terms are recorded per filing so a reader can see which filings rest
-# entirely on `automat*`, and `ai_match_automat_only` flags them outright.
+# ai_match_summary is kept because the provenance is still worth publishing, and
+# because `ai_match_automat_only` is now a self-check: it should be empty for
+# EVERY row. A "yes" means is_ai_related and this function have diverged, and
+# check_automat_only_excluded() below fails the run loudly rather than letting a
+# false positive back into the panel unnoticed.
 _AUTOMAT_ONLY = re.compile(r"^automat", re.IGNORECASE)
 
 
 def ai_match_summary(text):
     """(distinct matched terms joined, True if every match is an `automat*`
-    form). Used to expose keyword false positives, not to filter them."""
-    hits = [m.group(0).lower() for m in ais.AI_KEYWORD_PATTERN.finditer(text)]
+    form). The second value is now expected to be False for all scored text;
+    see check_automat_only_excluded."""
+    hits = ais.ai_keyword_hits(text)
     if not hits:
         return "", False
     distinct = sorted(set(hits))
     return "|".join(distinct), all(_AUTOMAT_ONLY.match(h) for h in hits)
+
+
+def check_automat_only_excluded(records):
+    """Post-condition on the extraction-time `automat*` exclusion: no scored
+    filing may still rest entirely on `automat*` matches. Returns the offending
+    rows (empty when the exclusion is working)."""
+    return [r for r in records if r["ai_match_automat_only"]]
 
 
 def numeric_density(text):
@@ -628,13 +636,13 @@ def write_passage_file(rec, ai_subs, all_subs):
         if rec["position_flag"]:
             f.write(f"> **Flag:** {rec['position_flag']}\n\n")
         if rec["ai_match_automat_only"]:
-            f.write("> **LIKELY FALSE POSITIVE:** every AI keyword match in "
-                    "this filing is an `automat*` form (e.g. \"automatic "
-                    "extension\", \"automatically\"), with no AI/ML/"
-                    "generative-AI term anywhere. Treat this filing as having "
-                    "no real AI risk-factor disclosure. It is kept in the "
-                    "panel rather than deleted so the keyword pattern's "
-                    "false-positive rate stays visible.\n\n")
+            f.write("> **BUG -- THIS SHOULD NOT APPEAR:** every AI keyword "
+                    "match in this filing is an `automat*` form (e.g. "
+                    "\"automatic extension\", \"automatically\"), with no "
+                    "AI/ML/generative-AI term anywhere. `ais.is_ai_related` is "
+                    "supposed to exclude such text at extraction time, so this "
+                    "passage should never have been built. Do not treat this "
+                    "filing as AI disclosure; report the divergence.\n\n")
         f.write("---\n\n")
         if not ai_subs:
             f.write("_No AI-related risk-factor passage found in this "
@@ -749,7 +757,7 @@ def main():
         n_subs = len(subs)
 
         ai_subs = [(idx + 1, h, b) for idx, (h, b) in enumerate(subs)
-                   if ais.AI_KEYWORD_PATTERN.search(b)]
+                   if ais.is_ai_related(b)]
 
         # --- 3b: word share ----------------------------------------------
         item1a_words = word_count(text)
@@ -936,21 +944,32 @@ def report_shape(records, degenerate):
             print(f"    {short:<14}{date}  {nh} bold headings, {ns} windows")
 
     print("\n" + "=" * 78)
-    print("KEYWORD-MATCH QUALITY (AI_KEYWORD_PATTERN false positives)")
+    print("KEYWORD-MATCH QUALITY (`automat*`-only exclusion self-check)")
     print("=" * 78)
-    fp = [r for r in records if r["ai_match_automat_only"]]
+    fp = check_automat_only_excluded(records)
     has_ai = [r for r in records if r["n_ai_subsections"] > 0]
     print(f"  filings with >=1 AI-related subsection: {len(has_ai)}")
     print(f"  of those, filings where EVERY match is an `automat*` form "
           f"(no AI/ML term at all): {len(fp)}")
-    for r in sorted(fp, key=lambda r: (r["company_short"], r["filing_date"])):
-        print(f"    {r['company_short']:<14}{r['filing_date']}  "
-              f"{r['n_ai_subsections']:>2} AI subs, "
-              f"n_ai_sentences={r['n_ai_sentences']:>3}, "
-              f"matched: {r['ai_match_terms']}")
-    print(f"\n  These are NOT dropped -- they stay in the panel so the")
-    print(f"  false-positive rate is visible. Exclude them with")
-    print(f"  ai_match_automat_only == '' if you want a clean subsample.")
+    if fp:
+        print("\n  *** POST-CONDITION FAILED ***")
+        print("  ais.is_ai_related is supposed to exclude these at extraction")
+        print("  time, so this list must be empty. A non-empty list means the")
+        print("  exclusion and ai_match_summary have diverged -- investigate")
+        print("  before using this panel.")
+        for r in sorted(fp, key=lambda r: (r["company_short"], r["filing_date"])):
+            print(f"    {r['company_short']:<14}{r['filing_date']}  "
+                  f"{r['n_ai_subsections']:>2} AI subs, "
+                  f"n_ai_sentences={r['n_ai_sentences']:>3}, "
+                  f"matched: {r['ai_match_terms']}")
+    else:
+        print("\n  OK: no scored filing rests entirely on `automat*` matches.")
+        print("  These are now excluded at extraction time by ais.is_ai_related,")
+        print("  not flagged and dropped downstream. A filing left with fewer")
+        print(f"  than {ais.MIN_AI_SENTENCES} real AI sentences falls out of the "
+              f"scored sample by")
+        print("  the existing minimum-evidence threshold, like any filing with")
+        print("  no AI content.")
     term_counter = Counter()
     for r in records:
         for t in (r["ai_match_terms"] or "").split("|"):

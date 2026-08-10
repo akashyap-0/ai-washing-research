@@ -75,9 +75,20 @@ FOCUS = ["Oracle", "IBM", "Tesla", "Broadcom", "Deere", "UnitedHealth", "Amex"]
 
 def load_rows():
     """Scored within-doc rows, each tagged with its flag and whether Phase 3
-    judged its AI keyword matches to be `automat*`-only."""
+    judged its AI keyword matches to be `automat*`-only.
+
+    Returns (rows, have_panel). have_panel says whether the Phase-3 panel was
+    readable at all -- NOT whether it contained any `automat*`-only filings.
+    Those are two different reasons for UNFLAGGED+ to equal UNFLAGGED, and
+    since ais.is_ai_related started excluding `automat*`-only text at
+    extraction time, the second is the expected case: the column is empty by
+    construction, so UNFLAGGED+ is now a no-op rather than a missing sample.
+    Conflating the two printed a bogus "the panel was unavailable" warning on
+    a perfectly good run.
+    """
     automat_only = set()
-    if os.path.exists(PANEL_PATH):
+    have_panel = os.path.exists(PANEL_PATH)
+    if have_panel:
         with open(PANEL_PATH, newline="", encoding="utf-8-sig") as f:
             for r in csv.DictReader(f):
                 if r["ai_match_automat_only"] == "yes":
@@ -101,7 +112,7 @@ def load_rows():
                 "flag": r["flag"],
                 "automat_only": key in automat_only,
             })
-    return rows, bool(automat_only)
+    return rows, have_panel
 
 
 def samples(rows):
@@ -235,9 +246,16 @@ def main():
     for label, rs in named:
         n_firms = len({r["company"] for r in rs})
         print(f"  {label:<52}{len(rs):>4} filings, {n_firms:>2} firms")
+    n_automat = sum(1 for r in rows if r["automat_only"])
     if not have_panel:
-        print("\n  [note] UNFLAGGED+ equals UNFLAGGED because the Phase-3 panel "
-              "was unavailable.")
+        print("\n  [warn] UNFLAGGED+ equals UNFLAGGED because the Phase-3 panel "
+              "was unavailable. Run risk_factor_composition.py first.")
+    elif not n_automat:
+        print("\n  [note] UNFLAGGED+ equals UNFLAGGED, as expected: "
+              "ais.is_ai_related now excludes `automat*`-only text at "
+              "extraction time, so no scored filing rests on a keyword false "
+              "positive and there is nothing left for this sample to drop. "
+              "UNFLAGGED+ is retained as a standing check, not a live filter.")
 
     dropped = defaultdict(lambda: [0, 0])
     for r in rows:
