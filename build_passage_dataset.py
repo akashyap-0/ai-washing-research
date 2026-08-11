@@ -11,6 +11,15 @@ Outputs (default: derived/):
   clean_passages.csv       one row per auditable passage
   annotation_template.csv  deterministic stratified sample for human coding
   passage_qa.json          counts, exclusions, and coverage checks
+  excluded_numeric_passages.csv        numeric-density exclusions, with numfrac
+  excluded_segment_name_passages.csv   known-false-positive-phrase exclusions
+
+Two extraction-time exclusions run here, both following the pattern established by
+`extract_ai_sentiment.is_ai_related` / `risk_factor_composition.check_automat_only_excluded`:
+the text never becomes a candidate in the first place, the exclusion is written to
+its own auditable CSV rather than silently dropped, and a post-condition self-check
+fails the run loudly if an excluded case reaches the retained set. See
+MAX_NUMERIC_TOKEN_FRACTION and KNOWN_SEGMENT_NAME_FALSE_POSITIVES.
 """
 
 import argparse
@@ -27,7 +36,10 @@ from datetime import datetime, timedelta
 import config
 import label_schema
 
-PIPELINE_VERSION = "1.0.0"
+# 1.1.0 adds the two extraction-time exclusions (numeric density, known
+# segment-name false positives). Bumped because the version is stamped on every
+# retained row: a 1.0.0 row and a 1.1.0 row are not from the same candidate set.
+PIPELINE_VERSION = "1.1.0"
 MIN_WORDS = 60
 HARD_MIN_WORDS = 20
 TARGET_WORDS = 160
@@ -49,6 +61,14 @@ PASSAGE_FIELDS = (
     "source_doc_id", "source_url", "word_count", "retrieval_reasons",
     "content_sha256", "text", "pipeline_version",
 )
+
+# The exclusion files carry the retained schema plus what the exclusion decided
+# on, so an excluded row can be read, re-scored, and reinstated by hand without
+# re-running the pipeline. `retrieval_reasons` on these rows is the UNMASKED
+# reason set -- why the passage was retrieved at all -- and for segment-name
+# exclusions `removed_reasons` says which of those the phrase list withdrew.
+EXCLUDED_NUMERIC_FIELDS = PASSAGE_FIELDS + ("numeric_token_fraction",)
+EXCLUDED_SEGMENT_FIELDS = EXCLUDED_NUMERIC_FIELDS + ("removed_reasons",)
 
 AI_PATTERN = re.compile(
     r"\b(?:AI|artificial intelligence|generative AI|genAI|machine learning|"
@@ -77,6 +97,76 @@ PAGE_NOISE = re.compile(
     r"(?im)^\s*(?:table of contents|page\s+\d+|\d{1,3})\s*$"
 )
 SENTENCE_BOUNDARY = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9(\[])")
+
+# ---------------------------------------------------------------------------
+# Exclusion 1: numeric-density (GAAP reconciliation tables)
+# ---------------------------------------------------------------------------
+# The first real run of this script produced 9,581 candidates, of which 528
+# (5.5%) were financial tables rather than prose -- 486 of those 528 were 8-K
+# `prepared_remarks` exhibits, concentrated in Oracle (177), Broadcom (84),
+# IBM (70), Microsoft (63). They are retrieved because WORKFORCE_PATTERN fires
+# on "employee severance" / "restructuring charges" appearing as line items in
+# a GAAP-to-non-GAAP reconciliation (438 of the 528), not because the filing
+# makes any workforce claim. An annotator would otherwise see a GAAP table
+# roughly 1 passage in 18.
+#
+# _NUMERIC_TOKEN_ONLY is the diagnostic heuristic that measured the problem,
+# promoted here unchanged so the filter and the measurement agree by
+# construction. It matches a whitespace-split token that is entirely numeric
+# once currency/sign/parenthesis/percent decoration is stripped, which is what
+# a table cell looks like after the HTML structure is gone.
+_NUMERIC_TOKEN_ONLY = re.compile(r"^[\$\(\)\-\+]*[\d,\.]+%?[\)\s]*$")
+
+# > 0.25 excludes. At this threshold the retained tail is ordinary prose that
+# happens to quote figures ("revenue was $41.5 billion, an increase of ten
+# percent"); above it the text is a table.
+MAX_NUMERIC_TOKEN_FRACTION = 0.25
+
+# ---------------------------------------------------------------------------
+# Exclusion 2: reporting-segment names that collide with keyword patterns
+# ---------------------------------------------------------------------------
+# Microsoft's reporting segment is literally named "Productivity and Business
+# Processes", so PRODUCTIVITY_PATTERN fires on a segment label in every
+# quarterly earnings-release table. On the first run, 147 of Microsoft's 250
+# productivity-flagged passages (59%) contained that segment name and made no
+# productivity claim at all.
+#
+# This is a verified-phrase list, deliberately NOT a general heuristic: the
+# phrase is masked before PRODUCTIVITY_PATTERN is evaluated, so it cannot be
+# the reason a passage is retrieved. A passage keeps `productivity` if a real
+# productivity term appears elsewhere in it.
+#
+# NOT EXHAUSTIVE. Other filers in this universe may have segment or product
+# names that collide with these patterns the same way -- none has been verified
+# yet, so none is listed. Add an entry only after confirming the collision in
+# actual filing text; do not guess at segment names, and do not generalize this
+# into a pattern that would silently drop real claims.
+KNOWN_SEGMENT_NAME_FALSE_POSITIVES = (
+    "Productivity and Business Processes",   # Microsoft reporting segment
+)
+
+_SEGMENT_NAME_MASK = re.compile(
+    "|".join(re.escape(phrase) for phrase in KNOWN_SEGMENT_NAME_FALSE_POSITIVES),
+    re.IGNORECASE,
+)
+
+
+def numeric_token_fraction(text):
+    """Fraction of whitespace-split tokens that are numeric-only.
+
+    0.0 for empty text so a caller can compare against a threshold without
+    special-casing.
+    """
+    tokens = (text or "").split()
+    if not tokens:
+        return 0.0
+    numeric = sum(1 for t in tokens if _NUMERIC_TOKEN_ONLY.match(t))
+    return numeric / len(tokens)
+
+
+def mask_segment_names(text):
+    """Blank out known false-positive segment names before keyword matching."""
+    return _SEGMENT_NAME_MASK.sub(" ", text or "")
 
 
 def raise_csv_limit():
@@ -153,15 +243,52 @@ def chunk_text(text, min_words=MIN_WORDS, target_words=TARGET_WORDS,
     return chunks
 
 
-def retrieval_reasons(text):
+def retrieval_reasons(text, mask_known_false_positives=True):
+    """Why this text is a candidate.
+
+    With mask_known_false_positives (the default, and what the pipeline uses),
+    KNOWN_SEGMENT_NAME_FALSE_POSITIVES are blanked out before the productivity
+    pattern is evaluated, so a reporting-segment name cannot be a retrieval
+    reason. Pass False to get the unmasked reasons, which is how the exclusion
+    is measured and audited -- a passage whose only unmasked reason disappears
+    under masking is a segment-name false positive.
+    """
+    productivity_text = (mask_segment_names(text) if mask_known_false_positives
+                         else text)
     reasons = []
     if AI_PATTERN.search(text):
         reasons.append("ai")
     if WORKFORCE_PATTERN.search(text):
         reasons.append("workforce")
-    if PRODUCTIVITY_PATTERN.search(text):
+    if PRODUCTIVITY_PATTERN.search(productivity_text):
         reasons.append("productivity")
     return reasons
+
+
+# ---------------------------------------------------------------------------
+# Post-condition self-checks on the two extraction-time exclusions
+# ---------------------------------------------------------------------------
+# Same contract as risk_factor_composition.check_automat_only_excluded: these
+# must return empty on every run. A non-empty return means the filter and the
+# retained set have diverged, and main() fails the run loudly rather than
+# letting an excluded case back into the annotation candidates unnoticed.
+
+def check_numeric_dense_excluded(passages):
+    """No retained passage may exceed the numeric-density threshold."""
+    return [p for p in passages
+            if numeric_token_fraction(p["text"]) > MAX_NUMERIC_TOKEN_FRACTION]
+
+
+def check_segment_name_false_positives_excluded(passages):
+    """No retained passage may carry `productivity` solely because of a known
+    false-positive segment name."""
+    offenders = []
+    for p in passages:
+        if "productivity" not in p["retrieval_reasons"].split(";"):
+            continue
+        if not PRODUCTIVITY_PATTERN.search(mask_segment_names(p["text"])):
+            offenders.append(p)
+    return offenders
 
 
 def parse_date(value):
@@ -227,6 +354,23 @@ def build_passages(tenk_rows, eightk_rows, allowed_tickers=APPROVED_TICKERS,
         "candidate_passages_by_form": Counter(),
         "candidate_passages_by_reason": Counter(),
         "candidate_passages_by_ticker": Counter(),
+        # Extraction-time exclusions. A chunk can be caught by both filters, so
+        # the per-filter counts overlap by design and `caught_by_both` reports
+        # the intersection rather than the counts being made disjoint.
+        "exclusions": {
+            "numeric_density_threshold": MAX_NUMERIC_TOKEN_FRACTION,
+            "numeric_density": 0,
+            "numeric_density_by_form": Counter(),
+            "numeric_density_by_section": Counter(),
+            "numeric_density_by_reason": Counter(),
+            "numeric_density_by_ticker": Counter(),
+            "segment_name_false_positive": 0,
+            "segment_name_by_form": Counter(),
+            "segment_name_by_section": Counter(),
+            "segment_name_by_ticker": Counter(),
+            "caught_by_both": 0,
+            "productivity_reason_stripped_passage_retained": 0,
+        },
     }
 
     source_rows = []
@@ -264,16 +408,32 @@ def build_passages(tenk_rows, eightk_rows, allowed_tickers=APPROVED_TICKERS,
         qa["source_rows_excluded_without_matched_8k_period"] = before - len(source_rows)
 
     passages = []
+    excluded_numeric = []
+    excluded_segment_name = []
     seen_content = set()
     per_source_index = defaultdict(int)
+    ex = qa["exclusions"]
     for row in source_rows:
         source_key = (row.get("doc_id", ""), row.get("section", ""))
         for chunk in chunk_text(row.get("text", "")):
             if len(chunk.split()) < HARD_MIN_WORDS:
                 continue
-            reasons = retrieval_reasons(chunk)
-            if not reasons:
+            raw_reasons = retrieval_reasons(chunk,
+                                            mask_known_false_positives=False)
+            if not raw_reasons:
+                # Never a candidate under any configuration: no keyword family
+                # matched at all. Not an exclusion, so not traced.
                 continue
+            reasons = retrieval_reasons(chunk)
+            numfrac = numeric_token_fraction(chunk)
+
+            # Dedup and index assignment run BEFORE the exclusion decision, in
+            # the same order as they did before these filters existed, so a
+            # retained passage keeps the passage_index -- and therefore the
+            # passage_id -- it had under pipeline 1.0.0. An excluded passage
+            # consumes its index too, so the retained sequence has a gap
+            # exactly where an exclusion happened, and the excluded row records
+            # its real position in the source document.
             content_hash = hashlib.sha256(chunk.encode("utf-8")).hexdigest()
             duplicate_key = (row["period_id"], row.get("source_type", ""),
                              row.get("section", ""), content_hash)
@@ -282,15 +442,69 @@ def build_passages(tenk_rows, eightk_rows, allowed_tickers=APPROVED_TICKERS,
             seen_content.add(duplicate_key)
             index = per_source_index[source_key]
             per_source_index[source_key] += 1
+
+            form = row.get("source_type", "")
+            section = row.get("section", "")
+            ticker = row.get("ticker", "").upper()
+
+            # Evaluate both filters independently so the overlap is reportable.
+            numeric_excluded = numfrac > MAX_NUMERIC_TOKEN_FRACTION
+            segment_excluded = not reasons
+
+            if numeric_excluded or segment_excluded:
+                record = {
+                    "passage_id": stable_passage_id(row, index, chunk),
+                    "ticker": ticker,
+                    "company": row.get("company", ""),
+                    "form": form,
+                    "filing_date": row.get("filing_date", ""),
+                    "anchor_10k_filing_date": row["anchor_10k_filing_date"],
+                    "period_id": row["period_id"],
+                    "section": section,
+                    "passage_index": index,
+                    "source_doc_id": row.get("doc_id", ""),
+                    "source_url": row.get("url", ""),
+                    "word_count": len(chunk.split()),
+                    "retrieval_reasons": ";".join(raw_reasons),
+                    "content_sha256": content_hash,
+                    "text": chunk,
+                    "pipeline_version": PIPELINE_VERSION,
+                    "numeric_token_fraction": round(numfrac, 4),
+                }
+                if numeric_excluded:
+                    ex["numeric_density"] += 1
+                    ex["numeric_density_by_form"][form] += 1
+                    ex["numeric_density_by_section"][section] += 1
+                    ex["numeric_density_by_reason"][";".join(raw_reasons)] += 1
+                    ex["numeric_density_by_ticker"][ticker] += 1
+                    excluded_numeric.append(record)
+                if segment_excluded:
+                    ex["segment_name_false_positive"] += 1
+                    ex["segment_name_by_form"][form] += 1
+                    ex["segment_name_by_section"][section] += 1
+                    ex["segment_name_by_ticker"][ticker] += 1
+                    excluded_segment_name.append(dict(
+                        record, removed_reasons=";".join(
+                            r for r in raw_reasons if r not in reasons)))
+                if numeric_excluded and segment_excluded:
+                    ex["caught_by_both"] += 1
+                continue
+
+            if "productivity" in raw_reasons and "productivity" not in reasons:
+                # Retained on another reason, but the segment name no longer
+                # counts toward why. Worth counting: it is the same false
+                # positive, just not decisive for this passage.
+                ex["productivity_reason_stripped_passage_retained"] += 1
+
             passage = {
                 "passage_id": stable_passage_id(row, index, chunk),
-                "ticker": row.get("ticker", "").upper(),
+                "ticker": ticker,
                 "company": row.get("company", ""),
-                "form": row.get("source_type", ""),
+                "form": form,
                 "filing_date": row.get("filing_date", ""),
                 "anchor_10k_filing_date": row["anchor_10k_filing_date"],
                 "period_id": row["period_id"],
-                "section": row.get("section", ""),
+                "section": section,
                 "passage_index": index,
                 "source_doc_id": row.get("doc_id", ""),
                 "source_url": row.get("url", ""),
@@ -313,7 +527,20 @@ def build_passages(tenk_rows, eightk_rows, allowed_tickers=APPROVED_TICKERS,
     qa["candidate_passages"] = len(passages)
     qa["matched_periods"] = len({p["period_id"] for p in passages})
     qa["passage_id_unique"] = len({p["passage_id"] for p in passages}) == len(passages)
-    return passages, qa
+    ex["candidates_before_exclusions"] = (
+        len(passages) + len(excluded_numeric)
+        + len(excluded_segment_name) - ex["caught_by_both"])
+    ex["excluded_total"] = (len(excluded_numeric) + len(excluded_segment_name)
+                            - ex["caught_by_both"])
+    # Post-conditions: both must be empty. Reported here and enforced in main().
+    ex["postcondition_numeric_dense_retained"] = len(
+        check_numeric_dense_excluded(passages))
+    ex["postcondition_segment_name_retained"] = len(
+        check_segment_name_false_positives_excluded(passages))
+    for key in ("numeric_density_by_reason",):
+        # deterministic ordering for the JSON report
+        ex[key] = Counter(dict(ex[key].most_common()))
+    return passages, qa, excluded_numeric, excluded_segment_name
 
 
 def write_csv(path, rows, fields):
@@ -394,14 +621,20 @@ def main(argv=None):
     eightk_rows = load_csv(args.eightk_path)
     allowed = ({ticker.strip().upper() for ticker in args.companies.split(",")
                 if ticker.strip()} if args.companies else None)
-    passages, qa = build_passages(
+    passages, qa, excluded_numeric, excluded_segment = build_passages(
         tenk_rows, eightk_rows, allowed,
         require_matched_period=not args.allow_unmatched_10k_periods)
 
     passage_path = os.path.join(args.output_dir, "clean_passages.csv")
     annotation_path = os.path.join(args.output_dir, "annotation_template.csv")
     qa_path = os.path.join(args.output_dir, "passage_qa.json")
+    numeric_path = os.path.join(args.output_dir,
+                                "excluded_numeric_passages.csv")
+    segment_path = os.path.join(args.output_dir,
+                                "excluded_segment_name_passages.csv")
     write_csv(passage_path, passages, PASSAGE_FIELDS)
+    write_csv(numeric_path, excluded_numeric, EXCLUDED_NUMERIC_FIELDS)
+    write_csv(segment_path, excluded_segment, EXCLUDED_SEGMENT_FIELDS)
     sample = annotation_sample(passages, args.annotation_sample, args.seed)
     write_csv(annotation_path, sample, PASSAGE_FIELDS + label_schema.ANNOTATION_FIELDS[1:])
     with open(qa_path, "w", encoding="utf-8") as handle:
@@ -410,6 +643,46 @@ def main(argv=None):
     print(f"Wrote {len(passages):,} passages to {passage_path}")
     print(f"Wrote {len(sample):,} annotation rows to {annotation_path}")
     print(f"Wrote QA report to {qa_path}")
+
+    ex = qa["exclusions"]
+    before = ex["candidates_before_exclusions"]
+    print(f"\nEXTRACTION-TIME EXCLUSIONS "
+          f"({before:,} candidates before -> {len(passages):,} retained)")
+    print(f"  numeric density > {MAX_NUMERIC_TOKEN_FRACTION:g}: "
+          f"{ex['numeric_density']:,} "
+          f"({100.0 * ex['numeric_density'] / max(before, 1):.1f}%) "
+          f"-> {numeric_path}")
+    for label, key in (("by form", "numeric_density_by_form"),
+                       ("by section", "numeric_density_by_section")):
+        print(f"      {label}: {dict(ex[key].most_common())}")
+    print(f"  known segment-name false positive: "
+          f"{ex['segment_name_false_positive']:,} "
+          f"({100.0 * ex['segment_name_false_positive'] / max(before, 1):.1f}%) "
+          f"-> {segment_path}")
+    for label, key in (("by form", "segment_name_by_form"),
+                       ("by ticker", "segment_name_by_ticker")):
+        print(f"      {label}: {dict(ex[key].most_common())}")
+    print(f"  caught by BOTH filters: {ex['caught_by_both']:,}")
+    print(f"  retained but `productivity` reason stripped: "
+          f"{ex['productivity_reason_stripped_passage_retained']:,}")
+
+    fp_numeric = check_numeric_dense_excluded(passages)
+    fp_segment = check_segment_name_false_positives_excluded(passages)
+    if fp_numeric or fp_segment:
+        print("\n  *** POST-CONDITION FAILED ***")
+        print("  These exclusions are supposed to happen at extraction time, so")
+        print("  both lists must be empty. A non-empty list means a filter and")
+        print("  the retained set have diverged -- investigate before annotating.")
+        for p in fp_numeric[:10]:
+            print(f"    numeric-dense retained: {p['ticker']} "
+                  f"{p['filing_date']} {p['passage_id']} "
+                  f"numfrac={numeric_token_fraction(p['text']):.3f}")
+        for p in fp_segment[:10]:
+            print(f"    segment-name retained:  {p['ticker']} "
+                  f"{p['filing_date']} {p['passage_id']}")
+        raise SystemExit(1)
+    print("\n  post-condition OK: 0 numeric-dense and 0 segment-name-only "
+          "passages in the retained set.")
 
 
 if __name__ == "__main__":
