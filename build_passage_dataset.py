@@ -578,6 +578,8 @@ def annotation_sample(passages, size, seed):
             annotation[label] = ""
         annotation.update({
             "neutral": "",
+            "risk_type": "",
+            "risk_type_secondary": "",
             "actuality": "",
             "specificity": "",
             "causal_link_strength": "",

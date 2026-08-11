@@ -38,7 +38,8 @@ class PassagePipelineTests(unittest.TestCase):
 
     def test_annotation_neutral_is_derived(self):
         row = {label: "0" for label in label_schema.MODEL_LABELS}
-        row.update({"neutral": "1", "actuality": "unclear",
+        row.update({"neutral": "1", "risk_type": "not_a_risk",
+                    "actuality": "unclear",
                     "specificity": "unclear", "causal_link_strength": "none",
                     "review_status": "adjudicated"})
         self.assertEqual(label_schema.validate_annotation(row), [])
