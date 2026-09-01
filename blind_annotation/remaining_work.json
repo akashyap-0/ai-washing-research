@@ -1,0 +1,451 @@
+[
+ {
+  "id": "379de83062cb3255038b413e",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "competition",
+   "risk_type_secondary": "implementation",
+   "actuality": "hypothetical",
+   "specificity": "vague",
+   "causal_link_strength": "co_occurring_only",
+   "evidence": "the effect of competitive products (including those incorporating generative artificial intelligence (\"AI\")) and pricing"
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "competition",
+   "risk_type_secondary": "implementation",
+   "actuality": "hypothetical",
+   "specificity": "vague",
+   "causal_link_strength": "none",
+   "evidence": "the effect of competitive products (including those incorporating generative artificial intelligence (\"AI\")) and pricing"
+  },
+  "disputes": [
+   "causal_link_strength"
+  ]
+ },
+ {
+  "id": "49f36e76eb1ab8e153aa85ee",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "implementation",
+   "risk_type_secondary": "governance",
+   "actuality": "hypothetical",
+   "specificity": "specific_unquantified",
+   "causal_link_strength": "none",
+   "evidence": "if we fail to effectively maintain or protect the integrity of our data and information systems, including systems powered by or incorporating artificial intelligence"
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "implementation",
+   "risk_type_secondary": "governance",
+   "actuality": "hypothetical",
+   "specificity": "vague",
+   "causal_link_strength": "none",
+   "evidence": "if we fail to effectively maintain or protect the integrity of our data and information systems, including systems powered by or incorporating artificial intelligence"
+  },
+  "disputes": [
+   "specificity"
+  ]
+ },
+ {
+  "id": "62cd7bb8b3b830c786735da5",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "planned",
+   "specificity": "quantified",
+   "causal_link_strength": "none",
+   "evidence": ""
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "unclear",
+   "specificity": "unclear",
+   "causal_link_strength": "none",
+   "evidence": ""
+  },
+  "disputes": [
+   "actuality",
+   "specificity"
+  ]
+ },
+ {
+  "id": "649d2c0aefafa9d178540c53",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "implementation",
+   "risk_type_secondary": "demand",
+   "actuality": "ongoing",
+   "specificity": "specific_unquantified",
+   "causal_link_strength": "none",
+   "evidence": "industry supply capacity for AI accelerators, including graphics processing units, is competitive, and we at times have to accept less favorable terms"
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "demand",
+   "risk_type_secondary": "implementation",
+   "actuality": "ongoing",
+   "specificity": "specific_unquantified",
+   "causal_link_strength": "none",
+   "evidence": "it has increased excess and obsolescence risk of such hardware products and could adversely impact our profitability and cash flows"
+  },
+  "disputes": [
+   "ai_adoption",
+   "risk_type",
+   "risk_type_secondary"
+  ]
+ },
+ {
+  "id": "64ff53a8440ec9889ab95359",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 1,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "realized",
+   "specificity": "quantified",
+   "causal_link_strength": "none",
+   "evidence": "Demand for Hopper and anticipation for Blackwell \u2014 in full production \u2014 are incredible as foundation model makers scale pretraining, post-training and inference"
+  },
+  "coderB": {
+   "ai_opportunity": 1,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 1,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "realized",
+   "specificity": "quantified",
+   "causal_link_strength": "none",
+   "evidence": "The age of AI is in full steam, propelling a global shift to NVIDIA computing"
+  },
+  "disputes": [
+   "generic_ai_marketing"
+  ]
+ },
+ {
+  "id": "7d35041209fa0a51d107c226",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "unclear",
+   "specificity": "unclear",
+   "causal_link_strength": "none",
+   "evidence": ""
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "realized",
+   "specificity": "unclear",
+   "causal_link_strength": "none",
+   "evidence": ""
+  },
+  "disputes": [
+   "actuality"
+  ]
+ },
+ {
+  "id": "99f0230a7aff03def32440b8",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "hypothetical",
+   "specificity": "vague",
+   "causal_link_strength": "none",
+   "evidence": ""
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "unclear",
+   "specificity": "unclear",
+   "causal_link_strength": "none",
+   "evidence": ""
+  },
+  "disputes": [
+   "actuality",
+   "specificity"
+  ]
+ },
+ {
+  "id": "b3e4fa328938da0f0f8bc3e6",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 1,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "realized",
+   "specificity": "specific_unquantified",
+   "causal_link_strength": "none",
+   "evidence": "invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined computer graphics, ignited the era of modern AI"
+  },
+  "coderB": {
+   "ai_opportunity": 1,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 1,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "ongoing",
+   "specificity": "vague",
+   "causal_link_strength": "none",
+   "evidence": "ignited the era of modern AI and is fueling industrial digitalization across markets"
+  },
+  "disputes": [
+   "generic_ai_marketing",
+   "actuality",
+   "specificity"
+  ]
+ },
+ {
+  "id": "c01f72a67c526d26607e3aa6",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "implementation",
+   "risk_type_secondary": "",
+   "actuality": "hypothetical",
+   "specificity": "vague",
+   "causal_link_strength": "none",
+   "evidence": "integrating rapidly evolving technologies, including AI, and optimizing our business and organizational structure. We may be unable to achieve the anticipated efficiencies"
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 1,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "implementation",
+   "risk_type_secondary": "",
+   "actuality": "hypothetical",
+   "specificity": "vague",
+   "causal_link_strength": "none",
+   "evidence": "integrating rapidly evolving technologies, including AI, and optimizing our business and organizational structure. We may be unable to achieve the anticipated efficiencies"
+  },
+  "disputes": [
+   "ai_efficiency"
+  ]
+ },
+ {
+  "id": "ca06499a59f1137a92bcfa5f",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 1,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "planned",
+   "specificity": "specific_unquantified",
+   "causal_link_strength": "none",
+   "evidence": "the benefits, performance, impact, and abilities of our products and technologies, including NVIDIA AI, NVIDIA Omniverse"
+  },
+  "coderB": {
+   "ai_opportunity": 1,
+   "ai_risk": 0,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "not_a_risk",
+   "risk_type_secondary": "",
+   "actuality": "ongoing",
+   "specificity": "specific_unquantified",
+   "causal_link_strength": "none",
+   "evidence": "the benefits, performance, impact, and abilities of our products and technologies, including NVIDIA AI"
+  },
+  "disputes": [
+   "actuality"
+  ]
+ },
+ {
+  "id": "ca944ceca82d7cdf6ede59c7",
+  "why": "needs adjudication",
+  "coderA": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 0,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "competition",
+   "risk_type_secondary": "",
+   "actuality": "hypothetical",
+   "specificity": "vague",
+   "causal_link_strength": "none",
+   "evidence": "emerging agentic platforms to shop with us and our competitors and to do comparison shopping"
+  },
+  "coderB": {
+   "ai_opportunity": 0,
+   "ai_risk": 1,
+   "ai_efficiency": 0,
+   "ai_workforce_reduction": 0,
+   "ai_adoption": 1,
+   "ai_worker_augmentation": 0,
+   "generic_ai_marketing": 0,
+   "explicit_ai_job_link": 0,
+   "risk_type": "competition",
+   "risk_type_secondary": "",
+   "actuality": "ongoing",
+   "specificity": "specific_unquantified",
+   "causal_link_strength": "none",
+   "evidence": "customers are using digital means, including websites, captive and third-party digital applications, social media, and emerging agentic platforms to shop with us and our competitors"
+  },
+  "disputes": [
+   "ai_adoption",
+   "actuality",
+   "specificity"
+  ]
+ },
+ {
+  "id": "f0aeec05b8a2ec9d20570f6c",
+  "why": "not started"
+ },
+ {
+  "id": "f201611c815ef179a4b3dd02",
+  "why": "not started"
+ },
+ {
+  "id": "fcc455c75536374aec6c29e4",
+  "why": "not started"
+ }
+]
