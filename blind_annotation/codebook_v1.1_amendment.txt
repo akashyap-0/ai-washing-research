@@ -1,0 +1,26 @@
+CODEBOOK AMENDMENT v1.1.0 (supersedes v1.0.0 on this point only)
+
+Rule 4a — Named AI systems.
+
+The following named products, systems and platforms are AI systems for purposes of
+this codebook. Where a passage names one, the passage HAS AI content, whether or not
+it also uses the words "AI", "artificial intelligence", "machine learning" or similar:
+
+  Agentforce; Autopilot; Full Self-Driving / FSD; Copilot / Copilot+ / Copilot Pro;
+  watsonx; Oracle Autonomous Database; Amazon Sparrow; Amazon Robin; Amazon Cardinal;
+  Amazon Proteus; Amazon Kendra; Amazon Bedrock; AWS Trainium; AWS Inferentia;
+  CodeWhisperer; Amazon Q; NVIDIA DRIVE; AI Cockpit; Kensho; ambient intelligence.
+
+This list is closed and fixed in advance. Do not extend it by inference at label time,
+and do not treat any other brand name as AI content.
+
+Establishing AI content is NOT a label. Rules 3 and 4 continue to apply in full: a
+passage may name one of these systems and still receive all zeros if it asserts no
+opportunity, risk, efficiency, adoption, augmentation, marketing or employment claim
+about it. A name appearing in a segment-composition list, a safe-harbor product
+enumeration, or an expense footnote justifies nothing on its own.
+
+Rationale: v1.0.0 made AI content contingent on a firm's choice of vocabulary. Firms
+use the category word ("AI") in legal-defensive prose and brand names in promotional
+prose, so the v1.0.0 rule blanked AI content asymmetrically by register and by firm.
+That error is correlated with the construct under study.

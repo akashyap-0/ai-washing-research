@@ -75,24 +75,61 @@ _client = anthropic.Anthropic()
 _print_lock = threading.Lock()
 
 
+def _load_codebook():
+    """Use the exact codebook text from the 255-passage blinded batch, so the
+    two label sets are produced under byte-identical prompt text and the
+    overlapping passages are directly comparable."""
+    import re
+    src = open("blind_annotation/workflow_script.js", encoding="utf-8").read()
+    block = src[src.index("const CODEBOOK = ["):src.index("const BIN =")]
+    lines = re.findall(r"^'(.*)',?$", block[block.index("["):], re.M)
+    return "\n".join(l.replace("\\'", "'").replace("\\n", "\n") for l in lines)
+
+
+CODEBOOK = _load_codebook()
+
+_RISK = ["demand", "competition", "export_controls", "implementation",
+         "displacement", "governance", "other", "not_a_risk", "unclear"]
+TOOL = {
+    "name": "StructuredOutput",
+    "description": "Return the label set for the passage.",
+    "input_schema": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": list(MODEL_LABELS) + ["actuality", "specificity",
+                                          "causal_link_strength", "evidence"],
+        "properties": {
+            **{f: {"type": "integer", "enum": [0, 1]} for f in MODEL_LABELS},
+            "risk_type": {"type": "string", "enum": _RISK},
+            "risk_type_secondary": {"type": "string", "enum": _RISK + [""]},
+            "actuality": {"type": "string", "enum": list(ACTUALITY_VALUES)},
+            "specificity": {"type": "string", "enum": list(SPECIFICITY_VALUES)},
+            "causal_link_strength": {"type": "string", "enum": list(CAUSAL_LINK_VALUES)},
+            "evidence": {"type": "string", "maxLength": 400},
+        },
+    },
+}
+
+
 def label_passage(row, model):
-    prompt = (
-        f"Company: {row.get('company')} ({row.get('ticker')})\n"
-        f"Form: {row.get('form')}  Section: {row.get('section')}\n"
-        f"Passage:\n{row.get('text')}\n"
-    )
+    # BLINDED: bare passage text only. No company, ticker, form, section, or date.
+    # The estimand is an 8-K/10-K difference; leaking form hands the labeler the
+    # treatment assignment. See annotation_prompt.md "Wiring requirements".
     resp = _client.messages.create(
         model=model,
-        max_tokens=400,
-        system=RUBRIC,
-        messages=[{"role": "user", "content": prompt}],
+        max_tokens=1000,
+        system=CODEBOOK,
+        tools=[TOOL],
+        tool_choice={"type": "tool", "name": "StructuredOutput"},
+        messages=[{"role": "user", "content": row.get("text")}],
     )
-    raw = resp.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.strip("`")
-        if raw.startswith("json"):
-            raw = raw[4:]
-    data = json.loads(raw)
+    data = None
+    for block in resp.content:
+        if block.type == "tool_use":
+            data = dict(block.input)
+            break
+    if data is None:
+        raise RuntimeError("no structured output returned")
 
     for label in MODEL_LABELS:
         data[label] = 1 if int(data.get(label, 0)) else 0
@@ -104,11 +141,11 @@ def label_passage(row, model):
         data["causal_link_strength"] = "unclear"
 
     data["neutral"] = derived_neutral(data)
-    data["coder_id"] = "llm_v1"
+    data["coder_id"] = f"llm_blind_singlepass:{model}:prompt-1.0.0"
     data["review_status"] = "unreviewed"
-    data["annotation_notes"] = ""
+    data["annotation_notes"] = (data.get("evidence") or "").strip()
     data["label_schema_version"] = SCHEMA_VERSION
-    return data
+    return {k: v for k, v in data.items() if k in FIELDNAMES}
 
 
 def process_row(row, model, retries=3):

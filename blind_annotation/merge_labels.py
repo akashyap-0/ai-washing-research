@@ -11,7 +11,7 @@ import csv, json, os, sys
 from collections import Counter
 
 SCRATCH = os.path.dirname(os.path.abspath(__file__))
-REPO = r"c:\Users\advik\Downloads\gtown_research"
+REPO = os.environ.get("REPO_ROOT", os.path.dirname(SCRATCH))
 sys.path.insert(0, REPO)
 from label_schema import (MODEL_LABELS, SCHEMA_VERSION, derived_neutral,
                           validate_annotation)
