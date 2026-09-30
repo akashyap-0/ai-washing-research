@@ -16,13 +16,13 @@ in `earnings_calls/` are read, never modified.
 
 ## 1. Corpus actually processed
 
-The brief described 54 transcripts from five companies. When the run was done the folder held
-**98 transcripts from seven companies**. All 98 were processed:
+The brief described 54 transcripts from five companies. When the final run was done the folder
+held **105 transcripts from seven companies** (15 each). All 105 were processed:
 
 | Company | Files | Source type (from each file's metadata) | Parser |
 |---|---:|---|---|
 | alphabet | 15 | Official IR PDF text; 7 files are one word per line (6 of them with a blank line after every word) | `alphabet` |
-| amazon | 8 | Whisper machine transcript of the call audio, `[mm:ss]` segments, no speakers | `captions` (Whisper) |
+| amazon | 15 | Whisper machine transcript of the call audio, `[mm:ss]` segments, no speakers | `captions` (Whisper) |
 | apple | 15 | YouTube auto-captions of third-party livestreams (Benzinga, Shacknews, EARNMOAR), no speakers | `captions` |
 | meta | 15 | Official IR PDF text | `meta` |
 | microsoft | 15 | Official IR transcript, `NAME:` labels | `msft` |
@@ -241,4 +241,114 @@ boundaries prevent matches inside other words (e.g. `said`, `fulfillment` do not
 
 ## Validation
 
-_(filled in from `python filter_earnings_calls.py --validate`; seed recorded below)_
+From `python filter_earnings_calls.py --validate` (raw output in `_validation.json`). Random
+seed **20260930** (precision sample); **20260931** (50-sentence verbatim sample).
+
+**Result: 9,669 AI sentences of 48,555 total (19.9%) across 105 transcripts.** Of these, 4,862
+are in prepared remarks and 4,807 in Q&A. Another 429 automation/robotics and 1,823
+infrastructure sentences are in the Borderline sections. Per-file and per-company numbers are
+in INDEX.md.
+
+### 1. Coverage audit
+
+- 105 of 105 transcripts parsed with at least one speaker (or, for machine transcripts, a
+  detected Q&A split) and both sections present. There are no zero-sentence files and no
+  files with a failed parse.
+- Twelve files fall outside the brief's 400–900 range, all for known reasons:
+  - **Seven Apple files and Tesla 2023 Q1 (107–121 units):** unpunctuated captions, so each
+    unit is a ~30s caption segment.
+  - **Four Amazon files (364–392 units):** Whisper units.
+
+  Every official, FactSet and Motley Fool transcript is between 443 and 629 sentences.
+- **Q&A split checked by hand for every machine-transcript and Tesla file:** the first Q&A unit
+  is the operator's "first question" line or the IR host's "let's go to investor questions".
+  Amazon 2023 Q2's opening flag is harmless, because that file begins directly with the IR
+  host's welcome.
+- **Livestream chatter dropped before the call:** Apple FY24 Q3 (121 segments), FY23 Q4 (28),
+  FY23 Q2 (14); Tesla caption files (5–12 segments of music each).
+
+### 2. Recall spot-check (8 transcripts, at least one per company)
+
+Raw case-sensitive/insensitive counts of each core term in the transcript body vs. the count
+inside output AI sentences:
+
+| Transcript | Term: source → in AI output |
+|---|---|
+| meta_2025_Q2 | AI 72→72, generative 2→2, machine learning 1→1, LLM 4→4, Llama 6→6 |
+| microsoft_FY25_Q2 | AI 69→69, Copilot 48→48, OpenAI 16→16 |
+| nvidia_FY26_Q2 (FactSet) | AI 104→104, artificial intelligence 1→1, generative 4→4, LLM 1→1, agentic 13→13, OpenAI 4→4 |
+| nvidia_FY24_Q3 (Fool) | AI 159→158, artificial intelligence 1→0, generative 26→26, machine learning 1→1, LLM 15→15, Copilot 12→12 |
+| alphabet_2025_Q1 (inline page numbers) | AI 91→91, LLM 1→1, agentic 1→1, Gemini 24→24, Llama 1→1 |
+| amazon_2023_Q4 (Whisper) | AI 35→35, generative 19→19, machine learning 1→1, LLM 1→1, Bedrock 5→5 |
+| apple_FY25_Q2 (captions) | AI 11→11, generative 2→2, machine learning 1→1, LLM 2→2, Apple Intelligence 9→9 |
+| tesla_2024_Q2 | AI 23→23 |
+
+**The only misses:** the Nvidia FY24 Q3 `AI` and "artificial intelligence" hits are in a Motley
+Fool ad headline after the transcript ("3 Tech Stocks That Could Be in Trouble if There's an
+Artificial Intelligence (AI) Slowdown"). That is correctly removed as page furniture.
+
+The check found one real recall bug, now fixed: `x.ai` (Tesla 2023 Q2, twice) and
+`Character.ai` were being counted as lowercase-`ai` false positives. They are now core terms.
+
+### 3. Precision spot-check (40 random AI sentences, seed 20260930, read by hand)
+
+| Group | n | Clearly about AI | Arguable | Not about AI |
+|---|---:|---:|---:|---:|
+| Matched a core term | 28 | 28 | 0 | 0 |
+| `⚑ uncertain` (weak term only) | 12 | 5 | 4 | 3 |
+| **All** | **40** | **33 (82.5%)** | **4** | **3 (7.5%)** |
+
+- **Arguable:** Tesla FSD pricing; "FSD Hardware 4 … in Cybertruck"; NVIDIA DRIVE Thor on
+  Blackwell for EV makers; "it was true in models" (Amazon).
+- **Not about AI:** an NVLink/InfiniBand networking sentence; a Blackwell Ultra roadmap
+  sentence; a Tesla question about a "$25,000 non-robotaxi regular car model".
+
+Core-term matches were 100% precise in the sample; the noise is concentrated in `⚑ uncertain`.
+Across the corpus, 2,536 AI sentences carry `⚑ uncertain`. Their triggers are autonomy/FSD
+643, AI chip names 619, bare "model(s)" 588, "agent(s)" 302, "inference" 236, "tokens" 101,
+platform names 98, Alexa 43, and others 112.
+
+### 4. Verbatim check
+
+Every output unit is checked, not only a sample. Each is searched for in its source (HTML
+entities decoded). First it looks for exact containment with whitespace, timestamps and
+caption tags ignored. Otherwise it looks for the unit's words in order, allowing only deleted
+noise between them: page numbers, FactSet header lines, timestamps, caption tags, and hyphen
+line-wraps.
+
+- **All output units: 48,555 checked, 0 failures.**
+- **Requested random 50 (seed 20260931): 0 failures.**
+
+### 5. Time coverage
+
+105 of 105 source files have an output file; none are missing. Periods per company:
+
+- **Meta, Alphabet:** 2022 Q4 – 2026 Q2
+- **Amazon:** 2022 Q4 – 2026 Q2
+- **Microsoft:** FY23 Q2 – FY26 Q4
+- **Nvidia:** FY23 Q4 – FY27 Q2
+- **Apple:** FY23 Q1 – FY26 Q3
+- **Tesla:** 2022 Q4 – 2026 Q2
+
+### Other tallies
+
+- False-positive `ai` tokens excluded in non-machine transcripts: **0** after the x.ai fix. No
+  "Mr. Ai"-type or OCR `ai` artifacts were found in the official or human transcripts.
+- `⚑ context-dependent`: 574. `⚑ long`: 1. `⚑ uncertain: safe-harbor`: 0; no safe-harbor
+  sentence in the corpus mentions AI.
+
+### Judgment calls a reviewer should double-check
+
+1. **Weak terms are included as `⚑ uncertain`,** not dropped, per "recall over precision":
+   agents, chip names, bare "model", FSD/autonomy. Deleting all `⚑ uncertain` lines gives a
+   high-precision core set.
+2. **Tesla FSD/Autopilot/robotaxi count as weak AI; Optimus/humanoid counts as Borderline
+   robotics.** Both follow the brief's "robotics without an AI term is not AI" rule, applied
+   literally.
+3. **Bare "model" is off for Tesla and Apple** (car and device models).
+4. **Lowercase "ai" counts as AI in machine transcripts only.**
+5. **Whisper unit boundaries and caption-segment units** are approximations (see §3).
+6. **The inline page-number detector for four Alphabet files** is heuristic. All 93 removals
+   were read and accepted.
+7. **The Q&A section includes retail/say.com investor questions** read by Tesla IR, not only
+   analyst questions.
