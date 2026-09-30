@@ -1,0 +1,4003 @@
+{
+  "meta_2024_Q1": {
+    "company": "meta",
+    "file": "meta_2024_Q1.md",
+    "period": "2024_Q1",
+    "format": "meta",
+    "total": 447,
+    "ai": 119,
+    "ai_by_section": {
+      "Prepared remarks": 57,
+      "Q&A": 62
+    },
+    "total_by_section": {
+      "Prepared remarks": 183,
+      "Q&A": 264
+    },
+    "borderline_auto": 4,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 21,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 9,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Ken Dorell, Director, Investor Relations",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Kenneth Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein Research",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
+    ]
+  },
+  "meta_2022_Q4": {
+    "company": "meta",
+    "file": "meta_2022_Q4.md",
+    "period": "2022_Q4",
+    "format": "meta",
+    "total": 509,
+    "ai": 34,
+    "ai_by_section": {
+      "Prepared remarks": 12,
+      "Q&A": 22
+    },
+    "total_by_section": {
+      "Prepared remarks": 165,
+      "Q&A": 344
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 15,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 2
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 7,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brent Thill, Jefferies",
+      "Brian Nowak, Morgan Stanley",
+      "Deborah Crawford, VP, Investor Relations",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Javier Olivan",
+      "John Blackledge, Cowen",
+      "Justin Post, Bank of America",
+      "Mark Mahaney, Evercore ISI",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist"
+    ]
+  },
+  "meta_2023_Q1": {
+    "company": "meta",
+    "file": "meta_2023_Q1.md",
+    "period": "2023_Q1",
+    "format": "meta",
+    "total": 487,
+    "ai": 64,
+    "ai_by_section": {
+      "Prepared remarks": 32,
+      "Q&A": 32
+    },
+    "total_by_section": {
+      "Prepared remarks": 188,
+      "Q&A": 299
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 17,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 8,
+      "context-dependent": 2
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 6,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Deborah Crawford, VP, Investor Relations",
+      "Douglas Anmuth, J.P",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America Merrill Lynch",
+      "Mark Mahaney, Evercore ISI",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali"
+    ]
+  },
+  "meta_2023_Q2": {
+    "company": "meta",
+    "file": "meta_2023_Q2.md",
+    "period": "2023_Q2",
+    "format": "meta",
+    "total": 497,
+    "ai": 75,
+    "ai_by_section": {
+      "Prepared remarks": 29,
+      "Q&A": 46
+    },
+    "total_by_section": {
+      "Prepared remarks": 183,
+      "Q&A": 314
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 16,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 11,
+      "context-dependent": 2
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 7,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Bradley Erickson, RBC Capital Markets",
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America Merrill Lynch",
+      "Ken Dorell, Director, Investor Relations",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist"
+    ]
+  },
+  "meta_2023_Q3": {
+    "company": "meta",
+    "file": "meta_2023_Q3.md",
+    "period": "2023_Q3",
+    "format": "meta",
+    "total": 471,
+    "ai": 77,
+    "ai_by_section": {
+      "Prepared remarks": 39,
+      "Q&A": 38
+    },
+    "total_by_section": {
+      "Prepared remarks": 204,
+      "Q&A": 267
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 23,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 5,
+      "context-dependent": 1
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 6,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America Merrill Lynch",
+      "Ken Dorell, Director, Investor Relations",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist"
+    ]
+  },
+  "meta_2023_Q4": {
+    "company": "meta",
+    "file": "meta_2023_Q4.md",
+    "period": "2023_Q4",
+    "format": "meta",
+    "total": 467,
+    "ai": 83,
+    "ai_by_section": {
+      "Prepared remarks": 49,
+      "Q&A": 34
+    },
+    "total_by_section": {
+      "Prepared remarks": 228,
+      "Q&A": 239
+    },
+    "borderline_auto": 5,
+    "borderline_infra": 18,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 4,
+      "context-dependent": 5
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 7,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Ken Dorell, Director, Investor Relations",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Mark Shmulik, AllianceBernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ron Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO"
+    ]
+  },
+  "meta_2024_Q2": {
+    "company": "meta",
+    "file": "meta_2024_Q2.md",
+    "period": "2024_Q2",
+    "format": "meta",
+    "total": 468,
+    "ai": 111,
+    "ai_by_section": {
+      "Prepared remarks": 53,
+      "Q&A": 58
+    },
+    "total_by_section": {
+      "Prepared remarks": 195,
+      "Q&A": 273
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 26,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 4,
+      "uncertain": 13
+    },
+    "parse_notes": {
+      "page_numbers_removed": 20,
+      "page_break_joins": 5,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, J.P",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Mark Mahaney, Evercore ISI",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
+    ]
+  },
+  "meta_2024_Q3": {
+    "company": "meta",
+    "file": "meta_2024_Q3.md",
+    "period": "2024_Q3",
+    "format": "meta",
+    "total": 443,
+    "ai": 85,
+    "ai_by_section": {
+      "Prepared remarks": 37,
+      "Q&A": 48
+    },
+    "total_by_section": {
+      "Prepared remarks": 176,
+      "Q&A": 267
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 28,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 6,
+      "uncertain": 9
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 9,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Kenneth Gawrelski, Wells Fargo",
+      "Mark Mahaney, Evercore ISI",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
+    ]
+  },
+  "meta_2024_Q4": {
+    "company": "meta",
+    "file": "meta_2024_Q4.md",
+    "period": "2024_Q4",
+    "format": "meta",
+    "total": 463,
+    "ai": 94,
+    "ai_by_section": {
+      "Prepared remarks": 37,
+      "Q&A": 57
+    },
+    "total_by_section": {
+      "Prepared remarks": 184,
+      "Q&A": 279
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 31,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 5,
+      "uncertain": 8
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 7,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Kenneth Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citigroup",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO"
+    ]
+  },
+  "meta_2025_Q1": {
+    "company": "meta",
+    "file": "meta_2025_Q1.md",
+    "period": "2025_Q1",
+    "format": "meta",
+    "total": 455,
+    "ai": 122,
+    "ai_by_section": {
+      "Prepared remarks": 63,
+      "Q&A": 59
+    },
+    "total_by_section": {
+      "Prepared remarks": 210,
+      "Q&A": 245
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 28,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 8,
+      "uncertain": 19
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 6,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, J.P",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Kenneth Gawrelski, Wells Fargo",
+      "Mark Mahaney, Evercore ISI",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
+    ]
+  },
+  "meta_2025_Q2": {
+    "company": "meta",
+    "file": "meta_2025_Q2.md",
+    "period": "2025_Q2",
+    "format": "meta",
+    "total": 451,
+    "ai": 112,
+    "ai_by_section": {
+      "Prepared remarks": 61,
+      "Q&A": 51
+    },
+    "total_by_section": {
+      "Prepared remarks": 207,
+      "Q&A": 244
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 33,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 4,
+      "uncertain": 19
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 9,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan",
+      "Justin Post, Bank of America",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
+    ]
+  },
+  "meta_2025_Q3": {
+    "company": "meta",
+    "file": "meta_2025_Q3.md",
+    "period": "2025_Q3",
+    "format": "meta",
+    "total": 446,
+    "ai": 101,
+    "ai_by_section": {
+      "Prepared remarks": 54,
+      "Q&A": 47
+    },
+    "total_by_section": {
+      "Prepared remarks": 183,
+      "Q&A": 263
+    },
+    "borderline_auto": 9,
+    "borderline_infra": 31,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 25,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 8,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JP Morgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Ken Gawrelski, Wells Fargo",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Mark Mahaney, Evercore ISI",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
+    ]
+  },
+  "meta_2025_Q4": {
+    "company": "meta",
+    "file": "meta_2025_Q4.md",
+    "period": "2025_Q4",
+    "format": "meta",
+    "total": 477,
+    "ai": 112,
+    "ai_by_section": {
+      "Prepared remarks": 63,
+      "Q&A": 49
+    },
+    "total_by_section": {
+      "Prepared remarks": 194,
+      "Q&A": 283
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 24,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 42,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "page_numbers_removed": 21,
+      "page_break_joins": 10,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Kenneth Gawrelski, Wells Fargo",
+      "Mark Mahaney, Evercore",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO"
+    ]
+  },
+  "meta_2026_Q1": {
+    "company": "meta",
+    "file": "meta_2026_Q1.md",
+    "period": "2026_Q1",
+    "format": "meta",
+    "total": 480,
+    "ai": 135,
+    "ai_by_section": {
+      "Prepared remarks": 62,
+      "Q&A": 73
+    },
+    "total_by_section": {
+      "Prepared remarks": 184,
+      "Q&A": 296
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 23,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 12,
+      "uncertain": 54
+    },
+    "parse_notes": {
+      "page_numbers_removed": 20,
+      "page_break_joins": 10,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Kenneth Gawrelski",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citigroup",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
+    ]
+  },
+  "meta_2026_Q2": {
+    "company": "meta",
+    "file": "meta_2026_Q2.md",
+    "period": "2026_Q2",
+    "format": "meta",
+    "total": 509,
+    "ai": 143,
+    "ai_by_section": {
+      "Prepared remarks": 82,
+      "Q&A": 61
+    },
+    "total_by_section": {
+      "Prepared remarks": 226,
+      "Q&A": 283
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 34,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 65,
+      "context-dependent": 8
+    },
+    "parse_notes": {
+      "page_numbers_removed": 21,
+      "page_break_joins": 7,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Chad Heaton, VP, Finance",
+      "Douglas Anmuth, JP Morgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Kenneth Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO"
+    ]
+  },
+  "microsoft_FY23_Q2": {
+    "company": "microsoft",
+    "file": "microsoft_FY23_Q2.md",
+    "period": "FY23_Q2",
+    "format": "msft",
+    "total": 485,
+    "ai": 49,
+    "ai_by_section": {
+      "Prepared remarks": 28,
+      "Q&A": 21
+    },
+    "total_by_section": {
+      "Prepared remarks": 285,
+      "Q&A": 200
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 7,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 5,
+      "context-dependent": 2
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brad Reback",
+      "Brad Zelnick",
+      "Brent Thill",
+      "Brett Iversen",
+      "Karl Keirstead",
+      "Kash Rangan",
+      "Keith Weiss",
+      "Mark Moerdler",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY23_Q3": {
+    "company": "microsoft",
+    "file": "microsoft_FY23_Q3.md",
+    "period": "FY23_Q3",
+    "format": "msft",
+    "total": 464,
+    "ai": 79,
+    "ai_by_section": {
+      "Prepared remarks": 47,
+      "Q&A": 32
+    },
+    "total_by_section": {
+      "Prepared remarks": 267,
+      "Q&A": 197
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 3
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brent Thill",
+      "Brett Iversen",
+      "Keith Bachman",
+      "Keith Weiss",
+      "Mark Moerdler",
+      "Michael Turrin",
+      "Raimo Lenschow",
+      "Rishi Jaluria",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY23_Q4": {
+    "company": "microsoft",
+    "file": "microsoft_FY23_Q4.md",
+    "period": "FY23_Q4",
+    "format": "msft",
+    "total": 516,
+    "ai": 101,
+    "ai_by_section": {
+      "Prepared remarks": 47,
+      "Q&A": 54
+    },
+    "total_by_section": {
+      "Prepared remarks": 266,
+      "Q&A": 250
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 20,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 5
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Alex Zukin",
+      "Amy Hood, chief financial officer",
+      "Brent Thill",
+      "Brett Iversen",
+      "Karl Keirstead",
+      "Kash Rangan",
+      "Keith Weiss",
+      "Mark Moerdler",
+      "Mark Murphy",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY24_Q1": {
+    "company": "microsoft",
+    "file": "microsoft_FY24_Q1.md",
+    "period": "FY24_Q1",
+    "format": "msft",
+    "total": 476,
+    "ai": 90,
+    "ai_by_section": {
+      "Prepared remarks": 58,
+      "Q&A": 32
+    },
+    "total_by_section": {
+      "Prepared remarks": 270,
+      "Q&A": 206
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 9,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 3,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brad Sills",
+      "Brent Bracelin",
+      "Brett Iversen",
+      "Gregg Moskowitz",
+      "Karl Keirstead",
+      "Keith Weiss",
+      "Mark Moerdler",
+      "Raimo Lenschow",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY24_Q2": {
+    "company": "microsoft",
+    "file": "microsoft_FY24_Q2.md",
+    "period": "FY24_Q2",
+    "format": "msft",
+    "total": 522,
+    "ai": 123,
+    "ai_by_section": {
+      "Prepared remarks": 70,
+      "Q&A": 53
+    },
+    "total_by_section": {
+      "Prepared remarks": 263,
+      "Q&A": 259
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 15,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 12,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brad Reback",
+      "Brad Zelnick",
+      "Brent Thill",
+      "Brett Iversen",
+      "Kash Rangan",
+      "Mark Moerdler",
+      "Mark Murphy",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY24_Q3": {
+    "company": "microsoft",
+    "file": "microsoft_FY24_Q3.md",
+    "period": "FY24_Q3",
+    "format": "msft",
+    "total": 502,
+    "ai": 118,
+    "ai_by_section": {
+      "Prepared remarks": 71,
+      "Q&A": 47
+    },
+    "total_by_section": {
+      "Prepared remarks": 250,
+      "Q&A": 252
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 12,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 5,
+      "uncertain": 6
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Alex Zukin",
+      "Amy Hood, chief financial officer",
+      "Brent Thill",
+      "Brett Iversen",
+      "Karl Keirstead",
+      "Keith Weiss",
+      "Kirk Materne",
+      "Mark Moerdler",
+      "Michael Turrin",
+      "Raimo Lenschow",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY24_Q4": {
+    "company": "microsoft",
+    "file": "microsoft_FY24_Q4.md",
+    "period": "FY24_Q4",
+    "format": "msft",
+    "total": 507,
+    "ai": 94,
+    "ai_by_section": {
+      "Prepared remarks": 67,
+      "Q&A": 27
+    },
+    "total_by_section": {
+      "Prepared remarks": 270,
+      "Q&A": 237
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 21,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 2,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brad Zelnick",
+      "Brent Thill",
+      "Brett Iversen",
+      "Karl Keirstead",
+      "Kash Rangan",
+      "Keith Weiss",
+      "Mark Moerdler",
+      "Mark Murphy",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY25_Q1": {
+    "company": "microsoft",
+    "file": "microsoft_FY25_Q1.md",
+    "period": "FY25_Q1",
+    "format": "msft",
+    "total": 524,
+    "ai": 140,
+    "ai_by_section": {
+      "Prepared remarks": 80,
+      "Q&A": 60
+    },
+    "total_by_section": {
+      "Prepared remarks": 264,
+      "Q&A": 260
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 18,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 17,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brett Iversen",
+      "Kash Rangan",
+      "Keith Weiss",
+      "Mark Murphy",
+      "Raimo Lenschow",
+      "Rishi Jaluria",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY25_Q2": {
+    "company": "microsoft",
+    "file": "microsoft_FY25_Q2.md",
+    "period": "FY25_Q2",
+    "format": "msft",
+    "total": 501,
+    "ai": 142,
+    "ai_by_section": {
+      "Prepared remarks": 78,
+      "Q&A": 64
+    },
+    "total_by_section": {
+      "Prepared remarks": 252,
+      "Q&A": 249
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 17,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 22,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brad Reback",
+      "Brad Sills",
+      "Brad Zelnick",
+      "Brent Bracelin",
+      "Brent Thill",
+      "Brett Iversen",
+      "Karl Keirstead",
+      "Operator",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY25_Q3": {
+    "company": "microsoft",
+    "file": "microsoft_FY25_Q3.md",
+    "period": "FY25_Q3",
+    "format": "msft",
+    "total": 485,
+    "ai": 116,
+    "ai_by_section": {
+      "Prepared remarks": 79,
+      "Q&A": 37
+    },
+    "total_by_section": {
+      "Prepared remarks": 254,
+      "Q&A": 231
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 33,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 22,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brent Thill",
+      "Jonathan Neilson",
+      "Kash Rangan",
+      "Keith Weiss",
+      "Kirk Materne",
+      "Mark Murphy",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY25_Q4": {
+    "company": "microsoft",
+    "file": "microsoft_FY25_Q4.md",
+    "period": "FY25_Q4",
+    "format": "msft",
+    "total": 454,
+    "ai": 106,
+    "ai_by_section": {
+      "Prepared remarks": 71,
+      "Q&A": 35
+    },
+    "total_by_section": {
+      "Prepared remarks": 244,
+      "Q&A": 210
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 34,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 23,
+      "context-dependent": 1
+    },
+    "parse_notes": {
+      "title_block_lines": 5,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Jonathan Neilson",
+      "Karl Keirstead",
+      "Kash Rangan",
+      "Mark Moerdler",
+      "Michael Turrin",
+      "Raimo Lenschow",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY26_Q1": {
+    "company": "microsoft",
+    "file": "microsoft_FY26_Q1.md",
+    "period": "FY26_Q1",
+    "format": "msft",
+    "total": 508,
+    "ai": 125,
+    "ai_by_section": {
+      "Prepared remarks": 87,
+      "Q&A": 38
+    },
+    "total_by_section": {
+      "Prepared remarks": 249,
+      "Q&A": 259
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 20,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 25,
+      "context-dependent": 8
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brad Zelnick",
+      "Brent Thill",
+      "Jonathan Neilson",
+      "Karl Keirstead",
+      "Kash Rangan",
+      "Keith Weiss",
+      "Mark Moerdler",
+      "Mark Murphy",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY26_Q2": {
+    "company": "microsoft",
+    "file": "microsoft_FY26_Q2.md",
+    "period": "FY26_Q2",
+    "format": "msft",
+    "total": 483,
+    "ai": 137,
+    "ai_by_section": {
+      "Prepared remarks": 104,
+      "Q&A": 33
+    },
+    "total_by_section": {
+      "Prepared remarks": 256,
+      "Q&A": 227
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 28,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 45,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Brad Zelnick",
+      "Jonathan Neilson",
+      "Karl Keirstead",
+      "Keith Weiss",
+      "Mark Moerdler",
+      "Raimo Lenschow",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY26_Q3": {
+    "company": "microsoft",
+    "file": "microsoft_FY26_Q3.md",
+    "period": "FY26_Q3",
+    "format": "msft",
+    "total": 506,
+    "ai": 138,
+    "ai_by_section": {
+      "Prepared remarks": 94,
+      "Q&A": 44
+    },
+    "total_by_section": {
+      "Prepared remarks": 252,
+      "Q&A": 254
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 28,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 43,
+      "context-dependent": 8
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Amy Hood, chief financial officer",
+      "Gabriela Borges",
+      "Jonathan Neilson",
+      "Karl Keirstead",
+      "Keith Weiss",
+      "Kirk Materne",
+      "Mark Moerdler",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "microsoft_FY26_Q4": {
+    "company": "microsoft",
+    "file": "microsoft_FY26_Q4.md",
+    "period": "FY26_Q4",
+    "format": "msft",
+    "total": 519,
+    "ai": 138,
+    "ai_by_section": {
+      "Prepared remarks": 97,
+      "Q&A": 41
+    },
+    "total_by_section": {
+      "Prepared remarks": 284,
+      "Q&A": 235
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 33,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 12,
+      "uncertain": 55
+    },
+    "parse_notes": {
+      "title_block_lines": 4,
+      "format": "msft"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Adam Wood, Morgan Stanley",
+      "Amy Hood, chief financial officer",
+      "Brad Zelnick, Deutsche Bank",
+      "Gabriela Borges, Goldman Sachs",
+      "Jonathan Neilson",
+      "Karl Keirstead, UBS",
+      "Mark Moerdler, Bernstein Research",
+      "Operator",
+      "Satya Nadella, chairman and chief executive officer"
+    ]
+  },
+  "nvidia_FY23_Q4": {
+    "company": "nvidia",
+    "file": "nvidia_FY23_Q4.md",
+    "period": "FY23_Q4",
+    "format": "fool",
+    "total": 482,
+    "ai": 126,
+    "ai_by_section": {
+      "Prepared remarks": 44,
+      "Q&A": 82
+    },
+    "total_by_section": {
+      "Prepared remarks": 143,
+      "Q&A": 339
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 42,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 36,
+      "context-dependent": 13
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 55,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Wells Fargo Securities, Analyst",
+      "Atif Malik, Citi, Analyst",
+      "C.J. Muse, Evercore ISI, Analyst",
+      "Colette Kress, Executive Vice President, Chief Financial Officer",
+      "Jensen Huang, President and Chief Executive Officer",
+      "Joseph Moore, Morgan Stanley, Analyst",
+      "Mark Lipacis, Jefferies, Analyst",
+      "Matt Ramsay, Cowen and Company, Analyst",
+      "Operator",
+      "Simona Jankowski, Vice President, Investor Relations",
+      "Stacy Rasgon, AllianceBernstein, Analyst",
+      "Timothy Arcuri, UBS, Analyst",
+      "Vivek Arya, Bank of America Merrill Lynch, Analyst"
+    ]
+  },
+  "nvidia_FY24_Q1": {
+    "company": "nvidia",
+    "file": "nvidia_FY24_Q1.md",
+    "period": "FY24_Q1",
+    "format": "fool",
+    "total": 518,
+    "ai": 144,
+    "ai_by_section": {
+      "Prepared remarks": 50,
+      "Q&A": 94
+    },
+    "total_by_section": {
+      "Prepared remarks": 136,
+      "Q&A": 382
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 73,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 42,
+      "context-dependent": 12
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 69,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Wells Fargo Securities, Analyst",
+      "C.J. Muse, Evercore ISI, Analyst",
+      "Colette Kress, Executive Vice President and Chief Financial Officer",
+      "Harlan Sur, JPMorgan Chase and Company, Analyst",
+      "Jensen Huang, President and Chief Executive Officer",
+      "Joe Moore, Morgan Stanley, Analyst",
+      "Matt Ramsay, Cowen and Company, Analyst",
+      "Operator",
+      "Simona Jankowski, Vice President, Investor Relations",
+      "Stacy Rasgon, Bernstein Research, Analyst",
+      "Tim Arcuri, UBS, Analyst",
+      "Toshi Hari, Goldman Sachs, Analyst",
+      "Vivek Arya, Bank of America Merrill Lynch, Analyst"
+    ]
+  },
+  "nvidia_FY24_Q2": {
+    "company": "nvidia",
+    "file": "nvidia_FY24_Q2.md",
+    "period": "FY24_Q2",
+    "format": "fool",
+    "total": 470,
+    "ai": 138,
+    "ai_by_section": {
+      "Prepared remarks": 58,
+      "Q&A": 80
+    },
+    "total_by_section": {
+      "Prepared remarks": 147,
+      "Q&A": 323
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 56,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 35,
+      "context-dependent": 14
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 55,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Atif Malik, Citi, Analyst",
+      "Ben Reitzes, Melius Research, Analyst",
+      "Colette Kress, Executive Vice President, Chief Financial Officer",
+      "Jensen Huang, President and Chief Executive Officer",
+      "Joe Moore, Morgan Stanley, Analyst",
+      "Mark Lipacis, Jefferies, Analyst",
+      "Matt Ramsay, TD Cowen, Analyst",
+      "Operator",
+      "Simona Jankowski, Vice President, Investor Relations",
+      "Stacy Rasgon, AllianceBernstein, Analyst",
+      "Tim Arcuri, UBS, Analyst",
+      "Toshi Hari, Goldman Sachs, Analyst",
+      "Vivek Arya, Bank of America Merrill Lynch, Analyst"
+    ]
+  },
+  "nvidia_FY24_Q3": {
+    "company": "nvidia",
+    "file": "nvidia_FY24_Q3.md",
+    "period": "FY24_Q3",
+    "format": "fool",
+    "total": 541,
+    "ai": 193,
+    "ai_by_section": {
+      "Prepared remarks": 65,
+      "Q&A": 128
+    },
+    "total_by_section": {
+      "Prepared remarks": 146,
+      "Q&A": 395
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 36,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 40,
+      "context-dependent": 13
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 54,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Well Fargo Securities, Analyst",
+      "Colette Kress, Executive Vice President and Chief Financial Officer",
+      "Harlan Sur, JPMorgan Chase and Company, Analyst",
+      "Jen-Hsun Huang, President and Chief Executive Officer",
+      "Joe Moore, Morgan Stanley, Analyst",
+      "Matt Ramsay, TD Cowen, Analyst",
+      "Operator",
+      "Simona Jankowski, Vice President, Investor Relations",
+      "Stacy Rasgon, Bernstein Research, Analyst",
+      "Tim Arcuri, UBS, Analyst",
+      "Toshiya Hari, Goldman Sachs, Analyst",
+      "Vivek Arya, Bank of America Merrill Lynch, Analyst"
+    ]
+  },
+  "nvidia_FY24_Q4": {
+    "company": "nvidia",
+    "file": "nvidia_FY24_Q4.md",
+    "period": "FY24_Q4",
+    "format": "captions",
+    "total": 511,
+    "ai": 143,
+    "ai_by_section": {
+      "Prepared remarks": 74,
+      "Q&A": 69
+    },
+    "total_by_section": {
+      "Prepared remarks": 152,
+      "Q&A": 359
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 44,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 27,
+      "context-dependent": 12
+    },
+    "parse_notes": {
+      "segments": 122,
+      "pre_call_segments_dropped": 1,
+      "punct_per_100_words": 6.42,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "nvidia_FY25_Q1": {
+    "company": "nvidia",
+    "file": "nvidia_FY25_Q1.md",
+    "period": "FY25_Q1",
+    "format": "fool",
+    "total": 484,
+    "ai": 166,
+    "ai_by_section": {
+      "Prepared remarks": 95,
+      "Q&A": 71
+    },
+    "total_by_section": {
+      "Prepared remarks": 178,
+      "Q&A": 306
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 42,
+    "false_positive_ai_tokens": 1,
+    "flag_counts": {
+      "uncertain": 74,
+      "context-dependent": 8
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 57,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Blayne Curtis, Jefferies, Analyst",
+      "C.J. Muse, Cantor Fitzgerald, Analyst",
+      "Colette Kress, Executive Vice President, Chief Financial Officer",
+      "Jensen Huang, President and Chief Operating Officer",
+      "Joe Moore, Morgan Stanley, Analyst",
+      "Mark Lipacis, Evercore ISI, Analyst",
+      "Matt Ramsay, TD Cowen, Analyst",
+      "Operator",
+      "Simona Jankowski, Vice President, Investor Relations",
+      "Srini Pajjuri, Raymond James, Analyst",
+      "Stacy Rasgon, AllianceBernstein, Analyst",
+      "Tim Arcuri, UBS, Analyst",
+      "Toshiya Hari, Goldman Sachs, Analyst",
+      "Vivek Arya, Bank of America Merrill Lynch, Analyst",
+      "William Stein, Truist Securities, Analyst"
+    ]
+  },
+  "nvidia_FY25_Q2": {
+    "company": "nvidia",
+    "file": "nvidia_FY25_Q2.md",
+    "period": "FY25_Q2",
+    "format": "fool",
+    "total": 544,
+    "ai": 195,
+    "ai_by_section": {
+      "Prepared remarks": 69,
+      "Q&A": 126
+    },
+    "total_by_section": {
+      "Prepared remarks": 140,
+      "Q&A": 404
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 48,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 90,
+      "context-dependent": 8
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 56,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Analyst",
+      "Ben Reitzes, Melius Research, Analyst",
+      "C.J. Muse, Analyst",
+      "Colette M. Kress, Chief Financial Officer, Executive Vice President",
+      "Jensen Huang, President and Chief Executive Officer",
+      "Joe Moore, Analyst",
+      "Matt Ramsay, Analyst",
+      "Operator",
+      "Stacy Rasgon, Analyst",
+      "Stewart Stecker, Senior Director, Investor Relations",
+      "Timothy Arcuri, Analyst",
+      "Toshiya Hari, Analyst",
+      "Vivek Arya, Analyst"
+    ]
+  },
+  "nvidia_FY25_Q3": {
+    "company": "nvidia",
+    "file": "nvidia_FY25_Q3.md",
+    "period": "FY25_Q3",
+    "format": "fool",
+    "total": 507,
+    "ai": 189,
+    "ai_by_section": {
+      "Prepared remarks": 65,
+      "Q&A": 124
+    },
+    "total_by_section": {
+      "Prepared remarks": 141,
+      "Q&A": 366
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 26,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 82,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 57,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Analyst",
+      "Atif Malik, Analyst",
+      "Ben Reitzes, Melius Research, Analyst",
+      "C.J. Muse, Analyst",
+      "Colette M. Kress, Chief Financial Officer, Executive Vice President",
+      "Jensen Huang, President and Chief Executive Officer",
+      "Joseph Moore, Analyst",
+      "Operator",
+      "Pierre Ferragu, Analyst",
+      "Stacy Rasgon, Analyst",
+      "Stewart Stecker, Senior Director, Investor Relations",
+      "Timothy Arcuri, Analyst",
+      "Toshiya Hari, Analyst",
+      "Vivek Arya, Analyst"
+    ]
+  },
+  "nvidia_FY25_Q4": {
+    "company": "nvidia",
+    "file": "nvidia_FY25_Q4.md",
+    "period": "FY25_Q4",
+    "format": "fool",
+    "total": 505,
+    "ai": 187,
+    "ai_by_section": {
+      "Prepared remarks": 66,
+      "Q&A": 121
+    },
+    "total_by_section": {
+      "Prepared remarks": 155,
+      "Q&A": 350
+    },
+    "borderline_auto": 5,
+    "borderline_infra": 26,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 75,
+      "context-dependent": 11
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 56,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Analyst",
+      "Atif Malik, Analyst",
+      "Ben Reitzes, Analyst",
+      "C.J. Muse, Analyst",
+      "Colette M. Kress, Chief Financial Officer, Executive Vice President",
+      "Harlan Sur, Analyst",
+      "Jensen Huang, President and Chief Executive Officer",
+      "Joe Moore, JPMorgan Chase and Company, Analyst",
+      "Mark Lipacis, Analyst",
+      "Operator",
+      "Stewart Stecker, Senior Director, Investor Relations",
+      "Timothy Arcuri, Analyst",
+      "Vivek Arya, Analyst"
+    ]
+  },
+  "nvidia_FY26_Q1": {
+    "company": "nvidia",
+    "file": "nvidia_FY26_Q1.md",
+    "period": "FY26_Q1",
+    "format": "factset",
+    "total": 470,
+    "ai": 203,
+    "ai_by_section": {
+      "Prepared remarks": 120,
+      "Q&A": 83
+    },
+    "total_by_section": {
+      "Prepared remarks": 222,
+      "Q&A": 248
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 22,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 71,
+      "context-dependent": 10
+    },
+    "parse_notes": {
+      "noise_lines_removed": 91,
+      "format": "factset"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Ben Reitzes, Analyst, Melius Research LLC",
+      "Colette M. Kress, Chief Financial Officer & Executive Vice President, NVIDIA Corp.",
+      "Jake Wilhelm, Analyst, Wells Fargo Securities LLC",
+      "Jensen Huang, Co-Founder, President, Chief Executive Officer & Director, NVIDIA Corp.",
+      "Joe Moore, Analyst, Morgan Stanley & Co. LLC",
+      "Operator",
+      "Timothy Arcuri, Analyst, UBS Securities LLC",
+      "Toshiya Hari, Vice President-Investor Relations & Strategic Finance, NVIDIA Corp.",
+      "Vivek Arya, Analyst, BofA Securities, Inc."
+    ]
+  },
+  "nvidia_FY26_Q2": {
+    "company": "nvidia",
+    "file": "nvidia_FY26_Q2.md",
+    "period": "FY26_Q2",
+    "format": "factset",
+    "total": 466,
+    "ai": 181,
+    "ai_by_section": {
+      "Prepared remarks": 77,
+      "Q&A": 104
+    },
+    "total_by_section": {
+      "Prepared remarks": 165,
+      "Q&A": 301
+    },
+    "borderline_auto": 6,
+    "borderline_infra": 36,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 84,
+      "context-dependent": 14
+    },
+    "parse_notes": {
+      "noise_lines_removed": 98,
+      "format": "factset"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Analyst, Wells Fargo Securities LLC",
+      "Ben Reitzes, Analyst, Melius Research LLC",
+      "CJ Muse, Analyst, Cantor Fitzgerald & Co.",
+      "Colette M. Kress, Chief Financial Officer & Executive Vice President, NVIDIA Corp.",
+      "James Edward Schneider, Analyst, Goldman Sachs & Co. LLC",
+      "Jen Hsun Huang, Co-founder, President, Chief Executive Officer & Director, NVIDIA Corp.",
+      "Joe Moore, Analyst, Morgan Stanley & Co. LLC",
+      "Operator",
+      "Stacy A. Rasgon, Analyst, Bernstein Research",
+      "Timothy Arcuri, Analyst, UBS Securities LLC",
+      "Toshiya Hari, Vice President-Investor Relations & Strategic Finance, NVIDIA Corp.",
+      "Vivek Arya, Analyst, BofA Securities, Inc."
+    ]
+  },
+  "nvidia_FY26_Q3": {
+    "company": "nvidia",
+    "file": "nvidia_FY26_Q3.md",
+    "period": "FY26_Q3",
+    "format": "factset",
+    "total": 498,
+    "ai": 170,
+    "ai_by_section": {
+      "Prepared remarks": 91,
+      "Q&A": 79
+    },
+    "total_by_section": {
+      "Prepared remarks": 167,
+      "Q&A": 331
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 26,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 62,
+      "context-dependent": 6
+    },
+    "parse_notes": {
+      "noise_lines_removed": 105,
+      "format": "factset"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Analyst, Wells Fargo Securities LLC",
+      "Ben Reitzes, Analyst, Melius Research LLC",
+      "CJ Muse, Analyst, Cantor Fitzgerald & Co.",
+      "Colette M. Kress, Chief Financial Officer & Executive Vice President, NVIDIA Corp.",
+      "James Edward Schneider, Analyst, Goldman Sachs & Co. LLC",
+      "Jen Hsun Huang, Co-founder, President, Chief Executive Officer & Director, NVIDIA Corp.",
+      "Joseph Moore, Analyst, Morgan Stanley & Co. LLC",
+      "Operator",
+      "Stacy A. Rasgon, Analyst, Bernstein Research",
+      "Timothy Arcuri, Analyst, UBS Securities LLC",
+      "Toshiya Hari, Vice President of Investor Relations & Strategic Finance, NVIDIA Corp.",
+      "Vivek Arya, Analyst, BofA Securities, Inc."
+    ]
+  },
+  "nvidia_FY26_Q4": {
+    "company": "nvidia",
+    "file": "nvidia_FY26_Q4.md",
+    "period": "FY26_Q4",
+    "format": "factset",
+    "total": 509,
+    "ai": 172,
+    "ai_by_section": {
+      "Prepared remarks": 65,
+      "Q&A": 107
+    },
+    "total_by_section": {
+      "Prepared remarks": 135,
+      "Q&A": 374
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 37,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 80,
+      "context-dependent": 6
+    },
+    "parse_notes": {
+      "noise_lines_removed": 112,
+      "format": "factset"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Analyst, Wells Fargo Securities LLC",
+      "Antoine Chkaiban, Analyst, New Street Research LLP",
+      "Atif Malik, Analyst, Citigroup Global Markets, Inc.",
+      "Ben Reitzes, Analyst, Melius Research LLC",
+      "C.J. Muse, Analyst, Cantor Fitzgerald & Co.",
+      "Colette M. Kress, Chief Financial Officer & Executive Vice President, NVIDIA Corp.",
+      "Harlan Sur, Analyst, JPMorgan Securities LLC",
+      "James Edward Schneider, Analyst, Goldman Sachs & Co. LLC",
+      "Jen Hsun Huang, Co-Founder, President, Chief Executive Officer & Director, NVIDIA Corp.",
+      "Joe Moore, Analyst, Morgan Stanley & Co. LLC",
+      "Mark Lipacis, Analyst, Evercore Group LLC",
+      "Operator",
+      "Stacy A. Rasgon, Analyst, Bernstein Research",
+      "Timothy Arcuri, Analyst, UBS Securities LLC",
+      "Toshiya Hari, Vice President, Investor Relations & Strategic Finance, NVIDIA Corp.",
+      "Vivek Arya, Analyst, BofA Securities, Inc."
+    ]
+  },
+  "nvidia_FY27_Q1": {
+    "company": "nvidia",
+    "file": "nvidia_FY27_Q1.md",
+    "period": "FY27_Q1",
+    "format": "factset",
+    "total": 525,
+    "ai": 173,
+    "ai_by_section": {
+      "Prepared remarks": 55,
+      "Q&A": 118
+    },
+    "total_by_section": {
+      "Prepared remarks": 136,
+      "Q&A": 389
+    },
+    "borderline_auto": 3,
+    "borderline_infra": 34,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 66,
+      "context-dependent": 12
+    },
+    "parse_notes": {
+      "noise_lines_removed": 98,
+      "format": "factset"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Ben Reitzes, Analyst, Melius Research LLC",
+      "C.J. Muse, Analyst, Cantor Fitzgerald & Co.",
+      "Colette M. Kress, Chief Financial Officer & Executive Vice President, NVIDIA Corp.",
+      "James Edward Schneider, Analyst, Goldman Sachs & Co. LLC",
+      "Jen Hsun Huang, Co-Founder, President, Chief Executive Officer & Director, NVIDIA Corp.",
+      "Joseph Moore, Analyst, Morgan Stanley & Co. LLC",
+      "Joshua Buchalter, Analyst, TD Cowen",
+      "Operator",
+      "Stacy A. Rasgon, Analyst, Bernstein Research",
+      "Timothy Arcuri, Analyst, UBS Securities LLC",
+      "Toshiya Hari, Vice President-Investor Relations & Strategic Finance, NVIDIA Corp.",
+      "Vivek Arya, Analyst, BofA Securities, Inc."
+    ]
+  },
+  "nvidia_FY27_Q2": {
+    "company": "nvidia",
+    "file": "nvidia_FY27_Q2.md",
+    "period": "FY27_Q2",
+    "format": "factset",
+    "total": 479,
+    "ai": 139,
+    "ai_by_section": {
+      "Prepared remarks": 62,
+      "Q&A": 77
+    },
+    "total_by_section": {
+      "Prepared remarks": 166,
+      "Q&A": 313
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 37,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 57,
+      "context-dependent": 7
+    },
+    "parse_notes": {
+      "noise_lines_removed": 98,
+      "format": "factset"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Aaron Rakers, Analyst, Wells Fargo Securities LLC",
+      "Ben Reitzes, Analyst, Melius Research LLC",
+      "CJ Muse, Analyst, Cantor Fitzgerald & Co.",
+      "Colette M. Kress, Chief Financial Officer & Executive Vice President, NVIDIA Corp.",
+      "James Edward Schneider, Analyst, Goldman Sachs & Co. LLC",
+      "Jen Hsun Huang, Founder, President, Chief Executive Officer & Director, NVIDIA Corp.",
+      "Joe Moore, Analyst, Morgan Stanley & Co. LLC",
+      "Operator",
+      "Stacy A. Rasgon, Analyst, Bernstein Institutional Services LLC",
+      "Timothy Arcuri, Analyst, UBS Securities LLC",
+      "Toshiya Hari, Vice President-Investor Relations & Strategic Finance, NVIDIA Corp.",
+      "Vivek Arya, Analyst, BofA Securities, Inc."
+    ]
+  },
+  "alphabet_2022_Q4": {
+    "company": "alphabet",
+    "file": "alphabet_2022_Q4.md",
+    "period": "2022_Q4",
+    "format": "alphabet",
+    "total": 468,
+    "ai": 76,
+    "ai_by_section": {
+      "Prepared remarks": 52,
+      "Q&A": 24
+    },
+    "total_by_section": {
+      "Prepared remarks": 251,
+      "Q&A": 217
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 5,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 19,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 185,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brent Thill, Jefferies",
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Director Investor Relations",
+      "Justin Post, BoA-Merrill Lynch",
+      "Mark Mahaney, Evercore ISI",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Ruth Porat, CFO Alphabet and Google",
+      "Sundar Pichai, CEO Google"
+    ]
+  },
+  "alphabet_2023_Q1": {
+    "company": "alphabet",
+    "file": "alphabet_2023_Q1.md",
+    "period": "2023_Q1",
+    "format": "alphabet",
+    "total": 516,
+    "ai": 79,
+    "ai_by_section": {
+      "Prepared remarks": 48,
+      "Q&A": 31
+    },
+    "total_by_section": {
+      "Prepared remarks": 241,
+      "Q&A": 275
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 9,
+      "uncertain": 5
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 19,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 183,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Colin Sebastian, Baird",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Director Investor Relations",
+      "Justin Post, BoA-Merrill Lynch",
+      "Mark Mahaney, Evercore ISI",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Ruth Porat, CFO Alphabet and Google",
+      "Sundar Pichai, CEO Alphabet and Google"
+    ]
+  },
+  "alphabet_2023_Q2": {
+    "company": "alphabet",
+    "file": "alphabet_2023_Q2.md",
+    "period": "2023_Q2",
+    "format": "alphabet",
+    "total": 509,
+    "ai": 95,
+    "ai_by_section": {
+      "Prepared remarks": 56,
+      "Q&A": 39
+    },
+    "total_by_section": {
+      "Prepared remarks": 254,
+      "Q&A": 255
+    },
+    "borderline_auto": 3,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 10,
+      "uncertain": 1
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 1,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 182,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Director Investor Relations",
+      "Justin Post, Bank of America",
+      "Ken Gawrelski, Wells Fargo",
+      "Lloyd Walmsley, UBS",
+      "Mark Mahaney, Evercore ISI",
+      "Michael Nathanson, Moffett",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ruth Porat, CFO Alphabet and Google",
+      "Sundar Pichai, CEO Alphabet and Google"
+    ]
+  },
+  "alphabet_2023_Q3": {
+    "company": "alphabet",
+    "file": "alphabet_2023_Q3.md",
+    "period": "2023_Q3",
+    "format": "alphabet",
+    "total": 453,
+    "ai": 83,
+    "ai_by_section": {
+      "Prepared remarks": 53,
+      "Q&A": 30
+    },
+    "total_by_section": {
+      "Prepared remarks": 222,
+      "Q&A": 231
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 11,
+      "uncertain": 4
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 18,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 137,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Director Investor Relations",
+      "Justin Post, Bank of America",
+      "Ken Gawrelski, Wells Fargo",
+      "Lloyd Walmsley, UBS",
+      "Mark Mahaney, Evercore ISI",
+      "Michael Nathanson, Moffett",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ruth Porat, President and Chief Investment Officer; CFO, Alphabet and Google",
+      "Sundar Pichai, CEO Alphabet and Google"
+    ]
+  },
+  "alphabet_2023_Q4": {
+    "company": "alphabet",
+    "file": "alphabet_2023_Q4.md",
+    "period": "2023_Q4",
+    "format": "alphabet",
+    "total": 496,
+    "ai": 96,
+    "ai_by_section": {
+      "Prepared remarks": 63,
+      "Q&A": 33
+    },
+    "total_by_section": {
+      "Prepared remarks": 260,
+      "Q&A": 236
+    },
+    "borderline_auto": 3,
+    "borderline_infra": 10,
+    "false_positive_ai_tokens": 1,
+    "flag_counts": {
+      "context-dependent": 8,
+      "uncertain": 2
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 20,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 137,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Director Investor Relations",
+      "Justin Post, BAML",
+      "Mark Mahaney, Evercore",
+      "Michael Nathanson, Moffett",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Ruth Porat, President and Chief Investment Officer; CFO, Alphabet and Google",
+      "Stephen Ju, UBS",
+      "Sundar Pichai, CEO Alphabet and Google"
+    ]
+  },
+  "alphabet_2024_Q1": {
+    "company": "alphabet",
+    "file": "alphabet_2024_Q1.md",
+    "period": "2024_Q1",
+    "format": "alphabet",
+    "total": 488,
+    "ai": 87,
+    "ai_by_section": {
+      "Prepared remarks": 65,
+      "Q&A": 22
+    },
+    "total_by_section": {
+      "Prepared remarks": 269,
+      "Q&A": 219
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 24,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 7,
+      "uncertain": 4
+    },
+    "parse_notes": {
+      "layout": "one word per line",
+      "page_numbers_removed": 22,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 135,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Colin Sebastian, Baird",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jian Li, Evercore",
+      "Jim Friedland, Director Investor Relations",
+      "Justin Post, BAML",
+      "Ken Gawrelski, Wells Fargo",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Ruth Porat, President and Chief Investment Officer; CFO, Alphabet and Google",
+      "Stephen Ju, UBS",
+      "Sundar Pichai, CEO Alphabet and Google"
+    ]
+  },
+  "alphabet_2024_Q2": {
+    "company": "alphabet",
+    "file": "alphabet_2024_Q2.md",
+    "period": "2024_Q2",
+    "format": "alphabet",
+    "total": 496,
+    "ai": 109,
+    "ai_by_section": {
+      "Prepared remarks": 72,
+      "Q&A": 37
+    },
+    "total_by_section": {
+      "Prepared remarks": 258,
+      "Q&A": 238
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 7,
+      "uncertain": 20
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 22,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 137,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Director Investor Relations",
+      "Justin Post, Bank of America",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Ruth Porat, President and Chief Investment Officer; CFO, Alphabet and Google",
+      "Stephen Ju, UBS",
+      "Sundar Pichai, CEO Alphabet and Google"
+    ]
+  },
+  "alphabet_2024_Q3": {
+    "company": "alphabet",
+    "file": "alphabet_2024_Q3.md",
+    "period": "2024_Q3",
+    "format": "alphabet",
+    "total": 558,
+    "ai": 129,
+    "ai_by_section": {
+      "Prepared remarks": 84,
+      "Q&A": 45
+    },
+    "total_by_section": {
+      "Prepared remarks": 262,
+      "Q&A": 296
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 13,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 5,
+      "uncertain": 23
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 25,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 135,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP & CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Senior Director Investor Relations",
+      "Justin Post, Bank of America",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Mahaney, Evercore",
+      "Michael Nathanson, Moffett",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Stephen Ju, UBS",
+      "Sundar Pichai, CEO Alphabet and Google"
+    ]
+  },
+  "alphabet_2024_Q4": {
+    "company": "alphabet",
+    "file": "alphabet_2024_Q4.md",
+    "period": "2024_Q4",
+    "format": "alphabet",
+    "total": 527,
+    "ai": 127,
+    "ai_by_section": {
+      "Prepared remarks": 71,
+      "Q&A": 56
+    },
+    "total_by_section": {
+      "Prepared remarks": 271,
+      "Q&A": 256
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 19,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 23,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "layout": "one word per line, blank line after every word",
+      "page_numbers_removed": 25,
+      "page_numbers_method": "inline sequence detector",
+      "title_block_chars": 135,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP and CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Senior Director, Investor Relations",
+      "Justin Post, Bank of America",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Sundar Pichai, CEO, Alphabet and Google"
+    ]
+  },
+  "alphabet_2025_Q1": {
+    "company": "alphabet",
+    "file": "alphabet_2025_Q1.md",
+    "period": "2025_Q1",
+    "format": "alphabet",
+    "total": 488,
+    "ai": 107,
+    "ai_by_section": {
+      "Prepared remarks": 63,
+      "Q&A": 44
+    },
+    "total_by_section": {
+      "Prepared remarks": 222,
+      "Q&A": 266
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 18,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 8,
+      "uncertain": 13
+    },
+    "parse_notes": {
+      "layout": "one word per line, blank line after every word",
+      "page_numbers_removed": 21,
+      "page_numbers_method": "inline sequence detector",
+      "title_block_chars": 135,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP and CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Senior Director, Investor Relations",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Mahaney, Evercore",
+      "Mark Shmulik, Bernstein",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ron Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Sundar Pichai, CEO, Alphabet and Google"
+    ]
+  },
+  "alphabet_2025_Q2": {
+    "company": "alphabet",
+    "file": "alphabet_2025_Q2.md",
+    "period": "2025_Q2",
+    "format": "alphabet",
+    "total": 508,
+    "ai": 126,
+    "ai_by_section": {
+      "Prepared remarks": 81,
+      "Q&A": 45
+    },
+    "total_by_section": {
+      "Prepared remarks": 246,
+      "Q&A": 262
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 21,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 5,
+      "uncertain": 16
+    },
+    "parse_notes": {
+      "layout": "one word per line, blank line after every word",
+      "page_numbers_removed": 25,
+      "page_numbers_method": "inline sequence detector",
+      "title_block_chars": 134,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP and CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Head of Investor Relations",
+      "Justin Post, BAML",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Mahaney, Evercore",
+      "Mark Shmulik, Bernstein",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Sundar Pichai, CEO, Alphabet and Google"
+    ]
+  },
+  "alphabet_2025_Q3": {
+    "company": "alphabet",
+    "file": "alphabet_2025_Q3.md",
+    "period": "2025_Q3",
+    "format": "alphabet",
+    "total": 453,
+    "ai": 141,
+    "ai_by_section": {
+      "Prepared remarks": 81,
+      "Q&A": 60
+    },
+    "total_by_section": {
+      "Prepared remarks": 240,
+      "Q&A": 213
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 17,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 26,
+      "context-dependent": 8
+    },
+    "parse_notes": {
+      "layout": "one word per line, blank line after every word",
+      "page_numbers_removed": 22,
+      "page_numbers_method": "inline sequence detector",
+      "title_block_chars": 135,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP and CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Doug Anmuth, JP Morgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Head of Investor Relations",
+      "Justin Post, BAML",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Sundar Pichai, CEO, Alphabet and Google"
+    ]
+  },
+  "alphabet_2025_Q4": {
+    "company": "alphabet",
+    "file": "alphabet_2025_Q4.md",
+    "period": "2025_Q4",
+    "format": "alphabet",
+    "total": 515,
+    "ai": 158,
+    "ai_by_section": {
+      "Prepared remarks": 102,
+      "Q&A": 56
+    },
+    "total_by_section": {
+      "Prepared remarks": 256,
+      "Q&A": 259
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 25,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 23,
+      "context-dependent": 7
+    },
+    "parse_notes": {
+      "layout": "one word per line, blank line after every word",
+      "page_numbers_removed": 0,
+      "page_numbers_method": "inline sequence detector",
+      "title_block_chars": 135,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP and CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JP Morgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Head of Investor Relations",
+      "Justin Post, Bank of America",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Mahaney, Evercore",
+      "Mark Shmulik, Bernstein",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ross Sandler, Barclays",
+      "Sundar Pichai, CEO, Alphabet and Google"
+    ]
+  },
+  "alphabet_2026_Q1": {
+    "company": "alphabet",
+    "file": "alphabet_2026_Q1.md",
+    "period": "2026_Q1",
+    "format": "alphabet",
+    "total": 504,
+    "ai": 161,
+    "ai_by_section": {
+      "Prepared remarks": 100,
+      "Q&A": 61
+    },
+    "total_by_section": {
+      "Prepared remarks": 251,
+      "Q&A": 253
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 21,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 12,
+      "uncertain": 20
+    },
+    "parse_notes": {
+      "layout": "wrapped lines",
+      "page_numbers_removed": 24,
+      "page_numbers_method": "digit-only line followed by blank line",
+      "title_block_chars": 137,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP and CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JP Morgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Head of Investor Relations",
+      "Justin Post, BAML",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein",
+      "Michael Nathanson, MoffettNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ron Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Sundar Pichai, CEO, Alphabet and Google"
+    ]
+  },
+  "alphabet_2026_Q2": {
+    "company": "alphabet",
+    "file": "alphabet_2026_Q2.md",
+    "period": "2026_Q2",
+    "format": "alphabet",
+    "total": 523,
+    "ai": 174,
+    "ai_by_section": {
+      "Prepared remarks": 102,
+      "Q&A": 72
+    },
+    "total_by_section": {
+      "Prepared remarks": 248,
+      "Q&A": 275
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 15,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 9,
+      "uncertain": 36
+    },
+    "parse_notes": {
+      "layout": "one word per line, blank line after every word",
+      "page_numbers_removed": 0,
+      "page_numbers_method": "inline sequence detector",
+      "title_block_chars": 135,
+      "format": "alphabet"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Anat Ashkenazi, SVP and CFO, Alphabet and Google",
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JP Morgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Jim Friedland, Head of Investor Relations",
+      "Ken Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein",
+      "Michael Nathanson, MoffetNathanson",
+      "Operator",
+      "Philipp Schindler, SVP and CBO, Google",
+      "Ron Josey, CitI",
+      "Ross Sandler, Barclays",
+      "Shweta Khajuria, Wolfe Research",
+      "Sundar Pichai, CEO, Alphabet and Google"
+    ]
+  },
+  "amazon_2022_Q4": {
+    "company": "amazon",
+    "file": "amazon_2022_Q4.md",
+    "period": "2022_Q4",
+    "format": "captions",
+    "total": 380,
+    "ai": 1,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 1
+    },
+    "total_by_section": {
+      "Prepared remarks": 109,
+      "Q&A": 271
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 5,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 1
+    },
+    "parse_notes": {
+      "segments": 1077,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 4.97,
+      "whisper_segment_boundaries_used": 24,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels",
+      "380 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2023_Q1": {
+    "company": "amazon",
+    "file": "amazon_2023_Q1.md",
+    "period": "2023_Q1",
+    "format": "captions",
+    "total": 545,
+    "ai": 38,
+    "ai_by_section": {
+      "Prepared remarks": 5,
+      "Q&A": 33
+    },
+    "total_by_section": {
+      "Prepared remarks": 173,
+      "Q&A": 372
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 8,
+      "context-dependent": 8
+    },
+    "parse_notes": {
+      "segments": 564,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 1.36,
+      "whisper_segment_boundaries_used": 451,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2023_Q2": {
+    "company": "amazon",
+    "file": "amazon_2023_Q2.md",
+    "period": "2023_Q2",
+    "format": "captions",
+    "total": 363,
+    "ai": 54,
+    "ai_by_section": {
+      "Prepared remarks": 37,
+      "Q&A": 17
+    },
+    "total_by_section": {
+      "Prepared remarks": 185,
+      "Q&A": 178
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 7,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 4,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "segments": 934,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.02,
+      "whisper_segment_boundaries_used": 19,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels",
+      "call opening not detected: source may start mid-call",
+      "363 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2023_Q3": {
+    "company": "amazon",
+    "file": "amazon_2023_Q3.md",
+    "period": "2023_Q3",
+    "format": "captions",
+    "total": 391,
+    "ai": 73,
+    "ai_by_section": {
+      "Prepared remarks": 35,
+      "Q&A": 38
+    },
+    "total_by_section": {
+      "Prepared remarks": 174,
+      "Q&A": 217
+    },
+    "borderline_auto": 6,
+    "borderline_infra": 6,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 13,
+      "context-dependent": 2
+    },
+    "parse_notes": {
+      "segments": 1010,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 4.78,
+      "whisper_segment_boundaries_used": 17,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels",
+      "391 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2023_Q4": {
+    "company": "amazon",
+    "file": "amazon_2023_Q4.md",
+    "period": "2023_Q4",
+    "format": "captions",
+    "total": 441,
+    "ai": 50,
+    "ai_by_section": {
+      "Prepared remarks": 28,
+      "Q&A": 22
+    },
+    "total_by_section": {
+      "Prepared remarks": 179,
+      "Q&A": 262
+    },
+    "borderline_auto": 1,
+    "borderline_infra": 8,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 7,
+      "context-dependent": 5
+    },
+    "parse_notes": {
+      "segments": 1039,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.04,
+      "whisper_segment_boundaries_used": 22,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2024_Q1": {
+    "company": "amazon",
+    "file": "amazon_2024_Q1.md",
+    "period": "2024_Q1",
+    "format": "captions",
+    "total": 456,
+    "ai": 56,
+    "ai_by_section": {
+      "Prepared remarks": 37,
+      "Q&A": 19
+    },
+    "total_by_section": {
+      "Prepared remarks": 203,
+      "Q&A": 253
+    },
+    "borderline_auto": 4,
+    "borderline_infra": 18,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 12,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "segments": 533,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.41,
+      "whisper_segment_boundaries_used": 20,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2024_Q2": {
+    "company": "amazon",
+    "file": "amazon_2024_Q2.md",
+    "period": "2024_Q2",
+    "format": "captions",
+    "total": 408,
+    "ai": 53,
+    "ai_by_section": {
+      "Prepared remarks": 33,
+      "Q&A": 20
+    },
+    "total_by_section": {
+      "Prepared remarks": 190,
+      "Q&A": 218
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 10,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 4,
+      "uncertain": 7
+    },
+    "parse_notes": {
+      "segments": 1126,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.12,
+      "whisper_segment_boundaries_used": 18,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2024_Q3": {
+    "company": "amazon",
+    "file": "amazon_2024_Q3.md",
+    "period": "2024_Q3",
+    "format": "captions",
+    "total": 410,
+    "ai": 58,
+    "ai_by_section": {
+      "Prepared remarks": 32,
+      "Q&A": 26
+    },
+    "total_by_section": {
+      "Prepared remarks": 175,
+      "Q&A": 235
+    },
+    "borderline_auto": 11,
+    "borderline_infra": 17,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 5,
+      "uncertain": 10
+    },
+    "parse_notes": {
+      "segments": 504,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.48,
+      "whisper_segment_boundaries_used": 23,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY23_Q1": {
+    "company": "apple",
+    "file": "apple_FY23_Q1.md",
+    "period": "FY23_Q1",
+    "format": "captions",
+    "total": 110,
+    "ai": 8,
+    "ai_by_section": {
+      "Prepared remarks": 3,
+      "Q&A": 5
+    },
+    "total_by_section": {
+      "Prepared remarks": 49,
+      "Q&A": 61
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 0,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 6
+    },
+    "parse_notes": {
+      "segments": 110,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 0.39,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "call opening not detected: source may start mid-call",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "110 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY23_Q2": {
+    "company": "apple",
+    "file": "apple_FY23_Q2.md",
+    "period": "FY23_Q2",
+    "format": "captions",
+    "total": 116,
+    "ai": 6,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 6
+    },
+    "total_by_section": {
+      "Prepared remarks": 46,
+      "Q&A": 70
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 0,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 2
+    },
+    "parse_notes": {
+      "segments": 133,
+      "pre_call_segments_dropped": 14,
+      "post_call_segments_dropped": 3,
+      "punct_per_100_words": 0.4,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "14 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "116 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY23_Q3": {
+    "company": "apple",
+    "file": "apple_FY23_Q3.md",
+    "period": "FY23_Q3",
+    "format": "captions",
+    "total": 469,
+    "ai": 5,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 5
+    },
+    "total_by_section": {
+      "Prepared remarks": 156,
+      "Q&A": 313
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 0,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {},
+    "parse_notes": {
+      "segments": 117,
+      "pre_call_segments_dropped": 1,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.67,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY23_Q4": {
+    "company": "apple",
+    "file": "apple_FY23_Q4.md",
+    "period": "FY23_Q4",
+    "format": "captions",
+    "total": 115,
+    "ai": 7,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 7
+    },
+    "total_by_section": {
+      "Prepared remarks": 51,
+      "Q&A": 64
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 3,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 2
+    },
+    "parse_notes": {
+      "segments": 144,
+      "pre_call_segments_dropped": 28,
+      "post_call_segments_dropped": 1,
+      "punct_per_100_words": 0.29,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "28 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "115 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY24_Q1": {
+    "company": "apple",
+    "file": "apple_FY24_Q1.md",
+    "period": "FY24_Q1",
+    "format": "captions",
+    "total": 109,
+    "ai": 18,
+    "ai_by_section": {
+      "Prepared remarks": 7,
+      "Q&A": 11
+    },
+    "total_by_section": {
+      "Prepared remarks": 48,
+      "Q&A": 61
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 0,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 7
+    },
+    "parse_notes": {
+      "segments": 109,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 0.35,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "109 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY24_Q2": {
+    "company": "apple",
+    "file": "apple_FY24_Q2.md",
+    "period": "FY24_Q2",
+    "format": "captions",
+    "total": 110,
+    "ai": 17,
+    "ai_by_section": {
+      "Prepared remarks": 6,
+      "Q&A": 11
+    },
+    "total_by_section": {
+      "Prepared remarks": 42,
+      "Q&A": 68
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 3
+    },
+    "parse_notes": {
+      "segments": 112,
+      "pre_call_segments_dropped": 2,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 0.31,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "110 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY24_Q3": {
+    "company": "apple",
+    "file": "apple_FY24_Q3.md",
+    "period": "FY24_Q3",
+    "format": "captions",
+    "total": 112,
+    "ai": 33,
+    "ai_by_section": {
+      "Prepared remarks": 11,
+      "Q&A": 22
+    },
+    "total_by_section": {
+      "Prepared remarks": 44,
+      "Q&A": 68
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 2
+    },
+    "parse_notes": {
+      "segments": 233,
+      "pre_call_segments_dropped": 121,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 0.31,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "121 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "112 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY24_Q4": {
+    "company": "apple",
+    "file": "apple_FY24_Q4.md",
+    "period": "FY24_Q4",
+    "format": "captions",
+    "total": 463,
+    "ai": 37,
+    "ai_by_section": {
+      "Prepared remarks": 12,
+      "Q&A": 25
+    },
+    "total_by_section": {
+      "Prepared remarks": 152,
+      "Q&A": 311
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 4,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 2,
+      "uncertain": 4
+    },
+    "parse_notes": {
+      "segments": 112,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 1,
+      "punct_per_100_words": 5.84,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY25_Q1": {
+    "company": "apple",
+    "file": "apple_FY25_Q1.md",
+    "period": "FY25_Q1",
+    "format": "captions",
+    "total": 106,
+    "ai": 29,
+    "ai_by_section": {
+      "Prepared remarks": 11,
+      "Q&A": 18
+    },
+    "total_by_section": {
+      "Prepared remarks": 43,
+      "Q&A": 63
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 5
+    },
+    "parse_notes": {
+      "segments": 107,
+      "pre_call_segments_dropped": 1,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 0.48,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "106 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY25_Q2": {
+    "company": "apple",
+    "file": "apple_FY25_Q2.md",
+    "period": "FY25_Q2",
+    "format": "captions",
+    "total": 473,
+    "ai": 35,
+    "ai_by_section": {
+      "Prepared remarks": 17,
+      "Q&A": 18
+    },
+    "total_by_section": {
+      "Prepared remarks": 151,
+      "Q&A": 322
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 9,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "segments": 107,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 6.3,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY25_Q3": {
+    "company": "apple",
+    "file": "apple_FY25_Q3.md",
+    "period": "FY25_Q3",
+    "format": "captions",
+    "total": 480,
+    "ai": 39,
+    "ai_by_section": {
+      "Prepared remarks": 15,
+      "Q&A": 24
+    },
+    "total_by_section": {
+      "Prepared remarks": 175,
+      "Q&A": 305
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 7
+    },
+    "parse_notes": {
+      "segments": 111,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.9,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY25_Q4": {
+    "company": "apple",
+    "file": "apple_FY25_Q4.md",
+    "period": "FY25_Q4",
+    "format": "captions",
+    "total": 531,
+    "ai": 36,
+    "ai_by_section": {
+      "Prepared remarks": 17,
+      "Q&A": 19
+    },
+    "total_by_section": {
+      "Prepared remarks": 172,
+      "Q&A": 359
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 6,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 1,
+      "uncertain": 10
+    },
+    "parse_notes": {
+      "segments": 107,
+      "pre_call_segments_dropped": 1,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 6.94,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY26_Q1": {
+    "company": "apple",
+    "file": "apple_FY26_Q1.md",
+    "period": "FY26_Q1",
+    "format": "captions",
+    "total": 483,
+    "ai": 33,
+    "ai_by_section": {
+      "Prepared remarks": 12,
+      "Q&A": 21
+    },
+    "total_by_section": {
+      "Prepared remarks": 156,
+      "Q&A": 327
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 7,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 2,
+      "uncertain": 7
+    },
+    "parse_notes": {
+      "segments": 112,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 1,
+      "punct_per_100_words": 5.95,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY26_Q2": {
+    "company": "apple",
+    "file": "apple_FY26_Q2.md",
+    "period": "FY26_Q2",
+    "format": "captions",
+    "total": 530,
+    "ai": 30,
+    "ai_by_section": {
+      "Prepared remarks": 17,
+      "Q&A": 13
+    },
+    "total_by_section": {
+      "Prepared remarks": 223,
+      "Q&A": 307
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 0,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 3,
+      "uncertain": 7
+    },
+    "parse_notes": {
+      "segments": 120,
+      "pre_call_segments_dropped": 1,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.98,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY26_Q3": {
+    "company": "apple",
+    "file": "apple_FY26_Q3.md",
+    "period": "FY26_Q3",
+    "format": "captions",
+    "total": 510,
+    "ai": 43,
+    "ai_by_section": {
+      "Prepared remarks": 23,
+      "Q&A": 20
+    },
+    "total_by_section": {
+      "Prepared remarks": 204,
+      "Q&A": 306
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 3,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "segments": 121,
+      "pre_call_segments_dropped": 2,
+      "post_call_segments_dropped": 1,
+      "punct_per_100_words": 6.23,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "tesla_2022_Q4": {
+    "company": "tesla",
+    "file": "tesla_2022_Q4.md",
+    "period": "2022_Q4",
+    "format": "fool",
+    "total": 509,
+    "ai": 37,
+    "ai_by_section": {
+      "Prepared remarks": 4,
+      "Q&A": 33
+    },
+    "total_by_section": {
+      "Prepared remarks": 82,
+      "Q&A": 427
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 1,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 21,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 69,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Adam Jonas, Morgan Stanley, Analyst",
+      "Alex Potter, Piper Sandler, Analyst",
+      "Andrew Baglino, Senior Vice President, Powertrain and Energy Engineering",
+      "Elon Musk, Chief Executive Officer and Product Architect",
+      "George Gianarikas, Canaccord Genuity, Analyst",
+      "Lars Moravy, Vice President, Vehicle Engineering",
+      "Pierre Ferragu, New Street Research, Analyst",
+      "Rod Lache, Wolfe Research, Analyst",
+      "William Stein, Truist Securities, Analyst",
+      "Zach Kirkhorn, Chief Financial Officer"
+    ]
+  },
+  "tesla_2023_Q1": {
+    "company": "tesla",
+    "file": "tesla_2023_Q1.md",
+    "period": "2023_Q1",
+    "format": "captions",
+    "total": 120,
+    "ai": 21,
+    "ai_by_section": {
+      "Prepared remarks": 7,
+      "Q&A": 14
+    },
+    "total_by_section": {
+      "Prepared remarks": 17,
+      "Q&A": 103
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 3,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 15
+    },
+    "parse_notes": {
+      "segments": 129,
+      "pre_call_segments_dropped": 8,
+      "post_call_segments_dropped": 1,
+      "punct_per_100_words": 0.04,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "8 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "120 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "tesla_2023_Q2": {
+    "company": "tesla",
+    "file": "tesla_2023_Q2.md",
+    "period": "2023_Q2",
+    "format": "fool",
+    "total": 578,
+    "ai": 59,
+    "ai_by_section": {
+      "Prepared remarks": 19,
+      "Q&A": 40
+    },
+    "total_by_section": {
+      "Prepared remarks": 92,
+      "Q&A": 486
+    },
+    "borderline_auto": 9,
+    "borderline_infra": 6,
+    "false_positive_ai_tokens": 2,
+    "flag_counts": {
+      "uncertain": 29,
+      "context-dependent": 5
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 53,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Colin Rusch, Oppenheimer and Company, Analyst",
+      "Dan Levy, Barclays, Analyst",
+      "Elon Musk, Chief Executive Officer and Product Architect",
+      "Emmanuel Rosner, Deutsche Bank, Analyst",
+      "Lars Moravy, Vice President, Vehicle Engineering",
+      "Mark Delaney, Goldman Sachs, Analyst",
+      "William Stein, Truist Securities, Analyst",
+      "Zachary Kirkhorn, Chief Financial Officer"
+    ]
+  },
+  "tesla_2023_Q3": {
+    "company": "tesla",
+    "file": "tesla_2023_Q3.md",
+    "period": "2023_Q3",
+    "format": "fool",
+    "total": 479,
+    "ai": 26,
+    "ai_by_section": {
+      "Prepared remarks": 2,
+      "Q&A": 24
+    },
+    "total_by_section": {
+      "Prepared remarks": 26,
+      "Q&A": 453
+    },
+    "borderline_auto": 12,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 19,
+      "context-dependent": 2
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 52,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Colin Langan, Wells Fargo Securities, Analyst",
+      "George Gianarikas, Canaccord Genuity, Analyst",
+      "Martin Viecha, Senior Director, Investor Relations",
+      "Pierre Ferragu, New Street Research, Analyst",
+      "Rod Lache, Wolfe Research, Analyst",
+      "Vaibhav Taneja, Chief Financial Officer",
+      "Will Stein, Truist Securities, Analyst"
+    ]
+  },
+  "tesla_2023_Q4": {
+    "company": "tesla",
+    "file": "tesla_2023_Q4.md",
+    "period": "2023_Q4",
+    "format": "fool",
+    "total": 577,
+    "ai": 35,
+    "ai_by_section": {
+      "Prepared remarks": 16,
+      "Q&A": 19
+    },
+    "total_by_section": {
+      "Prepared remarks": 318,
+      "Q&A": 259
+    },
+    "borderline_auto": 14,
+    "borderline_infra": 10,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 12,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 51,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Adam Jonas, Morgan Stanley, Analyst",
+      "Colin Langan, Wells Fargo Securities, Analyst",
+      "Dan Levy, Barclays, Analyst",
+      "Elon Musk, Chief Executive Officer and Product Architect",
+      "Pierre Ferragu, New Street Research, Analyst",
+      "Vaibhav Taneja, Chief Financial Officer"
+    ]
+  },
+  "tesla_2024_Q1": {
+    "company": "tesla",
+    "file": "tesla_2024_Q1.md",
+    "period": "2024_Q1",
+    "format": "fool",
+    "total": 629,
+    "ai": 71,
+    "ai_by_section": {
+      "Prepared remarks": 49,
+      "Q&A": 22
+    },
+    "total_by_section": {
+      "Prepared remarks": 235,
+      "Q&A": 394
+    },
+    "borderline_auto": 7,
+    "borderline_infra": 16,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 45,
+      "context-dependent": 7
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 56,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Adam Jonas, Morgan Stanley, Analyst",
+      "Alex Potter, Piper Sandler, Analyst",
+      "Ashok Elluswamy, Director, Autopilot Software",
+      "Colin Rusch, Oppenheimer and Company, Analyst",
+      "Elon Musk, Chief Executive Officer and Product Architect",
+      "George Gianarikas, Canaccord Genuity, Analyst",
+      "Lars Moravy, Vice President, Vehicle Engineering",
+      "Mark Delaney, Goldman Sachs, Analyst",
+      "Shreyas Patil, Wolfe Research, Analyst",
+      "Tony Sacconaghi, AllianceBernstein, Analyst",
+      "Vaibhav Taneja, Chief Financial Officer"
+    ]
+  },
+  "tesla_2024_Q2": {
+    "company": "tesla",
+    "file": "tesla_2024_Q2.md",
+    "period": "2024_Q2",
+    "format": "fool",
+    "total": 541,
+    "ai": 84,
+    "ai_by_section": {
+      "Prepared remarks": 18,
+      "Q&A": 66
+    },
+    "total_by_section": {
+      "Prepared remarks": 106,
+      "Q&A": 435
+    },
+    "borderline_auto": 16,
+    "borderline_infra": 19,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 48,
+      "context-dependent": 13
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 77,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Alexander Potter, Analyst",
+      "Ashok Elluswamy, Director, Autopilot Software",
+      "Ben Kallo, Analyst",
+      "Colin Langan, Analyst",
+      "Colin Rusch, Analyst",
+      "Dan Levy, Analyst",
+      "Elon Reeve Musk, Chief Executive Officer and Product Architect",
+      "George Gianarikas, Canaccord Genuity, Analyst",
+      "Lars Moravy, Vice President, Vehicle Engineering",
+      "Pierre Ferragu, Analyst",
+      "Travis Axelrod, Head of Investor Relations",
+      "Vaibhav Taneja, Chief Financial Officer",
+      "William Stein, Analyst"
+    ]
+  },
+  "tesla_2024_Q3": {
+    "company": "tesla",
+    "file": "tesla_2024_Q3.md",
+    "period": "2024_Q3",
+    "format": "fool",
+    "total": 596,
+    "ai": 90,
+    "ai_by_section": {
+      "Prepared remarks": 31,
+      "Q&A": 59
+    },
+    "total_by_section": {
+      "Prepared remarks": 210,
+      "Q&A": 386
+    },
+    "borderline_auto": 5,
+    "borderline_infra": 10,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 55,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 52,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Adam Jonas, Analyst",
+      "Ashok Elluswamy, Director, Autopilot Software",
+      "David Lau, Vice President, Software Engineering",
+      "Elon Reeve Musk, Chief Executive Officer and Product Architect",
+      "Pierre Ferragu, Analyst",
+      "Travis Axelrod, Head of Investor Relations",
+      "Vaibhav Taneja, Chief Financial Officer"
+    ]
+  },
+  "tesla_2024_Q4": {
+    "company": "tesla",
+    "file": "tesla_2024_Q4.md",
+    "period": "2024_Q4",
+    "format": "fool",
+    "total": 590,
+    "ai": 75,
+    "ai_by_section": {
+      "Prepared remarks": 27,
+      "Q&A": 48
+    },
+    "total_by_section": {
+      "Prepared remarks": 210,
+      "Q&A": 380
+    },
+    "borderline_auto": 39,
+    "borderline_infra": 5,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 52,
+      "context-dependent": 2
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 54,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Adam Jonas, Analyst",
+      "Ashok Elluswamy, Director, Autopilot Software",
+      "Dan Levy, Analyst",
+      "Daniel Roeska, Analyst",
+      "Elon Reeve Musk, Chief Executive Officer and Product Architect",
+      "Lars Moravy, Vice President, Vehicle Engineering",
+      "Pierre Ferragu, Analyst",
+      "Travis Axelrod, Head of Investor Relations",
+      "Vaibhav Taneja, Chief Financial Officer"
+    ]
+  },
+  "tesla_2025_Q1": {
+    "company": "tesla",
+    "file": "tesla_2025_Q1.md",
+    "period": "2025_Q1",
+    "format": "captions",
+    "total": 697,
+    "ai": 56,
+    "ai_by_section": {
+      "Prepared remarks": 18,
+      "Q&A": 38
+    },
+    "total_by_section": {
+      "Prepared remarks": 184,
+      "Q&A": 513
+    },
+    "borderline_auto": 19,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 44,
+      "context-dependent": 2
+    },
+    "parse_notes": {
+      "segments": 177,
+      "pre_call_segments_dropped": 9,
+      "post_call_segments_dropped": 1,
+      "punct_per_100_words": 5.4,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "9 pre-call livestream segments dropped"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "tesla_2025_Q2": {
+    "company": "tesla",
+    "file": "tesla_2025_Q2.md",
+    "period": "2025_Q2",
+    "format": "captions",
+    "total": 466,
+    "ai": 71,
+    "ai_by_section": {
+      "Prepared remarks": 33,
+      "Q&A": 38
+    },
+    "total_by_section": {
+      "Prepared remarks": 161,
+      "Q&A": 305
+    },
+    "borderline_auto": 26,
+    "borderline_infra": 3,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 42
+    },
+    "parse_notes": {
+      "segments": 122,
+      "pre_call_segments_dropped": 6,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.42,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "6 pre-call livestream segments dropped"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "tesla_2025_Q3": {
+    "company": "tesla",
+    "file": "tesla_2025_Q3.md",
+    "period": "2025_Q3",
+    "format": "captions",
+    "total": 497,
+    "ai": 89,
+    "ai_by_section": {
+      "Prepared remarks": 22,
+      "Q&A": 67
+    },
+    "total_by_section": {
+      "Prepared remarks": 109,
+      "Q&A": 388
+    },
+    "borderline_auto": 45,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 36,
+      "context-dependent": 6
+    },
+    "parse_notes": {
+      "segments": 140,
+      "pre_call_segments_dropped": 12,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.12,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "12 pre-call livestream segments dropped"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "tesla_2025_Q4": {
+    "company": "tesla",
+    "file": "tesla_2025_Q4.md",
+    "period": "2025_Q4",
+    "format": "captions",
+    "total": 455,
+    "ai": 71,
+    "ai_by_section": {
+      "Prepared remarks": 19,
+      "Q&A": 52
+    },
+    "total_by_section": {
+      "Prepared remarks": 135,
+      "Q&A": 320
+    },
+    "borderline_auto": 30,
+    "borderline_infra": 8,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 46,
+      "context-dependent": 3,
+      "long": 1
+    },
+    "parse_notes": {
+      "segments": 126,
+      "pre_call_segments_dropped": 5,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 4.79,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "5 pre-call livestream segments dropped"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "tesla_2026_Q1": {
+    "company": "tesla",
+    "file": "tesla_2026_Q1.md",
+    "period": "2026_Q1",
+    "format": "captions",
+    "total": 424,
+    "ai": 78,
+    "ai_by_section": {
+      "Prepared remarks": 18,
+      "Q&A": 60
+    },
+    "total_by_section": {
+      "Prepared remarks": 117,
+      "Q&A": 307
+    },
+    "borderline_auto": 20,
+    "borderline_infra": 3,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 49,
+      "context-dependent": 1
+    },
+    "parse_notes": {
+      "segments": 115,
+      "pre_call_segments_dropped": 1,
+      "post_call_segments_dropped": 1,
+      "punct_per_100_words": 5.2,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "tesla_2026_Q2": {
+    "company": "tesla",
+    "file": "tesla_2026_Q2.md",
+    "period": "2026_Q2",
+    "format": "captions",
+    "total": 491,
+    "ai": 68,
+    "ai_by_section": {
+      "Prepared remarks": 29,
+      "Q&A": 39
+    },
+    "total_by_section": {
+      "Prepared remarks": 176,
+      "Q&A": 315
+    },
+    "borderline_auto": 43,
+    "borderline_infra": 15,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 40,
+      "context-dependent": 4
+    },
+    "parse_notes": {
+      "segments": 125,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.07,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  }
+}
