@@ -8,7 +8,7 @@
 
 ---
 
-**30 AI sentences of 530 total**
+**25 AI sentences of 530 total**
 (Borderline, listed at the end: 0 automation/robotics, 0 infrastructure, none containing an AI term.)
 
 Source/parse flags: YouTube auto-captions, no speaker labels.
@@ -29,27 +29,22 @@ Source/parse flags: YouTube auto-captions, no speaker labels.
 11. Increasingly, that same foundation is drawing developers and researchers to our products as powerful platforms for building and running agentic AI, thanks to the unique combination of performance, efficiency, and on-device capabilities.
 12. When you combine this level of integration with our relentless focus on the customer experience, it becomes clear why Apple platforms are the best place to experience AI.
 13. We can't wait to share what we've been working on from AI advancements to exciting new software and developer tools.
-14. According to a recent survey from Worldpanel, iPhone was a top-selling model in the US, urban China, the UK, Australia, and Japan. ⚑ uncertain
-15. Marsh, a leading professional services firm, deployed a large-scale refresh of corporate devices to iPhone 17 as part of a commitment to security alongside adopting Mac for internal AI development.
-16. With Apple silicon and its powerful unified memory architecture, leading AI developers like Perplexity are choosing Mac as a preferred platform to build enterprise-grade AI assistants that power autonomous agents and boost workplace productivity.
-17. And in India, leading enterprise software provider Freshworks deployed over 5,000 MacBook Pro and MacBook Air to accelerate their AI development.
+14. Marsh, a leading professional services firm, deployed a large-scale refresh of corporate devices to iPhone 17 as part of a commitment to security alongside adopting Mac for internal AI development.
+15. With Apple silicon and its powerful unified memory architecture, leading AI developers like Perplexity are choosing Mac as a preferred platform to build enterprise-grade AI assistants that power autonomous agents and boost workplace productivity.
+16. And in India, leading enterprise software provider Freshworks deployed over 5,000 MacBook Pro and MacBook Air to accelerate their AI development.
 
 ## Q&A
 
 ### Speaker not labeled
-1. If you look forward to the June quarter, the majority of our supply constraints will be on several Mac models given the continued high levels of demand that we're seeing. ⚑ uncertain
-2. One is that on the Mac mini and the Mac Studio, uh, both of these are amazing platforms for AI and agentic tools, and the customer recognition of that is happening faster than what we had predicted.
-3. Um the first question is around there there's been some commentary around an agentic smartphone.
-4. Um by the way, I don't even know what that means, but uh there there's comments that um that you know, about AI on the edge and that agents could catalyze uh smartphones, but also shift the smartphone kind of form factor or maybe not.
-5. I was just wondering with the rise of agents, how you would like us to think about that. ⚑ uncertain
-6. Um do you feel and maybe Kevin wants to weigh in on this is you see a lot of variability in the model or is 47 48 kind of a range you think you might be able to stay in or is there just no visibility um you know, beyond June to answer this question. ⚑ uncertain
-7. Um on as a follow-up here, how's Apple thinking about the broader monetization maybe following Ben's question here in the agentic AI world.
-8. Um and is this at all related to your net cash comments in terms of perhaps building out more infrastructure as we enter an AI-centric world.
-9. Yeah, and I think Wamsi as we've talked about, you know, building on what Tim said, you know, we've from the start we said we, you know, believe AI is a really important investment area for Apple and we're going to be doing that incrementally on on top of what we normally invest in our product, you know, roadmap.
-10. And it's the uh the things that are driving people to the 17 are people love the design, uh people love the performance, they love the durability, they love the camera, they love center stage, uh and they love that Apple intelligence is integrated across the the platform.
-11. Uh, Tim, uh, my first question, uh, last quarter you did talk about Apple foundational models and sort of the two-pronged strategy there of, um, the collaboration with Google as well as continuing to internally sort of work on your own models.
-12. If you look at the individual products, iPhone was the top-selling model in urban China. ⚑ uncertain
-13. The Mac mini was the top-selling desktop in China, and the MacBook Air was the top-selling laptop model. ⚑ uncertain
+1. One is that on the Mac mini and the Mac Studio, uh, both of these are amazing platforms for AI and agentic tools, and the customer recognition of that is happening faster than what we had predicted.
+2. Um the first question is around there there's been some commentary around an agentic smartphone.
+3. Um by the way, I don't even know what that means, but uh there there's comments that um that you know, about AI on the edge and that agents could catalyze uh smartphones, but also shift the smartphone kind of form factor or maybe not.
+4. I was just wondering with the rise of agents, how you would like us to think about that. ⚑ uncertain
+5. Um on as a follow-up here, how's Apple thinking about the broader monetization maybe following Ben's question here in the agentic AI world.
+6. Um and is this at all related to your net cash comments in terms of perhaps building out more infrastructure as we enter an AI-centric world.
+7. Yeah, and I think Wamsi as we've talked about, you know, building on what Tim said, you know, we've from the start we said we, you know, believe AI is a really important investment area for Apple and we're going to be doing that incrementally on on top of what we normally invest in our product, you know, roadmap.
+8. And it's the uh the things that are driving people to the 17 are people love the design, uh people love the performance, they love the durability, they love the camera, they love center stage, uh and they love that Apple intelligence is integrated across the the platform.
+9. Uh, Tim, uh, my first question, uh, last quarter you did talk about Apple foundational models and sort of the two-pronged strategy there of, um, the collaboration with Google as well as continuing to internally sort of work on your own models.
 
 ## Borderline: automation/robotics without an AI term
 

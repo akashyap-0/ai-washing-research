@@ -8,7 +8,7 @@
 
 ---
 
-**84 AI sentences of 541 total**
+**84 AI sentences of 542 total**
 (Borderline, listed at the end: 16 automation/robotics, 19 infrastructure, none containing an AI term.)
 
 ## Prepared remarks
@@ -128,7 +128,7 @@
 50. I should also say that the self-driving capabilities that are deployed outside of North America are far behind that in North America. ⚑ uncertain
 51. So with Version 12.5, and maybe 12.6, but pretty soon, we will ask for regulatory approval of the Tesla supervised FSD in Europe, China and other countries. ⚑ uncertain
 
-### Ashok Elluswamy, Director, Autopilot Software
+### Unknown speaker, Analyst
 52. To that end, Ashok, it's like we can go as humans to other countries and drive with some reasonable amount of assessment in those countries, and that's how you design the FSD software. ⚑ uncertain
 
 ### George Gianarikas, Canaccord Genuity, Analyst

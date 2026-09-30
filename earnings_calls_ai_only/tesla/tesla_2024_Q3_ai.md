@@ -8,7 +8,7 @@
 
 ---
 
-**90 AI sentences of 596 total**
+**90 AI sentences of 603 total**
 (Borderline, listed at the end: 5 automation/robotics, 10 infrastructure, none containing an AI term.)
 
 ## Prepared remarks
@@ -62,24 +62,32 @@
 
 ### Travis Axelrod, Head of Investor Relations
 1. And how does it align with your AI and product road map?
+
+### Unknown speaker, Analyst
 2. But the next stage in that, really as it fits into AI road map, is when we bring in robotaxis, which lowers the initial cost of getting into an EV -- and those -- that's really where we see the marriage of EV road map and the AI road map.
 
 ### Travis Axelrod, Head of Investor Relations
 3. When can we expect Tesla to give us the $25,000 non-robotaxi regular car model? ⚑ uncertain
 
 ### Elon Reeve Musk, Chief Executive Officer and Product Architect
-4. We're not breaking it on -- Unknown speaker -- -- Analyst Yeah, all our vehicles today are -- So, I think we've made very clear that we're -- the future is autonomous. ⚑ uncertain
+4. So, I think we've made very clear that we're -- the future is autonomous. ⚑ uncertain
 5. I mean, it's going to be -- I've actually said this many years ago, but that in my strong belief and I believe that is panning out to be true, very obvious retrospect is that the future is autonomous electric vehicles. ⚑ uncertain
 6. And so, everything is going to be electric autonomous. ⚑ uncertain
 7. But all of our vehicles in the future will be autonomous. ⚑ uncertain
 8. So, all the vehicles that we've really made, almost 7 million vehicles, the vast majority are capable of autonomy. ⚑ uncertain
 9. And we're currently making on the order of 35,000 autonomous vehicles a week. ⚑ uncertain
 10. Compare that to, say, Waymo's entire fleet, it's less than -- they have less than 1,000 cars. ⚑ uncertain
+
+### Elon Reeve Musk, Chief Executive Officer and Product Architect
 11. And the Cybercab, robotaxi, we wanted to have something futuristic-looking, and I think it does look futuristic. ⚑ uncertain
 12. It's worth noting, with respect to the Cybercab, it's not -- it's especially not just a revolutionary vehicle design but a revolution in vehicle manufacturing that was also coming with the Cybercab. ⚑ uncertain ⚑ context-dependent
 13. The cycle times, like the units per hour of the Cybercab line, it is -- like this is just really something special. ⚑ uncertain
-14. Unknown speaker -- -- Analyst In autonomous world, what matters is lowest cost per mile of efficiency of that vehicle. ⚑ uncertain
+
+### Unknown speaker, Analyst
+14. In autonomous world, what matters is lowest cost per mile of efficiency of that vehicle. ⚑ uncertain
 15. And that's what we've done with the robotaxi. ⚑ uncertain
+
+### Elon Reeve Musk, Chief Executive Officer and Product Architect
 16. And if you try to make a car that is essentially a hybrid, manual, automatic car, it's not going to be as good as a dedicated autonomous car. ⚑ uncertain
 17. So, yes, Cybercab is just not going to have steering wheels and pedals. ⚑ uncertain
 18. What we designed is optimized for autonomy. ⚑ uncertain
@@ -87,7 +95,7 @@
 ### Travis Axelrod, Head of Investor Relations
 19. What will the next stage growth look like and when will FSD be ready? ⚑ uncertain
 
-### Elon Reeve Musk, Chief Executive Officer and Product Architect
+### Unknown speaker, Analyst
 20. You don't get stuck behind the Semi, you're not like in a slowdown situation in the -- I mean how that plays into FSD, which is the second part of the question, all of this is have been a couple of hundred we've deployed already and the ones that we'll be building next year and throughout the future, how all of the Hardware and the camera is necessary to deploy FSD and we're currently training with that small we have. ⚑ uncertain
 21. And as soon as the fleet is trained and the neural that there up, we'll get FSD onto that platform. ⚑ uncertain
 
@@ -104,14 +112,24 @@
 
 ### Elon Reeve Musk, Chief Executive Officer and Product Architect
 27. Obviously, Waymo operates in California so there's just a lot of forms and a lot of approvals that are required. ⚑ uncertain
+
+### Unknown speaker, Analyst
 28. Our vehicles today that are produced there capable to meet all those regulations, the Cybercab regulations. ⚑ uncertain
 29. And so, the deployment of the vehicle to the road is no limitation, but its limitation is what you said at the state level where they control autonomous vehicle deployment. ⚑ uncertain
+
+### Elon Reeve Musk, Chief Executive Officer and Product Architect
 30. Like autonomous vehicles should be approved. ⚑ uncertain
-31. Unknown speaker -- -- Analyst Congress, if you're listening, let's get the federal AV -- There should be a federal approval process for autonomous vehicles. ⚑ uncertain
+
+### Elon Reeve Musk, Chief Executive Officer and Product Architect
+31. There should be a federal approval process for autonomous vehicles. ⚑ uncertain
+
+### Elon Reeve Musk, Chief Executive Officer and Product Architect
 32. And I think we should have this national approval process for autonomy. ⚑ uncertain
 
 ### Elon Reeve Musk, Chief Executive Officer and Product Architect
 33. I'm very excited about the Cybercab design and the -- how we're rethinking the design of a car from the Cybercab. ⚑ uncertain
+
+### Unknown speaker, Analyst
 34. At any one point if something is done in the silo, it becomes a bottleneck of either cost or time or efficiency, but with the robotaxi development, like we've done a good job on the combining all that and then like blowing up how it's made and saying it should be made this way and rethinking it also that it's the most efficient factory possible. ⚑ uncertain
 
 ### Travis Axelrod, Head of Investor Relations
@@ -161,14 +179,14 @@
 2. [Prepared remarks · Elon Reeve Musk, Chief Executive Officer and Product Architect] It's really -- I feel confident in saying that we have the most advanced humanoid robot by a long shot.
 3. [Prepared remarks · Elon Reeve Musk, Chief Executive Officer and Product Architect] And we're moreover the only company that really has all of the ingredients necessary to scale humanoid robots.
 4. [Prepared remarks · Elon Reeve Musk, Chief Executive Officer and Product Architect] As I've said on a few occasions before, I think Optimus will ultimately be the most valuable part, so I think has a good chance of being the most viable product that we made.
-5. [Q&A · Elon Reeve Musk, Chief Executive Officer and Product Architect] Unknown speaker -- -- Analyst Doing a bunch of work on the software side to omni diagnostics, identifying what needs to be done to before it comes into service, but also automating all of the preparation work and aligning all the resources that are necessary in order for the car be very efficiently worked on once it arrives.
+5. [Q&A · Unknown speaker, Analyst] Doing a bunch of work on the software side to omni diagnostics, identifying what needs to be done to before it comes into service, but also automating all of the preparation work and aligning all the resources that are necessary in order for the car be very efficiently worked on once it arrives.
 
 ## Borderline: infrastructure without an AI term
 
 1. [Prepared remarks · Vaibhav Taneja, Chief Financial Officer] We've started using the GPU cluster based out of our factory house and ahead of schedule and are on track to get 50,000 GPUs deployed in Texas by the end of this month.
 2. [Prepared remarks · Vaibhav Taneja, Chief Financial Officer] On the capex front, we had about $3.5 billion in the quarter.
 3. [Prepared remarks · Vaibhav Taneja, Chief Financial Officer] We now expect our capex for the year to be in excess of $11 billion.
-4. [Q&A · Elon Reeve Musk, Chief Executive Officer and Product Architect] That shows our -- it will see our capex efficiency when we deploy it shows in the number of parts, simplicity of vehicle but also help performance in terms of like end user state.
+4. [Q&A · Unknown speaker, Analyst] That shows our -- it will see our capex efficiency when we deploy it shows in the number of parts, simplicity of vehicle but also help performance in terms of like end user state.
 5. [Q&A · Pierre Ferragu, Analyst] I was wondering about like the compute you're ramping up.
 6. [Q&A · Pierre Ferragu, Analyst] So, you gave like interesting statistics on how much you have and you said you don't feel your compute constrained.
 7. [Q&A · Pierre Ferragu, Analyst] And I was wondering how you are putting to work this additional compute.

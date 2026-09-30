@@ -8,7 +8,7 @@
 
 ---
 
-**39 AI sentences of 480 total**
+**35 AI sentences of 480 total**
 (Borderline, listed at the end: 0 automation/robotics, 11 infrastructure, none containing an AI term.)
 
 Source/parse flags: YouTube auto-captions, no speaker labels.
@@ -26,11 +26,9 @@ Source/parse flags: YouTube auto-captions, no speaker labels.
 8. Apple silicon is at the heart of all of these experiences, enabling powerful Apple intelligence features to run directly on device.
 9. We believe our platforms offer the best way for users to experience the full potential of generative AI.
 10. Thanks to the exceptional performance of our systems, our users are able to run generative AI models right on their Mac, iPad, and iPhone.
-11. From the Pro models with the powerhouse A18 Pro and innovative Pro camera features to the iPhone 16e with breakthrough battery life and a twoin-one camera system, users are finding so many reasons to love the best iPhone lineup we've ever created. ⚑ uncertain
-12. In addition to the beautiful new design and powerful Apple intelligence features, it introduces a range of meaningful updates like real-time call screening and hold assist in the phone app, smarter messaging tools, and new live translation features.
-13. Customers are also loving the newest Mac Studio, which is the most powerful Mac we've ever made with next level capabilities to tackle even the most demanding AI workflows.
-14. Over the next four years, Apple is investing 500 billion in the US, driving innovation and creating jobs in cutting edge fields like advanced manufacturing, silicon engineering, and artificial intelligence.
-15. According to a recent survey from World Panel, formerly of Canar, iPhone was a top-selling model in the US, urban China, the UK, Australia, and Japan during the June quarter. ⚑ uncertain
+11. In addition to the beautiful new design and powerful Apple intelligence features, it introduces a range of meaningful updates like real-time call screening and hold assist in the phone app, smarter messaging tools, and new live translation features.
+12. Customers are also loving the newest Mac Studio, which is the most powerful Mac we've ever made with next level capabilities to tackle even the most demanding AI workflows.
+13. Over the next four years, Apple is investing 500 billion in the US, driving innovation and creating jobs in cutting edge fields like advanced manufacturing, silicon engineering, and artificial intelligence.
 
 ## Q&A
 
@@ -40,25 +38,23 @@ Source/parse flags: YouTube auto-captions, no speaker labels.
 3. I would say a pretty significant driver as Tim talked about is the fact we are increasing our investment significantly in AI.
 4. We also um from time to time have other investments in facilities uh in tooling but I would say a significant portion of the driver of growth um that you're seeing now is really driven by some of our AI related investments on the upgrades uh Michael if you look at iPhone the 16 family uh grew double digit as as opposed to the 15 family from the year ago quarter and so we did set an upgrade record.
 5. And so I'm really just looking for a little bit more color on on really how the rest of the quarter played out and if you believe Apple products uh as kind of search access points are losing their strategic value as AI platforms become more valuable popular or uh increasing in strategic value and then I have a followup.
-6. And uh according to world panel which was formerly known as Canar, iPhone had the top three models in urban China which is extraordinary. ⚑ uncertain
-7. Uh so lots of good things there and uh the the other thing I would point out which interesting interesting point the MacBook Air was the top selling laptop model in all of China and the Mac Mini was the top selling desktop model in in all of China. ⚑ uncertain
-8. Um, I wanted to uh ask about uh Siri, Tim, and just the overall AI um in investment.
-9. Um there there's a perception that um Siri is going to help drive other new products potentially that that you know maybe where voice is is quite needed and uh just wondering uh in your you know how's your confidence towards launching that next year? ⚑ uncertain
-10. Uh we're making good progress on a more personalized Siri and we do expect to release the features next year. ⚑ uncertain
-11. As we had said earlier, uh our focus from an AI point of view is on uh putting AI features across the platform that are deeply personal, private, and seamlessly integrated.
-12. And of course, we've done that with more than 20 Apple intelligence features so far from visual intelligence to cleanup to writing tools and and all the rest.
-13. We are also uh reallocating uh a fair number of people to focus on on AI features within the company uh that are uh you know we have great uh great team and uh we're we're putting all of our energy behind it.
-14. Uh there is uh some worry that given some of the developments in AI that there could be a world where dependence on screenbased devices significantly diminishes.
-15. Uh Tim, I'm kind of curious about your thoughts on AI for edge devices.
-16. You know, there's like some people who think that LLM could be a commodity in the future.
-17. uh do you think do you see a scenario where LLM's become a core part of your iOS or is a SLM the way to go and how to think about evolution of edge devices in a futuristic AI world and is smartphone going to be the choice of device curious your thoughts on it uh broadly speaking thank you I the way that we look at AI is that it's one of the most profound technologies of our lifetime and I think it will affect uh all devices in a significant way.
-18. Um I I know you guys don't guide specifically to that number, but just kind of qualitatively should we as you lean in more on AI, should we really start to see that capex which is running close to about four billion annualized today really start to move appreciably higher.
-19. AI um you are going to continue to see our capex grow.
-20. And you know, a lot of that's a function um of the investments we're making in AI, as we mentioned.
-21. But I would say a lot of the growth is really being driven by AI.
-22. Peers like Meta and Jaomi are seeing strong momentum on their AI glasses.
-23. Do you feel like you need to accelerate your AI road map or just keep the organic focus?
-24. Uh, we've we've acquired around seven companies this year and uh that that's uh companies from all walks of life, not all AI oriented.
+6. Um, I wanted to uh ask about uh Siri, Tim, and just the overall AI um in investment.
+7. Um there there's a perception that um Siri is going to help drive other new products potentially that that you know maybe where voice is is quite needed and uh just wondering uh in your you know how's your confidence towards launching that next year? ⚑ uncertain
+8. Uh we're making good progress on a more personalized Siri and we do expect to release the features next year. ⚑ uncertain
+9. As we had said earlier, uh our focus from an AI point of view is on uh putting AI features across the platform that are deeply personal, private, and seamlessly integrated.
+10. And of course, we've done that with more than 20 Apple intelligence features so far from visual intelligence to cleanup to writing tools and and all the rest.
+11. We are also uh reallocating uh a fair number of people to focus on on AI features within the company uh that are uh you know we have great uh great team and uh we're we're putting all of our energy behind it.
+12. Uh there is uh some worry that given some of the developments in AI that there could be a world where dependence on screenbased devices significantly diminishes.
+13. Uh Tim, I'm kind of curious about your thoughts on AI for edge devices.
+14. You know, there's like some people who think that LLM could be a commodity in the future.
+15. uh do you think do you see a scenario where LLM's become a core part of your iOS or is a SLM the way to go and how to think about evolution of edge devices in a futuristic AI world and is smartphone going to be the choice of device curious your thoughts on it uh broadly speaking thank you I the way that we look at AI is that it's one of the most profound technologies of our lifetime and I think it will affect uh all devices in a significant way.
+16. Um I I know you guys don't guide specifically to that number, but just kind of qualitatively should we as you lean in more on AI, should we really start to see that capex which is running close to about four billion annualized today really start to move appreciably higher.
+17. AI um you are going to continue to see our capex grow.
+18. And you know, a lot of that's a function um of the investments we're making in AI, as we mentioned.
+19. But I would say a lot of the growth is really being driven by AI.
+20. Peers like Meta and Jaomi are seeing strong momentum on their AI glasses.
+21. Do you feel like you need to accelerate your AI road map or just keep the organic focus?
+22. Uh, we've we've acquired around seven companies this year and uh that that's uh companies from all walks of life, not all AI oriented.
 
 ## Borderline: automation/robotics without an AI term
 

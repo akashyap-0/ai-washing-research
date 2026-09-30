@@ -8,7 +8,7 @@
 
 ---
 
-**37 AI sentences of 463 total**
+**34 AI sentences of 463 total**
 (Borderline, listed at the end: 0 automation/robotics, 4 infrastructure, none containing an AI term.)
 
 Source/parse flags: YouTube auto-captions, no speaker labels.
@@ -26,8 +26,6 @@ Source/parse flags: YouTube auto-captions, no speaker labels.
 8. Recently, we were thrilled to introduce the newest iPad Mini, featuring an ultra compact design built for Apple Intelligence with support for Apple Pencil Pro.
 9. As we close out the year, we have the best lineup we've ever had going into the holiday season, including Apple Intelligence, which marks the start of a new chapter for our products.
 10. This is just the beginning of what we believe generative AI can do and I couldn't be more excited for what's to come. ⚑ context-dependent
-11. During the September quarter, many iPhone models were among the top selling smartphones around the world. ⚑ uncertain
-12. In fact, according to a survey from Canar, iPhone was the top selling model in the US, urban China, the UK, Australia, and Japan. ⚑ uncertain
 
 ## Q&A
 
@@ -56,7 +54,6 @@ Source/parse flags: YouTube auto-captions, no speaker labels.
 22. that release uh has occurred uh as well and and of course more are coming and so I uh definitely believe that a lot of developers will be uh taking advantage of Apple intelligence in in a big way and uh what that does to uh services I'll I'll not forecast uh but I would say that from an ecosystem some point of view.
 23. Uh I guess if I can for my first one start with mix on the iPhone side and what I'm really curious about if you have any thoughts given that Apple intelligence is now going to be a consistent feature set across all the four sort of iPhones on the iPhone 16 series that you launched and going back to iPhone 15 Pro and Pro Max.
 24. Are you seeing any change in behavior from a consumer perspective in terms of which sort of on the mix front within the iPhone series where custom consumer adoption is given that there's more consistency of the features when it comes to Apple intelligence across the board and I have a followup.
-25. Um, it seems to us that the the spec differentiation between iPhone 16 Pro and base models isn't as big as prior years. ⚑ uncertain
 
 ## Borderline: automation/robotics without an AI term
 

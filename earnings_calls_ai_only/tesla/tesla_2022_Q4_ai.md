@@ -8,7 +8,7 @@
 
 ---
 
-**37 AI sentences of 509 total**
+**37 AI sentences of 517 total**
 (Borderline, listed at the end: 0 automation/robotics, 1 infrastructure, none containing an AI term.)
 
 ## Prepared remarks
@@ -27,7 +27,7 @@
 3. And the value of it grows as the autonomous capability grows. ⚑ uncertain
 4. And then, when it becomes fully autonomous, that is a value increase in the fleet. ⚑ uncertain
 
-### Andrew Baglino, Senior Vice President, Powertrain and Energy Engineering
+### Martin Viecha
 5. Next investor question is, Elon said previously that FSD Hardware 4 will most likely come first in Cybertruck. ⚑ uncertain
 
 ### Elon Musk, Chief Executive Officer and Product Architect

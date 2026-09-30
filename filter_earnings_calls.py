@@ -552,9 +552,11 @@ def parse_fool(body_lines, company):
             continue
         if in_roster:
             if not s:
-                break
+                continue
             name, _, title = s.partition(" -- ")
-            labels.setdefault(name.strip(), title.replace(" -- ", ", ").strip())
+            if len(name.split()) > 5 or FOOL_STOP.match(s) or TERMINAL.search(name):
+                break                              # end of roster ("More TSLA analysis")
+            labels.setdefault(name.strip(), title.replace(" -- ", ", ").strip(" ,-"))
             continue
         m = FOOL_SPEAKER.match(line)
         if m and not TERMINAL.search(s):
@@ -575,6 +577,16 @@ def parse_fool(body_lines, company):
             continue
         if s == "Operator" or s in labels:        # bare name line, no title
             speaker = s
+            continue
+        m_unk = re.match(r"^Unknown speaker(?:\s+--[-\s]*Analyst)?\s*(.*)$", s)
+        if m_unk:                                  # "Unknown speaker -- -- Analyst Sure."
+            speaker, s = "Unknown speaker", m_unk.group(1)
+            append_turn(turns, section, speaker, s)
+            continue
+        inline = next((n for n in labels if s.startswith(n + " ") and s[len(n) + 1:][:1].isupper()), None)
+        if inline:                                 # "Martin Viecha Thanks, Elon."
+            speaker, s = inline, s[len(inline) + 1:]
+            append_turn(turns, section, speaker, s)
             continue
         m = FOOL_SPEAKER.match(line)
         if m and not TERMINAL.search(s):
@@ -991,7 +1003,18 @@ _SKIP = (r"(?:\s|\[\d+:\d{2}(?::\d{2})?\]|\[[A-Za-z_ ]+\]|>>|&gt;&gt;|\b\d{1,3}\
          r"Copyright © \d{4}-\d{4} FactSet CallStreet, LLC)")
 
 
+_FAST_NOISE = re.compile(r"\s+|\[\d+:\d{2}(?::\d{2})?\]|\[[A-Za-z_ ]+\]|>>")
+_fast_cache = {}
+
+
 def verbatim_found(sentence, source):
+    # fast path: containment once whitespace and caption tags are removed
+    key = id(source)
+    if key not in _fast_cache:
+        _fast_cache[key] = _FAST_NOISE.sub("", source)
+    if _FAST_NOISE.sub("", sentence) in _fast_cache[key]:
+        return True
+    # slow path: allow deleted noise tokens (page numbers, headers) between words
     toks = sentence.split()
     parts = []
     for tok in toks:
@@ -1000,7 +1023,12 @@ def verbatim_found(sentence, source):
         parts.append(esc)
     rx = re.compile(parts[0] + "".join(_SKIP + "+" + p for p in parts[1:]) if len(parts) > 1
                     else parts[0])
-    return rx.search(source) is not None
+    pos = source.find(toks[0])
+    while pos != -1:                               # anchor on the first word
+        if rx.match(source, pos):
+            return True
+        pos = source.find(toks[0], pos + 1)
+    return False
 
 
 RECALL_TERMS = [

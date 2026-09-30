@@ -8,7 +8,7 @@
 
 ---
 
-**59 AI sentences of 578 total**
+**59 AI sentences of 590 total**
 (Borderline, listed at the end: 9 automation/robotics, 6 infrastructure, none containing an AI term.)
 
 ## Prepared remarks
@@ -38,8 +38,10 @@
 
 ## Q&A
 
-### Zachary Kirkhorn, Chief Financial Officer
+### Martin Viecha
 1. Given Tesla's AI capabilities, how do you see the long-term mix between hardware margin and recurring software margin from Autobidder as the segment accelerates?"
+
+### Martin Viecha
 2. The next question on FSD, "Have you considered allowing FSD transferability as a lever to allow existing customers to upgrade to a new Tesla instead of being locked into an existing car due to the price of FSD?" ⚑ uncertain
 
 ### Elon Musk, Chief Executive Officer and Product Architect
@@ -47,6 +49,8 @@
 
 ### Elon Musk, Chief Executive Officer and Product Architect
 4. So -- and then, of course, we'll be using the same inference hardware as the car. ⚑ uncertain
+
+### Elon Musk, Chief Executive Officer and Product Architect
 5. Autonomy will make all of these numbers look silly. ⚑ uncertain
 6. So -- and the -- Autonomy is really where it's at. ⚑ uncertain
 
@@ -108,7 +112,7 @@
 
 ## Borderline: automation/robotics without an AI term
 
-1. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] Next question, "How many Optimus bots have been made?
+1. [Q&A · Martin Viecha] Next question, "How many Optimus bots have been made?
 2. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] The -- there's a lot of interesting things -- a lot of interesting things about the Optimus bot.
 3. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] There's -- there are no off-the-shelf actuators that work well for a humanoid robot, at any price.
 4. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] Not -- it's not a humanoid robot that can do stuff that -- you know, the things that a human can do.
@@ -116,12 +120,12 @@
 6. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] I should say another cool thing about Optimus is that, you know, there's -- just in the U.S. alone, there are 2 million amputees.
 7. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] And I was just talking to the Neuralink team, and by combining a Neuralink implant and a robotic arm or leg for someone that has had their arms -- like, all arms and legs amputated, we believe we can give you basically a cyborg body that is incredibly capable.
 8. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] This sounds impressive, but it'll actually, you know, so -- so, that actually could be a really -- I think would be incredible to, you know, potentially help millions of people around the world and -- and give them, you know, a robot arm like that is as good maybe long term, better than a biological one.
-9. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] And then, just we continue to have this mentality of continuous improvement in terms of labor, reducing labor, improving automation, and just continue to get better at what we do.
+9. [Q&A · Unknown speaker] And then, just we continue to have this mentality of continuous improvement in terms of labor, reducing labor, improving automation, and just continue to get better at what we do.
 
 ## Borderline: infrastructure without an AI term
 
 1. [Prepared remarks · Zachary Kirkhorn, Chief Financial Officer] This also includes continuing our investments in capacity expansion, not only in our vehicle factories but also our supercharging network service, internal applications, and battery processes as we continue with meaningful capital expenditures to lay this foundation for the future.
-2. [Q&A · Zachary Kirkhorn, Chief Financial Officer] Given how much deployment growth on the Megapack hardware side is occurring, it's important to remember that these large project -- these large capital projects have lifetimes of 20 years of recurring revenues on an annualized basis, relative to upfront capex are small.
+2. [Q&A · Unknown speaker] Given how much deployment growth on the Megapack hardware side is occurring, it's important to remember that these large project -- these large capital projects have lifetimes of 20 years of recurring revenues on an annualized basis, relative to upfront capex are small.
 3. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] With the -- with -- with video training, you have a much higher ratio of compute-to-memory bandwidth.
 4. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] And -- and frankly, I don't know if they could deliver us enough GPUs.
 5. [Q&A · Elon Musk, Chief Executive Officer and Product Architect] They've been kind enough to, you know, nonetheless prioritize some of our GPU orders.

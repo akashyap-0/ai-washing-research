@@ -1,0 +1,967 @@
+{
+  "seed": 20260930,
+  "coverage": {
+    "by_company": {
+      "meta": {
+        "source": 15,
+        "output": 15
+      },
+      "microsoft": {
+        "source": 15,
+        "output": 15
+      },
+      "nvidia": {
+        "source": 15,
+        "output": 15
+      },
+      "alphabet": {
+        "source": 15,
+        "output": 15
+      },
+      "amazon": {
+        "source": 15,
+        "output": 15
+      },
+      "apple": {
+        "source": 15,
+        "output": 15
+      },
+      "tesla": {
+        "source": 15,
+        "output": 15
+      }
+    },
+    "missing": []
+  },
+  "count_outliers": {
+    "amazon_2022_Q4": 381,
+    "amazon_2023_Q2": 364,
+    "amazon_2023_Q3": 392,
+    "amazon_2024_Q4": 384,
+    "apple_FY23_Q1": 111,
+    "apple_FY23_Q2": 117,
+    "apple_FY23_Q4": 116,
+    "apple_FY24_Q1": 110,
+    "apple_FY24_Q2": 111,
+    "apple_FY24_Q3": 113,
+    "apple_FY25_Q1": 107,
+    "tesla_2023_Q1": 121
+  },
+  "parse_flags": {
+    "nvidia_FY24_Q4": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "amazon_2022_Q4": [
+      "machine transcript (Whisper), no speaker labels",
+      "381 units, outside the typical 400-900"
+    ],
+    "amazon_2023_Q1": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2023_Q2": [
+      "machine transcript (Whisper), no speaker labels",
+      "call opening not detected: source may start mid-call",
+      "364 units, outside the typical 400-900"
+    ],
+    "amazon_2023_Q3": [
+      "machine transcript (Whisper), no speaker labels",
+      "392 units, outside the typical 400-900"
+    ],
+    "amazon_2023_Q4": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2024_Q1": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2024_Q2": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2024_Q3": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2024_Q4": [
+      "machine transcript (Whisper), no speaker labels",
+      "384 units, outside the typical 400-900"
+    ],
+    "amazon_2025_Q1": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2025_Q2": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2025_Q3": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2025_Q4": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2026_Q1": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "amazon_2026_Q2": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "apple_FY23_Q1": [
+      "YouTube auto-captions, no speaker labels",
+      "call opening not detected: source may start mid-call",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "111 units, outside the typical 400-900"
+    ],
+    "apple_FY23_Q2": [
+      "YouTube auto-captions, no speaker labels",
+      "14 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "117 units, outside the typical 400-900"
+    ],
+    "apple_FY23_Q3": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "apple_FY23_Q4": [
+      "YouTube auto-captions, no speaker labels",
+      "28 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "116 units, outside the typical 400-900"
+    ],
+    "apple_FY24_Q1": [
+      "YouTube auto-captions, no speaker labels",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "110 units, outside the typical 400-900"
+    ],
+    "apple_FY24_Q2": [
+      "YouTube auto-captions, no speaker labels",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "111 units, outside the typical 400-900"
+    ],
+    "apple_FY24_Q3": [
+      "YouTube auto-captions, no speaker labels",
+      "121 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "113 units, outside the typical 400-900"
+    ],
+    "apple_FY24_Q4": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "apple_FY25_Q1": [
+      "YouTube auto-captions, no speaker labels",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "107 units, outside the typical 400-900"
+    ],
+    "apple_FY25_Q2": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "apple_FY25_Q3": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "apple_FY25_Q4": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "apple_FY26_Q1": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "apple_FY26_Q2": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "apple_FY26_Q3": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "tesla_2023_Q1": [
+      "YouTube auto-captions, no speaker labels",
+      "8 pre-call livestream segments dropped",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "121 units, outside the typical 400-900"
+    ],
+    "tesla_2025_Q1": [
+      "YouTube auto-captions, no speaker labels",
+      "9 pre-call livestream segments dropped"
+    ],
+    "tesla_2025_Q2": [
+      "YouTube auto-captions, no speaker labels",
+      "6 pre-call livestream segments dropped"
+    ],
+    "tesla_2025_Q3": [
+      "YouTube auto-captions, no speaker labels",
+      "12 pre-call livestream segments dropped"
+    ],
+    "tesla_2025_Q4": [
+      "YouTube auto-captions, no speaker labels",
+      "5 pre-call livestream segments dropped"
+    ],
+    "tesla_2026_Q1": [
+      "YouTube auto-captions, no speaker labels"
+    ],
+    "tesla_2026_Q2": [
+      "YouTube auto-captions, no speaker labels"
+    ]
+  },
+  "recall": {
+    "meta_2025_Q2": {
+      "AI (uppercase token)": {
+        "source": 72,
+        "in_ai_output": 72,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "generative": {
+        "source": 2,
+        "in_ai_output": 2,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "machine learning": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "LLM": {
+        "source": 4,
+        "in_ai_output": 4,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "Llama": {
+        "source": 6,
+        "in_ai_output": 6,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    },
+    "microsoft_FY25_Q2": {
+      "AI (uppercase token)": {
+        "source": 69,
+        "in_ai_output": 69,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "Copilot": {
+        "source": 48,
+        "in_ai_output": 48,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "OpenAI": {
+        "source": 16,
+        "in_ai_output": 16,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    },
+    "nvidia_FY26_Q2": {
+      "AI (uppercase token)": {
+        "source": 104,
+        "in_ai_output": 104,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "artificial intelligence": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "generative": {
+        "source": 4,
+        "in_ai_output": 4,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "LLM": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "agentic": {
+        "source": 13,
+        "in_ai_output": 13,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "OpenAI": {
+        "source": 4,
+        "in_ai_output": 4,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    },
+    "nvidia_FY24_Q3": {
+      "AI (uppercase token)": {
+        "source": 159,
+        "in_ai_output": 158,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "artificial intelligence": {
+        "source": 1,
+        "in_ai_output": 0,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "generative": {
+        "source": 26,
+        "in_ai_output": 26,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "machine learning": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "LLM": {
+        "source": 15,
+        "in_ai_output": 15,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "Copilot": {
+        "source": 12,
+        "in_ai_output": 12,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    },
+    "alphabet_2025_Q1": {
+      "AI (uppercase token)": {
+        "source": 91,
+        "in_ai_output": 91,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "LLM": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "agentic": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "Gemini": {
+        "source": 24,
+        "in_ai_output": 24,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "Llama": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    },
+    "amazon_2023_Q4": {
+      "AI (uppercase token)": {
+        "source": 35,
+        "in_ai_output": 35,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "generative": {
+        "source": 19,
+        "in_ai_output": 19,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "machine learning": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "LLM": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "Bedrock": {
+        "source": 5,
+        "in_ai_output": 5,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    },
+    "apple_FY25_Q2": {
+      "AI (uppercase token)": {
+        "source": 11,
+        "in_ai_output": 11,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "generative": {
+        "source": 2,
+        "in_ai_output": 2,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "machine learning": {
+        "source": 1,
+        "in_ai_output": 1,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "LLM": {
+        "source": 2,
+        "in_ai_output": 2,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      },
+      "Apple Intelligence": {
+        "source": 9,
+        "in_ai_output": 9,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    },
+    "tesla_2024_Q2": {
+      "AI (uppercase token)": {
+        "source": 23,
+        "in_ai_output": 23,
+        "in_non_ai_output": 0,
+        "examples_not_ai": []
+      }
+    }
+  },
+  "precision_sample": [
+    {
+      "file": "amazon_2023_Q3",
+      "section": "Q&A",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "And so, you know, it's hard and customers will like, there's a certain number of customers who have very deep AI expert practitioners, but most companies don't."
+    },
+    {
+      "file": "alphabet_2025_Q1",
+      "section": "Q&A",
+      "speaker": "Ross Sandler, Barclays",
+      "terms": [
+        "OpenAI/ChatGPT (any case)",
+        "named AI product"
+      ],
+      "flags": [],
+      "text": "And just curious, that number obviously trails ChatGPT by a pretty wide margin."
+    },
+    {
+      "file": "nvidia_FY24_Q3",
+      "section": "Q&A",
+      "speaker": "Jen-Hsun Huang, President and Chief Executive Officer",
+      "terms": [
+        "named AI product (any case)"
+      ],
+      "flags": [],
+      "text": "And so, instead of licensing software, we will continue to do that, of course, but we will also hire copilots and assistants to help us use the -- use the software."
+    },
+    {
+      "file": "nvidia_FY26_Q3",
+      "section": "Prepared remarks",
+      "speaker": "Colette M. Kress, Chief Financial Officer & Executive Vice President, NVIDIA Corp.",
+      "terms": [
+        "GenAI/OpenAI/xAI",
+        "OpenAI/ChatGPT (any case)"
+      ],
+      "flags": [],
+      "text": "OpenAI recently shared that their weekly user base has grown to 800 million."
+    },
+    {
+      "file": "amazon_2026_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "GenAI/OpenAI/xAI",
+        "OpenAI/ChatGPT (any case)",
+        "named AI product",
+        "model (bare)"
+      ],
+      "flags": [],
+      "text": "We're excited to make OpenAI's models available in Bedrock."
+    },
+    {
+      "file": "alphabet_2025_Q3",
+      "section": "Prepared remarks",
+      "speaker": "Philipp Schindler, SVP and CBO, Google",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "By delivering the most relevant ad across surfaces and matching advertisers against additional queries they weren't reaching before, AI Max helps advertisers discover new customers at the exact moment they need their product or service."
+    },
+    {
+      "file": "meta_2024_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Mark Zuckerberg, CEO",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "But now it seems pretty clear that there's also a meaningful market for fashionable AI glasses without a display."
+    },
+    {
+      "file": "meta_2025_Q1",
+      "section": "Q&A",
+      "speaker": "Mark Zuckerberg, CEO",
+      "terms": [
+        "model (bare)"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "And in some of our models, we have really -- we’re industry-leading on context window length."
+    },
+    {
+      "file": "tesla_2025_Q1",
+      "section": "Q&A",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "autonomous driving"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "I mean just so you know for people who have been trying FSD and who've been using FSD they think even the current pricing is too cheap because for 99 bucks you're basically getting a personal show."
+    },
+    {
+      "file": "nvidia_FY25_Q4",
+      "section": "Q&A",
+      "speaker": "Jensen Huang, President and Chief Executive Officer",
+      "terms": [
+        "AI accelerator name",
+        "inference"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "The vast majority of our compute today is actually inference and Blackwell takes all of that to a new level."
+    },
+    {
+      "file": "amazon_2024_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "You've heard me talk about our approach before, and we continue to add capabilities in all three layers of the Gen AI stack."
+    },
+    {
+      "file": "tesla_2026_Q1",
+      "section": "Q&A",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "training/inference compute",
+        "inference"
+      ],
+      "flags": [],
+      "text": "Is that going to be on board on chips inside uh Optimus, or if we should think uh about like your fleet of like a million Optimus being produced a year uh actually driving very significant inference demand in data centers as well for for system to thinking."
+    },
+    {
+      "file": "alphabet_2025_Q4",
+      "section": "Q&A",
+      "speaker": "Brian Nowak, Morgan Stanley",
+      "terms": [
+        "model (bare)"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "We've seen a lot of the new content-creation models like Genie, et cetera."
+    },
+    {
+      "file": "meta_2024_Q1",
+      "section": "Q&A",
+      "speaker": "Mark Zuckerberg, CEO",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "But the business messaging thing, I mean whether it's a creator or one of the 100- plus million businesses on our platform, we basically want to make it very easy for all of these folks to set up an AI to engage with their community."
+    },
+    {
+      "file": "meta_2024_Q4",
+      "section": "Prepared remarks",
+      "speaker": "Mark Zuckerberg, CEO",
+      "terms": [
+        "AI",
+        "named AI product",
+        "model (bare)"
+      ],
+      "flags": [],
+      "text": "I think this will very well be the year when Llama and open source become the most advanced and widely used AI models as well."
+    },
+    {
+      "file": "amazon_2025_Q4",
+      "section": "Prepared remarks",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "agent"
+      ],
+      "flags": [
+        "uncertain",
+        "context-dependent"
+      ],
+      "text": "It's harder to build agents than it should be."
+    },
+    {
+      "file": "meta_2026_Q2",
+      "section": "Prepared remarks",
+      "speaker": "Susan Li, CFO",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "We’re also leveraging AI to empower businesses to more easily manage their campaigns, develop ad creative, and engage with their customers."
+    },
+    {
+      "file": "microsoft_FY26_Q3",
+      "section": "Prepared remarks",
+      "speaker": "Satya Nadella, chairman and chief executive officer",
+      "terms": [
+        "ML model phrase",
+        "named AI product",
+        "model (bare)"
+      ],
+      "flags": [],
+      "text": "We introduced MAI-Transcribe-1, a state-of-the-art speech-to-text model, and MAI-Image 2, one of the top image generation models in the world."
+    },
+    {
+      "file": "tesla_2022_Q4",
+      "section": "Q&A",
+      "speaker": "Martin Viecha",
+      "terms": [
+        "autonomous driving"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "Next investor question is, Elon said previously that FSD Hardware 4 will most likely come first in Cybertruck."
+    },
+    {
+      "file": "alphabet_2022_Q4",
+      "section": "Prepared remarks",
+      "speaker": "Philipp Schindler, SVP and CBO, Google",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "In 2022, AI advances boosted bidding performance, allowing us to move advertiser outcomes down the funnel to drive better ROI and use budgets more efficiently."
+    },
+    {
+      "file": "meta_2026_Q1",
+      "section": "Q&A",
+      "speaker": "Mark Zuckerberg, CEO",
+      "terms": [
+        "AI"
+      ],
+      "flags": [
+        "context-dependent"
+      ],
+      "text": "It powers Meta AI which I think is now a world-class assistant."
+    },
+    {
+      "file": "alphabet_2024_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Sundar Pichai, CEO Alphabet and Google",
+      "terms": [
+        "AI",
+        "named AI product",
+        "named AI product (any case)",
+        "agent"
+      ],
+      "flags": [],
+      "text": "In Workspace, we announced that organizations like Uber, Pepperdine University and Pennymac are using Gemini in Google Workspace, our AI-powered agent that’s built right into Gmail, Docs, Sheets and more."
+    },
+    {
+      "file": "nvidia_FY26_Q4",
+      "section": "Q&A",
+      "speaker": "Jen Hsun Huang, Co-Founder, President, Chief Executive Officer & Director, NVIDIA Corp.",
+      "terms": [
+        "AI accelerator name"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "And those – that NVLink Switch scale up system is then scaled out using Spectrum-X and InfiniBand, we support both."
+    },
+    {
+      "file": "meta_2025_Q3",
+      "section": "Q&A",
+      "speaker": "Ross Sandler, Barclays",
+      "terms": [
+        "AI",
+        "AGI"
+      ],
+      "flags": [],
+      "text": "Hey Mark, some of the goals for competing AI labs are around achieving AGI or these other milestones that are kind of like out there and a little esoteric."
+    },
+    {
+      "file": "alphabet_2025_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Sundar Pichai, CEO, Alphabet and Google",
+      "terms": [
+        "AI",
+        "agent"
+      ],
+      "flags": [],
+      "text": "And Agent Designer is a low-code tool to build AI agents and automate tasks in over 100 enterprise applications and systems."
+    },
+    {
+      "file": "meta_2025_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Mark Zuckerberg, CEO",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "In addition to better recommendations for existing content types, AI is also enabling the creation of better content as well."
+    },
+    {
+      "file": "nvidia_FY25_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Colette Kress, Executive Vice President, Chief Financial Officer",
+      "terms": [
+        "AI accelerator name"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "We also announced a number of new design wins on NVIDIA DRIVE Thor, the successor to Orin, powered by the new NVIDIA Blackwell architecture with several leading EV makers, including BYD, XPeng, GAC's Aion Hyper, and Nuro."
+    },
+    {
+      "file": "meta_2023_Q2",
+      "section": "Prepared remarks",
+      "speaker": "Mark Zuckerberg, CEO",
+      "terms": [
+        "model (bare)"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "The improvements also often come in the form of efficiency gains, which should hopefully allow us and others to run these models with less infrastructure investment going forward."
+    },
+    {
+      "file": "amazon_2026_Q1",
+      "section": "Q&A",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "model (bare)"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "But the one thing you learn over and over again with every technology, it was true in databases, it was true in analytics, it was true in models."
+    },
+    {
+      "file": "nvidia_FY25_Q4",
+      "section": "Q&A",
+      "speaker": "Jensen Huang, President and Chief Executive Officer",
+      "terms": [
+        "AI accelerator name"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "The next train is on an annual rhythm and Blackwell Ultra with new networking, new memories, and of course, new processors, and all of that is coming online."
+    },
+    {
+      "file": "alphabet_2026_Q2",
+      "section": "Prepared remarks",
+      "speaker": "Sundar Pichai, CEO, Alphabet and Google",
+      "terms": [
+        "agentic",
+        "named AI product",
+        "named AI product (any case)",
+        "agent"
+      ],
+      "flags": [],
+      "text": "Users love new agentic features like Daily Brief and our personalized agent, Gemini Spark, which is now available in the US and internationally."
+    },
+    {
+      "file": "amazon_2026_Q2",
+      "section": "Q&A",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "training/inference compute",
+        "inference"
+      ],
+      "flags": [],
+      "text": "And in part because as more and more companies are bringing their inference workloads to production, they want it to live near the rest of their workloads and data and so much more of it lives in AWS than anywhere else."
+    },
+    {
+      "file": "tesla_2024_Q1",
+      "section": "Q&A",
+      "speaker": "Elon Musk, Chief Executive Officer and Product Architect",
+      "terms": [
+        "AI",
+        "inference"
+      ],
+      "flags": [],
+      "text": "I mean, this, perhaps, is a point that is worth emphasizing Tesla's AI inference efficiency is vastly better than any other company."
+    },
+    {
+      "file": "microsoft_FY23_Q4",
+      "section": "Q&A",
+      "speaker": "Satya Nadella, chairman and chief executive officer",
+      "terms": [
+        "named AI product",
+        "named AI product (any case)"
+      ],
+      "flags": [],
+      "text": "And then obviously the excitement that there is already around the M365 Copilot."
+    },
+    {
+      "file": "nvidia_FY24_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Colette Kress, Executive Vice President and Chief Financial Officer",
+      "terms": [
+        "AI",
+        "generative",
+        "inference"
+      ],
+      "flags": [],
+      "text": "As generative AI applications grow in size and complexity, high-performance networks become essential for delivering accelerated computing at data center scale to meet the enormous demand of both training and inferencing."
+    },
+    {
+      "file": "apple_FY26_Q3",
+      "section": "Q&A",
+      "speaker": "Speaker not labeled",
+      "terms": [
+        "AI",
+        "GenAI/OpenAI/xAI",
+        "OpenAI/ChatGPT (any case)"
+      ],
+      "flags": [],
+      "text": "I'd I'd love to get maybe a just a high-level take from you if you think that the competitive landscape here is is changing especially as you hear about, you know, potentially companies like OpenAI building an AI-enabled competitive device or SpaceX AI potentially having a phone that could bypass some of the typical carrier tax."
+    },
+    {
+      "file": "microsoft_FY26_Q1",
+      "section": "Prepared remarks",
+      "speaker": "Amy Hood, chief financial officer",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "Capital expenditures were $34.9 billion driven by growing demand for our cloud and AI offerings."
+    },
+    {
+      "file": "nvidia_FY25_Q3",
+      "section": "Q&A",
+      "speaker": "Jensen Huang, President and Chief Executive Officer",
+      "terms": [
+        "AI",
+        "inference"
+      ],
+      "flags": [],
+      "text": "And that's when AI has really exceeded is when every single company is doing inference inside their companies for the marketing department and forecasting department and supply chain group and their legal department and engineering, of course, and coding of course."
+    },
+    {
+      "file": "alphabet_2022_Q4",
+      "section": "Prepared remarks",
+      "speaker": "Philipp Schindler, SVP and CBO, Google",
+      "terms": [
+        "AI"
+      ],
+      "flags": [],
+      "text": "Then, of course, there’s Performance Max, which offers the best combination of our AI-powered systems to our customers."
+    },
+    {
+      "file": "tesla_2024_Q3",
+      "section": "Q&A",
+      "speaker": "Travis Axelrod, Head of Investor Relations",
+      "terms": [
+        "autonomous driving"
+      ],
+      "flags": [
+        "uncertain"
+      ],
+      "text": "When can we expect Tesla to give us the $25,000 non-robotaxi regular car model?"
+    }
+  ],
+  "verbatim": {
+    "checked_all": 48555,
+    "failures_all": 0,
+    "failure_examples": [],
+    "sample50_failures": 0
+  },
+  "flag_totals": {
+    "uncertain": 2536,
+    "context-dependent": 574,
+    "long": 1
+  },
+  "false_positive_ai_tokens": 4,
+  "false_positive_examples": [
+    [
+      "nvidia_FY25_Q1",
+      "Leading LLM companies such as OpenAI, Adept, Anthropic, Character.ai, Cohere, Databricks, DeepMind, Meta, Mistral, XAi, and many others are building on NVIDIA A"
+    ],
+    [
+      "alphabet_2023_Q4",
+      "Customers like Anthropic, Character.ai, Essential AI, and Mistral AI are building and serving models on it."
+    ],
+    [
+      "tesla_2023_Q2",
+      "But you've also -- Elon, you've started this x.ai company."
+    ],
+    [
+      "tesla_2023_Q2",
+      "So, can you talk about how x.ai might overlap, might perhaps compete with Tesla, or in other ways, perhaps it enhances the value of what Tesla does?"
+    ]
+  ],
+  "trigger_term_counts": {
+    "AI": 4917,
+    "model (bare)": 1544,
+    "named AI product": 1505,
+    "named AI product (any case)": 969,
+    "AI accelerator name": 808,
+    "autonomous driving": 722,
+    "generative": 623,
+    "agent": 571,
+    "inference": 502,
+    "GenAI/OpenAI/xAI": 294,
+    "OpenAI/ChatGPT (any case)": 286,
+    "ML model phrase": 265,
+    "agentic": 243,
+    "AI platform name": 202,
+    "training/inference compute": 178,
+    "tokens": 153,
+    "language model": 146,
+    "LLM": 112,
+    "Apple Intelligence": 111,
+    "machine learning": 71,
+    "recommendation system": 60,
+    "superintelligence": 57,
+    "Alexa": 52,
+    "neural network": 47,
+    "Meta ads-model name": 44,
+    "algorithm": 39,
+    "chatbot": 36,
+    "model architecture/performance": 34,
+    "artificial intelligence": 28,
+    "AGI": 18,
+    "AI (machine transcript, any case)": 17,
+    "parameter model": 12,
+    "computer vision / NLP": 10,
+    "deep learning": 10,
+    "A.I.": 3
+  },
+  "uncertain_trigger_counts": {
+    "autonomous driving": 643,
+    "AI accelerator name": 619,
+    "model (bare)": 588,
+    "agent": 302,
+    "inference": 236,
+    "tokens": 101,
+    "AI platform name": 98,
+    "Alexa": 43,
+    "recommendation system": 30,
+    "Meta ads-model name": 29,
+    "model architecture/performance": 27,
+    "algorithm": 26
+  }
+}

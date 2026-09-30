@@ -9,7 +9,7 @@
 
 ---
 
-**38 AI sentences of 545 total**
+**38 AI sentences of 546 total**
 (Borderline, listed at the end: 1 automation/robotics, 11 infrastructure, none containing an AI term.)
 
 Source/parse flags: machine transcript (Whisper), no speaker labels.

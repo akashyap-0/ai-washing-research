@@ -8,8 +8,8 @@
 
 ---
 
-**43 AI sentences of 510 total**
-(Borderline, listed at the end: 0 automation/robotics, 2 infrastructure, none containing an AI term.)
+**40 AI sentences of 510 total**
+(Borderline, listed at the end: 0 automation/robotics, 3 infrastructure, none containing an AI term.)
 
 Source/parse flags: YouTube auto-captions, no speaker labels.
 
@@ -26,19 +26,16 @@ Source/parse flags: YouTube auto-captions, no speaker labels.
 8. And MacBook Pro, powered by M5 Pro and M5 Max, remains a go-to choice for professionals tackling the most demanding AI development and creative workflows.
 9. And with live translation powered by Apple Intelligence, people are crossing language barriers and connecting like never before.
 10. As I mentioned earlier, we're excited about the work we're doing on the next iteration of Apple intelligence, including Siri AI and the AI features we're developing across our platforms.
-11. These experiences are intuitive and useful, while also deeply integrated in a way that's personal and private with the latest models running on device and on servers using private cloud compute. ⚑ uncertain ⚑ context-dependent
-12. We began laying the groundwork for users to have the best possible experience with AI when we introduced the neural engine in 2017.
-13. Ever since then, we've innovated and invested deliberately in silicon, systems, and scalable unified memory architecture designed with AI at their core.
-14. The result is that Apple has created the world's best hardware to experience AI, whether using Apple intelligence, including Siri AI, or third-party offerings.
-15. That's why developers and researchers are increasingly using Apple devices to build ever more advanced tools and models. ⚑ uncertain ⚑ context-dependent
-16. That means innovating to protect user privacy with the next generation of Apple intelligence or helping parents keep kids safe, as I mentioned earlier. ⚑ context-dependent
-17. The center is located in a facility where we currently assemble advanced AI servers.
-18. Our road map is phenomenal and we are so excited about the way Siri AI will enrich our users lives.
-19. According to a recent survey from Worldpanel, iPhone was the top-selling model in the US, urban China, the UK, France, Australia, and Japan. ⚑ uncertain
-20. Turning now to enterprise and education, organizations are using the Apple platform to drive AI innovation and empower the next generation of students.
-21. More companies are choosing Mac for on-device AI advantages, including lower costs, better performance, and enhanced privacy and security.
-22. At Disney, creative teams are increasingly turning to Mac for on-device AI workflows that reduce overall cloud token costs and keep their IP secure.
-23. And Credit Agricole, France's leading retail bank, is using on-device AI on MacBook Pro to streamline regulatory workflows, reducing manual processing time by over 80%.
+11. We began laying the groundwork for users to have the best possible experience with AI when we introduced the neural engine in 2017.
+12. Ever since then, we've innovated and invested deliberately in silicon, systems, and scalable unified memory architecture designed with AI at their core.
+13. The result is that Apple has created the world's best hardware to experience AI, whether using Apple intelligence, including Siri AI, or third-party offerings.
+14. That means innovating to protect user privacy with the next generation of Apple intelligence or helping parents keep kids safe, as I mentioned earlier. ⚑ context-dependent
+15. The center is located in a facility where we currently assemble advanced AI servers.
+16. Our road map is phenomenal and we are so excited about the way Siri AI will enrich our users lives.
+17. Turning now to enterprise and education, organizations are using the Apple platform to drive AI innovation and empower the next generation of students.
+18. More companies are choosing Mac for on-device AI advantages, including lower costs, better performance, and enhanced privacy and security.
+19. At Disney, creative teams are increasingly turning to Mac for on-device AI workflows that reduce overall cloud token costs and keep their IP secure.
+20. And Credit Agricole, France's leading retail bank, is using on-device AI on MacBook Pro to streamline regulatory workflows, reducing manual processing time by over 80%.
 
 ## Q&A
 
@@ -70,5 +67,6 @@ _None._
 
 ## Borderline: infrastructure without an AI term
 
-1. [Q&A · Speaker not labeled] In terms of the the what it means for compute cost, it's obviously early going for us.
-2. [Q&A · Speaker not labeled] Um and so, we use some third-party cloud, and we do our own data centers.
+1. [Prepared remarks · Speaker not labeled] These experiences are intuitive and useful, while also deeply integrated in a way that's personal and private with the latest models running on device and on servers using private cloud compute.
+2. [Q&A · Speaker not labeled] In terms of the the what it means for compute cost, it's obviously early going for us.
+3. [Q&A · Speaker not labeled] Um and so, we use some third-party cloud, and we do our own data centers.

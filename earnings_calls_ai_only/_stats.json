@@ -1,50 +1,4 @@
 {
-  "meta_2024_Q1": {
-    "company": "meta",
-    "file": "meta_2024_Q1.md",
-    "period": "2024_Q1",
-    "format": "meta",
-    "total": 447,
-    "ai": 119,
-    "ai_by_section": {
-      "Prepared remarks": 57,
-      "Q&A": 62
-    },
-    "total_by_section": {
-      "Prepared remarks": 183,
-      "Q&A": 264
-    },
-    "borderline_auto": 4,
-    "borderline_infra": 11,
-    "false_positive_ai_tokens": 0,
-    "flag_counts": {
-      "uncertain": 21,
-      "context-dependent": 3
-    },
-    "parse_notes": {
-      "page_numbers_removed": 19,
-      "page_break_joins": 9,
-      "title_block_paragraphs": 1,
-      "format": "meta"
-    },
-    "parse_flags": [],
-    "speakers": [
-      "Brian Nowak, Morgan Stanley",
-      "Douglas Anmuth, JPMorgan",
-      "Eric Sheridan, Goldman Sachs",
-      "Justin Post, Bank of America",
-      "Ken Dorell, Director, Investor Relations",
-      "Kenneth Dorell, Director, Investor Relations",
-      "Kenneth Gawrelski, Wells Fargo",
-      "Mark Shmulik, Bernstein Research",
-      "Mark Zuckerberg, CEO",
-      "Operator",
-      "Ronald Josey, Citi",
-      "Ross Sandler, Barclays",
-      "Susan Li, CFO",
-      "Youssef Squali, Truist Securities"
-    ]
-  },
   "meta_2022_Q4": {
     "company": "meta",
     "file": "meta_2022_Q4.md",
@@ -266,6 +220,52 @@
       "Ron Josey, Citi",
       "Ross Sandler, Barclays",
       "Susan Li, CFO"
+    ]
+  },
+  "meta_2024_Q1": {
+    "company": "meta",
+    "file": "meta_2024_Q1.md",
+    "period": "2024_Q1",
+    "format": "meta",
+    "total": 447,
+    "ai": 119,
+    "ai_by_section": {
+      "Prepared remarks": 57,
+      "Q&A": 62
+    },
+    "total_by_section": {
+      "Prepared remarks": 183,
+      "Q&A": 264
+    },
+    "borderline_auto": 4,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 21,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "page_numbers_removed": 19,
+      "page_break_joins": 9,
+      "title_block_paragraphs": 1,
+      "format": "meta"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brian Nowak, Morgan Stanley",
+      "Douglas Anmuth, JPMorgan",
+      "Eric Sheridan, Goldman Sachs",
+      "Justin Post, Bank of America",
+      "Ken Dorell, Director, Investor Relations",
+      "Kenneth Dorell, Director, Investor Relations",
+      "Kenneth Gawrelski, Wells Fargo",
+      "Mark Shmulik, Bernstein Research",
+      "Mark Zuckerberg, CEO",
+      "Operator",
+      "Ronald Josey, Citi",
+      "Ross Sandler, Barclays",
+      "Susan Li, CFO",
+      "Youssef Squali, Truist Securities"
     ]
   },
   "meta_2024_Q2": {
@@ -2590,14 +2590,14 @@
     "file": "amazon_2022_Q4.md",
     "period": "2022_Q4",
     "format": "captions",
-    "total": 380,
+    "total": 381,
     "ai": 1,
     "ai_by_section": {
       "Prepared remarks": 0,
       "Q&A": 1
     },
     "total_by_section": {
-      "Prepared remarks": 109,
+      "Prepared remarks": 110,
       "Q&A": 271
     },
     "borderline_auto": 0,
@@ -2616,7 +2616,7 @@
     },
     "parse_flags": [
       "machine transcript (Whisper), no speaker labels",
-      "380 units, outside the typical 400-900"
+      "381 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -2627,14 +2627,14 @@
     "file": "amazon_2023_Q1.md",
     "period": "2023_Q1",
     "format": "captions",
-    "total": 545,
+    "total": 546,
     "ai": 38,
     "ai_by_section": {
       "Prepared remarks": 5,
       "Q&A": 33
     },
     "total_by_section": {
-      "Prepared remarks": 173,
+      "Prepared remarks": 174,
       "Q&A": 372
     },
     "borderline_auto": 1,
@@ -2664,14 +2664,14 @@
     "file": "amazon_2023_Q2.md",
     "period": "2023_Q2",
     "format": "captions",
-    "total": 363,
+    "total": 364,
     "ai": 54,
     "ai_by_section": {
       "Prepared remarks": 37,
       "Q&A": 17
     },
     "total_by_section": {
-      "Prepared remarks": 185,
+      "Prepared remarks": 186,
       "Q&A": 178
     },
     "borderline_auto": 1,
@@ -2692,7 +2692,7 @@
     "parse_flags": [
       "machine transcript (Whisper), no speaker labels",
       "call opening not detected: source may start mid-call",
-      "363 units, outside the typical 400-900"
+      "364 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -2703,14 +2703,14 @@
     "file": "amazon_2023_Q3.md",
     "period": "2023_Q3",
     "format": "captions",
-    "total": 391,
+    "total": 392,
     "ai": 73,
     "ai_by_section": {
       "Prepared remarks": 35,
       "Q&A": 38
     },
     "total_by_section": {
-      "Prepared remarks": 174,
+      "Prepared remarks": 175,
       "Q&A": 217
     },
     "borderline_auto": 6,
@@ -2730,7 +2730,7 @@
     },
     "parse_flags": [
       "machine transcript (Whisper), no speaker labels",
-      "391 units, outside the typical 400-900"
+      "392 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -2741,14 +2741,14 @@
     "file": "amazon_2023_Q4.md",
     "period": "2023_Q4",
     "format": "captions",
-    "total": 441,
+    "total": 442,
     "ai": 50,
     "ai_by_section": {
       "Prepared remarks": 28,
       "Q&A": 22
     },
     "total_by_section": {
-      "Prepared remarks": 179,
+      "Prepared remarks": 180,
       "Q&A": 262
     },
     "borderline_auto": 1,
@@ -2778,14 +2778,14 @@
     "file": "amazon_2024_Q1.md",
     "period": "2024_Q1",
     "format": "captions",
-    "total": 456,
+    "total": 457,
     "ai": 56,
     "ai_by_section": {
       "Prepared remarks": 37,
       "Q&A": 19
     },
     "total_by_section": {
-      "Prepared remarks": 203,
+      "Prepared remarks": 204,
       "Q&A": 253
     },
     "borderline_auto": 4,
@@ -2815,14 +2815,14 @@
     "file": "amazon_2024_Q2.md",
     "period": "2024_Q2",
     "format": "captions",
-    "total": 408,
+    "total": 409,
     "ai": 53,
     "ai_by_section": {
       "Prepared remarks": 33,
       "Q&A": 20
     },
     "total_by_section": {
-      "Prepared remarks": 190,
+      "Prepared remarks": 191,
       "Q&A": 218
     },
     "borderline_auto": 2,
@@ -2852,14 +2852,14 @@
     "file": "amazon_2024_Q3.md",
     "period": "2024_Q3",
     "format": "captions",
-    "total": 410,
+    "total": 411,
     "ai": 58,
     "ai_by_section": {
       "Prepared remarks": 32,
       "Q&A": 26
     },
     "total_by_section": {
-      "Prepared remarks": 175,
+      "Prepared remarks": 176,
       "Q&A": 235
     },
     "borderline_auto": 11,
@@ -2884,26 +2884,286 @@
       "Speaker not labeled"
     ]
   },
+  "amazon_2024_Q4": {
+    "company": "amazon",
+    "file": "amazon_2024_Q4.md",
+    "period": "2024_Q4",
+    "format": "captions",
+    "total": 384,
+    "ai": 82,
+    "ai_by_section": {
+      "Prepared remarks": 37,
+      "Q&A": 45
+    },
+    "total_by_section": {
+      "Prepared remarks": 198,
+      "Q&A": 186
+    },
+    "borderline_auto": 14,
+    "borderline_infra": 19,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 15,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "segments": 719,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 4.85,
+      "whisper_segment_boundaries_used": 21,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels",
+      "384 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2025_Q1": {
+    "company": "amazon",
+    "file": "amazon_2025_Q1.md",
+    "period": "2025_Q1",
+    "format": "captions",
+    "total": 444,
+    "ai": 70,
+    "ai_by_section": {
+      "Prepared remarks": 35,
+      "Q&A": 35
+    },
+    "total_by_section": {
+      "Prepared remarks": 205,
+      "Q&A": 239
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 12,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 22,
+      "context-dependent": 3
+    },
+    "parse_notes": {
+      "segments": 523,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.51,
+      "whisper_segment_boundaries_used": 18,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2025_Q2": {
+    "company": "amazon",
+    "file": "amazon_2025_Q2.md",
+    "period": "2025_Q2",
+    "format": "captions",
+    "total": 492,
+    "ai": 80,
+    "ai_by_section": {
+      "Prepared remarks": 28,
+      "Q&A": 52
+    },
+    "total_by_section": {
+      "Prepared remarks": 226,
+      "Q&A": 266
+    },
+    "borderline_auto": 9,
+    "borderline_infra": 11,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 2,
+      "uncertain": 36
+    },
+    "parse_notes": {
+      "segments": 1109,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.75,
+      "whisper_segment_boundaries_used": 26,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2025_Q3": {
+    "company": "amazon",
+    "file": "amazon_2025_Q3.md",
+    "period": "2025_Q3",
+    "format": "captions",
+    "total": 451,
+    "ai": 76,
+    "ai_by_section": {
+      "Prepared remarks": 44,
+      "Q&A": 32
+    },
+    "total_by_section": {
+      "Prepared remarks": 218,
+      "Q&A": 233
+    },
+    "borderline_auto": 7,
+    "borderline_infra": 10,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 25,
+      "context-dependent": 6
+    },
+    "parse_notes": {
+      "segments": 506,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.98,
+      "whisper_segment_boundaries_used": 23,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2025_Q4": {
+    "company": "amazon",
+    "file": "amazon_2025_Q4.md",
+    "period": "2025_Q4",
+    "format": "captions",
+    "total": 522,
+    "ai": 96,
+    "ai_by_section": {
+      "Prepared remarks": 52,
+      "Q&A": 44
+    },
+    "total_by_section": {
+      "Prepared remarks": 249,
+      "Q&A": 273
+    },
+    "borderline_auto": 6,
+    "borderline_infra": 9,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 29,
+      "context-dependent": 9
+    },
+    "parse_notes": {
+      "segments": 1309,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.72,
+      "whisper_segment_boundaries_used": 31,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2026_Q1": {
+    "company": "amazon",
+    "file": "amazon_2026_Q1.md",
+    "period": "2026_Q1",
+    "format": "captions",
+    "total": 425,
+    "ai": 100,
+    "ai_by_section": {
+      "Prepared remarks": 48,
+      "Q&A": 52
+    },
+    "total_by_section": {
+      "Prepared remarks": 217,
+      "Q&A": 208
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 15,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 5,
+      "uncertain": 20
+    },
+    "parse_notes": {
+      "segments": 1220,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 4.93,
+      "whisper_segment_boundaries_used": 33,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "amazon_2026_Q2": {
+    "company": "amazon",
+    "file": "amazon_2026_Q2.md",
+    "period": "2026_Q2",
+    "format": "captions",
+    "total": 427,
+    "ai": 87,
+    "ai_by_section": {
+      "Prepared remarks": 48,
+      "Q&A": 39
+    },
+    "total_by_section": {
+      "Prepared remarks": 231,
+      "Q&A": 196
+    },
+    "borderline_auto": 5,
+    "borderline_infra": 20,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "context-dependent": 10,
+      "uncertain": 24
+    },
+    "parse_notes": {
+      "segments": 546,
+      "pre_call_segments_dropped": 0,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 5.17,
+      "whisper_segment_boundaries_used": 29,
+      "format": "captions"
+    },
+    "parse_flags": [
+      "machine transcript (Whisper), no speaker labels"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
   "apple_FY23_Q1": {
     "company": "apple",
     "file": "apple_FY23_Q1.md",
     "period": "FY23_Q1",
     "format": "captions",
-    "total": 110,
-    "ai": 8,
+    "total": 111,
+    "ai": 3,
     "ai_by_section": {
-      "Prepared remarks": 3,
-      "Q&A": 5
+      "Prepared remarks": 1,
+      "Q&A": 2
     },
     "total_by_section": {
-      "Prepared remarks": 49,
+      "Prepared remarks": 50,
       "Q&A": 61
     },
     "borderline_auto": 0,
     "borderline_infra": 0,
     "false_positive_ai_tokens": 0,
     "flag_counts": {
-      "uncertain": 6
+      "uncertain": 1
     },
     "parse_notes": {
       "segments": 110,
@@ -2916,7 +3176,7 @@
       "YouTube auto-captions, no speaker labels",
       "call opening not detected: source may start mid-call",
       "unpunctuated captions: units are ~30s caption segments, not sentences",
-      "110 units, outside the typical 400-900"
+      "111 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -2927,22 +3187,20 @@
     "file": "apple_FY23_Q2.md",
     "period": "FY23_Q2",
     "format": "captions",
-    "total": 116,
-    "ai": 6,
+    "total": 117,
+    "ai": 4,
     "ai_by_section": {
       "Prepared remarks": 0,
-      "Q&A": 6
+      "Q&A": 4
     },
     "total_by_section": {
-      "Prepared remarks": 46,
+      "Prepared remarks": 47,
       "Q&A": 70
     },
     "borderline_auto": 0,
     "borderline_infra": 0,
     "false_positive_ai_tokens": 0,
-    "flag_counts": {
-      "uncertain": 2
-    },
+    "flag_counts": {},
     "parse_notes": {
       "segments": 133,
       "pre_call_segments_dropped": 14,
@@ -2954,7 +3212,7 @@
       "YouTube auto-captions, no speaker labels",
       "14 pre-call livestream segments dropped",
       "unpunctuated captions: units are ~30s caption segments, not sentences",
-      "116 units, outside the typical 400-900"
+      "117 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -2998,22 +3256,20 @@
     "file": "apple_FY23_Q4.md",
     "period": "FY23_Q4",
     "format": "captions",
-    "total": 115,
-    "ai": 7,
+    "total": 116,
+    "ai": 5,
     "ai_by_section": {
       "Prepared remarks": 0,
-      "Q&A": 7
+      "Q&A": 5
     },
     "total_by_section": {
-      "Prepared remarks": 51,
+      "Prepared remarks": 52,
       "Q&A": 64
     },
     "borderline_auto": 0,
     "borderline_infra": 3,
     "false_positive_ai_tokens": 0,
-    "flag_counts": {
-      "uncertain": 2
-    },
+    "flag_counts": {},
     "parse_notes": {
       "segments": 144,
       "pre_call_segments_dropped": 28,
@@ -3025,7 +3281,7 @@
       "YouTube auto-captions, no speaker labels",
       "28 pre-call livestream segments dropped",
       "unpunctuated captions: units are ~30s caption segments, not sentences",
-      "115 units, outside the typical 400-900"
+      "116 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -3036,64 +3292,25 @@
     "file": "apple_FY24_Q1.md",
     "period": "FY24_Q1",
     "format": "captions",
-    "total": 109,
-    "ai": 18,
+    "total": 110,
+    "ai": 11,
     "ai_by_section": {
-      "Prepared remarks": 7,
-      "Q&A": 11
+      "Prepared remarks": 3,
+      "Q&A": 8
     },
     "total_by_section": {
-      "Prepared remarks": 48,
+      "Prepared remarks": 49,
       "Q&A": 61
     },
     "borderline_auto": 0,
     "borderline_infra": 0,
     "false_positive_ai_tokens": 0,
-    "flag_counts": {
-      "uncertain": 7
-    },
+    "flag_counts": {},
     "parse_notes": {
       "segments": 109,
       "pre_call_segments_dropped": 0,
       "post_call_segments_dropped": 0,
       "punct_per_100_words": 0.35,
-      "format": "captions"
-    },
-    "parse_flags": [
-      "YouTube auto-captions, no speaker labels",
-      "unpunctuated captions: units are ~30s caption segments, not sentences",
-      "109 units, outside the typical 400-900"
-    ],
-    "speakers": [
-      "Speaker not labeled"
-    ]
-  },
-  "apple_FY24_Q2": {
-    "company": "apple",
-    "file": "apple_FY24_Q2.md",
-    "period": "FY24_Q2",
-    "format": "captions",
-    "total": 110,
-    "ai": 17,
-    "ai_by_section": {
-      "Prepared remarks": 6,
-      "Q&A": 11
-    },
-    "total_by_section": {
-      "Prepared remarks": 42,
-      "Q&A": 68
-    },
-    "borderline_auto": 0,
-    "borderline_infra": 2,
-    "false_positive_ai_tokens": 0,
-    "flag_counts": {
-      "uncertain": 3
-    },
-    "parse_notes": {
-      "segments": 112,
-      "pre_call_segments_dropped": 2,
-      "post_call_segments_dropped": 0,
-      "punct_per_100_words": 0.31,
       "format": "captions"
     },
     "parse_flags": [
@@ -3105,27 +3322,60 @@
       "Speaker not labeled"
     ]
   },
-  "apple_FY24_Q3": {
+  "apple_FY24_Q2": {
     "company": "apple",
-    "file": "apple_FY24_Q3.md",
-    "period": "FY24_Q3",
+    "file": "apple_FY24_Q2.md",
+    "period": "FY24_Q2",
     "format": "captions",
-    "total": 112,
-    "ai": 33,
+    "total": 111,
+    "ai": 14,
     "ai_by_section": {
-      "Prepared remarks": 11,
-      "Q&A": 22
+      "Prepared remarks": 5,
+      "Q&A": 9
     },
     "total_by_section": {
-      "Prepared remarks": 44,
+      "Prepared remarks": 43,
       "Q&A": 68
     },
     "borderline_auto": 0,
     "borderline_infra": 2,
     "false_positive_ai_tokens": 0,
-    "flag_counts": {
-      "uncertain": 2
+    "flag_counts": {},
+    "parse_notes": {
+      "segments": 112,
+      "pre_call_segments_dropped": 2,
+      "post_call_segments_dropped": 0,
+      "punct_per_100_words": 0.31,
+      "format": "captions"
     },
+    "parse_flags": [
+      "YouTube auto-captions, no speaker labels",
+      "unpunctuated captions: units are ~30s caption segments, not sentences",
+      "111 units, outside the typical 400-900"
+    ],
+    "speakers": [
+      "Speaker not labeled"
+    ]
+  },
+  "apple_FY24_Q3": {
+    "company": "apple",
+    "file": "apple_FY24_Q3.md",
+    "period": "FY24_Q3",
+    "format": "captions",
+    "total": 113,
+    "ai": 31,
+    "ai_by_section": {
+      "Prepared remarks": 10,
+      "Q&A": 21
+    },
+    "total_by_section": {
+      "Prepared remarks": 45,
+      "Q&A": 68
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {},
     "parse_notes": {
       "segments": 233,
       "pre_call_segments_dropped": 121,
@@ -3137,7 +3387,7 @@
       "YouTube auto-captions, no speaker labels",
       "121 pre-call livestream segments dropped",
       "unpunctuated captions: units are ~30s caption segments, not sentences",
-      "112 units, outside the typical 400-900"
+      "113 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -3149,10 +3399,10 @@
     "period": "FY24_Q4",
     "format": "captions",
     "total": 463,
-    "ai": 37,
+    "ai": 34,
     "ai_by_section": {
-      "Prepared remarks": 12,
-      "Q&A": 25
+      "Prepared remarks": 10,
+      "Q&A": 24
     },
     "total_by_section": {
       "Prepared remarks": 152,
@@ -3163,7 +3413,7 @@
     "false_positive_ai_tokens": 0,
     "flag_counts": {
       "context-dependent": 2,
-      "uncertain": 4
+      "uncertain": 1
     },
     "parse_notes": {
       "segments": 112,
@@ -3184,22 +3434,20 @@
     "file": "apple_FY25_Q1.md",
     "period": "FY25_Q1",
     "format": "captions",
-    "total": 106,
-    "ai": 29,
+    "total": 107,
+    "ai": 24,
     "ai_by_section": {
-      "Prepared remarks": 11,
-      "Q&A": 18
+      "Prepared remarks": 8,
+      "Q&A": 16
     },
     "total_by_section": {
-      "Prepared remarks": 43,
+      "Prepared remarks": 44,
       "Q&A": 63
     },
     "borderline_auto": 0,
     "borderline_infra": 2,
     "false_positive_ai_tokens": 0,
-    "flag_counts": {
-      "uncertain": 5
-    },
+    "flag_counts": {},
     "parse_notes": {
       "segments": 107,
       "pre_call_segments_dropped": 1,
@@ -3210,7 +3458,7 @@
     "parse_flags": [
       "YouTube auto-captions, no speaker labels",
       "unpunctuated captions: units are ~30s caption segments, not sentences",
-      "106 units, outside the typical 400-900"
+      "107 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -3222,10 +3470,10 @@
     "period": "FY25_Q2",
     "format": "captions",
     "total": 473,
-    "ai": 35,
+    "ai": 31,
     "ai_by_section": {
-      "Prepared remarks": 17,
-      "Q&A": 18
+      "Prepared remarks": 14,
+      "Q&A": 17
     },
     "total_by_section": {
       "Prepared remarks": 151,
@@ -3235,8 +3483,8 @@
     "borderline_infra": 11,
     "false_positive_ai_tokens": 0,
     "flag_counts": {
-      "uncertain": 9,
-      "context-dependent": 3
+      "context-dependent": 3,
+      "uncertain": 5
     },
     "parse_notes": {
       "segments": 107,
@@ -3258,10 +3506,10 @@
     "period": "FY25_Q3",
     "format": "captions",
     "total": 480,
-    "ai": 39,
+    "ai": 35,
     "ai_by_section": {
-      "Prepared remarks": 15,
-      "Q&A": 24
+      "Prepared remarks": 13,
+      "Q&A": 22
     },
     "total_by_section": {
       "Prepared remarks": 175,
@@ -3271,7 +3519,7 @@
     "borderline_infra": 11,
     "false_positive_ai_tokens": 0,
     "flag_counts": {
-      "uncertain": 7
+      "uncertain": 3
     },
     "parse_notes": {
       "segments": 111,
@@ -3293,10 +3541,10 @@
     "period": "FY25_Q4",
     "format": "captions",
     "total": 531,
-    "ai": 36,
+    "ai": 29,
     "ai_by_section": {
-      "Prepared remarks": 17,
-      "Q&A": 19
+      "Prepared remarks": 15,
+      "Q&A": 14
     },
     "total_by_section": {
       "Prepared remarks": 172,
@@ -3307,7 +3555,7 @@
     "false_positive_ai_tokens": 0,
     "flag_counts": {
       "context-dependent": 1,
-      "uncertain": 10
+      "uncertain": 3
     },
     "parse_notes": {
       "segments": 107,
@@ -3329,21 +3577,21 @@
     "period": "FY26_Q1",
     "format": "captions",
     "total": 483,
-    "ai": 33,
+    "ai": 28,
     "ai_by_section": {
-      "Prepared remarks": 12,
-      "Q&A": 21
+      "Prepared remarks": 11,
+      "Q&A": 17
     },
     "total_by_section": {
       "Prepared remarks": 156,
       "Q&A": 327
     },
     "borderline_auto": 0,
-    "borderline_infra": 7,
+    "borderline_infra": 8,
     "false_positive_ai_tokens": 0,
     "flag_counts": {
       "context-dependent": 2,
-      "uncertain": 7
+      "uncertain": 2
     },
     "parse_notes": {
       "segments": 112,
@@ -3365,10 +3613,10 @@
     "period": "FY26_Q2",
     "format": "captions",
     "total": 530,
-    "ai": 30,
+    "ai": 25,
     "ai_by_section": {
-      "Prepared remarks": 17,
-      "Q&A": 13
+      "Prepared remarks": 16,
+      "Q&A": 9
     },
     "total_by_section": {
       "Prepared remarks": 223,
@@ -3379,7 +3627,7 @@
     "false_positive_ai_tokens": 0,
     "flag_counts": {
       "context-dependent": 3,
-      "uncertain": 7
+      "uncertain": 2
     },
     "parse_notes": {
       "segments": 120,
@@ -3401,9 +3649,9 @@
     "period": "FY26_Q3",
     "format": "captions",
     "total": 510,
-    "ai": 43,
+    "ai": 40,
     "ai_by_section": {
-      "Prepared remarks": 23,
+      "Prepared remarks": 20,
       "Q&A": 20
     },
     "total_by_section": {
@@ -3411,11 +3659,10 @@
       "Q&A": 306
     },
     "borderline_auto": 0,
-    "borderline_infra": 2,
+    "borderline_infra": 3,
     "false_positive_ai_tokens": 0,
     "flag_counts": {
-      "uncertain": 3,
-      "context-dependent": 3
+      "context-dependent": 1
     },
     "parse_notes": {
       "segments": 121,
@@ -3436,14 +3683,14 @@
     "file": "tesla_2022_Q4.md",
     "period": "2022_Q4",
     "format": "fool",
-    "total": 509,
+    "total": 517,
     "ai": 37,
     "ai_by_section": {
       "Prepared remarks": 4,
       "Q&A": 33
     },
     "total_by_section": {
-      "Prepared remarks": 82,
+      "Prepared remarks": 90,
       "Q&A": 427
     },
     "borderline_auto": 0,
@@ -3465,8 +3712,10 @@
       "Elon Musk, Chief Executive Officer and Product Architect",
       "George Gianarikas, Canaccord Genuity, Analyst",
       "Lars Moravy, Vice President, Vehicle Engineering",
+      "Martin Viecha",
       "Pierre Ferragu, New Street Research, Analyst",
       "Rod Lache, Wolfe Research, Analyst",
+      "Unknown speaker",
       "William Stein, Truist Securities, Analyst",
       "Zach Kirkhorn, Chief Financial Officer"
     ]
@@ -3476,14 +3725,14 @@
     "file": "tesla_2023_Q1.md",
     "period": "2023_Q1",
     "format": "captions",
-    "total": 120,
+    "total": 121,
     "ai": 21,
     "ai_by_section": {
       "Prepared remarks": 7,
       "Q&A": 14
     },
     "total_by_section": {
-      "Prepared remarks": 17,
+      "Prepared remarks": 18,
       "Q&A": 103
     },
     "borderline_auto": 0,
@@ -3503,7 +3752,7 @@
       "YouTube auto-captions, no speaker labels",
       "8 pre-call livestream segments dropped",
       "unpunctuated captions: units are ~30s caption segments, not sentences",
-      "120 units, outside the typical 400-900"
+      "121 units, outside the typical 400-900"
     ],
     "speakers": [
       "Speaker not labeled"
@@ -3514,15 +3763,15 @@
     "file": "tesla_2023_Q2.md",
     "period": "2023_Q2",
     "format": "fool",
-    "total": 578,
+    "total": 590,
     "ai": 59,
     "ai_by_section": {
       "Prepared remarks": 19,
       "Q&A": 40
     },
     "total_by_section": {
-      "Prepared remarks": 92,
-      "Q&A": 486
+      "Prepared remarks": 102,
+      "Q&A": 488
     },
     "borderline_auto": 9,
     "borderline_infra": 6,
@@ -3543,6 +3792,8 @@
       "Emmanuel Rosner, Deutsche Bank, Analyst",
       "Lars Moravy, Vice President, Vehicle Engineering",
       "Mark Delaney, Goldman Sachs, Analyst",
+      "Martin Viecha",
+      "Unknown speaker",
       "William Stein, Truist Securities, Analyst",
       "Zachary Kirkhorn, Chief Financial Officer"
     ]
@@ -3552,22 +3803,22 @@
     "file": "tesla_2023_Q3.md",
     "period": "2023_Q3",
     "format": "fool",
-    "total": 479,
-    "ai": 26,
+    "total": 529,
+    "ai": 34,
     "ai_by_section": {
-      "Prepared remarks": 2,
+      "Prepared remarks": 10,
       "Q&A": 24
     },
     "total_by_section": {
-      "Prepared remarks": 26,
-      "Q&A": 453
+      "Prepared remarks": 73,
+      "Q&A": 456
     },
     "borderline_auto": 12,
-    "borderline_infra": 2,
+    "borderline_infra": 3,
     "false_positive_ai_tokens": 0,
     "flag_counts": {
-      "uncertain": 19,
-      "context-dependent": 2
+      "uncertain": 22,
+      "context-dependent": 3
     },
     "parse_notes": {
       "lines_after_call_dropped": 52,
@@ -3576,10 +3827,12 @@
     "parse_flags": [],
     "speakers": [
       "Colin Langan, Wells Fargo Securities, Analyst",
+      "Elon Musk",
       "George Gianarikas, Canaccord Genuity, Analyst",
       "Martin Viecha, Senior Director, Investor Relations",
       "Pierre Ferragu, New Street Research, Analyst",
       "Rod Lache, Wolfe Research, Analyst",
+      "Unknown speaker",
       "Vaibhav Taneja, Chief Financial Officer",
       "Will Stein, Truist Securities, Analyst"
     ]
@@ -3589,15 +3842,15 @@
     "file": "tesla_2023_Q4.md",
     "period": "2023_Q4",
     "format": "fool",
-    "total": 577,
+    "total": 589,
     "ai": 35,
     "ai_by_section": {
-      "Prepared remarks": 16,
-      "Q&A": 19
+      "Prepared remarks": 8,
+      "Q&A": 27
     },
     "total_by_section": {
-      "Prepared remarks": 318,
-      "Q&A": 259
+      "Prepared remarks": 106,
+      "Q&A": 483
     },
     "borderline_auto": 14,
     "borderline_infra": 10,
@@ -3616,7 +3869,9 @@
       "Colin Langan, Wells Fargo Securities, Analyst",
       "Dan Levy, Barclays, Analyst",
       "Elon Musk, Chief Executive Officer and Product Architect",
+      "Martin Viecha",
       "Pierre Ferragu, New Street Research, Analyst",
+      "Unknown speaker",
       "Vaibhav Taneja, Chief Financial Officer"
     ]
   },
@@ -3625,15 +3880,15 @@
     "file": "tesla_2024_Q1.md",
     "period": "2024_Q1",
     "format": "fool",
-    "total": 629,
+    "total": 640,
     "ai": 71,
     "ai_by_section": {
-      "Prepared remarks": 49,
-      "Q&A": 22
+      "Prepared remarks": 17,
+      "Q&A": 54
     },
     "total_by_section": {
-      "Prepared remarks": 235,
-      "Q&A": 394
+      "Prepared remarks": 85,
+      "Q&A": 555
     },
     "borderline_auto": 7,
     "borderline_infra": 16,
@@ -3656,8 +3911,10 @@
       "George Gianarikas, Canaccord Genuity, Analyst",
       "Lars Moravy, Vice President, Vehicle Engineering",
       "Mark Delaney, Goldman Sachs, Analyst",
+      "Martin Viecha",
       "Shreyas Patil, Wolfe Research, Analyst",
       "Tony Sacconaghi, AllianceBernstein, Analyst",
+      "Unknown speaker",
       "Vaibhav Taneja, Chief Financial Officer"
     ]
   },
@@ -3666,7 +3923,7 @@
     "file": "tesla_2024_Q2.md",
     "period": "2024_Q2",
     "format": "fool",
-    "total": 541,
+    "total": 542,
     "ai": 84,
     "ai_by_section": {
       "Prepared remarks": 18,
@@ -3674,7 +3931,7 @@
     },
     "total_by_section": {
       "Prepared remarks": 106,
-      "Q&A": 435
+      "Q&A": 436
     },
     "borderline_auto": 16,
     "borderline_infra": 19,
@@ -3700,6 +3957,7 @@
       "Lars Moravy, Vice President, Vehicle Engineering",
       "Pierre Ferragu, Analyst",
       "Travis Axelrod, Head of Investor Relations",
+      "Unknown speaker, Analyst",
       "Vaibhav Taneja, Chief Financial Officer",
       "William Stein, Analyst"
     ]
@@ -3709,7 +3967,7 @@
     "file": "tesla_2024_Q3.md",
     "period": "2024_Q3",
     "format": "fool",
-    "total": 596,
+    "total": 603,
     "ai": 90,
     "ai_by_section": {
       "Prepared remarks": 31,
@@ -3717,7 +3975,7 @@
     },
     "total_by_section": {
       "Prepared remarks": 210,
-      "Q&A": 386
+      "Q&A": 393
     },
     "borderline_auto": 5,
     "borderline_infra": 10,
@@ -3738,6 +3996,7 @@
       "Elon Reeve Musk, Chief Executive Officer and Product Architect",
       "Pierre Ferragu, Analyst",
       "Travis Axelrod, Head of Investor Relations",
+      "Unknown speaker, Analyst",
       "Vaibhav Taneja, Chief Financial Officer"
     ]
   },
@@ -3777,6 +4036,7 @@
       "Lars Moravy, Vice President, Vehicle Engineering",
       "Pierre Ferragu, Analyst",
       "Travis Axelrod, Head of Investor Relations",
+      "Unknown speaker, Analyst",
       "Vaibhav Taneja, Chief Financial Officer"
     ]
   },

@@ -9,10 +9,10 @@
 
 ---
 
-**73 AI sentences of 391 total**
+**73 AI sentences of 392 total**
 (Borderline, listed at the end: 6 automation/robotics, 6 infrastructure, none containing an AI term.)
 
-Source/parse flags: machine transcript (Whisper), no speaker labels; 391 units, outside the typical 400-900.
+Source/parse flags: machine transcript (Whisper), no speaker labels; 392 units, outside the typical 400-900.
 
 ## Prepared remarks
 

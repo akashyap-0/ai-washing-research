@@ -8,10 +8,10 @@
 
 ---
 
-**21 AI sentences of 120 total**
+**21 AI sentences of 121 total**
 (Borderline, listed at the end: 0 automation/robotics, 3 infrastructure, none containing an AI term.)
 
-Source/parse flags: YouTube auto-captions, no speaker labels; 8 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 120 units, outside the typical 400-900.
+Source/parse flags: YouTube auto-captions, no speaker labels; 8 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 121 units, outside the typical 400-900.
 
 ## Prepared remarks
 

@@ -8,10 +8,10 @@
 
 ---
 
-**7 AI sentences of 115 total**
+**5 AI sentences of 116 total**
 (Borderline, listed at the end: 0 automation/robotics, 3 infrastructure, none containing an AI term.)
 
-Source/parse flags: YouTube auto-captions, no speaker labels; 28 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 115 units, outside the typical 400-900.
+Source/parse flags: YouTube auto-captions, no speaker labels; 28 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 116 units, outside the typical 400-900.
 
 ## Prepared remarks
 
@@ -24,9 +24,7 @@ _No AI sentences in this section._
 2. monetize some of these efforts uh with generative AI if you kind of zoom out and and look at what we've done on AI and machine learning and how we've used it uh we we view Ai and machine learning as fundamental Technologies and they're integral to virtually every product that we show uh and so just recently when when we uh shipped iOS 17 it had features like personal voice and live voicemail AI is
 3. at the heart of these features and then you can go all the way to then life saving features uh on the on the watch and the phone like fall detection crash detection uh ECG on the watch these would not be possible without Ai and so we don't label them as such if you will we label them as to what their consumer benefit is but at the the fundamental technology behind it is is AI and
 4. machine learning uh in terms of generative AI we have uh obviously we have work going on I'm not going to get into details about uh what it is because you know as you know we don't we really don't do that uh but you can bet that we're investing we're investing uh quite a bit uh we're going to do it responsibly and uh it will you will see product advancements over time that
-5. that play a role for example the mix of products that we sell not every product has the same gross margin profile uh and so our guidance our results are reflective of that and also within a specific product category a lot depends on the kind of models that we sell because they have different different margin profiles I think one of the things that we've done well over the last few years is to offer more ⚑ uncertain
-6. dollar higher and R&B is up by about eight% eight billion or over a third higher can you give us a sense of some of the main components or drivers behind that increase in Innovation spend is it Apple silicon is it new products like Vision Pro or is it content to support new Services I think that's one of the top questions in investors have thanks sure it's a number of things uh Richard it's the um some things I can't talk about it's Vision Pro it's uh Ai
-7. of the installed base both by product and by geography and then we look at the daily engagement in the ecos system so that's why we pay a lot of attention uh on things like transacting account paid accounts uh we want to see if in fact we are able to move our customers from a free model to a paid uh model over time that's obviously uh very very important for us uh and so there you know all ⚑ uncertain
+5. dollar higher and R&B is up by about eight% eight billion or over a third higher can you give us a sense of some of the main components or drivers behind that increase in Innovation spend is it Apple silicon is it new products like Vision Pro or is it content to support new Services I think that's one of the top questions in investors have thanks sure it's a number of things uh Richard it's the um some things I can't talk about it's Vision Pro it's uh Ai
 
 ## Borderline: automation/robotics without an AI term
 

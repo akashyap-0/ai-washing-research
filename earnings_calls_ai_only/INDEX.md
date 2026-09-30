@@ -64,37 +64,44 @@ One row per transcript. "Total" counts every sentence the parser kept after nois
 | alphabet | 2025_Q4 | alphabet | 515 | 158 | 30.7% | 102 / 56 | 23 | 1 / 25 | - |
 | alphabet | 2026_Q1 | alphabet | 504 | 161 | 31.9% | 100 / 61 | 20 | 1 / 21 | - |
 | alphabet | 2026_Q2 | alphabet | 523 | 174 | 33.3% | 102 / 72 | 36 | 0 / 15 | - |
-| amazon | 2022_Q4 | captions | 380 | 1 | 0.3% | 0 / 1 | 1 | 0 / 5 | machine transcript (Whisper), no speaker labels; 380 units, outside the typical 400-900 |
-| amazon | 2023_Q1 | captions | 545 | 38 | 7.0% | 5 / 33 | 8 | 1 / 11 | machine transcript (Whisper), no speaker labels |
-| amazon | 2023_Q2 | captions | 363 | 54 | 14.9% | 37 / 17 | 4 | 1 / 7 | machine transcript (Whisper), no speaker labels; call opening not detected: source may start mid-call; 363 units, outside the typical 400-900 |
-| amazon | 2023_Q3 | captions | 391 | 73 | 18.7% | 35 / 38 | 13 | 6 / 6 | machine transcript (Whisper), no speaker labels; 391 units, outside the typical 400-900 |
-| amazon | 2023_Q4 | captions | 441 | 50 | 11.3% | 28 / 22 | 7 | 1 / 8 | machine transcript (Whisper), no speaker labels |
-| amazon | 2024_Q1 | captions | 456 | 56 | 12.3% | 37 / 19 | 12 | 4 / 18 | machine transcript (Whisper), no speaker labels |
-| amazon | 2024_Q2 | captions | 408 | 53 | 13.0% | 33 / 20 | 7 | 2 / 10 | machine transcript (Whisper), no speaker labels |
-| amazon | 2024_Q3 | captions | 410 | 58 | 14.1% | 32 / 26 | 10 | 11 / 17 | machine transcript (Whisper), no speaker labels |
-| apple | FY23_Q1 | captions | 110 | 8 | 7.3% | 3 / 5 | 6 | 0 / 0 | YouTube auto-captions, no speaker labels; call opening not detected: source may start mid-call; unpunctuated captions: units are ~30s caption segments, not sentences; 110 units, outside the typical 400-900 |
-| apple | FY23_Q2 | captions | 116 | 6 | 5.2% | 0 / 6 | 2 | 0 / 0 | YouTube auto-captions, no speaker labels; 14 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 116 units, outside the typical 400-900 |
+| amazon | 2022_Q4 | captions | 381 | 1 | 0.3% | 0 / 1 | 1 | 0 / 5 | machine transcript (Whisper), no speaker labels; 381 units, outside the typical 400-900 |
+| amazon | 2023_Q1 | captions | 546 | 38 | 7.0% | 5 / 33 | 8 | 1 / 11 | machine transcript (Whisper), no speaker labels |
+| amazon | 2023_Q2 | captions | 364 | 54 | 14.8% | 37 / 17 | 4 | 1 / 7 | machine transcript (Whisper), no speaker labels; call opening not detected: source may start mid-call; 364 units, outside the typical 400-900 |
+| amazon | 2023_Q3 | captions | 392 | 73 | 18.6% | 35 / 38 | 13 | 6 / 6 | machine transcript (Whisper), no speaker labels; 392 units, outside the typical 400-900 |
+| amazon | 2023_Q4 | captions | 442 | 50 | 11.3% | 28 / 22 | 7 | 1 / 8 | machine transcript (Whisper), no speaker labels |
+| amazon | 2024_Q1 | captions | 457 | 56 | 12.3% | 37 / 19 | 12 | 4 / 18 | machine transcript (Whisper), no speaker labels |
+| amazon | 2024_Q2 | captions | 409 | 53 | 13.0% | 33 / 20 | 7 | 2 / 10 | machine transcript (Whisper), no speaker labels |
+| amazon | 2024_Q3 | captions | 411 | 58 | 14.1% | 32 / 26 | 10 | 11 / 17 | machine transcript (Whisper), no speaker labels |
+| amazon | 2024_Q4 | captions | 384 | 82 | 21.4% | 37 / 45 | 15 | 14 / 19 | machine transcript (Whisper), no speaker labels; 384 units, outside the typical 400-900 |
+| amazon | 2025_Q1 | captions | 444 | 70 | 15.8% | 35 / 35 | 22 | 2 / 12 | machine transcript (Whisper), no speaker labels |
+| amazon | 2025_Q2 | captions | 492 | 80 | 16.3% | 28 / 52 | 36 | 9 / 11 | machine transcript (Whisper), no speaker labels |
+| amazon | 2025_Q3 | captions | 451 | 76 | 16.9% | 44 / 32 | 25 | 7 / 10 | machine transcript (Whisper), no speaker labels |
+| amazon | 2025_Q4 | captions | 522 | 96 | 18.4% | 52 / 44 | 29 | 6 / 9 | machine transcript (Whisper), no speaker labels |
+| amazon | 2026_Q1 | captions | 425 | 100 | 23.5% | 48 / 52 | 20 | 2 / 15 | machine transcript (Whisper), no speaker labels |
+| amazon | 2026_Q2 | captions | 427 | 87 | 20.4% | 48 / 39 | 24 | 5 / 20 | machine transcript (Whisper), no speaker labels |
+| apple | FY23_Q1 | captions | 111 | 3 | 2.7% | 1 / 2 | 1 | 0 / 0 | YouTube auto-captions, no speaker labels; call opening not detected: source may start mid-call; unpunctuated captions: units are ~30s caption segments, not sentences; 111 units, outside the typical 400-900 |
+| apple | FY23_Q2 | captions | 117 | 4 | 3.4% | 0 / 4 | 0 | 0 / 0 | YouTube auto-captions, no speaker labels; 14 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 117 units, outside the typical 400-900 |
 | apple | FY23_Q3 | captions | 469 | 5 | 1.1% | 0 / 5 | 0 | 0 / 0 | YouTube auto-captions, no speaker labels |
-| apple | FY23_Q4 | captions | 115 | 7 | 6.1% | 0 / 7 | 2 | 0 / 3 | YouTube auto-captions, no speaker labels; 28 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 115 units, outside the typical 400-900 |
-| apple | FY24_Q1 | captions | 109 | 18 | 16.5% | 7 / 11 | 7 | 0 / 0 | YouTube auto-captions, no speaker labels; unpunctuated captions: units are ~30s caption segments, not sentences; 109 units, outside the typical 400-900 |
-| apple | FY24_Q2 | captions | 110 | 17 | 15.5% | 6 / 11 | 3 | 0 / 2 | YouTube auto-captions, no speaker labels; unpunctuated captions: units are ~30s caption segments, not sentences; 110 units, outside the typical 400-900 |
-| apple | FY24_Q3 | captions | 112 | 33 | 29.5% | 11 / 22 | 2 | 0 / 2 | YouTube auto-captions, no speaker labels; 121 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 112 units, outside the typical 400-900 |
-| apple | FY24_Q4 | captions | 463 | 37 | 8.0% | 12 / 25 | 4 | 0 / 4 | YouTube auto-captions, no speaker labels |
-| apple | FY25_Q1 | captions | 106 | 29 | 27.4% | 11 / 18 | 5 | 0 / 2 | YouTube auto-captions, no speaker labels; unpunctuated captions: units are ~30s caption segments, not sentences; 106 units, outside the typical 400-900 |
-| apple | FY25_Q2 | captions | 473 | 35 | 7.4% | 17 / 18 | 9 | 0 / 11 | YouTube auto-captions, no speaker labels |
-| apple | FY25_Q3 | captions | 480 | 39 | 8.1% | 15 / 24 | 7 | 0 / 11 | YouTube auto-captions, no speaker labels |
-| apple | FY25_Q4 | captions | 531 | 36 | 6.8% | 17 / 19 | 10 | 0 / 6 | YouTube auto-captions, no speaker labels |
-| apple | FY26_Q1 | captions | 483 | 33 | 6.8% | 12 / 21 | 7 | 0 / 7 | YouTube auto-captions, no speaker labels |
-| apple | FY26_Q2 | captions | 530 | 30 | 5.7% | 17 / 13 | 7 | 0 / 0 | YouTube auto-captions, no speaker labels |
-| apple | FY26_Q3 | captions | 510 | 43 | 8.4% | 23 / 20 | 3 | 0 / 2 | YouTube auto-captions, no speaker labels |
-| tesla | 2022_Q4 | fool | 509 | 37 | 7.3% | 4 / 33 | 21 | 0 / 1 | - |
-| tesla | 2023_Q1 | captions | 120 | 21 | 17.5% | 7 / 14 | 15 | 0 / 3 | YouTube auto-captions, no speaker labels; 8 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 120 units, outside the typical 400-900 |
-| tesla | 2023_Q2 | fool | 578 | 59 | 10.2% | 19 / 40 | 29 | 9 / 6 | - |
-| tesla | 2023_Q3 | fool | 479 | 26 | 5.4% | 2 / 24 | 19 | 12 / 2 | - |
-| tesla | 2023_Q4 | fool | 577 | 35 | 6.1% | 16 / 19 | 12 | 14 / 10 | - |
-| tesla | 2024_Q1 | fool | 629 | 71 | 11.3% | 49 / 22 | 45 | 7 / 16 | - |
-| tesla | 2024_Q2 | fool | 541 | 84 | 15.5% | 18 / 66 | 48 | 16 / 19 | - |
-| tesla | 2024_Q3 | fool | 596 | 90 | 15.1% | 31 / 59 | 55 | 5 / 10 | - |
+| apple | FY23_Q4 | captions | 116 | 5 | 4.3% | 0 / 5 | 0 | 0 / 3 | YouTube auto-captions, no speaker labels; 28 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 116 units, outside the typical 400-900 |
+| apple | FY24_Q1 | captions | 110 | 11 | 10.0% | 3 / 8 | 0 | 0 / 0 | YouTube auto-captions, no speaker labels; unpunctuated captions: units are ~30s caption segments, not sentences; 110 units, outside the typical 400-900 |
+| apple | FY24_Q2 | captions | 111 | 14 | 12.6% | 5 / 9 | 0 | 0 / 2 | YouTube auto-captions, no speaker labels; unpunctuated captions: units are ~30s caption segments, not sentences; 111 units, outside the typical 400-900 |
+| apple | FY24_Q3 | captions | 113 | 31 | 27.4% | 10 / 21 | 0 | 0 / 2 | YouTube auto-captions, no speaker labels; 121 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 113 units, outside the typical 400-900 |
+| apple | FY24_Q4 | captions | 463 | 34 | 7.3% | 10 / 24 | 1 | 0 / 4 | YouTube auto-captions, no speaker labels |
+| apple | FY25_Q1 | captions | 107 | 24 | 22.4% | 8 / 16 | 0 | 0 / 2 | YouTube auto-captions, no speaker labels; unpunctuated captions: units are ~30s caption segments, not sentences; 107 units, outside the typical 400-900 |
+| apple | FY25_Q2 | captions | 473 | 31 | 6.6% | 14 / 17 | 5 | 0 / 11 | YouTube auto-captions, no speaker labels |
+| apple | FY25_Q3 | captions | 480 | 35 | 7.3% | 13 / 22 | 3 | 0 / 11 | YouTube auto-captions, no speaker labels |
+| apple | FY25_Q4 | captions | 531 | 29 | 5.5% | 15 / 14 | 3 | 0 / 6 | YouTube auto-captions, no speaker labels |
+| apple | FY26_Q1 | captions | 483 | 28 | 5.8% | 11 / 17 | 2 | 0 / 8 | YouTube auto-captions, no speaker labels |
+| apple | FY26_Q2 | captions | 530 | 25 | 4.7% | 16 / 9 | 2 | 0 / 0 | YouTube auto-captions, no speaker labels |
+| apple | FY26_Q3 | captions | 510 | 40 | 7.8% | 20 / 20 | 0 | 0 / 3 | YouTube auto-captions, no speaker labels |
+| tesla | 2022_Q4 | fool | 517 | 37 | 7.2% | 4 / 33 | 21 | 0 / 1 | - |
+| tesla | 2023_Q1 | captions | 121 | 21 | 17.4% | 7 / 14 | 15 | 0 / 3 | YouTube auto-captions, no speaker labels; 8 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 121 units, outside the typical 400-900 |
+| tesla | 2023_Q2 | fool | 590 | 59 | 10.0% | 19 / 40 | 29 | 9 / 6 | - |
+| tesla | 2023_Q3 | fool | 529 | 34 | 6.4% | 10 / 24 | 22 | 12 / 3 | - |
+| tesla | 2023_Q4 | fool | 589 | 35 | 5.9% | 8 / 27 | 12 | 14 / 10 | - |
+| tesla | 2024_Q1 | fool | 640 | 71 | 11.1% | 17 / 54 | 45 | 7 / 16 | - |
+| tesla | 2024_Q2 | fool | 542 | 84 | 15.5% | 18 / 66 | 48 | 16 / 19 | - |
+| tesla | 2024_Q3 | fool | 603 | 90 | 14.9% | 31 / 59 | 55 | 5 / 10 | - |
 | tesla | 2024_Q4 | fool | 590 | 75 | 12.7% | 27 / 48 | 52 | 39 / 5 | - |
 | tesla | 2025_Q1 | captions | 697 | 56 | 8.0% | 18 / 38 | 44 | 19 / 2 | YouTube auto-captions, no speaker labels; 9 pre-call livestream segments dropped |
 | tesla | 2025_Q2 | captions | 466 | 71 | 15.2% | 33 / 38 | 42 | 26 / 3 | YouTube auto-captions, no speaker labels; 6 pre-call livestream segments dropped |
@@ -111,7 +118,7 @@ One row per transcript. "Total" counts every sentence the parser kept after nois
 | microsoft | 15 | 7452 | 1696 | 22.8% | 1078 / 618 | 283 | 8 / 306 |
 | nvidia | 15 | 7509 | 2519 | 33.5% | 1056 / 1463 | 921 | 25 / 585 |
 | alphabet | 15 | 7502 | 1748 | 23.3% | 1093 / 655 | 221 | 14 / 238 |
-| amazon | 8 | 3394 | 383 | 11.3% | 207 / 176 | 62 | 26 / 82 |
-| apple | 15 | 4717 | 376 | 8.0% | 151 / 225 | 74 | 0 / 50 |
-| tesla | 15 | 7649 | 931 | 12.2% | 312 / 619 | 553 | 285 / 105 |
-| **all** | **98** | **45293** | **9120** | **20.1%** | 4627 / 4493 | 2419 | 384 / 1724 |
+| amazon | 15 | 6547 | 974 | 14.9% | 499 / 475 | 233 | 71 / 178 |
+| apple | 15 | 4724 | 319 | 6.8% | 126 / 193 | 17 | 0 / 52 |
+| tesla | 15 | 7751 | 939 | 12.1% | 280 / 659 | 556 | 285 / 106 |
+| **all** | **105** | **48555** | **9662** | **19.9%** | 4862 / 4800 | 2536 | 429 / 1823 |
