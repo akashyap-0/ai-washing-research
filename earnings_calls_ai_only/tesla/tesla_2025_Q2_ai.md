@@ -8,7 +8,7 @@
 
 ---
 
-**71 AI sentences of 466 total**
+**73 AI sentences of 466 total**
 (Borderline, listed at the end: 26 automation/robotics, 3 infrastructure, none containing an AI term.)
 
 Source/parse flags: YouTube auto-captions, no speaker labels; 6 pre-call livestream segments dropped.
@@ -57,40 +57,42 @@ Source/parse flags: YouTube auto-captions, no speaker labels; 6 pre-call livestr
 2. Um the next question is what are the key technical and regulatory hurdles still remaining for unsupervised FSD to be available for personal use? ⚑ uncertain
 3. And for what I suppose is the same AI hardware in the Austin robot taxi vehicles as some customer vehicles and we did deliver a car autonomously from the factory to a customer.
 4. uh and every Tesla manufacturer in the US and in Europe autonomously drives itself from the end of line to the loading docks and it so it's just a software update. ⚑ uncertain
-5. Um, and really what's going to happen over the next uh several years is a fundamental transformation of the company from a pre- autonomy world to a post autonomy and uh I'm working on a new master plan to articulate that as a team and uh you know there there there will there will be you know some teething pains as you as you transition from a pre pre- autonomy to a post autonomy world. ⚑ uncertain
-6. The next question uh is actually a duplicate on unsupervised FSD for customer vehicles. ⚑ uncertain
-7. Um, Dojo 2, um, we expect to have Dojo 2 operating in scale sometime next year.
-8. Um, with scale being in somewhere around 100K H100 equivalents. ⚑ uncertain
-9. Um, and, um, and then AI5, which is really it's spectacular.
-10. Uh the AI5 chip will be hopefully be in volume production around the end of next year that has a lot of potential.
-11. Um I think you know thinking about Dojo 3 and the AI6 inference chip um it seems like intuitively we want to try to find convergence there where it's basically the same chip.
-12. Um, so Elan, um, are you able to share any KPIs with us in terms of, uh, the robo taxi business? ⚑ uncertain
-13. um how many vehicles are you operating uh miles driven autonomously or the number of safety critical intervention? ⚑ uncertain
-14. And then yeah, longer term, from an economics point of view, longer term, you've previously talked about working to drive down the cost per mile on robo taxis, maybe towards 30 or 40 cents per mile over time. ⚑ uncertain
-15. Well, the the the cyber cab is which is really optimized for autonomy. ⚑ uncertain
-16. U so Elon, as Tesla moves into this next phase of physical AI, autonomous humanoids, robo taxes, etc.
-17. Uh, and is the second half of this year too soon to have an AI day?
-18. Yeah, it's a bit of a tough thing because like when we're doing AI day, we find that some of our competitors have literally done a frame by frame examination of our slides and everything we say and then copy us.
-19. Um, I mean that said, we should probably I mean I guess we could consider the shareholder meeting to be sort of an we can do we can maybe go into depth some some amount of depth at the annual shareholder meeting um with respect to Optimus and AI and um sort of our chip chip stuff perhaps Um yeah, uh Tesla is also really underrated in terms of AI chip design, um as well as AI software.
-20. And even though it's been now out for several years, um, and we're confident that the AI chip will be a profound game changer.
-21. So unless export restrictions change, we actually will have to nerf our AI5 ship, which is kind of weird.
-22. Uh Yan, you've talked about the opportunity to put uh non-Teslaowned vehicles into the robo taxi network. ⚑ uncertain
-23. Just talk about the gating factors to enabling that and what timeline we should expect on personally owned vehicles in the robo taxi network. ⚑ uncertain
-24. because we want like Elon said we are we want to be parallel about security I mean assets small things like tread on the tire can have an impact on safety so that's why we would want to do some proper validation before we let other cars come in Dan you have a follow-up yes thank you um could you just unpack the different costs associated with scaling the robo taxi business and how you think about funding those costs. ⚑ uncertain
-25. With the FSD trials that Tesla has been offering to consumers and the attention on self-driving more generally, are you able to comment more specifically on what you're seeing with FSD subscription trends and take rates uh and help us better understand how large FSD revenue may be currently. ⚑ uncertain
-26. So we've definitely like I I mentioned it my in my opening remarks uh since we've launched version 12 of FSD in North America we've definitely seen a marked improvement in the f FSD adaption and the other thing which we had also done last year is we did bring down the pricing and we've made uh subscription much more affordable so we have seen uh you know 45% increase since that time. ⚑ uncertain
-27. But honestly, we we've just started the story around explaining the benefits of FSD. ⚑ uncertain
-28. Even if you don't believe in this uh anything else, a car on FSD being 10x safer should be a motivator. ⚑ uncertain
-29. And so what we're going to do to Elon's point like we've been giving people free time to try and try FSD but we'll start giving more prompts to say okay this particular drive try FSD so that I mean because it's literally seeing is believing like Elon said it's think of it like a cat it looks like a normal cat but this cat can sing in ants. ⚑ uncertain
-30. Uh Tesla has historically said it would use pricing as one tool to help drive auto vehicle growth as long as free cash flow stayed positive given the ability to monetize products like FSD. ⚑ uncertain
-31. I'm curious how you're thinking about pricing from here as a potential tool to drive increased volumes uh given where you stand with FSD as well as the fact that the IRA purchase tax credits are poised to go away in the US starting in the fourth quarter. ⚑ uncertain
-32. Um and uh but we'll still at the relative early stages of autonomy. ⚑ uncertain
-33. Um on the other hand, autonomy is most advanced and most available from a regulatory standpoint in the US. ⚑ uncertain
-34. um Q, you know, Q4, Q1, maybe Q2, but once you get to autonomy at scale in the second half of half of next year, certainly by the end of next year, I think the I would be surprised if if Tesla's economics um are not uh very compelling. ⚑ uncertain
-35. Can you know we we see all these wonderful developments at XAI like Grock and um you know obviously Tesla's trying to do quite a bit in AI.
-36. So one's real world AI and one's kind of uh I guess uh artificial super intelligence type thing.
-37. Um the I mean really kind of the the genesis for XIO was that there there were certain people who simply would not join Tesla AI engineers because they wanted to work on ASI.
-38. Um and uh now I think the Tesla problem is extremely important but not everyone agrees with me on that and so rather than have them join you know OpenAI or Google or whatever some other company it's like as well have them create a company in that regard which is like which AAI um so that's uh you know um and and you know people can make it make a decision Do they want to work on like super intelligence at data center or real world AI kind of they're both compelling problems but some people want to work on one and some want to work on the other.
+5. Uh the next question is can you talk about the benefits of Tesla investing in XAI?
+6. Um, and really what's going to happen over the next uh several years is a fundamental transformation of the company from a pre- autonomy world to a post autonomy and uh I'm working on a new master plan to articulate that as a team and uh you know there there there will there will be you know some teething pains as you as you transition from a pre pre- autonomy to a post autonomy world. ⚑ uncertain
+7. The next question uh is actually a duplicate on unsupervised FSD for customer vehicles. ⚑ uncertain
+8. The next qu question is can you give an update on dojo and could XAI be a customer for dojo?
+9. Um, Dojo 2, um, we expect to have Dojo 2 operating in scale sometime next year.
+10. Um, with scale being in somewhere around 100K H100 equivalents. ⚑ uncertain
+11. Um, and, um, and then AI5, which is really it's spectacular.
+12. Uh the AI5 chip will be hopefully be in volume production around the end of next year that has a lot of potential.
+13. Um I think you know thinking about Dojo 3 and the AI6 inference chip um it seems like intuitively we want to try to find convergence there where it's basically the same chip.
+14. Um, so Elan, um, are you able to share any KPIs with us in terms of, uh, the robo taxi business? ⚑ uncertain
+15. um how many vehicles are you operating uh miles driven autonomously or the number of safety critical intervention? ⚑ uncertain
+16. And then yeah, longer term, from an economics point of view, longer term, you've previously talked about working to drive down the cost per mile on robo taxis, maybe towards 30 or 40 cents per mile over time. ⚑ uncertain
+17. Well, the the the cyber cab is which is really optimized for autonomy. ⚑ uncertain
+18. U so Elon, as Tesla moves into this next phase of physical AI, autonomous humanoids, robo taxes, etc.
+19. Uh, and is the second half of this year too soon to have an AI day?
+20. Yeah, it's a bit of a tough thing because like when we're doing AI day, we find that some of our competitors have literally done a frame by frame examination of our slides and everything we say and then copy us.
+21. Um, I mean that said, we should probably I mean I guess we could consider the shareholder meeting to be sort of an we can do we can maybe go into depth some some amount of depth at the annual shareholder meeting um with respect to Optimus and AI and um sort of our chip chip stuff perhaps Um yeah, uh Tesla is also really underrated in terms of AI chip design, um as well as AI software.
+22. And even though it's been now out for several years, um, and we're confident that the AI chip will be a profound game changer.
+23. So unless export restrictions change, we actually will have to nerf our AI5 ship, which is kind of weird.
+24. Uh Yan, you've talked about the opportunity to put uh non-Teslaowned vehicles into the robo taxi network. ⚑ uncertain
+25. Just talk about the gating factors to enabling that and what timeline we should expect on personally owned vehicles in the robo taxi network. ⚑ uncertain
+26. because we want like Elon said we are we want to be parallel about security I mean assets small things like tread on the tire can have an impact on safety so that's why we would want to do some proper validation before we let other cars come in Dan you have a follow-up yes thank you um could you just unpack the different costs associated with scaling the robo taxi business and how you think about funding those costs. ⚑ uncertain
+27. With the FSD trials that Tesla has been offering to consumers and the attention on self-driving more generally, are you able to comment more specifically on what you're seeing with FSD subscription trends and take rates uh and help us better understand how large FSD revenue may be currently. ⚑ uncertain
+28. So we've definitely like I I mentioned it my in my opening remarks uh since we've launched version 12 of FSD in North America we've definitely seen a marked improvement in the f FSD adaption and the other thing which we had also done last year is we did bring down the pricing and we've made uh subscription much more affordable so we have seen uh you know 45% increase since that time. ⚑ uncertain
+29. But honestly, we we've just started the story around explaining the benefits of FSD. ⚑ uncertain
+30. Even if you don't believe in this uh anything else, a car on FSD being 10x safer should be a motivator. ⚑ uncertain
+31. And so what we're going to do to Elon's point like we've been giving people free time to try and try FSD but we'll start giving more prompts to say okay this particular drive try FSD so that I mean because it's literally seeing is believing like Elon said it's think of it like a cat it looks like a normal cat but this cat can sing in ants. ⚑ uncertain
+32. Uh Tesla has historically said it would use pricing as one tool to help drive auto vehicle growth as long as free cash flow stayed positive given the ability to monetize products like FSD. ⚑ uncertain
+33. I'm curious how you're thinking about pricing from here as a potential tool to drive increased volumes uh given where you stand with FSD as well as the fact that the IRA purchase tax credits are poised to go away in the US starting in the fourth quarter. ⚑ uncertain
+34. Um and uh but we'll still at the relative early stages of autonomy. ⚑ uncertain
+35. Um on the other hand, autonomy is most advanced and most available from a regulatory standpoint in the US. ⚑ uncertain
+36. um Q, you know, Q4, Q1, maybe Q2, but once you get to autonomy at scale in the second half of half of next year, certainly by the end of next year, I think the I would be surprised if if Tesla's economics um are not uh very compelling. ⚑ uncertain
+37. Can you know we we see all these wonderful developments at XAI like Grock and um you know obviously Tesla's trying to do quite a bit in AI.
+38. So one's real world AI and one's kind of uh I guess uh artificial super intelligence type thing.
+39. Um the I mean really kind of the the genesis for XIO was that there there were certain people who simply would not join Tesla AI engineers because they wanted to work on ASI.
+40. Um and uh now I think the Tesla problem is extremely important but not everyone agrees with me on that and so rather than have them join you know OpenAI or Google or whatever some other company it's like as well have them create a company in that regard which is like which AAI um so that's uh you know um and and you know people can make it make a decision Do they want to work on like super intelligence at data center or real world AI kind of they're both compelling problems but some people want to work on one and some want to work on the other.
 
 ## Borderline: automation/robotics without an AI term
 

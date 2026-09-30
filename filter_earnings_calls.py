@@ -97,6 +97,7 @@ CORE_TERMS = [
     ("artificial intelligence", _rx(r"\bartificial (?:general )?intelligence\b")),
     ("GenAI/OpenAI/xAI", _rx(r"\b(?:GenAI|OpenAI|xAI)\b", cs=True)),
     ("OpenAI/ChatGPT (any case)", _rx(r"\bopen ?ai\b|\bchat ?gpt\b")),
+    ("x.ai / Character.ai", _rx(r"\bx\.ai\b|\bcharacter\.ai\b|\bXAi\b")),
     ("Apple Intelligence", _rx(r"\bapple intelligence\b")),
     ("generative", _rx(r"\bgenerative\b")),
     ("agentic", _rx(r"\bagentic\b")),
@@ -174,6 +175,7 @@ INFRA_TERMS = _rx(
 # Lowercase/mixed-case "ai" tokens that the case-sensitive AI rule rejects;
 # counted as false positives. Titles before "Ai" (a surname) likewise.
 FALSE_POSITIVE_AI = _rx(r"(?<![A-Za-z])(?:ai|Ai|aI)s?(?![A-Za-z])", cs=True)
+AI_COMPANY_DOMAIN = _rx(r"\bx\.ai\b|\bcharacter\.ai\b|\bXAi\b")
 SURNAME_AI = _rx(r"\b(?:Mr|Ms|Mrs|Dr)\.\s+Ai\b", cs=True)
 
 SAFE_HARBOR = _rx(
@@ -203,7 +205,7 @@ def classify(sentence, machine=False, company=""):
         if MACHINE_AI.search(scrubbed) and "AI" not in core:
             core.append("AI (machine transcript, any case)")
     else:
-        fp += len(FALSE_POSITIVE_AI.findall(scrubbed))
+        fp += len(FALSE_POSITIVE_AI.findall(AI_COMPANY_DOMAIN.sub(" ", scrubbed)))
     off = WEAK_OFF.get(company, set())
     weak = [name for name, rx in WEAK_TERMS if name not in off and rx.search(scrubbed)]
     flags = []

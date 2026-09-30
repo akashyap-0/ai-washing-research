@@ -8,7 +8,7 @@
 
 ---
 
-**78 AI sentences of 424 total**
+**79 AI sentences of 424 total**
 (Borderline, listed at the end: 20 automation/robotics, 3 infrastructure, none containing an AI term.)
 
 Source/parse flags: YouTube auto-captions, no speaker labels.
@@ -76,28 +76,29 @@ Source/parse flags: YouTube auto-captions, no speaker labels.
 36. So, you're winning twice more uh FSD users than you're selling cars. ⚑ uncertain
 37. Um and then if I add to that picture the fact that I guess it's mostly hardware 4 uh owners who subscribe to FSD, it sounds like most drivers in the North America who have hardware for would already be using FSD. ⚑ uncertain
 38. And the kind of like success FSD is meeting today, is that is that is that the right way to think about it? ⚑ uncertain
-39. Is that going to be on board on chips inside uh Optimus, or if we should think uh about like your fleet of like a million Optimus being produced a year uh actually driving very significant inference demand in data centers as well for for system to thinking.
-40. Um So, you know, I think you need kind of a an orchestration AI, which uh you know, Grok would be good for orchestration.
-41. Um And uh and then for you know, for Optimus's voice, you know, having um a low-latency intelligent voice AI, Grok is actually very good for that.
-42. So, if you want to talk to Optimus and have kind of a you know, a Grok-level conversation, you you you kind of need to to connect to a Grok-level AI for for that.
-43. Um But uh but I would expect the amount the amount of interaction apart from like, you know, the voice voice stuff and asking complicated questions of the robot that necessarily needs a a large AI model to answer, uh the you know, Grok would probably have about as much interaction with Optimus as a manager would have with the people on their team.
-44. Uh it's just literally we we don't see a path to having enough uh efficient quantity of AI chips down the road as we scale production to high levels.
-45. Um I think that we do have some ideas for how to make um maybe radically better AI chips.
-46. Um so And if you look sort of long term at you know, say having AI satellites um making chips for those, there's just there's not just no way in hell the existing industry can keep up with that.
-47. Uh I recognize the importance of FSD and that FSD can help to drive vehicle sales and and I just see some of the um improvements on the FSD technology more recently with version 14. ⚑ uncertain
-48. Well, I mean Cybercab is the compact vehicle. ⚑ uncertain
-49. And we do think probably most of our production long term will be Cybercab because 90% of miles driven are with two or one or two people. ⚑ uncertain
-50. So it would mean that you know, you'd want to vast majority of your production to be Cybercab. ⚑ uncertain
-51. Um Then um but over time it's going to make sense for our whole lineup to be autonomous vehicles of different sizes. ⚑ uncertain
-52. And I I did talk a bit about this um when we did the kind of AI day in LA at uh Warner Brothers and you know, showed like this is our current lineup and this is what you know, some idea of what our future lineup will be, which is that it's going to be almost entirely autonomous.
-53. What are the key safety metrics that you're tracking that gives you confidence that robo-taxi is safe enough to expand is it sort of miles per intervention miles per accident per fatality and and where do you stand on that now? ⚑ uncertain
-54. We have a pretty large QA fleet spread across all of the United States and then we you know look at any intervention that could happen and then sort of simulate both in practice and also in our simulators that are very very good nowadays using neural networks as what would have happened and then based on all these analysis in the end make the call to expand and so far all of the expansions have gone according to our expectations.
-55. A lot of the limiting a lot of what limits wider deployment of robo-taxi are actually not safety issues, but uh convenience issues or or the car basically gets paranoid and gets stuck. ⚑ uncertain
-56. So, like it sometimes gets scared to cross railroads, for example, um or it'll get stuck at uh you know, a a a light where it does uh the light the light never changes from red or I mean, there was one kind of amusing situation where a whole bunch of um road taxis got stuck in the left turn lane in Austin because I kid you not a Waymo had crashed into a bus. ⚑ uncertain
-57. Um and so they could not turn left because the Waymo had crashed into the bus. ⚑ uncertain
-58. And so you had this like long line of like I don't know a dozen or more a dozen road taxis that were waiting for the bus to move, but the bus was never going to move because the Waymo had crashed into the bus. ⚑ uncertain
-59. Yeah, just last year I asked about, you know, FSD and camera and the issues with sun glare, and you noted that there was a breakthrough with direct photon counting that addressed this issue. ⚑ uncertain
-60. So, in recent software builds, if the camera's not able to see things clearly because of, you know, residue build-up or whatever you, um then the FSD won't be available for those cars. ⚑ uncertain
+39. And and you talked about the partnership with XAI.
+40. Is that going to be on board on chips inside uh Optimus, or if we should think uh about like your fleet of like a million Optimus being produced a year uh actually driving very significant inference demand in data centers as well for for system to thinking.
+41. Um So, you know, I think you need kind of a an orchestration AI, which uh you know, Grok would be good for orchestration.
+42. Um And uh and then for you know, for Optimus's voice, you know, having um a low-latency intelligent voice AI, Grok is actually very good for that.
+43. So, if you want to talk to Optimus and have kind of a you know, a Grok-level conversation, you you you kind of need to to connect to a Grok-level AI for for that.
+44. Um But uh but I would expect the amount the amount of interaction apart from like, you know, the voice voice stuff and asking complicated questions of the robot that necessarily needs a a large AI model to answer, uh the you know, Grok would probably have about as much interaction with Optimus as a manager would have with the people on their team.
+45. Uh it's just literally we we don't see a path to having enough uh efficient quantity of AI chips down the road as we scale production to high levels.
+46. Um I think that we do have some ideas for how to make um maybe radically better AI chips.
+47. Um so And if you look sort of long term at you know, say having AI satellites um making chips for those, there's just there's not just no way in hell the existing industry can keep up with that.
+48. Uh I recognize the importance of FSD and that FSD can help to drive vehicle sales and and I just see some of the um improvements on the FSD technology more recently with version 14. ⚑ uncertain
+49. Well, I mean Cybercab is the compact vehicle. ⚑ uncertain
+50. And we do think probably most of our production long term will be Cybercab because 90% of miles driven are with two or one or two people. ⚑ uncertain
+51. So it would mean that you know, you'd want to vast majority of your production to be Cybercab. ⚑ uncertain
+52. Um Then um but over time it's going to make sense for our whole lineup to be autonomous vehicles of different sizes. ⚑ uncertain
+53. And I I did talk a bit about this um when we did the kind of AI day in LA at uh Warner Brothers and you know, showed like this is our current lineup and this is what you know, some idea of what our future lineup will be, which is that it's going to be almost entirely autonomous.
+54. What are the key safety metrics that you're tracking that gives you confidence that robo-taxi is safe enough to expand is it sort of miles per intervention miles per accident per fatality and and where do you stand on that now? ⚑ uncertain
+55. We have a pretty large QA fleet spread across all of the United States and then we you know look at any intervention that could happen and then sort of simulate both in practice and also in our simulators that are very very good nowadays using neural networks as what would have happened and then based on all these analysis in the end make the call to expand and so far all of the expansions have gone according to our expectations.
+56. A lot of the limiting a lot of what limits wider deployment of robo-taxi are actually not safety issues, but uh convenience issues or or the car basically gets paranoid and gets stuck. ⚑ uncertain
+57. So, like it sometimes gets scared to cross railroads, for example, um or it'll get stuck at uh you know, a a a light where it does uh the light the light never changes from red or I mean, there was one kind of amusing situation where a whole bunch of um road taxis got stuck in the left turn lane in Austin because I kid you not a Waymo had crashed into a bus. ⚑ uncertain
+58. Um and so they could not turn left because the Waymo had crashed into the bus. ⚑ uncertain
+59. And so you had this like long line of like I don't know a dozen or more a dozen road taxis that were waiting for the bus to move, but the bus was never going to move because the Waymo had crashed into the bus. ⚑ uncertain
+60. Yeah, just last year I asked about, you know, FSD and camera and the issues with sun glare, and you noted that there was a breakthrough with direct photon counting that addressed this issue. ⚑ uncertain
+61. So, in recent software builds, if the camera's not able to see things clearly because of, you know, residue build-up or whatever you, um then the FSD won't be available for those cars. ⚑ uncertain
 
 ## Borderline: automation/robotics without an AI term
 

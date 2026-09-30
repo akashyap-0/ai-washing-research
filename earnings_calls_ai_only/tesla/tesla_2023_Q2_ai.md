@@ -8,7 +8,7 @@
 
 ---
 
-**59 AI sentences of 590 total**
+**61 AI sentences of 590 total**
 (Borderline, listed at the end: 9 automation/robotics, 6 infrastructure, none containing an AI term.)
 
 ## Prepared remarks
@@ -96,19 +96,21 @@
 ### William Stein, Truist Securities, Analyst
 32. I'd like to ask about the -- stick on this AI topic.
 33. We've read, you know, with great interest the developments in Dojo today, and you've spoken about FSD.
-34. And, you know, for investors that think that there might be quite a bit of value in the AI features and products of Tesla, it might be concerning to see you, you know, pursuing another endeavor where AI is the focus.
+34. But you've also -- Elon, you've started this x.ai company.
+35. And, you know, for investors that think that there might be quite a bit of value in the AI features and products of Tesla, it might be concerning to see you, you know, pursuing another endeavor where AI is the focus.
+36. So, can you talk about how x.ai might overlap, might perhaps compete with Tesla, or in other ways, perhaps it enhances the value of what Tesla does?
 
 ### Elon Musk, Chief Executive Officer and Product Architect
-35. There -- there really were just some -- some of the world's best AI engineers and scientists that were willing to join a start-up, but they were not willing to join a large sort of relatively established company like -- like Tesla.
-36. That's kind of the genesis of xAI. ⚑ context-dependent
-37. And xAI is -- is focused on sort of AGI, yeah.
-38. So, it's -- but like I said, I think there will be some value that xAI brings to Tesla.
+37. There -- there really were just some -- some of the world's best AI engineers and scientists that were willing to join a start-up, but they were not willing to join a large sort of relatively established company like -- like Tesla.
+38. That's kind of the genesis of xAI. ⚑ context-dependent
+39. And xAI is -- is focused on sort of AGI, yeah.
+40. So, it's -- but like I said, I think there will be some value that xAI brings to Tesla.
 
 ### Colin Rusch, Oppenheimer and Company, Analyst
-39. You know, as you're building out Dojo and implementing what surely is going to be a highly complex set of software, can you speak to the maturity of the operating system and how much soft -- outsourced software you're expecting to use in that system?
+41. You know, as you're building out Dojo and implementing what surely is going to be a highly complex set of software, can you speak to the maturity of the operating system and how much soft -- outsourced software you're expecting to use in that system?
 
 ### Elon Musk, Chief Executive Officer and Product Architect
-40. So, the software stack is a combination of open-source software and then -- and that tells the software all the way to the bare silicon, which is the case for the inference computer in the car, so. ⚑ uncertain
+42. So, the software stack is a combination of open-source software and then -- and that tells the software all the way to the bare silicon, which is the case for the inference computer in the car, so. ⚑ uncertain
 
 ## Borderline: automation/robotics without an AI term
 

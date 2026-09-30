@@ -523,9 +523,10 @@
         "autonomous driving"
       ],
       "flags": [
-        "uncertain"
+        "uncertain",
+        "context-dependent"
       ],
-      "text": "I mean just so you know for people who have been trying FSD and who've been using FSD they think even the current pricing is too cheap because for 99 bucks you're basically getting a personal show."
+      "text": "It has to do with FSD pricing."
     },
     {
       "file": "nvidia_FY25_Q4",
@@ -555,11 +556,12 @@
       "section": "Q&A",
       "speaker": "Speaker not labeled",
       "terms": [
-        "training/inference compute",
-        "inference"
+        "autonomous driving"
       ],
-      "flags": [],
-      "text": "Is that going to be on board on chips inside uh Optimus, or if we should think uh about like your fleet of like a million Optimus being produced a year uh actually driving very significant inference demand in data centers as well for for system to thinking."
+      "flags": [
+        "uncertain"
+      ],
+      "text": "Yep, and I'd like to note that the version of robotaxi that's running in Austin and Dallas, Houston, etc., those are essentially 14.3 variants."
     },
     {
       "file": "alphabet_2025_Q4",
@@ -795,14 +797,13 @@
     },
     {
       "file": "tesla_2024_Q1",
-      "section": "Q&A",
-      "speaker": "Elon Musk, Chief Executive Officer and Product Architect",
+      "section": "Prepared remarks",
+      "speaker": "Vaibhav Taneja, Chief Financial Officer",
       "terms": [
-        "AI",
-        "inference"
+        "AI"
       ],
       "flags": [],
-      "text": "I mean, this, perhaps, is a point that is worth emphasizing Tesla's AI inference efficiency is vastly better than any other company."
+      "text": "The savings from these initiatives, including our cost reductions will help improve our overall profitability and ultimately enable us to increase the scale of our investments in AI."
     },
     {
       "file": "microsoft_FY23_Q4",
@@ -875,12 +876,10 @@
       "section": "Q&A",
       "speaker": "Travis Axelrod, Head of Investor Relations",
       "terms": [
-        "autonomous driving"
+        "AI"
       ],
-      "flags": [
-        "uncertain"
-      ],
-      "text": "When can we expect Tesla to give us the $25,000 non-robotaxi regular car model?"
+      "flags": [],
+      "text": "And how does it align with your AI and product road map?"
     }
   ],
   "verbatim": {
@@ -894,25 +893,8 @@
     "context-dependent": 574,
     "long": 1
   },
-  "false_positive_ai_tokens": 4,
-  "false_positive_examples": [
-    [
-      "nvidia_FY25_Q1",
-      "Leading LLM companies such as OpenAI, Adept, Anthropic, Character.ai, Cohere, Databricks, DeepMind, Meta, Mistral, XAi, and many others are building on NVIDIA A"
-    ],
-    [
-      "alphabet_2023_Q4",
-      "Customers like Anthropic, Character.ai, Essential AI, and Mistral AI are building and serving models on it."
-    ],
-    [
-      "tesla_2023_Q2",
-      "But you've also -- Elon, you've started this x.ai company."
-    ],
-    [
-      "tesla_2023_Q2",
-      "So, can you talk about how x.ai might overlap, might perhaps compete with Tesla, or in other ways, perhaps it enhances the value of what Tesla does?"
-    ]
-  ],
+  "false_positive_ai_tokens": 0,
+  "false_positive_examples": [],
   "trigger_term_counts": {
     "AI": 4917,
     "model (bare)": 1544,
@@ -936,6 +918,7 @@
     "machine learning": 71,
     "recommendation system": 60,
     "superintelligence": 57,
+    "x.ai / Character.ai": 56,
     "Alexa": 52,
     "neural network": 47,
     "Meta ads-model name": 44,

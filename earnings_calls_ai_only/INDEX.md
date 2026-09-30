@@ -96,7 +96,7 @@ One row per transcript. "Total" counts every sentence the parser kept after nois
 | apple | FY26_Q3 | captions | 510 | 40 | 7.8% | 20 / 20 | 0 | 0 / 3 | YouTube auto-captions, no speaker labels |
 | tesla | 2022_Q4 | fool | 517 | 37 | 7.2% | 4 / 33 | 21 | 0 / 1 | - |
 | tesla | 2023_Q1 | captions | 121 | 21 | 17.4% | 7 / 14 | 15 | 0 / 3 | YouTube auto-captions, no speaker labels; 8 pre-call livestream segments dropped; unpunctuated captions: units are ~30s caption segments, not sentences; 121 units, outside the typical 400-900 |
-| tesla | 2023_Q2 | fool | 590 | 59 | 10.0% | 19 / 40 | 29 | 9 / 6 | - |
+| tesla | 2023_Q2 | fool | 590 | 61 | 10.3% | 19 / 42 | 29 | 9 / 6 | - |
 | tesla | 2023_Q3 | fool | 529 | 34 | 6.4% | 10 / 24 | 22 | 12 / 3 | - |
 | tesla | 2023_Q4 | fool | 589 | 35 | 5.9% | 8 / 27 | 12 | 14 / 10 | - |
 | tesla | 2024_Q1 | fool | 640 | 71 | 11.1% | 17 / 54 | 45 | 7 / 16 | - |
@@ -104,10 +104,10 @@ One row per transcript. "Total" counts every sentence the parser kept after nois
 | tesla | 2024_Q3 | fool | 603 | 90 | 14.9% | 31 / 59 | 55 | 5 / 10 | - |
 | tesla | 2024_Q4 | fool | 590 | 75 | 12.7% | 27 / 48 | 52 | 39 / 5 | - |
 | tesla | 2025_Q1 | captions | 697 | 56 | 8.0% | 18 / 38 | 44 | 19 / 2 | YouTube auto-captions, no speaker labels; 9 pre-call livestream segments dropped |
-| tesla | 2025_Q2 | captions | 466 | 71 | 15.2% | 33 / 38 | 42 | 26 / 3 | YouTube auto-captions, no speaker labels; 6 pre-call livestream segments dropped |
+| tesla | 2025_Q2 | captions | 466 | 73 | 15.7% | 33 / 40 | 42 | 26 / 3 | YouTube auto-captions, no speaker labels; 6 pre-call livestream segments dropped |
 | tesla | 2025_Q3 | captions | 497 | 89 | 17.9% | 22 / 67 | 36 | 45 / 2 | YouTube auto-captions, no speaker labels; 12 pre-call livestream segments dropped |
-| tesla | 2025_Q4 | captions | 455 | 71 | 15.6% | 19 / 52 | 46 | 30 / 8 | YouTube auto-captions, no speaker labels; 5 pre-call livestream segments dropped |
-| tesla | 2026_Q1 | captions | 424 | 78 | 18.4% | 18 / 60 | 49 | 20 / 3 | YouTube auto-captions, no speaker labels |
+| tesla | 2025_Q4 | captions | 455 | 73 | 16.0% | 19 / 54 | 46 | 30 / 8 | YouTube auto-captions, no speaker labels; 5 pre-call livestream segments dropped |
+| tesla | 2026_Q1 | captions | 424 | 79 | 18.6% | 18 / 61 | 49 | 20 / 3 | YouTube auto-captions, no speaker labels |
 | tesla | 2026_Q2 | captions | 491 | 68 | 13.8% | 29 / 39 | 40 | 43 / 15 | YouTube auto-captions, no speaker labels |
 
 ## Totals
@@ -120,5 +120,5 @@ One row per transcript. "Total" counts every sentence the parser kept after nois
 | alphabet | 15 | 7502 | 1748 | 23.3% | 1093 / 655 | 221 | 14 / 238 |
 | amazon | 15 | 6547 | 974 | 14.9% | 499 / 475 | 233 | 71 / 178 |
 | apple | 15 | 4724 | 319 | 6.8% | 126 / 193 | 17 | 0 / 52 |
-| tesla | 15 | 7751 | 939 | 12.1% | 280 / 659 | 556 | 285 / 106 |
-| **all** | **105** | **48555** | **9662** | **19.9%** | 4862 / 4800 | 2536 | 429 / 1823 |
+| tesla | 15 | 7751 | 946 | 12.2% | 280 / 666 | 556 | 285 / 106 |
+| **all** | **105** | **48555** | **9669** | **19.9%** | 4862 / 4807 | 2536 | 429 / 1823 |

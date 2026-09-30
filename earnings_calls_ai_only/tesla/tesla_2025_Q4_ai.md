@@ -8,7 +8,7 @@
 
 ---
 
-**71 AI sentences of 455 total**
+**73 AI sentences of 455 total**
 (Borderline, listed at the end: 30 automation/robotics, 8 infrastructure, none containing an AI term.)
 
 Source/parse flags: YouTube auto-captions, no speaker labels; 5 pre-call livestream segments dropped.
@@ -78,19 +78,21 @@ Source/parse flags: YouTube auto-captions, no speaker labels; 5 pre-call livestr
 37. Um I mean we we we might I mean the when I when I look ahead at at say what what's the limiting factor for Tesla growth um if you go say three or four years out I I think it actually is chip production um is there enough uh AI enough AI logic and enough AI enough memory enough RAM for um for our volume and um and and and right now I see that as being the the thing that probably limits our um our growth in in three or four years.
 38. So So I think it's uh uh I I think we if we don't do the TE Tesla terab, we're we're going to be limited by supplier output of um of of chips and and I think maybe memory is an even bigger um limiter than than AI logic.
 39. So we'll use our internal resources but there are ways where we can fund it especially when we look at the robo taxi fleet because you know anytime anytime you have a consistent stream of cash flow you can go and get money from the banks and we have had conversations with banks about it and that is something how we're going to do it and then on the infrastructure play side yeah like I We don't have a number yet, but given that it's it's an infrastructure play, it's a longer tale, we will have to look at a little bit more in terms of how we fund it, whether it's through more debt or other means. ⚑ uncertain
-40. Um but but Grock will be you know I think very helpful in say maximizing the efficiency of the management of the of a large autonomous fleet. ⚑ uncertain
-41. So I mean if you got a an autonomous fleet that's you know in the future 10 million vehicles or tens of millions of vehicles then optimizing the efficient use of that fleet uh GR will be uh I think way way better than any huristic solution um or or sort of manually managed solution um and if you say managing um say a large team of Optimus robots to build a factory or build a refiner you know and an say a rare hypothetic like a this is a hypothetical example a rare earth uh or refinery um which we do desperately need in in in America um uh then you you you say well who like what's going to organize uh the Optimus robots to to build that or refinery um that would you know you need kind of need a an orchestra conductor and so then Grock would be uh kind of the orchestra conductor for the Optimus robots to build uh hypothetically and where it might it might not be hypothetical in the future. ⚑ uncertain ⚑ long
-42. Well, we Tesla the Tesla AI is is very compute efficient and very memory efficient.
-43. Um, you know, so I think one of the metrics one should consider for for any given uh AI model is um the intelligence per gigabyte.
-44. Um especially when you're constrained on RAM having um a an AI that has very high intelligence density per gigabyte.
-45. Um, I actually think Tesla is ahead of the rest of the world in in intelligence density of AI by an order of magnitude or more.
-46. like it's this is gonna sound like a pretty bold statement, but I'm I kind of know what the you know what the intelligence efficiency of the of the big models are like Groank and and like the honest and and and you know a bunch of the other models and I Tesla's AI is like in terms of it me memory efficiency I more than an order of magnitude better.
-47. Um but you know this is this is really existential for for Tesla because uh if you know Optimus is completely useless without an AI chip.
-48. Um, actually quite good at AI as you can see from, you know, the the open source or not the open source but the the sort of I guess some of them are open actually.
-49. So China's very good at AI, very good at manufacturing um and and will definitely be the the toughest competition for Tesla.
-50. Um then there's the uh real world AI uh and and scaling production.
-51. Well, really all we're trying to do is make sure that we we can uh scale to very high volume with autonomous vehicles, with humanoid robots and uh and and that we uh address um geopolitical risk um which I think you know there's so many companies out there that are asleep at the switch with regard to geopolitical geopolitical risk. ⚑ uncertain
-52. Um, so we're going to be paranoid uh and make sure that uh we can continue to build uh batteries and robots and AI chips no matter what happens.
+40. So, I'm just hoping to get more more information or or if you're hoping that you could shed more light on on what that looks like and and maybe how the work XAI is doing uh can be leveraged at at Tesla and and vice versa.
+41. So that's why we went ahead with it and and we just had like a lot of investors asked us to do this as there was like a lot of you know investor uh Tesla shareholders said like we we should invest in XAI.
+42. Um but but Grock will be you know I think very helpful in say maximizing the efficiency of the management of the of a large autonomous fleet. ⚑ uncertain
+43. So I mean if you got a an autonomous fleet that's you know in the future 10 million vehicles or tens of millions of vehicles then optimizing the efficient use of that fleet uh GR will be uh I think way way better than any huristic solution um or or sort of manually managed solution um and if you say managing um say a large team of Optimus robots to build a factory or build a refiner you know and an say a rare hypothetic like a this is a hypothetical example a rare earth uh or refinery um which we do desperately need in in in America um uh then you you you say well who like what's going to organize uh the Optimus robots to to build that or refinery um that would you know you need kind of need a an orchestra conductor and so then Grock would be uh kind of the orchestra conductor for the Optimus robots to build uh hypothetically and where it might it might not be hypothetical in the future. ⚑ uncertain ⚑ long
+44. Well, we Tesla the Tesla AI is is very compute efficient and very memory efficient.
+45. Um, you know, so I think one of the metrics one should consider for for any given uh AI model is um the intelligence per gigabyte.
+46. Um especially when you're constrained on RAM having um a an AI that has very high intelligence density per gigabyte.
+47. Um, I actually think Tesla is ahead of the rest of the world in in intelligence density of AI by an order of magnitude or more.
+48. like it's this is gonna sound like a pretty bold statement, but I'm I kind of know what the you know what the intelligence efficiency of the of the big models are like Groank and and like the honest and and and you know a bunch of the other models and I Tesla's AI is like in terms of it me memory efficiency I more than an order of magnitude better.
+49. Um but you know this is this is really existential for for Tesla because uh if you know Optimus is completely useless without an AI chip.
+50. Um, actually quite good at AI as you can see from, you know, the the open source or not the open source but the the sort of I guess some of them are open actually.
+51. So China's very good at AI, very good at manufacturing um and and will definitely be the the toughest competition for Tesla.
+52. Um then there's the uh real world AI uh and and scaling production.
+53. Well, really all we're trying to do is make sure that we we can uh scale to very high volume with autonomous vehicles, with humanoid robots and uh and and that we uh address um geopolitical risk um which I think you know there's so many companies out there that are asleep at the switch with regard to geopolitical geopolitical risk. ⚑ uncertain
+54. Um, so we're going to be paranoid uh and make sure that uh we can continue to build uh batteries and robots and AI chips no matter what happens.
 
 ## Borderline: automation/robotics without an AI term
 

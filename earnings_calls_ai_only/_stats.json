@@ -1479,7 +1479,7 @@
     },
     "borderline_auto": 0,
     "borderline_infra": 42,
-    "false_positive_ai_tokens": 1,
+    "false_positive_ai_tokens": 0,
     "flag_counts": {
       "uncertain": 74,
       "context-dependent": 8
@@ -2091,7 +2091,7 @@
     },
     "borderline_auto": 3,
     "borderline_infra": 10,
-    "false_positive_ai_tokens": 1,
+    "false_positive_ai_tokens": 0,
     "flag_counts": {
       "context-dependent": 8,
       "uncertain": 2
@@ -3764,10 +3764,10 @@
     "period": "2023_Q2",
     "format": "fool",
     "total": 590,
-    "ai": 59,
+    "ai": 61,
     "ai_by_section": {
       "Prepared remarks": 19,
-      "Q&A": 40
+      "Q&A": 42
     },
     "total_by_section": {
       "Prepared remarks": 102,
@@ -3775,7 +3775,7 @@
     },
     "borderline_auto": 9,
     "borderline_infra": 6,
-    "false_positive_ai_tokens": 2,
+    "false_positive_ai_tokens": 0,
     "flag_counts": {
       "uncertain": 29,
       "context-dependent": 5
@@ -4083,10 +4083,10 @@
     "period": "2025_Q2",
     "format": "captions",
     "total": 466,
-    "ai": 71,
+    "ai": 73,
     "ai_by_section": {
       "Prepared remarks": 33,
-      "Q&A": 38
+      "Q&A": 40
     },
     "total_by_section": {
       "Prepared remarks": 161,
@@ -4156,10 +4156,10 @@
     "period": "2025_Q4",
     "format": "captions",
     "total": 455,
-    "ai": 71,
+    "ai": 73,
     "ai_by_section": {
       "Prepared remarks": 19,
-      "Q&A": 52
+      "Q&A": 54
     },
     "total_by_section": {
       "Prepared remarks": 135,
@@ -4194,10 +4194,10 @@
     "period": "2026_Q1",
     "format": "captions",
     "total": 424,
-    "ai": 78,
+    "ai": 79,
     "ai_by_section": {
       "Prepared remarks": 18,
-      "Q&A": 60
+      "Q&A": 61
     },
     "total_by_section": {
       "Prepared remarks": 117,
