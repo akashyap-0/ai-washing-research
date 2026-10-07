@@ -1,0 +1,1331 @@
+{
+  "build_version": "canonical-v1",
+  "extraction_version": "filter_earnings_calls.py@sha256:77253990a036/canonical-v1",
+  "status_note": "Build integrity checks only. This is NOT a validation of the AI filter's recall or precision (Gate 4). Do not describe the filter as validated.",
+  "counts": {
+    "source_raw_transcript_files_found": 116,
+    "committed_sentence_filter_files_found": 105,
+    "calls_processed": 116,
+    "canonical_sentence_rows": 9884,
+    "canonical_passage_rows": 9884,
+    "borderline_review_rows": 2413,
+    "total_parsed_units_all_calls": 54350
+  },
+  "by_company": {
+    "alphabet": 1806,
+    "amazon": 974,
+    "apple": 319,
+    "meta": 1570,
+    "microsoft": 1750,
+    "nvidia": 2519,
+    "tesla": 946
+  },
+  "by_calendar_quarter": {
+    "2021Q4": 21,
+    "2022Q1": 47,
+    "2022Q2": 70,
+    "2022Q3": 77,
+    "2022Q4": 325,
+    "2023Q1": 429,
+    "2023Q2": 529,
+    "2023Q3": 555,
+    "2023Q4": 541,
+    "2024Q1": 631,
+    "2024Q2": 677,
+    "2024Q3": 726,
+    "2024Q4": 731,
+    "2025Q1": 705,
+    "2025Q2": 713,
+    "2025Q3": 731,
+    "2025Q4": 776,
+    "2026Q1": 811,
+    "2026Q2": 789
+  },
+  "by_company_period": {
+    "alphabet_2022_Q1": 12,
+    "alphabet_2022_Q2": 24,
+    "alphabet_2022_Q3": 22,
+    "alphabet_2022_Q4": 76,
+    "alphabet_2023_Q1": 79,
+    "alphabet_2023_Q2": 95,
+    "alphabet_2023_Q3": 83,
+    "alphabet_2023_Q4": 96,
+    "alphabet_2024_Q1": 87,
+    "alphabet_2024_Q2": 109,
+    "alphabet_2024_Q3": 129,
+    "alphabet_2024_Q4": 127,
+    "alphabet_2025_Q1": 107,
+    "alphabet_2025_Q2": 126,
+    "alphabet_2025_Q3": 141,
+    "alphabet_2025_Q4": 158,
+    "alphabet_2026_Q1": 161,
+    "alphabet_2026_Q2": 174,
+    "amazon_2022_Q4": 1,
+    "amazon_2023_Q1": 38,
+    "amazon_2023_Q2": 54,
+    "amazon_2023_Q3": 73,
+    "amazon_2023_Q4": 50,
+    "amazon_2024_Q1": 56,
+    "amazon_2024_Q2": 53,
+    "amazon_2024_Q3": 58,
+    "amazon_2024_Q4": 82,
+    "amazon_2025_Q1": 70,
+    "amazon_2025_Q2": 80,
+    "amazon_2025_Q3": 76,
+    "amazon_2025_Q4": 96,
+    "amazon_2026_Q1": 100,
+    "amazon_2026_Q2": 87,
+    "apple_FY23_Q1": 2,
+    "apple_FY23_Q2": 4,
+    "apple_FY23_Q3": 5,
+    "apple_FY23_Q4": 5,
+    "apple_FY24_Q1": 11,
+    "apple_FY24_Q2": 14,
+    "apple_FY24_Q3": 31,
+    "apple_FY24_Q4": 35,
+    "apple_FY25_Q1": 24,
+    "apple_FY25_Q2": 31,
+    "apple_FY25_Q3": 35,
+    "apple_FY25_Q4": 29,
+    "apple_FY26_Q1": 28,
+    "apple_FY26_Q2": 25,
+    "apple_FY26_Q3": 40,
+    "meta_2021_Q4": 12,
+    "meta_2022_Q1": 22,
+    "meta_2022_Q2": 37,
+    "meta_2022_Q3": 32,
+    "meta_2022_Q4": 34,
+    "meta_2023_Q1": 64,
+    "meta_2023_Q2": 75,
+    "meta_2023_Q3": 77,
+    "meta_2023_Q4": 83,
+    "meta_2024_Q1": 119,
+    "meta_2024_Q2": 111,
+    "meta_2024_Q3": 85,
+    "meta_2024_Q4": 94,
+    "meta_2025_Q1": 122,
+    "meta_2025_Q2": 112,
+    "meta_2025_Q3": 101,
+    "meta_2025_Q4": 112,
+    "meta_2026_Q1": 135,
+    "meta_2026_Q2": 143,
+    "microsoft_FY22_Q2": 9,
+    "microsoft_FY22_Q3": 13,
+    "microsoft_FY22_Q4": 9,
+    "microsoft_FY23_Q1": 23,
+    "microsoft_FY23_Q2": 49,
+    "microsoft_FY23_Q3": 79,
+    "microsoft_FY23_Q4": 101,
+    "microsoft_FY24_Q1": 90,
+    "microsoft_FY24_Q2": 123,
+    "microsoft_FY24_Q3": 118,
+    "microsoft_FY24_Q4": 94,
+    "microsoft_FY25_Q1": 140,
+    "microsoft_FY25_Q2": 142,
+    "microsoft_FY25_Q3": 116,
+    "microsoft_FY25_Q4": 106,
+    "microsoft_FY26_Q1": 125,
+    "microsoft_FY26_Q2": 137,
+    "microsoft_FY26_Q3": 138,
+    "microsoft_FY26_Q4": 138,
+    "nvidia_FY23_Q4": 126,
+    "nvidia_FY24_Q1": 144,
+    "nvidia_FY24_Q2": 138,
+    "nvidia_FY24_Q3": 193,
+    "nvidia_FY24_Q4": 143,
+    "nvidia_FY25_Q1": 166,
+    "nvidia_FY25_Q2": 195,
+    "nvidia_FY25_Q3": 189,
+    "nvidia_FY25_Q4": 187,
+    "nvidia_FY26_Q1": 203,
+    "nvidia_FY26_Q2": 181,
+    "nvidia_FY26_Q3": 170,
+    "nvidia_FY26_Q4": 172,
+    "nvidia_FY27_Q1": 173,
+    "nvidia_FY27_Q2": 139,
+    "tesla_2022_Q4": 37,
+    "tesla_2023_Q1": 21,
+    "tesla_2023_Q2": 61,
+    "tesla_2023_Q3": 34,
+    "tesla_2023_Q4": 35,
+    "tesla_2024_Q1": 71,
+    "tesla_2024_Q2": 84,
+    "tesla_2024_Q3": 90,
+    "tesla_2024_Q4": 75,
+    "tesla_2025_Q1": 56,
+    "tesla_2025_Q2": 73,
+    "tesla_2025_Q3": 89,
+    "tesla_2025_Q4": 73,
+    "tesla_2026_Q1": 79,
+    "tesla_2026_Q2": 68
+  },
+  "by_section": {
+    "prepared_remarks": 4981,
+    "qa": 4903
+  },
+  "by_source_type": {
+    "machine_transcript_whisper_of_official_ir_audio": 974,
+    "official_ir_pdf_factset_callstreet": 1038,
+    "official_ir_transcript_docx": 54,
+    "official_ir_transcript_html": 1696,
+    "official_ir_transcript_pdf": 3376,
+    "third_party_transcript_motley_fool": 1862,
+    "youtube_auto_captions": 884
+  },
+  "by_unit_type": {
+    "caption_segment": 110,
+    "caption_sentence": 774,
+    "sentence": 8026,
+    "whisper_unit": 974
+  },
+  "by_speaker_role": {
+    "analyst": 622,
+    "company_representative": 7151,
+    "operator": 25,
+    "unknown": 9,
+    "unlabeled": 1858,
+    "unresolved": 219
+  },
+  "by_section_method": {
+    "explicit_section_header": 2413,
+    "first_operator_turn_after_management": 3376,
+    "transition_phrase_heuristic": 4095
+  },
+  "flag_counts": {
+    "is_uncertain": 2566,
+    "is_safe_harbor": 0,
+    "is_context_dependent": 585,
+    "is_long": 1
+  },
+  "speaker_attribution_warning_rows": 175,
+  "borderline_by_type": {
+    "automation_robotics_no_ai_term": 456,
+    "infrastructure_no_ai_term": 1957
+  },
+  "integrity": {
+    "duplicate_sentence_ids": 0,
+    "duplicate_passage_ids": 0,
+    "duplicate_borderline_ids": 0,
+    "missing_required_field_counts": {
+      "sentence_id": 0,
+      "call_id": 0,
+      "company": 0,
+      "ticker": 0,
+      "period_label": 0,
+      "calendar_year": 0,
+      "calendar_quarter": 0,
+      "source_file": 0,
+      "source_type": 0,
+      "unit_type": 0,
+      "section": 0,
+      "speaker": 0,
+      "speaker_role": 0,
+      "sentence_order_in_call": 0,
+      "text_verbatim": 0,
+      "trigger_terms": 0,
+      "extraction_version": 0
+    },
+    "missing_required_field_total": 0,
+    "allowed_blank_fields": {
+      "call_date": {
+        "rows": 3106,
+        "calls": [
+          "alphabet_2023_Q3",
+          "alphabet_2023_Q4",
+          "alphabet_2024_Q1",
+          "alphabet_2024_Q2",
+          "alphabet_2024_Q3",
+          "alphabet_2024_Q4",
+          "alphabet_2025_Q1",
+          "alphabet_2025_Q2",
+          "alphabet_2025_Q3",
+          "alphabet_2025_Q4",
+          "alphabet_2026_Q1",
+          "alphabet_2026_Q2",
+          "amazon_2023_Q1",
+          "amazon_2023_Q2",
+          "amazon_2023_Q4",
+          "amazon_2024_Q1",
+          "amazon_2024_Q3",
+          "amazon_2026_Q2",
+          "apple_FY23_Q1",
+          "apple_FY23_Q2",
+          "apple_FY23_Q3",
+          "apple_FY23_Q4",
+          "apple_FY24_Q1",
+          "apple_FY24_Q2",
+          "apple_FY24_Q3",
+          "apple_FY24_Q4",
+          "apple_FY25_Q1",
+          "apple_FY25_Q2",
+          "apple_FY25_Q3",
+          "apple_FY25_Q4",
+          "apple_FY26_Q1",
+          "apple_FY26_Q2",
+          "apple_FY26_Q3",
+          "tesla_2022_Q4",
+          "tesla_2023_Q1",
+          "tesla_2023_Q2",
+          "tesla_2023_Q3",
+          "tesla_2023_Q4",
+          "tesla_2024_Q1",
+          "tesla_2024_Q2",
+          "tesla_2024_Q3",
+          "tesla_2024_Q4",
+          "tesla_2025_Q1",
+          "tesla_2025_Q2",
+          "tesla_2025_Q3",
+          "tesla_2025_Q4",
+          "tesla_2026_Q1",
+          "tesla_2026_Q2"
+        ],
+        "reason": "not stated in the source file (never inferred)"
+      },
+      "source_url": {
+        "rows": 1038,
+        "calls": [
+          "nvidia_FY26_Q1",
+          "nvidia_FY26_Q2",
+          "nvidia_FY26_Q3",
+          "nvidia_FY26_Q4",
+          "nvidia_FY27_Q1",
+          "nvidia_FY27_Q2"
+        ],
+        "reason": "raw-file metadata gives no URL (Nvidia FY26 Q1 - FY27 Q2)"
+      }
+    },
+    "every_passage_has_valid_anchor_and_one_per_sentence": true,
+    "semantic_label_columns_present": false,
+    "rows_match_filter_process_file": true,
+    "verbatim_check": {
+      "method": "filter_earnings_calls.verbatim_found against the raw body",
+      "checked_ai_rows": 9884,
+      "failures": 0,
+      "failure_examples": []
+    }
+  },
+  "source_file_to_output_coverage": {
+    "alphabet_2022_Q1": {
+      "source_file": "earnings_calls/alphabet/alphabet_2022_Q1.md",
+      "ai_rows": 12,
+      "total_units": 456,
+      "committed_filter_output": "absent"
+    },
+    "alphabet_2022_Q2": {
+      "source_file": "earnings_calls/alphabet/alphabet_2022_Q2.md",
+      "ai_rows": 24,
+      "total_units": 485,
+      "committed_filter_output": "absent"
+    },
+    "alphabet_2022_Q3": {
+      "source_file": "earnings_calls/alphabet/alphabet_2022_Q3.md",
+      "ai_rows": 22,
+      "total_units": 475,
+      "committed_filter_output": "absent"
+    },
+    "alphabet_2022_Q4": {
+      "source_file": "earnings_calls/alphabet/alphabet_2022_Q4.md",
+      "ai_rows": 76,
+      "total_units": 468,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2023_Q1": {
+      "source_file": "earnings_calls/alphabet/alphabet_2023_Q1.md",
+      "ai_rows": 79,
+      "total_units": 516,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2023_Q2": {
+      "source_file": "earnings_calls/alphabet/alphabet_2023_Q2.md",
+      "ai_rows": 95,
+      "total_units": 509,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2023_Q3": {
+      "source_file": "earnings_calls/alphabet/alphabet_2023_Q3.md",
+      "ai_rows": 83,
+      "total_units": 453,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2023_Q4": {
+      "source_file": "earnings_calls/alphabet/alphabet_2023_Q4.md",
+      "ai_rows": 96,
+      "total_units": 496,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2024_Q1": {
+      "source_file": "earnings_calls/alphabet/alphabet_2024_Q1.md",
+      "ai_rows": 87,
+      "total_units": 488,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2024_Q2": {
+      "source_file": "earnings_calls/alphabet/alphabet_2024_Q2.md",
+      "ai_rows": 109,
+      "total_units": 496,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2024_Q3": {
+      "source_file": "earnings_calls/alphabet/alphabet_2024_Q3.md",
+      "ai_rows": 129,
+      "total_units": 558,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2024_Q4": {
+      "source_file": "earnings_calls/alphabet/alphabet_2024_Q4.md",
+      "ai_rows": 127,
+      "total_units": 527,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2025_Q1": {
+      "source_file": "earnings_calls/alphabet/alphabet_2025_Q1.md",
+      "ai_rows": 107,
+      "total_units": 488,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2025_Q2": {
+      "source_file": "earnings_calls/alphabet/alphabet_2025_Q2.md",
+      "ai_rows": 126,
+      "total_units": 508,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2025_Q3": {
+      "source_file": "earnings_calls/alphabet/alphabet_2025_Q3.md",
+      "ai_rows": 141,
+      "total_units": 453,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2025_Q4": {
+      "source_file": "earnings_calls/alphabet/alphabet_2025_Q4.md",
+      "ai_rows": 158,
+      "total_units": 515,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2026_Q1": {
+      "source_file": "earnings_calls/alphabet/alphabet_2026_Q1.md",
+      "ai_rows": 161,
+      "total_units": 504,
+      "committed_filter_output": "present"
+    },
+    "alphabet_2026_Q2": {
+      "source_file": "earnings_calls/alphabet/alphabet_2026_Q2.md",
+      "ai_rows": 174,
+      "total_units": 523,
+      "committed_filter_output": "present"
+    },
+    "amazon_2022_Q4": {
+      "source_file": "earnings_calls/amazon/amazon_2022_Q4.md",
+      "ai_rows": 1,
+      "total_units": 381,
+      "committed_filter_output": "present"
+    },
+    "amazon_2023_Q1": {
+      "source_file": "earnings_calls/amazon/amazon_2023_Q1.md",
+      "ai_rows": 38,
+      "total_units": 546,
+      "committed_filter_output": "present"
+    },
+    "amazon_2023_Q2": {
+      "source_file": "earnings_calls/amazon/amazon_2023_Q2.md",
+      "ai_rows": 54,
+      "total_units": 364,
+      "committed_filter_output": "present"
+    },
+    "amazon_2023_Q3": {
+      "source_file": "earnings_calls/amazon/amazon_2023_Q3.md",
+      "ai_rows": 73,
+      "total_units": 392,
+      "committed_filter_output": "present"
+    },
+    "amazon_2023_Q4": {
+      "source_file": "earnings_calls/amazon/amazon_2023_Q4.md",
+      "ai_rows": 50,
+      "total_units": 442,
+      "committed_filter_output": "present"
+    },
+    "amazon_2024_Q1": {
+      "source_file": "earnings_calls/amazon/amazon_2024_Q1.md",
+      "ai_rows": 56,
+      "total_units": 457,
+      "committed_filter_output": "present"
+    },
+    "amazon_2024_Q2": {
+      "source_file": "earnings_calls/amazon/amazon_2024_Q2.md",
+      "ai_rows": 53,
+      "total_units": 409,
+      "committed_filter_output": "present"
+    },
+    "amazon_2024_Q3": {
+      "source_file": "earnings_calls/amazon/amazon_2024_Q3.md",
+      "ai_rows": 58,
+      "total_units": 411,
+      "committed_filter_output": "present"
+    },
+    "amazon_2024_Q4": {
+      "source_file": "earnings_calls/amazon/amazon_2024_Q4.md",
+      "ai_rows": 82,
+      "total_units": 384,
+      "committed_filter_output": "present"
+    },
+    "amazon_2025_Q1": {
+      "source_file": "earnings_calls/amazon/amazon_2025_Q1.md",
+      "ai_rows": 70,
+      "total_units": 444,
+      "committed_filter_output": "present"
+    },
+    "amazon_2025_Q2": {
+      "source_file": "earnings_calls/amazon/amazon_2025_Q2.md",
+      "ai_rows": 80,
+      "total_units": 492,
+      "committed_filter_output": "present"
+    },
+    "amazon_2025_Q3": {
+      "source_file": "earnings_calls/amazon/amazon_2025_Q3.md",
+      "ai_rows": 76,
+      "total_units": 451,
+      "committed_filter_output": "present"
+    },
+    "amazon_2025_Q4": {
+      "source_file": "earnings_calls/amazon/amazon_2025_Q4.md",
+      "ai_rows": 96,
+      "total_units": 522,
+      "committed_filter_output": "present"
+    },
+    "amazon_2026_Q1": {
+      "source_file": "earnings_calls/amazon/amazon_2026_Q1.md",
+      "ai_rows": 100,
+      "total_units": 425,
+      "committed_filter_output": "present"
+    },
+    "amazon_2026_Q2": {
+      "source_file": "earnings_calls/amazon/amazon_2026_Q2.md",
+      "ai_rows": 87,
+      "total_units": 427,
+      "committed_filter_output": "present"
+    },
+    "apple_FY23_Q1": {
+      "source_file": "earnings_calls/apple/apple_FY23_Q1.md",
+      "ai_rows": 2,
+      "total_units": 512,
+      "committed_filter_output": "present"
+    },
+    "apple_FY23_Q2": {
+      "source_file": "earnings_calls/apple/apple_FY23_Q2.md",
+      "ai_rows": 4,
+      "total_units": 117,
+      "committed_filter_output": "present"
+    },
+    "apple_FY23_Q3": {
+      "source_file": "earnings_calls/apple/apple_FY23_Q3.md",
+      "ai_rows": 5,
+      "total_units": 469,
+      "committed_filter_output": "present"
+    },
+    "apple_FY23_Q4": {
+      "source_file": "earnings_calls/apple/apple_FY23_Q4.md",
+      "ai_rows": 5,
+      "total_units": 116,
+      "committed_filter_output": "present"
+    },
+    "apple_FY24_Q1": {
+      "source_file": "earnings_calls/apple/apple_FY24_Q1.md",
+      "ai_rows": 11,
+      "total_units": 110,
+      "committed_filter_output": "present"
+    },
+    "apple_FY24_Q2": {
+      "source_file": "earnings_calls/apple/apple_FY24_Q2.md",
+      "ai_rows": 14,
+      "total_units": 111,
+      "committed_filter_output": "present"
+    },
+    "apple_FY24_Q3": {
+      "source_file": "earnings_calls/apple/apple_FY24_Q3.md",
+      "ai_rows": 31,
+      "total_units": 113,
+      "committed_filter_output": "present"
+    },
+    "apple_FY24_Q4": {
+      "source_file": "earnings_calls/apple/apple_FY24_Q4.md",
+      "ai_rows": 35,
+      "total_units": 512,
+      "committed_filter_output": "present"
+    },
+    "apple_FY25_Q1": {
+      "source_file": "earnings_calls/apple/apple_FY25_Q1.md",
+      "ai_rows": 24,
+      "total_units": 107,
+      "committed_filter_output": "present"
+    },
+    "apple_FY25_Q2": {
+      "source_file": "earnings_calls/apple/apple_FY25_Q2.md",
+      "ai_rows": 31,
+      "total_units": 473,
+      "committed_filter_output": "present"
+    },
+    "apple_FY25_Q3": {
+      "source_file": "earnings_calls/apple/apple_FY25_Q3.md",
+      "ai_rows": 35,
+      "total_units": 480,
+      "committed_filter_output": "present"
+    },
+    "apple_FY25_Q4": {
+      "source_file": "earnings_calls/apple/apple_FY25_Q4.md",
+      "ai_rows": 29,
+      "total_units": 531,
+      "committed_filter_output": "present"
+    },
+    "apple_FY26_Q1": {
+      "source_file": "earnings_calls/apple/apple_FY26_Q1.md",
+      "ai_rows": 28,
+      "total_units": 483,
+      "committed_filter_output": "present"
+    },
+    "apple_FY26_Q2": {
+      "source_file": "earnings_calls/apple/apple_FY26_Q2.md",
+      "ai_rows": 25,
+      "total_units": 530,
+      "committed_filter_output": "present"
+    },
+    "apple_FY26_Q3": {
+      "source_file": "earnings_calls/apple/apple_FY26_Q3.md",
+      "ai_rows": 40,
+      "total_units": 510,
+      "committed_filter_output": "present"
+    },
+    "meta_2021_Q4": {
+      "source_file": "earnings_calls/meta/meta_2021_Q4.md",
+      "ai_rows": 12,
+      "total_units": 513,
+      "committed_filter_output": "absent"
+    },
+    "meta_2022_Q1": {
+      "source_file": "earnings_calls/meta/meta_2022_Q1.md",
+      "ai_rows": 22,
+      "total_units": 517,
+      "committed_filter_output": "absent"
+    },
+    "meta_2022_Q2": {
+      "source_file": "earnings_calls/meta/meta_2022_Q2.md",
+      "ai_rows": 37,
+      "total_units": 559,
+      "committed_filter_output": "absent"
+    },
+    "meta_2022_Q3": {
+      "source_file": "earnings_calls/meta/meta_2022_Q3.md",
+      "ai_rows": 32,
+      "total_units": 464,
+      "committed_filter_output": "absent"
+    },
+    "meta_2022_Q4": {
+      "source_file": "earnings_calls/meta/meta_2022_Q4.md",
+      "ai_rows": 34,
+      "total_units": 509,
+      "committed_filter_output": "present"
+    },
+    "meta_2023_Q1": {
+      "source_file": "earnings_calls/meta/meta_2023_Q1.md",
+      "ai_rows": 64,
+      "total_units": 487,
+      "committed_filter_output": "present"
+    },
+    "meta_2023_Q2": {
+      "source_file": "earnings_calls/meta/meta_2023_Q2.md",
+      "ai_rows": 75,
+      "total_units": 497,
+      "committed_filter_output": "present"
+    },
+    "meta_2023_Q3": {
+      "source_file": "earnings_calls/meta/meta_2023_Q3.md",
+      "ai_rows": 77,
+      "total_units": 471,
+      "committed_filter_output": "present"
+    },
+    "meta_2023_Q4": {
+      "source_file": "earnings_calls/meta/meta_2023_Q4.md",
+      "ai_rows": 83,
+      "total_units": 467,
+      "committed_filter_output": "present"
+    },
+    "meta_2024_Q1": {
+      "source_file": "earnings_calls/meta/meta_2024_Q1.md",
+      "ai_rows": 119,
+      "total_units": 447,
+      "committed_filter_output": "present"
+    },
+    "meta_2024_Q2": {
+      "source_file": "earnings_calls/meta/meta_2024_Q2.md",
+      "ai_rows": 111,
+      "total_units": 468,
+      "committed_filter_output": "present"
+    },
+    "meta_2024_Q3": {
+      "source_file": "earnings_calls/meta/meta_2024_Q3.md",
+      "ai_rows": 85,
+      "total_units": 443,
+      "committed_filter_output": "present"
+    },
+    "meta_2024_Q4": {
+      "source_file": "earnings_calls/meta/meta_2024_Q4.md",
+      "ai_rows": 94,
+      "total_units": 463,
+      "committed_filter_output": "present"
+    },
+    "meta_2025_Q1": {
+      "source_file": "earnings_calls/meta/meta_2025_Q1.md",
+      "ai_rows": 122,
+      "total_units": 455,
+      "committed_filter_output": "present"
+    },
+    "meta_2025_Q2": {
+      "source_file": "earnings_calls/meta/meta_2025_Q2.md",
+      "ai_rows": 112,
+      "total_units": 451,
+      "committed_filter_output": "present"
+    },
+    "meta_2025_Q3": {
+      "source_file": "earnings_calls/meta/meta_2025_Q3.md",
+      "ai_rows": 101,
+      "total_units": 446,
+      "committed_filter_output": "present"
+    },
+    "meta_2025_Q4": {
+      "source_file": "earnings_calls/meta/meta_2025_Q4.md",
+      "ai_rows": 112,
+      "total_units": 477,
+      "committed_filter_output": "present"
+    },
+    "meta_2026_Q1": {
+      "source_file": "earnings_calls/meta/meta_2026_Q1.md",
+      "ai_rows": 135,
+      "total_units": 480,
+      "committed_filter_output": "present"
+    },
+    "meta_2026_Q2": {
+      "source_file": "earnings_calls/meta/meta_2026_Q2.md",
+      "ai_rows": 143,
+      "total_units": 509,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY22_Q2": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY22_Q2.md",
+      "ai_rows": 9,
+      "total_units": 448,
+      "committed_filter_output": "absent"
+    },
+    "microsoft_FY22_Q3": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY22_Q3.md",
+      "ai_rows": 13,
+      "total_units": 453,
+      "committed_filter_output": "absent"
+    },
+    "microsoft_FY22_Q4": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY22_Q4.md",
+      "ai_rows": 9,
+      "total_units": 466,
+      "committed_filter_output": "absent"
+    },
+    "microsoft_FY23_Q1": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY23_Q1.md",
+      "ai_rows": 23,
+      "total_units": 509,
+      "committed_filter_output": "absent"
+    },
+    "microsoft_FY23_Q2": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY23_Q2.md",
+      "ai_rows": 49,
+      "total_units": 485,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY23_Q3": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY23_Q3.md",
+      "ai_rows": 79,
+      "total_units": 464,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY23_Q4": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY23_Q4.md",
+      "ai_rows": 101,
+      "total_units": 516,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY24_Q1": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY24_Q1.md",
+      "ai_rows": 90,
+      "total_units": 476,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY24_Q2": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY24_Q2.md",
+      "ai_rows": 123,
+      "total_units": 522,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY24_Q3": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY24_Q3.md",
+      "ai_rows": 118,
+      "total_units": 502,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY24_Q4": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY24_Q4.md",
+      "ai_rows": 94,
+      "total_units": 507,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY25_Q1": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY25_Q1.md",
+      "ai_rows": 140,
+      "total_units": 524,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY25_Q2": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY25_Q2.md",
+      "ai_rows": 142,
+      "total_units": 501,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY25_Q3": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY25_Q3.md",
+      "ai_rows": 116,
+      "total_units": 485,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY25_Q4": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY25_Q4.md",
+      "ai_rows": 106,
+      "total_units": 454,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY26_Q1": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY26_Q1.md",
+      "ai_rows": 125,
+      "total_units": 508,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY26_Q2": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY26_Q2.md",
+      "ai_rows": 137,
+      "total_units": 483,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY26_Q3": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY26_Q3.md",
+      "ai_rows": 138,
+      "total_units": 506,
+      "committed_filter_output": "present"
+    },
+    "microsoft_FY26_Q4": {
+      "source_file": "earnings_calls/microsoft/microsoft_FY26_Q4.md",
+      "ai_rows": 138,
+      "total_units": 519,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY23_Q4": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY23_Q4.md",
+      "ai_rows": 126,
+      "total_units": 482,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY24_Q1": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY24_Q1.md",
+      "ai_rows": 144,
+      "total_units": 518,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY24_Q2": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY24_Q2.md",
+      "ai_rows": 138,
+      "total_units": 470,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY24_Q3": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY24_Q3.md",
+      "ai_rows": 193,
+      "total_units": 541,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY24_Q4": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY24_Q4.md",
+      "ai_rows": 143,
+      "total_units": 511,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY25_Q1": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY25_Q1.md",
+      "ai_rows": 166,
+      "total_units": 484,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY25_Q2": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY25_Q2.md",
+      "ai_rows": 195,
+      "total_units": 544,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY25_Q3": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY25_Q3.md",
+      "ai_rows": 189,
+      "total_units": 507,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY25_Q4": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY25_Q4.md",
+      "ai_rows": 187,
+      "total_units": 505,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY26_Q1": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY26_Q1.md",
+      "ai_rows": 203,
+      "total_units": 470,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY26_Q2": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY26_Q2.md",
+      "ai_rows": 181,
+      "total_units": 466,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY26_Q3": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY26_Q3.md",
+      "ai_rows": 170,
+      "total_units": 498,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY26_Q4": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY26_Q4.md",
+      "ai_rows": 172,
+      "total_units": 509,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY27_Q1": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY27_Q1.md",
+      "ai_rows": 173,
+      "total_units": 525,
+      "committed_filter_output": "present"
+    },
+    "nvidia_FY27_Q2": {
+      "source_file": "earnings_calls/nvidia/nvidia_FY27_Q2.md",
+      "ai_rows": 139,
+      "total_units": 479,
+      "committed_filter_output": "present"
+    },
+    "tesla_2022_Q4": {
+      "source_file": "earnings_calls/tesla/tesla_2022_Q4.md",
+      "ai_rows": 37,
+      "total_units": 517,
+      "committed_filter_output": "present"
+    },
+    "tesla_2023_Q1": {
+      "source_file": "earnings_calls/tesla/tesla_2023_Q1.md",
+      "ai_rows": 21,
+      "total_units": 121,
+      "committed_filter_output": "present"
+    },
+    "tesla_2023_Q2": {
+      "source_file": "earnings_calls/tesla/tesla_2023_Q2.md",
+      "ai_rows": 61,
+      "total_units": 590,
+      "committed_filter_output": "present"
+    },
+    "tesla_2023_Q3": {
+      "source_file": "earnings_calls/tesla/tesla_2023_Q3.md",
+      "ai_rows": 34,
+      "total_units": 529,
+      "committed_filter_output": "present"
+    },
+    "tesla_2023_Q4": {
+      "source_file": "earnings_calls/tesla/tesla_2023_Q4.md",
+      "ai_rows": 35,
+      "total_units": 589,
+      "committed_filter_output": "present"
+    },
+    "tesla_2024_Q1": {
+      "source_file": "earnings_calls/tesla/tesla_2024_Q1.md",
+      "ai_rows": 71,
+      "total_units": 640,
+      "committed_filter_output": "present"
+    },
+    "tesla_2024_Q2": {
+      "source_file": "earnings_calls/tesla/tesla_2024_Q2.md",
+      "ai_rows": 84,
+      "total_units": 542,
+      "committed_filter_output": "present"
+    },
+    "tesla_2024_Q3": {
+      "source_file": "earnings_calls/tesla/tesla_2024_Q3.md",
+      "ai_rows": 90,
+      "total_units": 603,
+      "committed_filter_output": "present"
+    },
+    "tesla_2024_Q4": {
+      "source_file": "earnings_calls/tesla/tesla_2024_Q4.md",
+      "ai_rows": 75,
+      "total_units": 590,
+      "committed_filter_output": "present"
+    },
+    "tesla_2025_Q1": {
+      "source_file": "earnings_calls/tesla/tesla_2025_Q1.md",
+      "ai_rows": 56,
+      "total_units": 697,
+      "committed_filter_output": "present"
+    },
+    "tesla_2025_Q2": {
+      "source_file": "earnings_calls/tesla/tesla_2025_Q2.md",
+      "ai_rows": 73,
+      "total_units": 466,
+      "committed_filter_output": "present"
+    },
+    "tesla_2025_Q3": {
+      "source_file": "earnings_calls/tesla/tesla_2025_Q3.md",
+      "ai_rows": 89,
+      "total_units": 497,
+      "committed_filter_output": "present"
+    },
+    "tesla_2025_Q4": {
+      "source_file": "earnings_calls/tesla/tesla_2025_Q4.md",
+      "ai_rows": 73,
+      "total_units": 455,
+      "committed_filter_output": "present"
+    },
+    "tesla_2026_Q1": {
+      "source_file": "earnings_calls/tesla/tesla_2026_Q1.md",
+      "ai_rows": 79,
+      "total_units": 424,
+      "committed_filter_output": "present"
+    },
+    "tesla_2026_Q2": {
+      "source_file": "earnings_calls/tesla/tesla_2026_Q2.md",
+      "ai_rows": 68,
+      "total_units": 491,
+      "committed_filter_output": "present"
+    }
+  },
+  "calls_with_zero_ai_rows": [],
+  "committed_output_drift": {
+    "summary": {
+      "no_committed_file": 11,
+      "match": 103,
+      "differs": 2
+    },
+    "differs": {
+      "apple_FY23_Q1": {
+        "status": "differs",
+        "rebuilt_ai_units": 2,
+        "committed_ai_units": 3,
+        "only_in_rebuild": 2,
+        "only_in_committed": 3,
+        "examples_only_in_committed": [
+          "and we continue to build on our decades-long commitment to helping small businesses Thrive when we announced Apple business connect this new tool gives business",
+          "the negative effects in order to be able to provide this kind of guidance and so obviously components are a big part of that yeah and then kind of you know from",
+          "the paid subscriber base and whether or not AI is just something that that you're implementing a bit more strategically there yeah it's it is a major focus of o"
+        ]
+      },
+      "apple_FY24_Q4": {
+        "status": "differs",
+        "rebuilt_ai_units": 35,
+        "committed_ai_units": 34,
+        "only_in_rebuild": 33,
+        "only_in_committed": 32,
+        "examples_only_in_committed": [
+          "And in June, we announced Apple Intelligence, a remarkable personal intelligence system that combines the power of generative models with personal context to de",
+          "Apple Intelligence marks the beginning of a new chapter for Apple innovation and redefineses privacy and AI by extending our groundbreaking approach to privacy ",
+          "Earlier this week, we made the first set of Apple Intelligence features available in US English for iPhone, iPad, and Mac users with systemwide writing tools th"
+        ]
+      }
+    },
+    "no_committed_file": [
+      "alphabet_2022_Q1",
+      "alphabet_2022_Q2",
+      "alphabet_2022_Q3",
+      "meta_2021_Q4",
+      "meta_2022_Q1",
+      "meta_2022_Q2",
+      "meta_2022_Q3",
+      "microsoft_FY22_Q2",
+      "microsoft_FY22_Q3",
+      "microsoft_FY22_Q4",
+      "microsoft_FY23_Q1"
+    ]
+  },
+  "missing_or_unavailable_periods": [
+    {
+      "company": "alphabet",
+      "period_label": "2021_Q4",
+      "calendar_year": 2021,
+      "calendar_quarter": 4,
+      "availability_status": "archived_official_copy_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "amazon",
+      "period_label": "2021_Q4",
+      "calendar_year": 2021,
+      "calendar_quarter": 4,
+      "availability_status": "official_ir_audio_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "amazon",
+      "period_label": "2022_Q1",
+      "calendar_year": 2022,
+      "calendar_quarter": 1,
+      "availability_status": "official_ir_audio_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "amazon",
+      "period_label": "2022_Q2",
+      "calendar_year": 2022,
+      "calendar_quarter": 2,
+      "availability_status": "official_ir_audio_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "amazon",
+      "period_label": "2022_Q3",
+      "calendar_year": 2022,
+      "calendar_quarter": 3,
+      "availability_status": "official_ir_audio_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "apple",
+      "period_label": "FY22_Q1",
+      "calendar_year": 2021,
+      "calendar_quarter": 4,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "apple",
+      "period_label": "FY22_Q2",
+      "calendar_year": 2022,
+      "calendar_quarter": 1,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "apple",
+      "period_label": "FY22_Q3",
+      "calendar_year": 2022,
+      "calendar_quarter": 2,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "apple",
+      "period_label": "FY22_Q4",
+      "calendar_year": 2022,
+      "calendar_quarter": 3,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "nvidia",
+      "period_label": "FY22_Q4",
+      "calendar_year": 2021,
+      "calendar_quarter": 4,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "nvidia",
+      "period_label": "FY23_Q1",
+      "calendar_year": 2022,
+      "calendar_quarter": 1,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "nvidia",
+      "period_label": "FY23_Q2",
+      "calendar_year": 2022,
+      "calendar_quarter": 2,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "nvidia",
+      "period_label": "FY23_Q3",
+      "calendar_year": 2022,
+      "calendar_quarter": 3,
+      "availability_status": "no_public_company_source",
+      "acquisition_status": "unavailable_public_source"
+    },
+    {
+      "company": "tesla",
+      "period_label": "2021_Q4",
+      "calendar_year": 2021,
+      "calendar_quarter": 4,
+      "availability_status": "official_webcast_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "tesla",
+      "period_label": "2022_Q1",
+      "calendar_year": 2022,
+      "calendar_quarter": 1,
+      "availability_status": "official_webcast_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "tesla",
+      "period_label": "2022_Q2",
+      "calendar_year": 2022,
+      "calendar_quarter": 2,
+      "availability_status": "official_webcast_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    },
+    {
+      "company": "tesla",
+      "period_label": "2022_Q3",
+      "calendar_year": 2022,
+      "calendar_quarter": 3,
+      "availability_status": "official_webcast_only",
+      "acquisition_status": "awaiting_human_source_decision"
+    }
+  ],
+  "manifest_counts": {
+    "awaiting_human_source_decision": 9,
+    "acquired": 11,
+    "already_present": 105,
+    "unavailable_public_source": 8
+  },
+  "reproducibility": {
+    "command": "python build_earnings_call_canonical.py",
+    "git_head": "13172033f7ffeda56ac5e1316594e5e710db8585",
+    "python": "3.13.14",
+    "nltk": "3.10.0",
+    "filter_earnings_calls.py_sha256": "77253990a03671dced3b49fed431161151ee440ffc3474c625066adbd29cd210",
+    "build_earnings_call_canonical.py_sha256": "a5990dd5401613e1a413a8226b6dce9779331c67286a50a6c17ba2107b06c3fd",
+    "earnings_call_scope.py_sha256": "58c92dc5dfb7ccde65a93c5e6865a974770c5635a26506b162bd343f413e93a1",
+    "source_file_sha256": {
+      "earnings_calls/alphabet/alphabet_2022_Q1.md": "4a14f915b39ec459119be387f74c33ccd5ad4da2083271017668eccd946c445b",
+      "earnings_calls/alphabet/alphabet_2022_Q2.md": "a350e5f6c6b3cec40887633e3a44009b421996238d19a6bd78091bcb04b2a320",
+      "earnings_calls/alphabet/alphabet_2022_Q3.md": "aa961f35346bab63d54cf4c6c21531877c359a9afe6f7ec51ce1717f50d15940",
+      "earnings_calls/alphabet/alphabet_2022_Q4.md": "92fb42cf1b645db6c197b99fb9b7a94be14aee30996a7a3315a76e00920d85a2",
+      "earnings_calls/alphabet/alphabet_2023_Q1.md": "e0d376071354a26696e79f83da1b64b3ab9740f242250eefa398f55f97ea5a76",
+      "earnings_calls/alphabet/alphabet_2023_Q2.md": "57a7e2802294203778b618225d0462da721a56f4145f864d9563755520511f8c",
+      "earnings_calls/alphabet/alphabet_2023_Q3.md": "f16bdd62e0b7544fe8667da41dc8b0df30358164c8a83ae4a1873b3e2bd44faf",
+      "earnings_calls/alphabet/alphabet_2023_Q4.md": "14e296992f2300fff6c2e8b0659d8d7c6fa4830a2da882ef83178d2dbba67e6c",
+      "earnings_calls/alphabet/alphabet_2024_Q1.md": "becedd08547c0ae8fe32b3ff2b3d188543c82e8e9043bc5d6555a8dba7b5c003",
+      "earnings_calls/alphabet/alphabet_2024_Q2.md": "51836a3c2a49f3870c0c366b83e5ae707fe64359e7687ce7d00445804ac2bdc5",
+      "earnings_calls/alphabet/alphabet_2024_Q3.md": "87274970734e85d04dfb9be2f883bee9009d25acc6e52fdd57946005fca4a043",
+      "earnings_calls/alphabet/alphabet_2024_Q4.md": "1772f3daf0525a5902e355b63c01212602e579904c518ebfb67881330c171d17",
+      "earnings_calls/alphabet/alphabet_2025_Q1.md": "a0ae4db60fdebebd441075ab6e9c630dfee0aaced81519564107fd96f3f6568f",
+      "earnings_calls/alphabet/alphabet_2025_Q2.md": "0b033cefb63bdc4bafe10eab42d91018fe87d14fe7cc0c50c6ce3ca1cb37f21d",
+      "earnings_calls/alphabet/alphabet_2025_Q3.md": "1ab96b36ce1d27c883422d56659cb73149d467f2ec6529df46eb5da7be5ba257",
+      "earnings_calls/alphabet/alphabet_2025_Q4.md": "c8e056ce4cec87463c0773286ffcdc902aa43a779f3649c0cdc4dddd4df8e96b",
+      "earnings_calls/alphabet/alphabet_2026_Q1.md": "05b07d35d969e03b88909d02da4be8f925c608df9c858c97bd1f0038eaa445fa",
+      "earnings_calls/alphabet/alphabet_2026_Q2.md": "5974baaa33d0ec68b3377830afe5980ed914e6c5cbebeeab1065a02f5edf8832",
+      "earnings_calls/amazon/amazon_2022_Q4.md": "e09bb0c6de3c269c001ad0839c78e00f5d81fc63b7750a56b9f7b08427fa15bc",
+      "earnings_calls/amazon/amazon_2023_Q1.md": "cbdbf869390e723dc774c1489af5d736ca7a31f0f6b09bf54f7870c3cfe91293",
+      "earnings_calls/amazon/amazon_2023_Q2.md": "0c279bd816af3b8f20f4ed3e5f8f572587d677b556f06303dae9dbeadfa9c81d",
+      "earnings_calls/amazon/amazon_2023_Q3.md": "5f6e7a982f95264df666484eeffe2dc9ca4e6824d55da46831becaa08139d8ab",
+      "earnings_calls/amazon/amazon_2023_Q4.md": "6e677d4bf3e9aac0482f6a2dd7fbe8e19916d1674529af453d670a904a8e61a0",
+      "earnings_calls/amazon/amazon_2024_Q1.md": "0f7658c289adab69988c5c408aad8bfc5c08a62e76d20eb7e64f65f9439748a2",
+      "earnings_calls/amazon/amazon_2024_Q2.md": "30fceb7c3394f58c4f0b7f7dabcfe19db130167c8c1416df7177585654fafe95",
+      "earnings_calls/amazon/amazon_2024_Q3.md": "33113a83b9a2218a497b891965fc5546330fc8cf2ea93d9ca3694a5ae0cbc1cd",
+      "earnings_calls/amazon/amazon_2024_Q4.md": "44ad5d33e6524d8b6c0a7f60df25fd87bb77c0c52ed48eb1f2269210f72a9363",
+      "earnings_calls/amazon/amazon_2025_Q1.md": "908781ad24b1e0c79ad4b8abd072d08a53df12ef28581dae168ec32f7d53d1b7",
+      "earnings_calls/amazon/amazon_2025_Q2.md": "e161fd5e38d59db76de0a03d4d8d7a6bc8e109db1385b990b1adad6cdcebac80",
+      "earnings_calls/amazon/amazon_2025_Q3.md": "19357f34ef5beb4ee7de51683f68f76a0d490cc7afeb04fd4eb3843246bda39d",
+      "earnings_calls/amazon/amazon_2025_Q4.md": "6cd104a53fab97bece3659f3e7f1008d17cf88f6c2c123345ab9202587c91f54",
+      "earnings_calls/amazon/amazon_2026_Q1.md": "b4264aeb2485c497a2bdadc82c2736d61d3489ce468cbf0cd36de336cbaeb75d",
+      "earnings_calls/amazon/amazon_2026_Q2.md": "4cb4efbf8cc825707ab57bbf38785301cc24dc43697f0f72efe12d3c46b903f4",
+      "earnings_calls/apple/apple_FY23_Q1.md": "af81826a1a5244b1673bf45626ddcdd21e3f740cd496ea0e9c412440535032ca",
+      "earnings_calls/apple/apple_FY23_Q2.md": "cb11448787b472b2251e5f50350530c67ec492daaa2ae9c3dcd15c80fedf892b",
+      "earnings_calls/apple/apple_FY23_Q3.md": "6dd6048e5c88c1466c39ff97b1c8968646573695f81fb8e1e6748c13411ff18a",
+      "earnings_calls/apple/apple_FY23_Q4.md": "9c6c83f590d2cb9c319f6594e9f6b2b0408d009ec8c1e56b0bcbb6294eeb3df6",
+      "earnings_calls/apple/apple_FY24_Q1.md": "d2dd762e2f21073a1acdeb36d7e62d7fd169114c148f15f9a81efd0a3a11996d",
+      "earnings_calls/apple/apple_FY24_Q2.md": "28344de7b50509dbc643688cdc5d523488bf9a3e37209516bddfc663c13a770e",
+      "earnings_calls/apple/apple_FY24_Q3.md": "2839f4df501c7d84fe0bb5862c67ae23d03a3748e2944a6a8f1123d3ab6c50ca",
+      "earnings_calls/apple/apple_FY24_Q4.md": "53dea81807b8a7caf43386d45881716b9e7584bebacc0aa1d2d3dd5a8655b072",
+      "earnings_calls/apple/apple_FY25_Q1.md": "674114b71920683e469adfd2ffe4dea03eaf2326168f98d439c5eb47086bfb12",
+      "earnings_calls/apple/apple_FY25_Q2.md": "474834c851d4a0bc115302fe85efa9513da30e732c4a3f31f36b898c34a65c1c",
+      "earnings_calls/apple/apple_FY25_Q3.md": "d6f45abbdffdba4b7ca2b744a603ccc760bd97a13223439f87ad72832a4dcbb6",
+      "earnings_calls/apple/apple_FY25_Q4.md": "2dfee7a45a83a52366ed6e87abb70a0f1f89181cc3c9124a2463470bc10187a1",
+      "earnings_calls/apple/apple_FY26_Q1.md": "242608d485f40b04c67bcf1dd2fba2b3f0002c13e69898694ed21cfe160cb4c6",
+      "earnings_calls/apple/apple_FY26_Q2.md": "a8202256ed8396c64d60b186ff74832f760046296de07829f745615a41e8009e",
+      "earnings_calls/apple/apple_FY26_Q3.md": "d59a15136af045d5e55a2c5ce8dbb91f55ea419fb362e105159c5e062b3b6c52",
+      "earnings_calls/meta/meta_2021_Q4.md": "314b1664940a185972442faf0faf8e626a736b1237eef3a2c5af1e945031006b",
+      "earnings_calls/meta/meta_2022_Q1.md": "dccd06c4a349c75fcd66201ce28271135c406586c3e95f2d6aab08b2a8e807a9",
+      "earnings_calls/meta/meta_2022_Q2.md": "6dc0c814867953c290d5a2916737e86462cca9a1099972748b5dd129d32b8c86",
+      "earnings_calls/meta/meta_2022_Q3.md": "9e2463d995227963ef1701306a802c13722cb8e462c76f73577707ea261d0e65",
+      "earnings_calls/meta/meta_2022_Q4.md": "1e583bb65487fd5864781a3a9f2f85a5c624cc29b5ce9a2edea74b32c7249a83",
+      "earnings_calls/meta/meta_2023_Q1.md": "eff5c70332447ceb2920efd330f4bfe70eabbad09e4bef5ef42356dac3c47fdc",
+      "earnings_calls/meta/meta_2023_Q2.md": "ae9da7b1fa003766b5bb4efe58330753fae641c0e395005effcb3a094a760f10",
+      "earnings_calls/meta/meta_2023_Q3.md": "c1848b57541f1db8c90d9730966615410e3379886093b6ccc82c615cdedb2c8d",
+      "earnings_calls/meta/meta_2023_Q4.md": "fcb04c956a9f57c733b8e1506c730fa925dc9d824607d0ddf3dfac566ac3b0ba",
+      "earnings_calls/meta/meta_2024_Q1.md": "87ad2eedccbb88e709255b323d4e92e71f219693e0879107e93dfc39123e554e",
+      "earnings_calls/meta/meta_2024_Q2.md": "42f073bee23fa3d976dd910a3e7645e9dec470caf4eff7e532aaccce4cf2c664",
+      "earnings_calls/meta/meta_2024_Q3.md": "6ec4387d50ff779dddcc1dce81e6947e4d84457c58316d621b5de1648ef7cf4e",
+      "earnings_calls/meta/meta_2024_Q4.md": "f44769dd4fd2c45bd404ca92e46e4d18084c9c43374f2290896086c9b64a74e3",
+      "earnings_calls/meta/meta_2025_Q1.md": "b641496a2bf1b47098c82b3ce617b935cad62c278bfbd0ed81efa34474b1503e",
+      "earnings_calls/meta/meta_2025_Q2.md": "a08e92534b1815f24a73317eb4978f30fbc86f026fe8142572f6da467e1e6c01",
+      "earnings_calls/meta/meta_2025_Q3.md": "8aff35cae226159e5e5e4b804f19494e5b70b316124b0b64d5ac256417358fb1",
+      "earnings_calls/meta/meta_2025_Q4.md": "e6074d2495d22c5d94fb78b6b78f6caf10bad29ae40a9406a2843e3142d74d39",
+      "earnings_calls/meta/meta_2026_Q1.md": "897085468cff7c0ee9dac0625f12c9998cd61818d812d3f85b1d0f307335dab0",
+      "earnings_calls/meta/meta_2026_Q2.md": "e224f2966f2c4b18c19cd7fb85808f8c737a706449c48acd04c83eb16a800f83",
+      "earnings_calls/microsoft/microsoft_FY22_Q2.md": "76e2bcf42947b643b33f67776096cf80521b078cd0bd8f372278a652308029cb",
+      "earnings_calls/microsoft/microsoft_FY22_Q3.md": "9fcbbe79fcc7954eb94a39343dcf117a4b2b70c362f9375797e94d59751ec5d2",
+      "earnings_calls/microsoft/microsoft_FY22_Q4.md": "76200f2c78aefa946f0ff26fa76909229c4cb0409ec877bb5657acb44ed99a26",
+      "earnings_calls/microsoft/microsoft_FY23_Q1.md": "aa3414d3fa15bdac08342631cda9b7bb3b9d0b3a6a741aeac62395eeca505256",
+      "earnings_calls/microsoft/microsoft_FY23_Q2.md": "efa5ea5823c22706d0032b1933c3712fba37d26f558b0c0fc83b1332148eb452",
+      "earnings_calls/microsoft/microsoft_FY23_Q3.md": "9bfb6e491a4a6b0d69885b170f022fbf89e26a9b47882504e4bbe01b3b75c044",
+      "earnings_calls/microsoft/microsoft_FY23_Q4.md": "e216fc51d874e144088b1ed256509da67f3e8f343bd60c4f6b3712325e2831e6",
+      "earnings_calls/microsoft/microsoft_FY24_Q1.md": "5130e06564f253db7d3cab119ebf4da220f8256412026d526f87036199f601c0",
+      "earnings_calls/microsoft/microsoft_FY24_Q2.md": "6a1d65007eadc70766a136f5f318bd0f86ee268ccd40cfd6e04549c12bf82ee5",
+      "earnings_calls/microsoft/microsoft_FY24_Q3.md": "2fb918ac0cf5527a7655c089595794ca63c35234072ba46e78319d9831d7bfb4",
+      "earnings_calls/microsoft/microsoft_FY24_Q4.md": "ad55bce9707b5f16de37048bbf70a61663ad8af0a1b3a1424d7ed0a101755722",
+      "earnings_calls/microsoft/microsoft_FY25_Q1.md": "cadc2de13902ddfa3953afa145d21a912c83b31747fcbf75b953758ebf356ea7",
+      "earnings_calls/microsoft/microsoft_FY25_Q2.md": "9eb0a943dcc53fca3985adfdfe6473c5bc845661f66add26504e2a97b93b021d",
+      "earnings_calls/microsoft/microsoft_FY25_Q3.md": "2e5056442866c942e64134000b7a3ba63a40132a6d112bcb90906b205283b19f",
+      "earnings_calls/microsoft/microsoft_FY25_Q4.md": "2c21206837a4d0894195a0f9505fe0b9b29565c96be703a21d3d02c2a4c222a9",
+      "earnings_calls/microsoft/microsoft_FY26_Q1.md": "7bff93d569483175948ba4fdd2f3c13430ba797568fd68fbd87d60df57eb9680",
+      "earnings_calls/microsoft/microsoft_FY26_Q2.md": "253bfa0848c6d1c689bd30c79c1eeaf6933b2dd9504788503136a004c194de40",
+      "earnings_calls/microsoft/microsoft_FY26_Q3.md": "3cfac37e6327a2ca797860b7c3eb2171924879e7a81b056769d1b1bdd8a324a3",
+      "earnings_calls/microsoft/microsoft_FY26_Q4.md": "2b07d2e81ea25bc4cf8222c0404ae941e4b6d7684c7cbf85d9b6a49aeb5dc513",
+      "earnings_calls/nvidia/nvidia_FY23_Q4.md": "cfd7fc04006c602b26626f7596aa44cdfd6412d81ab7af1d1fa0dfcd2e5a1049",
+      "earnings_calls/nvidia/nvidia_FY24_Q1.md": "bf05472f10100e8838cca6f91307508ae9f75a1c25b8beea264e1f5fc5560d7e",
+      "earnings_calls/nvidia/nvidia_FY24_Q2.md": "35be1686b54b349f7d2a8ac337c9cd68562caeba2087a5b89371f8e3eff62a8e",
+      "earnings_calls/nvidia/nvidia_FY24_Q3.md": "483eb124b73885fc18f28c80c919dcb4d3ec144e3ae4b10a3b34dc1305156147",
+      "earnings_calls/nvidia/nvidia_FY24_Q4.md": "4958512b2ec38f4a361e14211ead0799f4f67686e941f5a089062069a08210ae",
+      "earnings_calls/nvidia/nvidia_FY25_Q1.md": "be8011ff2cf393a456300bb8aa2b94b83e426aa5f7655100575aa793fd9111d5",
+      "earnings_calls/nvidia/nvidia_FY25_Q2.md": "2d0d03a8ee01b7823c2396136967645bba70ec42669ed40b801ce07b0e502ce0",
+      "earnings_calls/nvidia/nvidia_FY25_Q3.md": "29e65ba0abac7af4d670d4f1743f4f82939af401584feb91a29ac7b0b00c8efe",
+      "earnings_calls/nvidia/nvidia_FY25_Q4.md": "d4aad024226cb89c60fee6ad9b3dbbf1544c4ba787c6dfa6894d534cacf87f02",
+      "earnings_calls/nvidia/nvidia_FY26_Q1.md": "3099f89301482427d9638eadd3a57c248c28ac322317bba0203cc52a568f3463",
+      "earnings_calls/nvidia/nvidia_FY26_Q2.md": "ac47b369b011bc3113815b15ac3398a6a789fb526fe7cfe98febd43fb73bd204",
+      "earnings_calls/nvidia/nvidia_FY26_Q3.md": "d472876d3ec960d353231bea13d0704b0c6fd8ccde71a91fbf737580810402f6",
+      "earnings_calls/nvidia/nvidia_FY26_Q4.md": "01483ee38089e2e6162faf51c67323b82ae302c956542b1aea07f23aff160ecc",
+      "earnings_calls/nvidia/nvidia_FY27_Q1.md": "7c455eb3c69935c5d9be87c76220deb4781a98e63d468a04a7dc7a6dfc87e49b",
+      "earnings_calls/nvidia/nvidia_FY27_Q2.md": "7a96ddcdf405b3646f3f0d470a4d51fa297ade2e5cc87b7e3dd0f94cc9de55b4",
+      "earnings_calls/tesla/tesla_2022_Q4.md": "4da4316ae5e40288ed69e99589cf892c5f70010a93e7a8d3e5653ca1786f69e4",
+      "earnings_calls/tesla/tesla_2023_Q1.md": "f8ef33dcf9c479681f7eace79c244562aa7f8e2f8c8d5d3ee469f6b37ef8bf8f",
+      "earnings_calls/tesla/tesla_2023_Q2.md": "e256e4b41647061287ee52444221e223db037aaedf7aa4de764bcf3b871fbd98",
+      "earnings_calls/tesla/tesla_2023_Q3.md": "94d406911d36e7add4698615cb96a2b3839dd2b41d4e6a5b5cbb33ba252fa946",
+      "earnings_calls/tesla/tesla_2023_Q4.md": "32f81741b78adf0354b17d4f2e5ba2c6b8a1e41b5b14c62664bdf4f793fd646a",
+      "earnings_calls/tesla/tesla_2024_Q1.md": "4f42b6ad9cc675fe535a92eb73999defae3803c349ed33ca60df60f805e4b9d8",
+      "earnings_calls/tesla/tesla_2024_Q2.md": "25e72bddaa6660c51fec907a307df6f71bbeadc38def9f4213d9838e83aeed7f",
+      "earnings_calls/tesla/tesla_2024_Q3.md": "a51b9107292306c7066f874f070e87f445eef6dd8abf52d3d45e70800339c7b1",
+      "earnings_calls/tesla/tesla_2024_Q4.md": "84a334e8a7be057af4ee5cba09cabb46370806e35ef449698a507ec5a1f87de1",
+      "earnings_calls/tesla/tesla_2025_Q1.md": "527210715c350228a51fdc6048c586dc692a4e938697131a640d0ec38381c8e4",
+      "earnings_calls/tesla/tesla_2025_Q2.md": "f7ad1f75e5d0e0a46dda605b76f38d2e5a08194718c8b894b0ca50796eedadba",
+      "earnings_calls/tesla/tesla_2025_Q3.md": "dc21cacc349b4346241493ea5f5b3be46ecb94ace5cf226cfa74f44dd0a648a9",
+      "earnings_calls/tesla/tesla_2025_Q4.md": "5b40f78f347a9db410b4b05f72391e44609a1e62a541f8d6f62663afc9e91a98",
+      "earnings_calls/tesla/tesla_2026_Q1.md": "e5635bed6c0262e229630d0ee52854e593e1f5558ecae029f0965c9626736761",
+      "earnings_calls/tesla/tesla_2026_Q2.md": "44519314cab486308e0b46a97aadf97f98f0430470cbe3b8de7db0d328a471f3"
+    },
+    "context_rule": "up to 2 preceding and 1 following parsed units of the same call and same section, in call order; may cross a speaker turn (flagged); never crosses the prepared-remarks/Q&A boundary",
+    "sentence_id_rule": "<company>_<period_label>_u<4-digit order in call>_<first 10 hex of sha256(text_verbatim)>"
+  },
+  "output_sha256": {
+    "earnings_call_sentences.csv": "edd3e4ba9d192acef0066b7d14a276637576b6064cfa0a7f389027b2d018251c",
+    "earnings_call_labeling_passages.csv": "92ccc035879db4945e9e3a063d469a229c7f1e4e9c9a1c2dfa5e41ef7792c38c",
+    "earnings_call_borderline_review.csv": "9a09976d94bfec813e106e3eddbfbe1cfd6fe20177903f71f83cef9ebe1a8f58",
+    "earnings_call_call_units.csv": "f3b2fb81021636bf9e12b0fe9bcb96bf3dc32534790889d3915a8d8bd83173b4"
+  }
+}
