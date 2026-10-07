@@ -1,0 +1,1003 @@
+{
+  "gate4_version": "gate4-v1",
+  "extraction_version": "filter_earnings_calls.py@sha256:77253990a036/canonical-v2",
+  "validation_type": "mechanical checks run by code; NOT human validation",
+  "supersedes_for_current_corpus": [
+    "earnings_calls_ai_only/_validation.json",
+    "earnings_calls_ai_only/FILTER_METHOD.md (Validation section)"
+  ],
+  "1_scope_coverage": {
+    "expected": 133,
+    "present": 116,
+    "missing": 17,
+    "missing_by_status": {
+      "awaiting_human_source_decision": 9,
+      "unavailable_public_source": 8
+    },
+    "missing_calls": [
+      {
+        "company": "alphabet",
+        "period_label": "2021_Q4",
+        "calendar": "2021Q4",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "archived_official_copy_only"
+      },
+      {
+        "company": "amazon",
+        "period_label": "2021_Q4",
+        "calendar": "2021Q4",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_ir_audio_only"
+      },
+      {
+        "company": "amazon",
+        "period_label": "2022_Q1",
+        "calendar": "2022Q1",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_ir_audio_only"
+      },
+      {
+        "company": "amazon",
+        "period_label": "2022_Q2",
+        "calendar": "2022Q2",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_ir_audio_only"
+      },
+      {
+        "company": "amazon",
+        "period_label": "2022_Q3",
+        "calendar": "2022Q3",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_ir_audio_only"
+      },
+      {
+        "company": "apple",
+        "period_label": "FY22_Q1",
+        "calendar": "2021Q4",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "apple",
+        "period_label": "FY22_Q2",
+        "calendar": "2022Q1",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "apple",
+        "period_label": "FY22_Q3",
+        "calendar": "2022Q2",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "apple",
+        "period_label": "FY22_Q4",
+        "calendar": "2022Q3",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "nvidia",
+        "period_label": "FY22_Q4",
+        "calendar": "2021Q4",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "nvidia",
+        "period_label": "FY23_Q1",
+        "calendar": "2022Q1",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "nvidia",
+        "period_label": "FY23_Q2",
+        "calendar": "2022Q2",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "nvidia",
+        "period_label": "FY23_Q3",
+        "calendar": "2022Q3",
+        "acquisition_status": "unavailable_public_source",
+        "availability_status": "no_public_company_source"
+      },
+      {
+        "company": "tesla",
+        "period_label": "2021_Q4",
+        "calendar": "2021Q4",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_webcast_only"
+      },
+      {
+        "company": "tesla",
+        "period_label": "2022_Q1",
+        "calendar": "2022Q1",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_webcast_only"
+      },
+      {
+        "company": "tesla",
+        "period_label": "2022_Q2",
+        "calendar": "2022Q2",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_webcast_only"
+      },
+      {
+        "company": "tesla",
+        "period_label": "2022_Q3",
+        "calendar": "2022Q3",
+        "acquisition_status": "awaiting_human_source_decision",
+        "availability_status": "official_webcast_only"
+      }
+    ],
+    "pass": true
+  },
+  "2_source_output_coverage": {
+    "raw_files_on_disk": 116,
+    "raw_files_outside_expected_set": [],
+    "duplicate_file_stems_case_insensitive": [],
+    "calls_in_call_units_file": 116,
+    "present_calls_without_sentence_rows": [],
+    "present_calls_without_passage_rows": [],
+    "output_calls_not_in_present_set": [],
+    "pass": true
+  },
+  "3_field_completeness": {
+    "fields_checked": 37,
+    "required_field_missing_counts": {
+      "sentence_id": 0,
+      "call_id": 0,
+      "company": 0,
+      "ticker": 0,
+      "period_label": 0,
+      "calendar_year": 0,
+      "calendar_quarter": 0,
+      "fiscal_or_calendar_label": 0,
+      "call_date_source": 0,
+      "source_file": 0,
+      "source_type": 0,
+      "parser_format": 0,
+      "unit_type": 0,
+      "section": 0,
+      "section_method": 0,
+      "speaker": 0,
+      "speaker_role": 0,
+      "speaker_status": 0,
+      "turn_order_in_call": 0,
+      "sentence_order_in_call": 0,
+      "sentence_order_in_section": 0,
+      "text_verbatim": 0,
+      "word_count": 0,
+      "trigger_terms": 0,
+      "is_uncertain": 0,
+      "is_safe_harbor": 0,
+      "is_context_dependent": 0,
+      "is_long": 0,
+      "in_committed_filter_output": 0,
+      "extraction_version": 0
+    },
+    "required_field_missing_total": 0,
+    "legitimately_unavailable": {
+      "call_date": {
+        "rows": 3106,
+        "reason": "not stated in the source file (never inferred)"
+      },
+      "source_url": {
+        "rows": 1038,
+        "reason": "raw-file metadata gives no URL (Nvidia FY26 Q1 - FY27 Q2)"
+      }
+    },
+    "blank_by_design": {
+      "speaker_status_reason": {
+        "rows": 7002,
+        "reason": "blank when status is resolved/operator"
+      },
+      "speaker_correction_rule": {
+        "rows": 9708,
+        "reason": "blank when the speaker was not corrected"
+      },
+      "core_terms": {
+        "rows": 2566,
+        "reason": "blank for weak-term-only (uncertain) rows"
+      },
+      "weak_terms": {
+        "rows": 5615,
+        "reason": "blank for core-only rows"
+      },
+      "call_parse_flags": {
+        "rows": 8026,
+        "reason": "blank when the filter raised no file flag"
+      }
+    },
+    "call_dates_not_rederivable_from_source_file": [],
+    "source_urls_not_present_in_file_metadata": [],
+    "sentence_rows_with_call_date_differing_from_manifest": 0,
+    "pass": true
+  },
+  "4_ids_reproducibility": {
+    "duplicate_sentence_ids": 0,
+    "duplicate_passage_ids": 0,
+    "duplicate_borderline_ids": 0,
+    "orphaned_anchor_sentence_ids": 0,
+    "sentences_without_passage": 0,
+    "sentence_ids_not_matching_formula": 0,
+    "context_ids_total": 29271,
+    "context_ids_kind_counts": {
+      "borderline_infrastructure": 873,
+      "ai": 18998,
+      "non_ai": 9280,
+      "borderline_automation": 120
+    },
+    "context_ai_ids_not_in_sentence_file": 0,
+    "context_borderline_ids_not_in_borderline_file": 0,
+    "context_non_ai_ids_note": "non-AI, non-borderline context units are not stored as rows; their text is in the passage and their ID follows the same formula",
+    "clean_rebuild": {
+      "method": "build_earnings_call_canonical.py --out <new empty temp dir>, byte comparison with earnings_calls_canonical/",
+      "files": {
+        "earnings_call_sentences.csv": {
+          "byte_identical": true,
+          "bytes": 7231730
+        },
+        "earnings_call_labeling_passages.csv": {
+          "byte_identical": true,
+          "bytes": 13610391
+        },
+        "earnings_call_borderline_review.csv": {
+          "byte_identical": true,
+          "bytes": 1319676
+        },
+        "earnings_call_call_units.csv": {
+          "byte_identical": true,
+          "bytes": 61357
+        },
+        "build_validation.json": {
+          "byte_identical": true,
+          "bytes": 55847
+        }
+      },
+      "all_byte_identical": true,
+      "sentence_ids_identical_and_same_order": true,
+      "timestamp_exceptions": "none: outputs embed no timestamps, temp paths or git HEAD"
+    }
+  },
+  "5_verbatim": {
+    "method": "tier 1: unit text, whitespace-collapsed, is a substring of the raw body after the documented normalization (HTML entities decoded, [mm:ss] timestamps and caption tags removed, whitespace collapsed). Tier 2 (only if tier 1 fails): filter_earnings_calls.verbatim_found, which also allows the filter's deleted noise (page numbers, FactSet headers, hyphen line-wraps) between words. Run by code, not by a human.",
+    "canonical_sentences": {
+      "checked": 9884,
+      "tier1_exact_after_whitespace_normalization": 9739,
+      "tier2_only_with_filter_noise_tolerance": 145,
+      "failures": 0,
+      "failure_rows": []
+    },
+    "borderline_rows": {
+      "checked": 2413,
+      "tier1_exact_after_whitespace_normalization": 2391,
+      "tier2_only_with_filter_noise_tolerance": 22,
+      "failures": 0,
+      "failure_rows": []
+    },
+    "all_parsed_units_including_non_ai": {
+      "checked": 54350,
+      "tier1_exact_after_whitespace_normalization": 53954,
+      "tier2_only_with_filter_noise_tolerance": 395,
+      "failures": 1,
+      "failure_rows": [
+        {
+          "unit_id": "meta_2022_Q3_u0233_38f63447fd",
+          "diagnostic": "first 34 of 39 words found contiguous in source; break before 'rationalize our real estate'",
+          "text": "One thing I'd point out first is just next year's guide includes an estimated $2 billion in 2023 expenses that are one-time charges as part of our office facili",
+          "kind": "out"
+        }
+      ]
+    }
+  },
+  "6_section_speaker": {
+    "sections_ai_rows": {
+      "prepared_remarks": 4981,
+      "qa": 4903
+    },
+    "unknown_section_rows": 0,
+    "speaker_status_ai_rows": {
+      "operator": 3,
+      "resolved": 6999,
+      "resolved_corrected": 176,
+      "unknown_speaker_in_source": 9,
+      "unlabeled_source": 1858,
+      "unresolved_bare_name": 37,
+      "unverified_meta_label_loss_risk": 733,
+      "unverified_raw_label_misplacement": 69
+    },
+    "resolved_ai_rows": 7178,
+    "unresolved_ai_rows": 46,
+    "unverified_meta_ai_rows": 733,
+    "unverified_raw_label_misplacement_ai_rows": 69,
+    "acquired_pdf_label_placement_check": {
+      "method": "label + next 4 words multiset, committed raw file (pdftotext -layout) vs pdftotext -raw of cache/earnings_call_sources/<call>.pdf",
+      "calls": {
+        "alphabet_2022_Q1": {
+          "labels_pdf_raw_mode": 42,
+          "labels_raw_file": 42,
+          "in_pdf_not_in_file": 0,
+          "in_file_not_in_pdf": 0,
+          "quarantined_in_canonical": false
+        },
+        "alphabet_2022_Q2": {
+          "labels_pdf_raw_mode": 43,
+          "labels_raw_file": 43,
+          "in_pdf_not_in_file": 0,
+          "in_file_not_in_pdf": 0,
+          "quarantined_in_canonical": false
+        },
+        "alphabet_2022_Q3": {
+          "labels_pdf_raw_mode": 45,
+          "labels_raw_file": 45,
+          "in_pdf_not_in_file": 0,
+          "in_file_not_in_pdf": 0,
+          "quarantined_in_canonical": false
+        },
+        "meta_2021_Q4": {
+          "labels_pdf_raw_mode": 40,
+          "labels_raw_file": 40,
+          "in_pdf_not_in_file": 0,
+          "in_file_not_in_pdf": 0,
+          "quarantined_in_canonical": false
+        },
+        "meta_2022_Q1": {
+          "labels_pdf_raw_mode": 37,
+          "labels_raw_file": 37,
+          "in_pdf_not_in_file": 0,
+          "in_file_not_in_pdf": 0,
+          "quarantined_in_canonical": false
+        },
+        "meta_2022_Q2": {
+          "labels_pdf_raw_mode": 39,
+          "labels_raw_file": 38,
+          "in_pdf_not_in_file": 16,
+          "in_file_not_in_pdf": 15,
+          "quarantined_in_canonical": true
+        },
+        "meta_2022_Q3": {
+          "labels_pdf_raw_mode": 34,
+          "labels_raw_file": 33,
+          "in_pdf_not_in_file": 14,
+          "in_file_not_in_pdf": 13,
+          "quarantined_in_canonical": true
+        }
+      },
+      "calls_with_misplaced_labels": [
+        "meta_2022_Q2",
+        "meta_2022_Q3"
+      ],
+      "all_misplaced_calls_quarantined": true
+    },
+    "unlabeled_source_ai_rows": 1858,
+    "corrections_this_task": {
+      "all_units_speaker_changed": 1397,
+      "ai_rows_speaker_changed": 176,
+      "units_text_changed_label_removed": 212,
+      "ai_rows_id_changed": 1,
+      "by_rule": {
+        "alphabet_name_comma_firm_label": 255,
+        "msft_name_comma_firm_label": 973,
+        "same_transcript_name_propagation": 169
+      },
+      "unrecognised_labels_remaining_after_correction": 0
+    },
+    "unresolved_bare_names": {
+      "tesla: Elon Musk": 21,
+      "tesla: Martin Viecha": 9,
+      "meta: David Wehner": 3,
+      "meta: Javier Olivan": 1,
+      "meta: Eric Sheridan": 1,
+      "meta: Brian Nowak": 1,
+      "meta: Kenneth Gawrelski": 1
+    },
+    "calls_with_one_section_or_one_speaker": [],
+    "calls_with_one_speaker_because_source_has_no_labels": [
+      "amazon_2022_Q4",
+      "amazon_2023_Q1",
+      "amazon_2023_Q2",
+      "amazon_2023_Q3",
+      "amazon_2023_Q4",
+      "amazon_2024_Q1",
+      "amazon_2024_Q2",
+      "amazon_2024_Q3",
+      "amazon_2024_Q4",
+      "amazon_2025_Q1",
+      "amazon_2025_Q2",
+      "amazon_2025_Q3",
+      "amazon_2025_Q4",
+      "amazon_2026_Q1",
+      "amazon_2026_Q2",
+      "apple_FY23_Q2",
+      "apple_FY23_Q3",
+      "apple_FY23_Q4",
+      "apple_FY24_Q1",
+      "apple_FY24_Q2",
+      "apple_FY24_Q3",
+      "apple_FY25_Q1",
+      "apple_FY25_Q2",
+      "apple_FY25_Q3",
+      "apple_FY25_Q4",
+      "apple_FY26_Q1",
+      "apple_FY26_Q2",
+      "apple_FY26_Q3",
+      "nvidia_FY24_Q4",
+      "tesla_2023_Q1",
+      "tesla_2025_Q1",
+      "tesla_2025_Q2",
+      "tesla_2025_Q3",
+      "tesla_2025_Q4",
+      "tesla_2026_Q1",
+      "tesla_2026_Q2"
+    ]
+  },
+  "6b_change_vs_previous_canonical": {
+    "previous": "git HEAD:earnings_calls_canonical/earnings_call_sentences.csv (canonical-v1)",
+    "rows_previous": 9884,
+    "rows_current": 9884,
+    "ids_only_in_previous": 1,
+    "ids_only_in_current": 1,
+    "ids_only_in_previous_explained_by_audit": 1,
+    "columns_changed_on_common_ids": {
+      "extraction_version": 9883,
+      "speaker": 175,
+      "speaker_role": 175,
+      "turn_order_in_call": 660
+    },
+    "columns_removed": [
+      "speaker_attribution_warning"
+    ],
+    "columns_added": [
+      "speaker_correction_rule",
+      "speaker_status",
+      "speaker_status_reason"
+    ],
+    "text_verbatim_changed_on_common_ids": 0
+  },
+  "7_flags": {
+    "totals": {
+      "uncertain": 2566,
+      "context_dependent": 585,
+      "long": 1,
+      "safe_harbor": 0,
+      "borderline_automation_robotics": 456,
+      "borderline_infrastructure": 1957
+    },
+    "by_company": {
+      "is_uncertain": {
+        "alphabet": 234,
+        "amazon": 233,
+        "apple": 17,
+        "meta": 310,
+        "microsoft": 295,
+        "nvidia": 921,
+        "tesla": 556
+      },
+      "is_context_dependent": {
+        "alphabet": 123,
+        "amazon": 80,
+        "apple": 11,
+        "meta": 78,
+        "microsoft": 87,
+        "nvidia": 150,
+        "tesla": 56
+      },
+      "is_long": {
+        "tesla": 1
+      }
+    },
+    "by_source_type": {
+      "is_uncertain": {
+        "machine_transcript_whisper_of_official_ir_audio": 233,
+        "official_ir_pdf_factset_callstreet": 420,
+        "official_ir_transcript_docx": 12,
+        "official_ir_transcript_html": 283,
+        "official_ir_transcript_pdf": 544,
+        "third_party_transcript_motley_fool": 760,
+        "youtube_auto_captions": 314
+      },
+      "is_context_dependent": {
+        "machine_transcript_whisper_of_official_ir_audio": 80,
+        "official_ir_pdf_factset_callstreet": 55,
+        "official_ir_transcript_docx": 3,
+        "official_ir_transcript_html": 84,
+        "official_ir_transcript_pdf": 201,
+        "third_party_transcript_motley_fool": 124,
+        "youtube_auto_captions": 38
+      },
+      "is_long": {
+        "youtube_auto_captions": 1
+      }
+    },
+    "borderline_by_company": {
+      "automation_robotics_no_ai_term": {
+        "alphabet": 23,
+        "amazon": 71,
+        "meta": 33,
+        "microsoft": 19,
+        "nvidia": 25,
+        "tesla": 285
+      },
+      "infrastructure_no_ai_term": {
+        "alphabet": 268,
+        "amazon": 178,
+        "apple": 53,
+        "meta": 405,
+        "microsoft": 362,
+        "nvidia": 585,
+        "tesla": 106
+      }
+    },
+    "borderline_by_source_type": {
+      "automation_robotics_no_ai_term": {
+        "machine_transcript_whisper_of_official_ir_audio": 71,
+        "official_ir_pdf_factset_callstreet": 13,
+        "official_ir_transcript_docx": 11,
+        "official_ir_transcript_html": 8,
+        "official_ir_transcript_pdf": 56,
+        "third_party_transcript_motley_fool": 112,
+        "youtube_auto_captions": 185
+      },
+      "infrastructure_no_ai_term": {
+        "machine_transcript_whisper_of_official_ir_audio": 178,
+        "official_ir_pdf_factset_callstreet": 192,
+        "official_ir_transcript_docx": 56,
+        "official_ir_transcript_html": 306,
+        "official_ir_transcript_pdf": 673,
+        "third_party_transcript_motley_fool": 424,
+        "youtube_auto_captions": 128
+      }
+    }
+  },
+  "8_unit_comparability": {
+    "ai_rows_by_unit_type": {
+      "caption_segment": 110,
+      "caption_sentence": 774,
+      "sentence": 8026,
+      "whisper_unit": 974
+    },
+    "all_units_by_unit_type": {
+      "sentence": 39991,
+      "whisper_unit": 6547,
+      "caption_segment": 795,
+      "caption_sentence": 7017
+    },
+    "calls_by_unit_type": {
+      "sentence": 80,
+      "whisper_unit": 15,
+      "caption_segment": 7,
+      "caption_sentence": 14
+    },
+    "caption_segment_calls": [
+      "apple_FY23_Q2",
+      "apple_FY23_Q4",
+      "apple_FY24_Q1",
+      "apple_FY24_Q2",
+      "apple_FY24_Q3",
+      "apple_FY25_Q1",
+      "tesla_2023_Q1"
+    ],
+    "whisper_calls": [
+      "amazon_2022_Q4",
+      "amazon_2023_Q1",
+      "amazon_2023_Q2",
+      "amazon_2023_Q3",
+      "amazon_2023_Q4",
+      "amazon_2024_Q1",
+      "amazon_2024_Q2",
+      "amazon_2024_Q3",
+      "amazon_2024_Q4",
+      "amazon_2025_Q1",
+      "amazon_2025_Q2",
+      "amazon_2025_Q3",
+      "amazon_2025_Q4",
+      "amazon_2026_Q1",
+      "amazon_2026_Q2"
+    ],
+    "statement": "Unpunctuated caption segments (~30 s of speech) and Whisper units are not sentences. Counts and shares built on them are NOT directly comparable to true-sentence counts and must be reported separately or adjusted by a documented method; never pooled silently."
+  },
+  "B3_filter_comparison": {
+    "method": "normalization: lowercase, every non-alphanumeric run -> one space. (a) strict containment: a canonical AI unit overlaps if its normalized text is a substring of any Tanush passage of the same company-period. (b) shingle overlap (primary): a canonical unit overlaps if >=50% of its word 6-grams occur in that call's Tanush passages (units under 6 words: containment); a Tanush passage overlaps if some canonical AI unit of the call has >=50% of its 6-grams in that passage. (b) tolerates different unit boundaries (Whisper segments, Tanush's line splits and digit-line removal)",
+    "rows": 133,
+    "calls_in_both": 105,
+    "calls_only_canonical": [
+      "alphabet_2022_Q1",
+      "alphabet_2022_Q2",
+      "alphabet_2022_Q3",
+      "meta_2021_Q4",
+      "meta_2022_Q1",
+      "meta_2022_Q2",
+      "meta_2022_Q3",
+      "microsoft_FY22_Q2",
+      "microsoft_FY22_Q3",
+      "microsoft_FY22_Q4",
+      "microsoft_FY23_Q1"
+    ],
+    "calls_only_tanush": [],
+    "calls_in_neither": 17,
+    "pooled_over_calls_in_both": {
+      "canonical_units": 9669,
+      "canonical_units_in_tanush": 7339,
+      "pct": 75.9,
+      "strict_containment_units": 7063,
+      "strict_containment_pct": 73.0,
+      "core_units": 7133,
+      "core_in_tanush": 6665,
+      "core_pct": 93.4,
+      "uncertain_units": 2536,
+      "uncertain_in_tanush": 674,
+      "uncertain_pct": 26.6,
+      "tanush_passages": 3335,
+      "tanush_passages_with_canonical_unit": 3226,
+      "tanush_pct": 96.7
+    },
+    "tanush_total_passages_file": 3335,
+    "examples_tanush_passages_without_canonical_unit": [
+      {
+        "call": "alphabet_2024_Q3",
+        "passage_id": "alphabet-2024_Q3-00291",
+        "keywords": "bedrock",
+        "text": "I think we are in the early days of what is a powerful new technology, and with it, I think we can do a lot more for our users. But at the same time, underpin it on the foundational bedrock of quality and trust and user experience, which we"
+      },
+      {
+        "call": "alphabet_2024_Q4",
+        "passage_id": "alphabet-2024_Q4-00352",
+        "keywords": "vertex",
+        "text": "We've doubled our developers to 4.4 million in just about six months. Vertex usage is up 20x last year. And so all of that is a direct result of that approach, and so we'll continue doing that."
+      },
+      {
+        "call": "alphabet_2025_Q4",
+        "passage_id": "alphabet-2025_Q4-00485",
+        "keywords": "gemini",
+        "text": "It was a tremendous quarter for Alphabet. The launch of Gemini was a major milestone and we have great momentum. Alphabet annual revenues exceeded $400 billion for the first time."
+      },
+      {
+        "call": "amazon_2023_Q2",
+        "passage_id": "amazon-2023_Q2-00641",
+        "keywords": "AI; generative",
+        "text": "by NVIDIA H100 GPUs to train large models and develop generative AI applications. However, to date, there's only been one viable option"
+      },
+      {
+        "call": "amazon_2023_Q2",
+        "passage_id": "amazon-2023_Q2-00644",
+        "keywords": "large language models",
+        "text": "that resource building themselves. Rather, they want access to those large language models, want to customize them with their own data without"
+      },
+      {
+        "call": "amazon_2023_Q3",
+        "passage_id": "amazon-2023_Q3-00688",
+        "keywords": "AI; generative; large language model",
+        "text": "support growth of our AWS business, including additional investments related to generative AI and large language model efforts. As we head into the fourth quarter,"
+      },
+      {
+        "call": "amazon_2023_Q3",
+        "passage_id": "amazon-2023_Q3-00691",
+        "keywords": "AI; generative",
+        "text": "the amount of growth we're seeing and the absolute amount of generative AI business we're seeing compares very favorably"
+      },
+      {
+        "call": "amazon_2023_Q4",
+        "passage_id": "amazon-2023_Q4-00725",
+        "keywords": "AI; gen ai",
+        "text": "coming but we're excited about how it will make discovery even easier on Amazon. Gen AI is and will continue to be an area of pervasive focus and investment across Amazon, primarily because there are few initiatives, if any, that give us th"
+      },
+      {
+        "call": "amazon_2023_Q4",
+        "passage_id": "amazon-2023_Q4-00727",
+        "keywords": "machine learning",
+        "text": "work hard to increase the relevancy of the ads we show customers by leveraging machine learning. Advertising only works if the ads are helpful to customers, and there's a lot of"
+      },
+      {
+        "call": "amazon_2024_Q1",
+        "passage_id": "amazon-2024_Q1-00776",
+        "keywords": "AI; generative",
+        "text": "seriously experimenting and then actually deploying these applications to production, people want to run their generative AI on top of AWS. And the next question comes from the line of Brian Nowak with Morgan Stanley, please proceed. Great."
+      },
+      {
+        "call": "amazon_2024_Q2",
+        "passage_id": "amazon-2024_Q2-00784",
+        "keywords": "sagemaker",
+        "text": "all while saving considerable time and money. That's what Amazon SageMaker does so well, including its most recently launched feature"
+      },
+      {
+        "call": "amazon_2024_Q2",
+        "passage_id": "amazon-2024_Q2-00794",
+        "keywords": "AI; generative",
+        "text": "or changing the buying experience. We see it in how our generative AI listing tool is enabling sellers to create new selection"
+      },
+      {
+        "call": "amazon_2024_Q4",
+        "passage_id": "amazon-2024_Q4-00863",
+        "keywords": "machine learning",
+        "text": "and observed an increased pace of technology development, particularly in the area of artificial intelligence and machine learning. As a result, we're decreasing the useful life for a subset of our servers and"
+      },
+      {
+        "call": "amazon_2025_Q2",
+        "passage_id": "amazon-2025_Q2-00917",
+        "keywords": "AI",
+        "text": "A few points to make. First, on the hardware side, our custom AI chip, training two is landing capacity in larger quantities and"
+      },
+      {
+        "call": "amazon_2025_Q2",
+        "passage_id": "amazon-2025_Q2-00918",
+        "keywords": "bedrock",
+        "text": "anthropics newest generation cloud models and many of our most essential offerings like Amazon Bedrock. We've also launched Amazon EC2 instances powered by"
+      },
+      {
+        "call": "amazon_2025_Q4",
+        "passage_id": "amazon-2025_Q4-00991",
+        "keywords": "AI",
+        "text": "and with the incremental opportunities available to us in areas like AI, chips, low-Earth orbit satellites, quick commerce,"
+      },
+      {
+        "call": "amazon_2025_Q4",
+        "passage_id": "amazon-2025_Q4-00992",
+        "keywords": "AI",
+        "text": "We're continuing to see strong growth in core non-AI workloads as enterprises return to focusing on moving infrastructure"
+      },
+      {
+        "call": "amazon_2026_Q1",
+        "passage_id": "amazon-2026_Q1-01053",
+        "keywords": "bedrock",
+        "text": "high performance inference with the leading selection of frontier models on Bedrock, which saw 170% growth in customer spend"
+      },
+      {
+        "call": "amazon_2026_Q1",
+        "passage_id": "amazon-2026_Q1-01055",
+        "keywords": "bedrock; openai",
+        "text": "Yesterday, we also started the preview of Amazon Bedrock Managed Agents powered by OpenAI, the stateful runtime environment"
+      },
+      {
+        "call": "apple_FY24_Q3",
+        "passage_id": "apple-FY24_Q3-01174",
+        "keywords": "AI",
+        "text": "iPhone revenue and then wearable accessories that will come in the expectation there is 7.83 billion so focusing on that you want to be looking to just see that they can just continue to sell uh you know the ecosystem right and then Service"
+      },
+      {
+        "call": "apple_FY24_Q3",
+        "passage_id": "apple-FY24_Q3-01175",
+        "keywords": "AI; chat gpt; open ai",
+        "text": "tight on the cues right that's 457 it's only a seven Cent spread right and so right when Apple's report comes out all the market makers they go wide they're like you know what we're not giving you tight spread anymore I just I just got a te"
+      },
+      {
+        "call": "meta_2025_Q1",
+        "passage_id": "meta-2025_Q1-01657",
+        "keywords": "AI",
+        "text": "Family of Apps operating income was $21.8 billion, representing a 52% operating margin. lower Meta Quest sales, which were partially offset by increased sales of Ray -Ban Meta AI glasses. Reality Labs expenses were $4.6 billion, up 8% year-"
+      },
+      {
+        "call": "meta_2025_Q1",
+        "passage_id": "meta-2025_Q1-01674",
+        "keywords": "AI",
+        "text": "And how do you think about positioning standalones for the consumer AI apps? Thank you."
+      },
+      {
+        "call": "meta_2025_Q2",
+        "passage_id": "meta-2025_Q2-01702",
+        "keywords": "AI",
+        "text": "Family of Apps operating income was $25.0 billion, representing a 53% operating margin. increased sales of AI glasses, partially offset by lower Quest sales. Reality Labs expenses were $4.9 billion, up 1% year-over-year driven by higher non"
+      },
+      {
+        "call": "meta_2026_Q1",
+        "passage_id": "meta-2026_Q1-01807",
+        "keywords": "AI",
+        "text": "Family of Apps other revenue was $885 million, up 74%, driven primarily by WhatsApp paid messaging and subscriptions revenue. lower Quest headset sales, which were partially offset by continued strong growth in AI glasses revenue. Moving no"
+      },
+      {
+        "call": "meta_2026_Q2",
+        "passage_id": "meta-2026_Q2-01851",
+        "keywords": "AI",
+        "text": "For the first time, quarterly Family of Apps other revenue reached $1 billion and grew 73% year - over-year, driven primarily by WhatsApp paid messaging and subscriptions revenue. strong growth in AI glasses revenue, partially offset by low"
+      },
+      {
+        "call": "microsoft_FY25_Q4",
+        "passage_id": "microsoft-FY25_Q4-02337",
+        "keywords": "gpt-4",
+        "text": "I think one of the other things, Kash, is that I think I said this in a previous learnings as well, which is the difference between a hoster and a hyperscaler is software, and the same is going to be true here. That GPT-4o example I gave is"
+      },
+      {
+        "call": "microsoft_FY26_Q1",
+        "passage_id": "microsoft-FY26_Q1-02370",
+        "keywords": "gpt-4",
+        "text": "And that means you also use software to grow efficiency. I talked about, I think, 30% improvement on both serving up GPT-41 and 5o. That’s software."
+      },
+      {
+        "call": "nvidia_FY26_Q3",
+        "passage_id": "nvidia-FY26_Q3-02964",
+        "keywords": "gemini",
+        "text": "And so, all of these exponentials, not to mention, just today, I was reading a text from Demis, and he was saying that pre-training and post-training are fully intact. And the Gemini 3 takes advantage of the scaling loss and got – NVIDIA Co"
+      },
+      {
+        "call": "nvidia_FY27_Q1",
+        "passage_id": "nvidia-FY27_Q1-03075",
+        "keywords": "AI.",
+        "text": "Copyright © 2001-2026 FactSet CallStreet, LLC because of AI. And so I expect the second category to be larger over time, both in the near term, over the next several years."
+      }
+    ],
+    "roles": {
+      "canonical": "primary measurement source: sentence order, flags, prepared/Q&A split, stable IDs",
+      "tanush": "auxiliary audit/context source; never merged with or substituted for canonical rows"
+    }
+  },
+  "B4_legacy": {
+    "legacy_validation_json_versions": {
+      "fb184fe": {
+        "amazon_coverage": {
+          "source": 15,
+          "output": 15
+        },
+        "verbatim_checked": 48555,
+        "verbatim_failures": 0,
+        "false_positive_ai_tokens": 4,
+        "flag_totals": {
+          "uncertain": 2536,
+          "context-dependent": 574,
+          "long": 1
+        }
+      },
+      "c1dd6c6": {
+        "amazon_coverage": {
+          "source": 15,
+          "output": 15
+        },
+        "verbatim_checked": 48555,
+        "verbatim_failures": 0,
+        "false_positive_ai_tokens": 0,
+        "flag_totals": {
+          "uncertain": 2536,
+          "context-dependent": 574,
+          "long": 1
+        }
+      },
+      "a33883b": {
+        "amazon_coverage": {
+          "source": 8,
+          "output": 8
+        },
+        "verbatim_checked": 45293,
+        "verbatim_failures": 8,
+        "false_positive_ai_tokens": 4,
+        "flag_totals": {
+          "uncertain": 2419,
+          "context-dependent": 531,
+          "long": 1
+        }
+      }
+    },
+    "filter_method_md_claims": {
+      "verbatim_checked": 48555,
+      "verbatim_failures": 0,
+      "false_positive_ai_tokens": 0,
+      "uncertain": 2536,
+      "context_dependent": 574,
+      "tesla_split_claimed": "9 Motley Fool / 6 captions"
+    },
+    "current_filter_code_on_current_raw": {
+      "original_105_calls": {
+        "calls": 105,
+        "units": 49005,
+        "ai": 9669,
+        "uncertain": 2536,
+        "context_dependent": 573,
+        "false_positive_ai_tokens": 0,
+        "verbatim_failures_all_filter_units": 1,
+        "units_checked": 49005
+      },
+      "all_116_calls": {
+        "calls": 116,
+        "units": 54350,
+        "ai": 9884,
+        "uncertain": 2566,
+        "context_dependent": 585,
+        "false_positive_ai_tokens": 0,
+        "verbatim_failures_all_filter_units": 1,
+        "units_checked": 54350
+      }
+    },
+    "tesla_source_split": {
+      "current": {
+        "third_party_transcript_motley_fool": 8,
+        "youtube_auto_captions": 7
+      },
+      "motley_fool_files_at_a33883b": 8
+    },
+    "snapshot_4b47e6a_rerun": {
+      "commit": "4b47e6a",
+      "amazon_files": {
+        "source": 8,
+        "output": 8
+      },
+      "verbatim_checked": 45394,
+      "verbatim_failures": 5,
+      "false_positive_ai_tokens": 4,
+      "flag_totals": {
+        "uncertain": 2365,
+        "context-dependent": 530,
+        "long": 1
+      }
+    }
+  },
+  "B5_manual_review_sample": {
+    "seed": 20261006,
+    "n": 150,
+    "strata": 28,
+    "allocation": {
+      "alphabet/prepared_remarks/core": 5,
+      "alphabet/prepared_remarks/uncertain": 5,
+      "alphabet/qa/core": 5,
+      "alphabet/qa/uncertain": 5,
+      "amazon/prepared_remarks/core": 5,
+      "amazon/prepared_remarks/uncertain": 5,
+      "amazon/qa/core": 5,
+      "amazon/qa/uncertain": 5,
+      "apple/prepared_remarks/core": 5,
+      "apple/prepared_remarks/uncertain": 5,
+      "apple/qa/core": 5,
+      "apple/qa/uncertain": 5,
+      "meta/prepared_remarks/core": 5,
+      "meta/prepared_remarks/uncertain": 5,
+      "meta/qa/core": 5,
+      "meta/qa/uncertain": 5,
+      "microsoft/prepared_remarks/core": 5,
+      "microsoft/prepared_remarks/uncertain": 5,
+      "microsoft/qa/core": 5,
+      "microsoft/qa/uncertain": 5,
+      "nvidia/prepared_remarks/core": 5,
+      "nvidia/prepared_remarks/uncertain": 5,
+      "nvidia/qa/core": 5,
+      "nvidia/qa/uncertain": 5,
+      "tesla/prepared_remarks/core": 5,
+      "tesla/prepared_remarks/uncertain": 5,
+      "tesla/qa/core": 5,
+      "tesla/qa/uncertain": 5
+    },
+    "caption_segment_top_up": 10,
+    "by_company": {
+      "alphabet": 20,
+      "amazon": 20,
+      "apple": 29,
+      "meta": 20,
+      "microsoft": 20,
+      "nvidia": 20,
+      "tesla": 21
+    },
+    "by_section": {
+      "qa": 76,
+      "prepared_remarks": 74
+    },
+    "by_match_type": {
+      "uncertain": 71,
+      "core": 79
+    },
+    "by_unit_type": {
+      "sentence": 95,
+      "whisper_unit": 20,
+      "caption_segment": 13,
+      "caption_sentence": 22
+    },
+    "by_calendar_year": {
+      "2022": 6,
+      "2023": 28,
+      "2024": 43,
+      "2025": 50,
+      "2026": 23
+    },
+    "by_source_type": {
+      "official_ir_transcript_pdf": 40,
+      "machine_transcript_whisper_of_official_ir_audio": 20,
+      "third_party_transcript_motley_fool": 26,
+      "youtube_auto_captions": 35,
+      "official_ir_transcript_docx": 2,
+      "official_ir_transcript_html": 18,
+      "official_ir_pdf_factset_callstreet": 9
+    },
+    "judgment_columns_blank": true,
+    "note": "Review questions are mechanical (is it about AI, text/speaker/section/unit correct). No opportunity/risk/efficiency/workforce or other substantive labels."
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "build_version": "canonical-v1",
-  "extraction_version": "filter_earnings_calls.py@sha256:77253990a036/canonical-v1",
-  "status_note": "Build integrity checks only. This is NOT a validation of the AI filter's recall or precision (Gate 4). Do not describe the filter as validated.",
+  "build_version": "canonical-v2",
+  "extraction_version": "filter_earnings_calls.py@sha256:77253990a036/canonical-v2",
+  "status_note": "Build integrity checks only, run by code. Not a human validation and not a recall/precision validation of the AI filter. Gate 4 results: gate4_validation.json.",
   "counts": {
     "source_raw_transcript_files_found": 116,
     "committed_sentence_filter_files_found": 105,
@@ -179,17 +179,39 @@
     "whisper_unit": 974
   },
   "by_speaker_role": {
-    "analyst": 622,
+    "analyst": 798,
     "company_representative": 7151,
-    "operator": 25,
+    "operator": 16,
     "unknown": 9,
     "unlabeled": 1858,
-    "unresolved": 219
+    "unresolved": 52
+  },
+  "by_speaker_status": {
+    "operator": 3,
+    "resolved": 6999,
+    "resolved_corrected": 176,
+    "unknown_speaker_in_source": 9,
+    "unlabeled_source": 1858,
+    "unresolved_bare_name": 37,
+    "unverified_meta_label_loss_risk": 733,
+    "unverified_raw_label_misplacement": 69
   },
   "by_section_method": {
     "explicit_section_header": 2413,
     "first_operator_turn_after_management": 3376,
     "transition_phrase_heuristic": 4095
+  },
+  "passages_by_context_continuity": {
+    "anchor_only_no_same_turn_neighbour": 9,
+    "same_labelled_speaker_turn": 7215,
+    "same_turn_meta_label_loss_risk": 733,
+    "same_turn_raw_label_misplacement_risk": 69,
+    "same_turn_unlabelled_source_speaker_unverified": 1858
+  },
+  "passages_by_n_units": {
+    "1": 9,
+    "2": 363,
+    "3": 9512
   },
   "flag_counts": {
     "is_uncertain": 2566,
@@ -197,15 +219,27 @@
     "is_context_dependent": 585,
     "is_long": 1
   },
-  "speaker_attribution_warning_rows": 175,
   "borderline_by_type": {
     "automation_robotics_no_ai_term": 456,
     "infrastructure_no_ai_term": 1957
+  },
+  "speaker_corrections": {
+    "units_changed_any_kind": 1397,
+    "units_speaker_changed": 1397,
+    "units_text_changed_label_removed": 212,
+    "ai_rows_speaker_changed": 176,
+    "by_rule": {
+      "alphabet_name_comma_firm_label": 255,
+      "msft_name_comma_firm_label": 973,
+      "same_transcript_name_propagation": 169
+    }
   },
   "integrity": {
     "duplicate_sentence_ids": 0,
     "duplicate_passage_ids": 0,
     "duplicate_borderline_ids": 0,
+    "orphaned_passage_anchors": 0,
+    "one_passage_per_sentence": true,
     "missing_required_field_counts": {
       "sentence_id": 0,
       "call_id": 0,
@@ -214,15 +248,28 @@
       "period_label": 0,
       "calendar_year": 0,
       "calendar_quarter": 0,
+      "fiscal_or_calendar_label": 0,
+      "call_date_source": 0,
       "source_file": 0,
       "source_type": 0,
+      "parser_format": 0,
       "unit_type": 0,
       "section": 0,
+      "section_method": 0,
       "speaker": 0,
       "speaker_role": 0,
+      "speaker_status": 0,
+      "turn_order_in_call": 0,
       "sentence_order_in_call": 0,
+      "sentence_order_in_section": 0,
       "text_verbatim": 0,
+      "word_count": 0,
       "trigger_terms": 0,
+      "is_uncertain": 0,
+      "is_safe_harbor": 0,
+      "is_context_dependent": 0,
+      "is_long": 0,
+      "in_committed_filter_output": 0,
       "extraction_version": 0
     },
     "missing_required_field_total": 0,
@@ -294,9 +341,8 @@
         "reason": "raw-file metadata gives no URL (Nvidia FY26 Q1 - FY27 Q2)"
       }
     },
-    "every_passage_has_valid_anchor_and_one_per_sentence": true,
     "semantic_label_columns_present": false,
-    "rows_match_filter_process_file": true,
+    "filter_reference_rows_match_process_file": true,
     "verbatim_check": {
       "method": "filter_earnings_calls.verbatim_found against the raw body",
       "checked_ai_rows": 9884,
@@ -308,696 +354,812 @@
     "alphabet_2022_Q1": {
       "source_file": "earnings_calls/alphabet/alphabet_2022_Q1.md",
       "ai_rows": 12,
+      "passage_rows": 12,
       "total_units": 456,
       "committed_filter_output": "absent"
     },
     "alphabet_2022_Q2": {
       "source_file": "earnings_calls/alphabet/alphabet_2022_Q2.md",
       "ai_rows": 24,
+      "passage_rows": 24,
       "total_units": 485,
       "committed_filter_output": "absent"
     },
     "alphabet_2022_Q3": {
       "source_file": "earnings_calls/alphabet/alphabet_2022_Q3.md",
       "ai_rows": 22,
+      "passage_rows": 22,
       "total_units": 475,
       "committed_filter_output": "absent"
     },
     "alphabet_2022_Q4": {
       "source_file": "earnings_calls/alphabet/alphabet_2022_Q4.md",
       "ai_rows": 76,
+      "passage_rows": 76,
       "total_units": 468,
       "committed_filter_output": "present"
     },
     "alphabet_2023_Q1": {
       "source_file": "earnings_calls/alphabet/alphabet_2023_Q1.md",
       "ai_rows": 79,
+      "passage_rows": 79,
       "total_units": 516,
       "committed_filter_output": "present"
     },
     "alphabet_2023_Q2": {
       "source_file": "earnings_calls/alphabet/alphabet_2023_Q2.md",
       "ai_rows": 95,
+      "passage_rows": 95,
       "total_units": 509,
       "committed_filter_output": "present"
     },
     "alphabet_2023_Q3": {
       "source_file": "earnings_calls/alphabet/alphabet_2023_Q3.md",
       "ai_rows": 83,
+      "passage_rows": 83,
       "total_units": 453,
       "committed_filter_output": "present"
     },
     "alphabet_2023_Q4": {
       "source_file": "earnings_calls/alphabet/alphabet_2023_Q4.md",
       "ai_rows": 96,
+      "passage_rows": 96,
       "total_units": 496,
       "committed_filter_output": "present"
     },
     "alphabet_2024_Q1": {
       "source_file": "earnings_calls/alphabet/alphabet_2024_Q1.md",
       "ai_rows": 87,
+      "passage_rows": 87,
       "total_units": 488,
       "committed_filter_output": "present"
     },
     "alphabet_2024_Q2": {
       "source_file": "earnings_calls/alphabet/alphabet_2024_Q2.md",
       "ai_rows": 109,
+      "passage_rows": 109,
       "total_units": 496,
       "committed_filter_output": "present"
     },
     "alphabet_2024_Q3": {
       "source_file": "earnings_calls/alphabet/alphabet_2024_Q3.md",
       "ai_rows": 129,
+      "passage_rows": 129,
       "total_units": 558,
       "committed_filter_output": "present"
     },
     "alphabet_2024_Q4": {
       "source_file": "earnings_calls/alphabet/alphabet_2024_Q4.md",
       "ai_rows": 127,
+      "passage_rows": 127,
       "total_units": 527,
       "committed_filter_output": "present"
     },
     "alphabet_2025_Q1": {
       "source_file": "earnings_calls/alphabet/alphabet_2025_Q1.md",
       "ai_rows": 107,
+      "passage_rows": 107,
       "total_units": 488,
       "committed_filter_output": "present"
     },
     "alphabet_2025_Q2": {
       "source_file": "earnings_calls/alphabet/alphabet_2025_Q2.md",
       "ai_rows": 126,
+      "passage_rows": 126,
       "total_units": 508,
       "committed_filter_output": "present"
     },
     "alphabet_2025_Q3": {
       "source_file": "earnings_calls/alphabet/alphabet_2025_Q3.md",
       "ai_rows": 141,
+      "passage_rows": 141,
       "total_units": 453,
       "committed_filter_output": "present"
     },
     "alphabet_2025_Q4": {
       "source_file": "earnings_calls/alphabet/alphabet_2025_Q4.md",
       "ai_rows": 158,
+      "passage_rows": 158,
       "total_units": 515,
       "committed_filter_output": "present"
     },
     "alphabet_2026_Q1": {
       "source_file": "earnings_calls/alphabet/alphabet_2026_Q1.md",
       "ai_rows": 161,
+      "passage_rows": 161,
       "total_units": 504,
       "committed_filter_output": "present"
     },
     "alphabet_2026_Q2": {
       "source_file": "earnings_calls/alphabet/alphabet_2026_Q2.md",
       "ai_rows": 174,
+      "passage_rows": 174,
       "total_units": 523,
       "committed_filter_output": "present"
     },
     "amazon_2022_Q4": {
       "source_file": "earnings_calls/amazon/amazon_2022_Q4.md",
       "ai_rows": 1,
+      "passage_rows": 1,
       "total_units": 381,
       "committed_filter_output": "present"
     },
     "amazon_2023_Q1": {
       "source_file": "earnings_calls/amazon/amazon_2023_Q1.md",
       "ai_rows": 38,
+      "passage_rows": 38,
       "total_units": 546,
       "committed_filter_output": "present"
     },
     "amazon_2023_Q2": {
       "source_file": "earnings_calls/amazon/amazon_2023_Q2.md",
       "ai_rows": 54,
+      "passage_rows": 54,
       "total_units": 364,
       "committed_filter_output": "present"
     },
     "amazon_2023_Q3": {
       "source_file": "earnings_calls/amazon/amazon_2023_Q3.md",
       "ai_rows": 73,
+      "passage_rows": 73,
       "total_units": 392,
       "committed_filter_output": "present"
     },
     "amazon_2023_Q4": {
       "source_file": "earnings_calls/amazon/amazon_2023_Q4.md",
       "ai_rows": 50,
+      "passage_rows": 50,
       "total_units": 442,
       "committed_filter_output": "present"
     },
     "amazon_2024_Q1": {
       "source_file": "earnings_calls/amazon/amazon_2024_Q1.md",
       "ai_rows": 56,
+      "passage_rows": 56,
       "total_units": 457,
       "committed_filter_output": "present"
     },
     "amazon_2024_Q2": {
       "source_file": "earnings_calls/amazon/amazon_2024_Q2.md",
       "ai_rows": 53,
+      "passage_rows": 53,
       "total_units": 409,
       "committed_filter_output": "present"
     },
     "amazon_2024_Q3": {
       "source_file": "earnings_calls/amazon/amazon_2024_Q3.md",
       "ai_rows": 58,
+      "passage_rows": 58,
       "total_units": 411,
       "committed_filter_output": "present"
     },
     "amazon_2024_Q4": {
       "source_file": "earnings_calls/amazon/amazon_2024_Q4.md",
       "ai_rows": 82,
+      "passage_rows": 82,
       "total_units": 384,
       "committed_filter_output": "present"
     },
     "amazon_2025_Q1": {
       "source_file": "earnings_calls/amazon/amazon_2025_Q1.md",
       "ai_rows": 70,
+      "passage_rows": 70,
       "total_units": 444,
       "committed_filter_output": "present"
     },
     "amazon_2025_Q2": {
       "source_file": "earnings_calls/amazon/amazon_2025_Q2.md",
       "ai_rows": 80,
+      "passage_rows": 80,
       "total_units": 492,
       "committed_filter_output": "present"
     },
     "amazon_2025_Q3": {
       "source_file": "earnings_calls/amazon/amazon_2025_Q3.md",
       "ai_rows": 76,
+      "passage_rows": 76,
       "total_units": 451,
       "committed_filter_output": "present"
     },
     "amazon_2025_Q4": {
       "source_file": "earnings_calls/amazon/amazon_2025_Q4.md",
       "ai_rows": 96,
+      "passage_rows": 96,
       "total_units": 522,
       "committed_filter_output": "present"
     },
     "amazon_2026_Q1": {
       "source_file": "earnings_calls/amazon/amazon_2026_Q1.md",
       "ai_rows": 100,
+      "passage_rows": 100,
       "total_units": 425,
       "committed_filter_output": "present"
     },
     "amazon_2026_Q2": {
       "source_file": "earnings_calls/amazon/amazon_2026_Q2.md",
       "ai_rows": 87,
+      "passage_rows": 87,
       "total_units": 427,
       "committed_filter_output": "present"
     },
     "apple_FY23_Q1": {
       "source_file": "earnings_calls/apple/apple_FY23_Q1.md",
       "ai_rows": 2,
+      "passage_rows": 2,
       "total_units": 512,
       "committed_filter_output": "present"
     },
     "apple_FY23_Q2": {
       "source_file": "earnings_calls/apple/apple_FY23_Q2.md",
       "ai_rows": 4,
+      "passage_rows": 4,
       "total_units": 117,
       "committed_filter_output": "present"
     },
     "apple_FY23_Q3": {
       "source_file": "earnings_calls/apple/apple_FY23_Q3.md",
       "ai_rows": 5,
+      "passage_rows": 5,
       "total_units": 469,
       "committed_filter_output": "present"
     },
     "apple_FY23_Q4": {
       "source_file": "earnings_calls/apple/apple_FY23_Q4.md",
       "ai_rows": 5,
+      "passage_rows": 5,
       "total_units": 116,
       "committed_filter_output": "present"
     },
     "apple_FY24_Q1": {
       "source_file": "earnings_calls/apple/apple_FY24_Q1.md",
       "ai_rows": 11,
+      "passage_rows": 11,
       "total_units": 110,
       "committed_filter_output": "present"
     },
     "apple_FY24_Q2": {
       "source_file": "earnings_calls/apple/apple_FY24_Q2.md",
       "ai_rows": 14,
+      "passage_rows": 14,
       "total_units": 111,
       "committed_filter_output": "present"
     },
     "apple_FY24_Q3": {
       "source_file": "earnings_calls/apple/apple_FY24_Q3.md",
       "ai_rows": 31,
+      "passage_rows": 31,
       "total_units": 113,
       "committed_filter_output": "present"
     },
     "apple_FY24_Q4": {
       "source_file": "earnings_calls/apple/apple_FY24_Q4.md",
       "ai_rows": 35,
+      "passage_rows": 35,
       "total_units": 512,
       "committed_filter_output": "present"
     },
     "apple_FY25_Q1": {
       "source_file": "earnings_calls/apple/apple_FY25_Q1.md",
       "ai_rows": 24,
+      "passage_rows": 24,
       "total_units": 107,
       "committed_filter_output": "present"
     },
     "apple_FY25_Q2": {
       "source_file": "earnings_calls/apple/apple_FY25_Q2.md",
       "ai_rows": 31,
+      "passage_rows": 31,
       "total_units": 473,
       "committed_filter_output": "present"
     },
     "apple_FY25_Q3": {
       "source_file": "earnings_calls/apple/apple_FY25_Q3.md",
       "ai_rows": 35,
+      "passage_rows": 35,
       "total_units": 480,
       "committed_filter_output": "present"
     },
     "apple_FY25_Q4": {
       "source_file": "earnings_calls/apple/apple_FY25_Q4.md",
       "ai_rows": 29,
+      "passage_rows": 29,
       "total_units": 531,
       "committed_filter_output": "present"
     },
     "apple_FY26_Q1": {
       "source_file": "earnings_calls/apple/apple_FY26_Q1.md",
       "ai_rows": 28,
+      "passage_rows": 28,
       "total_units": 483,
       "committed_filter_output": "present"
     },
     "apple_FY26_Q2": {
       "source_file": "earnings_calls/apple/apple_FY26_Q2.md",
       "ai_rows": 25,
+      "passage_rows": 25,
       "total_units": 530,
       "committed_filter_output": "present"
     },
     "apple_FY26_Q3": {
       "source_file": "earnings_calls/apple/apple_FY26_Q3.md",
       "ai_rows": 40,
+      "passage_rows": 40,
       "total_units": 510,
       "committed_filter_output": "present"
     },
     "meta_2021_Q4": {
       "source_file": "earnings_calls/meta/meta_2021_Q4.md",
       "ai_rows": 12,
+      "passage_rows": 12,
       "total_units": 513,
       "committed_filter_output": "absent"
     },
     "meta_2022_Q1": {
       "source_file": "earnings_calls/meta/meta_2022_Q1.md",
       "ai_rows": 22,
+      "passage_rows": 22,
       "total_units": 517,
       "committed_filter_output": "absent"
     },
     "meta_2022_Q2": {
       "source_file": "earnings_calls/meta/meta_2022_Q2.md",
       "ai_rows": 37,
+      "passage_rows": 37,
       "total_units": 559,
       "committed_filter_output": "absent"
     },
     "meta_2022_Q3": {
       "source_file": "earnings_calls/meta/meta_2022_Q3.md",
       "ai_rows": 32,
+      "passage_rows": 32,
       "total_units": 464,
       "committed_filter_output": "absent"
     },
     "meta_2022_Q4": {
       "source_file": "earnings_calls/meta/meta_2022_Q4.md",
       "ai_rows": 34,
+      "passage_rows": 34,
       "total_units": 509,
       "committed_filter_output": "present"
     },
     "meta_2023_Q1": {
       "source_file": "earnings_calls/meta/meta_2023_Q1.md",
       "ai_rows": 64,
+      "passage_rows": 64,
       "total_units": 487,
       "committed_filter_output": "present"
     },
     "meta_2023_Q2": {
       "source_file": "earnings_calls/meta/meta_2023_Q2.md",
       "ai_rows": 75,
+      "passage_rows": 75,
       "total_units": 497,
       "committed_filter_output": "present"
     },
     "meta_2023_Q3": {
       "source_file": "earnings_calls/meta/meta_2023_Q3.md",
       "ai_rows": 77,
+      "passage_rows": 77,
       "total_units": 471,
       "committed_filter_output": "present"
     },
     "meta_2023_Q4": {
       "source_file": "earnings_calls/meta/meta_2023_Q4.md",
       "ai_rows": 83,
+      "passage_rows": 83,
       "total_units": 467,
       "committed_filter_output": "present"
     },
     "meta_2024_Q1": {
       "source_file": "earnings_calls/meta/meta_2024_Q1.md",
       "ai_rows": 119,
+      "passage_rows": 119,
       "total_units": 447,
       "committed_filter_output": "present"
     },
     "meta_2024_Q2": {
       "source_file": "earnings_calls/meta/meta_2024_Q2.md",
       "ai_rows": 111,
+      "passage_rows": 111,
       "total_units": 468,
       "committed_filter_output": "present"
     },
     "meta_2024_Q3": {
       "source_file": "earnings_calls/meta/meta_2024_Q3.md",
       "ai_rows": 85,
+      "passage_rows": 85,
       "total_units": 443,
       "committed_filter_output": "present"
     },
     "meta_2024_Q4": {
       "source_file": "earnings_calls/meta/meta_2024_Q4.md",
       "ai_rows": 94,
+      "passage_rows": 94,
       "total_units": 463,
       "committed_filter_output": "present"
     },
     "meta_2025_Q1": {
       "source_file": "earnings_calls/meta/meta_2025_Q1.md",
       "ai_rows": 122,
+      "passage_rows": 122,
       "total_units": 455,
       "committed_filter_output": "present"
     },
     "meta_2025_Q2": {
       "source_file": "earnings_calls/meta/meta_2025_Q2.md",
       "ai_rows": 112,
+      "passage_rows": 112,
       "total_units": 451,
       "committed_filter_output": "present"
     },
     "meta_2025_Q3": {
       "source_file": "earnings_calls/meta/meta_2025_Q3.md",
       "ai_rows": 101,
+      "passage_rows": 101,
       "total_units": 446,
       "committed_filter_output": "present"
     },
     "meta_2025_Q4": {
       "source_file": "earnings_calls/meta/meta_2025_Q4.md",
       "ai_rows": 112,
+      "passage_rows": 112,
       "total_units": 477,
       "committed_filter_output": "present"
     },
     "meta_2026_Q1": {
       "source_file": "earnings_calls/meta/meta_2026_Q1.md",
       "ai_rows": 135,
+      "passage_rows": 135,
       "total_units": 480,
       "committed_filter_output": "present"
     },
     "meta_2026_Q2": {
       "source_file": "earnings_calls/meta/meta_2026_Q2.md",
       "ai_rows": 143,
+      "passage_rows": 143,
       "total_units": 509,
       "committed_filter_output": "present"
     },
     "microsoft_FY22_Q2": {
       "source_file": "earnings_calls/microsoft/microsoft_FY22_Q2.md",
       "ai_rows": 9,
+      "passage_rows": 9,
       "total_units": 448,
       "committed_filter_output": "absent"
     },
     "microsoft_FY22_Q3": {
       "source_file": "earnings_calls/microsoft/microsoft_FY22_Q3.md",
       "ai_rows": 13,
+      "passage_rows": 13,
       "total_units": 453,
       "committed_filter_output": "absent"
     },
     "microsoft_FY22_Q4": {
       "source_file": "earnings_calls/microsoft/microsoft_FY22_Q4.md",
       "ai_rows": 9,
+      "passage_rows": 9,
       "total_units": 466,
       "committed_filter_output": "absent"
     },
     "microsoft_FY23_Q1": {
       "source_file": "earnings_calls/microsoft/microsoft_FY23_Q1.md",
       "ai_rows": 23,
+      "passage_rows": 23,
       "total_units": 509,
       "committed_filter_output": "absent"
     },
     "microsoft_FY23_Q2": {
       "source_file": "earnings_calls/microsoft/microsoft_FY23_Q2.md",
       "ai_rows": 49,
+      "passage_rows": 49,
       "total_units": 485,
       "committed_filter_output": "present"
     },
     "microsoft_FY23_Q3": {
       "source_file": "earnings_calls/microsoft/microsoft_FY23_Q3.md",
       "ai_rows": 79,
+      "passage_rows": 79,
       "total_units": 464,
       "committed_filter_output": "present"
     },
     "microsoft_FY23_Q4": {
       "source_file": "earnings_calls/microsoft/microsoft_FY23_Q4.md",
       "ai_rows": 101,
+      "passage_rows": 101,
       "total_units": 516,
       "committed_filter_output": "present"
     },
     "microsoft_FY24_Q1": {
       "source_file": "earnings_calls/microsoft/microsoft_FY24_Q1.md",
       "ai_rows": 90,
+      "passage_rows": 90,
       "total_units": 476,
       "committed_filter_output": "present"
     },
     "microsoft_FY24_Q2": {
       "source_file": "earnings_calls/microsoft/microsoft_FY24_Q2.md",
       "ai_rows": 123,
+      "passage_rows": 123,
       "total_units": 522,
       "committed_filter_output": "present"
     },
     "microsoft_FY24_Q3": {
       "source_file": "earnings_calls/microsoft/microsoft_FY24_Q3.md",
       "ai_rows": 118,
+      "passage_rows": 118,
       "total_units": 502,
       "committed_filter_output": "present"
     },
     "microsoft_FY24_Q4": {
       "source_file": "earnings_calls/microsoft/microsoft_FY24_Q4.md",
       "ai_rows": 94,
+      "passage_rows": 94,
       "total_units": 507,
       "committed_filter_output": "present"
     },
     "microsoft_FY25_Q1": {
       "source_file": "earnings_calls/microsoft/microsoft_FY25_Q1.md",
       "ai_rows": 140,
+      "passage_rows": 140,
       "total_units": 524,
       "committed_filter_output": "present"
     },
     "microsoft_FY25_Q2": {
       "source_file": "earnings_calls/microsoft/microsoft_FY25_Q2.md",
       "ai_rows": 142,
+      "passage_rows": 142,
       "total_units": 501,
       "committed_filter_output": "present"
     },
     "microsoft_FY25_Q3": {
       "source_file": "earnings_calls/microsoft/microsoft_FY25_Q3.md",
       "ai_rows": 116,
+      "passage_rows": 116,
       "total_units": 485,
       "committed_filter_output": "present"
     },
     "microsoft_FY25_Q4": {
       "source_file": "earnings_calls/microsoft/microsoft_FY25_Q4.md",
       "ai_rows": 106,
+      "passage_rows": 106,
       "total_units": 454,
       "committed_filter_output": "present"
     },
     "microsoft_FY26_Q1": {
       "source_file": "earnings_calls/microsoft/microsoft_FY26_Q1.md",
       "ai_rows": 125,
+      "passage_rows": 125,
       "total_units": 508,
       "committed_filter_output": "present"
     },
     "microsoft_FY26_Q2": {
       "source_file": "earnings_calls/microsoft/microsoft_FY26_Q2.md",
       "ai_rows": 137,
+      "passage_rows": 137,
       "total_units": 483,
       "committed_filter_output": "present"
     },
     "microsoft_FY26_Q3": {
       "source_file": "earnings_calls/microsoft/microsoft_FY26_Q3.md",
       "ai_rows": 138,
+      "passage_rows": 138,
       "total_units": 506,
       "committed_filter_output": "present"
     },
     "microsoft_FY26_Q4": {
       "source_file": "earnings_calls/microsoft/microsoft_FY26_Q4.md",
       "ai_rows": 138,
+      "passage_rows": 138,
       "total_units": 519,
       "committed_filter_output": "present"
     },
     "nvidia_FY23_Q4": {
       "source_file": "earnings_calls/nvidia/nvidia_FY23_Q4.md",
       "ai_rows": 126,
+      "passage_rows": 126,
       "total_units": 482,
       "committed_filter_output": "present"
     },
     "nvidia_FY24_Q1": {
       "source_file": "earnings_calls/nvidia/nvidia_FY24_Q1.md",
       "ai_rows": 144,
+      "passage_rows": 144,
       "total_units": 518,
       "committed_filter_output": "present"
     },
     "nvidia_FY24_Q2": {
       "source_file": "earnings_calls/nvidia/nvidia_FY24_Q2.md",
       "ai_rows": 138,
+      "passage_rows": 138,
       "total_units": 470,
       "committed_filter_output": "present"
     },
     "nvidia_FY24_Q3": {
       "source_file": "earnings_calls/nvidia/nvidia_FY24_Q3.md",
       "ai_rows": 193,
+      "passage_rows": 193,
       "total_units": 541,
       "committed_filter_output": "present"
     },
     "nvidia_FY24_Q4": {
       "source_file": "earnings_calls/nvidia/nvidia_FY24_Q4.md",
       "ai_rows": 143,
+      "passage_rows": 143,
       "total_units": 511,
       "committed_filter_output": "present"
     },
     "nvidia_FY25_Q1": {
       "source_file": "earnings_calls/nvidia/nvidia_FY25_Q1.md",
       "ai_rows": 166,
+      "passage_rows": 166,
       "total_units": 484,
       "committed_filter_output": "present"
     },
     "nvidia_FY25_Q2": {
       "source_file": "earnings_calls/nvidia/nvidia_FY25_Q2.md",
       "ai_rows": 195,
+      "passage_rows": 195,
       "total_units": 544,
       "committed_filter_output": "present"
     },
     "nvidia_FY25_Q3": {
       "source_file": "earnings_calls/nvidia/nvidia_FY25_Q3.md",
       "ai_rows": 189,
+      "passage_rows": 189,
       "total_units": 507,
       "committed_filter_output": "present"
     },
     "nvidia_FY25_Q4": {
       "source_file": "earnings_calls/nvidia/nvidia_FY25_Q4.md",
       "ai_rows": 187,
+      "passage_rows": 187,
       "total_units": 505,
       "committed_filter_output": "present"
     },
     "nvidia_FY26_Q1": {
       "source_file": "earnings_calls/nvidia/nvidia_FY26_Q1.md",
       "ai_rows": 203,
+      "passage_rows": 203,
       "total_units": 470,
       "committed_filter_output": "present"
     },
     "nvidia_FY26_Q2": {
       "source_file": "earnings_calls/nvidia/nvidia_FY26_Q2.md",
       "ai_rows": 181,
+      "passage_rows": 181,
       "total_units": 466,
       "committed_filter_output": "present"
     },
     "nvidia_FY26_Q3": {
       "source_file": "earnings_calls/nvidia/nvidia_FY26_Q3.md",
       "ai_rows": 170,
+      "passage_rows": 170,
       "total_units": 498,
       "committed_filter_output": "present"
     },
     "nvidia_FY26_Q4": {
       "source_file": "earnings_calls/nvidia/nvidia_FY26_Q4.md",
       "ai_rows": 172,
+      "passage_rows": 172,
       "total_units": 509,
       "committed_filter_output": "present"
     },
     "nvidia_FY27_Q1": {
       "source_file": "earnings_calls/nvidia/nvidia_FY27_Q1.md",
       "ai_rows": 173,
+      "passage_rows": 173,
       "total_units": 525,
       "committed_filter_output": "present"
     },
     "nvidia_FY27_Q2": {
       "source_file": "earnings_calls/nvidia/nvidia_FY27_Q2.md",
       "ai_rows": 139,
+      "passage_rows": 139,
       "total_units": 479,
       "committed_filter_output": "present"
     },
     "tesla_2022_Q4": {
       "source_file": "earnings_calls/tesla/tesla_2022_Q4.md",
       "ai_rows": 37,
+      "passage_rows": 37,
       "total_units": 517,
       "committed_filter_output": "present"
     },
     "tesla_2023_Q1": {
       "source_file": "earnings_calls/tesla/tesla_2023_Q1.md",
       "ai_rows": 21,
+      "passage_rows": 21,
       "total_units": 121,
       "committed_filter_output": "present"
     },
     "tesla_2023_Q2": {
       "source_file": "earnings_calls/tesla/tesla_2023_Q2.md",
       "ai_rows": 61,
+      "passage_rows": 61,
       "total_units": 590,
       "committed_filter_output": "present"
     },
     "tesla_2023_Q3": {
       "source_file": "earnings_calls/tesla/tesla_2023_Q3.md",
       "ai_rows": 34,
+      "passage_rows": 34,
       "total_units": 529,
       "committed_filter_output": "present"
     },
     "tesla_2023_Q4": {
       "source_file": "earnings_calls/tesla/tesla_2023_Q4.md",
       "ai_rows": 35,
+      "passage_rows": 35,
       "total_units": 589,
       "committed_filter_output": "present"
     },
     "tesla_2024_Q1": {
       "source_file": "earnings_calls/tesla/tesla_2024_Q1.md",
       "ai_rows": 71,
+      "passage_rows": 71,
       "total_units": 640,
       "committed_filter_output": "present"
     },
     "tesla_2024_Q2": {
       "source_file": "earnings_calls/tesla/tesla_2024_Q2.md",
       "ai_rows": 84,
+      "passage_rows": 84,
       "total_units": 542,
       "committed_filter_output": "present"
     },
     "tesla_2024_Q3": {
       "source_file": "earnings_calls/tesla/tesla_2024_Q3.md",
       "ai_rows": 90,
+      "passage_rows": 90,
       "total_units": 603,
       "committed_filter_output": "present"
     },
     "tesla_2024_Q4": {
       "source_file": "earnings_calls/tesla/tesla_2024_Q4.md",
       "ai_rows": 75,
+      "passage_rows": 75,
       "total_units": 590,
       "committed_filter_output": "present"
     },
     "tesla_2025_Q1": {
       "source_file": "earnings_calls/tesla/tesla_2025_Q1.md",
       "ai_rows": 56,
+      "passage_rows": 56,
       "total_units": 697,
       "committed_filter_output": "present"
     },
     "tesla_2025_Q2": {
       "source_file": "earnings_calls/tesla/tesla_2025_Q2.md",
       "ai_rows": 73,
+      "passage_rows": 73,
       "total_units": 466,
       "committed_filter_output": "present"
     },
     "tesla_2025_Q3": {
       "source_file": "earnings_calls/tesla/tesla_2025_Q3.md",
       "ai_rows": 89,
+      "passage_rows": 89,
       "total_units": 497,
       "committed_filter_output": "present"
     },
     "tesla_2025_Q4": {
       "source_file": "earnings_calls/tesla/tesla_2025_Q4.md",
       "ai_rows": 73,
+      "passage_rows": 73,
       "total_units": 455,
       "committed_filter_output": "present"
     },
     "tesla_2026_Q1": {
       "source_file": "earnings_calls/tesla/tesla_2026_Q1.md",
       "ai_rows": 79,
+      "passage_rows": 79,
       "total_units": 424,
       "committed_filter_output": "present"
     },
     "tesla_2026_Q2": {
       "source_file": "earnings_calls/tesla/tesla_2026_Q2.md",
       "ai_rows": 68,
+      "passage_rows": 68,
       "total_units": 491,
       "committed_filter_output": "present"
     }
@@ -1012,9 +1174,9 @@
     "differs": {
       "apple_FY23_Q1": {
         "status": "differs",
-        "rebuilt_ai_units": 2,
+        "filter_ai_units": 2,
         "committed_ai_units": 3,
-        "only_in_rebuild": 2,
+        "only_in_current_filter_run": 2,
         "only_in_committed": 3,
         "examples_only_in_committed": [
           "and we continue to build on our decades-long commitment to helping small businesses Thrive when we announced Apple business connect this new tool gives business",
@@ -1024,9 +1186,9 @@
       },
       "apple_FY24_Q4": {
         "status": "differs",
-        "rebuilt_ai_units": 35,
+        "filter_ai_units": 35,
         "committed_ai_units": 34,
-        "only_in_rebuild": 33,
+        "only_in_current_filter_run": 33,
         "only_in_committed": 32,
         "examples_only_in_committed": [
           "And in June, we announced Apple Intelligence, a remarkable personal intelligence system that combines the power of generative models with personal context to de",
@@ -1195,11 +1357,10 @@
   },
   "reproducibility": {
     "command": "python build_earnings_call_canonical.py",
-    "git_head": "13172033f7ffeda56ac5e1316594e5e710db8585",
     "python": "3.13.14",
     "nltk": "3.10.0",
     "filter_earnings_calls.py_sha256": "77253990a03671dced3b49fed431161151ee440ffc3474c625066adbd29cd210",
-    "build_earnings_call_canonical.py_sha256": "a5990dd5401613e1a413a8226b6dce9779331c67286a50a6c17ba2107b06c3fd",
+    "build_earnings_call_canonical.py_sha256": "2b358e9620a419e92817e3edc71d21e93a623b395af162abcb5c2405fdf57133",
     "earnings_call_scope.py_sha256": "58c92dc5dfb7ccde65a93c5e6865a974770c5635a26506b162bd343f413e93a1",
     "source_file_sha256": {
       "earnings_calls/alphabet/alphabet_2022_Q1.md": "4a14f915b39ec459119be387f74c33ccd5ad4da2083271017668eccd946c445b",
@@ -1319,13 +1480,15 @@
       "earnings_calls/tesla/tesla_2026_Q1.md": "e5635bed6c0262e229630d0ee52854e593e1f5558ecae029f0965c9626736761",
       "earnings_calls/tesla/tesla_2026_Q2.md": "44519314cab486308e0b46a97aadf97f98f0430470cbe3b8de7db0d328a471f3"
     },
-    "context_rule": "up to 2 preceding and 1 following parsed units of the same call and same section, in call order; may cross a speaker turn (flagged); never crosses the prepared-remarks/Q&A boundary",
-    "sentence_id_rule": "<company>_<period_label>_u<4-digit order in call>_<first 10 hex of sha256(text_verbatim)>"
+    "context_rule_version": "ctx-v2-same-turn-pm1",
+    "context_rule": "anchor plus the immediately previous and next parsed unit of the same speaker turn (same speaker, same section, same call); never crosses a speaker change, the prepared-remarks/Q&A boundary or the transcript boundary; no neighbour -> anchor only. In caption/Whisper files the whole section is one unlabelled turn, so speaker continuity there is unverified (context_speaker_continuity says so).",
+    "sentence_id_rule": "<company>_<period_label>_u<4-digit order in call>_<first 10 hex of sha256(text_verbatim)>",
+    "note": "git HEAD is deliberately not embedded so outputs do not change with unrelated commits"
   },
   "output_sha256": {
-    "earnings_call_sentences.csv": "edd3e4ba9d192acef0066b7d14a276637576b6064cfa0a7f389027b2d018251c",
-    "earnings_call_labeling_passages.csv": "92ccc035879db4945e9e3a063d469a229c7f1e4e9c9a1c2dfa5e41ef7792c38c",
-    "earnings_call_borderline_review.csv": "9a09976d94bfec813e106e3eddbfbe1cfd6fe20177903f71f83cef9ebe1a8f58",
-    "earnings_call_call_units.csv": "f3b2fb81021636bf9e12b0fe9bcb96bf3dc32534790889d3915a8d8bd83173b4"
+    "earnings_call_sentences.csv": "114ff402abcbf9cff833e050452e428c19c070d4f89c576bfe3d46e01f7298a8",
+    "earnings_call_labeling_passages.csv": "3430f04e0b0c541e86d69c1dcb5be4bb24e04b170cea83845d5b83b5ea755974",
+    "earnings_call_borderline_review.csv": "f183906e41ff79365868ef56065a07114437304e863c1206993aae40b093909a",
+    "earnings_call_call_units.csv": "323687fe5a75cded7bbb68229a82484b003883210f50eb1007075d346abcc095"
   }
 }
