@@ -2,13 +2,13 @@
 tags: [product]
 kind: product
 first_quarter: 2024Q2
-total_mentions: 143
+total_mentions: 144
 ---
 # Apple Intelligence - Siri
 
 Type: **named product / stack**. Pattern: `Apple Intelligence / Siri`.
 
-First quarter with 3+ mentions: **2024Q2** (apple:25). Total mentions across calls: 143.
+First quarter with 3+ mentions: **2024Q2** (apple:25). Total mentions across calls: 144.
 
 ## Who talks about it
 

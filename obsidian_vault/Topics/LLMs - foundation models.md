@@ -1,14 +1,14 @@
 ---
 tags: [concept]
 kind: concept
-first_quarter: 2022Q3
-total_mentions: 400
+first_quarter: 2022Q1
+total_mentions: 429
 ---
 # LLMs - foundation models
 
 Type: **AI concept**. Pattern: `LLMs / foundation models`.
 
-First quarter with 3+ mentions: **2022Q3** (alphabet:2; microsoft:1). Total mentions across calls: 400.
+First quarter with 3+ mentions: **2022Q1** (nvidia:8; microsoft:1). Total mentions across calls: 429.
 
 ## Who talks about it
 
@@ -19,5 +19,5 @@ First quarter with 3+ mentions: **2022Q3** (alphabet:2; microsoft:1). Total ment
 | [[Apple]] |  |  | 15 |
 | [[Meta]] |  | 12 | 63 |
 | [[Microsoft]] | 4 | 8 | 15 |
-| [[Nvidia]] |  | 58 | 75 |
+| [[Nvidia]] | 29 | 58 | 75 |
 | [[Tesla]] |  |  | 3 |

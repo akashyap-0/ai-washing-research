@@ -62,11 +62,17 @@ def fig_headline(cu):
     fig, ax = plt.subplots(figsize=(13, 6.2))
     ax.axvspan(launch_x(), max(qs) + 0.3, color="#fdecea", zorder=0)
     ax.axvline(launch_x(), color=LAUNCH, lw=2)
+    ends = []
     for c in bal:
         dc = d[d.company == c].sort_values("q")
         ax.plot(dc.q, dc.share, color=COLORS[c], lw=1.4, alpha=0.55, marker="o", ms=4)
-        ax.text(dc.q.iloc[-1] + 0.08, dc.share.iloc[-1], c.title(), color=COLORS[c], fontsize=10, va="center", fontweight="bold")
-    ax.plot(g.index, g.values, color=INK, lw=4, marker="o", ms=8, zorder=5, label="Average of the three firms")
+        ends.append([dc.share.iloc[-1], c, dc.q.iloc[-1]])
+    ends.sort()
+    for i in range(1, len(ends)):  # push direct labels apart so they never overlap
+        ends[i][0] = max(ends[i][0], ends[i - 1][0] + 2.2)
+    for y, c, xq in ends:
+        ax.text(xq + 0.08, y, c.title(), color=COLORS[c], fontsize=10, va="center", fontweight="bold")
+    ax.plot(g.index, g.values, color=INK, lw=4, marker="o", ms=8, zorder=5, label=f"Average of the {len(bal)} firms")
     ax.legend(loc="lower right", fontsize=11, frameon=False)
     ax.annotate(f"{pre.mean():.0f}% of the call\nbefore ChatGPT", xy=(pre.index[len(pre) // 2], pre.mean()), xytext=(2021.9, 24),
                 fontsize=13, color=INK, ha="left", arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.4))
@@ -78,12 +84,14 @@ def fig_headline(cu):
     ax.set_ylabel("Share of the earnings call that is about AI (%)", fontsize=12)
     ax.set_xlabel("Calendar quarter reported", fontsize=11)
     ax.grid(axis="y", color=GRID)
-    fig.suptitle("AI went from a side topic to a core topic on earnings calls right after ChatGPT",
+    title = ("Earnings calls turned sharply toward AI right after ChatGPT (Nvidia was already there)" if "nvidia" in bal
+             else "AI went from a side topic to a core topic on earnings calls right after ChatGPT")
+    fig.suptitle(title,
                  fontsize=17, fontweight="bold", x=0.05, ha="left", y=0.985)
-    ax.set_title(f"Same three firms the whole way ({', '.join(c.title() for c in bal)}). Each dot is one earnings call.",
+    ax.set_title(f"Same {len(bal)} firms the whole way ({', '.join(c.title() for c in bal)}). Each dot is one earnings call.",
                  fontsize=11, loc="left", color="#444444")
-    fig.text(0.05, 0.01, "Why only these three? They are the only firms with several comparable calls both before and after the launch "
-             "(17 of 133 early calls are missing). Share = AI sentences / all sentences in the call.", fontsize=8.5, color="#555555")
+    fig.text(0.05, 0.01, f"Why only these {len(bal)}? They are the firms with several sentence-comparable calls both before and after the launch "
+             f"({common.missing_note()}). Share = AI sentences / all sentences in the call.", fontsize=8.5, color="#555555")
     fig.tight_layout(rect=(0.0, 0.04, 1, 0.95))
     fig.savefig(os.path.join(common.FIG, "fig1_headline_ai_talk.png"), dpi=170)
     plt.close(fig)

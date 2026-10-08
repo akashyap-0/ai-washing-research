@@ -188,7 +188,7 @@ def fig_company_topic_map(s, min_share=0.04, min_count=3):
              "(each company's biggest topic and its share is written under its name). Positions are identical in the three panels, so you can watch links appear.",
              fontsize=11.5, color="#444444")
     fig.text(0.02, 0.012, "Counts are AI sentences from the canonical earnings-call dataset; a sentence can mention several topics. "
-             "Amazon and some Apple/Tesla calls use caption or machine-audio units, not sentences. 17 of 133 early calls are missing.",
+             f"Amazon and some Apple/Tesla calls use caption or machine-audio units, not sentences; {common.missing_note()}.",
              fontsize=9, color="#555555")
     fig.tight_layout(rect=(0, 0.03, 1, 0.93))
     fig.savefig(os.path.join(common.FIG, "fig3_company_topic_map.png"), dpi=140)
@@ -231,7 +231,8 @@ def fig_storyline(s):
     ax.set_ylabel("% of that quarter's AI sentences that mention the topic", fontsize=11)
     fig.suptitle("What 'AI' means on earnings calls keeps changing: ML, then generative AI, then agents",
                  fontsize=17, fontweight="bold", x=0.04, ha="left", y=0.985)
-    ax.set_title("All seven companies pooled. Before the launch only a few firms' calls are in our data, so early quarters are noisier.",
+    ax.set_title("All seven companies pooled. " + ("Before the launch only some firms' calls are in our data, so early quarters are noisier."
+                 if "missing" in common.missing_note() else "Every firm's calls are included in every quarter."),
                  fontsize=10.5, loc="left", color="#444444")
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     fig.savefig(os.path.join(common.FIG, "fig4a_topic_storyline.png"), dpi=170)

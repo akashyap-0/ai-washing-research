@@ -1,14 +1,14 @@
 ---
 tags: [product]
 kind: product
-first_quarter: 2022Q4
-total_mentions: 868
+first_quarter: 2021Q4
+total_mentions: 951
 ---
 # NVIDIA stack
 
 Type: **named product / stack**. Pattern: `NVIDIA stack (Blackwell, Hopper, CUDA...)`.
 
-First quarter with 3+ mentions: **2022Q4** (nvidia:27; tesla:3; microsoft:2; meta:1). Total mentions across calls: 868.
+First quarter with 3+ mentions: **2021Q4** (nvidia:15; tesla:1). Total mentions across calls: 951.
 
 ## Who talks about it
 
@@ -19,5 +19,5 @@ First quarter with 3+ mentions: **2022Q4** (nvidia:27; tesla:3; microsoft:2; met
 | [[Apple]] |  |  | 3 |
 | [[Meta]] |  |  | 9 |
 | [[Microsoft]] |  | 6 | 20 |
-| [[Nvidia]] |  | 109 | 623 |
+| [[Nvidia]] | 81 | 109 | 623 |
 | [[Tesla]] |  |  | 8 |

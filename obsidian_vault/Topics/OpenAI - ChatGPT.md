@@ -1,14 +1,14 @@
 ---
 tags: [product]
 kind: product
-first_quarter: 2022Q3
-total_mentions: 306
+first_quarter: 2022Q1
+total_mentions: 308
 ---
 # OpenAI - ChatGPT
 
 Type: **named product / stack**. Pattern: `OpenAI / ChatGPT`.
 
-First quarter with 3+ mentions: **2022Q3** (microsoft:5). Total mentions across calls: 306.
+First quarter with 3+ mentions: **2022Q1** (microsoft:2; nvidia:2). Total mentions across calls: 308.
 
 ## Who talks about it
 

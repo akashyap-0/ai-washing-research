@@ -27,7 +27,8 @@ def call_sentences():
     spec = importlib.util.spec_from_file_location("fap", os.path.join(common.ROOT, "earnings_calls", "filter_ai_passages.py"))
     fap = importlib.util.module_from_spec(spec); spec.loader.exec_module(fap)
     rows = []
-    for path in sorted(glob.glob(os.path.join(common.ROOT, "earnings_calls", "*", "*.md"))):
+    calls_dir = os.environ.get("CALLS_DIR", os.path.join(common.ROOT, "earnings_calls"))  # CALLS_DIR: raw calls incl. extras
+    for path in sorted(glob.glob(os.path.join(calls_dir, "*", "*.md"))):
         company, period, stype, _, sents = fap.process(path)
         cy, cq = fap.cal_quarter(company, period)
         for text, section, _ in sents:

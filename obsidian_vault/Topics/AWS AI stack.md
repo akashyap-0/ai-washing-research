@@ -2,13 +2,13 @@
 tags: [product]
 kind: product
 first_quarter: 2023Q1
-total_mentions: 185
+total_mentions: 186
 ---
 # AWS AI stack
 
 Type: **named product / stack**. Pattern: `AWS AI stack (Bedrock, Trainium, Nova...)`.
 
-First quarter with 3+ mentions: **2023Q1** (amazon:3). Total mentions across calls: 185.
+First quarter with 3+ mentions: **2023Q1** (amazon:3). Total mentions across calls: 186.
 
 ## Who talks about it
 

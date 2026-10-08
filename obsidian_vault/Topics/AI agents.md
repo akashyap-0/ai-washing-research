@@ -1,14 +1,14 @@
 ---
 tags: [concept]
 kind: concept
-first_quarter: 2023Q1
-total_mentions: 645
+first_quarter: 2021Q4
+total_mentions: 648
 ---
 # AI agents
 
 Type: **AI concept**.
 
-First quarter with 3+ mentions: **2023Q1** (meta:5; microsoft:1). Total mentions across calls: 645.
+First quarter with 3+ mentions: **2021Q4** (nvidia:2; microsoft:1). Total mentions across calls: 648.
 
 ## Who talks about it
 

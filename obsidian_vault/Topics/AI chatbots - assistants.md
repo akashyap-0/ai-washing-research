@@ -1,14 +1,14 @@
 ---
 tags: [concept]
 kind: concept
-first_quarter: 2023Q2
-total_mentions: 72
+first_quarter: 2021Q4
+total_mentions: 76
 ---
 # AI chatbots - assistants
 
 Type: **AI concept**. Pattern: `AI chatbots / assistants`.
 
-First quarter with 3+ mentions: **2023Q2** (nvidia:2; microsoft:1). Total mentions across calls: 72.
+First quarter with 3+ mentions: **2021Q4** (nvidia:4). Total mentions across calls: 76.
 
 ## Who talks about it
 
@@ -18,4 +18,4 @@ First quarter with 3+ mentions: **2023Q2** (nvidia:2; microsoft:1). Total mentio
 | [[Amazon]] |  |  | 6 |
 | [[Meta]] |  | 11 | 24 |
 | [[Microsoft]] |  | 3 |  |
-| [[Nvidia]] |  | 8 | 10 |
+| [[Nvidia]] | 4 | 8 | 10 |

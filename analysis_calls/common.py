@@ -3,9 +3,10 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CANON = os.path.join(ROOT, "earnings_calls_canonical")
-OUT = os.path.join(ROOT, "analysis_calls", "out")
-FIG = os.path.join(ROOT, "figures_calls")
+# Env overrides let the same scripts run on an extended dataset without touching the committed outputs.
+CANON = os.environ.get("CANON_DIR", os.path.join(ROOT, "earnings_calls_canonical"))
+OUT = os.environ.get("OUT_DIR", os.path.join(ROOT, "analysis_calls", "out"))
+FIG = os.environ.get("FIG_DIR", os.path.join(ROOT, "figures_calls"))
 os.makedirs(OUT, exist_ok=True)
 os.makedirs(FIG, exist_ok=True)
 
@@ -42,3 +43,14 @@ def qlabel(year, quarter):
 def get_device():
     import torch
     return "mps" if torch.backends.mps.is_available() else "cpu"
+
+
+EXPECTED_CALLS = 133  # 7 firms x 19 calendar quarters (Q4 2021 - Q2 2026), EARNINGS_CALL_SCOPE.md
+
+
+def missing_note():
+    """Plain-English coverage note for figure captions, computed from the dataset actually loaded."""
+    import pandas as pd
+    n = len(pd.read_csv(os.path.join(CANON, "earnings_call_call_units.csv"), usecols=["call_id"]))
+    miss = EXPECTED_CALLS - n
+    return f"{miss} of {EXPECTED_CALLS} expected calls are missing" if miss > 0 else f"all {EXPECTED_CALLS} expected calls are included"

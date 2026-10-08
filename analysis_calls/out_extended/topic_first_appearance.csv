@@ -1,0 +1,20 @@
+topic,kind,first_quarter_with_3plus_mentions,companies_that_quarter,total_mentions,alphabet,amazon,apple,meta,microsoft,nvidia,tesla
+AI agents,concept,2021Q4,nvidia:2; microsoft:1,648,120,130,9,107,155,127,0
+machine learning,concept,2021Q4,tesla:4; meta:3; nvidia:2; alphabet:1,157,8,26,13,19,2,52,37
+"Tesla autonomy (FSD, Optimus, robotaxi...)",product,2021Q4,tesla:29; nvidia:2,458,0,0,0,0,3,12,443
+training & inference compute,concept,2021Q4,nvidia:13; meta:1; microsoft:1,862,51,86,15,95,75,433,107
+AI chatbots / assistants,concept,2021Q4,nvidia:4,76,6,7,2,35,4,22,0
+"NVIDIA stack (Blackwell, Hopper, CUDA...)",product,2021Q4,nvidia:15; tesla:1,951,42,11,4,12,29,840,13
+OpenAI / ChatGPT,product,2022Q1,microsoft:2; nvidia:2,308,7,22,11,4,179,81,4
+LLMs / foundation models,concept,2022Q1,nvidia:8; microsoft:1,429,52,77,15,76,28,178,3
+generative AI,concept,2022Q3,nvidia:5,760,139,198,20,112,33,258,0
+Copilot,product,2022Q3,microsoft:3,535,1,0,0,0,512,22,0
+"AWS AI stack (Bedrock, Trainium, Nova...)",product,2023Q1,amazon:3,186,1,182,0,1,1,1,0
+Llama / Meta AI,product,2023Q2,meta:14; microsoft:2,308,3,6,0,283,2,14,0
+xAI / Grok,product,2023Q2,tesla:3,62,0,0,0,0,5,24,33
+Gemini,product,2023Q2,alphabet:4,327,315,0,2,1,0,7,2
+Anthropic / Claude,product,2023Q3,amazon:8,115,4,46,0,1,15,49,0
+Google AI Overviews / AI Mode,product,2024Q1,alphabet:5,161,161,0,0,0,0,0,0
+Apple Intelligence / Siri,product,2024Q2,apple:25,144,1,0,143,0,0,0,0
+AGI / superintelligence,concept,2024Q2,tesla:3; nvidia:1,79,2,0,0,55,7,7,8
+DeepSeek,product,2024Q4,microsoft:5; nvidia:4; amazon:3; meta:3; alphabet:2,31,3,4,0,3,9,12,0
