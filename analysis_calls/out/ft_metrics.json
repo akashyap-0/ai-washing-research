@@ -1,0 +1,36 @@
+{
+  "split": {
+    "train": 915,
+    "val": 80,
+    "test": 205,
+    "val_tickers": [
+      "DELL",
+      "NOW",
+      "UNH",
+      "WMT"
+    ],
+    "test_tickers": [
+      "CRM",
+      "NVDA",
+      "TSLA",
+      "VZ"
+    ]
+  },
+  "label_source_note": "Claude-generated, unreviewed; not human gold",
+  "labels": {
+    "ai_opportunity": {
+      "threshold": 0.2,
+      "test_positive_rate": 0.33658536585365856,
+      "test_auc": 0.9500213128729752,
+      "test_f1": 0.8175182481751825,
+      "test_f1_always_positive_baseline": 0.5036496350364964
+    },
+    "ai_risk": {
+      "threshold": 0.1,
+      "test_positive_rate": 0.2,
+      "test_auc": 0.9480963712076146,
+      "test_f1": 0.782608695652174,
+      "test_f1_always_positive_baseline": 0.3333333333333333
+    }
+  }
+}
