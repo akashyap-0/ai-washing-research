@@ -135,3 +135,13 @@ row as `section_method`.
   unavailable calls (see the acquisition log).
 - Including the 11 newly acquired calls in the canonical dataset, even though the committed
   `earnings_calls_ai_only/` outputs (which this task did not modify) do not cover them.
+
+**Approved 2026-10-10 (Advik):**
+
+- **The 17 pre-2023 calls from non-company sources** (`earnings_calls_pre2022_extra/`) are included.
+  Reason: they give pre-ChatGPT (Q4 2021 – Q3 2022) coverage for every firm except Amazon, whose
+  added calls are Whisper units and not sentence-comparable. Every call stays flagged by
+  `source_type` and `unit_type`.
+- **The Nvidia and Apple fiscal-to-calendar assignment in §3.** Reason: each fiscal quarter goes to
+  the calendar quarter holding most of its months. Nvidia's quarters run about one month behind the
+  calendar quarter they are assigned to, and this lag is disclosed wherever Nvidia is pooled by quarter.
