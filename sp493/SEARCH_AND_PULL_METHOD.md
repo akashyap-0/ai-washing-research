@@ -180,17 +180,24 @@ Everything runs through one script, `sp493/sp493_pull.py`, and both laptops run 
   later are tracked across the whole window. This is a known survivorship limitation.
 - **Split:** sort by ticker and alternate. Rows 1, 3, 5 and so on are **half 1 (Tanush's laptop)**;
   rows 2, 4, 6 and so on are **half 2 (other laptop)**. Alternating keeps both halves balanced
-  across the alphabet and sectors.
+  across the alphabet and sectors. The result is 247 firms in half 1 and 246 in half 2.
 - **The file is the source of truth:** `sp493/universe.csv`, with an `assigned_half` column. It is
   built once and never rebuilt. The other laptop checks its SHA-256 (in `sp493/universe.sha256`)
-  before starting.
+  before starting. Current hash: `c95f8a1a…`.
 
 ### 4.2 Window and calendar mapping
 
 - **Window:** the same as the Mag 7, calendar Q4 2021 through calendar Q2 2026 (19 quarters).
 - **Fiscal year end:** taken from SEC EDGAR (`data.sec.gov/submissions/CIK##########.json`,
-  `fiscalYearEnd`). A year end in the first 7 days of a month counts as the previous month, which
-  handles 52/53-week years.
+  `fiscalYearEnd`), only for this purpose: no filings are used. A year end in the first 7 days of a
+  month counts as the previous month, which handles 52/53-week years. The lookup ran once, on half
+  1's laptop, when `universe.csv` was built, and the values are stored in it. The other laptop
+  never contacts SEC.
+- **Fiscal year end cross-check:** `discover` also works out each firm's fiscal year end from
+  Fool's own quarter labels and call dates. It is the month under which the most calls fall 7 to
+  100 days after their quarter end. This inference must reproduce the Mag 7's known year ends
+  (Apple Sep, Microsoft Jun, Nvidia Jan, the rest Dec), or the step stops. Firms where it disagrees
+  with SEC are listed in `half<N>_fiscal_year_ends.csv` for review.
 - **Calendar quarter:** the reported fiscal quarter is the latest fiscal quarter-end month at least
   7 days before the call date. It is assigned to the calendar quarter of its **middle month**,
   which is the same "most of its months" rule as scope §3. Checked against the Mag 7: Nvidia
@@ -203,15 +210,31 @@ Everything runs through one script, `sp493/sp493_pull.py`, and both laptops run 
 
 `python sp493/sp493_pull.py discover --half N`
 
-1. Download Fool's monthly sitemaps from `fool.com/sitemap/2021/11` to `2026/10` (60 files) and
-   keep the SHA-256 of each.
-2. Keep every `/earnings/call-transcripts/` URL. Parse the slug as
-   `<name>-<ticker>-q<N>-<YYYY>-earn…`.
-3. Match each slug to the universe by ticker, with a name check. If no slug matches on ticker,
-   fall back to a name match, which covers ticker changes such as PEAK → DOC.
-4. Write `sp493/coverage/half<N>_fool_urls.csv` with every candidate URL and how it was matched.
+1. **Sitemaps.** Download Fool's monthly sitemaps from `fool.com/sitemap/2021/11` to `2026/10`
+   (60 files) and record the SHA-256 of each. Keep every `/earnings/call-transcripts/` URL, then
+   parse its slug as `<name>-<ticker>-q<N>-<YYYY>-earn…`. Slugs are cut at about 50 characters;
+   when the cut falls after the ticker, the cut-off tail (`-q1`, `-earn`, …) is dropped.
+2. **Match on ticker.** A slug whose ticker equals a universe ticker is accepted. When Fool's name
+   differs from ours, the URL is still accepted but listed in `half<N>_name_check.csv` for a skim.
+   All 66 such cases in half 1 were the same company under a short or old name (`amex`, `ibm`,
+   `general-electric`, `raytheon-technologies`).
+3. **Match on name.** When the ticker changed (Block SQ → XYZ, Ball BLL → BALL, EchoStar
+   SATS → ECHO), the full company name must match. The match is also only accepted for pages dated
+   before the firm's first page under its current ticker. This rule removes look-alikes such as
+   Black Stone Minerals (BSM) vs Blackstone, Coca-Cola FEMSA vs Coca-Cola, and NextEra Energy
+   Partners vs NextEra.
+4. **Calendar quarter from the fiscal label.** The quarter comes from Fool's fiscal label, not the
+   URL date, because **Fool backfills old calls years later**. For example, Caterpillar Q4 2024 was
+   posted 2026-04-14 in the LLM layout. The window test is inclusive (label read either way, plus
+   URL date); Step 2 makes the exact call.
+5. **Fiscal year end cross-check.** See §4.2.
+6. **Outputs:** `half<N>_fool_urls.csv`, `half<N>_name_check.csv`, `half<N>_fiscal_year_ends.csv`
+   and `half<N>_sitemaps.csv`.
 
-Discovery uses the URL date as the call date. Step 2 replaces it with the date printed on the page.
+Half 1 result: 2,404 in-window URLs covering 244 of 247 firms. 135 firms have calls both before
+and after ChatGPT, 108 after only, and 4 none. Many firms have no Fool page at all for 2021–2023:
+Caterpillar's own Fool quote page lists 2020 and then 2024 onward. This is a real coverage gap,
+not a matching error.
 
 ### 4.4 Step 2: download
 
@@ -230,8 +253,12 @@ Discovery uses the URL date as the call date. Step 2 replaces it with the date p
   layout (checked by `selftest`, §4.6).
 - **Text conversion (Tier B):** the same rule from `Full Conference Call Transcript` to the end of
   the article.
-- **Picking one call per quarter:** keep the earliest main earnings call in each company-quarter.
-  Other candidates are logged as `duplicate`.
+- **Calendar quarter:** comes from the call date printed on the page (old layout: the date line;
+  new layout: the `DATE` section), using the §4.2 rule. If a page has only a publication date,
+  the fiscal label is used instead. `quarter_method` and `label_agrees` in `half<N>_calls.csv`
+  record which rule was used and whether the two agree.
+- **Picking one call per quarter:** keep the earliest main earnings call in each company-quarter,
+  Tier A before Tier B. Other candidates are logged as `duplicate`.
 - **Output:** `sp493/earnings_calls/<ticker>/<ticker>_<period>.md` (Tier A) or
   `sp493/earnings_calls_fool_llm/<ticker>/...` (Tier B). The metadata block follows §2.3 and adds
   ticker, CIK, fiscal year end, call date, calendar quarter, source SHA-256 and layout.
@@ -269,10 +296,70 @@ Discovery uses the URL date as the call date. Step 2 replaces it with the date p
 4. Running the filter on committed Mag 7 Fool files reproduces their committed counts in
    `earnings_calls_ai_only/_stats.json`.
 
-### 4.7 Merging the halves
+### 4.7 How the collected transcripts are organized
 
-The halves have no tickers in common, so merging means copying both `sp493/earnings_calls*/`
-trees together and concatenating the `half1_`/`half2_` CSVs. No file exists on both laptops.
+```
+sp493/
+├── SEARCH_AND_PULL_METHOD.md        this file
+├── ADVIK_DATA.md                    step-by-step task for the half-2 agent (Advik's laptop)
+├── sp493_pull.py                    the only script; both laptops run it unchanged
+├── universe.csv                     493 firms, assigned_half 1 or 2 (built once, never rebuilt)
+├── universe.sha256                  checked by selftest on both laptops
+├── ENVIRONMENT.txt                  python / nltk / bs4 versions, filter SHA-256, Wikipedia revid
+│
+├── earnings_calls/                  TIER A raw transcripts (Fool verbatim), the main corpus
+│   └── <folder>/<folder>_<period>.md        e.g. xom/xom_2024_Q3.md, a/a_FY24_Q1.md
+├── earnings_calls_fool_llm/         TIER B raw transcripts (Fool LLM layout), kept apart, not filtered
+│   └── <folder>/<folder>_<period>.md
+├── earnings_calls_ai_only/          filter output, Tier A only
+│   ├── <folder>/<folder>_<period>_ai.md
+│   └── _stats_half<N>.json
+│
+├── coverage/                        one CSV set per half (half1_*, half2_*)
+│   ├── half<N>_sitemaps.csv           every Fool sitemap read: bytes, SHA-256
+│   ├── half<N>_fool_urls.csv          candidate transcript URLs matched to our firms
+│   ├── half<N>_name_check.csv         matched on ticker but Fool uses a different name (amex, ibm): skim
+│   ├── half<N>_fiscal_year_ends.csv   SEC fiscal year end vs the month implied by Fool's labels
+│   ├── half<N>_calls.csv              every downloaded page: period, calendar quarter, call date,
+│   │                                  tier, status (ok / duplicate / outside window / ...), file
+│   ├── half<N>_availability.csv       firm × 19 calendar quarters: tierA / tierB / missing
+│   ├── half<N>_coverage_summary.csv   per firm: Tier A quarters before / after ChatGPT
+│   └── half<N>_call_units.csv         per Tier A call: total and AI units, overall and by section
+└── acquisition/
+    └── half<N>_results.jsonl        one line per page request: URL, HTTP status, bytes, SHA-256, time
+
+cache/sp493_sources/                 gitignored, never committed
+├── sitemaps/YYYY_MM.xml             Fool monthly sitemaps
+├── fool/<folder>/<slug>.html.gz     every downloaded page, as served
+├── sec/CIK##########.json           SEC submissions files (fiscal year end only)
+└── selftest/                        the Mag 7 page used by selftest
+```
+
+Rules for this layout:
+
+- **Folder names** are the lowercase ticker with `.` replaced by `-`, e.g. `BRK.B` → `brk-b` and
+  `BF.B` → `bf-b`. They come from the `folder` column of `universe.csv`.
+- **File names** are `<folder>_<period_label>.md`. The period label uses Fool's fiscal year and
+  quarter: `2024_Q3` for firms with a December year end, `FY24_Q3` for everyone else, the same as
+  the Mag 7 convention.
+- **One raw file per firm × calendar quarter.** If Fool has two pages for the same quarter, the
+  script keeps the earliest main call (Tier A before Tier B) and logs the others as `duplicate` in
+  `half<N>_calls.csv`.
+- **The calendar quarter, call date and source SHA-256 are in each file's header and in
+  `half<N>_calls.csv`.** File names never change to match the calendar quarter. Pooling across
+  firms uses `calendar_year` / `calendar_quarter`.
+- **Never rename, move, edit or delete a raw file.** To redo a call, ask first; never overwrite it.
+- **A laptop writes only its own half:** folders for its own tickers and `half<N>_*` files. It
+  never runs another half's tickers.
+- **Committing:** each laptop commits `sp493/` (everything except `cache/`) on its own branch,
+  `sp493-half1` or `sp493-half2`, and nothing is pushed to `main` directly. The two branches touch
+  disjoint files, so merging them has no conflicts.
+
+### 4.8 Merging the halves
+
+The halves have no tickers in common. Merging means merging the two branches; the
+`earnings_calls*/` trees combine as they are. The pooled tables are the `half1_` and `half2_` CSVs
+concatenated. No file exists on both laptops.
 
 ---
 

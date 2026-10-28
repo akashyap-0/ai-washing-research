@@ -1,0 +1,7 @@
+python: 3.14.6
+nltk: 3.10.2
+bs4: 4.15.0
+filter_earnings_calls.py sha256: 3a9b355c5877e5a665d96bf2881364f95643978978a5438e87a16995e8508dd0
+wikipedia revid: 1382178819
+universe.csv sha256: c95f8a1af0bbd943d7dd725732081adb6decefb17962daa24f9aac1b06cf3c5f
+written: 2026-10-28T22:40:49Z
