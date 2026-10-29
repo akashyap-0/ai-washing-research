@@ -1,0 +1,274 @@
+# Parker Hannifin — FY26_Q4 Earnings Call (transcript)
+
+- **Company:** Parker Hannifin (PH); fiscal year ends June (SEC fiscalYearEnd 0630)
+- **Ticker:** PH
+- **CIK:** 0000076334
+- **Period:** FY26_Q4 (call held August 13, 2026; date from page datePublished (publication date, not call date))
+- **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/08/13/parker-hannifin-ph-q4-2026-earnings-call-transcript/
+- **Source type:** third_party_transcript_motley_fool_llm
+- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Source SHA-256:** 9336498f881748c55d1290711c3fcfba081de8bb555be26ea298025b8630601c
+- **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
+- **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing
+- **Quality warning:** Fool 2025+ layout. The page says parts were created with LLMs; text is close to but not verbatim (86.8-89.4% word match to official transcripts), the IR opening is usually dropped and analysts are often unlabeled. Tier B: not filtered or pooled until calibrated
+
+---
+
+Full Conference Call Transcript
+
+Operator: Good morning, everyone. Welcome to Parker-Hannifin Corporation's Fiscal 2026 Fourth Quarter and Full Year Earnings Conference Call and webcast. [Operator Instructions] Please be advised that today's conference is being recorded. [Operator Instructions] I would now like to turn the call over to Mr. Todd Leombruno, Chief Financial Officer. Please go ahead, sir.
+
+Todd Leombruno: Thank you, Bo. I'd like to welcome everyone to Parker's Fiscal Year 2026 Fourth Quarter and Full Year Earnings Release Webcast. As Bo said, this is Todd Leombruno, Chief Financial Officer speaking. And with me today, as usual, is Jenny Parmentier, our Chairman and Chief Executive Officer. We have a number of exciting things to review with everyone today, and we appreciate your time this morning. Thanks for joining us. Let's move to Slide 2 to address our disclosures on forward-looking projections and non-GAAP financial measures. Items listed here could cause actual results to vary from our forecast.
+
+Our press release, the presentation here and reconciliations for all those non-GAAP measures were released this morning and are available under the Investors section on parker.com. Today, Jenny is going to start with our record FY '26 performance. She's going to share some highlights on what we did with capital deployment actions this year and introduce our new FY '31 adjusted segment operating margin target. She's also going to address an upcoming change to our order rate reporting that will start in FY '27. I'm going to follow with some details on our record fourth quarter financial results.
+
+We also initiated our FY '27 guidance today, and we will review all the assumptions for what we expect to be a new record year for Parker Hannifin. We'll conclude the call with our normal Q&A portion, and we'll try to address as many questions as we have time for. Now let's move to Slide 3. And, Jenny, I will turn it over to you.
+
+Jennifer Parmentier: Thank you, Todd, and thank you to everyone for attending the call today. Our global teams delivered record performance in fiscal year '26, powered by our proven business system, The Win Strategy. We achieved top quartile safety performance with a 9% reduction in our recordable incident rate. This was our safest year ever, and we remain focused on being the safest industrial company in the world. We delivered record fiscal year '26 sales of $21.5 billion, surpassing $20 billion for the first time in Parker's history. Organic growth accelerated to 6.6% and adjusted segment operating margin expanded 120 basis points to a record 27.3%.
+
+Adjusted earnings per share increased 18% to a record $32.31, and cash flow from operations was also a record at $4.4 billion, our first time over $4 billion. I'd like to congratulate our team members around the world for achieving and surpassing our fiscal year '29 adjusted segment operating margin target ahead of schedule. Thank you for everything you do to keep each other safe, create value for customers and demonstrate operational excellence. Slide 4, please. Fiscal year '26 marks the biggest year in Parker's history with over $15 billion in announced and deployed capital.
+
+We announced strategic acquisitions that further build our portfolio of interconnected technologies, giving our application engineers and channel partners more ways to create value for customers. We enhanced our electrification capabilities with the acquisition of Curtis Instruments completed last September. In November, we announced the pending acquisition of Filtration Group Corporation, which expands our offering of proprietary filtration technologies and increases our filtration aftermarket by 500 basis points. And just this past May, we announced the pending acquisition of CIRCOR's commercial aerospace and defense business, adding complementary flight-critical capabilities.
+
+We are committed to actively deploying capital, and these transactions are right in line with our stated strategy to acquire companies where we are the clear best owner, building on our interconnected technology, creating value for customers and further compounding earnings growth. We look forward to welcoming our new team members into Parker. Moving to Slide 5. After setting our fiscal year '29 targets just over 2 years ago, we are raising the bar once again and setting a new margin target. As I said earlier, we achieved our fiscal year '29 margin target early. And now for the fifth time in just over 10 years, we are raising our adjusted segment operating margin target once again.
+
+We are raising it by 300 basis points to 30% by fiscal year '31. In addition, we remain committed to organic growth of 4% to 6% over the cycle, 17% free cash flow margin and greater than 10% adjusted EPS growth over the cycle. We are very proud of what the teams have accomplished over the last several years, and we are confident in achieving these targets. Parker has a fantastic track record of achieving and raising margin targets. Margin expansion has been an exciting part of the Parker story for over a decade. And by using The Win Strategy to drive operational excellence in each of our divisions, margin expansion will continue at Parker Hannifin. Slide 6, please.
+
+Today, we are announcing a move to rolling 12-month order rates beginning in fiscal year '27 for our Industrial segment, aligning all businesses on a rolling 12-month calculation. Parker's portfolio is profoundly different today than it was 20 years ago when we began disclosing quarterly order rate comparisons for the Industrial business. Our portfolio has been shaped by strategic positioning, one of our organic growth enablers, and has been transformed by acquisitions. Over the last decade, these acquisitions have more than doubled the size of our Aerospace and Engineered Materials businesses. And when Filtration Group Corporation closes, we will have more than tripled the size of our filtration business.
+
+These technology platforms combined now represent approximately 65% of our pro forma sales today. This is clearly a different Parker with greater exposure to longer-cycle secular trends and more resilient end markets, and rolling 12-month orders provide a stronger correlation to near-term organic sales growth. I'll give it back to Todd to review fourth quarter highlights.
+
+Todd Leombruno: Well, thank you, Jenny. I'm going to jump through the fourth quarter. We couldn't have had such a great fiscal year without such a strong finish in the fourth quarter. It was record-setting numbers across the board. The team delivered new records for sales, adjusted segment operating margin, adjusted EBITDA margin, net income and adjusted EPS, all in the quarter. Sales were up 10% versus prior. Organic was up 8%. That was the strongest quarter of the fiscal year when it comes to organic growth, really finished the year strong. Currency was just slightly unfavorable at 0.3% and the Curtis acquisition added 1.5% to the sales. When you look at margins, adjusted segment operating margin for the quarter was 28.0%.
+
+That is up 110 basis points from prior year. That's the first time the company has ever generated segment operating margins above 28% -- just a great way to finish the year. Adjusted EBITDA margin was 28.6%. That's up 180 basis points, and adjusted net income was $1.2 billion, which is a 21% return on sales. And that actually drove earnings per share up also 21%, and we achieved $9.27 for the quarter. That's the first time the company has ever generated over $9 in a single quarter. Just an outstanding way to finish the year, 8% organic growth, record margins across the board and 21% EPS growth.
+
+Jenny said this already, but really, we can't thank our teams enough for their continued hard work and dedication throughout the quarter and really finishing the year strong. If we jump to Slide 9, this just displays the walk, the $1.58 increase in EPS versus prior year. Really, you could just see what a high-quality quarter this was from the team. Over 80% of the EPS growth came from increased segment operating income dollars. That added $1.29 or 17% of the EPS growth versus prior year. Corporate G&A and other, really, it's other contributed $0.25, and that was really the result of foreign currency exchange being favorable.
+
+Lower share count, we've done a significant amount of share buybacks over the last year that added $0.09 to the quarter and lower interest expense added $0.02. Income tax was favorable to our guide, but compared to last year, it was unfavorable by just $0.07, and that was really due to just higher discrete -- favorable discrete items in the prior year. You look at all of that, that's how we got to $9.27, $9.27 of adjusted EPS, just a great way to end the year. If we could go to Slide 10, let's take a look at the segments. In total, I already mentioned this, but organic growth was up 8%.
+
+We expanded margins across the board, 110 basis points in the quarter and incrementals were 40% for Q4. We are very pleased to see the order rates accelerate across all these businesses. Jenny just mentioned this, but beginning in FY '27, we will convert to order reporting for all businesses using a 12-month rolling. I've provided the 3-month and the 12-month here, but this will be the last quarter we do this going forward for FY '27. In the appendix of this deck and in our press release, we provided eight quarters of historical comparisons, if you're interested in that. But in total, orders were up 19% on the 3-year comparison. Using the 12-month rolling, it was 12%.
+
+Backlog increased 16% versus prior year and is now a new record at $12.8 billion. If we move to the North American businesses, sales were $2.2 billion. Organic growth was just about 5%. Really, this is just based on a broadening recovery across all those businesses. Margins are up 70 basis points to a record 27.4%. That also exceeded our expectations and really marked the highest quarter of margin performance for the North American businesses of the year. Orders in North America improved to plus 16% on a 3-month comparison and 9% on a rolling 12. Just a great way to finish the year for the North American businesses. Moving to the international businesses. Sales were a record $1.6 billion.
+
+Organic growth, really impressive at 6.5%. Asia Pac really leading the way for us there. Organic growth in Asia Pacific was 16%. EMEA was positive, but just 1% positive. And Latin America was down 3% versus the prior year. What's great here is adjusted operating margin is a new record at 26.8% for the international businesses. That is up 210 basis points versus prior year and orders amazingly strong here, 24% on a 3-month comparison, 10% on a rolling 12. Just a nice way to finish the year for our industrial team members based in our international businesses.
+
+Aerospace continues to lead the way here, a record $1.9 billion in sales for the quarter, organic growth of 13.4% versus the prior year. This marks the fourth year, the fourth full fiscal year in a row of double-digit organic growth for Aerospace. The team has really outperformed and executed unbelievably well, generated $1.9 billion in sales. Margins are also up in Aerospace, up 80 basis points versus the prior year and reached 29.8% for the quarter. If you move to orders in Aerospace, order rates, unbelievably strong here, again, 18%, double-digit growth in both commercial OEM and aftermarket and really strength in the defense OEM markets.
+
+Backlog in aerospace is up 15% versus prior year and reached a record $8.5 billion. Just a great series of results from the team. If we can go to Slide 11, this highlights our cash flow performance, and we detailed some of those capital deployment actions that Jenny mentioned. Cash flow from operations surpassed $4 billion for the first time ever in the history of the company, really blew it away at $4.4 billion. That's 20.3% of sales. That is up 16% versus the prior year. Free cash flow increased by 17% versus prior year and also came in at a record at $3.9 billion. That's 18.2% of sales, and the conversion on that is 107%.
+
+In addition to delivering a record year of cash generation, we reached new highs when it comes to deploying capital. We returned nearly $2 billion to shareholders. That is $1 billion in share repurchases and nearly $1 billion of dividends paid. We invested $500 million of CapEx into our operations to make them safer and more productive. We completed the $1 billion acquisition of Curtis Instruments. And as Jenny said, we announced nearly $12 billion for the acquisitions of Filtration Group Corporation and CIRCOR's aerospace and defense business. In total, that's nearly $15 billion of capital deployment actions for the year, really underpinning our commitments to be great generators and great deployers of cash.
+
+And even with all those actions, we still reduced debt by $1 billion in the quarter, bringing our net debt to adjusted EBITDA to 1.4x. That is down from 1.7x at this time last year. Just a great year of cash generation. Okay. Now let's move to Slide 13 and address our FY '27 guidance. Jenny, I'm going to hand it back to you, and she will start with our sales growth forecast by market vertical.
+
+Jennifer Parmentier: Thank you, Todd. I'm on Slide 13. Our fiscal year '27 organic growth forecast by key market verticals. For aerospace and defense, our largest vertical, we are guiding high single-digit organic growth. We expect another year of robust double-digit growth for commercial OEM and sustained commercial aftermarket growth. Defense orders finished strong, supporting a solid outlook for fiscal year '27 and beyond. We expect mid-single-digit growth for in-plant and industrial. We see signs from distribution that the industrial recovery is broadening as customers' demand gradually accelerates. Customer spending on automation continues to lead the growth here. For our transportation vertical, we forecast mid-single-digit growth, led by strong growth for heavy-duty trucks driven by production rate increases.
+
+This is offset by lower growth assumptions for our automotive business, resulting in mid-single-digit growth overall for this vertical. Moving to off-highway. We are guiding mid-single-digit growth driven by a continuation of the trends we saw in fiscal year '26. We see continued strong growth in construction and mining, offset by continued softness in agriculture. We also expect mid-single-digit growth for energy. We see strong and sustained long-cycle growth from our businesses supporting gas turbine power generation, while we are expecting oil and gas to be flat this year. Lastly, we are guiding mid-single-digit growth in HVAC and refrigeration. We expect commercial HVAC to lead growth, and we see our residential business improving as inventories stabilize.
+
+For the first time ever, we are guiding positive sales growth across all market verticals, resulting in an organic growth forecast of 7% at the midpoint. I'll give it back to Todd, and he'll share more details on our guidance.
+
+Todd Leombruno: Thank you, Jenny. I'm on Slide 14, and I'm just going to go through some of the details here. Reported sales growth for the year is going to be in the range of 5.5% to 8.5% or 7% at the midpoint. That will calculate to approximately $23 billion in annual sales for the company. Sales are modeled as usual, 48% in the first half, 52% in the second half. Consistent with what we've done historically, this guidance does not yet include any impact from the pending Filtration Group or CIRCOR acquisitions. We will provide current data on those transactions as soon as they close.
+
+When you look at organic growth, the range is the same, 5.5% to 8.5% or 7% at the midpoint. Specifically for the North American businesses, we're expecting 6.5% organic growth at the midpoint. And for the international industrial businesses, we expect 5.5% organic growth at the midpoint. Aerospace, we expect 8.5% organic growth at the midpoint. And again, that's coming off of four years of double-digit organic growth. So the base is very high. Currency is based on our June 30 spot rates and is expected to be just slightly unfavorable by 0.5 point. And previously completed acquisitions, this is really Curtis, adds approximately 0.5% for the year of FY '27.
+
+On adjusted segment operating margins, we're guiding 27.7% at the midpoint. That's 40 basis points above prior year, and there will be margin expansion across all of our businesses. And when it comes to incrementals, we're forecasting that near the top end of our stated 30% to 35% range for the full year. Just a few additional guidance items. Corporate G&A is expected to be about $200 million. Interest expense is about $340 million. That, again, excludes any pending debt we take on when Filtration Group and CIRCOR close. And other expense is forecasted to be around $100 million. Tax rate, the full-year tax rate, we are guiding to 22.5%.
+
+EPS, full-year adjusted EPS is going to be $34.75 at the midpoint. That's an increase of 8% versus prior year. The range on that is plus or minus $0.50 on either side. The split on EPS is 47% first half, 53% in the second half. And for cash flow, we're expecting a range of $3.4 billion to $3.9 billion. That is free cash flow with conversion of approximately 100%. Now on the right-hand side of the page, just some details for the first quarter of FY '27, and all of these are at the midpoint. Reported sales are forecasted to be positive approximately 9%. Organic growth is expected to be positive at approximately 8%.
+
+For the quarter, we're forecasting adjusted segment operating margins at 27.7% and adjusted EPS is expected to be just over -- a little over $8 at $8.07 for the quarter. As usual, there are lots of additional guidance details in the appendix. On Slide 15, if you look at the bridge, this just shows the growth versus prior year. We're forecasting an increase of 8.5% in segment operating income dollars. That is a little over $3 of additional EPS for the year. Lower interest rate resulting from what we've been able to pay down in the year adds about $0.38. Lower share count will add $0.07.
+
+We've got a little bit of a headwind here on tax that's using a forecasted rate of 22.5%. That does not include any discrete items that are not yet known. And it is a bit of a headwind from what we've experienced in FY '26. Nothing unusual there, just still unknown. Corporate G&A and other, it's really other is forecasted to be unfavorable $0.14. All of that will be in the other line, and that's really due to the non-repeat of some favorable foreign currency exchange that we experienced in FY '26. In summary, the adjusted EPS is $34.75. That's up 8%. And with that, Jenny, I will hand it back to you.
+
+Jennifer Parmentier: Thanks, Todd. On our final slide, a reminder of what drives Parker. Safety, engagement and ownership are the foundation of our culture. It is our team members living up to our purpose every day that drives top quartile performance and allows us to be great generators and deployers of cash.
+
+Todd Leombruno: Okay, we are ready to start the Q&A portion of the call.
+
+Operator: [Operator Instructions] We'll go first today to Scott Davis with Melius Research.
+
+Scott Davis: Congrats on a great year. It must sound like a broken record because you've had quite a few of them in the last few years anyways. But -- just a cleanup item here. What are the final hurdles left to close the Filtration Group and CIRCOR? Any major hurdles?
+
+Jennifer Parmentier: No major hurdles. We still anticipate closing both of them during the second half of this calendar year, the first half of our fiscal year. As you know, closing remains subject to all the customary conditions pending regulatory clearances. But the process is ongoing and continuing to progress on both of them.
+
+Scott Davis: Okay. Fair enough. And then just as a follow-up, when you look at your targets, your new targets on Slide 5. And can you give us a sense of maybe where you're most comfortable and least comfortable if that's such a thing? I'm sure there's some minimum level of comfort, but just love to get a sense of where you feel are going to be the easier targets to hit versus the harder targets to hit.
+
+Todd Leombruno: Scott, I'll start with that and I'll let Jenny jump in here. None of these targets are easy by any stretch of imagination. But what gives me great confidence is the way our team embraces them. I've told you this many times before, I've never seen such alignment across the company. These are not easy to achieve by any stretch of imagination. I look at our track record, and we are just so proud of what we've been able to accomplish here. Raising that margin target to 30%, that's a big number, right? That is a big number. It's a 300 basis point improvement.
+
+But if you look at what we've done in the past, I have great confidence that we're going to be able to achieve that. We've done a great job on the EPS CAGR if you can get margin expansion and top line growth, sprinkling a little bit of accretive capital allocation, that works as well. So I feel really good about this. I don't really have any concerns.
+
+Jennifer Parmentier: No. I mean, I echo Todd's comments. The Win Strategy has never been stronger, and the alignment has never been stronger. Obviously, in these targets, we've included the acquisitions that we've yet to close. We're going to use our integration playbooks and do a great job as we have done in the past, and the team is going to continue to do what we've been doing.
+
+Operator: We'll go next now to Jeff Sprague with Vertical Research.
+
+Jeffrey Sprague: So where to start? Embarrassment of riches here. I guess the first thing is just on the strength of the orders on the rolling 3 basis here in the quarter, particularly in international. But can you just provide a little bit more color on what was going on there? Was there something that proved to be a real catalyst in a couple of key end markets?
+
+Jennifer Parmentier: Yes. I would tell you, for international, Jeff, it was really a nice driven by electronics. I mean there was really -- it was 24% with the 3/12 method. And last year, it was 0. So it was an easy comp of 0. But it was really driven by electronics and in-plant, double-digit growth for Asia Pacific and mid-single-digit growth for EMEA. So positive orders across all the major market verticals, but really, the strength is electronics.
+
+Jeffrey Sprague: And then just thinking about the new framework here. If we look at the rolling 4 exit for Q4 2025, right, it almost exactly called the 2026 organic growth for both NA and international. So I guess the question here is if we're exiting at 9% to 10% here in Q4 on the rolls -- what's sort of the gap or the hedge between sort of the 5% to 8% or the 4% to 7% that you're giving us in North America and international? Anything else to be aware of in that equation?
+
+Jennifer Parmentier: What I would say, Jeff, is that, obviously, the orders remain a leading indicator, but they're not an exact forecast. I think that the 12/12 gets us much closer, as you already pointed out. And the guidance is really in line with the progression of the orders that we've been seeing. Coming out of FY '26 at 3.5% and guiding to 6%, we're really excited about that and really, really happy to see that industrial business be above 6%. And this is at the high end of our target range, too, over the cycle, 4% to 6%. We also -- we have 10% of aerospace and defense business in the Industrial.
+
+So that tends to be even a little bit longer.
+
+Jeff Sprague: Even longer.
+
+Todd Leombruno: I would just add, when you look at the industrial businesses, we are showing an increase from Q4 on an organic basis. When you look at the full year, the comps in the second half get a little bit tougher. So while the organic growth numbers are a little bit lower, it's a little bit more -- from a percentage standpoint, a little bit more weighted in Q1.
+
+Operator: We'll go next now to Chris Snyder of Morgan Stanley.
+
+Christopher Snyder: Maybe just following up on some of that commentary on the industrial business line. So you guys guided every vertical to mid-single-digit growth in industrial for next year. Can you just maybe talk about ones maybe that are exiting with more strength or the ones where you guys feel better about the prospects and the opportunity into '27?
+
+Jennifer Parmentier: Well, what I would say is, again, I'll repeat, as a reminder, 10% of industrial sales are tied to aerospace and defense growing high single digits. So that is very strong. While it's not large enough to be a vertical, we are expecting another year of strong electronics and data center business. When we look at the market vertical forecast and we look at in-plant and industrial equipment, we've been saying for quite some time a gradual recovery here. And it's been very encouraging to see that the demand is improving, and we expect gradual acceleration on a broadening recovery. We've seen distribution orders be strong in the fourth quarter.
+
+We're not calling a full restock yet, but we have heard from some distributors that they are doing more stocking than they have done in the past. So we feel really good about what's going to happen in-plant and industrial. Transportation, strong heavy-duty truck orders. Build rates are increasing. When you look at off-highway, acceleration in construction has been driven by infrastructure spend. And as I commented earlier, we see strong power gen growth in the energy vertical. So a lot to be excited about here, and we feel good about the guide here at mid-single-digit growth.
+
+Christopher Snyder: Absolutely. And then maybe going over to the M&A side. So obviously, you have the two big deals that are closing over the next quarter or so. Can you just maybe talk about the appetite or bandwidth to do incremental deals in '27? Or is it going to be a year more about focusing on just integrating those two businesses? So anything you could just kind of talk about the appetite, the willingness and then even anything just on the pipeline of opportunities you guys see?
+
+Jennifer Parmentier: Yes. So obviously continuing to actively deploy our capital. We're going to get these 2 acquisitions closed. The teams are going to work hard on integration. But the work on the pipeline never stops. We are always working on that pipeline, building relationships with targets. Many times, we're not in control of the timing of when these targets become available. So we might touch 3 with our leverage with these two deals. It will take us about 6 quarters to get that back down to 2. So I would say we still have an appetite, but we're going to stay true to doing what makes sense for the company.
+
+Operator: We'll go next now to Steve Volkmann of Jefferies.
+
+Stephen Volkmann: I echo the embarrassment of riches. I think you've tripled the margin since I started covering you guys. But in the spirit of what have you done for me lately, I'm curious, I think '27 might be -- we might be on track for an Analyst Day. And I know we've had Win 3.0 here doing well for the last few years. Is there a Win 4.0? And sort of what's next for the Win Strategy? How do you progress from here?
+
+Jennifer Parmentier: So there will be a Win 4.0. Definitely, there will be. And we're talking about the next Investor Day now. So I would say stay tuned, but we definitely think that we'll have more things to share in the future.
+
+Todd Leombruno: I just checked the math, Steve, you are correct. We have tripled margins since you've been covering us.
+
+Stephen Volkmann: Yes. I got it right. So just a quick follow-up here. Are your orders getting a lot lumpier? Are you taking in some like some really chunky orders now and the uncertainty around that, maybe that's behind the switch to the trailing 12 and maybe expecting that the fourth quarter might not be repeated going forward?
+
+Jennifer Parmentier: I wouldn't say sitting here today that I don't think the fourth quarter could be repeated. I will tell you that international orders have been very choppy in the past. We've also seen some quarters where we've had some high aerospace and defense orders that are very long term that have hit some of our businesses. And then the next couple of quarters, we don't see that. So we do think that this method of 12/12 is a much better correlation to what we can see for near-term organic growth. The business is just so different than it was when we started reporting these quarterly order rate comparisons.
+
+Aerospace, Engineered Materials and Filtration used to be 35% of the company, and now it's 65% of the company. So we really think that this is going to give a more accurate view of what's to come for organic growth.
+
+Todd Leombruno: Steve, I would just add, when you think about orders that are lumpy, the aerospace business is a business that jumps off the page. Today, 10% of the industrial business is aerospace and defense end markets. So that does create some choppiness, whether that's in the industrial international businesses or in the North America businesses. So what Jenny said is we feel that this is just a better way to look at it.
+
+Operator: We'll go next now to Andy Kaplowitz at Citigroup.
+
+Andrew Kaplowitz: Jenny, I think you're prudently initially forecasting 7% to 10% growth for Aero in FY '27. But as you said, you've now had four years in a row of double-digit growth in Aero, and I think backlog is up mid-teens. So maybe give us a little more lay of the land between what you're seeing in commercial aero and defense. Are you still forecasting strong commercial aero aftermarket growth in FY '27, for instance? Or do you expect to see much higher OE-related growth?
+
+Jennifer Parmentier: Yes. So I'll give you the rundown of what we have built into the guidance. So for commercial OEM, well, first of all, the OE aftermarket split that we have in the guidance is 52% OE, 48% aftermarket. And we just ended the year at 51% OE, 49% aftermarket. So we're planning on higher OE mix here. Commercial OEM, we see mid-teens growth for the fiscal year, and that's really built on commercial aircraft build rate increases. Aircraft demand is still greater than supply and wide-bodies are growing to meet international traffic demand. Commercial MRO, we're seeing plus mid-single-digit growth for fiscal year '27. There's still a lot of older aircraft flying. The fleet still relies on that.
+
+Engine repair shop visits and component restocking continues. And again, international traffic continues to grow faster than domestic. On defense OEM, mid-single-digit growth. Demand for legacy and missile programs continues, increasing defense budgets in response to what's going on in the world and F-35 deliveries are at peak. Defense MRO, plus mid-single-digit growth, and that's really based on fleet upgrades and service extensions, increasing defense budgets and a focus on retrofits and upgrades. So bringing that all together is how we've come up with the guidance for the full year.
+
+Andrew Kaplowitz: Very helpful, Jenny. And then, Todd, for the FY '27 margin guide, it was nice to hear that you're guiding to the high end of your normal 30% to 35% incrementals. But obviously, you've been trending closer to 40%. So how should we think about mix or any price cost headwinds impacting the businesses in FY '27? I assume you do want to be somewhat conservative given those things.
+
+Todd Leombruno: Yes, that's a great point. When it comes to price, we're obviously going to cover any increases that come across, whether that is tariffs, whether that is labor, whether that's logistics, commodities. So that will be in there. But we've said this constantly, we want to return to a normal pricing environment. And what better time to do that is when you're in an element of growth here. So when you look across the businesses, we are at the higher end of that 30% to 35% range. It feels good when we look at -- when we pressure tested it internally. And I would tell you there's nothing that looks abnormal when it comes to timing on those incrementals.
+
+Operator: We'll go next now to Mig Dobre at Baird.
+
+Mircea Dobre: A couple of longer-term questions that I guess I'm just going to roll into one. From a capacity standpoint, when we kind of look at your growth, right, you talked about higher growth than what you've had in the past. And I'm sort of curious as to where you are from a capacity standpoint in your facilities, manufacturing facilities to be able to deliver on that sustained higher growth over the next few years. So maybe it'd be helpful if you can comment on that, and I'm thinking about the industrial business specifically. And related to all of this, you guide for CapEx here 2.5% of sales, which is pretty much consistent with what you've done historically.
+
+A lot of other industrial companies that are talking about higher growth are also talking about higher CapEx and investing in capacity. So I'm curious if your circumstances are different and whether or not we should be planning for maybe a little more CapEx as we think about later in the decade or maybe early 2030.
+
+Jennifer Parmentier: Yes. So actually, Mig, the last -- outside of the last couple of years, we were really more around 2% or a little bit under. And it's just within the last couple of years that we're higher at 2.5%. And we have definitely invested in capacity over the last couple of years, and we have some capacity expansion built into this year. So I think in some businesses, the capacity is already there. Others, we can see that we had to improve, but we're not expecting anything more than we've guided to right now.
+
+Another thing, too, that I would tell you is just our ongoing continuous improvement culture and everything that we do with Kaizen and our lean tools -- the whole output of that is, number one, a better working environment for the team member, but higher output and efficiency. And we've really greatly benefited from that over the last several years. So I think that has kept some of our capacity expansion at a much lower rate than possibly others. But we have invested in capacity. We'll continue to do so.
+
+Operator: We'll go next now to Jamie Cook with Truist.
+
+Jamie Cook: On another fantastic quarter and guidance raise. I guess a couple of questions. Just, Jenny, back to Sprague's question. I don't think you commented on the strength in North America orders, you're up 16%. So sort of what were the end market drivers there? And was there any lumpiness? And even within international, you commented specifically on electronics. Just trying to get a feel for what's going on in the other end markets. And then I guess my second question is just congrats on raising the medium-term targets to 30%. How do we think about what's implied in that margin target in terms of international versus aerospace?
+
+Do you think over the next several years, we can get to a point where international closes the gap on aerospace? Or does aerospace continue to move higher to get you to that 30%?
+
+Jennifer Parmentier: Okay. Well, I'll take the first half of that, and then I'll pass it over to Todd. So first of all, for orders in Q4 in North America, obviously, 16% on the 3/12 and 9% on the 12/12 that we're talking about. So strength in Aerospace and Defense, in-plant and I mentioned that we saw distribution orders much stronger in Q4. Construction, again, on infrastructure spending and heavy-duty truck and commercial HVAC. So really, we saw positive orders across all of the major market verticals. International, plus 24%.
+
+I did mention earlier that kind of that easy comp, but still 10% on a 12/12, it was really driven by electronics and in-plant, double-digit growth for Asia Pacific and mid-single-digit growth for EMEA. In EMEA, we do see some strength in construction and mining and some in-plant. But again, positive orders across all of those verticals. And with aerospace, listen, double-digit growth in both commercial OEM and aftermarket and strength in defense OEM. So defense OEM was stronger than expected with double-digit order growth. So really just a really nice quarter for orders.
+
+Todd Leombruno: Jenny, I can speak about the FY '31 walk. The thing I love about these targets is that everyone has a part in these targets, just like the way we got to over 27%, every single one of our businesses has generated higher margins than they did when we started those targets. So everyone's got a new target, and that's what I love about the company. Aerospace has been outsized when it comes to margin expansion, four years of double-digit organic growth, great aftermarket exposure and growth has really helped that. But we expect every one of these businesses to be part of our walk to FY '30, including Aerospace. Our international teams have done an unbelievable job.
+
+They are constantly looking at growth opportunities, cost-out opportunities. And that's no different than North America. My gut feel here would say the North American or the industrial businesses will expand more than aerospace, just with what Aerospace has on its plate with next-gen investments and OEM mix. They still will expand margins, but I think the industrial businesses will expand at a greater clip as we walk to FY '30.
+
+Operator: We'll go next now to Tim Thein with Raymond James.
+
+Timothy Thein: I had a longer-term question on Aerospace within the context of your 2031 target, the organic growth target. I'm just curious, I mean, they're obviously coming off what is, as Todd pointed out, a really long stretch of growth, but the demand backdrop for both commercial and defense seems to be getting a bit better. So -- and you obviously have a bit more visibility here given the backlog. So how would you think about that kind of growth algorithm for aerospace looking out beyond '27?
+
+Jennifer Parmentier: We've forecasted long-term growth drivers for each of the areas in aerospace. And we see aerospace as high single digits through that time period. So we feel like it's going to be -- just going to continue at that rate until the time that we reach these targets.
+
+Todd Leombruno: We'll also have the CIRCOR aerospace and defense business, when that closes, that will be another growth driver, obviously, from the equipment side. But once that becomes organic over the five-year period, that will be another growth driver when it comes to aerospace. And again, I can't deemphasize enough, 10% of the industrial business has aerospace and defense end market exposure.
+
+Timothy Thein: Yes. Understood. And then just on more near term on pricing with respect to aerospace, just given some of the LTAs that I'm guessing were -- may have been renegotiated coming out of COVID may have provided a little bit of a bump. Are we kind of back to a setting where those are more, I guess, normal in terms of the -- I guess the spirit of the question is just the contribution to price, not asking for quantification, but just directionally, how that is trending in '27?
+
+Jennifer Parmentier: Yes. So on the industrial side of the business, we are back to a -- what we would consider more of a normal pricing environment. And in aerospace, there's still pricing opportunity. There have been a lot of negotiations. There are some negotiations that are still in play. So I would say that there's still some opportunity in aerospace.
+
+Operator: We'll go next now to Amit Mehrotra at UBS.
+
+Amit Mehrotra: I guess the first one, just on the North American industrial inflection, the 16% growth of orders. Any color you could talk about between sort of the distribution channel and the direct OEM channel? I know the distributor channel has been maybe a little bit more stubborn, and I think you talked about it a little bit more positively, but any more color around the activity you're seeing and the confidence coming back in that specific channel?
+
+Jennifer Parmentier: Yes. Look, I've been saying for a lot of quarters here that distributors have been very positive. And the order growth, the strength that we saw in Q4 really supports that positive sentiment and what they've been telling us. So we definitely feel like that is a broadening recovery instead of what we've just been saying as a gradual recovery. So we feel good about that. Still not calling a restock though. Some distributors are telling us that they are stocking for projects that they're working on for their customers or business that they see coming. But I wouldn't call the whole channel as an overall restock. On the OEM side, obviously, we've seen production rates increase for heavy-duty truck.
+
+That's been very encouraging. We've seen construction and mining get stronger. But we've also seen agriculture remain where it's been pretty soft and automotive pretty soft. But there's commercial HVAC and refrigeration that is growing. There's energy with power gen. So there's been some strong OEM orders and strong OEM growth along with what we see in distribution.
+
+Amit Mehrotra: Okay. And just the sort of natural follow-up question to that is, obviously, the mix dynamic, if there is one between distributors versus OEM has -- I know you've taken a lot of price in the distribution channel, and we're kind of waiting for the volume to recover. If I think about this guidance of inflection in growth -- organic growth in North American Industrial, is it all the incremental -- is it all volume? Is there a little bit more price as maybe some of that distribution volume comes through? Just give us a little bit of a flavor specifically with North American Industrial.
+
+Jennifer Parmentier: Yes. We're back to a normal pricing environment here, and this is all volume.
+
+Operator: We'll go next now to Andrew Buscaglia at BNP Paribas.
+
+Andrew Buscaglia: I know this is small, but can you comment on your data center exposure? I believe you have some interesting equipment hoses and connectors that play into the space. And I'm wondering if you're seeing interesting order activity there. And then any comments you can make on -- are you seeing any specification activity related to liquid cooling as an interesting growth driver?
+
+Jennifer Parmentier: Yes. So we do have really nice exposure, and it grew nicely last year, and we think it's going to continue to grow. It's about 1.5% of our sales, and we've been previously saying 1%. So it is growing, but it's not quite large enough yet to have its own market vertical. This is a great story for our interconnected technologies because you mentioned a few of our products, but it's hoses, couplings, manifolds, fittings -- engineered materials for thermal management. So really, really a good showcase of all of the Parker technologies. And we are working with the industry leaders. We are seeing good orders here. We provide liquid cooling systems and subsystem components.
+
+So our teams are doing a really fantastic job in this space. We have a very highly skilled, high-performance team serving these data center customers. And as I mentioned, it's a nice growth area.
+
+Andrew Buscaglia: Okay. And maybe just on the longer-term outlook, I couldn't help but notice you call for about 200 basis point margin expansion in 2027 and 2029 and a 300 basis point step-up from 2029 to 2031. I think I got that right. Why would you -- what gives you that confidence? Do you see sort of an acceleration in your margins? And I wonder if it's pertaining to the recent acquisitions that you expect to close?
+
+Todd Leombruno: Yes, I could take that. Just to clarify, what we are calling out is we're calling out 300 basis points of improvement from a 27.0% target that we just surpassed in FY '26. That was originally our FY '29 target. We're restating that to FY '31 and the new target is 30% adjusted segment operating margins. So as far as what's going to get us there, we have included the Filtration Group Corporation acquisition and the CIRCOR aerospace and defense business in those margin targets.
+
+But when you look at that, it's really coming from our existing business just because of the size of the existing business is so much greater than those two great additions we're going to have, and it's going to be everything that got us to 27.3% this year, just more of it. So we feel really confident about the walk to get there, and it should be spread pretty equally across those years, each of the five years.
+
+Operator: We'll go next now to Nicole DeBlase with Deutsche Bank.
+
+Nicole DeBlase: Congrats on a really great quarter. I guess maybe first, Jenny, if we could touch on how the orders progressed throughout the quarter? And if you've observed continued strength in July, I would assume so based on what you guys expect for '27, but would love to hear any perspective on that.
+
+Jennifer Parmentier: I would say that there's nothing that's happened that concerns me that would not support the guide that we put out.
+
+Nicole DeBlase: Okay. Understood. And then with the electronics strength in international, was that like are there big lumpy orders that are coming through in the quarter? Do you -- what I'm trying to get at is, is that electronic strength sustainable? Or do you think that was kind of like a 4Q dynamic that might not last into 2027?
+
+Jennifer Parmentier: I think it's going to remain strong. I mean, obviously, it came in much stronger than we were expecting. I think we had about a 10% in for Asia Pacific, and it came in much stronger. So I would say the guide reflects what we expect out of international, but this is a strong area for us.
+
+Operator: We'll go next now to Nathan Jones with Stifel.
+
+Nathan Jones: I guess I'll follow up a little bit on some of the international order strength here, kind of alluding that there's a good chance that, that continues. If it does, would that maybe improve the outlook for the second half of fiscal '27? And in the guidance that you've given out today, do you assume that some of this order strength in international and in North America continues or that it moderates a little bit from here?
+
+Jennifer Parmentier: What we have in the guide right now is what we see with the order progression that's out there. So obviously, we did have a very strong Q4 orders to support what we have in for Q1 and for the rest of the year. So I would tell you that, obviously, we -- as the year goes on, we hope that we can raise those, but this is the best picture we have right now.
+
+Todd Leombruno: Well, our 48-52 split somehow works out every year, year after year. That's what we are guiding for here. I think it's more of a comp issue. Just the second half of FY '26 was so good, the comps get a little bit tougher. But if you look at the dollars, the dollars are weighted like they normally are much heavier in the second half.
+
+Nathan Jones: A follow-up question on the CIRCOR aerospace business. Can you just talk a little bit more about what the strategy is with that? I think it already has extremely high margins after it got rid of all the build-to-print work several years ago. So is this a revenue synergy play? It doesn't seem like it would be a cost synergy play given the margins are already high. But just any comments you can make around the strategy for that acquisition, please?
+
+Jennifer Parmentier: Sure. So it is the highest growth, highest margin acquisition to date. What we love about CIRCOR is it brings complementary flight-critical motion and flow control capabilities to our portfolio. And as I mentioned before, these are proprietary technologies. This is what we like to bring into our suite of projects. This is an 80% OEM business and 50-50 sales split across commercial and defense. We have not modeled any revenue synergies. We have said 10% synergies. That's approximately $26 million. They ended calendar year '26 -- their estimate for calendar year '26 is $270 million with more than 40% adjusted EBITDA margin, and that's before synergies. So this is going to be a really nice addition to our portfolio.
+
+And like I said earlier, we'll get this hopefully closed before the end of this calendar year.
+
+Operator: We'll go next now to Joe Giordano with TD Cowen.
+
+Joseph Giordano: The growth by end market that you guys have for next year, like how consistent is that with where order rates were for you by those end markets for '26?
+
+Todd Leombruno: So I think it's pretty consistent. We finished the year pretty strong on an order exit rate. We called out the longer cycle nature of some of those things. But what we're guiding for, to give you an example, for Q1 is a slight increase from where we exited Q4. So like Jenny said, I think we're giving you the best look that we can right now with the visibility that we have. And we feel pretty positive. This is the highest organic growth guide that we've had in modern history.
+
+Joseph Giordano: And that's consistent on like an end-market basis as well, like not like a buildup of backlog anywhere in any of those particular end markets?
+
+Todd Leombruno: No. I mean there might be a little bit more strength in heavy-duty truck, but everything else is pretty consistent. That's why they're all mid-single-digit growth forecasts.
+
+Joseph Giordano: And you don't feel like there's any pull-forward or anything into the fourth quarter from anything that would have been 1Q orders?
+
+Todd Leombruno: No. We never really experienced that. I think our focus for years has been on delivering to customers when they need it. And we've been active on price and making sure that there's no slippage in when orders were placed. So...
+
+Jennifer Parmentier: One of the things that we've worked really hard on the last several years is demand and capacity planning with our customers and with our suppliers. So that's something that's given us the ability to be much more efficient in our operations and make sure that the customers know that they can get the product from Parker in a stated lead time.
+
+Todd Leombruno: Bo, I think we might have time for one more if we have anyone left in the queue.
+
+Operator: We do. We'll take our final question today from Chigusa Katoku with JPMorgan.
+
+Chigusa Katoku: Just want to touch briefly on energy. I think it's a tale of two worlds, power strong and oil and gas softer. I think last quarter, you expected 2026 was about low single-digit for this vertical, and you're expecting mid-single digit this year. I'm just curious, is this more driven by power being stronger and oil and gas kind of unchanged? Just any color there would be great.
+
+Jennifer Parmentier: Yes. We definitely see power gen growth, and we think that's going to continue to be strong and a little bit stronger. Oil and gas, we think it's going to be flat. There could be an up-cycle coming, but we don't have any signs of that yet. So this is flat oil and gas and stronger power gen growth.
+
+Chigusa Katoku: Okay. Great. And then just trying to put a finer point on the orders acceleration in North America industrial. It really accelerated nicely. It sounded like it was broad-based. You didn't -- I didn't hear you call out power or data center, but what were kind of the trends there? Just if you could put any finer point on what really led to this acceleration versus the third quarter, that would be helpful.
+
+Jennifer Parmentier: Yes. I mean it was across many market verticals. We saw strong aerospace and defense in the industrial businesses, in-plant and industrial demand, higher distribution. We saw transportation improvement with heavy truck. We saw construction growth. We saw power gen growth and commercial HVAC. So we just saw really, really nice growth across all the market verticals.
+
+Todd Leombruno: Okay. I think that is all we have from a time standpoint. We appreciate everyone joining today. We appreciate your attention. FY '26 was just a great year for Parker-Hannifin. It was our safest year ever. It was another year of operational excellence. And obviously, as Jenny said, a very active year when it comes to capital deployment. We are looking forward to an even better FY '27. We are confident in that path to our new 30% segment operating margin target by FY '31. And really, none of this could be possible without a sincere thank you to our global team members around the world and to our investors for your interest in Parker-Hannifin.
+
+So thank you all very much. Jeff and Jenna will be available today if there's any follow-ups that are needed. Thanks again for joining us, and have a great day, everyone.
+
+Operator: Thank you very much, Mr. Leombruno, and thank you, Ms. Parmentier. Again, ladies and gentlemen, this will conclude today's Parker-Hannifin Corporation's Fiscal 2026 Fourth Quarter and Full Year Earnings Conference Call and Webcast. Again, thanks so much for joining us, everyone. We wish you all a great afternoon. Goodbye.
