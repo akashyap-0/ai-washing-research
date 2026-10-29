@@ -70,6 +70,9 @@ SELFTEST_URL = (FOOL + "/earnings/call-transcripts/2023/05/24/"
 SELFTEST_FILE = ROOT / "earnings_calls" / "nvidia" / "nvidia_FY24_Q1.md"
 MAG7_FOOL_DIRS = ["nvidia", "tesla"]
 
+MONTH_RX = (r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),\s+(20\d\d)")
+MONTH_ABBR = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+REAL_CALL_DATE = {"page date line", "page DATE section"}
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August",
           "September", "October", "November", "December"]
 
@@ -208,6 +211,27 @@ def label_quarter(fool_y, fool_q, fy_end_month, year_shift=0):
     ey = (fool_y + year_shift) if e <= fy_end_month else (fool_y + year_shift - 1)
     mid_m, mid_y = (e - 2) % 12 + 1, (ey if e != 1 else ey - 1)
     return mid_y, (mid_m - 1) // 3 + 1
+
+
+def label_quarter_end(fool_y, fool_q, fy_end_month, year_shift=0):
+    """Last day of the fiscal quarter named by Fool's label (see label_quarter)."""
+    e = (fy_end_month - 3 * (4 - fool_q) - 1) % 12 + 1
+    ey = (fool_y + year_shift) if e <= fy_end_month else (fool_y + year_shift - 1)
+    return date(ey, e, monthrange(ey, e)[1])
+
+
+def label_from_call(call_date, fy_end_month):
+    """Fiscal (year, quarter) reported on `call_date`: latest quarter end >= 7 days before,
+    fiscal year named by the calendar year it ends in."""
+    ends = {(fy_end_month - 3 * k - 1) % 12 + 1 for k in range(4)}
+    y, m = call_date.year, call_date.month
+    for back in range(0, 14):
+        mm = (m - back - 1) % 12 + 1
+        yy = y + (m - back - 1) // 12
+        if mm in ends and (call_date - date(yy, mm, monthrange(yy, mm)[1])).days >= 7:
+            break
+    fq = 4 - ((fy_end_month - mm) % 12) // 3
+    return (yy if mm <= fy_end_month else yy + 1), fq
 
 
 def in_window(cy, cq):
@@ -356,9 +380,9 @@ def parse_fool_page(raw_html):
         if "DATE" in h2s:
             nxt = h2s["DATE"].find_next(["p", "ul", "div"])
             txt = nxt.get_text(" ", strip=True) if nxt else ""
-            dm = re.search(r"(" + "|".join(MONTHS) + r")\s+(\d{1,2}),\s+(20\d\d)", txt)
+            dm = re.search(MONTH_RX, txt)             # "Thursday, Oct. 31, 2024 at 8:30 a.m. ET"
             if dm:
-                info["call_date"] = date(int(dm.group(3)), MONTHS.index(dm.group(1)) + 1,
+                info["call_date"] = date(int(dm.group(3)), MONTH_ABBR.index(dm.group(1)[:3].lower()) + 1,
                                          int(dm.group(2)))
                 info["call_date_source"] = "page DATE section"
     else:
@@ -672,7 +696,9 @@ def cmd_download(args):
                    "sha256": sha256(data) if data else "", "retrieved_utc": now_utc()}
             if status == 200 and data:
                 cpath.parent.mkdir(parents=True, exist_ok=True)
-                cpath.write_bytes(gzip.compress(data))
+                tmp = cpath.with_name(cpath.name + ".part")    # atomic: sleep or kill mid-write
+                tmp.write_bytes(gzip.compress(data))            # never leaves a half file
+                os.replace(tmp, cpath)
                 rec["layout"] = parse_fool_page(data.decode("utf-8", "replace"))["layout"]
                 fails = 0
             elif status in (404, 410):
@@ -709,6 +735,14 @@ def write_raw(half, universe, cands):
         if not info["call_date"]:
             info["call_date"] = date.fromisoformat(r["url_date"])
             info["call_date_source"] = "URL date (publication date, not call date)"
+        real_date = info["call_date_source"] in REAL_CALL_DATE
+        f = int(firm["fye_month"])
+        if not info["fool_q"] and real_date:          # title and slug carry no quarter
+            fy_, fq_ = label_from_call(info["call_date"], f)
+            info["fool_y"], info["fool_q"] = str(fy_), str(fq_)
+            info["label_source"] = "derived from call date"
+        else:
+            info["label_source"] = "Fool title/slug"
         status = "ok"
         if info["layout"] == "unknown":
             status = "unknown layout"
@@ -716,12 +750,19 @@ def write_raw(half, universe, cands):
             status = "not a main earnings call"
         elif not info["fool_q"]:
             status = "no fiscal quarter in title or slug"
-        f = int(firm["fye_month"])
         lab = label_quarter(int(info["fool_y"]), int(info["fool_q"]), f) if info["fool_q"] else None
-        if info["call_date_source"].startswith(("page date", "page DATE")) or lab is None:
+        if lab is not None:                           # days from the labelled quarter end to the date
+            lags = [(info["call_date"] - label_quarter_end(int(info["fool_y"]), int(info["fool_q"]), f, k)).days
+                    for k in (0, 1, -1)]
+            repost = all(x > 120 for x in lags)       # dated long after any reading of the label
+        else:
+            repost = False
+        if lab is None or (real_date and not repost):
             cy, cq = calendar_quarter(info["call_date"], f)
             method = "call date"
-        else:                                         # only a publication date: trust the label
+        elif repost:                                  # Fool backfill: page date is the repost date
+            (cy, cq), method = lab, "fiscal label (page date is a later repost)"
+        else:                                         # only a publication date on the page
             (cy, cq), method = lab, "fiscal label (no call date on page)"
         info["quarter_method"] = method
         info["label_agrees"] = "" if lab is None else (lab == (cy, cq))
@@ -760,6 +801,7 @@ def write_raw(half, universe, cands):
                      "calendar_quarter": c["cq"], "call_date": info["call_date"].isoformat(),
                      "call_date_source": info["call_date_source"],
                      "quarter_method": info["quarter_method"], "label_agrees": info["label_agrees"],
+                     "label_source": info["label_source"],
                      "pre_chatgpt": info["call_date"] < CHATGPT, "layout": info["layout"],
                      "tier": {"fool_verbatim": "A", "fool_llm": "B"}.get(info["layout"], ""),
                      "status": c["status"], "title": info["title"], "url": c["url"],

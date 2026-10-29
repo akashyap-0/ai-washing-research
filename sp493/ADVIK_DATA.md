@@ -141,7 +141,21 @@ python -u sp493/sp493_pull.py download --half 2 > cache/sp493_sources/download_h
   - `sp493/coverage/half2_availability.csv`
   - `sp493/acquisition/half2_results.jsonl`
 - **The last line of the log** looks like
-  `raw files written; availability for 246 firms x 19 quarters: {...}`.
+  `raw files written; availability for 246 firms x 19 quarters: {...}`. Half 1 got
+  `tierA 1276, tierB 873, missing 2544`, and half 2 should be similar.
+- **If you ran Step 3 with a copy of `sp493_pull.py` from before Tanush's date fix:** that version
+  misdated Fool backfills, for example Ametek Q3 2024 filed as 2026. Pull the fixed script, then
+  delete only the *generated* outputs:
+  - `sp493/earnings_calls/`
+  - `sp493/earnings_calls_fool_llm/`
+  - `sp493/earnings_calls_ai_only/`
+  - `sp493/coverage/half2_calls.csv`
+  - `sp493/coverage/half2_availability.csv`
+  - `sp493/coverage/half2_call_units.csv`
+  - `sp493/coverage/half2_coverage_summary.csv`
+
+  Then re-run Step 3. Every page is already cached, so it rebuilds in about a minute without
+  downloading anything. Never delete `cache/` or `acquisition/`.
 
 **Spot-check after the download.** Do all of these and put the answers in your report:
 
@@ -186,6 +200,18 @@ This prints:
 
 It also writes `sp493/coverage/half2_coverage_summary.csv`. Copy the printed output into your
 report.
+
+For comparison, half 1 got:
+
+| Measure | Half 1 |
+|---|---|
+| Firms with Tier A calls both before and after ChatGPT | 93 |
+| Before only | 41 |
+| After only | 13 |
+| No Tier A call at all | 100 |
+
+Tier A stops at 2025 Q1. Everything after that is Tier B, which reflects Fool's layout switch, not
+a bug.
 
 ## Step 6: Commit and hand back
 

@@ -255,8 +255,15 @@ not a matching error.
   the article.
 - **Calendar quarter:** comes from the call date printed on the page (old layout: the date line;
   new layout: the `DATE` section), using the §4.2 rule. If a page has only a publication date,
-  the fiscal label is used instead. `quarter_method` and `label_agrees` in `half<N>_calls.csv`
-  record which rule was used and whether the two agree.
+  the fiscal label is used instead. The fiscal label is also used if the page date is more than 120
+  days after the quarter in its title under any reading of the fiscal year: that is a Fool backfill
+  dated by its repost day. New-layout dates are abbreviated ("Oct. 31, 2024"). When a page has no
+  quarter in its title or slug, the quarter comes from the real call date. `quarter_method`,
+  `label_agrees` and `label_source` in `half<N>_calls.csv` record which rule was used.
+  `label_agrees = False` with a real call date is normal for firms that changed fiscal year, such as
+  Amcor, which moved from June to December.
+- **Reposts with the same slug** share one cache file. The earliest URL is the one fetched and
+  cited; later ones are logged as `duplicate`.
 - **Picking one call per quarter:** keep the earliest main earnings call in each company-quarter,
   Tier A before Tier B. Other candidates are logged as `duplicate`.
 - **Output:** `sp493/earnings_calls/<ticker>/<ticker>_<period>.md` (Tier A) or
