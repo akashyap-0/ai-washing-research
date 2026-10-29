@@ -1,0 +1,1277 @@
+ticker,gics_sector,period_label,calendar_year,calendar_quarter,call_date,pre_chatgpt,format,total_units,ai_units,total_prepared,ai_prepared,total_qa,ai_qa,ai_uncertain,borderline_auto,borderline_infra,parse_flags,file
+A,Health Care,FY22_Q1,2021,4,2022-02-22,True,fool,621,7,144,1,477,6,2,2,4,,sp493/earnings_calls/a/a_FY22_Q1.md
+A,Health Care,FY22_Q2,2022,1,2022-05-24,True,fool,735,1,162,0,573,1,1,0,1,,sp493/earnings_calls/a/a_FY22_Q2.md
+A,Health Care,FY22_Q3,2022,2,2022-08-16,True,fool,711,3,162,0,549,3,3,0,2,,sp493/earnings_calls/a/a_FY22_Q3.md
+ABNB,Consumer Discretionary,2021_Q4,2021,4,2022-02-15,True,fool,708,5,115,4,593,1,5,0,0,,sp493/earnings_calls/abnb/abnb_2021_Q4.md
+ABNB,Consumer Discretionary,2022_Q1,2022,1,2022-05-03,True,fool,709,5,86,0,623,5,5,0,0,,sp493/earnings_calls/abnb/abnb_2022_Q1.md
+ABNB,Consumer Discretionary,2022_Q2,2022,2,2022-08-02,True,fool,686,3,98,0,588,3,3,0,0,,sp493/earnings_calls/abnb/abnb_2022_Q2.md
+ABNB,Consumer Discretionary,2022_Q3,2022,3,2022-11-01,True,fool,677,5,65,0,612,5,5,0,0,,sp493/earnings_calls/abnb/abnb_2022_Q3.md
+ABNB,Consumer Discretionary,2022_Q4,2022,4,2023-02-14,False,fool,746,5,99,0,647,5,0,0,2,,sp493/earnings_calls/abnb/abnb_2022_Q4.md
+ABNB,Consumer Discretionary,2023_Q1,2023,1,2023-05-09,False,fool,688,29,102,0,586,29,9,0,5,,sp493/earnings_calls/abnb/abnb_2023_Q1.md
+ABNB,Consumer Discretionary,2023_Q2,2023,2,2023-08-03,False,fool,571,18,97,0,474,18,4,1,2,,sp493/earnings_calls/abnb/abnb_2023_Q2.md
+ABNB,Consumer Discretionary,2023_Q3,2023,3,2023-11-01,False,fool,631,16,72,0,559,16,5,0,1,,sp493/earnings_calls/abnb/abnb_2023_Q3.md
+ABNB,Consumer Discretionary,2023_Q4,2023,4,2024-02-13,False,fool,636,21,116,3,520,18,3,0,4,,sp493/earnings_calls/abnb/abnb_2023_Q4.md
+ABNB,Consumer Discretionary,2024_Q1,2024,1,2024-05-08,False,fool,671,13,86,0,585,13,0,0,2,,sp493/earnings_calls/abnb/abnb_2024_Q1.md
+ABNB,Consumer Discretionary,2024_Q2,2024,2,2024-08-06,False,fool,641,15,85,0,556,15,4,0,0,,sp493/earnings_calls/abnb/abnb_2024_Q2.md
+ABNB,Consumer Discretionary,2024_Q3,2024,3,2024-11-07,False,fool,611,9,95,0,516,9,2,0,1,,sp493/earnings_calls/abnb/abnb_2024_Q3.md
+ABNB,Consumer Discretionary,2024_Q4,2024,4,2025-02-13,False,fool,656,12,83,0,573,12,0,0,0,,sp493/earnings_calls/abnb/abnb_2024_Q4.md
+ADBE,Information Technology,FY21_Q4,2021,4,2021-12-16,True,fool,808,17,470,10,338,7,5,4,0,,sp493/earnings_calls/adbe/adbe_FY21_Q4.md
+ADBE,Information Technology,FY24_Q3,2024,3,2024-09-12,False,fool,444,69,165,33,279,36,19,2,0,,sp493/earnings_calls/adbe/adbe_FY24_Q3.md
+ADBE,Information Technology,FY24_Q4,2024,4,2024-12-11,False,fool,450,65,159,32,291,33,17,3,1,,sp493/earnings_calls/adbe/adbe_FY24_Q4.md
+ADBE,Information Technology,FY25_Q1,2025,1,2025-03-12,False,fool,484,81,205,35,279,46,24,1,1,,sp493/earnings_calls/adbe/adbe_FY25_Q1.md
+ADM,Consumer Staples,2021_Q4,2021,4,2022-01-25,True,fool,599,0,111,0,488,0,0,0,6,,sp493/earnings_calls/adm/adm_2021_Q4.md
+ADM,Consumer Staples,2022_Q1,2022,1,2022-04-26,True,fool,499,0,123,0,376,0,0,1,1,,sp493/earnings_calls/adm/adm_2022_Q1.md
+ADM,Consumer Staples,2022_Q2,2022,2,2022-07-26,True,fool,640,1,110,1,530,0,1,2,4,,sp493/earnings_calls/adm/adm_2022_Q2.md
+ADSK,Information Technology,FY22_Q4,2021,4,2022-02-24,True,fool,499,7,155,5,344,2,3,3,1,,sp493/earnings_calls/adsk/adsk_FY22_Q4.md
+ADSK,Information Technology,FY23_Q1,2022,1,2022-05-26,True,fool,590,7,150,5,440,2,2,1,16,,sp493/earnings_calls/adsk/adsk_FY23_Q1.md
+ADSK,Information Technology,FY23_Q2,2022,2,2022-08-24,True,fool,529,10,123,4,406,6,7,4,8,,sp493/earnings_calls/adsk/adsk_FY23_Q2.md
+ADSK,Information Technology,FY23_Q3,2022,3,2022-11-22,True,fool,595,2,140,0,455,2,2,2,3,,sp493/earnings_calls/adsk/adsk_FY23_Q3.md
+ADSK,Information Technology,FY23_Q4,2022,4,2023-02-23,False,fool,557,10,166,3,391,7,5,0,7,,sp493/earnings_calls/adsk/adsk_FY23_Q4.md
+ADSK,Information Technology,FY24_Q1,2023,1,2023-05-25,False,fool,535,20,156,4,379,16,7,4,3,,sp493/earnings_calls/adsk/adsk_FY24_Q1.md
+ADSK,Information Technology,FY24_Q2,2023,2,2023-08-23,False,fool,548,20,149,6,399,14,18,2,11,,sp493/earnings_calls/adsk/adsk_FY24_Q2.md
+ADSK,Information Technology,FY24_Q3,2023,3,2023-11-21,False,fool,561,42,183,19,378,23,33,3,10,,sp493/earnings_calls/adsk/adsk_FY24_Q3.md
+ADSK,Information Technology,FY24_Q4,2023,4,2024-02-29,False,fool,496,54,158,26,338,28,42,4,10,,sp493/earnings_calls/adsk/adsk_FY24_Q4.md
+ADSK,Information Technology,FY25_Q1,2024,1,2024-06-11,False,fool,606,36,162,17,444,19,18,3,11,,sp493/earnings_calls/adsk/adsk_FY25_Q1.md
+ADSK,Information Technology,FY25_Q2,2024,2,2024-08-29,False,fool,532,48,187,31,345,17,44,1,7,,sp493/earnings_calls/adsk/adsk_FY25_Q2.md
+ADSK,Information Technology,FY25_Q3,2024,3,2024-11-26,False,fool,552,49,160,24,392,25,40,2,10,,sp493/earnings_calls/adsk/adsk_FY25_Q3.md
+ADSK,Information Technology,FY25_Q4,2024,4,2025-02-27,False,fool,594,43,162,23,432,20,27,3,2,,sp493/earnings_calls/adsk/adsk_FY25_Q4.md
+AKAM,Information Technology,2021_Q4,2021,4,2022-02-15,True,fool,711,4,218,2,493,2,4,1,42,,sp493/earnings_calls/akam/akam_2021_Q4.md
+AKAM,Information Technology,2022_Q1,2022,1,2022-05-03,True,fool,709,2,202,0,507,2,2,0,43,,sp493/earnings_calls/akam/akam_2022_Q1.md
+AKAM,Information Technology,2022_Q2,2022,2,2022-08-09,True,fool,583,2,159,1,424,1,2,0,41,,sp493/earnings_calls/akam/akam_2022_Q2.md
+ALGN,Health Care,2021_Q4,2021,4,2022-02-02,True,fool,571,7,287,4,284,3,5,1,4,,sp493/earnings_calls/algn/algn_2021_Q4.md
+ALGN,Health Care,2022_Q1,2022,1,2022-04-27,True,fool,618,4,195,2,423,2,4,0,8,,sp493/earnings_calls/algn/algn_2022_Q1.md
+ALGN,Health Care,2022_Q2,2022,2,2022-07-27,True,fool,656,3,178,3,478,0,2,0,4,,sp493/earnings_calls/algn/algn_2022_Q2.md
+ALGN,Health Care,2022_Q3,2022,3,2022-10-26,True,fool,638,5,199,4,439,1,3,2,4,,sp493/earnings_calls/algn/algn_2022_Q3.md
+ALGN,Health Care,2022_Q4,2022,4,2023-02-01,False,fool,506,5,187,1,319,4,3,0,4,,sp493/earnings_calls/algn/algn_2022_Q4.md
+ALGN,Health Care,2023_Q2,2023,2,2023-07-26,False,fool,520,4,186,3,334,1,3,0,5,,sp493/earnings_calls/algn/algn_2023_Q2.md
+ALGN,Health Care,2023_Q3,2023,3,2023-10-25,False,fool,470,1,178,1,292,0,0,0,5,,sp493/earnings_calls/algn/algn_2023_Q3.md
+ALGN,Health Care,2023_Q4,2023,4,2024-01-31,False,fool,509,4,167,3,342,1,3,0,7,,sp493/earnings_calls/algn/algn_2023_Q4.md
+ALGN,Health Care,2024_Q1,2024,1,2024-04-24,False,fool,574,1,187,1,387,0,1,0,4,,sp493/earnings_calls/algn/algn_2024_Q1.md
+ALGN,Health Care,2024_Q2,2024,2,2024-07-24,False,fool,473,5,173,2,300,3,5,0,4,,sp493/earnings_calls/algn/algn_2024_Q2.md
+ALGN,Health Care,2024_Q3,2024,3,2024-10-23,False,fool,589,2,153,2,436,0,2,0,7,,sp493/earnings_calls/algn/algn_2024_Q3.md
+ALGN,Health Care,2024_Q4,2024,4,2025-02-05,False,fool,654,1,196,1,458,0,1,1,4,,sp493/earnings_calls/algn/algn_2024_Q4.md
+ANET,Information Technology,2021_Q4,2021,4,2022-02-14,True,fool,639,11,142,3,497,8,3,0,16,,sp493/earnings_calls/anet/anet_2021_Q4.md
+ANET,Information Technology,2022_Q1,2022,1,2022-05-02,True,fool,733,6,102,2,631,4,2,2,8,,sp493/earnings_calls/anet/anet_2022_Q1.md
+ANET,Information Technology,2022_Q2,2022,2,2022-08-01,True,fool,638,4,141,2,497,2,4,3,17,,sp493/earnings_calls/anet/anet_2022_Q2.md
+ANET,Information Technology,2022_Q3,2022,3,2022-10-31,True,fool,659,6,129,1,530,5,3,1,20,,sp493/earnings_calls/anet/anet_2022_Q3.md
+ANET,Information Technology,2022_Q4,2022,4,2023-02-13,False,fool,832,30,201,6,631,24,3,9,19,,sp493/earnings_calls/anet/anet_2022_Q4.md
+ANET,Information Technology,2023_Q1,2023,1,2023-05-01,False,fool,607,39,123,8,484,31,1,4,10,,sp493/earnings_calls/anet/anet_2023_Q1.md
+ANET,Information Technology,2023_Q2,2023,2,2023-07-31,False,fool,534,43,130,16,404,27,3,3,24,,sp493/earnings_calls/anet/anet_2023_Q2.md
+ANET,Information Technology,2023_Q3,2023,3,2023-10-30,False,fool,546,40,100,11,446,29,5,1,21,,sp493/earnings_calls/anet/anet_2023_Q3.md
+ANET,Information Technology,2023_Q4,2023,4,2024-02-12,False,fool,456,50,161,17,295,33,2,1,19,,sp493/earnings_calls/anet/anet_2023_Q4.md
+ANET,Information Technology,2024_Q1,2024,1,2024-05-07,False,fool,579,60,185,23,394,37,8,1,33,,sp493/earnings_calls/anet/anet_2024_Q1.md
+ANET,Information Technology,2024_Q2,2024,2,2024-07-30,False,fool,620,62,139,18,481,44,5,2,37,,sp493/earnings_calls/anet/anet_2024_Q2.md
+ANET,Information Technology,2024_Q3,2024,3,2024-11-07,False,fool,473,58,152,34,321,24,1,1,24,,sp493/earnings_calls/anet/anet_2024_Q3.md
+ANET,Information Technology,2024_Q4,2024,4,2025-02-18,False,fool,585,61,160,20,425,41,3,1,29,,sp493/earnings_calls/anet/anet_2024_Q4.md
+APO,Financials,2021_Q4,2021,4,2022-02-11,True,fool,561,2,234,1,327,1,2,0,7,,sp493/earnings_calls/apo/apo_2021_Q4.md
+APO,Financials,2022_Q1,2022,1,2022-05-05,True,fool,546,2,243,0,303,2,2,0,1,,sp493/earnings_calls/apo/apo_2022_Q1.md
+APO,Financials,2022_Q2,2022,2,2022-08-04,True,fool,465,2,292,0,173,2,2,0,1,,sp493/earnings_calls/apo/apo_2022_Q2.md
+AVGO,Information Technology,FY22_Q1,2021,4,2022-03-03,True,fool,479,7,136,5,343,2,0,1,26,,sp493/earnings_calls/avgo/avgo_FY22_Q1.md
+AVGO,Information Technology,FY22_Q2,2022,1,2022-05-26,True,fool,447,10,212,4,235,6,8,2,34,,sp493/earnings_calls/avgo/avgo_FY22_Q2.md
+AVGO,Information Technology,FY22_Q3,2022,2,2022-09-01,True,fool,409,0,110,0,299,0,0,0,26,,sp493/earnings_calls/avgo/avgo_FY22_Q3.md
+AVGO,Information Technology,FY22_Q4,2022,3,2022-12-08,False,fool,449,1,120,0,329,1,1,0,25,,sp493/earnings_calls/avgo/avgo_FY22_Q4.md
+AVGO,Information Technology,FY23_Q1,2022,4,2023-03-02,False,fool,425,43,130,7,295,36,2,0,29,,sp493/earnings_calls/avgo/avgo_FY23_Q1.md
+AVGO,Information Technology,FY23_Q2,2023,1,2023-06-01,False,fool,459,39,116,4,343,35,0,1,32,,sp493/earnings_calls/avgo/avgo_FY23_Q2.md
+AVGO,Information Technology,FY23_Q3,2023,2,2023-08-31,False,fool,416,50,121,18,295,32,2,0,13,,sp493/earnings_calls/avgo/avgo_FY23_Q3.md
+AVGO,Information Technology,FY23_Q4,2023,3,2023-12-07,False,fool,444,29,135,8,309,21,3,0,33,,sp493/earnings_calls/avgo/avgo_FY23_Q4.md
+AVGO,Information Technology,FY24_Q1,2023,4,2024-03-07,False,fool,461,55,113,11,348,44,3,0,24,,sp493/earnings_calls/avgo/avgo_FY24_Q1.md
+AVGO,Information Technology,FY24_Q2,2024,1,2024-06-12,False,fool,468,53,114,14,354,39,5,0,36,,sp493/earnings_calls/avgo/avgo_FY24_Q2.md
+AVGO,Information Technology,FY24_Q3,2024,2,2024-09-05,False,fool,477,57,118,13,359,44,4,0,28,,sp493/earnings_calls/avgo/avgo_FY24_Q3.md
+AVGO,Information Technology,FY24_Q4,2024,3,2024-12-12,False,fool,439,45,146,19,293,26,1,0,23,,sp493/earnings_calls/avgo/avgo_FY24_Q4.md
+AVGO,Information Technology,FY25_Q1,2024,4,2025-03-06,False,fool,417,67,121,23,296,44,10,1,22,,sp493/earnings_calls/avgo/avgo_FY25_Q1.md
+AXP,Financials,2021_Q4,2021,4,2022-01-25,True,fool,598,3,167,0,431,3,3,0,0,,sp493/earnings_calls/axp/axp_2021_Q4.md
+AXP,Financials,2022_Q1,2022,1,2022-04-22,True,fool,475,4,135,2,340,2,4,0,0,,sp493/earnings_calls/axp/axp_2022_Q1.md
+AXP,Financials,2022_Q2,2022,2,2022-07-22,True,fool,580,4,160,1,420,3,4,2,0,,sp493/earnings_calls/axp/axp_2022_Q2.md
+AXP,Financials,2022_Q3,2022,3,2022-10-21,True,fool,598,12,148,2,450,10,12,0,0,,sp493/earnings_calls/axp/axp_2022_Q3.md
+AXP,Financials,2022_Q4,2022,4,2023-01-27,False,fool,594,15,178,4,416,11,15,1,1,,sp493/earnings_calls/axp/axp_2022_Q4.md
+AXP,Financials,2023_Q2,2023,2,2023-07-21,False,fool,474,11,161,4,313,7,11,0,0,,sp493/earnings_calls/axp/axp_2023_Q2.md
+AXP,Financials,2023_Q3,2023,3,2023-10-20,False,fool,472,6,159,3,313,3,6,0,0,,sp493/earnings_calls/axp/axp_2023_Q3.md
+AXP,Financials,2023_Q4,2023,4,2024-01-26,False,fool,524,9,165,5,359,4,9,0,1,,sp493/earnings_calls/axp/axp_2023_Q4.md
+AXP,Financials,2024_Q1,2024,1,2024-04-19,False,fool,488,6,104,2,384,4,6,0,0,,sp493/earnings_calls/axp/axp_2024_Q1.md
+AXP,Financials,2024_Q2,2024,2,2024-07-19,False,fool,435,3,144,2,291,1,3,0,0,,sp493/earnings_calls/axp/axp_2024_Q2.md
+AXP,Financials,2024_Q3,2024,3,2024-10-18,False,fool,438,3,137,3,301,0,3,0,0,,sp493/earnings_calls/axp/axp_2024_Q3.md
+AXP,Financials,2024_Q4,2024,4,2025-01-24,False,fool,530,6,150,5,380,1,6,0,1,,sp493/earnings_calls/axp/axp_2024_Q4.md
+BA,Industrials,2021_Q4,2021,4,2022-01-26,True,fool,599,4,253,0,346,4,4,0,0,,sp493/earnings_calls/ba/ba_2021_Q4.md
+BA,Industrials,2022_Q1,2022,1,2022-04-27,True,fool,628,1,284,1,344,0,1,0,0,,sp493/earnings_calls/ba/ba_2022_Q1.md
+BA,Industrials,2022_Q2,2022,2,2022-07-27,True,fool,605,1,14,0,591,1,1,0,0,,sp493/earnings_calls/ba/ba_2022_Q2.md
+BA,Industrials,2022_Q3,2022,3,2022-10-26,True,fool,563,3,216,3,347,0,3,0,0,,sp493/earnings_calls/ba/ba_2022_Q3.md
+BA,Industrials,2022_Q4,2022,4,2023-01-25,False,fool,636,6,208,0,428,6,6,0,1,,sp493/earnings_calls/ba/ba_2022_Q4.md
+BA,Industrials,2023_Q2,2023,2,2023-07-26,False,fool,551,1,178,1,373,0,1,0,2,,sp493/earnings_calls/ba/ba_2023_Q2.md
+BA,Industrials,2023_Q3,2023,3,2023-10-25,False,fool,563,1,230,1,333,0,1,0,0,,sp493/earnings_calls/ba/ba_2023_Q3.md
+BA,Industrials,2023_Q4,2023,4,2024-01-31,False,fool,563,0,191,0,372,0,0,0,0,,sp493/earnings_calls/ba/ba_2023_Q4.md
+BA,Industrials,2024_Q1,2024,1,2024-04-24,False,fool,505,0,139,0,366,0,0,0,0,,sp493/earnings_calls/ba/ba_2024_Q1.md
+BA,Industrials,2024_Q2,2024,2,2024-07-31,False,fool,463,1,157,1,306,0,1,0,0,,sp493/earnings_calls/ba/ba_2024_Q2.md
+BA,Industrials,2024_Q3,2024,3,2024-10-23,False,fool,564,1,158,1,406,0,1,0,0,,sp493/earnings_calls/ba/ba_2024_Q3.md
+BA,Industrials,2024_Q4,2024,4,2025-01-28,False,fool,601,0,157,0,444,0,0,0,4,,sp493/earnings_calls/ba/ba_2024_Q4.md
+BBY,Consumer Discretionary,FY21_Q4,2021,4,2022-03-03,True,fool,1170,13,660,9,510,4,13,4,2,"1170 units, outside the typical 400-900",sp493/earnings_calls/bby/bby_FY21_Q4.md
+BBY,Consumer Discretionary,FY22_Q1,2022,1,2022-05-24,True,fool,560,4,232,2,328,2,4,0,1,,sp493/earnings_calls/bby/bby_FY22_Q1.md
+BBY,Consumer Discretionary,FY23_Q2,2022,2,2022-08-30,True,fool,540,4,241,3,299,1,4,0,2,,sp493/earnings_calls/bby/bby_FY23_Q2.md
+BBY,Consumer Discretionary,FY23_Q3,2022,3,2022-11-22,True,fool,557,5,238,3,319,2,5,1,2,,sp493/earnings_calls/bby/bby_FY23_Q3.md
+BBY,Consumer Discretionary,FY23_Q4,2022,4,2023-03-02,False,fool,534,8,249,3,285,5,8,0,5,,sp493/earnings_calls/bby/bby_FY23_Q4.md
+BBY,Consumer Discretionary,FY24_Q1,2023,1,2023-05-25,False,fool,567,10,229,8,338,2,7,0,1,,sp493/earnings_calls/bby/bby_FY24_Q1.md
+BBY,Consumer Discretionary,FY24_Q2,2023,2,2023-08-29,False,fool,553,10,208,6,345,4,4,0,1,,sp493/earnings_calls/bby/bby_FY24_Q2.md
+BBY,Consumer Discretionary,FY24_Q3,2023,3,2023-11-21,False,fool,528,3,209,2,319,1,0,3,1,,sp493/earnings_calls/bby/bby_FY24_Q3.md
+BBY,Consumer Discretionary,FY24_Q4,2023,4,2024-02-29,False,fool,510,20,233,10,277,10,6,3,4,,sp493/earnings_calls/bby/bby_FY24_Q4.md
+BBY,Consumer Discretionary,FY25_Q1,2024,1,2024-05-30,False,fool,542,29,210,12,332,17,8,0,2,,sp493/earnings_calls/bby/bby_FY25_Q1.md
+BBY,Consumer Discretionary,FY25_Q2,2024,2,2024-08-29,False,fool,548,27,211,15,337,12,5,0,1,,sp493/earnings_calls/bby/bby_FY25_Q2.md
+BBY,Consumer Discretionary,FY25_Q3,2024,3,2024-11-26,False,fool,597,23,216,9,381,14,8,0,1,,sp493/earnings_calls/bby/bby_FY25_Q3.md
+BBY,Consumer Discretionary,FY25_Q4,2024,4,2025-03-04,False,fool,534,16,215,11,319,5,10,1,2,,sp493/earnings_calls/bby/bby_FY25_Q4.md
+BIIB,Health Care,2021_Q4,2021,4,2022-02-03,True,fool,483,1,240,1,243,0,0,0,5,,sp493/earnings_calls/biib/biib_2021_Q4.md
+BIIB,Health Care,2022_Q1,2022,1,2022-05-03,True,fool,507,1,162,0,345,1,1,0,7,,sp493/earnings_calls/biib/biib_2022_Q1.md
+BIIB,Health Care,2022_Q2,2022,2,2022-07-20,True,fool,524,1,172,0,352,1,1,0,7,,sp493/earnings_calls/biib/biib_2022_Q2.md
+BIIB,Health Care,2022_Q3,2022,3,2022-10-25,True,fool,521,1,166,0,355,1,1,0,12,,sp493/earnings_calls/biib/biib_2022_Q3.md
+BIIB,Health Care,2022_Q4,2022,4,2023-02-15,False,fool,595,1,290,1,305,0,1,1,4,,sp493/earnings_calls/biib/biib_2022_Q4.md
+BIIB,Health Care,2023_Q2,2023,2,2023-07-25,False,fool,630,0,204,0,426,0,0,0,0,,sp493/earnings_calls/biib/biib_2023_Q2.md
+BIIB,Health Care,2023_Q3,2023,3,2023-11-08,False,fool,554,4,275,1,279,3,4,0,2,,sp493/earnings_calls/biib/biib_2023_Q3.md
+BIIB,Health Care,2023_Q4,2023,4,2024-02-13,False,fool,623,2,272,1,351,1,2,0,0,,sp493/earnings_calls/biib/biib_2023_Q4.md
+BIIB,Health Care,2024_Q1,2024,1,2024-04-24,False,fool,544,2,228,2,316,0,1,0,1,,sp493/earnings_calls/biib/biib_2024_Q1.md
+BIIB,Health Care,2024_Q2,2024,2,2024-08-01,False,fool,531,6,278,5,253,1,4,0,0,,sp493/earnings_calls/biib/biib_2024_Q2.md
+BIIB,Health Care,2024_Q3,2024,3,2024-10-30,False,fool,485,5,193,1,292,4,3,0,1,,sp493/earnings_calls/biib/biib_2024_Q3.md
+BIIB,Health Care,2024_Q4,2024,4,2025-02-12,False,fool,588,10,250,5,338,5,7,0,0,,sp493/earnings_calls/biib/biib_2024_Q4.md
+BMY,Health Care,2021_Q4,2021,4,2022-02-04,True,fool,657,10,161,2,496,8,10,0,0,,sp493/earnings_calls/bmy/bmy_2021_Q4.md
+BMY,Health Care,2022_Q1,2022,1,2022-04-29,True,fool,587,6,228,3,359,3,6,0,0,,sp493/earnings_calls/bmy/bmy_2022_Q1.md
+BMY,Health Care,2022_Q2,2022,2,2022-07-27,True,fool,652,8,161,2,491,6,8,0,0,,sp493/earnings_calls/bmy/bmy_2022_Q2.md
+BMY,Health Care,2022_Q3,2022,3,2022-10-26,True,fool,697,1,170,1,527,0,1,0,1,,sp493/earnings_calls/bmy/bmy_2022_Q3.md
+BMY,Health Care,2022_Q4,2022,4,2023-02-02,False,fool,609,0,193,0,416,0,0,0,1,,sp493/earnings_calls/bmy/bmy_2022_Q4.md
+BMY,Health Care,2023_Q2,2023,2,2023-07-27,False,fool,732,1,190,0,542,1,1,0,0,,sp493/earnings_calls/bmy/bmy_2023_Q2.md
+BMY,Health Care,2023_Q3,2023,3,2023-10-26,False,fool,568,6,213,1,355,5,6,0,1,,sp493/earnings_calls/bmy/bmy_2023_Q3.md
+BMY,Health Care,2023_Q4,2023,4,2024-02-02,False,fool,641,6,187,2,454,4,6,0,0,,sp493/earnings_calls/bmy/bmy_2023_Q4.md
+BMY,Health Care,2024_Q1,2024,1,2024-04-25,False,fool,661,1,158,0,503,1,1,0,0,,sp493/earnings_calls/bmy/bmy_2024_Q1.md
+BMY,Health Care,2024_Q2,2024,2,2024-07-26,False,fool,715,1,156,0,559,1,1,0,1,,sp493/earnings_calls/bmy/bmy_2024_Q2.md
+BMY,Health Care,2024_Q3,2024,3,2024-10-31,False,fool,712,4,180,0,532,4,4,0,1,,sp493/earnings_calls/bmy/bmy_2024_Q3.md
+BMY,Health Care,2024_Q4,2024,4,2025-02-06,False,fool,775,2,156,0,619,2,2,0,1,,sp493/earnings_calls/bmy/bmy_2024_Q4.md
+BX,Financials,2021_Q4,2021,4,2022-01-27,True,fool,571,1,172,0,399,1,1,0,9,,sp493/earnings_calls/bx/bx_2021_Q4.md
+BX,Financials,2022_Q2,2022,2,2022-07-21,True,fool,663,5,175,2,488,3,5,0,7,,sp493/earnings_calls/bx/bx_2022_Q2.md
+BX,Financials,2022_Q3,2022,3,2022-10-20,True,fool,652,8,159,4,493,4,8,0,9,,sp493/earnings_calls/bx/bx_2022_Q3.md
+BX,Financials,2022_Q4,2022,4,2023-01-26,False,fool,588,2,211,1,377,1,2,0,13,,sp493/earnings_calls/bx/bx_2022_Q4.md
+BX,Financials,2023_Q2,2023,2,2023-07-20,False,fool,606,7,206,6,400,1,3,0,13,,sp493/earnings_calls/bx/bx_2023_Q2.md
+BX,Financials,2023_Q3,2023,3,2023-10-19,False,fool,557,3,163,1,394,2,2,0,13,,sp493/earnings_calls/bx/bx_2023_Q3.md
+BX,Financials,2023_Q4,2023,4,2024-01-25,False,fool,537,5,196,1,341,4,4,0,9,,sp493/earnings_calls/bx/bx_2023_Q4.md
+BX,Financials,2024_Q1,2024,1,2024-04-18,False,fool,561,18,178,6,383,12,6,0,33,,sp493/earnings_calls/bx/bx_2024_Q1.md
+BX,Financials,2024_Q2,2024,2,2024-07-18,False,fool,521,11,200,9,321,2,3,0,28,,sp493/earnings_calls/bx/bx_2024_Q2.md
+BX,Financials,2024_Q3,2024,3,2024-10-17,False,fool,567,12,169,5,398,7,6,0,31,,sp493/earnings_calls/bx/bx_2024_Q3.md
+BX,Financials,2024_Q4,2024,4,2025-01-30,False,fool,642,13,203,2,439,11,9,0,37,,sp493/earnings_calls/bx/bx_2024_Q4.md
+C,Financials,2021_Q4,2021,4,2022-01-14,True,fool,819,2,242,0,577,2,2,0,0,,sp493/earnings_calls/c/c_2021_Q4.md
+C,Financials,2022_Q1,2022,1,2022-04-14,True,fool,615,3,202,0,413,3,1,0,1,,sp493/earnings_calls/c/c_2022_Q1.md
+C,Financials,2022_Q2,2022,2,2022-07-15,True,fool,723,2,198,1,525,1,2,1,1,,sp493/earnings_calls/c/c_2022_Q2.md
+C,Financials,2022_Q3,2022,3,2022-10-14,True,fool,632,1,201,0,431,1,1,0,0,,sp493/earnings_calls/c/c_2022_Q3.md
+C,Financials,2022_Q4,2022,4,2023-01-13,False,fool,735,6,255,0,480,6,2,1,1,,sp493/earnings_calls/c/c_2022_Q4.md
+C,Financials,2023_Q2,2023,2,2023-07-14,False,fool,748,4,216,3,532,1,3,4,1,,sp493/earnings_calls/c/c_2023_Q2.md
+C,Financials,2023_Q3,2023,3,2023-10-13,False,fool,682,7,249,1,433,6,7,3,2,,sp493/earnings_calls/c/c_2023_Q3.md
+C,Financials,2023_Q4,2023,4,2024-01-12,False,fool,797,3,253,0,544,3,3,4,4,,sp493/earnings_calls/c/c_2023_Q4.md
+C,Financials,2024_Q1,2024,1,2024-04-12,False,fool,759,5,221,1,538,4,4,2,1,,sp493/earnings_calls/c/c_2024_Q1.md
+C,Financials,2024_Q2,2024,2,2024-07-12,False,fool,706,2,227,0,479,2,1,7,5,,sp493/earnings_calls/c/c_2024_Q2.md
+C,Financials,2024_Q3,2024,3,2024-10-15,False,fool,738,3,212,1,526,2,2,0,2,,sp493/earnings_calls/c/c_2024_Q3.md
+C,Financials,2024_Q4,2024,4,2025-01-15,False,fool,706,3,206,1,500,2,1,1,1,,sp493/earnings_calls/c/c_2024_Q4.md
+CAT,Industrials,2024_Q3,2024,3,2024-10-30,False,fool,564,5,247,4,317,1,3,1,15,,sp493/earnings_calls/cat/cat_2024_Q3.md
+CAT,Industrials,2024_Q4,2024,4,2025-01-30,False,fool,581,6,289,5,292,1,4,0,10,,sp493/earnings_calls/cat/cat_2024_Q4.md
+CCI,Real Estate,2021_Q4,2021,4,2022-01-27,True,fool,525,1,106,0,419,1,1,0,25,,sp493/earnings_calls/cci/cci_2021_Q4.md
+CCI,Real Estate,2022_Q1,2022,1,2022-04-21,True,fool,464,1,72,0,392,1,1,0,22,,sp493/earnings_calls/cci/cci_2022_Q1.md
+CCI,Real Estate,2022_Q2,2022,2,2022-07-21,True,fool,502,6,95,0,407,6,6,0,18,,sp493/earnings_calls/cci/cci_2022_Q2.md
+CCI,Real Estate,2022_Q3,2022,3,2022-10-20,True,fool,467,3,90,2,377,1,3,0,19,,sp493/earnings_calls/cci/cci_2022_Q3.md
+CCI,Real Estate,2022_Q4,2022,4,2023-01-26,False,fool,454,2,75,0,379,2,2,0,16,,sp493/earnings_calls/cci/cci_2022_Q4.md
+CCI,Real Estate,2023_Q2,2023,2,2023-07-20,False,fool,530,3,92,1,438,2,3,0,7,,sp493/earnings_calls/cci/cci_2023_Q2.md
+CCI,Real Estate,2023_Q3,2023,3,2023-10-19,False,fool,479,2,122,1,357,1,2,0,11,,sp493/earnings_calls/cci/cci_2023_Q3.md
+CCI,Real Estate,2023_Q4,2023,4,2024-01-25,False,fool,450,1,91,0,359,1,0,0,11,,sp493/earnings_calls/cci/cci_2023_Q4.md
+CEG,Utilities,2022_Q1,2022,1,2022-05-12,True,fool,546,1,249,1,297,0,1,0,5,,sp493/earnings_calls/ceg/ceg_2022_Q1.md
+CEG,Utilities,2022_Q2,2022,2,2022-08-04,True,fool,449,0,181,0,268,0,0,0,1,,sp493/earnings_calls/ceg/ceg_2022_Q2.md
+CEG,Utilities,2024_Q3,2024,3,2024-11-04,False,fool,497,7,172,5,325,2,0,0,9,,sp493/earnings_calls/ceg/ceg_2024_Q3.md
+CFG,Financials,2021_Q4,2021,4,2022-01-19,True,fool,600,3,212,1,388,2,2,1,2,,sp493/earnings_calls/cfg/cfg_2021_Q4.md
+CFG,Financials,2022_Q1,2022,1,2022-04-19,True,fool,735,6,187,2,548,4,4,0,0,,sp493/earnings_calls/cfg/cfg_2022_Q1.md
+CFG,Financials,2022_Q2,2022,2,2022-07-19,True,fool,614,2,192,1,422,1,0,1,1,,sp493/earnings_calls/cfg/cfg_2022_Q2.md
+CI,Health Care,2021_Q4,2021,4,2022-02-03,True,fool,674,1,183,1,491,0,1,3,3,,sp493/earnings_calls/ci/ci_2021_Q4.md
+CI,Health Care,2022_Q1,2022,1,2022-05-06,True,fool,533,5,124,0,409,5,5,0,0,,sp493/earnings_calls/ci/ci_2022_Q1.md
+CI,Health Care,2022_Q2,2022,2,2022-08-04,True,fool,567,2,142,1,425,1,2,0,0,,sp493/earnings_calls/ci/ci_2022_Q2.md
+CI,Health Care,2022_Q3,2022,3,2022-11-03,True,fool,439,2,144,0,295,2,2,0,0,,sp493/earnings_calls/ci/ci_2022_Q3.md
+CI,Health Care,2022_Q4,2022,4,2023-02-03,False,fool,558,0,169,0,389,0,0,0,1,,sp493/earnings_calls/ci/ci_2022_Q4.md
+CI,Health Care,2023_Q1,2023,1,2023-05-05,False,fool,536,18,165,11,371,7,18,0,0,,sp493/earnings_calls/ci/ci_2023_Q1.md
+CI,Health Care,2023_Q2,2023,2,2023-08-03,False,fool,522,6,145,4,377,2,5,0,0,,sp493/earnings_calls/ci/ci_2023_Q2.md
+CI,Health Care,2023_Q3,2023,3,2023-11-02,False,fool,480,5,151,3,329,2,5,0,0,,sp493/earnings_calls/ci/ci_2023_Q3.md
+CI,Health Care,2023_Q4,2023,4,2024-02-02,False,fool,567,6,178,1,389,5,5,0,3,,sp493/earnings_calls/ci/ci_2023_Q4.md
+CI,Health Care,2024_Q1,2024,1,2024-05-02,False,fool,555,10,151,1,404,9,6,0,1,,sp493/earnings_calls/ci/ci_2024_Q1.md
+CI,Health Care,2024_Q2,2024,2,2024-08-01,False,fool,518,5,162,2,356,3,5,0,0,,sp493/earnings_calls/ci/ci_2024_Q2.md
+CI,Health Care,2024_Q3,2024,3,2024-10-31,False,fool,583,5,158,1,425,4,4,0,2,,sp493/earnings_calls/ci/ci_2024_Q3.md
+CI,Health Care,2024_Q4,2024,4,2025-01-30,False,fool,518,7,162,3,356,4,7,0,2,,sp493/earnings_calls/ci/ci_2024_Q4.md
+CINF,Financials,2021_Q4,2021,4,2022-02-16,True,fool,388,11,107,5,281,6,11,0,0,"388 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2021_Q4.md
+CINF,Financials,2022_Q1,2022,1,2022-04-29,True,fool,257,13,90,2,167,11,13,0,0,"257 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2022_Q1.md
+CINF,Financials,2022_Q2,2022,2,2022-07-28,True,fool,305,1,114,1,191,0,1,0,0,"305 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2022_Q2.md
+CINF,Financials,2022_Q3,2022,3,2022-11-01,True,fool,436,3,101,1,335,2,3,0,0,,sp493/earnings_calls/cinf/cinf_2022_Q3.md
+CINF,Financials,2022_Q4,2022,4,2023-02-07,False,fool,418,9,127,0,291,9,9,0,0,,sp493/earnings_calls/cinf/cinf_2022_Q4.md
+CINF,Financials,2023_Q1,2023,1,2023-04-28,False,fool,470,5,112,0,358,5,5,0,0,,sp493/earnings_calls/cinf/cinf_2023_Q1.md
+CINF,Financials,2023_Q2,2023,2,2023-07-28,False,fool,315,7,104,1,211,6,7,0,0,"315 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2023_Q2.md
+CINF,Financials,2023_Q3,2023,3,2023-10-27,False,fool,322,17,100,4,222,13,17,0,0,"322 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2023_Q3.md
+CINF,Financials,2023_Q4,2023,4,2024-02-07,False,fool,415,5,117,3,298,2,4,0,0,,sp493/earnings_calls/cinf/cinf_2023_Q4.md
+CINF,Financials,2024_Q1,2024,1,2024-04-26,False,fool,316,8,93,1,223,7,8,0,0,"316 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2024_Q1.md
+CINF,Financials,2024_Q2,2024,2,2024-07-26,False,fool,418,19,100,5,318,14,19,0,0,,sp493/earnings_calls/cinf/cinf_2024_Q2.md
+CINF,Financials,2024_Q3,2024,3,2024-10-25,False,fool,372,13,96,3,276,10,13,0,0,"372 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2024_Q3.md
+CINF,Financials,2024_Q4,2024,4,2025-02-11,False,fool,299,6,115,2,184,4,6,0,0,"299 units, outside the typical 400-900",sp493/earnings_calls/cinf/cinf_2024_Q4.md
+CNC,Health Care,2021_Q4,2021,4,2022-02-08,True,fool,484,1,17,0,467,1,1,1,1,,sp493/earnings_calls/cnc/cnc_2021_Q4.md
+CNC,Health Care,2022_Q1,2022,1,2022-04-26,True,fool,522,5,184,5,338,0,5,0,0,,sp493/earnings_calls/cnc/cnc_2022_Q1.md
+CNC,Health Care,2022_Q2,2022,2,2022-07-26,True,fool,511,3,162,1,349,2,3,1,0,,sp493/earnings_calls/cnc/cnc_2022_Q2.md
+CNC,Health Care,2022_Q3,2022,3,2022-10-25,True,fool,513,1,203,1,310,0,1,0,0,,sp493/earnings_calls/cnc/cnc_2022_Q3.md
+CNC,Health Care,2022_Q4,2022,4,2023-02-07,False,fool,528,2,172,2,356,0,2,0,0,,sp493/earnings_calls/cnc/cnc_2022_Q4.md
+CNC,Health Care,2023_Q2,2023,2,2023-07-28,False,fool,505,1,149,1,356,0,0,0,0,,sp493/earnings_calls/cnc/cnc_2023_Q2.md
+CNC,Health Care,2023_Q3,2023,3,2023-10-24,False,fool,456,5,155,3,301,2,3,1,1,,sp493/earnings_calls/cnc/cnc_2023_Q3.md
+CNC,Health Care,2023_Q4,2023,4,2024-02-06,False,fool,473,5,139,2,334,3,5,0,0,,sp493/earnings_calls/cnc/cnc_2023_Q4.md
+CNC,Health Care,2024_Q1,2024,1,2024-04-26,False,fool,501,7,137,3,364,4,7,1,4,,sp493/earnings_calls/cnc/cnc_2024_Q1.md
+CNC,Health Care,2024_Q2,2024,2,2024-07-26,False,fool,516,0,128,0,388,0,0,0,4,,sp493/earnings_calls/cnc/cnc_2024_Q2.md
+CNC,Health Care,2024_Q3,2024,3,2024-10-25,False,fool,442,11,142,4,300,7,2,0,1,,sp493/earnings_calls/cnc/cnc_2024_Q3.md
+CNC,Health Care,2024_Q4,2024,4,2025-02-04,False,fool,427,6,136,4,291,2,5,0,1,,sp493/earnings_calls/cnc/cnc_2024_Q4.md
+COF,Financials,2021_Q4,2021,4,2022-01-25,True,fool,626,12,137,2,489,10,2,0,1,,sp493/earnings_calls/cof/cof_2021_Q4.md
+COF,Financials,2022_Q1,2022,1,2022-04-26,True,fool,559,5,134,3,425,2,0,0,1,,sp493/earnings_calls/cof/cof_2022_Q1.md
+COF,Financials,2022_Q2,2022,2,2022-07-21,True,fool,527,10,159,3,368,7,3,0,1,,sp493/earnings_calls/cof/cof_2022_Q2.md
+COF,Financials,2022_Q3,2022,3,2022-10-27,True,fool,602,18,133,3,469,15,1,2,0,,sp493/earnings_calls/cof/cof_2022_Q3.md
+COF,Financials,2022_Q4,2022,4,2023-01-24,False,fool,498,10,126,1,372,9,4,0,0,,sp493/earnings_calls/cof/cof_2022_Q4.md
+COF,Financials,2023_Q1,2023,1,2023-04-27,False,fool,624,14,154,3,470,11,5,0,1,,sp493/earnings_calls/cof/cof_2023_Q1.md
+COF,Financials,2023_Q2,2023,2,2023-07-20,False,fool,511,12,139,2,372,10,4,0,2,,sp493/earnings_calls/cof/cof_2023_Q2.md
+COF,Financials,2023_Q3,2023,3,2023-10-26,False,fool,523,7,147,2,376,5,0,0,0,,sp493/earnings_calls/cof/cof_2023_Q3.md
+COF,Financials,2023_Q4,2023,4,2024-01-25,False,fool,536,14,150,2,386,12,1,0,0,,sp493/earnings_calls/cof/cof_2023_Q4.md
+COF,Financials,2024_Q1,2024,1,2024-04-25,False,fool,536,1,145,1,391,0,0,0,2,,sp493/earnings_calls/cof/cof_2024_Q1.md
+COF,Financials,2024_Q2,2024,2,2024-07-23,False,fool,460,6,141,3,319,3,0,0,1,,sp493/earnings_calls/cof/cof_2024_Q2.md
+COF,Financials,2024_Q3,2024,3,2024-10-24,False,fool,486,8,131,2,355,6,1,0,1,,sp493/earnings_calls/cof/cof_2024_Q3.md
+COF,Financials,2024_Q4,2024,4,2025-01-21,False,fool,636,11,123,1,513,10,6,0,1,,sp493/earnings_calls/cof/cof_2024_Q4.md
+COIN,Financials,2021_Q4,2021,4,2022-02-24,True,fool,534,5,355,4,179,1,5,0,11,,sp493/earnings_calls/coin/coin_2021_Q4.md
+COIN,Financials,2022_Q1,2022,1,2022-05-10,True,fool,502,4,323,3,179,1,3,1,4,,sp493/earnings_calls/coin/coin_2022_Q1.md
+COIN,Financials,2022_Q2,2022,2,2022-08-09,True,fool,490,2,159,0,331,2,2,0,0,,sp493/earnings_calls/coin/coin_2022_Q2.md
+COIN,Financials,2022_Q3,2022,3,2022-11-03,True,fool,507,2,311,2,196,0,1,0,1,,sp493/earnings_calls/coin/coin_2022_Q3.md
+COIN,Financials,2022_Q4,2022,4,2023-02-21,False,fool,485,3,318,2,167,1,3,0,0,,sp493/earnings_calls/coin/coin_2022_Q4.md
+COIN,Financials,2023_Q1,2023,1,2023-05-04,False,fool,445,7,258,3,187,4,7,0,4,,sp493/earnings_calls/coin/coin_2023_Q1.md
+COIN,Financials,2023_Q2,2023,2,2023-08-03,False,fool,476,0,257,0,219,0,0,0,0,,sp493/earnings_calls/coin/coin_2023_Q2.md
+COIN,Financials,2023_Q3,2023,3,2023-11-02,False,fool,434,2,183,0,251,2,2,0,4,,sp493/earnings_calls/coin/coin_2023_Q3.md
+COIN,Financials,2023_Q4,2023,4,2024-02-15,False,fool,498,0,235,0,263,0,0,0,0,,sp493/earnings_calls/coin/coin_2023_Q4.md
+COIN,Financials,2024_Q1,2024,1,2024-05-02,False,fool,406,1,159,0,247,1,1,0,2,,sp493/earnings_calls/coin/coin_2024_Q1.md
+COIN,Financials,2024_Q2,2024,2,2024-08-01,False,fool,458,0,176,0,282,0,0,0,0,,sp493/earnings_calls/coin/coin_2024_Q2.md
+COIN,Financials,2024_Q3,2024,3,2024-10-30,False,fool,524,4,276,1,248,3,3,0,2,,sp493/earnings_calls/coin/coin_2024_Q3.md
+COIN,Financials,2024_Q4,2024,4,2025-02-13,False,fool,550,10,219,1,331,9,8,1,2,,sp493/earnings_calls/coin/coin_2024_Q4.md
+COP,Energy,2021_Q4,2021,4,2022-02-03,True,fool,556,2,76,0,480,2,2,0,2,,sp493/earnings_calls/cop/cop_2021_Q4.md
+COP,Energy,2022_Q1,2022,1,2022-05-05,True,fool,328,1,71,0,257,1,1,0,1,"328 units, outside the typical 400-900",sp493/earnings_calls/cop/cop_2022_Q1.md
+COP,Energy,2022_Q2,2022,2,2022-08-04,True,fool,535,1,67,0,468,1,1,0,5,,sp493/earnings_calls/cop/cop_2022_Q2.md
+COP,Energy,2022_Q3,2022,3,2022-11-03,True,fool,619,0,95,0,524,0,0,0,7,,sp493/earnings_calls/cop/cop_2022_Q3.md
+COP,Energy,2022_Q4,2022,4,2023-02-02,False,fool,611,0,80,0,531,0,0,0,10,,sp493/earnings_calls/cop/cop_2022_Q4.md
+COP,Energy,2023_Q1,2023,1,2023-05-04,False,fool,401,0,67,0,334,0,0,1,6,,sp493/earnings_calls/cop/cop_2023_Q1.md
+COP,Energy,2023_Q2,2023,2,2023-08-03,False,fool,561,0,69,0,492,0,0,0,4,,sp493/earnings_calls/cop/cop_2023_Q2.md
+COP,Energy,2023_Q3,2023,3,2023-11-02,False,fool,453,0,78,0,375,0,0,0,6,,sp493/earnings_calls/cop/cop_2023_Q3.md
+COP,Energy,2023_Q4,2023,4,2024-02-08,False,fool,459,0,73,0,386,0,0,0,4,,sp493/earnings_calls/cop/cop_2023_Q4.md
+COP,Energy,2024_Q1,2024,1,2024-05-02,False,fool,420,8,63,0,357,8,0,1,3,,sp493/earnings_calls/cop/cop_2024_Q1.md
+COP,Energy,2024_Q2,2024,2,2024-08-01,False,fool,503,1,68,0,435,1,0,0,11,,sp493/earnings_calls/cop/cop_2024_Q2.md
+COP,Energy,2024_Q3,2024,3,2024-10-31,False,fool,512,0,47,0,465,0,0,0,11,,sp493/earnings_calls/cop/cop_2024_Q3.md
+COP,Energy,2024_Q4,2024,4,2025-02-06,False,fool,534,2,94,0,440,2,2,0,12,,sp493/earnings_calls/cop/cop_2024_Q4.md
+COST,Consumer Staples,FY22_Q1,2021,4,2021-12-09,True,fool,671,1,148,0,523,1,1,0,10,,sp493/earnings_calls/cost/cost_FY22_Q1.md
+COST,Consumer Staples,FY22_Q3,2022,1,2022-05-26,True,fool,603,0,165,0,438,0,0,0,2,,sp493/earnings_calls/cost/cost_FY22_Q3.md
+COST,Consumer Staples,FY22_Q4,2022,3,2022-09-22,True,fool,632,3,163,0,469,3,3,0,4,,sp493/earnings_calls/cost/cost_FY22_Q4.md
+COST,Consumer Staples,FY23_Q1,2022,4,2022-12-08,False,fool,622,3,121,0,501,3,3,0,2,,sp493/earnings_calls/cost/cost_FY23_Q1.md
+COST,Consumer Staples,FY23_Q3,2023,1,2023-05-25,False,fool,589,2,126,0,463,2,2,0,2,,sp493/earnings_calls/cost/cost_FY23_Q3.md
+COST,Consumer Staples,FY23_Q4,2023,3,2023-09-26,False,fool,626,3,123,0,503,3,3,0,1,,sp493/earnings_calls/cost/cost_FY23_Q4.md
+COST,Consumer Staples,FY24_Q1,2023,4,2023-12-14,False,fool,565,0,116,0,449,0,0,0,2,,sp493/earnings_calls/cost/cost_FY24_Q1.md
+COST,Consumer Staples,FY24_Q2,2024,1,2024-03-07,False,fool,652,3,148,0,504,3,0,0,1,,sp493/earnings_calls/cost/cost_FY24_Q2.md
+COST,Consumer Staples,FY24_Q4,2024,3,2024-09-26,False,fool,561,4,154,0,407,4,4,0,3,,sp493/earnings_calls/cost/cost_FY24_Q4.md
+COST,Consumer Staples,FY25_Q1,2024,4,2024-12-12,False,fool,636,2,144,0,492,2,2,0,6,,sp493/earnings_calls/cost/cost_FY25_Q1.md
+CPRT,Industrials,FY22_Q2,2021,4,2022-02-17,True,fool,369,1,91,0,278,1,1,1,2,"369 units, outside the typical 400-900",sp493/earnings_calls/cprt/cprt_FY22_Q2.md
+CPRT,Industrials,FY22_Q3,2022,1,2022-05-19,True,fool,381,1,104,0,277,1,1,0,3,"381 units, outside the typical 400-900",sp493/earnings_calls/cprt/cprt_FY22_Q3.md
+CPRT,Industrials,FY22_Q4,2022,2,2022-09-08,True,fool,409,5,130,0,279,5,5,2,4,,sp493/earnings_calls/cprt/cprt_FY22_Q4.md
+CRM,Information Technology,FY22_Q4,2021,4,2022-03-01,True,fool,574,4,339,4,235,0,2,0,3,,sp493/earnings_calls/crm/crm_FY22_Q4.md
+CRM,Information Technology,FY23_Q1,2022,1,2022-05-31,True,fool,515,6,210,5,305,1,5,0,2,,sp493/earnings_calls/crm/crm_FY23_Q1.md
+CRM,Information Technology,FY23_Q2,2022,2,2022-08-24,True,fool,550,4,206,3,344,1,1,1,2,,sp493/earnings_calls/crm/crm_FY23_Q2.md
+CRM,Information Technology,FY23_Q3,2022,3,2022-11-30,False,fool,558,1,283,1,275,0,0,2,2,,sp493/earnings_calls/crm/crm_FY23_Q3.md
+CRM,Information Technology,FY23_Q4,2022,4,2023-03-01,False,fool,584,11,243,6,341,5,0,7,3,,sp493/earnings_calls/crm/crm_FY23_Q4.md
+CRM,Information Technology,FY24_Q1,2023,1,2023-05-31,False,fool,627,124,210,44,417,80,17,8,1,,sp493/earnings_calls/crm/crm_FY24_Q1.md
+CRM,Information Technology,FY24_Q2,2023,2,2023-08-30,False,fool,639,116,362,67,277,49,5,6,1,,sp493/earnings_calls/crm/crm_FY24_Q2.md
+CRM,Information Technology,FY24_Q3,2023,3,2023-11-29,False,fool,630,72,306,33,324,39,2,10,1,,sp493/earnings_calls/crm/crm_FY24_Q3.md
+CRM,Information Technology,FY24_Q4,2023,4,2024-02-28,False,fool,855,137,497,99,358,38,15,3,3,,sp493/earnings_calls/crm/crm_FY24_Q4.md
+CRM,Information Technology,FY25_Q1,2024,1,2024-05-29,False,fool,585,87,217,43,368,44,17,3,1,,sp493/earnings_calls/crm/crm_FY25_Q1.md
+CRM,Information Technology,FY25_Q2,2024,2,2024-08-28,False,fool,604,113,378,81,226,32,55,5,2,,sp493/earnings_calls/crm/crm_FY25_Q2.md
+CRM,Information Technology,FY25_Q3,2024,3,2024-12-03,False,fool,490,80,303,60,187,20,40,2,1,,sp493/earnings_calls/crm/crm_FY25_Q3.md
+CRM,Information Technology,FY25_Q4,2024,4,2025-02-26,False,fool,677,82,389,44,288,38,42,3,4,,sp493/earnings_calls/crm/crm_FY25_Q4.md
+CSCO,Information Technology,FY22_Q2,2021,4,2022-02-16,True,fool,581,1,162,0,419,1,1,1,8,,sp493/earnings_calls/csco/csco_FY22_Q2.md
+CSCO,Information Technology,FY22_Q3,2022,1,2022-05-18,True,fool,631,3,136,0,495,3,3,0,6,,sp493/earnings_calls/csco/csco_FY22_Q3.md
+CSCO,Information Technology,FY22_Q4,2022,2,2022-08-17,True,fool,652,5,165,1,487,4,4,0,6,,sp493/earnings_calls/csco/csco_FY22_Q4.md
+CSCO,Information Technology,FY23_Q1,2022,3,2022-11-16,True,fool,607,3,141,2,466,1,1,0,9,,sp493/earnings_calls/csco/csco_FY23_Q1.md
+CSCO,Information Technology,FY23_Q2,2022,4,2023-02-15,False,fool,609,9,148,4,461,5,2,1,21,,sp493/earnings_calls/csco/csco_FY23_Q2.md
+CSCO,Information Technology,FY23_Q3,2023,1,2023-05-17,False,fool,468,15,142,6,326,9,1,0,2,,sp493/earnings_calls/csco/csco_FY23_Q3.md
+CSCO,Information Technology,FY23_Q4,2023,2,2023-08-16,False,fool,608,33,138,13,470,20,3,0,4,,sp493/earnings_calls/csco/csco_FY23_Q4.md
+CSCO,Information Technology,FY24_Q1,2023,3,2023-11-15,False,fool,466,21,132,11,334,10,0,0,11,,sp493/earnings_calls/csco/csco_FY24_Q1.md
+CSCO,Information Technology,FY24_Q2,2023,4,2024-02-14,False,fool,491,30,133,12,358,18,3,0,13,,sp493/earnings_calls/csco/csco_FY24_Q2.md
+CSCO,Information Technology,FY24_Q3,2024,1,2024-05-15,False,fool,585,28,152,10,433,18,1,0,4,,sp493/earnings_calls/csco/csco_FY24_Q3.md
+CSCO,Information Technology,FY24_Q4,2024,2,2024-08-14,False,fool,595,46,161,18,434,28,2,0,7,,sp493/earnings_calls/csco/csco_FY24_Q4.md
+CSCO,Information Technology,FY25_Q1,2024,3,2024-11-13,False,fool,637,76,138,34,499,42,2,2,22,,sp493/earnings_calls/csco/csco_FY25_Q1.md
+CSCO,Information Technology,FY25_Q2,2024,4,2025-02-12,False,fool,325,37,8,0,317,37,2,0,9,"325 units, outside the typical 400-900",sp493/earnings_calls/csco/csco_FY25_Q2.md
+CTSH,Information Technology,2021_Q4,2021,4,2022-02-02,True,fool,523,7,171,1,352,6,4,7,3,,sp493/earnings_calls/ctsh/ctsh_2021_Q4.md
+CTSH,Information Technology,2022_Q1,2022,1,2022-05-04,True,fool,561,3,147,1,414,2,2,10,5,,sp493/earnings_calls/ctsh/ctsh_2022_Q1.md
+CTSH,Information Technology,2022_Q2,2022,2,2022-07-27,True,fool,450,4,164,4,286,0,3,3,0,,sp493/earnings_calls/ctsh/ctsh_2022_Q2.md
+CVS,Health Care,2021_Q4,2021,4,2022-02-09,True,fool,521,0,182,0,339,0,0,0,1,,sp493/earnings_calls/cvs/cvs_2021_Q4.md
+CVS,Health Care,2022_Q1,2022,1,2022-05-04,True,fool,498,4,150,3,348,1,2,1,1,,sp493/earnings_calls/cvs/cvs_2022_Q1.md
+CVS,Health Care,2022_Q2,2022,2,2022-08-03,True,fool,517,4,160,2,357,2,4,1,2,,sp493/earnings_calls/cvs/cvs_2022_Q2.md
+CVS,Health Care,2022_Q3,2022,3,2022-11-02,True,fool,436,0,212,0,224,0,0,0,2,,sp493/earnings_calls/cvs/cvs_2022_Q3.md
+CVS,Health Care,2022_Q4,2022,4,2023-02-08,False,fool,504,16,223,9,281,7,16,1,2,,sp493/earnings_calls/cvs/cvs_2022_Q4.md
+CVS,Health Care,2023_Q1,2023,1,2023-05-03,False,fool,465,10,214,4,251,6,10,1,2,,sp493/earnings_calls/cvs/cvs_2023_Q1.md
+CVS,Health Care,2023_Q2,2023,2,2023-08-02,False,fool,493,12,199,2,294,10,10,0,1,,sp493/earnings_calls/cvs/cvs_2023_Q2.md
+CVS,Health Care,2023_Q3,2023,3,2023-11-01,False,fool,488,11,179,3,309,8,11,0,1,,sp493/earnings_calls/cvs/cvs_2023_Q3.md
+CVS,Health Care,2023_Q4,2023,4,2024-02-07,False,fool,550,20,173,7,377,13,20,0,0,,sp493/earnings_calls/cvs/cvs_2023_Q4.md
+CVS,Health Care,2024_Q1,2024,1,2024-05-01,False,fool,529,5,178,2,351,3,3,0,0,,sp493/earnings_calls/cvs/cvs_2024_Q1.md
+CVS,Health Care,2024_Q2,2024,2,2024-08-07,False,fool,542,16,206,6,336,10,15,0,1,,sp493/earnings_calls/cvs/cvs_2024_Q2.md
+CVS,Health Care,2024_Q3,2024,3,2024-11-06,False,fool,412,6,215,4,197,2,5,0,0,,sp493/earnings_calls/cvs/cvs_2024_Q3.md
+CVS,Health Care,2024_Q4,2024,4,2025-02-12,False,fool,495,15,231,10,264,5,13,0,0,,sp493/earnings_calls/cvs/cvs_2024_Q4.md
+D,Utilities,2021_Q4,2021,4,2022-02-11,True,fool,369,0,198,0,171,0,0,0,10,"369 units, outside the typical 400-900",sp493/earnings_calls/d/d_2021_Q4.md
+D,Utilities,2022_Q1,2022,1,2022-05-05,True,fool,396,1,190,1,206,0,1,0,5,"396 units, outside the typical 400-900",sp493/earnings_calls/d/d_2022_Q1.md
+D,Utilities,2022_Q2,2022,2,2022-08-08,True,fool,461,1,191,1,270,0,1,0,25,,sp493/earnings_calls/d/d_2022_Q2.md
+D,Utilities,2022_Q3,2022,3,2022-11-04,True,fool,498,2,247,2,251,0,2,0,4,,sp493/earnings_calls/d/d_2022_Q3.md
+D,Utilities,2022_Q4,2022,4,2023-02-08,False,fool,427,2,190,2,237,0,2,0,9,,sp493/earnings_calls/d/d_2022_Q4.md
+D,Utilities,2023_Q1,2023,1,2023-05-05,False,fool,264,0,146,0,118,0,0,0,4,"264 units, outside the typical 400-900",sp493/earnings_calls/d/d_2023_Q1.md
+D,Utilities,2023_Q2,2023,2,2023-08-04,False,fool,257,1,150,0,107,1,1,0,3,"257 units, outside the typical 400-900",sp493/earnings_calls/d/d_2023_Q2.md
+D,Utilities,2023_Q3,2023,3,2023-11-03,False,fool,415,4,239,4,176,0,4,0,6,,sp493/earnings_calls/d/d_2023_Q3.md
+D,Utilities,2023_Q4,2023,4,2024-02-22,False,fool,548,2,245,1,303,1,2,0,13,,sp493/earnings_calls/d/d_2023_Q4.md
+D,Utilities,2024_Q1,2024,1,2024-05-02,False,fool,391,1,187,1,204,0,1,0,30,"391 units, outside the typical 400-900",sp493/earnings_calls/d/d_2024_Q1.md
+D,Utilities,2024_Q2,2024,2,2024-08-01,False,fool,332,2,178,1,154,1,2,1,18,"332 units, outside the typical 400-900",sp493/earnings_calls/d/d_2024_Q2.md
+D,Utilities,2024_Q3,2024,3,2024-11-01,False,fool,483,1,168,0,315,1,1,0,21,,sp493/earnings_calls/d/d_2024_Q3.md
+D,Utilities,2024_Q4,2024,4,2025-02-12,False,fool,417,3,183,2,234,1,1,0,35,,sp493/earnings_calls/d/d_2024_Q4.md
+DASH,Consumer Discretionary,2021_Q4,2021,4,2022-02-16,True,fool,490,2,15,0,475,2,2,0,3,,sp493/earnings_calls/dash/dash_2021_Q4.md
+DASH,Consumer Discretionary,2022_Q1,2022,1,2022-05-05,True,fool,485,2,13,0,472,2,2,0,0,,sp493/earnings_calls/dash/dash_2022_Q1.md
+DASH,Consumer Discretionary,2022_Q2,2022,2,2022-08-04,True,fool,457,0,20,0,437,0,0,0,0,,sp493/earnings_calls/dash/dash_2022_Q2.md
+DASH,Consumer Discretionary,2022_Q3,2022,3,2022-11-03,True,fool,427,1,18,0,409,1,0,0,0,,sp493/earnings_calls/dash/dash_2022_Q3.md
+DASH,Consumer Discretionary,2022_Q4,2022,4,2023-02-16,False,fool,515,4,48,0,467,4,1,0,1,,sp493/earnings_calls/dash/dash_2022_Q4.md
+DASH,Consumer Discretionary,2023_Q1,2023,1,2023-05-04,False,fool,386,8,20,0,366,8,0,0,0,"386 units, outside the typical 400-900",sp493/earnings_calls/dash/dash_2023_Q1.md
+DASH,Consumer Discretionary,2023_Q2,2023,2,2023-08-02,False,fool,427,1,18,0,409,1,1,0,1,,sp493/earnings_calls/dash/dash_2023_Q2.md
+DASH,Consumer Discretionary,2023_Q3,2023,3,2023-11-01,False,fool,438,0,17,0,421,0,0,0,0,,sp493/earnings_calls/dash/dash_2023_Q3.md
+DASH,Consumer Discretionary,2023_Q4,2023,4,2024-02-15,False,fool,493,9,17,0,476,9,3,0,0,,sp493/earnings_calls/dash/dash_2023_Q4.md
+DASH,Consumer Discretionary,2024_Q2,2024,2,2024-08-01,False,fool,473,0,18,0,455,0,0,0,0,,sp493/earnings_calls/dash/dash_2024_Q2.md
+DASH,Consumer Discretionary,2024_Q3,2024,3,2024-10-30,False,fool,445,8,20,0,425,8,8,0,2,,sp493/earnings_calls/dash/dash_2024_Q3.md
+DDOG,Information Technology,2021_Q4,2021,4,2022-02-10,True,fool,657,3,208,2,449,1,2,3,12,,sp493/earnings_calls/ddog/ddog_2021_Q4.md
+DDOG,Information Technology,2022_Q1,2022,1,2022-05-05,True,fool,485,3,172,1,313,2,2,4,15,,sp493/earnings_calls/ddog/ddog_2022_Q1.md
+DDOG,Information Technology,2022_Q2,2022,2,2022-08-04,True,fool,568,6,182,2,386,4,4,1,11,,sp493/earnings_calls/ddog/ddog_2022_Q2.md
+DDOG,Information Technology,2022_Q3,2022,3,2022-11-03,True,fool,544,7,168,2,376,5,7,2,10,,sp493/earnings_calls/ddog/ddog_2022_Q3.md
+DDOG,Information Technology,2022_Q4,2022,4,2023-02-16,False,fool,556,1,181,1,375,0,0,1,10,,sp493/earnings_calls/ddog/ddog_2022_Q4.md
+DDOG,Information Technology,2023_Q1,2023,1,2023-05-04,False,fool,549,28,170,12,379,16,2,5,15,,sp493/earnings_calls/ddog/ddog_2023_Q1.md
+DDOG,Information Technology,2023_Q2,2023,2,2023-08-08,False,fool,558,30,186,15,372,15,2,1,5,,sp493/earnings_calls/ddog/ddog_2023_Q2.md
+DDOG,Information Technology,2023_Q3,2023,3,2023-11-07,False,fool,517,38,171,13,346,25,9,0,15,,sp493/earnings_calls/ddog/ddog_2023_Q3.md
+DDOG,Information Technology,2023_Q4,2023,4,2024-02-13,False,fool,594,37,209,6,385,31,10,3,11,,sp493/earnings_calls/ddog/ddog_2023_Q4.md
+DDOG,Information Technology,2024_Q1,2024,1,2024-05-07,False,fool,556,32,160,10,396,22,5,2,12,,sp493/earnings_calls/ddog/ddog_2024_Q1.md
+DDOG,Information Technology,2024_Q2,2024,2,2024-08-08,False,fool,608,42,182,20,426,22,5,5,8,,sp493/earnings_calls/ddog/ddog_2024_Q2.md
+DDOG,Information Technology,2024_Q3,2024,3,2024-11-07,False,fool,520,42,154,15,366,27,3,5,22,,sp493/earnings_calls/ddog/ddog_2024_Q3.md
+DDOG,Information Technology,2024_Q4,2024,4,2025-02-13,False,fool,522,45,203,12,319,33,10,1,15,,sp493/earnings_calls/ddog/ddog_2024_Q4.md
+DECK,Consumer Discretionary,FY22_Q3,2021,4,2022-02-03,True,fool,589,5,198,1,391,4,5,0,1,,sp493/earnings_calls/deck/deck_FY22_Q3.md
+DECK,Consumer Discretionary,FY22_Q4,2022,1,2022-05-19,True,fool,546,4,205,0,341,4,4,0,1,,sp493/earnings_calls/deck/deck_FY22_Q4.md
+DECK,Consumer Discretionary,FY23_Q1,2022,2,2022-07-28,True,fool,558,0,162,0,396,0,0,2,1,,sp493/earnings_calls/deck/deck_FY23_Q1.md
+DG,Consumer Staples,FY21_Q4,2021,4,2022-03-17,True,fool,540,7,195,1,345,6,7,0,5,,sp493/earnings_calls/dg/dg_FY21_Q4.md
+DG,Consumer Staples,FY22_Q1,2022,1,2022-05-26,True,fool,505,1,181,1,324,0,1,0,3,,sp493/earnings_calls/dg/dg_FY22_Q1.md
+DG,Consumer Staples,FY22_Q2,2022,2,2022-08-25,True,fool,519,5,199,1,320,4,5,0,1,,sp493/earnings_calls/dg/dg_FY22_Q2.md
+DG,Consumer Staples,FY22_Q3,2022,3,2022-12-01,False,fool,539,8,214,3,325,5,7,0,1,,sp493/earnings_calls/dg/dg_FY22_Q3.md
+DG,Consumer Staples,FY22_Q4,2022,4,2023-03-16,False,fool,523,8,205,1,318,7,8,0,8,,sp493/earnings_calls/dg/dg_FY22_Q4.md
+DG,Consumer Staples,FY23_Q1,2023,1,2023-06-01,False,fool,512,4,229,2,283,2,4,0,3,,sp493/earnings_calls/dg/dg_FY23_Q1.md
+DG,Consumer Staples,FY23_Q2,2023,2,2023-08-31,False,fool,501,15,211,3,290,12,15,4,1,,sp493/earnings_calls/dg/dg_FY23_Q2.md
+DG,Consumer Staples,FY23_Q3,2023,3,2023-12-07,False,fool,504,5,186,1,318,4,5,0,1,,sp493/earnings_calls/dg/dg_FY23_Q3.md
+DG,Consumer Staples,FY23_Q4,2023,4,2024-03-14,False,fool,476,6,185,0,291,6,2,0,1,,sp493/earnings_calls/dg/dg_FY23_Q4.md
+DG,Consumer Staples,FY24_Q1,2024,1,2024-05-30,False,fool,527,5,169,1,358,4,5,0,1,,sp493/earnings_calls/dg/dg_FY24_Q1.md
+DG,Consumer Staples,FY24_Q2,2024,2,2024-08-29,False,fool,468,3,157,1,311,2,3,0,1,,sp493/earnings_calls/dg/dg_FY24_Q2.md
+DG,Consumer Staples,FY24_Q3,2024,3,2024-12-05,False,fool,458,4,197,0,261,4,4,4,4,,sp493/earnings_calls/dg/dg_FY24_Q3.md
+DG,Consumer Staples,FY24_Q4,2024,4,2025-03-13,False,fool,454,2,206,1,248,1,2,0,4,,sp493/earnings_calls/dg/dg_FY24_Q4.md
+DHI,Consumer Discretionary,FY22_Q1,2021,4,2022-02-02,True,fool,582,1,129,0,453,1,1,0,3,,sp493/earnings_calls/dhi/dhi_FY22_Q1.md
+DHI,Consumer Discretionary,FY22_Q2,2022,1,2022-04-26,True,fool,514,0,131,0,383,0,0,0,2,,sp493/earnings_calls/dhi/dhi_FY22_Q2.md
+DHI,Consumer Discretionary,FY22_Q3,2022,2,2022-07-21,True,fool,609,1,132,0,477,1,1,0,1,,sp493/earnings_calls/dhi/dhi_FY22_Q3.md
+DHI,Consumer Discretionary,FY22_Q4,2022,3,2022-11-09,True,fool,527,2,164,0,363,2,2,0,0,,sp493/earnings_calls/dhi/dhi_FY22_Q4.md
+DHI,Consumer Discretionary,FY23_Q1,2022,4,2023-01-24,False,fool,579,1,132,0,447,1,1,0,0,,sp493/earnings_calls/dhi/dhi_FY23_Q1.md
+DHI,Consumer Discretionary,FY23_Q3,2023,2,2023-07-20,False,fool,591,1,120,0,471,1,1,0,0,,sp493/earnings_calls/dhi/dhi_FY23_Q3.md
+DHI,Consumer Discretionary,FY23_Q4,2023,3,2023-11-07,False,fool,627,0,141,0,486,0,0,0,1,,sp493/earnings_calls/dhi/dhi_FY23_Q4.md
+DHI,Consumer Discretionary,FY24_Q1,2023,4,2024-01-23,False,fool,548,1,116,1,432,0,1,0,0,,sp493/earnings_calls/dhi/dhi_FY24_Q1.md
+DHI,Consumer Discretionary,FY24_Q2,2024,1,2024-04-18,False,fool,620,3,113,1,507,2,3,0,2,,sp493/earnings_calls/dhi/dhi_FY24_Q2.md
+DHI,Consumer Discretionary,FY24_Q3,2024,2,2024-07-18,False,fool,586,2,140,2,446,0,2,0,0,,sp493/earnings_calls/dhi/dhi_FY24_Q3.md
+DHI,Consumer Discretionary,FY24_Q4,2024,3,2024-10-29,False,fool,600,3,141,2,459,1,3,0,0,,sp493/earnings_calls/dhi/dhi_FY24_Q4.md
+DHI,Consumer Discretionary,FY25_Q1,2024,4,2025-01-21,False,fool,595,3,124,2,471,1,3,0,1,,sp493/earnings_calls/dhi/dhi_FY25_Q1.md
+DIS,Communication Services,FY22_Q1,2021,4,2022-02-09,True,fool,414,1,152,0,262,1,1,0,0,,sp493/earnings_calls/dis/dis_FY22_Q1.md
+DIS,Communication Services,FY22_Q2,2022,1,2022-05-11,True,fool,441,4,144,0,297,4,4,1,1,,sp493/earnings_calls/dis/dis_FY22_Q2.md
+DIS,Communication Services,FY22_Q3,2022,2,2022-08-10,True,fool,402,0,124,0,278,0,0,0,1,,sp493/earnings_calls/dis/dis_FY22_Q3.md
+DIS,Communication Services,FY22_Q4,2022,3,2022-11-08,True,fool,418,0,169,0,249,0,0,0,5,,sp493/earnings_calls/dis/dis_FY22_Q4.md
+DIS,Communication Services,FY23_Q1,2022,4,2023-02-08,False,fool,450,0,200,0,250,0,0,0,3,,sp493/earnings_calls/dis/dis_FY23_Q1.md
+DIS,Communication Services,FY23_Q2,2023,1,2023-05-10,False,fool,437,8,140,0,297,8,1,1,1,,sp493/earnings_calls/dis/dis_FY23_Q2.md
+DIS,Communication Services,FY23_Q3,2023,2,2023-08-09,False,fool,360,2,162,0,198,2,2,0,1,"360 units, outside the typical 400-900",sp493/earnings_calls/dis/dis_FY23_Q3.md
+DIS,Communication Services,FY23_Q4,2023,3,2023-11-08,False,fool,411,2,168,0,243,2,2,0,5,,sp493/earnings_calls/dis/dis_FY23_Q4.md
+DIS,Communication Services,FY24_Q1,2023,4,2024-02-07,False,fool,432,1,161,0,271,1,1,0,2,,sp493/earnings_calls/dis/dis_FY24_Q1.md
+DIS,Communication Services,FY24_Q2,2024,1,2024-05-07,False,fool,379,2,91,0,288,2,2,0,1,"379 units, outside the typical 400-900",sp493/earnings_calls/dis/dis_FY24_Q2.md
+DIS,Communication Services,FY24_Q3,2024,2,2024-08-07,False,fool,303,4,12,0,291,4,4,0,1,"303 units, outside the typical 400-900",sp493/earnings_calls/dis/dis_FY24_Q3.md
+DIS,Communication Services,FY24_Q4,2024,3,2024-11-14,False,fool,379,6,52,0,327,6,5,0,1,"379 units, outside the typical 400-900",sp493/earnings_calls/dis/dis_FY24_Q4.md
+DIS,Communication Services,FY25_Q1,2024,4,2025-02-05,False,fool,308,2,32,0,276,2,1,0,0,"308 units, outside the typical 400-900",sp493/earnings_calls/dis/dis_FY25_Q1.md
+DLTR,Consumer Staples,FY21_Q4,2021,4,2022-03-02,True,fool,508,3,172,0,336,3,3,0,2,,sp493/earnings_calls/dltr/dltr_FY21_Q4.md
+DLTR,Consumer Staples,FY22_Q1,2022,1,2022-05-26,True,fool,528,0,217,0,311,0,0,1,4,,sp493/earnings_calls/dltr/dltr_FY22_Q1.md
+DLTR,Consumer Staples,FY22_Q2,2022,2,2022-08-25,True,fool,494,0,230,0,264,0,0,0,4,,sp493/earnings_calls/dltr/dltr_FY22_Q2.md
+DLTR,Consumer Staples,FY22_Q3,2022,3,2022-11-22,True,fool,527,1,160,0,367,1,1,0,3,,sp493/earnings_calls/dltr/dltr_FY22_Q3.md
+DLTR,Consumer Staples,FY22_Q4,2022,4,2023-03-01,False,fool,512,1,215,0,297,1,1,0,3,,sp493/earnings_calls/dltr/dltr_FY22_Q4.md
+DLTR,Consumer Staples,FY23_Q1,2023,1,2023-05-25,False,fool,520,0,203,0,317,0,0,0,3,,sp493/earnings_calls/dltr/dltr_FY23_Q1.md
+DLTR,Consumer Staples,FY23_Q2,2023,2,2023-08-24,False,fool,440,1,167,0,273,1,1,0,7,,sp493/earnings_calls/dltr/dltr_FY23_Q2.md
+DLTR,Consumer Staples,FY23_Q3,2023,3,2023-11-29,False,fool,460,0,168,0,292,0,0,0,3,,sp493/earnings_calls/dltr/dltr_FY23_Q3.md
+DLTR,Consumer Staples,FY23_Q4,2023,4,2024-03-13,False,fool,527,0,241,0,286,0,0,0,7,,sp493/earnings_calls/dltr/dltr_FY23_Q4.md
+DLTR,Consumer Staples,FY24_Q1,2024,1,2024-06-05,False,fool,522,0,186,0,336,0,0,0,2,,sp493/earnings_calls/dltr/dltr_FY24_Q1.md
+DLTR,Consumer Staples,FY24_Q2,2024,2,2024-09-04,False,fool,505,0,239,0,266,0,0,0,3,,sp493/earnings_calls/dltr/dltr_FY24_Q2.md
+DLTR,Consumer Staples,FY24_Q3,2024,3,2024-12-04,False,fool,575,0,221,0,354,0,0,0,1,,sp493/earnings_calls/dltr/dltr_FY24_Q3.md
+DLTR,Consumer Staples,FY24_Q4,2024,4,2025-03-26,False,fool,573,6,206,1,367,5,6,1,7,,sp493/earnings_calls/dltr/dltr_FY24_Q4.md
+DPZ,Consumer Discretionary,2024_Q4,2024,4,2025-02-24,False,fool,604,3,160,2,444,1,3,0,0,,sp493/earnings_calls/dpz/dpz_2024_Q4.md
+DVA,Health Care,2021_Q4,2021,4,2022-02-10,True,fool,478,1,106,0,372,1,1,0,0,,sp493/earnings_calls/dva/dva_2021_Q4.md
+DVA,Health Care,2022_Q1,2022,1,2022-05-05,True,fool,295,9,94,3,201,6,8,0,1,"295 units, outside the typical 400-900",sp493/earnings_calls/dva/dva_2022_Q1.md
+DVA,Health Care,2022_Q2,2022,2,2022-08-01,True,fool,420,2,102,1,318,1,1,0,0,,sp493/earnings_calls/dva/dva_2022_Q2.md
+DVA,Health Care,2022_Q3,2022,3,2022-10-28,True,fool,507,9,109,4,398,5,2,0,0,,sp493/earnings_calls/dva/dva_2022_Q3.md
+DVA,Health Care,2022_Q4,2022,4,2023-02-22,False,fool,419,2,119,1,300,1,2,0,0,,sp493/earnings_calls/dva/dva_2022_Q4.md
+DVA,Health Care,2023_Q1,2023,1,2023-05-08,False,fool,337,9,98,4,239,5,3,0,0,"337 units, outside the typical 400-900",sp493/earnings_calls/dva/dva_2023_Q1.md
+DVA,Health Care,2023_Q2,2023,2,2023-08-03,False,fool,369,2,91,2,278,0,0,0,0,"369 units, outside the typical 400-900",sp493/earnings_calls/dva/dva_2023_Q2.md
+DVA,Health Care,2023_Q3,2023,3,2023-11-07,False,fool,538,13,134,4,404,9,13,0,0,,sp493/earnings_calls/dva/dva_2023_Q3.md
+DVA,Health Care,2023_Q4,2023,4,2024-02-13,False,fool,464,6,146,4,318,2,5,0,1,,sp493/earnings_calls/dva/dva_2023_Q4.md
+DVA,Health Care,2024_Q1,2024,1,2024-05-02,False,fool,328,2,91,0,237,2,2,0,0,"328 units, outside the typical 400-900",sp493/earnings_calls/dva/dva_2024_Q1.md
+DVA,Health Care,2024_Q2,2024,2,2024-08-06,False,fool,498,0,137,0,361,0,0,1,0,,sp493/earnings_calls/dva/dva_2024_Q2.md
+DVA,Health Care,2024_Q3,2024,3,2024-10-29,False,fool,424,1,109,0,315,1,1,0,1,,sp493/earnings_calls/dva/dva_2024_Q3.md
+DVA,Health Care,2024_Q4,2024,4,2025-02-13,False,fool,494,2,126,0,368,2,2,0,1,,sp493/earnings_calls/dva/dva_2024_Q4.md
+DXCM,Health Care,2021_Q4,2021,4,2022-02-10,True,fool,587,3,108,0,479,3,3,3,4,,sp493/earnings_calls/dxcm/dxcm_2021_Q4.md
+DXCM,Health Care,2022_Q1,2022,1,2022-04-28,True,fool,480,0,112,0,368,0,0,0,2,,sp493/earnings_calls/dxcm/dxcm_2022_Q1.md
+DXCM,Health Care,2022_Q2,2022,2,2022-07-28,True,fool,418,1,123,0,295,1,1,0,3,,sp493/earnings_calls/dxcm/dxcm_2022_Q2.md
+DXCM,Health Care,2022_Q3,2022,3,2022-10-27,True,fool,546,9,146,0,400,9,9,0,1,,sp493/earnings_calls/dxcm/dxcm_2022_Q3.md
+DXCM,Health Care,2022_Q4,2022,4,2023-02-09,False,fool,669,4,126,0,543,4,4,1,4,,sp493/earnings_calls/dxcm/dxcm_2022_Q4.md
+DXCM,Health Care,2023_Q1,2023,1,2023-04-27,False,fool,552,2,115,0,437,2,2,0,0,,sp493/earnings_calls/dxcm/dxcm_2023_Q1.md
+DXCM,Health Care,2023_Q2,2023,2,2023-07-27,False,fool,590,2,149,0,441,2,2,1,2,,sp493/earnings_calls/dxcm/dxcm_2023_Q2.md
+DXCM,Health Care,2023_Q3,2023,3,2023-10-26,False,fool,615,0,135,0,480,0,0,0,0,,sp493/earnings_calls/dxcm/dxcm_2023_Q3.md
+DXCM,Health Care,2023_Q4,2023,4,2024-02-08,False,fool,689,8,113,0,576,8,8,2,1,,sp493/earnings_calls/dxcm/dxcm_2023_Q4.md
+DXCM,Health Care,2024_Q1,2024,1,2024-04-25,False,fool,626,1,115,0,511,1,1,0,3,,sp493/earnings_calls/dxcm/dxcm_2024_Q1.md
+DXCM,Health Care,2024_Q2,2024,2,2024-07-25,False,fool,713,5,112,0,601,5,5,1,2,,sp493/earnings_calls/dxcm/dxcm_2024_Q2.md
+DXCM,Health Care,2024_Q3,2024,3,2024-10-24,False,fool,653,8,117,0,536,8,8,0,0,,sp493/earnings_calls/dxcm/dxcm_2024_Q3.md
+DXCM,Health Care,2024_Q4,2024,4,2025-02-13,False,fool,701,12,120,1,581,11,6,0,0,,sp493/earnings_calls/dxcm/dxcm_2024_Q4.md
+EL,Consumer Staples,FY22_Q2,2021,4,2022-02-03,True,fool,466,2,172,0,294,2,2,0,0,,sp493/earnings_calls/el/el_FY22_Q2.md
+EL,Consumer Staples,FY22_Q3,2022,1,2022-05-03,True,fool,421,2,164,0,257,2,2,0,0,,sp493/earnings_calls/el/el_FY22_Q3.md
+EL,Consumer Staples,FY22_Q4,2022,2,2022-08-18,True,fool,511,3,246,0,265,3,3,0,0,,sp493/earnings_calls/el/el_FY22_Q4.md
+EOG,Energy,2021_Q4,2021,4,2022-02-25,True,fool,540,0,158,0,382,0,0,0,12,,sp493/earnings_calls/eog/eog_2021_Q4.md
+EOG,Energy,2022_Q1,2022,1,2022-05-06,True,fool,507,2,128,0,379,2,2,1,13,,sp493/earnings_calls/eog/eog_2022_Q1.md
+EOG,Energy,2022_Q2,2022,2,2022-08-05,True,fool,518,3,172,2,346,1,3,0,13,,sp493/earnings_calls/eog/eog_2022_Q2.md
+EOG,Energy,2022_Q3,2022,3,2022-11-04,True,fool,578,5,144,1,434,4,5,0,12,,sp493/earnings_calls/eog/eog_2022_Q3.md
+EOG,Energy,2022_Q4,2022,4,2023-02-24,False,fool,524,0,143,0,381,0,0,0,23,,sp493/earnings_calls/eog/eog_2022_Q4.md
+EOG,Energy,2023_Q1,2023,1,2023-05-05,False,fool,513,0,132,0,381,0,0,0,16,,sp493/earnings_calls/eog/eog_2023_Q1.md
+EOG,Energy,2023_Q2,2023,2,2023-08-04,False,fool,428,0,122,0,306,0,0,0,20,,sp493/earnings_calls/eog/eog_2023_Q2.md
+EOG,Energy,2023_Q3,2023,3,2023-11-03,False,fool,536,3,120,0,416,3,3,0,21,,sp493/earnings_calls/eog/eog_2023_Q3.md
+EOG,Energy,2023_Q4,2023,4,2024-02-23,False,fool,520,4,153,0,367,4,4,0,19,,sp493/earnings_calls/eog/eog_2023_Q4.md
+EOG,Energy,2024_Q1,2024,1,2024-05-03,False,fool,564,7,122,1,442,6,5,0,24,,sp493/earnings_calls/eog/eog_2024_Q1.md
+EOG,Energy,2024_Q2,2024,2,2024-08-02,False,fool,550,2,139,1,411,1,2,0,13,,sp493/earnings_calls/eog/eog_2024_Q2.md
+EOG,Energy,2024_Q3,2024,3,2024-11-08,False,fool,516,5,132,0,384,5,4,0,10,,sp493/earnings_calls/eog/eog_2024_Q3.md
+EOG,Energy,2024_Q4,2024,4,2025-02-28,False,fool,523,2,119,0,404,2,2,1,18,,sp493/earnings_calls/eog/eog_2024_Q4.md
+ETN,Industrials,2021_Q4,2021,4,2022-02-04,True,fool,596,1,142,0,454,1,1,0,23,,sp493/earnings_calls/etn/etn_2021_Q4.md
+ETN,Industrials,2022_Q1,2022,1,2022-05-03,True,fool,523,0,143,0,380,0,0,1,9,,sp493/earnings_calls/etn/etn_2022_Q1.md
+ETN,Industrials,2022_Q2,2022,2,2022-08-02,True,fool,570,1,134,0,436,1,1,0,14,,sp493/earnings_calls/etn/etn_2022_Q2.md
+FANG,Energy,2021_Q4,2021,4,2022-02-23,True,fool,499,1,73,0,426,1,1,0,3,,sp493/earnings_calls/fang/fang_2021_Q4.md
+FANG,Energy,2022_Q1,2022,1,2022-05-03,True,fool,513,1,75,0,438,1,1,0,8,,sp493/earnings_calls/fang/fang_2022_Q1.md
+FANG,Energy,2022_Q2,2022,2,2022-08-02,True,fool,504,2,73,0,431,2,2,0,10,,sp493/earnings_calls/fang/fang_2022_Q2.md
+FANG,Energy,2022_Q3,2022,3,2022-11-08,True,fool,433,0,52,0,381,0,0,0,6,,sp493/earnings_calls/fang/fang_2022_Q3.md
+FANG,Energy,2022_Q4,2022,4,2023-02-22,False,fool,563,1,56,0,507,1,1,0,7,,sp493/earnings_calls/fang/fang_2022_Q4.md
+FANG,Energy,2023_Q1,2023,1,2023-05-02,False,fool,555,0,20,0,535,0,0,0,16,,sp493/earnings_calls/fang/fang_2023_Q1.md
+FANG,Energy,2023_Q2,2023,2,2023-08-01,False,fool,316,2,22,0,294,2,2,0,13,"316 units, outside the typical 400-900",sp493/earnings_calls/fang/fang_2023_Q2.md
+FANG,Energy,2023_Q3,2023,3,2023-11-07,False,fool,555,3,21,0,534,3,3,0,13,,sp493/earnings_calls/fang/fang_2023_Q3.md
+FANG,Energy,2023_Q4,2023,4,2024-02-21,False,fool,348,0,21,0,327,0,0,0,5,"348 units, outside the typical 400-900",sp493/earnings_calls/fang/fang_2023_Q4.md
+FANG,Energy,2024_Q1,2024,1,2024-05-01,False,fool,366,5,23,0,343,5,0,0,0,"366 units, outside the typical 400-900",sp493/earnings_calls/fang/fang_2024_Q1.md
+FANG,Energy,2024_Q2,2024,2,2024-08-06,False,fool,455,1,21,0,434,1,1,0,12,,sp493/earnings_calls/fang/fang_2024_Q2.md
+FANG,Energy,2024_Q3,2024,3,2024-11-05,False,fool,594,2,19,0,575,2,1,0,19,,sp493/earnings_calls/fang/fang_2024_Q3.md
+FANG,Energy,2024_Q4,2024,4,2025-02-25,False,fool,378,2,17,0,361,2,2,0,24,"378 units, outside the typical 400-900",sp493/earnings_calls/fang/fang_2024_Q4.md
+FCX,Materials,2024_Q3,2024,3,2024-10-22,False,fool,481,1,160,1,321,0,0,2,11,,sp493/earnings_calls/fcx/fcx_2024_Q3.md
+FCX,Materials,2024_Q4,2024,4,2025-01-23,False,fool,590,4,210,3,380,1,2,2,19,,sp493/earnings_calls/fcx/fcx_2024_Q4.md
+FDX,Industrials,FY22_Q2,2021,4,2021-12-16,True,fool,507,1,176,1,331,0,0,2,0,,sp493/earnings_calls/fdx/fdx_FY22_Q2.md
+FDX,Industrials,FY22_Q3,2022,1,2022-03-17,True,fool,528,5,165,1,363,4,3,6,0,,sp493/earnings_calls/fdx/fdx_FY22_Q3.md
+FDX,Industrials,FY22_Q4,2022,2,2022-06-23,True,fool,593,0,163,0,430,0,0,1,8,,sp493/earnings_calls/fdx/fdx_FY22_Q4.md
+FDX,Industrials,FY23_Q1,2022,3,2022-09-22,True,fool,550,0,149,0,401,0,0,1,0,,sp493/earnings_calls/fdx/fdx_FY23_Q1.md
+FDX,Industrials,FY23_Q2,2022,4,2022-12-20,False,fool,539,2,174,1,365,1,2,1,2,,sp493/earnings_calls/fdx/fdx_FY23_Q2.md
+FDX,Industrials,FY23_Q3,2023,1,2023-03-16,False,fool,537,2,185,2,352,0,2,0,7,,sp493/earnings_calls/fdx/fdx_FY23_Q3.md
+FDX,Industrials,FY23_Q4,2023,2,2023-06-20,False,fool,552,3,211,3,341,0,1,0,9,,sp493/earnings_calls/fdx/fdx_FY23_Q4.md
+FDX,Industrials,FY24_Q1,2023,3,2023-09-20,False,fool,612,1,198,0,414,1,1,1,4,,sp493/earnings_calls/fdx/fdx_FY24_Q1.md
+FDX,Industrials,FY24_Q2,2023,4,2023-12-19,False,fool,540,2,173,1,367,1,2,0,3,,sp493/earnings_calls/fdx/fdx_FY24_Q2.md
+FDX,Industrials,FY24_Q3,2024,1,2024-03-21,False,fool,528,3,184,0,344,3,3,0,4,,sp493/earnings_calls/fdx/fdx_FY24_Q3.md
+FDX,Industrials,FY24_Q4,2024,2,2024-06-25,False,fool,574,0,222,0,352,0,0,1,5,,sp493/earnings_calls/fdx/fdx_FY24_Q4.md
+FDX,Industrials,FY25_Q1,2024,3,2024-09-19,False,fool,545,3,203,3,342,0,1,0,2,,sp493/earnings_calls/fdx/fdx_FY25_Q1.md
+FDX,Industrials,FY25_Q2,2024,4,2024-12-19,False,fool,607,6,273,5,334,1,0,1,2,,sp493/earnings_calls/fdx/fdx_FY25_Q2.md
+FDX,Industrials,FY25_Q3,2025,1,2025-03-20,False,fool,632,4,197,2,435,2,3,1,9,,sp493/earnings_calls/fdx/fdx_FY25_Q3.md
+FFIV,Information Technology,FY22_Q1,2021,4,2022-01-25,True,fool,530,1,162,0,368,1,1,3,2,,sp493/earnings_calls/ffiv/ffiv_FY22_Q1.md
+FFIV,Information Technology,FY22_Q2,2022,1,2022-04-26,True,fool,521,9,152,1,369,8,9,1,10,,sp493/earnings_calls/ffiv/ffiv_FY22_Q2.md
+FFIV,Information Technology,FY22_Q3,2022,2,2022-07-25,True,fool,479,5,120,1,359,4,5,4,2,,sp493/earnings_calls/ffiv/ffiv_FY22_Q3.md
+FIS,Financials,2021_Q4,2021,4,2022-02-15,True,fool,636,5,225,0,411,5,5,5,7,,sp493/earnings_calls/fis/fis_2021_Q4.md
+FIS,Financials,2022_Q1,2022,1,2022-05-03,True,fool,696,4,141,0,555,4,4,1,8,,sp493/earnings_calls/fis/fis_2022_Q1.md
+FIS,Financials,2022_Q2,2022,2,2022-08-04,True,fool,643,9,216,4,427,5,7,2,1,,sp493/earnings_calls/fis/fis_2022_Q2.md
+FITB,Financials,2021_Q4,2021,4,2022-01-20,True,fool,563,7,215,5,348,2,5,2,2,,sp493/earnings_calls/fitb/fitb_2021_Q4.md
+FITB,Financials,2022_Q2,2022,2,2022-07-21,True,fool,498,7,163,2,335,5,1,2,0,,sp493/earnings_calls/fitb/fitb_2022_Q2.md
+FLEX,Information Technology,FY22_Q3,2021,4,2022-01-26,True,fool,419,10,128,1,291,9,10,0,6,,sp493/earnings_calls/flex/flex_FY22_Q3.md
+FLEX,Information Technology,FY22_Q4,2022,1,2022-05-04,True,fool,434,11,123,3,311,8,11,1,6,,sp493/earnings_calls/flex/flex_FY22_Q4.md
+FLEX,Information Technology,FY23_Q1,2022,2,2022-07-27,True,fool,376,1,116,1,260,0,1,0,4,"376 units, outside the typical 400-900",sp493/earnings_calls/flex/flex_FY23_Q1.md
+FTNT,Information Technology,2024_Q3,2024,3,2024-11-07,False,fool,575,5,123,3,452,2,2,1,15,,sp493/earnings_calls/ftnt/ftnt_2024_Q3.md
+FTNT,Information Technology,2024_Q4,2024,4,2025-02-06,False,fool,519,13,148,7,371,6,2,1,15,,sp493/earnings_calls/ftnt/ftnt_2024_Q4.md
+GD,Industrials,2021_Q4,2021,4,2022-01-26,True,fool,533,3,199,0,334,3,3,0,5,,sp493/earnings_calls/gd/gd_2021_Q4.md
+GD,Industrials,2022_Q1,2022,1,2022-04-27,True,fool,503,1,184,1,319,0,1,0,4,,sp493/earnings_calls/gd/gd_2022_Q1.md
+GD,Industrials,2022_Q2,2022,2,2022-07-27,True,fool,500,1,148,1,352,0,1,0,3,,sp493/earnings_calls/gd/gd_2022_Q2.md
+GD,Industrials,2022_Q3,2022,3,2022-10-26,True,fool,523,0,147,0,376,0,0,0,7,,sp493/earnings_calls/gd/gd_2022_Q3.md
+GD,Industrials,2022_Q4,2022,4,2023-01-25,False,fool,484,1,176,0,308,1,1,0,7,,sp493/earnings_calls/gd/gd_2022_Q4.md
+GD,Industrials,2023_Q2,2023,2,2023-07-26,False,fool,469,1,171,0,298,1,0,0,4,,sp493/earnings_calls/gd/gd_2023_Q2.md
+GD,Industrials,2023_Q3,2023,3,2023-10-25,False,fool,368,3,134,1,234,2,1,0,6,"368 units, outside the typical 400-900",sp493/earnings_calls/gd/gd_2023_Q3.md
+GD,Industrials,2023_Q4,2023,4,2024-01-24,False,fool,462,0,172,0,290,0,0,0,4,,sp493/earnings_calls/gd/gd_2023_Q4.md
+GD,Industrials,2024_Q1,2024,1,2024-04-24,False,fool,464,4,134,0,330,4,0,0,4,,sp493/earnings_calls/gd/gd_2024_Q1.md
+GD,Industrials,2024_Q2,2024,2,2024-07-24,False,fool,478,0,173,0,305,0,0,0,3,,sp493/earnings_calls/gd/gd_2024_Q2.md
+GD,Industrials,2024_Q3,2024,3,2024-10-23,False,fool,495,2,179,2,316,0,2,0,3,,sp493/earnings_calls/gd/gd_2024_Q3.md
+GD,Industrials,2024_Q4,2024,4,2025-01-29,False,fool,472,2,201,1,271,1,1,0,8,,sp493/earnings_calls/gd/gd_2024_Q4.md
+GE,Industrials,2021_Q4,2021,4,2022-01-25,True,fool,649,3,392,3,257,0,1,0,10,,sp493/earnings_calls/ge/ge_2021_Q4.md
+GE,Industrials,2022_Q1,2022,1,2022-04-26,True,fool,575,1,283,1,292,0,0,2,2,,sp493/earnings_calls/ge/ge_2022_Q1.md
+GE,Industrials,2022_Q2,2022,2,2022-07-26,True,fool,559,2,287,2,272,0,1,2,1,,sp493/earnings_calls/ge/ge_2022_Q2.md
+GE,Industrials,2022_Q3,2022,3,2022-10-25,True,fool,656,1,286,1,370,0,0,1,1,,sp493/earnings_calls/ge/ge_2022_Q3.md
+GE,Industrials,2022_Q4,2022,4,2023-01-24,False,fool,473,1,193,0,280,1,1,0,2,,sp493/earnings_calls/ge/ge_2022_Q4.md
+GE,Industrials,2023_Q2,2023,2,2023-07-25,False,fool,449,1,165,0,284,1,1,0,0,,sp493/earnings_calls/ge/ge_2023_Q2.md
+GE,Industrials,2023_Q3,2023,3,2023-10-24,False,fool,474,1,159,1,315,0,1,0,1,,sp493/earnings_calls/ge/ge_2023_Q3.md
+GE,Industrials,2023_Q4,2023,4,2024-01-23,False,fool,470,1,220,1,250,0,1,0,0,,sp493/earnings_calls/ge/ge_2023_Q4.md
+GE,Industrials,2024_Q1,2024,1,2024-04-23,False,fool,461,0,195,0,266,0,0,0,1,,sp493/earnings_calls/ge/ge_2024_Q1.md
+GE,Industrials,2024_Q3,2024,3,2024-10-22,False,fool,897,0,308,0,589,0,0,0,0,,sp493/earnings_calls/ge/ge_2024_Q3.md
+GE,Industrials,2024_Q4,2024,4,2025-01-23,False,fool,442,1,193,1,249,0,1,0,3,,sp493/earnings_calls/ge/ge_2024_Q4.md
+GILD,Health Care,2021_Q4,2021,4,2022-02-01,True,fool,601,4,229,2,372,2,4,1,0,,sp493/earnings_calls/gild/gild_2021_Q4.md
+GILD,Health Care,2022_Q1,2022,1,2022-04-28,True,fool,607,9,200,0,407,9,9,0,0,,sp493/earnings_calls/gild/gild_2022_Q1.md
+GILD,Health Care,2022_Q2,2022,2,2022-08-02,True,fool,515,0,212,0,303,0,0,2,0,,sp493/earnings_calls/gild/gild_2022_Q2.md
+GILD,Health Care,2022_Q3,2022,3,2022-10-27,True,fool,527,5,225,0,302,5,5,0,1,,sp493/earnings_calls/gild/gild_2022_Q3.md
+GILD,Health Care,2022_Q4,2022,4,2023-02-02,False,fool,561,7,251,1,310,6,7,0,0,,sp493/earnings_calls/gild/gild_2022_Q4.md
+GILD,Health Care,2023_Q1,2023,1,2023-04-27,False,fool,629,6,192,3,437,3,6,1,0,,sp493/earnings_calls/gild/gild_2023_Q1.md
+GILD,Health Care,2023_Q2,2023,2,2023-08-03,False,fool,510,5,219,3,291,2,5,0,0,,sp493/earnings_calls/gild/gild_2023_Q2.md
+GILD,Health Care,2023_Q3,2023,3,2023-11-07,False,fool,498,1,200,1,298,0,1,0,1,,sp493/earnings_calls/gild/gild_2023_Q3.md
+GILD,Health Care,2023_Q4,2023,4,2024-02-06,False,fool,478,0,208,0,270,0,0,0,1,,sp493/earnings_calls/gild/gild_2023_Q4.md
+GILD,Health Care,2024_Q1,2024,1,2024-04-25,False,fool,537,3,194,2,343,1,3,0,2,,sp493/earnings_calls/gild/gild_2024_Q1.md
+GILD,Health Care,2024_Q2,2024,2,2024-08-08,False,fool,517,5,212,1,305,4,5,0,0,,sp493/earnings_calls/gild/gild_2024_Q2.md
+GILD,Health Care,2024_Q3,2024,3,2024-11-06,False,fool,523,1,185,1,338,0,0,0,0,,sp493/earnings_calls/gild/gild_2024_Q3.md
+GILD,Health Care,2024_Q4,2024,4,2025-02-11,False,fool,468,5,216,2,252,3,5,1,0,,sp493/earnings_calls/gild/gild_2024_Q4.md
+GM,Consumer Discretionary,2021_Q4,2021,4,2022-02-01,True,fool,552,13,158,2,394,11,13,0,2,,sp493/earnings_calls/gm/gm_2021_Q4.md
+GM,Consumer Discretionary,2022_Q1,2022,1,2022-04-26,True,fool,573,10,148,8,425,2,10,0,2,,sp493/earnings_calls/gm/gm_2022_Q1.md
+GM,Consumer Discretionary,2022_Q2,2022,2,2022-07-26,True,fool,597,3,147,1,450,2,3,0,2,,sp493/earnings_calls/gm/gm_2022_Q2.md
+GM,Consumer Discretionary,2022_Q3,2022,3,2022-10-25,True,fool,523,10,176,7,347,3,9,0,2,,sp493/earnings_calls/gm/gm_2022_Q3.md
+GM,Consumer Discretionary,2022_Q4,2022,4,2023-01-31,False,fool,557,5,203,5,354,0,5,1,1,,sp493/earnings_calls/gm/gm_2022_Q4.md
+GM,Consumer Discretionary,2023_Q2,2023,2,2023-07-25,False,fool,578,9,198,4,380,5,7,6,4,,sp493/earnings_calls/gm/gm_2023_Q2.md
+GM,Consumer Discretionary,2023_Q3,2023,3,2023-10-24,False,fool,555,4,174,3,381,1,4,0,3,,sp493/earnings_calls/gm/gm_2023_Q3.md
+GM,Consumer Discretionary,2023_Q4,2023,4,2024-01-30,False,fool,527,9,170,6,357,3,8,2,5,,sp493/earnings_calls/gm/gm_2023_Q4.md
+GM,Consumer Discretionary,2024_Q1,2024,1,2024-04-23,False,fool,568,5,154,2,414,3,5,0,3,,sp493/earnings_calls/gm/gm_2024_Q1.md
+GM,Consumer Discretionary,2024_Q2,2024,2,2024-07-23,False,fool,593,18,165,11,428,7,15,0,0,,sp493/earnings_calls/gm/gm_2024_Q2.md
+GM,Consumer Discretionary,2024_Q3,2024,3,2024-10-22,False,fool,572,12,138,7,434,5,11,0,10,,sp493/earnings_calls/gm/gm_2024_Q3.md
+GM,Consumer Discretionary,2024_Q4,2024,4,2025-01-28,False,fool,562,12,191,6,371,6,11,1,2,,sp493/earnings_calls/gm/gm_2024_Q4.md
+HAS,Consumer Discretionary,2021_Q4,2021,4,2022-02-07,True,fool,602,2,183,0,419,2,2,0,2,,sp493/earnings_calls/has/has_2021_Q4.md
+HAS,Consumer Discretionary,2022_Q1,2022,1,2022-04-19,True,fool,542,0,161,0,381,0,0,0,0,,sp493/earnings_calls/has/has_2022_Q1.md
+HAS,Consumer Discretionary,2022_Q2,2022,2,2022-07-19,True,fool,546,0,149,0,397,0,0,0,1,,sp493/earnings_calls/has/has_2022_Q2.md
+HAS,Consumer Discretionary,2022_Q3,2022,3,2022-10-18,True,fool,535,1,146,1,389,0,1,0,0,,sp493/earnings_calls/has/has_2022_Q3.md
+HAS,Consumer Discretionary,2022_Q4,2022,4,2023-02-16,False,fool,588,3,168,1,420,2,3,0,1,,sp493/earnings_calls/has/has_2022_Q4.md
+HAS,Consumer Discretionary,2023_Q1,2023,1,2023-04-27,False,fool,360,0,157,0,203,0,0,0,2,"360 units, outside the typical 400-900",sp493/earnings_calls/has/has_2023_Q1.md
+HAS,Consumer Discretionary,2023_Q2,2023,2,2023-08-03,False,fool,407,4,160,2,247,2,4,1,1,,sp493/earnings_calls/has/has_2023_Q2.md
+HAS,Consumer Discretionary,2023_Q3,2023,3,2023-10-26,False,fool,560,4,204,0,356,4,3,0,1,,sp493/earnings_calls/has/has_2023_Q3.md
+HAS,Consumer Discretionary,2023_Q4,2023,4,2024-02-13,False,fool,595,6,218,5,377,1,6,0,7,,sp493/earnings_calls/has/has_2023_Q4.md
+HAS,Consumer Discretionary,2024_Q1,2024,1,2024-04-24,False,fool,541,4,149,1,392,3,4,0,0,,sp493/earnings_calls/has/has_2024_Q1.md
+HAS,Consumer Discretionary,2024_Q2,2024,2,2024-07-25,False,fool,517,0,158,0,359,0,0,0,2,,sp493/earnings_calls/has/has_2024_Q2.md
+HAS,Consumer Discretionary,2024_Q3,2024,3,2024-10-24,False,fool,480,0,150,0,330,0,0,0,0,,sp493/earnings_calls/has/has_2024_Q3.md
+HAS,Consumer Discretionary,2024_Q4,2024,4,2025-02-20,False,fool,620,3,197,1,423,2,2,0,2,,sp493/earnings_calls/has/has_2024_Q4.md
+HCA,Health Care,2021_Q4,2021,4,2022-01-27,True,fool,580,3,95,0,485,3,3,0,2,,sp493/earnings_calls/hca/hca_2021_Q4.md
+HCA,Health Care,2022_Q1,2022,1,2022-04-22,True,fool,517,5,104,2,413,3,5,0,0,,sp493/earnings_calls/hca/hca_2022_Q1.md
+HCA,Health Care,2022_Q2,2022,2,2022-07-22,True,fool,487,10,63,0,424,10,10,0,1,,sp493/earnings_calls/hca/hca_2022_Q2.md
+HCA,Health Care,2022_Q3,2022,3,2022-10-21,True,fool,471,1,77,1,394,0,1,0,3,,sp493/earnings_calls/hca/hca_2022_Q3.md
+HCA,Health Care,2022_Q4,2022,4,2023-01-27,False,fool,554,3,139,1,415,2,2,0,2,,sp493/earnings_calls/hca/hca_2022_Q4.md
+HCA,Health Care,2023_Q2,2023,2,2023-07-27,False,fool,474,3,74,0,400,3,0,0,4,,sp493/earnings_calls/hca/hca_2023_Q2.md
+HCA,Health Care,2023_Q3,2023,3,2023-10-24,False,fool,499,2,98,0,401,2,2,0,0,,sp493/earnings_calls/hca/hca_2023_Q3.md
+HCA,Health Care,2023_Q4,2023,4,2024-01-30,False,fool,549,1,140,0,409,1,1,1,3,,sp493/earnings_calls/hca/hca_2023_Q4.md
+HCA,Health Care,2024_Q1,2024,1,2024-04-26,False,fool,506,2,69,0,437,2,2,0,4,,sp493/earnings_calls/hca/hca_2024_Q1.md
+HCA,Health Care,2024_Q2,2024,2,2024-07-23,False,fool,498,4,57,0,441,4,4,0,9,,sp493/earnings_calls/hca/hca_2024_Q2.md
+HCA,Health Care,2024_Q3,2024,3,2024-10-25,False,fool,531,5,110,0,421,5,0,0,8,,sp493/earnings_calls/hca/hca_2024_Q3.md
+HCA,Health Care,2024_Q4,2024,4,2025-01-24,False,fool,553,2,95,0,458,2,0,0,4,,sp493/earnings_calls/hca/hca_2024_Q4.md
+HPE,Information Technology,FY22_Q1,2021,4,2022-03-01,True,fool,499,6,187,2,312,4,1,0,12,,sp493/earnings_calls/hpe/hpe_FY22_Q1.md
+HPE,Information Technology,FY22_Q2,2022,1,2022-06-01,True,fool,479,11,188,7,291,4,1,1,18,,sp493/earnings_calls/hpe/hpe_FY22_Q2.md
+HPE,Information Technology,FY22_Q3,2022,2,2022-08-30,True,fool,493,8,179,3,314,5,3,1,17,,sp493/earnings_calls/hpe/hpe_FY22_Q3.md
+HRL,Consumer Staples,FY25_Q1,2024,4,2025-02-27,False,fool,648,0,136,0,512,0,0,0,2,,sp493/earnings_calls/hrl/hrl_FY25_Q1.md
+HST,Real Estate,2021_Q4,2021,4,2022-02-17,True,fool,528,2,174,0,354,2,2,0,12,,sp493/earnings_calls/hst/hst_2021_Q4.md
+HST,Real Estate,2022_Q1,2022,1,2022-05-05,True,fool,468,0,158,0,310,0,0,0,7,,sp493/earnings_calls/hst/hst_2022_Q1.md
+HST,Real Estate,2022_Q2,2022,2,2022-08-04,True,fool,433,0,158,0,275,0,0,0,2,,sp493/earnings_calls/hst/hst_2022_Q2.md
+HUBB,Industrials,2021_Q4,2021,4,2022-02-03,True,fool,440,1,211,1,229,0,1,5,10,,sp493/earnings_calls/hubb/hubb_2021_Q4.md
+HUBB,Industrials,2022_Q1,2022,1,2022-04-26,True,fool,490,1,148,0,342,1,1,4,4,,sp493/earnings_calls/hubb/hubb_2022_Q1.md
+HUBB,Industrials,2022_Q2,2022,2,2022-07-26,True,fool,477,1,171,0,306,1,1,0,13,,sp493/earnings_calls/hubb/hubb_2022_Q2.md
+IBM,Information Technology,2021_Q4,2021,4,2022-01-24,True,fool,525,50,273,34,252,16,30,9,25,,sp493/earnings_calls/ibm/ibm_2021_Q4.md
+IBM,Information Technology,2022_Q1,2022,1,2022-04-19,True,fool,576,40,239,25,337,15,16,6,18,,sp493/earnings_calls/ibm/ibm_2022_Q1.md
+IBM,Information Technology,2022_Q2,2022,2,2022-07-18,True,fool,550,34,233,27,317,7,11,2,20,,sp493/earnings_calls/ibm/ibm_2022_Q2.md
+IBM,Information Technology,2022_Q3,2022,3,2022-10-19,True,fool,548,32,215,20,333,12,14,2,21,,sp493/earnings_calls/ibm/ibm_2022_Q3.md
+IBM,Information Technology,2022_Q4,2022,4,2023-01-25,False,fool,562,65,248,33,314,32,27,13,20,,sp493/earnings_calls/ibm/ibm_2022_Q4.md
+IBM,Information Technology,2023_Q2,2023,2,2023-07-19,False,fool,597,93,204,41,393,52,19,5,12,,sp493/earnings_calls/ibm/ibm_2023_Q2.md
+IBM,Information Technology,2023_Q3,2023,3,2023-10-25,False,fool,528,71,211,38,317,33,18,5,12,,sp493/earnings_calls/ibm/ibm_2023_Q3.md
+IBM,Information Technology,2023_Q4,2023,4,2024-01-24,False,fool,554,68,255,44,299,24,24,3,20,,sp493/earnings_calls/ibm/ibm_2023_Q4.md
+IBM,Information Technology,2024_Q1,2024,1,2024-04-24,False,fool,555,72,225,48,330,24,14,9,15,,sp493/earnings_calls/ibm/ibm_2024_Q1.md
+IBM,Information Technology,2024_Q2,2024,2,2024-07-24,False,fool,497,87,202,50,295,37,29,4,11,,sp493/earnings_calls/ibm/ibm_2024_Q2.md
+IDXX,Health Care,2021_Q4,2021,4,2022-02-02,True,fool,416,2,197,1,219,1,1,0,0,,sp493/earnings_calls/idxx/idxx_2021_Q4.md
+IDXX,Health Care,2022_Q1,2022,1,2022-05-04,True,fool,489,3,201,1,288,2,3,0,0,,sp493/earnings_calls/idxx/idxx_2022_Q1.md
+IDXX,Health Care,2022_Q2,2022,2,2022-08-02,True,fool,433,2,203,2,230,0,1,1,0,,sp493/earnings_calls/idxx/idxx_2022_Q2.md
+INTU,Information Technology,FY23_Q1,2022,3,2022-11-29,True,fool,629,9,154,6,475,3,2,3,0,,sp493/earnings_calls/intu/intu_FY23_Q1.md
+INTU,Information Technology,FY23_Q2,2022,4,2023-02-23,False,fool,575,17,158,7,417,10,2,2,0,,sp493/earnings_calls/intu/intu_FY23_Q2.md
+INTU,Information Technology,FY23_Q3,2023,1,2023-05-23,False,fool,527,33,177,12,350,21,1,2,0,,sp493/earnings_calls/intu/intu_FY23_Q3.md
+INTU,Information Technology,FY23_Q4,2023,2,2023-08-24,False,fool,623,46,151,17,472,29,2,3,0,,sp493/earnings_calls/intu/intu_FY23_Q4.md
+INTU,Information Technology,FY24_Q1,2023,3,2023-11-28,False,fool,572,30,154,19,418,11,1,5,0,,sp493/earnings_calls/intu/intu_FY24_Q1.md
+INTU,Information Technology,FY24_Q2,2023,4,2024-02-22,False,fool,626,32,173,15,453,17,1,6,5,,sp493/earnings_calls/intu/intu_FY24_Q2.md
+INTU,Information Technology,FY24_Q3,2024,1,2024-05-23,False,fool,603,13,152,9,451,4,0,1,1,,sp493/earnings_calls/intu/intu_FY24_Q3.md
+INTU,Information Technology,FY24_Q4,2024,2,2024-08-22,False,fool,576,44,155,13,421,31,1,1,1,,sp493/earnings_calls/intu/intu_FY24_Q4.md
+INTU,Information Technology,FY25_Q1,2024,3,2024-11-21,False,fool,588,26,150,12,438,14,0,1,0,,sp493/earnings_calls/intu/intu_FY25_Q1.md
+INTU,Information Technology,FY25_Q2,2024,4,2025-02-25,False,fool,543,43,157,24,386,19,2,1,0,,sp493/earnings_calls/intu/intu_FY25_Q2.md
+IR,Industrials,2021_Q4,2021,4,2022-02-24,True,fool,588,0,182,0,406,0,0,0,6,,sp493/earnings_calls/ir/ir_2021_Q4.md
+IR,Industrials,2022_Q1,2022,1,2022-05-05,True,fool,581,2,166,1,415,1,1,0,3,,sp493/earnings_calls/ir/ir_2022_Q1.md
+IR,Industrials,2022_Q2,2022,2,2022-08-04,True,fool,511,1,170,0,341,1,1,0,2,,sp493/earnings_calls/ir/ir_2022_Q2.md
+ISRG,Health Care,2021_Q4,2021,4,2022-01-20,True,fool,477,7,235,0,242,7,7,20,3,,sp493/earnings_calls/isrg/isrg_2021_Q4.md
+ISRG,Health Care,2022_Q1,2022,1,2022-04-21,True,fool,523,3,213,1,310,2,2,13,6,,sp493/earnings_calls/isrg/isrg_2022_Q1.md
+ISRG,Health Care,2022_Q2,2022,2,2022-07-21,True,fool,520,4,207,1,313,3,3,8,8,,sp493/earnings_calls/isrg/isrg_2022_Q2.md
+ISRG,Health Care,2022_Q3,2022,3,2022-10-18,True,fool,501,2,202,0,299,2,2,12,7,,sp493/earnings_calls/isrg/isrg_2022_Q3.md
+ISRG,Health Care,2022_Q4,2022,4,2023-01-24,False,fool,488,1,230,1,258,0,1,23,8,,sp493/earnings_calls/isrg/isrg_2022_Q4.md
+ISRG,Health Care,2023_Q2,2023,2,2023-07-20,False,fool,506,14,175,2,331,12,4,19,5,,sp493/earnings_calls/isrg/isrg_2023_Q2.md
+ISRG,Health Care,2023_Q3,2023,3,2023-10-19,False,fool,466,3,179,0,287,3,1,5,3,,sp493/earnings_calls/isrg/isrg_2023_Q3.md
+ISRG,Health Care,2023_Q4,2023,4,2024-01-23,False,fool,488,0,223,0,265,0,0,12,4,,sp493/earnings_calls/isrg/isrg_2023_Q4.md
+ISRG,Health Care,2024_Q1,2024,1,2024-04-18,False,fool,524,3,180,1,344,2,3,25,3,,sp493/earnings_calls/isrg/isrg_2024_Q1.md
+ISRG,Health Care,2024_Q2,2024,2,2024-07-18,False,fool,549,3,162,1,387,2,2,18,4,,sp493/earnings_calls/isrg/isrg_2024_Q2.md
+ISRG,Health Care,2024_Q3,2024,3,2024-10-17,False,fool,473,3,205,1,268,2,2,12,2,,sp493/earnings_calls/isrg/isrg_2024_Q3.md
+ISRG,Health Care,2024_Q4,2024,4,2025-01-23,False,fool,549,2,227,1,322,1,2,9,8,,sp493/earnings_calls/isrg/isrg_2024_Q4.md
+ITW,Industrials,2021_Q4,2021,4,2022-02-03,True,fool,443,2,108,1,335,1,2,0,3,,sp493/earnings_calls/itw/itw_2021_Q4.md
+ITW,Industrials,2022_Q1,2022,1,2022-05-03,True,fool,403,0,105,0,298,0,0,0,0,,sp493/earnings_calls/itw/itw_2022_Q1.md
+ITW,Industrials,2022_Q2,2022,2,2022-08-02,True,fool,348,0,99,0,249,0,0,0,1,"348 units, outside the typical 400-900",sp493/earnings_calls/itw/itw_2022_Q2.md
+ITW,Industrials,2022_Q3,2022,3,2022-10-25,True,fool,435,0,102,0,333,0,0,0,7,,sp493/earnings_calls/itw/itw_2022_Q3.md
+ITW,Industrials,2022_Q4,2022,4,2023-02-02,False,fool,516,3,132,1,384,2,3,1,0,,sp493/earnings_calls/itw/itw_2022_Q4.md
+ITW,Industrials,2023_Q1,2023,1,2023-05-02,False,fool,483,0,84,0,399,0,0,0,0,,sp493/earnings_calls/itw/itw_2023_Q1.md
+ITW,Industrials,2023_Q2,2023,2,2023-08-01,False,fool,357,1,97,0,260,1,1,0,0,"357 units, outside the typical 400-900",sp493/earnings_calls/itw/itw_2023_Q2.md
+ITW,Industrials,2023_Q3,2023,3,2023-10-24,False,fool,401,0,102,0,299,0,0,0,6,,sp493/earnings_calls/itw/itw_2023_Q3.md
+ITW,Industrials,2023_Q4,2023,4,2024-02-01,False,fool,413,1,96,1,317,0,1,0,8,,sp493/earnings_calls/itw/itw_2023_Q4.md
+ITW,Industrials,2024_Q1,2024,1,2024-04-30,False,fool,405,1,102,0,303,1,1,0,0,,sp493/earnings_calls/itw/itw_2024_Q1.md
+ITW,Industrials,2024_Q2,2024,2,2024-07-30,False,fool,312,0,95,0,217,0,0,0,6,"312 units, outside the typical 400-900",sp493/earnings_calls/itw/itw_2024_Q2.md
+ITW,Industrials,2024_Q3,2024,3,2024-10-30,False,fool,456,3,117,0,339,3,1,0,9,,sp493/earnings_calls/itw/itw_2024_Q3.md
+ITW,Industrials,2024_Q4,2024,4,2025-02-05,False,fool,550,0,125,0,425,0,0,0,1,,sp493/earnings_calls/itw/itw_2024_Q4.md
+JBL,Information Technology,FY22_Q1,2021,4,2021-12-16,True,fool,509,3,112,0,397,3,3,1,4,,sp493/earnings_calls/jbl/jbl_FY22_Q1.md
+JBL,Information Technology,FY22_Q2,2022,1,2022-03-16,True,fool,400,0,109,0,291,0,0,0,5,,sp493/earnings_calls/jbl/jbl_FY22_Q2.md
+JBL,Information Technology,FY22_Q3,2022,2,2022-06-16,True,fool,369,1,116,0,253,1,0,3,8,"369 units, outside the typical 400-900",sp493/earnings_calls/jbl/jbl_FY22_Q3.md
+JBL,Information Technology,FY22_Q4,2022,3,2022-09-27,True,fool,647,10,263,5,384,5,8,7,14,,sp493/earnings_calls/jbl/jbl_FY22_Q4.md
+JKHY,Financials,FY22_Q2,2021,4,2022-02-09,True,fool,645,2,81,0,564,2,2,1,8,,sp493/earnings_calls/jkhy/jkhy_FY22_Q2.md
+JKHY,Financials,FY22_Q3,2022,1,2022-05-04,True,fool,571,1,108,0,463,1,1,0,7,,sp493/earnings_calls/jkhy/jkhy_FY22_Q3.md
+JKHY,Financials,FY22_Q4,2022,2,2022-08-17,True,fool,625,1,161,0,464,1,1,0,3,,sp493/earnings_calls/jkhy/jkhy_FY22_Q4.md
+JPM,Financials,2021_Q4,2021,4,2022-01-14,True,fool,938,8,217,1,721,7,4,0,5,"938 units, outside the typical 400-900",sp493/earnings_calls/jpm/jpm_2021_Q4.md
+JPM,Financials,2022_Q1,2022,1,2022-04-13,True,fool,643,2,92,0,551,2,2,0,3,,sp493/earnings_calls/jpm/jpm_2022_Q1.md
+JPM,Financials,2022_Q2,2022,2,2022-07-14,True,fool,645,2,103,0,542,2,1,0,0,,sp493/earnings_calls/jpm/jpm_2022_Q2.md
+JPM,Financials,2022_Q3,2022,3,2022-10-14,True,fool,517,6,166,1,351,5,6,0,0,,sp493/earnings_calls/jpm/jpm_2022_Q3.md
+JPM,Financials,2022_Q4,2022,4,2023-01-13,False,fool,677,2,138,0,539,2,2,0,1,,sp493/earnings_calls/jpm/jpm_2022_Q4.md
+JPM,Financials,2023_Q2,2023,2,2023-07-14,False,fool,648,4,125,1,523,3,2,0,0,,sp493/earnings_calls/jpm/jpm_2023_Q2.md
+JPM,Financials,2023_Q3,2023,3,2023-10-13,False,fool,611,12,133,0,478,12,3,0,1,,sp493/earnings_calls/jpm/jpm_2023_Q3.md
+JPM,Financials,2023_Q4,2023,4,2024-01-12,False,fool,465,9,120,0,345,9,2,0,2,,sp493/earnings_calls/jpm/jpm_2023_Q4.md
+JPM,Financials,2024_Q1,2024,1,2024-04-12,False,fool,668,2,109,1,559,1,2,1,0,,sp493/earnings_calls/jpm/jpm_2024_Q1.md
+JPM,Financials,2024_Q2,2024,2,2024-07-12,False,fool,506,4,100,0,406,4,1,0,0,,sp493/earnings_calls/jpm/jpm_2024_Q2.md
+JPM,Financials,2024_Q3,2024,3,2024-10-11,False,fool,665,6,80,0,585,6,3,0,0,,sp493/earnings_calls/jpm/jpm_2024_Q3.md
+JPM,Financials,2024_Q4,2024,4,2025-01-15,False,fool,499,3,123,0,376,3,1,0,1,,sp493/earnings_calls/jpm/jpm_2024_Q4.md
+KEY,Financials,2021_Q4,2021,4,2022-01-20,True,fool,608,4,139,1,469,3,4,0,0,,sp493/earnings_calls/key/key_2021_Q4.md
+KEY,Financials,2022_Q1,2022,1,2022-04-21,True,fool,645,5,143,0,502,5,2,0,0,,sp493/earnings_calls/key/key_2022_Q1.md
+KEY,Financials,2022_Q2,2022,2,2022-07-21,True,fool,377,1,151,0,226,1,0,0,0,"377 units, outside the typical 400-900",sp493/earnings_calls/key/key_2022_Q2.md
+KHC,Consumer Staples,2024_Q3,2024,3,2024-10-30,False,fool,291,10,23,0,268,10,10,0,0,"291 units, outside the typical 400-900",sp493/earnings_calls/khc/khc_2024_Q3.md
+KHC,Consumer Staples,2024_Q4,2024,4,2025-02-12,False,fool,273,1,20,0,253,1,1,0,0,"273 units, outside the typical 400-900",sp493/earnings_calls/khc/khc_2024_Q4.md
+KMB,Consumer Staples,2021_Q4,2021,4,2022-01-26,True,fool,613,1,37,0,576,1,1,0,1,,sp493/earnings_calls/kmb/kmb_2021_Q4.md
+KMB,Consumer Staples,2022_Q1,2022,1,2022-04-22,True,fool,499,0,40,0,459,0,0,0,0,,sp493/earnings_calls/kmb/kmb_2022_Q1.md
+KMB,Consumer Staples,2022_Q2,2022,2,2022-07-26,True,fool,644,0,40,0,604,0,0,0,0,,sp493/earnings_calls/kmb/kmb_2022_Q2.md
+KMB,Consumer Staples,2022_Q3,2022,3,2022-10-25,True,fool,596,5,29,0,567,5,5,0,0,,sp493/earnings_calls/kmb/kmb_2022_Q3.md
+KMB,Consumer Staples,2022_Q4,2022,4,2023-01-25,False,fool,706,7,61,0,645,7,7,0,0,,sp493/earnings_calls/kmb/kmb_2022_Q4.md
+KMB,Consumer Staples,2023_Q2,2023,2,2023-07-25,False,fool,598,2,121,0,477,2,2,0,0,,sp493/earnings_calls/kmb/kmb_2023_Q2.md
+KMB,Consumer Staples,2023_Q3,2023,3,2023-10-24,False,fool,364,0,110,0,254,0,0,0,1,"364 units, outside the typical 400-900",sp493/earnings_calls/kmb/kmb_2023_Q3.md
+KMB,Consumer Staples,2023_Q4,2023,4,2024-01-24,False,fool,386,2,25,1,361,1,2,0,0,"386 units, outside the typical 400-900",sp493/earnings_calls/kmb/kmb_2023_Q4.md
+KMB,Consumer Staples,2024_Q1,2024,1,2024-04-23,False,fool,446,0,20,0,426,0,0,0,0,,sp493/earnings_calls/kmb/kmb_2024_Q1.md
+KMB,Consumer Staples,2024_Q2,2024,2,2024-07-23,False,fool,399,4,19,0,380,4,4,2,0,"399 units, outside the typical 400-900",sp493/earnings_calls/kmb/kmb_2024_Q2.md
+KMB,Consumer Staples,2024_Q3,2024,3,2024-10-22,False,fool,404,2,26,1,378,1,2,0,0,,sp493/earnings_calls/kmb/kmb_2024_Q3.md
+KMB,Consumer Staples,2024_Q4,2024,4,2025-01-28,False,fool,421,3,29,1,392,2,3,2,0,,sp493/earnings_calls/kmb/kmb_2024_Q4.md
+KO,Consumer Staples,2021_Q4,2021,4,2022-02-10,True,fool,530,17,137,3,393,14,17,0,1,,sp493/earnings_calls/ko/ko_2021_Q4.md
+KO,Consumer Staples,2022_Q1,2022,1,2022-04-25,True,fool,462,0,125,0,337,0,0,1,0,,sp493/earnings_calls/ko/ko_2022_Q1.md
+KO,Consumer Staples,2022_Q2,2022,2,2022-07-26,True,fool,494,6,146,2,348,4,6,0,0,,sp493/earnings_calls/ko/ko_2022_Q2.md
+KO,Consumer Staples,2022_Q3,2022,3,2022-10-25,True,fool,523,16,159,3,364,13,16,0,0,,sp493/earnings_calls/ko/ko_2022_Q3.md
+KO,Consumer Staples,2022_Q4,2022,4,2023-02-14,False,fool,493,7,151,2,342,5,6,0,1,,sp493/earnings_calls/ko/ko_2022_Q4.md
+KO,Consumer Staples,2023_Q2,2023,2,2023-07-26,False,fool,488,6,147,1,341,5,6,0,0,,sp493/earnings_calls/ko/ko_2023_Q2.md
+KO,Consumer Staples,2023_Q3,2023,3,2023-10-24,False,fool,480,9,165,5,315,4,2,0,0,,sp493/earnings_calls/ko/ko_2023_Q3.md
+KO,Consumer Staples,2023_Q4,2023,4,2024-02-13,False,fool,552,15,153,3,399,12,14,0,3,,sp493/earnings_calls/ko/ko_2023_Q4.md
+KO,Consumer Staples,2024_Q1,2024,1,2024-04-30,False,fool,490,6,123,2,367,4,4,0,0,,sp493/earnings_calls/ko/ko_2024_Q1.md
+KO,Consumer Staples,2024_Q2,2024,2,2024-07-23,False,fool,480,9,135,3,345,6,6,0,1,,sp493/earnings_calls/ko/ko_2024_Q2.md
+KO,Consumer Staples,2024_Q3,2024,3,2024-10-23,False,fool,522,9,134,3,388,6,7,1,2,,sp493/earnings_calls/ko/ko_2024_Q3.md
+KO,Consumer Staples,2024_Q4,2024,4,2025-02-11,False,fool,546,9,163,5,383,4,6,0,1,,sp493/earnings_calls/ko/ko_2024_Q4.md
+KVUE,Consumer Staples,2023_Q3,2023,3,2023-10-26,False,fool,450,8,201,4,249,4,8,1,3,,sp493/earnings_calls/kvue/kvue_2023_Q3.md
+KVUE,Consumer Staples,2023_Q4,2023,4,2024-02-08,False,fool,486,5,171,2,315,3,5,1,1,,sp493/earnings_calls/kvue/kvue_2023_Q4.md
+KVUE,Consumer Staples,2024_Q1,2024,1,2024-05-07,False,fool,431,8,199,7,232,1,8,1,2,,sp493/earnings_calls/kvue/kvue_2024_Q1.md
+KVUE,Consumer Staples,2024_Q2,2024,2,2024-08-06,False,fool,409,8,138,5,271,3,8,0,0,,sp493/earnings_calls/kvue/kvue_2024_Q2.md
+KVUE,Consumer Staples,2024_Q3,2024,3,2024-11-07,False,fool,473,9,146,2,327,7,8,2,0,,sp493/earnings_calls/kvue/kvue_2024_Q3.md
+KVUE,Consumer Staples,2024_Q4,2024,4,2025-02-06,False,fool,504,6,167,4,337,2,4,0,2,,sp493/earnings_calls/kvue/kvue_2024_Q4.md
+LH,Health Care,2021_Q4,2021,4,2022-02-10,True,fool,590,1,182,0,408,1,1,2,1,,sp493/earnings_calls/lh/lh_2021_Q4.md
+LH,Health Care,2022_Q1,2022,1,2022-04-28,True,fool,398,4,148,0,250,4,4,0,1,"398 units, outside the typical 400-900",sp493/earnings_calls/lh/lh_2022_Q1.md
+LH,Health Care,2022_Q2,2022,2,2022-07-28,True,fool,451,0,165,0,286,0,0,0,3,,sp493/earnings_calls/lh/lh_2022_Q2.md
+LITE,Information Technology,FY22_Q2,2021,4,2022-02-03,True,fool,498,1,129,0,369,1,1,0,5,,sp493/earnings_calls/lite/lite_FY22_Q2.md
+LITE,Information Technology,FY22_Q3,2022,1,2022-05-04,True,fool,447,5,119,1,328,4,4,2,5,,sp493/earnings_calls/lite/lite_FY22_Q3.md
+LITE,Information Technology,FY22_Q4,2022,2,2022-08-16,True,fool,600,17,148,3,452,14,16,1,4,,sp493/earnings_calls/lite/lite_FY22_Q4.md
+LMT,Industrials,2021_Q4,2021,4,2022-01-25,True,fool,479,3,110,2,369,1,2,1,5,,sp493/earnings_calls/lmt/lmt_2021_Q4.md
+LMT,Industrials,2022_Q2,2022,2,2022-07-19,True,fool,495,1,140,1,355,0,0,0,1,,sp493/earnings_calls/lmt/lmt_2022_Q2.md
+LMT,Industrials,2022_Q3,2022,3,2022-10-18,True,fool,530,4,137,1,393,3,4,1,1,,sp493/earnings_calls/lmt/lmt_2022_Q3.md
+LMT,Industrials,2022_Q4,2022,4,2023-01-24,False,fool,559,4,155,2,404,2,1,0,4,,sp493/earnings_calls/lmt/lmt_2022_Q4.md
+LMT,Industrials,2023_Q2,2023,2,2023-07-18,False,fool,558,7,146,2,412,5,4,0,5,,sp493/earnings_calls/lmt/lmt_2023_Q2.md
+LMT,Industrials,2023_Q3,2023,3,2023-10-17,False,fool,495,4,142,3,353,1,0,0,0,,sp493/earnings_calls/lmt/lmt_2023_Q3.md
+LMT,Industrials,2023_Q4,2023,4,2024-01-23,False,fool,496,6,152,0,344,6,2,1,1,,sp493/earnings_calls/lmt/lmt_2023_Q4.md
+LMT,Industrials,2024_Q1,2024,1,2024-04-23,False,fool,496,8,145,2,351,6,4,1,2,,sp493/earnings_calls/lmt/lmt_2024_Q1.md
+LMT,Industrials,2024_Q2,2024,2,2024-07-23,False,fool,490,6,153,5,337,1,3,0,1,,sp493/earnings_calls/lmt/lmt_2024_Q2.md
+LMT,Industrials,2024_Q3,2024,3,2024-10-22,False,fool,485,11,139,4,346,7,4,0,1,,sp493/earnings_calls/lmt/lmt_2024_Q3.md
+LMT,Industrials,2024_Q4,2024,4,2025-01-28,False,fool,519,7,165,4,354,3,4,1,1,,sp493/earnings_calls/lmt/lmt_2024_Q4.md
+LOW,Consumer Discretionary,FY21_Q4,2021,4,2022-02-23,True,fool,491,3,202,0,289,3,3,0,2,,sp493/earnings_calls/low/low_FY21_Q4.md
+LOW,Consumer Discretionary,FY22_Q1,2022,1,2022-05-18,True,fool,494,3,192,0,302,3,3,0,3,,sp493/earnings_calls/low/low_FY22_Q1.md
+LOW,Consumer Discretionary,FY22_Q2,2022,2,2022-08-17,True,fool,523,0,190,0,333,0,0,0,2,,sp493/earnings_calls/low/low_FY22_Q2.md
+LOW,Consumer Discretionary,FY22_Q3,2022,3,2022-11-16,True,fool,474,2,200,1,274,1,2,0,7,,sp493/earnings_calls/low/low_FY22_Q3.md
+LOW,Consumer Discretionary,FY22_Q4,2022,4,2023-03-01,False,fool,544,1,206,0,338,1,1,2,2,,sp493/earnings_calls/low/low_FY22_Q4.md
+LOW,Consumer Discretionary,FY23_Q1,2023,1,2023-05-23,False,fool,556,1,203,1,353,0,1,3,3,,sp493/earnings_calls/low/low_FY23_Q1.md
+LOW,Consumer Discretionary,FY23_Q2,2023,2,2023-08-22,False,fool,479,0,178,0,301,0,0,3,4,,sp493/earnings_calls/low/low_FY23_Q2.md
+LOW,Consumer Discretionary,FY23_Q3,2023,3,2023-11-21,False,fool,517,0,183,0,334,0,0,0,2,,sp493/earnings_calls/low/low_FY23_Q3.md
+LOW,Consumer Discretionary,FY23_Q4,2023,4,2024-02-27,False,fool,469,8,192,1,277,7,7,0,6,,sp493/earnings_calls/low/low_FY23_Q4.md
+LOW,Consumer Discretionary,FY24_Q1,2024,1,2024-05-21,False,fool,533,5,176,2,357,3,4,0,2,,sp493/earnings_calls/low/low_FY24_Q1.md
+LOW,Consumer Discretionary,FY24_Q2,2024,2,2024-08-20,False,fool,532,4,162,1,370,3,3,0,4,,sp493/earnings_calls/low/low_FY24_Q2.md
+LOW,Consumer Discretionary,FY24_Q3,2024,3,2024-11-19,False,fool,515,2,171,0,344,2,2,1,4,,sp493/earnings_calls/low/low_FY24_Q3.md
+LOW,Consumer Discretionary,FY24_Q4,2024,4,2025-02-26,False,fool,539,7,190,3,349,4,4,0,6,,sp493/earnings_calls/low/low_FY24_Q4.md
+LULU,Consumer Discretionary,FY21_Q4,2021,4,2022-03-29,True,fool,461,0,215,0,246,0,0,0,5,,sp493/earnings_calls/lulu/lulu_FY21_Q4.md
+LULU,Consumer Discretionary,FY22_Q1,2022,1,2022-06-02,True,fool,524,2,201,1,323,1,2,0,3,,sp493/earnings_calls/lulu/lulu_FY22_Q1.md
+LULU,Consumer Discretionary,FY22_Q2,2022,2,2022-09-01,True,fool,481,3,202,2,279,1,3,0,4,,sp493/earnings_calls/lulu/lulu_FY22_Q2.md
+LULU,Consumer Discretionary,FY22_Q3,2022,3,2022-12-08,False,fool,538,3,205,2,333,1,3,0,4,,sp493/earnings_calls/lulu/lulu_FY22_Q3.md
+LULU,Consumer Discretionary,FY23_Q1,2023,1,2023-06-01,False,fool,494,8,206,5,288,3,8,0,3,,sp493/earnings_calls/lulu/lulu_FY23_Q1.md
+LULU,Consumer Discretionary,FY23_Q2,2023,2,2023-08-31,False,fool,480,0,202,0,278,0,0,0,2,,sp493/earnings_calls/lulu/lulu_FY23_Q2.md
+LULU,Consumer Discretionary,FY23_Q3,2023,3,2023-12-07,False,fool,496,3,203,0,293,3,3,0,4,,sp493/earnings_calls/lulu/lulu_FY23_Q3.md
+LULU,Consumer Discretionary,FY23_Q4,2023,4,2024-03-21,False,fool,461,4,208,1,253,3,4,0,4,,sp493/earnings_calls/lulu/lulu_FY23_Q4.md
+LULU,Consumer Discretionary,FY24_Q1,2024,1,2024-06-05,False,fool,461,1,198,1,263,0,1,0,3,,sp493/earnings_calls/lulu/lulu_FY24_Q1.md
+LULU,Consumer Discretionary,FY24_Q2,2024,2,2024-08-29,False,fool,492,2,211,0,281,2,2,0,3,,sp493/earnings_calls/lulu/lulu_FY24_Q2.md
+LULU,Consumer Discretionary,FY24_Q3,2024,3,2024-12-05,False,fool,503,1,194,0,309,1,1,0,3,,sp493/earnings_calls/lulu/lulu_FY24_Q3.md
+LULU,Consumer Discretionary,FY24_Q4,2024,4,2025-03-27,False,fool,499,0,213,0,286,0,0,0,2,,sp493/earnings_calls/lulu/lulu_FY24_Q4.md
+LVS,Consumer Discretionary,2021_Q4,2021,4,2022-01-26,True,fool,433,0,46,0,387,0,0,0,1,,sp493/earnings_calls/lvs/lvs_2021_Q4.md
+LVS,Consumer Discretionary,2022_Q1,2022,1,2022-04-27,True,fool,457,0,40,0,417,0,0,0,0,,sp493/earnings_calls/lvs/lvs_2022_Q1.md
+LVS,Consumer Discretionary,2022_Q2,2022,2,2022-07-20,True,fool,511,0,36,0,475,0,0,0,1,,sp493/earnings_calls/lvs/lvs_2022_Q2.md
+LVS,Consumer Discretionary,2022_Q3,2022,3,2022-10-19,True,fool,453,0,33,0,420,0,0,0,0,,sp493/earnings_calls/lvs/lvs_2022_Q3.md
+LVS,Consumer Discretionary,2022_Q4,2022,4,2023-01-25,False,fool,676,1,47,1,629,0,1,0,4,,sp493/earnings_calls/lvs/lvs_2022_Q4.md
+LVS,Consumer Discretionary,2023_Q2,2023,2,2023-07-19,False,fool,561,0,31,0,530,0,0,0,6,,sp493/earnings_calls/lvs/lvs_2023_Q2.md
+LVS,Consumer Discretionary,2023_Q3,2023,3,2023-10-18,False,fool,598,2,79,0,519,2,0,0,3,,sp493/earnings_calls/lvs/lvs_2023_Q3.md
+LVS,Consumer Discretionary,2023_Q4,2023,4,2024-01-24,False,fool,649,0,83,0,566,0,0,0,2,,sp493/earnings_calls/lvs/lvs_2023_Q4.md
+LVS,Consumer Discretionary,2024_Q1,2024,1,2024-04-17,False,fool,668,0,68,0,600,0,0,0,3,,sp493/earnings_calls/lvs/lvs_2024_Q1.md
+LVS,Consumer Discretionary,2024_Q2,2024,2,2024-07-24,False,fool,588,2,66,0,522,2,2,0,6,,sp493/earnings_calls/lvs/lvs_2024_Q2.md
+LVS,Consumer Discretionary,2024_Q3,2024,3,2024-10-23,False,fool,636,1,73,0,563,1,1,0,4,,sp493/earnings_calls/lvs/lvs_2024_Q3.md
+LVS,Consumer Discretionary,2024_Q4,2024,4,2025-01-29,False,fool,582,5,75,0,507,5,5,0,1,,sp493/earnings_calls/lvs/lvs_2024_Q4.md
+MCHP,Information Technology,FY22_Q3,2021,4,2022-02-03,True,fool,544,2,150,1,394,1,2,1,13,,sp493/earnings_calls/mchp/mchp_FY22_Q3.md
+MCHP,Information Technology,FY22_Q4,2022,1,2022-05-09,True,fool,574,4,149,2,425,2,4,0,18,,sp493/earnings_calls/mchp/mchp_FY22_Q4.md
+MCHP,Information Technology,FY23_Q1,2022,2,2022-08-02,True,fool,338,3,149,2,189,1,3,0,7,"338 units, outside the typical 400-900",sp493/earnings_calls/mchp/mchp_FY23_Q1.md
+MDT,Health Care,FY22_Q3,2021,4,2022-02-22,True,fool,597,4,179,3,418,1,2,6,0,,sp493/earnings_calls/mdt/mdt_FY22_Q3.md
+MDT,Health Care,FY22_Q4,2022,1,2022-05-26,True,fool,606,3,208,3,398,0,1,5,0,,sp493/earnings_calls/mdt/mdt_FY22_Q4.md
+MDT,Health Care,FY23_Q1,2022,2,2022-08-23,True,fool,635,9,168,4,467,5,7,18,0,,sp493/earnings_calls/mdt/mdt_FY23_Q1.md
+MDT,Health Care,FY23_Q2,2022,3,2022-11-22,True,fool,594,1,137,1,457,0,1,5,0,,sp493/earnings_calls/mdt/mdt_FY23_Q2.md
+MDT,Health Care,FY23_Q3,2022,4,2023-02-21,False,fool,598,6,143,3,455,3,3,14,0,,sp493/earnings_calls/mdt/mdt_FY23_Q3.md
+MDT,Health Care,FY23_Q4,2023,1,2023-05-25,False,fool,782,20,180,11,602,9,11,8,0,,sp493/earnings_calls/mdt/mdt_FY23_Q4.md
+MDT,Health Care,FY24_Q1,2023,2,2023-08-22,False,fool,621,18,183,4,438,14,1,8,0,,sp493/earnings_calls/mdt/mdt_FY24_Q1.md
+MDT,Health Care,FY24_Q2,2023,3,2023-11-21,False,fool,562,12,190,7,372,5,6,12,0,,sp493/earnings_calls/mdt/mdt_FY24_Q2.md
+MDT,Health Care,FY24_Q3,2023,4,2024-02-20,False,fool,550,8,188,5,362,3,3,10,0,,sp493/earnings_calls/mdt/mdt_FY24_Q3.md
+MDT,Health Care,FY24_Q4,2024,1,2024-05-23,False,fool,628,13,182,7,446,6,6,11,0,,sp493/earnings_calls/mdt/mdt_FY24_Q4.md
+MDT,Health Care,FY25_Q1,2024,2,2024-08-20,False,fool,619,7,159,1,460,6,5,7,0,,sp493/earnings_calls/mdt/mdt_FY25_Q1.md
+MDT,Health Care,FY25_Q2,2024,3,2024-11-19,False,fool,624,3,157,2,467,1,2,4,1,,sp493/earnings_calls/mdt/mdt_FY25_Q2.md
+MDT,Health Care,FY25_Q3,2024,4,2025-02-18,False,fool,565,4,170,2,395,2,3,7,0,,sp493/earnings_calls/mdt/mdt_FY25_Q3.md
+MGM,Consumer Discretionary,2021_Q4,2021,4,2022-02-09,True,fool,564,1,182,0,382,1,1,0,3,,sp493/earnings_calls/mgm/mgm_2021_Q4.md
+MGM,Consumer Discretionary,2022_Q1,2022,1,2022-05-02,True,fool,540,0,136,0,404,0,0,0,1,,sp493/earnings_calls/mgm/mgm_2022_Q1.md
+MGM,Consumer Discretionary,2022_Q2,2022,2,2022-08-03,True,fool,552,1,151,0,401,1,1,0,5,,sp493/earnings_calls/mgm/mgm_2022_Q2.md
+MGM,Consumer Discretionary,2022_Q3,2022,3,2022-11-02,True,fool,567,0,136,0,431,0,0,0,2,,sp493/earnings_calls/mgm/mgm_2022_Q3.md
+MGM,Consumer Discretionary,2022_Q4,2022,4,2023-02-08,False,fool,590,0,120,0,470,0,0,1,4,,sp493/earnings_calls/mgm/mgm_2022_Q4.md
+MGM,Consumer Discretionary,2023_Q1,2023,1,2023-05-01,False,fool,568,2,132,2,436,0,2,0,4,,sp493/earnings_calls/mgm/mgm_2023_Q1.md
+MGM,Consumer Discretionary,2023_Q2,2023,2,2023-08-02,False,fool,568,0,130,0,438,0,0,0,4,,sp493/earnings_calls/mgm/mgm_2023_Q2.md
+MGM,Consumer Discretionary,2023_Q3,2023,3,2023-11-08,False,fool,554,1,140,1,414,0,1,0,5,,sp493/earnings_calls/mgm/mgm_2023_Q3.md
+MGM,Consumer Discretionary,2023_Q4,2023,4,2024-02-13,False,fool,581,1,137,1,444,0,1,0,4,,sp493/earnings_calls/mgm/mgm_2023_Q4.md
+MGM,Consumer Discretionary,2024_Q1,2024,1,2024-05-01,False,fool,577,3,166,3,411,0,3,0,2,,sp493/earnings_calls/mgm/mgm_2024_Q1.md
+MGM,Consumer Discretionary,2024_Q2,2024,2,2024-07-31,False,fool,622,2,165,2,457,0,2,0,1,,sp493/earnings_calls/mgm/mgm_2024_Q2.md
+MGM,Consumer Discretionary,2024_Q3,2024,3,2024-10-30,False,fool,534,1,89,1,445,0,1,0,3,,sp493/earnings_calls/mgm/mgm_2024_Q3.md
+MGM,Consumer Discretionary,2024_Q4,2024,4,2025-02-12,False,fool,534,1,117,0,417,1,1,0,5,,sp493/earnings_calls/mgm/mgm_2024_Q4.md
+MNST,Consumer Staples,2024_Q3,2024,3,2024-11-07,False,fool,400,0,230,0,170,0,0,0,0,,sp493/earnings_calls/mnst/mnst_2024_Q3.md
+MNST,Consumer Staples,2024_Q4,2024,4,2025-02-27,False,fool,358,0,207,0,151,0,0,0,0,"358 units, outside the typical 400-900",sp493/earnings_calls/mnst/mnst_2024_Q4.md
+MOS,Materials,2021_Q4,2021,4,2022-02-23,True,fool,454,2,214,0,240,2,2,1,0,,sp493/earnings_calls/mos/mos_2021_Q4.md
+MOS,Materials,2022_Q1,2022,1,2022-05-03,True,fool,424,0,138,0,286,0,0,0,0,,sp493/earnings_calls/mos/mos_2022_Q1.md
+MOS,Materials,2022_Q2,2022,2,2022-08-02,True,fool,490,0,172,0,318,0,0,0,2,,sp493/earnings_calls/mos/mos_2022_Q2.md
+MOS,Materials,2022_Q3,2022,3,2022-11-08,True,fool,500,0,173,0,327,0,0,0,2,,sp493/earnings_calls/mos/mos_2022_Q3.md
+MOS,Materials,2022_Q4,2022,4,2023-02-23,False,fool,489,0,181,0,308,0,0,0,1,,sp493/earnings_calls/mos/mos_2022_Q4.md
+MOS,Materials,2023_Q1,2023,1,2023-05-04,False,fool,443,0,154,0,289,0,0,0,1,,sp493/earnings_calls/mos/mos_2023_Q1.md
+MOS,Materials,2023_Q2,2023,2,2023-08-02,False,fool,510,0,170,0,340,0,0,0,1,,sp493/earnings_calls/mos/mos_2023_Q2.md
+MOS,Materials,2023_Q3,2023,3,2023-11-08,False,fool,512,1,182,0,330,1,1,0,5,,sp493/earnings_calls/mos/mos_2023_Q3.md
+MOS,Materials,2023_Q4,2023,4,2024-02-22,False,fool,452,1,173,0,279,1,1,0,9,,sp493/earnings_calls/mos/mos_2023_Q4.md
+MOS,Materials,2024_Q1,2024,1,2024-05-02,False,fool,481,0,143,0,338,0,0,0,4,,sp493/earnings_calls/mos/mos_2024_Q1.md
+MOS,Materials,2024_Q2,2024,2,2024-08-07,False,fool,554,0,209,0,345,0,0,0,6,,sp493/earnings_calls/mos/mos_2024_Q2.md
+MOS,Materials,2024_Q3,2024,3,2024-11-12,False,fool,528,0,173,0,355,0,0,0,2,,sp493/earnings_calls/mos/mos_2024_Q3.md
+MOS,Materials,2024_Q4,2024,4,2025-02-28,False,fool,517,2,189,1,328,1,2,0,16,,sp493/earnings_calls/mos/mos_2024_Q4.md
+MPWR,Information Technology,2021_Q4,2021,4,2022-02-10,True,fool,502,4,502,4,0,0,3,1,15,Q&A start not detected,sp493/earnings_calls/mpwr/mpwr_2021_Q4.md
+MPWR,Information Technology,2022_Q1,2022,1,2022-05-02,True,fool,506,12,506,12,0,0,9,1,17,Q&A start not detected,sp493/earnings_calls/mpwr/mpwr_2022_Q1.md
+MRNA,Health Care,2021_Q4,2021,4,2022-02-24,True,fool,617,7,377,3,240,4,5,0,1,,sp493/earnings_calls/mrna/mrna_2021_Q4.md
+MRNA,Health Care,2022_Q2,2022,2,2022-08-03,True,fool,473,2,234,0,239,2,2,1,2,,sp493/earnings_calls/mrna/mrna_2022_Q2.md
+MRNA,Health Care,2022_Q3,2022,3,2022-11-03,True,fool,531,2,219,0,312,2,2,0,4,,sp493/earnings_calls/mrna/mrna_2022_Q3.md
+MRNA,Health Care,2022_Q4,2022,4,2023-02-23,False,fool,603,1,302,0,301,1,1,0,5,,sp493/earnings_calls/mrna/mrna_2022_Q4.md
+MRNA,Health Care,2023_Q1,2023,1,2023-05-04,False,fool,659,5,284,4,375,1,3,0,3,,sp493/earnings_calls/mrna/mrna_2023_Q1.md
+MRNA,Health Care,2023_Q2,2023,2,2023-08-03,False,fool,477,8,212,8,265,0,0,0,2,,sp493/earnings_calls/mrna/mrna_2023_Q2.md
+MRNA,Health Care,2023_Q3,2023,3,2023-11-02,False,fool,547,0,265,0,282,0,0,0,7,,sp493/earnings_calls/mrna/mrna_2023_Q3.md
+MRNA,Health Care,2023_Q4,2023,4,2024-02-22,False,fool,490,2,216,2,274,0,0,0,3,,sp493/earnings_calls/mrna/mrna_2023_Q4.md
+MRNA,Health Care,2024_Q1,2024,1,2024-05-02,False,fool,569,4,205,3,364,1,1,0,2,,sp493/earnings_calls/mrna/mrna_2024_Q1.md
+MRNA,Health Care,2024_Q2,2024,2,2024-08-01,False,fool,551,4,229,3,322,1,1,0,1,,sp493/earnings_calls/mrna/mrna_2024_Q2.md
+MRNA,Health Care,2024_Q3,2024,3,2024-11-07,False,fool,518,2,214,2,304,0,0,0,2,,sp493/earnings_calls/mrna/mrna_2024_Q3.md
+MRNA,Health Care,2024_Q4,2024,4,2025-02-14,False,fool,549,1,177,1,372,0,0,0,3,,sp493/earnings_calls/mrna/mrna_2024_Q4.md
+MRVL,Information Technology,FY22_Q4,2021,4,2022-03-03,True,fool,580,13,194,5,386,8,8,0,36,,sp493/earnings_calls/mrvl/mrvl_FY22_Q4.md
+MRVL,Information Technology,FY23_Q1,2022,1,2022-05-26,True,fool,557,6,170,3,387,3,3,0,52,,sp493/earnings_calls/mrvl/mrvl_FY23_Q1.md
+MRVL,Information Technology,FY23_Q2,2022,2,2022-08-25,True,fool,588,8,166,5,422,3,6,1,37,,sp493/earnings_calls/mrvl/mrvl_FY23_Q2.md
+MRVL,Information Technology,FY23_Q3,2022,3,2022-12-01,False,fool,638,2,160,1,478,1,2,0,54,,sp493/earnings_calls/mrvl/mrvl_FY23_Q3.md
+MRVL,Information Technology,FY23_Q4,2022,4,2023-03-02,False,fool,621,31,190,15,431,16,3,0,57,,sp493/earnings_calls/mrvl/mrvl_FY23_Q4.md
+MRVL,Information Technology,FY24_Q1,2023,1,2023-05-25,False,fool,731,98,224,53,507,45,6,1,36,,sp493/earnings_calls/mrvl/mrvl_FY24_Q1.md
+MRVL,Information Technology,FY24_Q2,2023,2,2023-08-24,False,fool,631,60,166,18,465,42,8,0,47,,sp493/earnings_calls/mrvl/mrvl_FY24_Q2.md
+MRVL,Information Technology,FY24_Q3,2023,3,2023-11-30,False,fool,583,44,145,14,438,30,6,0,42,,sp493/earnings_calls/mrvl/mrvl_FY24_Q3.md
+MRVL,Information Technology,FY24_Q4,2023,4,2024-03-07,False,fool,488,48,159,21,329,27,8,0,37,,sp493/earnings_calls/mrvl/mrvl_FY24_Q4.md
+MRVL,Information Technology,FY25_Q1,2024,1,2024-05-30,False,fool,566,47,139,15,427,32,7,0,38,,sp493/earnings_calls/mrvl/mrvl_FY25_Q1.md
+MRVL,Information Technology,FY25_Q2,2024,2,2024-08-29,False,fool,505,35,131,13,374,22,0,0,26,,sp493/earnings_calls/mrvl/mrvl_FY25_Q2.md
+MRVL,Information Technology,FY25_Q3,2024,3,2024-12-03,False,fool,516,45,144,13,372,32,3,0,21,,sp493/earnings_calls/mrvl/mrvl_FY25_Q3.md
+MRVL,Information Technology,FY25_Q4,2024,4,2025-03-05,False,fool,552,49,154,21,398,28,4,0,46,,sp493/earnings_calls/mrvl/mrvl_FY25_Q4.md
+MSCI,Financials,2021_Q4,2021,4,2022-01-27,True,fool,431,10,164,8,267,2,9,0,5,,sp493/earnings_calls/msci/msci_2021_Q4.md
+MSCI,Financials,2022_Q1,2022,1,2022-04-26,True,fool,504,0,150,0,354,0,0,1,1,,sp493/earnings_calls/msci/msci_2022_Q1.md
+MSCI,Financials,2022_Q2,2022,2,2022-07-26,True,fool,511,4,151,4,360,0,3,0,3,,sp493/earnings_calls/msci/msci_2022_Q2.md
+MSCI,Financials,2022_Q3,2022,3,2022-10-25,True,fool,568,9,174,3,394,6,9,1,3,,sp493/earnings_calls/msci/msci_2022_Q3.md
+MSCI,Financials,2022_Q4,2022,4,2023-01-31,False,fool,657,9,197,6,460,3,8,0,1,,sp493/earnings_calls/msci/msci_2022_Q4.md
+MSCI,Financials,2023_Q2,2023,2,2023-07-25,False,fool,535,13,142,10,393,3,3,0,1,,sp493/earnings_calls/msci/msci_2023_Q2.md
+MSCI,Financials,2023_Q3,2023,3,2023-10-31,False,fool,523,4,123,2,400,2,4,0,2,,sp493/earnings_calls/msci/msci_2023_Q3.md
+MSCI,Financials,2023_Q4,2023,4,2024-01-30,False,fool,463,17,151,10,312,7,10,0,3,,sp493/earnings_calls/msci/msci_2023_Q4.md
+MSCI,Financials,2024_Q1,2024,1,2024-04-23,False,fool,408,13,128,6,280,7,7,0,1,,sp493/earnings_calls/msci/msci_2024_Q1.md
+MSCI,Financials,2024_Q2,2024,2,2024-07-23,False,fool,485,20,134,8,351,12,6,0,1,,sp493/earnings_calls/msci/msci_2024_Q2.md
+MSCI,Financials,2024_Q3,2024,3,2024-10-29,False,fool,538,10,133,3,405,7,8,0,3,,sp493/earnings_calls/msci/msci_2024_Q3.md
+MSCI,Financials,2024_Q4,2024,4,2025-01-29,False,fool,582,20,135,5,447,15,8,0,1,,sp493/earnings_calls/msci/msci_2024_Q4.md
+MTB,Financials,2021_Q4,2021,4,2022-01-20,True,fool,533,3,177,0,356,3,2,0,0,,sp493/earnings_calls/mtb/mtb_2021_Q4.md
+MTB,Financials,2022_Q1,2022,1,2022-04-20,True,fool,517,3,186,0,331,3,2,0,0,,sp493/earnings_calls/mtb/mtb_2022_Q1.md
+MTB,Financials,2022_Q2,2022,2,2022-07-20,True,fool,478,1,178,0,300,1,1,0,0,,sp493/earnings_calls/mtb/mtb_2022_Q2.md
+MU,Information Technology,FY24_Q4,2024,3,2024-09-25,False,fool,419,28,199,23,220,5,0,0,37,,sp493/earnings_calls/mu/mu_FY24_Q4.md
+MU,Information Technology,FY25_Q1,2024,4,2024-12-18,False,fool,458,26,182,17,276,9,3,0,42,,sp493/earnings_calls/mu/mu_FY25_Q1.md
+MU,Information Technology,FY25_Q2,2025,1,2025-03-20,False,fool,431,29,184,21,247,8,5,0,32,,sp493/earnings_calls/mu/mu_FY25_Q2.md
+NEE,Utilities,2021_Q4,2021,4,2022-01-25,True,fool,570,1,267,1,303,0,0,0,9,,sp493/earnings_calls/nee/nee_2021_Q4.md
+NEE,Utilities,2022_Q1,2022,1,2022-04-21,True,fool,477,0,194,0,283,0,0,0,9,,sp493/earnings_calls/nee/nee_2022_Q1.md
+NEE,Utilities,2022_Q2,2022,2,2022-07-22,True,fool,419,0,145,0,274,0,0,0,3,,sp493/earnings_calls/nee/nee_2022_Q2.md
+NEE,Utilities,2022_Q3,2022,3,2022-10-28,True,fool,438,0,173,0,265,0,0,0,2,,sp493/earnings_calls/nee/nee_2022_Q3.md
+NEE,Utilities,2022_Q4,2022,4,2023-01-25,False,fool,507,1,281,1,226,0,1,0,3,,sp493/earnings_calls/nee/nee_2022_Q4.md
+NEE,Utilities,2023_Q2,2023,2,2023-07-25,False,fool,452,1,145,0,307,1,0,0,3,,sp493/earnings_calls/nee/nee_2023_Q2.md
+NEE,Utilities,2023_Q3,2023,3,2023-10-24,False,fool,461,0,154,0,307,0,0,0,2,,sp493/earnings_calls/nee/nee_2023_Q3.md
+NEE,Utilities,2023_Q4,2023,4,2024-01-25,False,fool,421,2,173,1,248,1,0,1,5,,sp493/earnings_calls/nee/nee_2023_Q4.md
+NEE,Utilities,2024_Q1,2024,1,2024-04-23,False,fool,409,3,144,2,265,1,0,0,22,,sp493/earnings_calls/nee/nee_2024_Q1.md
+NEE,Utilities,2024_Q2,2024,2,2024-07-24,False,fool,533,1,145,1,388,0,0,0,23,,sp493/earnings_calls/nee/nee_2024_Q2.md
+NEE,Utilities,2024_Q3,2024,3,2024-10-23,False,fool,475,2,160,0,315,2,2,1,17,,sp493/earnings_calls/nee/nee_2024_Q3.md
+NEE,Utilities,2024_Q4,2024,4,2025-01-24,False,fool,488,1,163,1,325,0,0,1,14,,sp493/earnings_calls/nee/nee_2024_Q4.md
+NFLX,Communication Services,2021_Q4,2021,4,2022-01-20,True,fool,441,4,441,4,0,0,4,0,2,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2021_Q4.md
+NFLX,Communication Services,2022_Q1,2022,1,2022-04-19,True,fool,433,5,433,5,0,0,5,0,0,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2022_Q1.md
+NFLX,Communication Services,2022_Q2,2022,2,2022-07-19,True,fool,424,10,424,10,0,0,10,0,1,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2022_Q2.md
+NFLX,Communication Services,2022_Q3,2022,3,2022-10-18,True,fool,406,6,406,6,0,0,6,0,1,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2022_Q3.md
+NFLX,Communication Services,2022_Q4,2022,4,2023-01-19,False,fool,478,6,478,6,0,0,6,0,0,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2022_Q4.md
+NFLX,Communication Services,2023_Q2,2023,2,2023-07-19,False,fool,340,2,340,2,0,0,2,0,2,"Q&A start not detected; 340 units, outside the typical 400-900",sp493/earnings_calls/nflx/nflx_2023_Q2.md
+NFLX,Communication Services,2023_Q3,2023,3,2023-10-18,False,fool,438,6,438,6,0,0,6,0,1,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2023_Q3.md
+NFLX,Communication Services,2023_Q4,2023,4,2024-01-23,False,fool,420,2,420,2,0,0,2,0,2,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2023_Q4.md
+NFLX,Communication Services,2024_Q1,2024,1,2024-04-18,False,fool,462,5,462,5,0,0,4,0,0,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2024_Q1.md
+NFLX,Communication Services,2024_Q2,2024,2,2024-07-18,False,fool,455,13,455,13,0,0,7,1,1,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2024_Q2.md
+NFLX,Communication Services,2024_Q3,2024,3,2024-10-17,False,fool,430,14,430,14,0,0,9,0,1,Q&A start not detected,sp493/earnings_calls/nflx/nflx_2024_Q3.md
+NFLX,Communication Services,2024_Q4,2024,4,2025-01-21,False,fool,321,1,321,1,0,0,1,0,1,"Q&A start not detected; 321 units, outside the typical 400-900",sp493/earnings_calls/nflx/nflx_2024_Q4.md
+NKE,Consumer Discretionary,FY22_Q2,2021,4,2021-12-20,True,fool,420,3,228,2,192,1,3,4,0,,sp493/earnings_calls/nke/nke_FY22_Q2.md
+NKE,Consumer Discretionary,FY22_Q3,2022,1,2022-03-21,True,fool,456,15,276,5,180,10,15,0,0,,sp493/earnings_calls/nke/nke_FY22_Q3.md
+NKE,Consumer Discretionary,FY22_Q4,2022,2,2022-06-27,True,fool,440,4,248,2,192,2,4,0,1,,sp493/earnings_calls/nke/nke_FY22_Q4.md
+NKE,Consumer Discretionary,FY23_Q1,2022,3,2022-09-29,True,fool,469,2,240,2,229,0,2,0,0,,sp493/earnings_calls/nke/nke_FY23_Q1.md
+NKE,Consumer Discretionary,FY23_Q2,2022,4,2022-12-20,False,fool,474,5,217,3,257,2,5,0,1,,sp493/earnings_calls/nke/nke_FY23_Q2.md
+NKE,Consumer Discretionary,FY23_Q4,2023,2,2023-06-29,False,fool,464,2,262,2,202,0,2,0,0,,sp493/earnings_calls/nke/nke_FY23_Q4.md
+NKE,Consumer Discretionary,FY24_Q2,2023,4,2023-12-21,False,fool,454,4,223,2,231,2,4,2,0,,sp493/earnings_calls/nke/nke_FY24_Q2.md
+NKE,Consumer Discretionary,FY24_Q3,2024,1,2024-03-21,False,fool,473,5,237,2,236,3,5,0,0,,sp493/earnings_calls/nke/nke_FY24_Q3.md
+NKE,Consumer Discretionary,FY24_Q4,2024,2,2024-06-27,False,fool,481,5,216,3,265,2,5,0,0,,sp493/earnings_calls/nke/nke_FY24_Q4.md
+NKE,Consumer Discretionary,FY25_Q1,2024,3,2024-10-01,False,fool,374,4,171,2,203,2,4,0,0,"374 units, outside the typical 400-900",sp493/earnings_calls/nke/nke_FY25_Q1.md
+NKE,Consumer Discretionary,FY25_Q2,2024,4,2024-12-19,False,fool,545,2,258,2,287,0,2,0,0,,sp493/earnings_calls/nke/nke_FY25_Q2.md
+NKE,Consumer Discretionary,FY25_Q3,2025,1,2025-03-20,False,fool,515,1,281,1,234,0,1,0,0,,sp493/earnings_calls/nke/nke_FY25_Q3.md
+NOW,Information Technology,2021_Q4,2021,4,2022-01-26,True,fool,617,4,208,0,409,4,1,8,1,,sp493/earnings_calls/now/now_2021_Q4.md
+NOW,Information Technology,2022_Q2,2022,2,2022-07-27,True,fool,607,4,177,1,430,3,2,5,1,,sp493/earnings_calls/now/now_2022_Q2.md
+NOW,Information Technology,2022_Q3,2022,3,2022-10-26,True,fool,571,3,169,3,402,0,1,10,4,,sp493/earnings_calls/now/now_2022_Q3.md
+NOW,Information Technology,2022_Q4,2022,4,2023-01-25,False,fool,583,3,176,1,407,2,2,6,2,,sp493/earnings_calls/now/now_2022_Q4.md
+NOW,Information Technology,2023_Q2,2023,2,2023-07-26,False,fool,596,69,154,25,442,44,10,5,3,,sp493/earnings_calls/now/now_2023_Q2.md
+NOW,Information Technology,2023_Q3,2023,3,2023-10-25,False,fool,533,57,164,18,369,39,2,1,0,,sp493/earnings_calls/now/now_2023_Q3.md
+NOW,Information Technology,2023_Q4,2023,4,2024-01-24,False,fool,572,67,177,18,395,49,0,4,1,,sp493/earnings_calls/now/now_2023_Q4.md
+NOW,Information Technology,2024_Q1,2024,1,2024-04-24,False,fool,614,97,159,33,455,64,9,0,4,,sp493/earnings_calls/now/now_2024_Q1.md
+NOW,Information Technology,2024_Q2,2024,2,2024-07-24,False,fool,629,64,216,38,413,26,7,4,3,,sp493/earnings_calls/now/now_2024_Q2.md
+NOW,Information Technology,2024_Q3,2024,3,2024-10-23,False,fool,558,71,177,32,381,39,9,9,0,,sp493/earnings_calls/now/now_2024_Q3.md
+NOW,Information Technology,2024_Q4,2024,4,2025-01-29,False,fool,657,133,232,57,425,76,26,9,2,,sp493/earnings_calls/now/now_2024_Q4.md
+NSC,Industrials,2021_Q4,2021,4,2022-01-26,True,fool,608,1,191,0,417,1,1,1,4,,sp493/earnings_calls/nsc/nsc_2021_Q4.md
+NSC,Industrials,2022_Q2,2022,2,2022-07-27,True,fool,658,1,193,1,465,0,1,0,1,,sp493/earnings_calls/nsc/nsc_2022_Q2.md
+NXPI,Information Technology,2021_Q4,2021,4,2022-02-01,True,fool,513,9,132,3,381,6,9,0,11,,sp493/earnings_calls/nxpi/nxpi_2021_Q4.md
+NXPI,Information Technology,2022_Q1,2022,1,2022-05-03,True,fool,531,7,129,1,402,6,7,0,12,,sp493/earnings_calls/nxpi/nxpi_2022_Q1.md
+NXPI,Information Technology,2022_Q2,2022,2,2022-07-27,True,fool,504,12,119,2,385,10,12,0,6,,sp493/earnings_calls/nxpi/nxpi_2022_Q2.md
+NXPI,Information Technology,2022_Q3,2022,3,2022-11-01,True,fool,528,6,118,3,410,3,6,0,12,,sp493/earnings_calls/nxpi/nxpi_2022_Q3.md
+NXPI,Information Technology,2022_Q4,2022,4,2023-01-31,False,fool,470,6,155,2,315,4,6,1,15,,sp493/earnings_calls/nxpi/nxpi_2022_Q4.md
+NXPI,Information Technology,2023_Q1,2023,1,2023-05-02,False,fool,524,4,72,1,452,3,4,0,11,,sp493/earnings_calls/nxpi/nxpi_2023_Q1.md
+NXPI,Information Technology,2023_Q2,2023,2,2023-07-25,False,fool,565,3,129,0,436,3,3,0,10,,sp493/earnings_calls/nxpi/nxpi_2023_Q2.md
+NXPI,Information Technology,2023_Q3,2023,3,2023-11-07,False,fool,503,7,129,2,374,5,7,0,7,,sp493/earnings_calls/nxpi/nxpi_2023_Q3.md
+NXPI,Information Technology,2023_Q4,2023,4,2024-02-06,False,fool,540,4,154,3,386,1,4,0,11,,sp493/earnings_calls/nxpi/nxpi_2023_Q4.md
+NXPI,Information Technology,2024_Q1,2024,1,2024-04-30,False,fool,549,10,114,3,435,7,8,1,9,,sp493/earnings_calls/nxpi/nxpi_2024_Q1.md
+NXPI,Information Technology,2024_Q2,2024,2,2024-07-23,False,fool,537,2,127,1,410,1,2,0,10,,sp493/earnings_calls/nxpi/nxpi_2024_Q2.md
+NXPI,Information Technology,2024_Q3,2024,3,2024-11-05,False,fool,558,3,97,0,461,3,3,2,6,,sp493/earnings_calls/nxpi/nxpi_2024_Q3.md
+NXPI,Information Technology,2024_Q4,2024,4,2025-02-04,False,fool,510,9,161,4,349,5,9,0,8,,sp493/earnings_calls/nxpi/nxpi_2024_Q4.md
+ODFL,Industrials,2021_Q4,2021,4,2022-02-02,True,fool,585,0,89,0,496,0,0,0,4,,sp493/earnings_calls/odfl/odfl_2021_Q4.md
+ODFL,Industrials,2022_Q1,2022,1,2022-04-27,True,fool,660,2,94,0,566,2,2,0,7,,sp493/earnings_calls/odfl/odfl_2022_Q1.md
+ODFL,Industrials,2022_Q2,2022,2,2022-07-27,True,fool,614,3,72,0,542,3,2,0,2,,sp493/earnings_calls/odfl/odfl_2022_Q2.md
+OMC,Communication Services,2021_Q4,2021,4,2022-02-08,True,fool,411,4,172,2,239,2,1,1,3,,sp493/earnings_calls/omc/omc_2021_Q4.md
+OMC,Communication Services,2022_Q1,2022,1,2022-04-19,True,fool,422,0,155,0,267,0,0,1,1,,sp493/earnings_calls/omc/omc_2022_Q1.md
+OMC,Communication Services,2022_Q2,2022,2,2022-07-19,True,fool,409,0,139,0,270,0,0,2,1,,sp493/earnings_calls/omc/omc_2022_Q2.md
+ORCL,Information Technology,FY22_Q2,2021,4,2021-12-09,True,fool,523,13,266,9,257,4,13,10,37,,sp493/earnings_calls/orcl/orcl_FY22_Q2.md
+ORCL,Information Technology,FY22_Q3,2022,1,2022-03-10,True,fool,472,7,285,4,187,3,7,8,7,,sp493/earnings_calls/orcl/orcl_FY22_Q3.md
+ORCL,Information Technology,FY22_Q4,2022,2,2022-06-13,True,fool,402,10,198,5,204,5,9,9,10,,sp493/earnings_calls/orcl/orcl_FY22_Q4.md
+ORCL,Information Technology,FY23_Q1,2022,3,2022-09-12,True,fool,366,13,164,7,202,6,9,2,32,"366 units, outside the typical 400-900",sp493/earnings_calls/orcl/orcl_FY23_Q1.md
+ORCL,Information Technology,FY23_Q2,2022,4,2022-12-12,False,fool,491,21,291,17,200,4,14,14,21,,sp493/earnings_calls/orcl/orcl_FY23_Q2.md
+ORCL,Information Technology,FY23_Q3,2023,1,2023-03-09,False,fool,390,48,182,12,208,36,8,2,25,"390 units, outside the typical 400-900",sp493/earnings_calls/orcl/orcl_FY23_Q3.md
+ORCL,Information Technology,FY23_Q4,2023,2,2023-06-12,False,fool,407,35,169,21,238,14,11,1,24,,sp493/earnings_calls/orcl/orcl_FY23_Q4.md
+ORCL,Information Technology,FY24_Q1,2023,3,2023-09-11,False,fool,301,34,125,11,176,23,7,11,13,"301 units, outside the typical 400-900",sp493/earnings_calls/orcl/orcl_FY24_Q1.md
+ORCL,Information Technology,FY24_Q2,2023,4,2023-12-11,False,fool,476,28,122,6,354,22,12,6,42,,sp493/earnings_calls/orcl/orcl_FY24_Q2.md
+ORCL,Information Technology,FY24_Q3,2024,1,2024-03-11,False,fool,365,28,131,12,234,16,11,11,35,"365 units, outside the typical 400-900",sp493/earnings_calls/orcl/orcl_FY24_Q3.md
+ORCL,Information Technology,FY24_Q4,2024,2,2024-06-11,False,fool,398,36,165,13,233,23,11,5,36,"398 units, outside the typical 400-900",sp493/earnings_calls/orcl/orcl_FY24_Q4.md
+ORCL,Information Technology,FY25_Q1,2024,3,2024-09-09,False,fool,490,48,112,6,378,42,22,25,29,,sp493/earnings_calls/orcl/orcl_FY25_Q1.md
+ORCL,Information Technology,FY25_Q2,2024,4,2024-12-09,False,fool,301,19,118,14,183,5,1,7,27,"301 units, outside the typical 400-900",sp493/earnings_calls/orcl/orcl_FY25_Q2.md
+ORCL,Information Technology,FY25_Q3,2025,1,2025-03-10,False,fool,366,62,119,12,247,50,12,6,24,"366 units, outside the typical 400-900",sp493/earnings_calls/orcl/orcl_FY25_Q3.md
+OTIS,Industrials,2021_Q4,2021,4,2022-01-31,True,fool,608,1,144,0,464,1,1,0,5,,sp493/earnings_calls/otis/otis_2021_Q4.md
+OTIS,Industrials,2022_Q2,2022,2,2022-07-27,True,fool,630,3,132,0,498,3,3,0,1,,sp493/earnings_calls/otis/otis_2022_Q2.md
+OTIS,Industrials,2022_Q3,2022,3,2022-10-26,True,fool,558,0,114,0,444,0,0,0,3,,sp493/earnings_calls/otis/otis_2022_Q3.md
+OTIS,Industrials,2022_Q4,2022,4,2023-02-01,False,fool,524,3,151,2,373,1,3,0,8,,sp493/earnings_calls/otis/otis_2022_Q4.md
+OTIS,Industrials,2023_Q2,2023,2,2023-07-26,False,fool,516,0,127,0,389,0,0,0,3,,sp493/earnings_calls/otis/otis_2023_Q2.md
+OTIS,Industrials,2023_Q3,2023,3,2023-10-25,False,fool,452,2,123,0,329,2,2,0,3,,sp493/earnings_calls/otis/otis_2023_Q3.md
+OTIS,Industrials,2023_Q4,2023,4,2024-01-31,False,fool,382,4,163,2,219,2,4,0,2,"382 units, outside the typical 400-900",sp493/earnings_calls/otis/otis_2023_Q4.md
+OTIS,Industrials,2024_Q1,2024,1,2024-04-24,False,fool,404,5,73,1,331,4,5,0,2,,sp493/earnings_calls/otis/otis_2024_Q1.md
+OTIS,Industrials,2024_Q2,2024,2,2024-07-24,False,fool,489,3,121,0,368,3,3,1,5,,sp493/earnings_calls/otis/otis_2024_Q2.md
+OTIS,Industrials,2024_Q3,2024,3,2024-10-30,False,fool,534,0,165,0,369,0,0,0,5,,sp493/earnings_calls/otis/otis_2024_Q3.md
+OTIS,Industrials,2024_Q4,2024,4,2025-01-29,False,fool,686,2,185,1,501,1,2,0,2,,sp493/earnings_calls/otis/otis_2024_Q4.md
+PAYX,Industrials,FY22_Q2,2021,4,2021-12-22,True,fool,684,9,120,2,564,7,6,2,1,,sp493/earnings_calls/payx/payx_FY22_Q2.md
+PAYX,Industrials,FY22_Q3,2022,1,2022-03-30,True,fool,606,1,138,0,468,1,1,3,0,,sp493/earnings_calls/payx/payx_FY22_Q3.md
+PAYX,Industrials,FY22_Q4,2022,2,2022-06-29,True,fool,872,5,163,0,709,5,4,1,0,,sp493/earnings_calls/payx/payx_FY22_Q4.md
+PAYX,Industrials,FY23_Q1,2022,3,2022-09-28,True,fool,883,6,141,0,742,6,6,2,0,,sp493/earnings_calls/payx/payx_FY23_Q1.md
+PEP,Consumer Staples,2024_Q3,2024,3,2024-10-08,False,fool,402,0,13,0,389,0,0,1,0,,sp493/earnings_calls/pep/pep_2024_Q3.md
+PEP,Consumer Staples,2024_Q4,2024,4,2025-02-04,False,fool,406,0,13,0,393,0,0,1,4,,sp493/earnings_calls/pep/pep_2024_Q4.md
+PGR,Financials,2021_Q4,2021,4,2022-03-01,True,fool,873,8,336,3,537,5,8,1,2,,sp493/earnings_calls/pgr/pgr_2021_Q4.md
+PGR,Financials,2022_Q1,2022,1,2022-05-03,True,fool,608,8,42,1,566,7,8,0,1,,sp493/earnings_calls/pgr/pgr_2022_Q1.md
+PGR,Financials,2022_Q2,2022,2,2022-08-03,True,fool,743,43,239,27,504,16,43,4,0,,sp493/earnings_calls/pgr/pgr_2022_Q2.md
+PGR,Financials,2022_Q3,2022,3,2022-11-02,True,fool,598,12,58,1,540,11,12,0,1,,sp493/earnings_calls/pgr/pgr_2022_Q3.md
+PGR,Financials,2022_Q4,2022,4,2023-02-28,False,fool,904,34,320,18,584,16,34,0,0,"904 units, outside the typical 400-900",sp493/earnings_calls/pgr/pgr_2022_Q4.md
+PGR,Financials,2023_Q1,2023,1,2023-05-03,False,fool,617,1,76,0,541,1,1,0,0,,sp493/earnings_calls/pgr/pgr_2023_Q1.md
+PGR,Financials,2023_Q2,2023,2,2023-08-02,False,fool,771,13,329,10,442,3,13,0,0,,sp493/earnings_calls/pgr/pgr_2023_Q2.md
+PGR,Financials,2023_Q3,2023,3,2023-11-01,False,fool,504,1,58,0,446,1,1,0,0,,sp493/earnings_calls/pgr/pgr_2023_Q3.md
+PGR,Financials,2023_Q4,2023,4,2024-02-27,False,fool,816,30,202,17,614,13,30,0,0,,sp493/earnings_calls/pgr/pgr_2023_Q4.md
+PGR,Financials,2024_Q3,2024,3,2024-11-05,False,fool,540,16,71,2,469,14,12,1,0,,sp493/earnings_calls/pgr/pgr_2024_Q3.md
+PGR,Financials,2024_Q4,2024,4,2025-03-04,False,fool,584,26,321,21,263,5,21,3,0,,sp493/earnings_calls/pgr/pgr_2024_Q4.md
+PHM,Consumer Discretionary,2021_Q4,2021,4,2022-02-01,True,fool,493,1,169,0,324,1,1,0,0,,sp493/earnings_calls/phm/phm_2021_Q4.md
+PHM,Consumer Discretionary,2022_Q1,2022,1,2022-04-28,True,fool,534,1,152,0,382,1,1,0,0,,sp493/earnings_calls/phm/phm_2022_Q1.md
+PHM,Consumer Discretionary,2022_Q2,2022,2,2022-07-26,True,fool,525,2,153,0,372,2,2,0,0,,sp493/earnings_calls/phm/phm_2022_Q2.md
+PLD,Real Estate,2021_Q4,2021,4,2022-01-19,True,fool,528,0,96,0,432,0,0,2,0,,sp493/earnings_calls/pld/pld_2021_Q4.md
+PLD,Real Estate,2022_Q1,2022,1,2022-04-19,True,fool,600,1,86,0,514,1,1,3,2,,sp493/earnings_calls/pld/pld_2022_Q1.md
+PLD,Real Estate,2022_Q2,2022,2,2022-07-18,True,fool,534,0,84,0,450,0,0,0,0,,sp493/earnings_calls/pld/pld_2022_Q2.md
+PLD,Real Estate,2022_Q3,2022,3,2022-10-19,True,fool,675,2,102,1,573,1,2,0,2,,sp493/earnings_calls/pld/pld_2022_Q3.md
+PLD,Real Estate,2022_Q4,2022,4,2023-01-18,False,fool,640,1,95,0,545,1,1,0,2,,sp493/earnings_calls/pld/pld_2022_Q4.md
+PLD,Real Estate,2023_Q2,2023,2,2023-07-18,False,fool,538,1,98,0,440,1,1,0,2,,sp493/earnings_calls/pld/pld_2023_Q2.md
+PLD,Real Estate,2023_Q3,2023,3,2023-10-17,False,fool,463,3,78,0,385,3,2,0,20,,sp493/earnings_calls/pld/pld_2023_Q3.md
+PLD,Real Estate,2023_Q4,2023,4,2024-01-17,False,fool,438,0,80,0,358,0,0,0,14,,sp493/earnings_calls/pld/pld_2023_Q4.md
+PLD,Real Estate,2024_Q1,2024,1,2024-04-17,False,fool,527,0,85,0,442,0,0,0,2,,sp493/earnings_calls/pld/pld_2024_Q1.md
+PLD,Real Estate,2024_Q2,2024,2,2024-07-17,False,fool,479,0,84,0,395,0,0,0,6,,sp493/earnings_calls/pld/pld_2024_Q2.md
+PLD,Real Estate,2024_Q3,2024,3,2024-10-16,False,fool,547,1,83,0,464,1,1,0,10,,sp493/earnings_calls/pld/pld_2024_Q3.md
+PLD,Real Estate,2024_Q4,2024,4,2025-01-21,False,fool,647,0,86,0,561,0,0,0,17,,sp493/earnings_calls/pld/pld_2024_Q4.md
+PM,Consumer Staples,2024_Q3,2024,3,2024-10-22,False,fool,412,0,197,0,215,0,0,0,0,,sp493/earnings_calls/pm/pm_2024_Q3.md
+PM,Consumer Staples,2024_Q4,2024,4,2025-02-06,False,fool,501,2,210,2,291,0,2,1,3,,sp493/earnings_calls/pm/pm_2024_Q4.md
+PPL,Utilities,2021_Q4,2021,4,2022-02-18,True,fool,423,0,146,0,277,0,0,1,6,,sp493/earnings_calls/ppl/ppl_2021_Q4.md
+PPL,Utilities,2022_Q1,2022,1,2022-05-05,True,fool,315,0,107,0,208,0,0,1,3,"315 units, outside the typical 400-900",sp493/earnings_calls/ppl/ppl_2022_Q1.md
+PPL,Utilities,2022_Q2,2022,2,2022-08-03,True,fool,274,1,122,1,152,0,1,0,5,"274 units, outside the typical 400-900",sp493/earnings_calls/ppl/ppl_2022_Q2.md
+PTC,Information Technology,FY22_Q1,2021,4,2022-01-26,True,fool,555,14,191,10,364,4,13,1,0,,sp493/earnings_calls/ptc/ptc_FY22_Q1.md
+PTC,Information Technology,FY22_Q3,2022,2,2022-07-27,True,fool,621,7,268,5,353,2,6,5,0,,sp493/earnings_calls/ptc/ptc_FY22_Q3.md
+PTC,Information Technology,FY22_Q4,2022,3,2022-11-02,True,fool,449,30,349,29,100,1,30,1,1,,sp493/earnings_calls/ptc/ptc_FY22_Q4.md
+PTC,Information Technology,FY23_Q1,2022,4,2023-02-01,False,fool,587,17,282,6,305,11,15,1,3,,sp493/earnings_calls/ptc/ptc_FY23_Q1.md
+PTC,Information Technology,FY23_Q3,2023,2,2023-07-26,False,fool,635,15,283,6,352,9,10,0,1,,sp493/earnings_calls/ptc/ptc_FY23_Q3.md
+PTC,Information Technology,FY23_Q4,2023,3,2023-11-01,False,fool,493,12,268,9,225,3,12,0,1,,sp493/earnings_calls/ptc/ptc_FY23_Q4.md
+PTC,Information Technology,FY24_Q1,2023,4,2024-01-31,False,fool,590,5,190,4,400,1,5,0,1,,sp493/earnings_calls/ptc/ptc_FY24_Q1.md
+PTC,Information Technology,FY24_Q2,2024,1,2024-05-01,False,fool,582,12,160,3,422,9,5,2,1,,sp493/earnings_calls/ptc/ptc_FY24_Q2.md
+PTC,Information Technology,FY24_Q3,2024,2,2024-07-31,False,fool,467,7,181,3,286,4,5,1,0,,sp493/earnings_calls/ptc/ptc_FY24_Q3.md
+PTC,Information Technology,FY24_Q4,2024,3,2024-11-06,False,fool,480,10,231,8,249,2,10,0,1,,sp493/earnings_calls/ptc/ptc_FY24_Q4.md
+PTC,Information Technology,FY25_Q1,2024,4,2025-02-05,False,fool,449,40,208,25,241,15,5,2,0,,sp493/earnings_calls/ptc/ptc_FY25_Q1.md
+PYPL,Financials,2021_Q4,2021,4,2022-02-01,True,fool,489,0,222,0,267,0,0,0,0,,sp493/earnings_calls/pypl/pypl_2021_Q4.md
+PYPL,Financials,2022_Q2,2022,2,2022-08-02,True,fool,561,1,239,1,322,0,1,0,0,,sp493/earnings_calls/pypl/pypl_2022_Q2.md
+PYPL,Financials,2022_Q3,2022,3,2022-11-03,True,fool,491,2,227,1,264,1,1,0,0,,sp493/earnings_calls/pypl/pypl_2022_Q3.md
+PYPL,Financials,2022_Q4,2022,4,2023-02-09,False,fool,537,2,213,2,324,0,0,1,2,,sp493/earnings_calls/pypl/pypl_2022_Q4.md
+PYPL,Financials,2023_Q1,2023,1,2023-05-08,False,fool,529,11,166,6,363,5,1,0,0,,sp493/earnings_calls/pypl/pypl_2023_Q1.md
+PYPL,Financials,2023_Q2,2023,2,2023-08-02,False,fool,459,13,176,7,283,6,0,1,0,,sp493/earnings_calls/pypl/pypl_2023_Q2.md
+PYPL,Financials,2023_Q3,2023,3,2023-11-01,False,fool,459,6,277,6,182,0,2,4,0,,sp493/earnings_calls/pypl/pypl_2023_Q3.md
+PYPL,Financials,2023_Q4,2023,4,2024-02-07,False,fool,469,2,230,1,239,1,0,2,0,,sp493/earnings_calls/pypl/pypl_2023_Q4.md
+PYPL,Financials,2024_Q1,2024,1,2024-04-30,False,fool,527,5,203,3,324,2,0,1,0,,sp493/earnings_calls/pypl/pypl_2024_Q1.md
+PYPL,Financials,2024_Q2,2024,2,2024-07-30,False,fool,523,0,197,0,326,0,0,0,1,,sp493/earnings_calls/pypl/pypl_2024_Q2.md
+PYPL,Financials,2024_Q3,2024,3,2024-10-29,False,fool,536,0,185,0,351,0,0,1,0,,sp493/earnings_calls/pypl/pypl_2024_Q3.md
+PYPL,Financials,2024_Q4,2024,4,2025-02-04,False,fool,532,11,221,3,311,8,2,3,3,,sp493/earnings_calls/pypl/pypl_2024_Q4.md
+QCOM,Information Technology,FY22_Q1,2021,4,2022-02-02,True,fool,500,6,107,4,393,2,2,2,0,,sp493/earnings_calls/qcom/qcom_FY22_Q1.md
+QCOM,Information Technology,FY22_Q2,2022,1,2022-04-27,True,fool,470,11,121,8,349,3,1,2,1,,sp493/earnings_calls/qcom/qcom_FY22_Q2.md
+QCOM,Information Technology,FY22_Q3,2022,2,2022-07-27,True,fool,447,17,105,13,342,4,2,1,1,,sp493/earnings_calls/qcom/qcom_FY22_Q3.md
+QCOM,Information Technology,FY22_Q4,2022,3,2022-11-02,True,fool,458,8,118,3,340,5,4,1,0,,sp493/earnings_calls/qcom/qcom_FY22_Q4.md
+QCOM,Information Technology,FY23_Q1,2022,4,2023-02-02,False,fool,429,8,120,7,309,1,3,2,7,,sp493/earnings_calls/qcom/qcom_FY23_Q1.md
+QCOM,Information Technology,FY23_Q2,2023,1,2023-05-03,False,fool,419,21,123,15,296,6,4,1,1,,sp493/earnings_calls/qcom/qcom_FY23_Q2.md
+QCOM,Information Technology,FY23_Q3,2023,2,2023-08-02,False,fool,428,35,115,23,313,12,4,1,1,,sp493/earnings_calls/qcom/qcom_FY23_Q3.md
+QCOM,Information Technology,FY23_Q4,2023,3,2023-11-01,False,fool,444,39,116,19,328,20,4,0,1,,sp493/earnings_calls/qcom/qcom_FY23_Q4.md
+QCOM,Information Technology,FY24_Q1,2023,4,2024-01-31,False,fool,413,32,94,13,319,19,9,0,1,,sp493/earnings_calls/qcom/qcom_FY24_Q1.md
+QCOM,Information Technology,FY24_Q2,2024,1,2024-05-01,False,fool,357,45,88,13,269,32,3,1,4,"357 units, outside the typical 400-900",sp493/earnings_calls/qcom/qcom_FY24_Q2.md
+QCOM,Information Technology,FY24_Q3,2024,2,2024-07-31,False,fool,419,67,102,24,317,43,10,0,2,,sp493/earnings_calls/qcom/qcom_FY24_Q3.md
+QCOM,Information Technology,FY24_Q4,2024,3,2024-11-06,False,fool,372,30,113,22,259,8,3,2,1,"372 units, outside the typical 400-900",sp493/earnings_calls/qcom/qcom_FY24_Q4.md
+QCOM,Information Technology,FY25_Q1,2024,4,2025-02-05,False,fool,377,30,112,24,265,6,1,2,3,"377 units, outside the typical 400-900",sp493/earnings_calls/qcom/qcom_FY25_Q1.md
+RMD,Health Care,FY22_Q2,2021,4,2022-01-27,True,fool,725,7,177,1,548,6,6,0,1,,sp493/earnings_calls/rmd/rmd_FY22_Q2.md
+RMD,Health Care,FY22_Q3,2022,1,2022-04-28,True,fool,594,3,195,1,399,2,2,0,1,,sp493/earnings_calls/rmd/rmd_FY22_Q3.md
+RMD,Health Care,FY22_Q4,2022,2,2022-08-11,True,fool,571,5,230,2,341,3,4,0,1,,sp493/earnings_calls/rmd/rmd_FY22_Q4.md
+ROL,Industrials,2021_Q4,2021,4,2022-01-26,True,fool,377,2,159,0,218,2,2,0,1,"377 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2021_Q4.md
+ROL,Industrials,2022_Q1,2022,1,2022-04-27,True,fool,342,0,160,0,182,0,0,2,0,"342 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2022_Q1.md
+ROL,Industrials,2022_Q2,2022,2,2022-07-27,True,fool,283,0,166,0,117,0,0,0,0,"283 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2022_Q2.md
+ROL,Industrials,2022_Q3,2022,3,2022-10-26,True,fool,344,0,178,0,166,0,0,0,1,"344 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2022_Q3.md
+ROL,Industrials,2022_Q4,2022,4,2023-02-16,False,fool,372,0,157,0,215,0,0,0,0,"372 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2022_Q4.md
+ROL,Industrials,2023_Q2,2023,2,2023-07-27,False,fool,393,1,148,1,245,0,1,0,0,"393 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2023_Q2.md
+ROL,Industrials,2023_Q3,2023,3,2023-10-26,False,fool,484,3,158,0,326,3,3,2,1,,sp493/earnings_calls/rol/rol_2023_Q3.md
+ROL,Industrials,2023_Q4,2023,4,2024-02-15,False,fool,515,1,119,0,396,1,1,0,0,,sp493/earnings_calls/rol/rol_2023_Q4.md
+ROL,Industrials,2024_Q1,2024,1,2024-04-25,False,fool,315,0,106,0,209,0,0,0,0,"315 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2024_Q1.md
+ROL,Industrials,2024_Q2,2024,2,2024-07-25,False,fool,352,0,97,0,255,0,0,0,0,"352 units, outside the typical 400-900",sp493/earnings_calls/rol/rol_2024_Q2.md
+ROL,Industrials,2024_Q3,2024,3,2024-10-24,False,fool,435,2,87,0,348,2,2,0,0,,sp493/earnings_calls/rol/rol_2024_Q3.md
+ROL,Industrials,2024_Q4,2024,4,2025-02-13,False,fool,481,0,116,0,365,0,0,0,0,,sp493/earnings_calls/rol/rol_2024_Q4.md
+RTX,Industrials,2021_Q4,2021,4,2022-01-25,True,fool,509,0,176,0,333,0,0,0,5,,sp493/earnings_calls/rtx/rtx_2021_Q4.md
+RTX,Industrials,2022_Q1,2022,1,2022-04-26,True,fool,568,0,137,0,431,0,0,0,0,,sp493/earnings_calls/rtx/rtx_2022_Q1.md
+RTX,Industrials,2022_Q2,2022,2,2022-07-26,True,fool,564,1,175,0,389,1,1,6,1,,sp493/earnings_calls/rtx/rtx_2022_Q2.md
+RTX,Industrials,2022_Q3,2022,3,2022-10-25,True,fool,607,1,200,0,407,1,1,2,1,,sp493/earnings_calls/rtx/rtx_2022_Q3.md
+RTX,Industrials,2022_Q4,2022,4,2023-01-24,False,fool,616,0,190,0,426,0,0,5,1,,sp493/earnings_calls/rtx/rtx_2022_Q4.md
+RTX,Industrials,2023_Q2,2023,2,2023-07-25,False,fool,595,7,156,1,439,6,7,0,1,,sp493/earnings_calls/rtx/rtx_2023_Q2.md
+RTX,Industrials,2023_Q3,2023,3,2023-10-24,False,fool,542,4,180,1,362,3,3,1,1,,sp493/earnings_calls/rtx/rtx_2023_Q3.md
+RTX,Industrials,2023_Q4,2023,4,2024-01-23,False,fool,545,4,221,3,324,1,4,0,3,,sp493/earnings_calls/rtx/rtx_2023_Q4.md
+RTX,Industrials,2024_Q1,2024,1,2024-04-23,False,fool,603,4,156,2,447,2,4,1,0,,sp493/earnings_calls/rtx/rtx_2024_Q1.md
+RTX,Industrials,2024_Q2,2024,2,2024-07-25,False,fool,624,4,172,4,452,0,0,0,0,,sp493/earnings_calls/rtx/rtx_2024_Q2.md
+RTX,Industrials,2024_Q3,2024,3,2024-10-22,False,fool,633,0,149,0,484,0,0,7,1,,sp493/earnings_calls/rtx/rtx_2024_Q3.md
+RTX,Industrials,2024_Q4,2024,4,2025-01-28,False,fool,638,8,173,6,465,2,2,1,4,,sp493/earnings_calls/rtx/rtx_2024_Q4.md
+SCHW,Financials,2024_Q3,2024,3,2024-10-15,False,fool,395,11,196,1,199,10,3,0,1,"395 units, outside the typical 400-900",sp493/earnings_calls/schw/schw_2024_Q3.md
+SJM,Consumer Staples,FY22_Q3,2021,4,2022-03-01,True,fool,229,1,16,0,213,1,1,0,0,"229 units, outside the typical 400-900",sp493/earnings_calls/sjm/sjm_FY22_Q3.md
+SJM,Consumer Staples,FY22_Q4,2022,1,2022-06-07,True,fool,339,1,15,0,324,1,1,0,0,"339 units, outside the typical 400-900",sp493/earnings_calls/sjm/sjm_FY22_Q4.md
+SJM,Consumer Staples,FY23_Q1,2022,2,2022-08-23,True,fool,379,0,15,0,364,0,0,0,1,"379 units, outside the typical 400-900",sp493/earnings_calls/sjm/sjm_FY23_Q1.md
+SLB,Energy,2021_Q4,2021,4,2022-01-21,True,fool,528,3,125,3,403,0,1,1,8,,sp493/earnings_calls/slb/slb_2021_Q4.md
+SLB,Energy,2022_Q1,2022,1,2022-04-22,True,fool,423,4,114,1,309,3,2,0,3,,sp493/earnings_calls/slb/slb_2022_Q1.md
+SLB,Energy,2022_Q2,2022,2,2022-07-22,True,fool,477,0,104,0,373,0,0,0,4,,sp493/earnings_calls/slb/slb_2022_Q2.md
+SNA,Industrials,2021_Q4,2021,4,2022-02-03,True,fool,600,3,257,2,343,1,3,0,2,,sp493/earnings_calls/sna/sna_2021_Q4.md
+SNA,Industrials,2022_Q2,2022,2,2022-07-21,True,fool,604,2,265,0,339,2,1,2,2,,sp493/earnings_calls/sna/sna_2022_Q2.md
+SPGI,Financials,2021_Q4,2021,4,2022-02-08,True,fool,750,5,236,3,514,2,2,6,0,,sp493/earnings_calls/spgi/spgi_2021_Q4.md
+SPGI,Financials,2022_Q1,2022,1,2022-05-03,True,fool,860,5,260,0,600,5,3,2,2,,sp493/earnings_calls/spgi/spgi_2022_Q1.md
+SPGI,Financials,2022_Q2,2022,2,2022-08-02,True,fool,817,2,281,2,536,0,1,0,4,,sp493/earnings_calls/spgi/spgi_2022_Q2.md
+SPGI,Financials,2022_Q3,2022,3,2022-10-27,True,fool,786,3,223,0,563,3,0,0,2,,sp493/earnings_calls/spgi/spgi_2022_Q3.md
+SPGI,Financials,2022_Q4,2022,4,2023-02-09,False,fool,850,15,269,3,581,12,1,0,7,,sp493/earnings_calls/spgi/spgi_2022_Q4.md
+SPGI,Financials,2023_Q2,2023,2,2023-07-27,False,fool,794,48,241,11,553,37,8,0,2,,sp493/earnings_calls/spgi/spgi_2023_Q2.md
+SPGI,Financials,2023_Q3,2023,3,2023-11-02,False,fool,690,9,222,4,468,5,0,1,2,,sp493/earnings_calls/spgi/spgi_2023_Q3.md
+SPGI,Financials,2023_Q4,2023,4,2024-02-08,False,fool,732,34,253,17,479,17,2,1,1,,sp493/earnings_calls/spgi/spgi_2023_Q4.md
+SPGI,Financials,2024_Q1,2024,1,2024-04-25,False,fool,594,17,192,6,402,11,0,0,2,,sp493/earnings_calls/spgi/spgi_2024_Q1.md
+SPGI,Financials,2024_Q2,2024,2,2024-07-30,False,fool,662,28,225,11,437,17,5,0,2,,sp493/earnings_calls/spgi/spgi_2024_Q2.md
+SPGI,Financials,2024_Q3,2024,3,2024-10-24,False,fool,616,22,250,11,366,11,2,0,1,,sp493/earnings_calls/spgi/spgi_2024_Q3.md
+SPGI,Financials,2024_Q4,2024,4,2025-02-11,False,fool,698,34,264,20,434,14,1,0,3,,sp493/earnings_calls/spgi/spgi_2024_Q4.md
+STZ,Consumer Staples,FY22_Q3,2021,4,2022-01-06,True,fool,489,4,171,1,318,3,4,1,11,,sp493/earnings_calls/stz/stz_FY22_Q3.md
+STZ,Consumer Staples,FY22_Q4,2022,1,2022-04-07,True,fool,530,4,222,1,308,3,4,0,4,,sp493/earnings_calls/stz/stz_FY22_Q4.md
+STZ,Consumer Staples,FY23_Q2,2022,3,2022-10-06,True,fool,494,6,188,2,306,4,6,0,3,,sp493/earnings_calls/stz/stz_FY23_Q2.md
+STZ,Consumer Staples,FY23_Q3,2022,4,2023-01-05,False,fool,554,6,245,4,309,2,6,0,8,,sp493/earnings_calls/stz/stz_FY23_Q3.md
+STZ,Consumer Staples,FY24_Q1,2023,2,2023-06-30,False,fool,360,4,138,2,222,2,4,0,3,"360 units, outside the typical 400-900",sp493/earnings_calls/stz/stz_FY24_Q1.md
+STZ,Consumer Staples,FY24_Q2,2023,3,2023-10-05,False,fool,427,1,144,1,283,0,1,0,3,,sp493/earnings_calls/stz/stz_FY24_Q2.md
+STZ,Consumer Staples,FY24_Q3,2023,4,2024-01-05,False,fool,514,4,141,0,373,4,4,0,4,,sp493/earnings_calls/stz/stz_FY24_Q3.md
+STZ,Consumer Staples,FY24_Q4,2024,1,2024-04-11,False,fool,412,9,175,4,237,5,9,0,6,,sp493/earnings_calls/stz/stz_FY24_Q4.md
+STZ,Consumer Staples,FY25_Q1,2024,2,2024-07-03,False,fool,461,2,140,2,321,0,2,0,5,,sp493/earnings_calls/stz/stz_FY25_Q1.md
+STZ,Consumer Staples,FY25_Q2,2024,3,2024-10-03,False,fool,364,0,126,0,238,0,0,0,3,"364 units, outside the typical 400-900",sp493/earnings_calls/stz/stz_FY25_Q2.md
+STZ,Consumer Staples,FY25_Q3,2024,4,2025-01-10,False,fool,386,2,127,0,259,2,2,0,8,"386 units, outside the typical 400-900",sp493/earnings_calls/stz/stz_FY25_Q3.md
+SYF,Financials,2022_Q2,2022,2,2022-07-18,True,fool,582,14,195,3,387,11,13,0,0,,sp493/earnings_calls/syf/syf_2022_Q2.md
+SYF,Financials,2022_Q3,2022,3,2022-10-25,True,fool,531,16,158,1,373,15,10,0,0,,sp493/earnings_calls/syf/syf_2022_Q3.md
+SYF,Financials,2022_Q4,2022,4,2023-01-23,False,fool,607,7,211,1,396,6,5,0,0,,sp493/earnings_calls/syf/syf_2022_Q4.md
+SYF,Financials,2023_Q2,2023,2,2023-07-18,False,fool,604,10,154,5,450,5,8,0,0,,sp493/earnings_calls/syf/syf_2023_Q2.md
+SYF,Financials,2023_Q3,2023,3,2023-10-24,False,fool,619,12,141,5,478,7,11,0,0,,sp493/earnings_calls/syf/syf_2023_Q3.md
+SYF,Financials,2023_Q4,2023,4,2024-01-23,False,fool,662,3,185,1,477,2,1,0,0,,sp493/earnings_calls/syf/syf_2023_Q4.md
+SYF,Financials,2024_Q1,2024,1,2024-04-24,False,fool,587,5,141,2,446,3,5,0,0,,sp493/earnings_calls/syf/syf_2024_Q1.md
+SYF,Financials,2024_Q2,2024,2,2024-07-17,False,fool,554,3,131,0,423,3,0,0,0,,sp493/earnings_calls/syf/syf_2024_Q2.md
+SYF,Financials,2024_Q3,2024,3,2024-10-16,False,fool,581,9,141,0,440,9,4,0,0,,sp493/earnings_calls/syf/syf_2024_Q3.md
+SYF,Financials,2024_Q4,2024,4,2025-01-28,False,fool,690,4,158,0,532,4,3,0,0,,sp493/earnings_calls/syf/syf_2024_Q4.md
+SYY,Consumer Staples,FY22_Q2,2021,4,2022-02-08,True,fool,687,5,170,0,517,5,4,0,1,,sp493/earnings_calls/syy/syy_FY22_Q2.md
+SYY,Consumer Staples,FY22_Q3,2022,1,2022-05-10,True,fool,701,3,222,2,479,1,3,0,2,,sp493/earnings_calls/syy/syy_FY22_Q3.md
+SYY,Consumer Staples,FY22_Q4,2022,2,2022-08-09,True,fool,626,9,206,5,420,4,9,0,1,,sp493/earnings_calls/syy/syy_FY22_Q4.md
+TDG,Industrials,FY22_Q1,2021,4,2022-02-08,True,fool,646,2,156,1,490,1,2,0,1,,sp493/earnings_calls/tdg/tdg_FY22_Q1.md
+TDG,Industrials,FY22_Q2,2022,1,2022-05-10,True,fool,554,3,166,2,388,1,3,0,1,,sp493/earnings_calls/tdg/tdg_FY22_Q2.md
+TDG,Industrials,FY22_Q3,2022,2,2022-08-09,True,fool,544,3,162,1,382,2,3,2,4,,sp493/earnings_calls/tdg/tdg_FY22_Q3.md
+TGT,Consumer Staples,FY21_Q4,2021,4,2022-03-01,True,fool,1164,29,1164,29,0,0,29,3,5,"Q&A start not detected; 1164 units, outside the typical 400-900",sp493/earnings_calls/tgt/tgt_FY21_Q4.md
+TGT,Consumer Staples,FY22_Q1,2022,1,2022-05-18,True,fool,537,2,277,1,260,1,2,0,2,,sp493/earnings_calls/tgt/tgt_FY22_Q1.md
+TGT,Consumer Staples,FY22_Q2,2022,2,2022-08-17,True,fool,604,2,337,2,267,0,2,2,5,,sp493/earnings_calls/tgt/tgt_FY22_Q2.md
+TGT,Consumer Staples,FY22_Q3,2022,3,2022-11-16,True,fool,525,3,258,3,267,0,3,0,8,,sp493/earnings_calls/tgt/tgt_FY22_Q3.md
+TGT,Consumer Staples,FY22_Q4,2022,4,2023-02-28,False,fool,864,5,864,5,0,0,5,1,5,Q&A start not detected,sp493/earnings_calls/tgt/tgt_FY22_Q4.md
+TGT,Consumer Staples,FY23_Q1,2023,1,2023-05-17,False,fool,532,3,289,3,243,0,3,7,1,,sp493/earnings_calls/tgt/tgt_FY23_Q1.md
+TGT,Consumer Staples,FY23_Q2,2023,2,2023-08-16,False,fool,510,2,313,2,197,0,2,1,1,,sp493/earnings_calls/tgt/tgt_FY23_Q2.md
+TGT,Consumer Staples,FY23_Q3,2023,3,2023-11-15,False,fool,515,3,274,3,241,0,2,0,4,,sp493/earnings_calls/tgt/tgt_FY23_Q3.md
+TGT,Consumer Staples,FY23_Q4,2023,4,2024-03-05,False,fool,1089,13,738,11,351,2,4,6,5,"1089 units, outside the typical 400-900",sp493/earnings_calls/tgt/tgt_FY23_Q4.md
+TGT,Consumer Staples,FY24_Q1,2024,1,2024-05-22,False,fool,469,2,261,2,208,0,0,1,1,,sp493/earnings_calls/tgt/tgt_FY24_Q1.md
+TGT,Consumer Staples,FY24_Q2,2024,2,2024-08-21,False,fool,513,2,296,2,217,0,0,0,2,,sp493/earnings_calls/tgt/tgt_FY24_Q2.md
+TGT,Consumer Staples,FY24_Q3,2024,3,2024-11-20,False,fool,533,3,300,3,233,0,2,0,6,,sp493/earnings_calls/tgt/tgt_FY24_Q3.md
+TGT,Consumer Staples,FY24_Q4,2024,4,2025-03-04,False,fool,1093,18,708,10,385,8,5,1,2,"1093 units, outside the typical 400-900",sp493/earnings_calls/tgt/tgt_FY24_Q4.md
+TMUS,Communication Services,2021_Q4,2021,4,2022-02-02,True,fool,692,2,171,0,521,2,2,0,5,,sp493/earnings_calls/tmus/tmus_2021_Q4.md
+TMUS,Communication Services,2022_Q1,2022,1,2022-04-27,True,fool,590,3,121,0,469,3,3,0,3,,sp493/earnings_calls/tmus/tmus_2022_Q1.md
+TMUS,Communication Services,2022_Q2,2022,2,2022-07-27,True,fool,640,2,123,0,517,2,2,0,7,,sp493/earnings_calls/tmus/tmus_2022_Q2.md
+TMUS,Communication Services,2022_Q3,2022,3,2022-10-27,True,fool,689,5,121,0,568,5,5,0,7,,sp493/earnings_calls/tmus/tmus_2022_Q3.md
+TMUS,Communication Services,2022_Q4,2022,4,2023-02-01,False,fool,649,1,119,0,530,1,1,0,5,,sp493/earnings_calls/tmus/tmus_2022_Q4.md
+TMUS,Communication Services,2023_Q1,2023,1,2023-04-27,False,fool,670,6,124,0,546,6,6,0,2,,sp493/earnings_calls/tmus/tmus_2023_Q1.md
+TMUS,Communication Services,2023_Q2,2023,2,2023-07-27,False,fool,600,8,100,0,500,8,7,0,8,,sp493/earnings_calls/tmus/tmus_2023_Q2.md
+TMUS,Communication Services,2023_Q3,2023,3,2023-10-25,False,fool,653,4,93,0,560,4,0,0,2,,sp493/earnings_calls/tmus/tmus_2023_Q3.md
+TMUS,Communication Services,2023_Q4,2023,4,2024-01-25,False,fool,647,9,115,2,532,7,6,0,4,,sp493/earnings_calls/tmus/tmus_2023_Q4.md
+TMUS,Communication Services,2024_Q1,2024,1,2024-04-25,False,fool,613,6,91,4,522,2,6,0,6,,sp493/earnings_calls/tmus/tmus_2024_Q1.md
+TMUS,Communication Services,2024_Q2,2024,2,2024-07-31,False,fool,652,17,79,2,573,15,14,0,2,,sp493/earnings_calls/tmus/tmus_2024_Q2.md
+TMUS,Communication Services,2024_Q3,2024,3,2024-10-23,False,fool,671,8,69,0,602,8,2,0,4,,sp493/earnings_calls/tmus/tmus_2024_Q3.md
+TMUS,Communication Services,2024_Q4,2024,4,2025-01-29,False,fool,595,21,103,0,492,21,7,0,4,,sp493/earnings_calls/tmus/tmus_2024_Q4.md
+TSN,Consumer Staples,FY22_Q1,2021,4,2022-02-07,True,fool,564,2,211,0,353,2,2,13,3,,sp493/earnings_calls/tsn/tsn_FY22_Q1.md
+TSN,Consumer Staples,FY22_Q3,2022,2,2022-08-08,True,fool,584,4,184,0,400,4,4,6,3,,sp493/earnings_calls/tsn/tsn_FY22_Q3.md
+TSN,Consumer Staples,FY22_Q4,2022,3,2022-11-14,True,fool,635,1,222,0,413,1,1,16,3,,sp493/earnings_calls/tsn/tsn_FY22_Q4.md
+TSN,Consumer Staples,FY23_Q1,2022,4,2023-02-06,False,fool,728,3,207,0,521,3,3,10,2,,sp493/earnings_calls/tsn/tsn_FY23_Q1.md
+TSN,Consumer Staples,FY23_Q2,2023,1,2023-05-08,False,fool,627,3,190,1,437,2,2,4,12,,sp493/earnings_calls/tsn/tsn_FY23_Q2.md
+TSN,Consumer Staples,FY23_Q3,2023,2,2023-08-07,False,fool,523,1,149,0,374,1,1,3,8,,sp493/earnings_calls/tsn/tsn_FY23_Q3.md
+TSN,Consumer Staples,FY23_Q4,2023,3,2023-11-13,False,fool,535,0,169,0,366,0,0,1,11,,sp493/earnings_calls/tsn/tsn_FY23_Q4.md
+TSN,Consumer Staples,FY24_Q1,2023,4,2024-02-05,False,fool,612,1,146,1,466,0,1,1,9,,sp493/earnings_calls/tsn/tsn_FY24_Q1.md
+TSN,Consumer Staples,FY24_Q2,2024,1,2024-05-06,False,fool,611,3,166,1,445,2,2,0,14,,sp493/earnings_calls/tsn/tsn_FY24_Q2.md
+TSN,Consumer Staples,FY24_Q3,2024,2,2024-08-05,False,fool,479,1,129,0,350,1,1,0,6,,sp493/earnings_calls/tsn/tsn_FY24_Q3.md
+TSN,Consumer Staples,FY24_Q4,2024,3,2024-11-12,False,fool,568,2,188,1,380,1,0,0,9,,sp493/earnings_calls/tsn/tsn_FY24_Q4.md
+TSN,Consumer Staples,FY25_Q1,2024,4,2025-02-03,False,fool,565,3,138,1,427,2,2,0,7,,sp493/earnings_calls/tsn/tsn_FY25_Q1.md
+TTWO,Communication Services,FY22_Q3,2021,4,2022-02-07,True,fool,548,1,172,0,376,1,1,0,1,,sp493/earnings_calls/ttwo/ttwo_FY22_Q3.md
+TTWO,Communication Services,FY22_Q4,2022,1,2022-05-16,True,fool,565,0,187,0,378,0,0,0,2,,sp493/earnings_calls/ttwo/ttwo_FY22_Q4.md
+TTWO,Communication Services,FY23_Q1,2022,2,2022-08-08,True,fool,530,3,175,0,355,3,3,0,2,,sp493/earnings_calls/ttwo/ttwo_FY23_Q1.md
+TTWO,Communication Services,FY23_Q2,2022,3,2022-11-07,True,fool,633,1,166,1,467,0,1,0,1,,sp493/earnings_calls/ttwo/ttwo_FY23_Q2.md
+TTWO,Communication Services,FY23_Q3,2022,4,2023-02-06,False,fool,565,8,156,0,409,8,0,0,2,,sp493/earnings_calls/ttwo/ttwo_FY23_Q3.md
+TTWO,Communication Services,FY23_Q4,2023,1,2023-05-17,False,fool,608,18,173,0,435,18,2,0,4,,sp493/earnings_calls/ttwo/ttwo_FY23_Q4.md
+TTWO,Communication Services,FY24_Q1,2023,2,2023-08-08,False,fool,433,1,137,0,296,1,1,0,1,,sp493/earnings_calls/ttwo/ttwo_FY24_Q1.md
+TTWO,Communication Services,FY24_Q2,2023,3,2023-11-08,False,fool,448,6,142,0,306,6,1,0,2,,sp493/earnings_calls/ttwo/ttwo_FY24_Q2.md
+TTWO,Communication Services,FY24_Q3,2023,4,2024-02-08,False,fool,413,1,136,0,277,1,1,0,1,,sp493/earnings_calls/ttwo/ttwo_FY24_Q3.md
+TTWO,Communication Services,FY24_Q4,2024,1,2024-05-16,False,fool,456,0,157,0,299,0,0,0,3,,sp493/earnings_calls/ttwo/ttwo_FY24_Q4.md
+TTWO,Communication Services,FY25_Q1,2024,2,2024-08-08,False,fool,398,0,135,0,263,0,0,0,1,"398 units, outside the typical 400-900",sp493/earnings_calls/ttwo/ttwo_FY25_Q1.md
+TTWO,Communication Services,FY25_Q2,2024,3,2024-11-06,False,fool,534,1,138,0,396,1,0,0,1,,sp493/earnings_calls/ttwo/ttwo_FY25_Q2.md
+TTWO,Communication Services,FY25_Q3,2024,4,2025-02-06,False,fool,482,1,132,1,350,0,1,0,1,,sp493/earnings_calls/ttwo/ttwo_FY25_Q3.md
+UBER,Industrials,2021_Q4,2021,4,2022-02-09,True,fool,459,3,104,0,355,3,3,0,0,,sp493/earnings_calls/uber/uber_2021_Q4.md
+UBER,Industrials,2022_Q1,2022,1,2022-05-04,True,fool,446,9,32,0,414,9,8,1,0,,sp493/earnings_calls/uber/uber_2022_Q1.md
+UBER,Industrials,2022_Q2,2022,2,2022-08-02,True,fool,441,8,25,0,416,8,8,0,0,,sp493/earnings_calls/uber/uber_2022_Q2.md
+UBER,Industrials,2022_Q3,2022,3,2022-11-01,True,fool,342,4,26,0,316,4,4,0,0,"342 units, outside the typical 400-900",sp493/earnings_calls/uber/uber_2022_Q3.md
+UBER,Industrials,2022_Q4,2022,4,2023-02-08,False,fool,444,3,32,0,412,3,1,0,1,,sp493/earnings_calls/uber/uber_2022_Q4.md
+UBER,Industrials,2023_Q1,2023,1,2023-05-02,False,fool,477,10,32,0,445,10,2,0,0,,sp493/earnings_calls/uber/uber_2023_Q1.md
+UBER,Industrials,2023_Q2,2023,2,2023-08-01,False,fool,445,16,29,0,416,16,10,0,0,,sp493/earnings_calls/uber/uber_2023_Q2.md
+UBER,Industrials,2023_Q3,2023,3,2023-11-07,False,fool,467,16,31,0,436,16,6,1,0,,sp493/earnings_calls/uber/uber_2023_Q3.md
+UBER,Industrials,2023_Q4,2023,4,2024-02-07,False,fool,349,7,32,0,317,7,4,2,1,"349 units, outside the typical 400-900",sp493/earnings_calls/uber/uber_2023_Q4.md
+UBER,Industrials,2024_Q1,2024,1,2024-05-08,False,fool,375,6,26,0,349,6,6,0,2,"375 units, outside the typical 400-900",sp493/earnings_calls/uber/uber_2024_Q1.md
+UBER,Industrials,2024_Q2,2024,2,2024-08-06,False,fool,388,14,44,1,344,13,13,1,0,"388 units, outside the typical 400-900",sp493/earnings_calls/uber/uber_2024_Q2.md
+UBER,Industrials,2024_Q3,2024,3,2024-10-31,False,fool,411,27,36,1,375,26,27,0,1,,sp493/earnings_calls/uber/uber_2024_Q3.md
+UBER,Industrials,2024_Q4,2024,4,2025-02-05,False,fool,358,24,33,2,325,22,22,0,1,"358 units, outside the typical 400-900",sp493/earnings_calls/uber/uber_2024_Q4.md
+UNH,Health Care,2021_Q4,2021,4,2022-01-19,True,fool,481,6,107,3,374,3,6,3,0,,sp493/earnings_calls/unh/unh_2021_Q4.md
+UNH,Health Care,2022_Q1,2022,1,2022-04-14,True,fool,594,3,124,0,470,3,3,0,0,,sp493/earnings_calls/unh/unh_2022_Q1.md
+UNH,Health Care,2022_Q2,2022,2,2022-07-15,True,fool,490,2,118,1,372,1,1,0,0,,sp493/earnings_calls/unh/unh_2022_Q2.md
+UNH,Health Care,2022_Q3,2022,3,2022-10-14,True,fool,443,2,125,0,318,2,2,1,0,,sp493/earnings_calls/unh/unh_2022_Q3.md
+UNH,Health Care,2022_Q4,2022,4,2023-01-13,False,fool,560,8,109,0,451,8,8,3,1,,sp493/earnings_calls/unh/unh_2022_Q4.md
+UNH,Health Care,2023_Q2,2023,2,2023-07-14,False,fool,410,9,118,3,292,6,7,0,0,,sp493/earnings_calls/unh/unh_2023_Q2.md
+UNH,Health Care,2023_Q3,2023,3,2023-10-13,False,fool,484,7,115,3,369,4,5,0,0,,sp493/earnings_calls/unh/unh_2023_Q3.md
+UNH,Health Care,2023_Q4,2023,4,2024-01-12,False,fool,471,11,113,4,358,7,8,0,0,,sp493/earnings_calls/unh/unh_2023_Q4.md
+UNH,Health Care,2024_Q1,2024,1,2024-04-16,False,fool,595,2,134,0,461,2,2,0,0,,sp493/earnings_calls/unh/unh_2024_Q1.md
+UNH,Health Care,2024_Q2,2024,2,2024-07-16,False,fool,492,8,123,1,369,7,2,0,0,,sp493/earnings_calls/unh/unh_2024_Q2.md
+UNH,Health Care,2024_Q3,2024,3,2024-10-15,False,fool,589,14,130,8,459,6,3,0,0,,sp493/earnings_calls/unh/unh_2024_Q3.md
+UNH,Health Care,2024_Q4,2024,4,2025-01-16,False,fool,567,7,161,3,406,4,2,1,0,,sp493/earnings_calls/unh/unh_2024_Q4.md
+UPS,Industrials,2021_Q4,2021,4,2022-02-01,True,fool,641,1,215,0,426,1,1,7,10,,sp493/earnings_calls/ups/ups_2021_Q4.md
+UPS,Industrials,2022_Q1,2022,1,2022-04-26,True,fool,568,1,199,0,369,1,1,14,10,,sp493/earnings_calls/ups/ups_2022_Q1.md
+UPS,Industrials,2022_Q2,2022,2,2022-07-26,True,fool,601,4,198,1,403,3,3,6,2,,sp493/earnings_calls/ups/ups_2022_Q2.md
+UPS,Industrials,2022_Q3,2022,3,2022-10-25,True,fool,537,2,205,2,332,0,2,7,1,,sp493/earnings_calls/ups/ups_2022_Q3.md
+UPS,Industrials,2022_Q4,2022,4,2023-01-31,False,fool,620,3,264,1,356,2,3,2,2,,sp493/earnings_calls/ups/ups_2022_Q4.md
+UPS,Industrials,2023_Q2,2023,2,2023-08-08,False,fool,626,3,226,2,400,1,1,10,1,,sp493/earnings_calls/ups/ups_2023_Q2.md
+UPS,Industrials,2023_Q3,2023,3,2023-10-26,False,fool,570,1,213,1,357,0,1,3,1,,sp493/earnings_calls/ups/ups_2023_Q3.md
+UPS,Industrials,2023_Q4,2023,4,2024-01-30,False,fool,579,3,235,1,344,2,0,1,2,,sp493/earnings_calls/ups/ups_2023_Q4.md
+UPS,Industrials,2024_Q1,2024,1,2024-04-23,False,fool,605,1,194,0,411,1,1,2,1,,sp493/earnings_calls/ups/ups_2024_Q1.md
+UPS,Industrials,2024_Q2,2024,2,2024-07-23,False,fool,587,5,210,2,377,3,5,4,1,,sp493/earnings_calls/ups/ups_2024_Q2.md
+UPS,Industrials,2024_Q3,2024,3,2024-10-24,False,fool,564,2,190,1,374,1,2,6,1,,sp493/earnings_calls/ups/ups_2024_Q3.md
+UPS,Industrials,2024_Q4,2024,4,2025-01-30,False,fool,774,5,237,1,537,4,4,6,5,,sp493/earnings_calls/ups/ups_2024_Q4.md
+VEEV,Health Care,FY22_Q4,2021,4,2022-03-02,True,fool,501,1,34,0,467,1,1,0,0,,sp493/earnings_calls/veev/veev_FY22_Q4.md
+VEEV,Health Care,FY23_Q1,2022,1,2022-06-01,True,fool,444,2,31,0,413,2,2,0,0,,sp493/earnings_calls/veev/veev_FY23_Q1.md
+VEEV,Health Care,FY23_Q2,2022,2,2022-08-31,True,fool,524,1,33,0,491,1,1,0,0,,sp493/earnings_calls/veev/veev_FY23_Q2.md
+VEEV,Health Care,FY23_Q3,2022,3,2022-12-01,False,fool,627,4,30,0,597,4,4,0,0,,sp493/earnings_calls/veev/veev_FY23_Q3.md
+VEEV,Health Care,FY23_Q4,2022,4,2023-03-01,False,fool,610,13,25,0,585,13,2,2,0,,sp493/earnings_calls/veev/veev_FY23_Q4.md
+VEEV,Health Care,FY24_Q1,2023,1,2023-05-31,False,fool,666,21,30,1,636,20,7,1,0,,sp493/earnings_calls/veev/veev_FY24_Q1.md
+VEEV,Health Care,FY24_Q2,2023,2,2023-08-30,False,fool,581,3,22,0,559,3,3,0,1,,sp493/earnings_calls/veev/veev_FY24_Q2.md
+VEEV,Health Care,FY24_Q3,2023,3,2023-12-06,False,fool,715,8,31,0,684,8,2,2,1,,sp493/earnings_calls/veev/veev_FY24_Q3.md
+VEEV,Health Care,FY24_Q4,2023,4,2024-02-29,False,fool,753,11,32,0,721,11,0,5,2,,sp493/earnings_calls/veev/veev_FY24_Q4.md
+VEEV,Health Care,FY25_Q1,2024,1,2024-05-30,False,fool,786,18,31,0,755,18,2,0,3,,sp493/earnings_calls/veev/veev_FY25_Q1.md
+VEEV,Health Care,FY25_Q2,2024,2,2024-08-28,False,fool,802,10,30,0,772,10,0,4,1,,sp493/earnings_calls/veev/veev_FY25_Q2.md
+VEEV,Health Care,FY25_Q3,2024,3,2024-12-05,False,fool,715,9,29,0,686,9,1,2,4,,sp493/earnings_calls/veev/veev_FY25_Q3.md
+VEEV,Health Care,FY25_Q4,2024,4,2025-03-05,False,fool,818,36,33,1,785,35,2,2,4,,sp493/earnings_calls/veev/veev_FY25_Q4.md
+VLO,Energy,2021_Q4,2021,4,2022-01-27,True,fool,667,2,102,0,565,2,2,0,1,,sp493/earnings_calls/vlo/vlo_2021_Q4.md
+VLO,Energy,2022_Q1,2022,1,2022-04-26,True,fool,597,2,90,0,507,2,2,0,5,,sp493/earnings_calls/vlo/vlo_2022_Q1.md
+VLO,Energy,2022_Q2,2022,2,2022-07-28,True,fool,546,0,85,0,461,0,0,0,1,,sp493/earnings_calls/vlo/vlo_2022_Q2.md
+VZ,Communication Services,2024_Q3,2024,3,2024-10-22,False,fool,1071,24,1071,24,0,0,11,0,10,"Q&A start not detected; 1071 units, outside the typical 400-900",sp493/earnings_calls/vz/vz_2024_Q3.md
+VZ,Communication Services,2024_Q4,2024,4,2025-01-24,False,fool,696,53,179,37,517,16,1,0,12,,sp493/earnings_calls/vz/vz_2024_Q4.md
+WDC,Information Technology,FY22_Q2,2021,4,2022-01-27,True,fool,617,0,167,0,450,0,0,0,4,,sp493/earnings_calls/wdc/wdc_FY22_Q2.md
+WDC,Information Technology,FY22_Q3,2022,1,2022-04-28,True,fool,576,2,141,1,435,1,2,0,8,,sp493/earnings_calls/wdc/wdc_FY22_Q3.md
+WDC,Information Technology,FY22_Q4,2022,2,2022-08-05,True,fool,509,3,169,1,340,2,3,0,18,,sp493/earnings_calls/wdc/wdc_FY22_Q4.md
+WDC,Information Technology,FY23_Q1,2022,3,2022-10-27,True,fool,537,1,128,0,409,1,1,0,27,,sp493/earnings_calls/wdc/wdc_FY23_Q1.md
+WDC,Information Technology,FY23_Q2,2022,4,2023-01-31,False,fool,560,0,138,0,422,0,0,0,11,,sp493/earnings_calls/wdc/wdc_FY23_Q2.md
+WDC,Information Technology,FY23_Q3,2023,1,2023-05-08,False,fool,540,2,120,0,420,2,0,3,10,,sp493/earnings_calls/wdc/wdc_FY23_Q3.md
+WDC,Information Technology,FY23_Q4,2023,2,2023-07-31,False,fool,576,6,137,0,439,6,2,1,26,,sp493/earnings_calls/wdc/wdc_FY23_Q4.md
+WDC,Information Technology,FY24_Q1,2023,3,2023-10-30,False,fool,608,2,158,1,450,1,1,0,11,,sp493/earnings_calls/wdc/wdc_FY24_Q1.md
+WDC,Information Technology,FY24_Q2,2023,4,2024-01-25,False,fool,452,9,125,3,327,6,2,0,6,,sp493/earnings_calls/wdc/wdc_FY24_Q2.md
+WDC,Information Technology,FY24_Q3,2024,1,2024-04-25,False,fool,610,33,129,6,481,27,8,0,4,,sp493/earnings_calls/wdc/wdc_FY24_Q3.md
+WDC,Information Technology,FY24_Q4,2024,2,2024-07-31,False,fool,507,19,142,11,365,8,0,0,14,,sp493/earnings_calls/wdc/wdc_FY24_Q4.md
+WDC,Information Technology,FY25_Q1,2024,3,2024-10-24,False,fool,585,11,125,3,460,8,3,0,18,,sp493/earnings_calls/wdc/wdc_FY25_Q1.md
+WDC,Information Technology,FY25_Q2,2024,4,2025-01-29,False,fool,526,12,145,5,381,7,2,0,12,,sp493/earnings_calls/wdc/wdc_FY25_Q2.md
+WELL,Real Estate,2021_Q4,2021,4,2022-02-16,True,fool,607,1,180,0,427,1,1,0,4,,sp493/earnings_calls/well/well_2021_Q4.md
+WELL,Real Estate,2022_Q1,2022,1,2022-05-11,True,fool,608,7,215,0,393,7,7,0,2,,sp493/earnings_calls/well/well_2022_Q1.md
+WELL,Real Estate,2022_Q2,2022,2,2022-08-10,True,fool,625,1,236,0,389,1,1,2,4,,sp493/earnings_calls/well/well_2022_Q2.md
+WM,Industrials,2021_Q4,2021,4,2022-02-02,True,fool,759,3,139,1,620,2,3,14,5,,sp493/earnings_calls/wm/wm_2021_Q4.md
+WM,Industrials,2022_Q1,2022,1,2022-04-26,True,fool,610,2,112,0,498,2,2,13,8,,sp493/earnings_calls/wm/wm_2022_Q1.md
+WM,Industrials,2022_Q2,2022,2,2022-07-27,True,fool,667,3,111,0,556,3,3,4,1,,sp493/earnings_calls/wm/wm_2022_Q2.md
+WM,Industrials,2022_Q3,2022,3,2022-10-26,True,fool,622,3,120,0,502,3,3,16,8,,sp493/earnings_calls/wm/wm_2022_Q3.md
+WM,Industrials,2022_Q4,2022,4,2023-02-01,False,fool,782,4,135,0,647,4,3,23,6,,sp493/earnings_calls/wm/wm_2022_Q4.md
+WM,Industrials,2023_Q1,2023,1,2023-04-27,False,fool,663,4,118,0,545,4,4,9,4,,sp493/earnings_calls/wm/wm_2023_Q1.md
+WM,Industrials,2023_Q2,2023,2,2023-07-26,False,fool,691,3,138,1,553,2,3,9,4,,sp493/earnings_calls/wm/wm_2023_Q2.md
+WM,Industrials,2023_Q3,2023,3,2023-10-25,False,fool,720,1,128,0,592,1,1,10,7,,sp493/earnings_calls/wm/wm_2023_Q3.md
+WM,Industrials,2023_Q4,2023,4,2024-02-13,False,fool,589,2,129,0,460,2,2,15,2,,sp493/earnings_calls/wm/wm_2023_Q4.md
+WM,Industrials,2024_Q1,2024,1,2024-04-25,False,fool,550,7,116,2,434,5,7,11,2,,sp493/earnings_calls/wm/wm_2024_Q1.md
+WM,Industrials,2024_Q2,2024,2,2024-07-25,False,fool,726,1,130,1,596,0,1,13,2,,sp493/earnings_calls/wm/wm_2024_Q2.md
+WM,Industrials,2024_Q3,2024,3,2024-10-29,False,fool,671,3,124,1,547,2,3,19,15,,sp493/earnings_calls/wm/wm_2024_Q3.md
+WM,Industrials,2024_Q4,2024,4,2025-01-30,False,fool,832,1,131,0,701,1,1,11,2,,sp493/earnings_calls/wm/wm_2024_Q4.md
+WMT,Consumer Staples,FY22_Q4,2021,4,2022-02-17,True,fool,664,7,229,4,435,3,7,6,4,,sp493/earnings_calls/wmt/wmt_FY22_Q4.md
+WMT,Consumer Staples,FY23_Q1,2022,1,2022-05-17,True,fool,608,2,183,2,425,0,2,1,0,,sp493/earnings_calls/wmt/wmt_FY23_Q1.md
+WMT,Consumer Staples,FY23_Q2,2022,2,2022-08-16,True,fool,664,1,219,0,445,1,1,3,0,,sp493/earnings_calls/wmt/wmt_FY23_Q2.md
+WMT,Consumer Staples,FY23_Q3,2022,3,2022-11-15,True,fool,677,8,231,3,446,5,6,3,0,,sp493/earnings_calls/wmt/wmt_FY23_Q3.md
+WMT,Consumer Staples,FY23_Q4,2022,4,2023-02-21,False,fool,740,5,221,2,519,3,3,5,5,,sp493/earnings_calls/wmt/wmt_FY23_Q4.md
+WMT,Consumer Staples,FY24_Q1,2023,1,2023-05-18,False,fool,707,5,246,3,461,2,4,4,0,,sp493/earnings_calls/wmt/wmt_FY24_Q1.md
+WMT,Consumer Staples,FY24_Q2,2023,2,2023-08-17,False,fool,738,9,247,5,491,4,2,11,0,,sp493/earnings_calls/wmt/wmt_FY24_Q2.md
+WMT,Consumer Staples,FY24_Q3,2023,3,2023-11-16,False,fool,704,2,183,1,521,1,0,7,0,,sp493/earnings_calls/wmt/wmt_FY24_Q3.md
+WMT,Consumer Staples,FY24_Q4,2023,4,2024-02-20,False,fool,594,12,245,3,349,9,0,16,3,,sp493/earnings_calls/wmt/wmt_FY24_Q4.md
+WMT,Consumer Staples,FY25_Q1,2024,1,2024-05-16,False,fool,621,9,198,4,423,5,3,3,0,,sp493/earnings_calls/wmt/wmt_FY25_Q1.md
+WMT,Consumer Staples,FY25_Q2,2024,2,2024-08-15,False,fool,608,15,186,9,422,6,1,9,0,,sp493/earnings_calls/wmt/wmt_FY25_Q2.md
+WMT,Consumer Staples,FY25_Q3,2024,3,2024-11-19,False,fool,632,8,196,7,436,1,1,5,0,,sp493/earnings_calls/wmt/wmt_FY25_Q3.md
+WMT,Consumer Staples,FY25_Q4,2024,4,2025-02-20,False,fool,653,5,211,2,442,3,2,8,3,,sp493/earnings_calls/wmt/wmt_FY25_Q4.md
+WSM,Consumer Discretionary,FY21_Q4,2021,4,2022-03-16,True,fool,526,0,169,0,357,0,0,3,1,,sp493/earnings_calls/wsm/wsm_FY21_Q4.md
+WSM,Consumer Discretionary,FY22_Q1,2022,1,2022-05-25,True,fool,557,0,152,0,405,0,0,2,2,,sp493/earnings_calls/wsm/wsm_FY22_Q1.md
+WSM,Consumer Discretionary,FY22_Q2,2022,2,2022-08-24,True,fool,580,0,140,0,440,0,0,0,0,,sp493/earnings_calls/wsm/wsm_FY22_Q2.md
+WSM,Consumer Discretionary,FY22_Q3,2022,3,2022-11-17,True,fool,550,0,154,0,396,0,0,0,1,,sp493/earnings_calls/wsm/wsm_FY22_Q3.md
+WSM,Consumer Discretionary,FY22_Q4,2022,4,2023-03-16,False,fool,502,5,189,2,313,3,5,0,1,,sp493/earnings_calls/wsm/wsm_FY22_Q4.md
+WSM,Consumer Discretionary,FY23_Q1,2023,1,2023-05-23,False,fool,471,2,189,1,282,1,2,0,1,,sp493/earnings_calls/wsm/wsm_FY23_Q1.md
+WSM,Consumer Discretionary,FY23_Q2,2023,2,2023-08-23,False,fool,481,3,186,1,295,2,2,0,3,,sp493/earnings_calls/wsm/wsm_FY23_Q2.md
+WSM,Consumer Discretionary,FY23_Q3,2023,3,2023-11-16,False,fool,500,5,191,4,309,1,2,0,3,,sp493/earnings_calls/wsm/wsm_FY23_Q3.md
+WSM,Consumer Discretionary,FY23_Q4,2023,4,2024-03-13,False,fool,551,4,213,2,338,2,2,0,4,,sp493/earnings_calls/wsm/wsm_FY23_Q4.md
+WSM,Consumer Discretionary,FY24_Q1,2024,1,2024-05-22,False,fool,525,4,184,2,341,2,1,0,2,,sp493/earnings_calls/wsm/wsm_FY24_Q1.md
+WSM,Consumer Discretionary,FY24_Q2,2024,2,2024-08-22,False,fool,534,1,197,1,337,0,1,1,2,,sp493/earnings_calls/wsm/wsm_FY24_Q2.md
+WSM,Consumer Discretionary,FY24_Q3,2024,3,2024-11-20,False,fool,570,2,208,2,362,0,1,0,2,,sp493/earnings_calls/wsm/wsm_FY24_Q3.md
+WSM,Consumer Discretionary,FY24_Q4,2024,4,2025-03-19,False,fool,541,9,248,5,293,4,2,1,2,,sp493/earnings_calls/wsm/wsm_FY24_Q4.md
+WYNN,Consumer Discretionary,2021_Q4,2021,4,2022-02-15,True,fool,468,2,139,0,329,2,2,0,10,,sp493/earnings_calls/wynn/wynn_2021_Q4.md
+WYNN,Consumer Discretionary,2022_Q1,2022,1,2022-05-10,True,fool,372,0,89,0,283,0,0,0,8,"372 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2022_Q1.md
+WYNN,Consumer Discretionary,2022_Q2,2022,2,2022-08-09,True,fool,368,0,96,0,272,0,0,0,1,"368 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2022_Q2.md
+WYNN,Consumer Discretionary,2022_Q3,2022,3,2022-11-09,True,fool,354,0,84,0,270,0,0,0,1,"354 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2022_Q3.md
+WYNN,Consumer Discretionary,2022_Q4,2022,4,2023-02-08,False,fool,330,0,103,0,227,0,0,0,7,"330 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2022_Q4.md
+WYNN,Consumer Discretionary,2023_Q1,2023,1,2023-05-09,False,fool,334,1,93,0,241,1,1,0,5,"334 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2023_Q1.md
+WYNN,Consumer Discretionary,2023_Q2,2023,2,2023-08-09,False,fool,427,2,83,0,344,2,2,0,10,,sp493/earnings_calls/wynn/wynn_2023_Q2.md
+WYNN,Consumer Discretionary,2023_Q3,2023,3,2023-11-09,False,fool,406,1,90,0,316,1,1,0,10,,sp493/earnings_calls/wynn/wynn_2023_Q3.md
+WYNN,Consumer Discretionary,2023_Q4,2023,4,2024-02-07,False,fool,420,0,78,0,342,0,0,0,10,,sp493/earnings_calls/wynn/wynn_2023_Q4.md
+WYNN,Consumer Discretionary,2024_Q1,2024,1,2024-05-07,False,fool,342,0,92,0,250,0,0,0,7,"342 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2024_Q1.md
+WYNN,Consumer Discretionary,2024_Q2,2024,2,2024-08-06,False,fool,378,0,82,0,296,0,0,0,7,"378 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2024_Q2.md
+WYNN,Consumer Discretionary,2024_Q3,2024,3,2024-11-04,False,fool,355,1,88,0,267,1,1,0,16,"355 units, outside the typical 400-900",sp493/earnings_calls/wynn/wynn_2024_Q3.md
+WYNN,Consumer Discretionary,2024_Q4,2024,4,2025-02-13,False,fool,491,2,91,2,400,0,0,0,11,,sp493/earnings_calls/wynn/wynn_2024_Q4.md
+XOM,Energy,2021_Q4,2021,4,2022-02-01,True,fool,534,0,84,0,450,0,0,0,2,,sp493/earnings_calls/xom/xom_2021_Q4.md
+XOM,Energy,2022_Q1,2022,1,2022-04-29,True,fool,513,1,89,0,424,1,1,0,9,,sp493/earnings_calls/xom/xom_2022_Q1.md
+XOM,Energy,2022_Q2,2022,2,2022-07-29,True,fool,551,0,108,0,443,0,0,0,4,,sp493/earnings_calls/xom/xom_2022_Q2.md
+XOM,Energy,2022_Q3,2022,3,2022-10-28,True,fool,580,0,94,0,486,0,0,0,1,,sp493/earnings_calls/xom/xom_2022_Q3.md
+XOM,Energy,2022_Q4,2022,4,2023-01-31,False,fool,556,0,109,0,447,0,0,0,7,,sp493/earnings_calls/xom/xom_2022_Q4.md
+XOM,Energy,2023_Q1,2023,1,2023-04-28,False,fool,486,1,63,0,423,1,1,0,0,,sp493/earnings_calls/xom/xom_2023_Q1.md
+XOM,Energy,2023_Q2,2023,2,2023-07-28,False,fool,534,1,98,0,436,1,1,0,5,,sp493/earnings_calls/xom/xom_2023_Q2.md
+XOM,Energy,2023_Q3,2023,3,2023-10-27,False,fool,582,0,83,0,499,0,0,0,14,,sp493/earnings_calls/xom/xom_2023_Q3.md
+XOM,Energy,2023_Q4,2023,4,2024-02-02,False,fool,528,2,78,0,450,2,1,0,10,,sp493/earnings_calls/xom/xom_2023_Q4.md
+XOM,Energy,2024_Q1,2024,1,2024-04-26,False,fool,481,2,67,0,414,2,2,2,5,,sp493/earnings_calls/xom/xom_2024_Q1.md
+XOM,Energy,2024_Q2,2024,2,2024-08-02,False,fool,505,0,77,0,428,0,0,1,7,,sp493/earnings_calls/xom/xom_2024_Q2.md
+XOM,Energy,2024_Q3,2024,3,2024-11-01,False,fool,494,6,112,0,382,6,1,2,10,,sp493/earnings_calls/xom/xom_2024_Q3.md
+XOM,Energy,2024_Q4,2024,4,2025-01-31,False,fool,541,3,109,0,432,3,0,0,12,,sp493/earnings_calls/xom/xom_2024_Q4.md
+XYZ,Financials,2021_Q4,2021,4,2022-02-24,True,fool,440,3,151,1,289,2,3,1,0,,sp493/earnings_calls/xyz/xyz_2021_Q4.md
+XYZ,Financials,2022_Q1,2022,1,2022-05-05,True,fool,464,5,130,0,334,5,4,1,0,,sp493/earnings_calls/xyz/xyz_2022_Q1.md
+XYZ,Financials,2022_Q2,2022,2,2022-08-04,True,fool,424,8,152,3,272,5,6,1,0,,sp493/earnings_calls/xyz/xyz_2022_Q2.md
+XYZ,Financials,2022_Q3,2022,3,2022-11-03,True,fool,439,2,146,1,293,1,1,2,1,,sp493/earnings_calls/xyz/xyz_2022_Q3.md
+XYZ,Financials,2022_Q4,2022,4,2023-02-23,False,fool,451,7,162,3,289,4,7,0,2,,sp493/earnings_calls/xyz/xyz_2022_Q4.md
+XYZ,Financials,2023_Q1,2023,1,2023-05-04,False,fool,486,8,167,7,319,1,1,0,0,,sp493/earnings_calls/xyz/xyz_2023_Q1.md
+XYZ,Financials,2023_Q2,2023,2,2023-08-03,False,fool,423,7,131,2,292,5,4,1,0,,sp493/earnings_calls/xyz/xyz_2023_Q2.md
+XYZ,Financials,2023_Q3,2023,3,2023-11-02,False,fool,470,6,133,0,337,6,2,1,1,,sp493/earnings_calls/xyz/xyz_2023_Q3.md
+XYZ,Financials,2023_Q4,2023,4,2024-02-22,False,fool,456,5,94,0,362,5,2,1,0,,sp493/earnings_calls/xyz/xyz_2023_Q4.md
+XYZ,Financials,2024_Q1,2024,1,2024-05-02,False,fool,342,4,84,1,258,3,2,0,0,"342 units, outside the typical 400-900",sp493/earnings_calls/xyz/xyz_2024_Q1.md
+XYZ,Financials,2024_Q2,2024,2,2024-08-01,False,fool,428,3,81,0,347,3,2,0,1,,sp493/earnings_calls/xyz/xyz_2024_Q2.md
+XYZ,Financials,2024_Q3,2024,3,2024-11-07,False,fool,416,3,69,0,347,3,1,0,1,,sp493/earnings_calls/xyz/xyz_2024_Q3.md
+XYZ,Financials,2024_Q4,2024,4,2025-02-20,False,fool,388,6,71,1,317,5,2,1,0,"388 units, outside the typical 400-900",sp493/earnings_calls/xyz/xyz_2024_Q4.md
+ZTS,Health Care,2021_Q4,2021,4,2022-02-15,True,fool,510,2,166,1,344,1,0,1,1,,sp493/earnings_calls/zts/zts_2021_Q4.md
+ZTS,Health Care,2022_Q1,2022,1,2022-05-05,True,fool,466,1,152,1,314,0,0,0,3,,sp493/earnings_calls/zts/zts_2022_Q1.md
+ZTS,Health Care,2022_Q2,2022,2,2022-08-04,True,fool,464,1,156,1,308,0,1,1,4,,sp493/earnings_calls/zts/zts_2022_Q2.md
+ZTS,Health Care,2022_Q3,2022,3,2022-11-03,True,fool,621,0,152,0,469,0,0,1,4,,sp493/earnings_calls/zts/zts_2022_Q3.md
+ZTS,Health Care,2022_Q4,2022,4,2023-02-14,False,fool,539,4,172,2,367,2,3,1,4,,sp493/earnings_calls/zts/zts_2022_Q4.md
+ZTS,Health Care,2023_Q1,2023,1,2023-05-04,False,fool,468,1,141,1,327,0,0,1,2,,sp493/earnings_calls/zts/zts_2023_Q1.md
+ZTS,Health Care,2023_Q2,2023,2,2023-08-08,False,fool,487,1,144,1,343,0,1,1,1,,sp493/earnings_calls/zts/zts_2023_Q2.md
+ZTS,Health Care,2023_Q3,2023,3,2023-11-02,False,fool,528,3,153,2,375,1,1,1,9,,sp493/earnings_calls/zts/zts_2023_Q3.md
+ZTS,Health Care,2023_Q4,2023,4,2024-02-13,False,fool,589,2,195,0,394,2,2,1,3,,sp493/earnings_calls/zts/zts_2023_Q4.md
+ZTS,Health Care,2024_Q1,2024,1,2024-05-02,False,fool,611,1,196,1,415,0,1,1,1,,sp493/earnings_calls/zts/zts_2024_Q1.md
+ZTS,Health Care,2024_Q2,2024,2,2024-08-06,False,fool,554,0,212,0,342,0,0,1,0,,sp493/earnings_calls/zts/zts_2024_Q2.md
+ZTS,Health Care,2024_Q3,2024,3,2024-11-04,False,fool,506,2,204,0,302,2,2,1,0,,sp493/earnings_calls/zts/zts_2024_Q3.md
+ZTS,Health Care,2024_Q4,2024,4,2025-02-13,False,fool,551,0,218,0,333,0,0,1,0,,sp493/earnings_calls/zts/zts_2024_Q4.md

@@ -1,0 +1,214 @@
+# Broadcom — FY26_Q3 Earnings Call (transcript)
+
+- **Company:** Broadcom (AVGO); fiscal year ends October (SEC fiscalYearEnd 1101)
+- **Ticker:** AVGO
+- **CIK:** 0001730168
+- **Period:** FY26_Q3 (call held September 2, 2026; date from page DATE section)
+- **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/09/09/broadcom-avgo-q3-2026-earnings-call-transcript/
+- **Source type:** third_party_transcript_motley_fool_llm
+- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Source SHA-256:** d8bbc297195d16af8f8666708e6d42a1fb4e5ea8c8ae1b2e9298d99c1c667bb9
+- **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
+- **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing
+- **Quality warning:** Fool 2025+ layout. The page says parts were created with LLMs; text is close to but not verbatim (86.8-89.4% word match to official transcripts), the IR opening is usually dropped and analysts are often unlabeled. Tier B: not filtered or pooled until calibrated
+
+---
+
+Full Conference Call Transcript
+
+Operator: Welcome to Broadcom Inc.'s Third Quarter Fiscal Year 2026 Financial Results Conference Call. At this time, for opening remarks and introductions, I would like to turn the call over to Ji Yoo, Head of Investor Relations of Broadcom Inc. Please go ahead.
+
+Ji Yoo: Thank you, Cherie, and good afternoon, everyone. Joining me on today's call are Hock Tan, President and CEO; Amie Thuener, Chief Financial Officer; and Charlie Kawwas, President, Semiconductor Solutions Group. Broadcom distributed a press release and financial tables after the market closed, describing our financial performance for the third quarter fiscal year 2026. If you did not receive a copy, you may obtain the information from the Investors section of Broadcom's website at broadcom.com. This conference call is being webcast live, and an audio replay of the call can be accessed for 1 year through the Investors section of Broadcom's website.
+
+During the prepared comments, Hock and Amie will be providing details of our third quarter fiscal year 2026 results, guidance for our fourth quarter of fiscal year 2026 as well as commentary regarding the business environment. We'll take questions after the end of our prepared comments. Please refer to our press release today and our recent filings with the SEC for information on risk factors that could cause our actual results to differ materially from the forward-looking statements made on this call. In addition to U.S. GAAP reporting, Broadcom reports certain financial measures on a non-GAAP basis. A reconciliation between GAAP and non-GAAP measures to the extent possible is included in the tables attached to today's press release.
+
+Comments made during today's call will primarily refer to our non-GAAP financial results. I will now turn the call over to Hock.
+
+Hock Tan: Well, thank you, Ji, and thank you, everyone, here for joining us today. We delivered an exceptional quarter with revenue, operating income and free cash flow all exceeding prior records. And driving this was our Q3 AI semiconductor revenue, which grew 221% year-on-year and up 54% sequentially. This brought our consolidated revenue to $29.6 billion, which was up 86% year-on-year. Operating income grew even faster at 92% year-on-year with operating margin at a record 68% of revenue, reflecting strong operating leverage. Q3 demand was simply hot, and we're just getting started. Our 6 XPU customers are accelerating the adoption of custom accelerators and AI semiconductor revenue more than tripled year-over-year to $16.7 billion.
+
+During the quarter, we delivered Ironwood TPU v7, version 7 in high volume to both Anthropic and Google. At the same time, we began production shipments of the next-generation TPU version 8i for Google. This new TPU generation has been designed with more memory and bandwidth compared to Ironwood, and just like Ironwood, is optimized for inference workloads. And in performance, it is comparable, if not surpasses the Vera Rubin GPU. Just to reiterate the major technology challenges of developing these complex accelerators, Broadcom is now shipping the TPU version 8i ahead of the MediaTek version v8t, which, in fact, was initiated earlier.
+
+In Q3, we also shipped Jalapeno, OpenAI's first-generation custom accelerator, which outperforms Grace Blackwell GPU for inference workloads. Overall, our XPU shipments for the third quarter were up over 3.5x year-on-year and represented 73% of AI revenue during the quarter. Our AI networking revenue was up over 2.5x year-on-year. And this strong momentum continues into Q4. During the quarter, we expect to accelerate shipments of Ironwood to Anthropic. We also expect to ramp up high-volume shipments of the TPU version 8i to Google. Shipments of Jalapeno for OpenAI will continue. And for Meta, we expect production shipments of their custom MTIA accelerator optimized for inference and recommendation at scale.
+
+In Q4, we expect both XPUs and AI networking revenue to triple year-on-year. And together, we expect these deployments to drive our Q4 AI revenue to $21.7 billion, which is up 236% year-on-year. Based on all this -- on this Q4 guidance, I should say, we expect our fiscal 2026 AI revenue to be $58 billion, for the year, up 186% year-upon-year and above our prior guidance of $56 million (sic) [ $56 billion ]. We are continuing to see exponential growth in demand from our XPU customers.
+
+We believe the vast majority of compute demand for AI workloads today originates from these concentrated group who develops state-of-the-art frontier models, and we expect their need for compute infrastructure to inflect even more in 2027 and 2028. And they are all growing with XPUs to achieve superior performance, cost and power. Let me now walk you through each of their journey, each of our customers' journey towards using XPUs at scale to run their frontier models worldwide -- workloads, sorry. Our engagement with Google has never been stronger. This has been recently strengthened by a long-term agreement to develop and supply future generations of TPUs and AI networking.
+
+Under this agreement, we are planning to deliver multi-tens of billions of dollars of TPUs annually over the next several years. We expect this growing demand in '28 and '29 to be fulfilled through successive generations of the increasingly complex TPUs we are developing today with Google. Our partnership with Google will continue to sustain because we have the strongest IP portfolio in semiconductor design, including industry-leading SerDes, chip-to-chip interconnect, leading-edge HBM and SRAM integration and simply differentiated advanced packaging. Most of all, we have been consistently -- we have consistently, I should say, delivered the fastest time to market for TPUs from product definition to production without the need for [ resubmits ].
+
+We believe these are very deep moats for any competitor to cross. Moving on to Anthropic, starting with the 1 gigawatt of Ironwood we are deploying in 2026. We expect Anthropic to deploy another 5 gigawatts of TPU version 8i in 2027. And in 2028, we have clear line of sight to deliver another -- an incremental 10 gigawatts, even as we expect Google to grow for us. Anthropic is on track to become our largest XPU customer in 2027 and sustain that in 2028. For OpenAI, Jalapeno is on track for the planned deployment of 1.3 gigawatts in 2027. Together with OpenAI, we are deep in development of the next-generation XPU beyond Jalapeno, which is approaching tape-out.
+
+In 2028, we have line of sight for OpenAI to deploy over 5 gigawatts of Jalapeno and its successor generation of XPU, which would make OpenAI our second largest XPU customer. In addition, we are in development with OpenAI on their third-generation XPU. As OpenAI announced last week, Jalapeno outperforms the Grace Blackwell Ultra in performance per watt, latency, throughput and power and it's actually comparable to Vera Rubin GPUs in running OpenAI workloads. The lesson here is when you co-develop a chip that is optimized for your particular LLM workloads, you will outperform any GPU.
+
+Like TPUs, Jalapeno demonstrates that it can also run other frontier models and you can do all this at half the cost of a GPU. Our partnership with Meta to deliver multiple generations of MTIA XPUs remains on track. Between now and the end of 2027, we will be delivering 3 generations of MTIA accelerators to Meta. Across these 3 generations, we have line of sight to deploy 3 gigawatts through '28. Our content in AI, as you know, goes beyond XPUs. We're the leader in AI networking, and we continue to extend our lead.
+
+In Ethernet switching for scale up and scale out, we were first to market with our 100-terabit Tomahawk 6 and we just taped out Tomahawk 7, the industry's first 200 terabit per second Ethernet switch. For scaling in, we continue to be the leader in every generation of PCI Express switching. We're now the leader in leading-edge optical DSPs and are rapidly expanding our capacity and market position as a leader in EMLs, VCSELs and CW lasers for optical interconnects. In sum, we continue to invest and invest heavily to provide the broadest and most leading-edge AI portfolio. In fact, our AI networking revenue is expected to grow just as fast as XPUs over the next few years.
+
+Reflecting our excellent progress with this key group of LLM customers, here is our outlook for our AI semiconductor revenue. In 2027, we have secured the supply to again double AI revenue to approximately $115 billion. Our demand actually exceeds this outlook, and we will work to improve supply. In 2028, we expect the trajectory of growth to continue. We have line of sight for fiscal 2028 AI semiconductor revenue growth to again double to $230 billion. Here again, we have secured the supply to meet this outlook. This AI revenue guidance through '28 is being provided to give you the trajectory of our growth. That demand for compute continues to be extremely strong.
+
+As a result, I got to say we are very much on target to exceed $30 in earnings per share in fiscal 2028. Now turning to non-AI semiconductors. Q3 revenue of $4.2 billion was up 5% year-on-year and flat sequentially. Broadband and server storage together were up, partially offset by a decline in wireless. In Q4, we forecast non-AI semiconductor revenue to be approximately $4.3 billion, again, up 5% sequentially. Talking about infrastructure software. Q3 revenue of $8.8 billion was up 29% year-on-year, and we sustained ARR growth of 15% year-on-year. For Q4, we forecast infrastructure software revenue to stabilize at approximately $8.7 billion.
+
+We announced VMware Private AI Cloud, giving enterprises a secure, cost-effective platform to build and run AI alongside the existing applications. It brings together AI infrastructure, security and compliance and the tools to build and operate trusted AI agents, all while protecting enterprise data. VCF, VMware Cloud that is, is also making it easier for customers to repatriate workloads from public cloud to private cloud, where they can gain greater control and significantly improve infrastructure economics. Enterprise consumption of AI is, in fact, opening a new opportunity for our infrastructure software business. So to sum it all, for Q4 '26, we expect consolidated revenue to grow to $34.8 billion, up 93% year-on-year.
+
+We expect Q4 AI revenue to be $21.7 billion, up 236% year-on-year, and we expect operating margin to be approximately 66% of revenue. And with that, let me turn it over to Amie.
+
+Amie O'Toole: Thank you, Hock. Let me now provide additional detail on our Q3 financial performance. Consolidated revenue was a record $29.6 billion for the quarter, up 86% year-on-year. Gross margin was 75% of revenue in the quarter, down 210 basis points sequentially as AI semiconductor revenue was a greater proportion of our total revenue mix. This was better than our guidance of 74%. Q3 operating income was a record $20.1 billion, up 92% from a year ago. Even with the decline in gross margin due to revenue mix, operating margin increased 240 basis points year-over-year to 67.9% because of the phenomenal operating leverage we are achieving. Aligned with this, Q3 non-GAAP EPS of $3.32 was up 96% year-on-year.
+
+Now I'll review the P&L for our 2 segments, starting with semiconductors. Revenue for our Semiconductor Solutions segment was a record $20.8 billion, up 127% year-on-year and represented 70% of our total revenue. AI semiconductor revenue of $16.7 billion represented 56% of total revenue, up from 49% in Q2. Gross margin for our Semiconductor Solutions segment was approximately 76%. Operating expenses of $1.2 billion reflected investments in R&D with OpEx representing 6% of segment revenue. Operating margin of 61% was up 440 basis points year-on-year as revenue growth of 127% outpaced operating expenses, which grew 22% year-on-year. Moving on to infrastructure software. Revenue of $8.8 billion was up 29% year-on-year and represented 30% of our total revenue.
+
+Gross margins for infrastructure software was 94% in the quarter and operating expenses were over $900 million. Q3 software operating margin was up 650 basis points year-on-year to approximately 84%. Moving on to the balance sheet. We ended the third quarter with $24 billion of cash compared to $19.6 billion in the prior quarter, up $4.3 billion sequentially. We ended the third quarter with inventory of $4.5 billion to support our strong semiconductor demand. Moving on to cash flow. Free cash flow in the quarter was a record $13.7 billion and represented 46% of revenue. We spent $532 million on capital expenditures in the quarter. Turning to capital allocation.
+
+In Q3, we paid stockholders $3.1 billion of cash dividends based on a quarterly common stock dividend of $0.65 per share. In Q3, we also paid down $5.6 billion of long-term debt. Subsequent to quarter end, we paid down an additional $1.5 billion of senior notes upon maturity. The weighted average coupon rate and years to maturity of our gross principal fixed rate debt of $59.6 billion is 4% and 7.4 years, respectively. In June, we established the AI XPV platform in partnership with Apollo and Blackstone to enable more than 20 gigawatts of compute infrastructure for OpenAI and Anthropic by the end of 2028.
+
+We closed the first $35 billion tranche in June for Anthropic's 1 gigawatt deployment, which is already underway. While future tranches will include unique features tailored to specific lab and investor needs, our core strategy remains consistent. First, we are empowering 2 of our most strategic customers, the leading AI labs, to bridge the gap between their current cash flow and the significant upfront investments required for their businesses. Our XPUs enable cost-effective, sustainable growth at multiples of their infrastructure costs. Second, this XPV platform enables highly investable customers and facilitates execution where demand is already locked in.
+
+And third, we review any strategic financings through a commercial as well as balance sheet lens, consistent with our existing capital allocation framework. Through the XPV platform, we partner with sophisticated third-party financial partners to independently underwrite and capitalize the assets rather than providing the direct financing ourselves. Where necessary, we may provide modest residual value guarantees, which are contingent liabilities we view as low risk, supported by the strong profitability trajectory of these labs and the sustaining value of the underlying assets. Moving on to guidance. Our guidance for Q4 is for consolidated revenue of $34.8 billion, up 93% year-on-year. We forecast semiconductor revenue of approximately $26.1 billion, up 136% year-on-year.
+
+Within this, we expect Q4 AI semiconductor revenue of $21.7 billion, up over 236% year-on-year. We expect Q4 infrastructure software revenue of approximately $8.7 billion, up 24% -- 25% year-on-year. Moving on to margins. As the proportion of AI revenue accelerates in Q4, we expect our Q4 consolidated gross margin to be approximately 73%, down from 78% a year ago. As we've discussed previously, this reflects the increasing mix of XPUs with their increasing memory content, which is diluting our consolidated gross margin. Regardless, we expect Q4 operating margin to be approximately 66%, flat from a year ago because our strong revenue growth drives substantial operating leverage.
+
+We expect the non-GAAP tax rate for Q4 and fiscal year 2026 rate to be approximately 16% due to the impact of the global minimum tax and the geographic mix of income compared to that of fiscal year 2025. We expect the Q4 non-GAAP diluted share count to be approximately 4.94 billion shares, excluding the impact of potential share repurchases. And in Q4, we expect capital expenditures of $1.4 billion as we invest in capacity for semiconductors. As Hock mentioned in his remarks, we expect AI revenue to double again to approximately $115 billion in fiscal 2027 and double again in fiscal 2028 to $230 billion.
+
+This AI revenue guidance is being provided to you to give you the trajectory of our growth, and we do not intend to update it on a quarterly basis. That concludes my prepared remarks. Operator, please open up the call for questions.
+
+Operator: [Operator Instructions] And that will come from the line of Joseph Moore with Morgan Stanley.
+
+Joseph Moore: Congratulations on the results. You talked about the business doubling next year, and you said demand could be higher than that. Can you talk about the supply around that? And kind of what are the supply bottlenecks? And what are the variables that could drive that number higher if you're able to resolve them?
+
+Hock Tan: Well, Joe, that's a loaded question. Whatever I tell you, you guys go on and print a bigger number. I think that's funny. And we're very careful. And to be honest, we try to be conservative. So we're giving you an outlook. And yes, demand, we can ship significantly more. Question to some -- in our minds sometimes is, are they going to be -- even as we ship the chips going to be deployed on a timely basis? And that's always very much in our mind when we give you that outlook. But certainly, our customers want us to ship more.
+
+But we are -- we have secured supply, and we think it's the right number to put it to $115 billion. And if times -- if circumstances change and our ability to secure more supply change, of course, we will uplift. But at this point, that's our best outlook. And by the way, the same applies. The same thinking applies to 2028 when we give you that outlook of $230 billion. This is real demand, we believe, based on what data center sites, locations are ready, 2028 with respect to our customers, the size of what we have and against the supply chain we have in leading-edge wafers, substrates, and HBM memory.
+
+And so this is, again, a carefully structured outlook that we believe we can achieve.
+
+Operator: That will come from the line of Blayne Curtis with Jefferies.
+
+Blayne Curtis: I actually want to follow up on Joe's on supply, the key point. Can you just talk about from either a substrate or kind of interposer co-ops replacement, has any XPUs decided to use your Singapore capacity? And how does that fit into that supply picture you put together?
+
+Hock Tan: Well, we are going to start deploying our Singapore fab for substrates, by the way, starting fiscal '27. And that would, I guess, address a key part of our supply bottlenecks. Anything else?
+
+Blayne Curtis: Maybe you can...
+
+Hock Tan: Finish your question.
+
+Blayne Curtis: No, I was going to give another one because that was a short answer. Just one clarification quickly. The Google number you gave, I know you said 10 gigawatts for Anthropic, are those -- it's not one number, right? The 10 gigawatts is just for Anthropic?
+
+Hock Tan: 10 gigawatts is just for Anthropic.
+
+Operator: And that will come from the line of Harlan Sur with JPMorgan.
+
+Harlan Sur: Hock, your customers are driving their XPUs, their GPUs higher in performance. The networking bandwidth is also scaling accordingly, right? Your customers are now moving from 100 gigabits per second per lane to 200 gigabits per second per lane from Tomahawk 5 to Tomahawk 6. We've heard that Tomahawk 6 ramp has been the fastest ramp of your -- any of your switching families. And we've also heard that you guys are almost sold out for Tomahawk 6 for next year. I'm not sure if you can give us an update on that. And it's also good to see the team taped out its next-gen Tomahawk 7 with 400-gig SerDes.
+
+Out of your 6 frontier model-based XPU customers, how many of them are using Tomahawk scale-out networking? And can you also just give us an update on the adoption of your Tomahawk Ultra scale-up platform as well?
+
+Hock Tan: Charlie will take this question. He knows everything here.
+
+Charlie Kawwas: Thank you, Hock. And thanks, Harlan, as well. You're right, our Tomahawk 6 has been a phenomenal success. It started really first in scale-out, as you mentioned. And it's available both in 100-gig and 200-gig SerDes. So we actually have 2 versions of Tomahawk 6. Both are very successful and both are deployed in pretty much all of the AI hyperscalers that are building XPUs with us. And even those that are not using our XPUs are using the Tomahawk 6, both 100 gig and 200 gig. With respect to Tomahawk Ultra, we have quite innovated ahead of the market here by enabling scale-up using low-latency Ethernet.
+
+The adoption also on this device has surprised us, and we're starting to see it deployed starting actually this quarter and in FY '27 coming up in scale-up applications.
+
+Hock Tan: Just to amplify what Charlie is saying with Tomahawk Ultra is that we are enabling now scaling up within cluster of GPU, XPU in the rack on basically Ethernet for the first time because it won't -- Tomahawk Ultra will perform just as well as anything else that exists prior to that before Ethernet -- before being able to do it on Ethernet, particularly with respect to loss and latency.
+
+Operator: And that will come from the line of Stacy Rasgon with Bernstein.
+
+Stacy Rasgon: I just wanted to verify, if I add up the gigawatts for '27 and '28, you have line of sight, I'm still getting roughly 10 for '27, about 6 of which are Anthropic and OpenAI, and roughly 20 for '28, roughly 15 of which are Anthropic and OpenAI. I just want to make sure that was the case. And if it is, if I sort of calculate the revenue per gigawatt, I come out -- with your revenue guidance, I come out somewhere between $11 billion and $12 billion per gigawatt. I mean your competitors suggested something like 40. And I'm just wondering, is this the right level that we should think about for your content?
+
+And how should that, I guess, trend as we go forward, as you said, into more generations of XPUs again with higher performance and higher memory, like how do those trend? So I guess, first, just the gigawatt count and second, the content.
+
+Hock Tan: Right. Stacy, you're very clever. You put 2 tricky questions into one. So let me take it -- let me parse it one by one. Yes, you can count the number of gigawatts we are outlining, not everyone because we are focused on, to be fair, with 6 customers, 4 of them are just simply going to be huge. And we outlined and we walked through with you guys, their journey into deploying XPUs. As I said, it's a journey Google has been doing for the last 10 years. Others, OpenAI last 2, 3 years, Meta last 3 years. Each one is doing it differently, and we like to take you guys through it.
+
+But more importantly, what it means in the deployment of XPU for these 3 years, '26, '27, '28. And so we laid out -- and you're right, Stacy, you add up the gigawatts. So we are showing where they are headed. What we didn't tell you specifically when we came up to the final number is how many of these gigawatts do actually come up for actual deployment because deployment doesn't just include getting the chips out there. Before you got the chips out there, you got to get the data center shell in place and ready for [ literally ] production. And we're talking about fiscal years.
+
+So what we're saying is, as you add up the gigawatts, we're not saying that over the next 2 years, '27, '28, that there are 30 gigawatts that will go into production, and therefore, we ship it. We think we judge it conservatively to be somewhat less, but we see the demand that if they can get it up in place and our products, and we can ship those chips, racks in place, it will be 30 gigawatts between the customers we have, the 6 customers we have. Question is, will all 30 come into production within these 2 fiscal years?
+
+And we are giving you a judged number of $115 billion of chips to these guys in fiscal '27, another $230 billion in '28, which would add up, I know, to about $350 billion. So another way of saying is we believe with a pretty high degree of confidence, we will ship $350 billion of AI semiconductors to these customers in the next 2 years. That's the best way to look at it. It doesn't necessarily mean all 30 gigawatts need to have been deployed within that period. Turning to your more next interesting question.
+
+Right, as I said, when you do an XPU, it not only performs as well, if not better for your particular LLM workloads for each of our customers. It's also half the cost. In fact, less than half the cost. And that's -- you made my point exactly.
+
+Operator: One moment for our next question. That will come from the line of Ben Reitzes with Melius.
+
+Jack Adair: This is Jack Adair on for Ben. Could you shed a little bit more light on the maximum off-balance sheet risk for the backstop agreements? Your last Q showed that the first tranche had a maximum exposure of about $29 billion. Is this about the order of magnitude for each of the Anthropic and OpenAI gigawatts over the next few years? And can you add a little more color as well on the residual value and the risk associated?
+
+Amie O'Toole: Thanks, Jack. Listen, we don't have anything to announce today on residual value guarantees for backstop. So there's nothing new to add. So the numbers that you outlined around what we've already done remain true. And as I mentioned in my prepared remarks, we're going to evaluate any strategic financing really on a deal-by-deal basis. And we expect that any that we do in the future is they're going to have unique features and they're going to be tailored specifically to the lab and to the investor needs. So I can't give you an overarching look at like what's the max and what each one is going to look like.
+
+But we will tell you at the right time, we have nothing to announce today.
+
+Operator: One moment for our next question. That will come from the line of Vivek Arya with Bank of America.
+
+Vivek Arya: Amie, I just wanted to clarify any impact on gross margins in '27 and '28, given this XPU mix and rise in memory cost. And then, Hock, you mentioned the 2 frontier labs will be your largest AI customers, even though Google continues to say they are supply constrained. So why aren't they taking more? And in many cases, these frontier labs depend on land, power, shell from their cloud service providers, sometimes NVIDIA-related entities. So how much of their use of silicon is truly their choice versus what their CSP or funding partner dictates?
+
+So I'm just curious what gives you the certainty that they will give Broadcom, right, that specific business in '27 or '28 when so much of their funding depends on other cloud service providers who might have a different view when it comes to the choice of silicon in that specific facility?
+
+Hock Tan: I know the best way to answer that -- a couple of ways I have of answering that and a couple of points. Don't forget, the rate -- with the rate of growth these startups, and we're talking about -- we have 6 customers, and we are creating these financial vehicles, as Amie described them, for just 2 of them, not all. The other 4 customers of ours are financially secure, stable enough to be able to fund it themselves and we're happy for them to do that and get them up to where they need to with technology, sheer technology, which we have in plentiful supply.
+
+With these 2 guys, Anthropic and OpenAI, I mean, this is a thinking of -- I mean, you have 2 geniuses in the middle of Outer Mongolia, say, and they need to go to college to fulfill where they want to. So we do what we can to help them. And part of it is creating sources of financing to help these companies with the leading edge frontier models in the world, be able to play in the same playing field and be able to offer these great technology products to the world. And that's simply what we're doing.
+
+It's a great investment for us when you think about it, that every gigawatt of compute they deploy, they could achieve $30 billion of ARR, annual revenue per gigawatt. That's a hell of a business model. So for us, that's a great investment to focus on doing. So to put that simply, that's how we look at this simple thing, it makes economic sense for Broadcom to invest and enable these guys. Now these guys are going to be hyperscalers in their own right.
+
+So what they do is they want first-party compute capacity just as they create their own -- they want to create silicon that is very cost performance optimized, and they want to run their own data centers, eventually first path, not even eventually, they want to run it as fast as they can. Short term, you're right. They are using cloud services, third-party services to deploy their models. Long term, we see these guys to be no different from a hyperscaler and will run their own data centers and be first party to offer AI, generative AI, APIs, SaaS models to the world. So we see that happening. It's not speculation.
+
+It's actually happening, and we are in the midst of enabling them.
+
+Amie O'Toole: And I'm happy to take your gross margin question. First, I want to just make sure I correct what I said before, just to be super crisp. Gross margin for our Semiconductor Solutions segment was approximately 67% in Q4 -- or Q3. And to your question, gross margin really reflects revenue mix between both Semiconductors and Infrastructure Software. And then within Semiconductors, it also is -- the product mix is reflected as well as increasing memory content. And so as you can see, as XPUs become a larger proportion of our total revenue mix, it impacts our margin. We guide one quarter at a time.
+
+So we'll tell you each quarter how -- what our margin is going to look like.
+
+Hock Tan: Yes. It's not the first time we have told you guys that because stop focusing on gross margin is what we're saying, look at where it matters, operating margin at the bottom of the -- at the end of the day because the growth in revenue far surpasses the growth in OpEx, operating spending to support the growth in revenue. So we have a lot of accretion operating leverage, we call it, on operating margin. So we expect to be able to sustain operating margin even as mix of products dilutes the gross margin.
+
+Operator: One moment for our next question. And that will come from the line of Tom O'Malley with Barclays.
+
+Thomas O'Malley: This one is for Hock and Charlie. So you guys talked a bit about the Tomahawk Ultra, you're ramping a variety of ASICs over the next couple of years. How should we think about the attach rate of Tomahawk Ultra to the ASICs that you're developing? I would assume that when a customer goes down the road with you for an ASIC, they would decide to use your networking as well. Maybe some kind of forecast as to how many of those customers are using your Tomahawk Ultra? How are they using Ethernet? Just because I assume your penetration with your accelerators is going to lead to a lot of success on the networking side.
+
+Any help there would be great.
+
+Hock Tan: Go ahead, Charlie.
+
+Charlie Kawwas: Thank you, Hock. Yes, on the attach rate for scale-up, today, we're actually seeing customers who build XPUs with us, deploy either Tomahawk 6. They used to deploy Tomahawk 5. Now they're going to Tomahawk 6. And some of them are going to Tomahawk Ultra. So if you look at where we're seeing XPUs and even GPUs, we're seeing scale-up solutions adopt both Tomahawk 6 and Tomahawk Ultra and the beauty and the reason why they're doing this, it's as Hock articulated earlier on, it's Ethernet-based, which means it's open, anybody can connect to it, especially with the standards that we have collaborated with the entire industry on.
+
+So at this point in time, we're seeing it pretty much deployed in both XPU clusters and in some GPU clusters.
+
+Operator: One moment for our next question. That will come from the line of Will Stein with Truist Securities.
+
+William Stein: Congrats on the good results and the very impressive longer-term outlook you gave. Hock, I hope you can tell us a little bit about the constraints as it relates to land, power, and shell. You mentioned this a little bit earlier, but I wonder to what degree the outlook is sensitized to potential constraints in that area?
+
+Hock Tan: Good question, Will. Of course, we have to be realistic and when we provide our outlook, we not just look at what our customer, our end customer, one of those AI frontier models just ask of us for compute capacity in the form of chips or in some cases, even in the form of racks. We are very engaged with each of them on how much or which -- how much LPS, land, power and sites -- and systems they have before we actually believe it will happen because this -- some of this part on the site's power shell has a long lead time, the construction project, you correctly indicate that. So we do that.
+
+And we do that not development, but analysis with our customer, and we reflect that in the forecast outlook we're giving you today.
+
+Operator: One moment for our next question, and that will come from the line of Joshua Buchalter with TD Cowen.
+
+Joshua Buchalter: With XPV, I think you have $35 billion of the financing secured. As we think about the 10 gigawatts for Anthropic and the 5 for OpenAI in fiscal 2028, are you expecting most or all of this to be financed through the XPV? And can you give us sort of any help on the time line and hurdles required to secure financing as we look forward to those deployments getting secured?
+
+Hock Tan: Let me start broadly and Amie will give you specifics. Not everyone -- not every site will be the same because don't forget, next 2 years, we'll see things happen between -- with Anthropic and OpenAI. And it's an open secret Anthropic is well on its way to an IPO. And with that, its investment credit will change. OpenAI, we still have less clarity, but it's different. And so with that, let me pass it to Amie.
+
+Amie O'Toole: I mean I think just to double down on that, I think in every scenario, our partners were going to be looking for financing from lots of different sources. And in some cases, we may step in and help out if it makes sense to us and if it's within our framework. And in other cases, we may not. But we're going to look at it case by case and evaluate the specific needs.
+
+Operator: One moment for our next question, and that will come from the line of Jim Schneider with Goldman Sachs.
+
+James Schneider: I was wondering if you can maybe address some of the other constraints that are impacting your outlook. You mentioned land, power, shell. Do you think that is the largest of the constraints that you face heading into fiscal '27? And specifically, can you address any other supply chain constraints, whether it be memory substrates or other components that could be impacting your outlook? And to what extent you could expect those to get ameliorated?
+
+Hock Tan: Thank you, Jim. That's a hell of a question. And you're right on all counts. It's a multidimensional issue that to get an AI data center deployed, yes, we now are all more sensitive about, especially at scale, and we are now delivering at scale to our customers, XPUs, AI data center built upon XPU computing accelerators. Land, power and shell, as I indicated to question with Will, is a big concern. It is more than a big concern. It dictates specific timing of when this capacity gets deployed and be available. But very much in the mix that we have to think about with our customers. And it's a joint collaborative effort, not just one-directional.
+
+It's, you said it correctly, leading-edge silicon. Because for one, to get the chip produced and availability of those chips and the time it comes in. Then even deeper than that, we talk about substrates, which is specific issues, which is leading us to build our own substrate capacity at scale in our factory in Singapore, jointly with one of our partners. And of course, we all know about memory, HBM memory, and beyond HBM memory, the system memory that goes into AI servers, which we don't supply necessarily, but our customers have to secure too. So all this -- it's a multidimensional problem coming from various sources. And then depending on different times, each might become a bottleneck.
+
+And so it's a constant interesting challenge as we work this through, which is why, in some ways, I'm so glad we have only 6 customers to deal with.
+
+Operator: Our next question that will come from the line of Vijay Rakesh with Mizuho.
+
+Vijay Rakesh: Hock and Amie, just a quick question. Thanks for giving the visibility on fiscal '27 and fiscal '28 AI revenues. Just a quick question. As you go through subsequent generations of XPU, can you talk to how your dollar per gigawatt should improve into the subsequent XPU generations? And also, I saw your CapEx went up. Just wondering if you're adding capacity on the EML, CW, indium phosphide side.
+
+Hock Tan: Well, Charlie, do you want to take the CapEx issue?
+
+Charlie Kawwas: Sure. So on the CapEx side, as we've been sharing with you, Hock and I, for several quarters, we continue to invest in our factories. Substrate is what Hock talked about, which was actually going in production shortly. But also our EML, CW, and VCSEL factories, our indium phosphide factories, both in the U.S. as well as in Singapore, we're actually more than tripling them year-on-year. So we've already expanded the capacity for this year, and we're increasing it significantly for the next 2 years, and that's part of what you actually are seeing in CapEx.
+
+Hock Tan: And this one, I indicated in my remarks too, which is -- demand for lasers, whether it's EML lasers, CW lasers, is far surpassing supply out there in the industry. So we are doing our part to double down actually on capacity, and we have a fairly substantial share of this market, so to us, in our interest to enable this ecosystem of growth. On your earlier question, gigawatt -- dollars per gigawatt, it's very interesting what you're saying because keep in mind something that is very interesting, too, which is, you're right, with every generation of XPU or GPU, the performance increases. And therefore, the silicon goes for the leading edge, more expensive to produce.
+
+And so ASPs go up per XPU and per GPU. But keep in mind, as they become higher performance, their power increase per chip, per XPU or GPU, which means there are less of it of a more advanced XPU in 1 gigawatt. So what we are seeing per gigawatt is in the range of less than $30 billion, $20 billion to $30 billion per gigawatt. And we expect that to be very sustaining in that level because the power of each chip goes up. So even if we increase the price of the chip, the content in dollars is relatively stable. Just accept the fact that there's going to be a lot more gigawatts out there.
+
+But the dollars per gigawatt will remain in the $20 billion to $30 billion level of our content, but we have seen and we expect to see an acceleration in the number of gigawatts just to address the exponential compute demand required by our customers.
+
+Operator: That is all the time we have today for Q&A. I would now like to turn the call back over to Ji Yoo for any closing remarks.
+
+Ji Yoo: Thank you, Cherie. This quarter, Broadcom will be presenting at the Goldman Sachs Communacopia + Technology Conference on Tuesday, September 8. Broadcom currently plans to report its earnings for the fourth quarter and fiscal year 2026 after close of market on Wednesday, December 9, 2026. A public webcast of Broadcom's earnings conference call will follow at 2:00 p.m. Pacific. That will conclude our earnings call today. Thank you all for joining. Cherie, you may end the call.
+
+Operator: Thank you all for participating. This concludes today's program. You may now disconnect.

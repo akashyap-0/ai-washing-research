@@ -1,0 +1,250 @@
+# Copart — FY26_Q4 Earnings Call (transcript)
+
+- **Company:** Copart (CPRT); fiscal year ends July (SEC fiscalYearEnd 0731)
+- **Ticker:** CPRT
+- **CIK:** 0000900075
+- **Period:** FY26_Q4 (call held September 10, 2026; date from page DATE section)
+- **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/09/11/copart-cprt-q4-2026-earnings-call-transcript/
+- **Source type:** third_party_transcript_motley_fool_llm
+- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Source SHA-256:** e14d0026e759560e5867c42f0ba571143baac6e168c5177e750c1363c66e57a6
+- **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
+- **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing
+- **Quality warning:** Fool 2025+ layout. The page says parts were created with LLMs; text is close to but not verbatim (86.8-89.4% word match to official transcripts), the IR opening is usually dropped and analysts are often unlabeled. Tier B: not filtered or pooled until calibrated
+
+---
+
+Full Conference Call Transcript
+
+Operator: Please stand by. Good day, everyone, and welcome to the Copart Incorporated Fourth Quarter Fiscal 26 Earnings Call. Just a reminder, today's conference is being recorded. Before turning the call over to management, I will share Copart's safe harbor statement. The company's comments today include forward-looking statements within the meaning of federal securities laws. Including management's current views with respect to trends, opportunities, and uncertainties in the company's industry. These forward-looking statements involve substantial risks and uncertainties. For more detail on the risks associated with the company's business, refer you to the section titled risk factors in the company's annual report on Form 10 k for the year ended 07/31/2025.
+
+And each of the company's subsequent quarterly reports On Form 10-Q. Any forward-looking statements are made as of today, and the company has no obligation to update or revise any forward statements.
+
+A. Jayson Adair: I will now turn the call over to the company's CEO and executive chairman, A. Jayson Adair. Alright. Thank you. Well, welcome everyone to the fourth quarter earnings call for 26. I have got some prepared remarks that I will talk to and then I will turn it over to Leah C. Stearns, our CFO. And then we will open it up for questions. So I will remind you that on the prior call, I talked about the 3 pillars of growth for Copart.
+
+We will continue to focus on international expansion on insurance, We will continue to focus on whole car expansion domestically and then we will continue to invest in technology and services that assist all of our customers. Additionally, we view the differentiators for Copart as 1, we are a business that is run by founders and that has a founder's mindset. We do not think in quarters or years. We think in decades. Very long term, Number 2, I would say liquidity. When you think about how our website functions, we are constantly focused on improving, buyer activity. And I will talk more about some of the buyer data that we have got.
+
+But that liquidity continues to be a differentiator. And then in the spirit of acting like a start up, we are very fast. We are moving very quickly. And we are bringing products and services to market in quarters, not in years. So we expect to have some of that coming out in the next 4 quarters. Looking at global unit sales, we were down across the company 2.9% Domestically, that was down 5.7%. Internationally, we were up 10%. Global insurance units were down 4.2% with domestic insurance being down 7.5%. And international insurance being up 11.2%. With the exception of 1 single customer loss domestic insurance assignments would be up 2.3%.
+
+Collision claim frequency we are down 3.4% year over year This is a moderation from a high of single digit declines through 2025. Total loss frequency reached 23.3% in the second quarter. Of 2026, the highest second quarter on record up from 22.4% in the same quarter last year. Looking at severity, average collision severity was over $6.3 thousand per claim. Up nearly 8.8% year over year. Fastest in more than 3 years and the fourth straight quarter of acceleration. Repair costs are up more than 50% from 2019 levels per data from CCC. Looking at rental car rates, and that is something that obviously costs or increases the cost of repair for insurers.
+
+That rose by 4.5% year over year. Obviously, every additional day of repair and any costs associated with that increase the total cost of repair. Turning to the complexity of vehicles, I recently had a conversation with a client friend of mine that was talking about how complex cars are And there was a recent article by Parametric Technology Corporation that pointed out a military drone has 3.5 million lines of code. An Airbus aircraft has 30 million lines of code. And the Windows 10 operating system has 50 million lines of code. What makes this interesting is that a new Tesla has a approximately 100 million lines of code.
+
+So when we think about cars, they really are becoming computers on wheels. Believe total loss frequency will continue to go up. Vehicle miles traveled were up 0.27% year over year in the fourth quarter of 26. Vehicles in operation or what we refer to as the car park was up 1.6% year over year. In calendar quarter Q2 2026. Looking at insurance ASPs globally, we were up 3.1% year over year in the fourth quarter of 26 Domestically, we were up 3.7% year over year in quarter 26, and internationally, we were up 3.3% year over year in fourth quarter 26.
+
+Turning to the Manheim Used Vehicle Value Index, it was up 2.8% year over year in the fourth quarter of 26. So we are outpacing the Manheim index As we stated before, liquidity comes from buyers. And so I would like to give you some statistics now on why we believe and others believe that we have the greatest liquidity in the industry. Vehicles sold to buyers less than a year This means that 1 year or more ago, that buyer was not buying from Copart was likely not aware of Copart. Vehicles that have been sold to buyers less than a year for 2026 were 8.9% of our total vehicles. That number for fiscal year 2025 was 8.3%.
+
+So we have seen nice growth there. Expanding it out an additional year, vehicles sold to buyers that have been with Copart less than 2 years, for 2026, our total sales, they represented 21.7% of our vehicles. Now I would like to turn to vehicles sold in The US to international buyers. These are buyers outside The US. Total units sold in fiscal year 26 represent 38.2% of our units. However, more importantly, the dollars purchased, the amount of dollars that were spent on the vehicles that we sold represented 45.7% of the total amount of dollars that we sold in the vehicle. So they are obviously buying a more valuable vehicle when they are purchasing internationally.
+
+On the previous call, I spoke to AI, and I think about AI as a very important differentiator for Copart, we stated, we will continue to lower cost through automation. This is an important part of our journey. And we are very focused on that. But I think even more important is using AI to create more demand for the vehicles that we are selling. The ability for buyer to find that vehicle and to find a vehicle that matches their desired purchase, is becoming more and more important every single day.
+
+If you think about the journey of becoming aware of Copart, and signing up, becoming a member, and then from membership to bidding and then to buying, us connecting that buyer to that vehicle we believe, is more important than ever. And then finally, I think about accuracy. Every time that we can automate something and use AI, we eliminate errors and improved accuracy is 1 of our core tenants in Copart and continuing to make sure that we have less and less opportunity for mistakes. Looking at OpEx per car in Q4 26 versus Q4 25, we are up 12.7%. Leo will talk more about expense control My point is that we are focused on it.
+
+We are we are going to be working toward reducing our costs on a per car basis. Finally, let me close by talking about our most recent announcement. We have agreed to acquire ACV. 1 of the largest primarily digital automotive marketplaces in the country. ACV sells more than 800 thousand vehicles, each year, and importantly, operates with virtually no land of its own. We are excited about using our locations as staging areas for their vehicles and combining our global buyer base with their digital marketplace and remarketing technology. Copart and ACV are highly complementary.
+
+We bring physical scale, deep institutional relationships, salvage expertise, and international buyer demand, with more than 275+ locations, over 4 million vehicles sold a year, and approximately 1 million members across more than 185+ countries. ACV, brings dealer liquidity and relationships and inspections and valuation technology transacting approximately $10 billion of gross merchandise value in 2025 across more than 22 thousand+ active buyers. Together, Copart and ACV create a more complete automotive marketplace connecting the right vehicle to the right buyer through the right channel without forcing every vehicle into a single operating model. For dealers, that means 1 partner to value, manage, and dispose of virtually every used vehicle they touch.
+
+For commercial consignors like banks, rental car companies, fleet, and leasing companies, it means 1 national relationship across multiple disposition channels. Optimizing net proceeds. For buyers, it means unparalleled wholesale selection at every price point. With integrated transportation, and complete vehicle marshaling. Copart has a very strong track record of driving strong return on invested capital across the businesses it has acquired. And we view this transaction in the same framework as our past acquisitions. We expect the transaction to be accretive to earnings in the first full year and we will provide more details after it closes. We are excited about ACV's people, first culture, which fits naturally with our own culture.
+
+This is an all-cash transaction funded from cash on hand with no financing conditions. it is structured as a tender offer which supports a relatively quick and clean path to closing. It is subject to the customary conditions you would expect including regulatory review. Both boards have unanimously approved the transaction. We expect to close by the end of the calendar year. And ACV will operate as an independent subsidiary led by its existing team. I will obviously explain more after the close. With that, let me hand it over to Leah, our CFO, who will give you an update on the numbers, and then we will open it up for questions.
+
+Leah C. Stearns: Thank you, Jay, and good afternoon to everyone on the call. I will lead today with our financial results and per unit economics for the fourth quarter and fiscal year 2026. I will walk you through our US and international segments, and close with capital structure and liquidity highlights. For the fourth quarter, consolidated revenue grew to $1.2 billion up 2.4% year over year, driven by the strength in both service revenues and purchased vehicle sales. Global service revenue increased more than $13 million or 1.4%, global purchased vehicle sales increased $14 million, or 8.3%.
+
+For fiscal year 2026, revenue was $4.7 billion, up 0.4% with service revenue up $1 million, which was primarily due to increased international volumes and higher revenue per unit. As a reminder, FY 2025 included the benefit of Hurricanes Helene and Milton, Excluding the impact of these storms, FY 2026 total revenue grew 2.4%. Finally, purchased vehicle sales were up $18.4 million during the quarter or approximately 2.7%. On a per unit basis, fourth quarter revenue per unit increased 5.4% and approximately 5.7% for the full year. Average selling prices continue to expand across the platform, with global ASPs increasing 3.5%, versus the prior year quarter and 5.5% for the full year.
+
+We believe that continued growth in our ASPs reflects the strength of our auctions as our global auction liquidity continues to deliver superior outcomes for our sellers. Global gross profit for the quarter was $481 million a decrease of $28 million or 5.5%. With gross margin of 41.8%. Our gross profit declines primarily reflect the impact of cost associated with our continued investment across new products and services, including long haul delivery, TitleExpress and our dedicated wholesale facilities in the U.S. For the fiscal year, gross profit was $2.1 billion down $15.8 million or 0.8%. Was flat when you exclude the impact of cat events in 2025. Gross margin was 44.7% for the full year.
+
+Fourth quarter operating income decreased 10.6% to $368.9 million And for the fiscal year, operating income decreased 2.6% to $1.7 billion. Fourth quarter net income attributable to Copart decreased 17.4% to $327.4 million or $0.35 per diluted common share, which was down 14.6%. As a reminder, we had a onetime $13 million gain on the disposal of assets in the fourth quarter of 2025. This combined with lower interest income in the fourth quarter of 2026, which was a result of our deployment of $1.63 billion into share repurchases earlier in the fiscal year, contributed to the year over year decline in net income.
+
+The fiscal year net income attributable to Copart decreased 4.4% to $1.48 billion or $1.55 per diluted common share. On a global basis, total fourth quarter sold units declined 2.9% year over year, while fiscal 2026 units sold declined 5.5% or 3.1% excluding CAT units. For the quarter, global assignment volumes decreased 2.2% And as of year end, global inventory was down 1% from a year ago period. Turning to our U. S. Segment. Total revenue was up 0.4% in the quarter. As higher revenue per unit largely offset a decline in volume. U. S. Service revenue decreased <1% for the quarter, and <2% for the full year.
+
+With the full year decline primarily related to the onetime revenue associated with Hurricanes Helene and Milton, which was recognized in fiscal 25. And offset by an increase in revenue per car. U.S. purchased vehicle revenue was up $11.1 million or 10.9% in the quarter. With purchased vehicle gross profit up $5 million or 8.7% For the fiscal year, U. S. Purchased vehicle revenue increased $15.6 million or 3.9%. And purchased vehicle gross profit increased $2.7 million or 10.5%. For the full year, U. S. Purchased unit margins were 6.7%, representing an increase of 40 basis points compared to fiscal 25. U.S. facility-related costs increased $30 million or 7.7% in the fourth quarter.
+
+Which is a 14.2% increase on a per unit basis, and again, reflects the ongoing investments I referenced earlier. For the full fiscal year, U. U.S. facility-related costs decreased $11.8 million or 0.7%. While increasing 6.6% on a per unit basis. We continue to invest across our U. S. Business on behalf of our sellers and members enhance the products and services we offer. That being said, cost management is an equally important component of our long term strategy, and we believe we can execute on both dimensions. We are focused on managing our facility costs down on a per unit basis through focused cost management across the company.
+
+U.S. gross profit was $403.8 million down 8.3% for the quarter and down 2.7% for the fiscal year. With gross margin of 43.4% for the quarter. And 46.8% for the full year. Our U. S. Operating income was $312.2 million reflecting a 33.6% operating margin for the quarter. Total fourth quarter units sold declined 5.7% and 6.9% for the fiscal year 2026. U.S. insurance volumes decreased 7.5% in the quarter, and 8% for the fiscal year. Which is primarily a result of the industry trends around claims frequency, which Jay described a few moments ago.
+
+Beyond insurance, our diversified seller base is showing signs of inflection While our U.S. noninsurance unit volume declined 3.9% for the full fiscal year, was primarily a result of lower Copart direct units. Our non insurance unit volume returned to modest growth in the fourth quarter, up 0.2%, marking a strong sequential improvement, which we believe reflects the traction of our commercial and dealer initiatives. Our dealer units grew 5.8% in the quarter and 3.9% for the year. BluCar, which serves our bank, rental and fleet partners, expanded nearly 20% over the prior year quarter. And 2.4% for fiscal 26. With continued double digit growth across our bank and fleet customers.
+
+And Copart direct unit volume declined 11.7% in the quarter or 34.5% for the fiscal year. 2026, as we continue to optimize our principal unit strategy. U. S. Inventory was down 3.4% year over year, with the 3 main drivers being the decline in assignments of 5%, faster cycle times, experienced by our customers, and the reduction in overall aged inventory in the U.S., ASPs increased 4.2% in the quarter with full year ASPs increasing 5.5%. U. S. Insurance ASPs increased 3.7% or 5.5% for the full year. U.S. non-insurance ASPs increased 5.9% in the quarter, 5.6% for the full year, and were led by bank and finance seller ASPs, which were up 12.4% year to date.
+
+And with Copart direct ASPs, increasing 29.2% Turning to our international segment. Fourth quarter revenue grew 11.7% to $222.1 million. The primary source of growth was service revenues, up 15% for the quarter and 12.4% for the year. Driven by a 3.5% increase in fee revenue per unit and volume growth. International purchased vehicle revenue increased $2.9 million or 4.4% in the quarter. While purchased vehicle gross profit decreased $3.4 million or 22.1%. For the full year, international purchased vehicle revenue increased $2.8 million or 1%, and purchased vehicle gross profit increased $2.3 million or 4.5%. International facility related costs were up $8.8 million or 11.4% in the quarter, an increase of 1.2% on a per unit basis.
+
+And up $33.3 million or 11.2% for the fiscal year or 7.2% on a per unit basis. The profit picture for international is equally compelling. Our international gross profit increased 11.8% to $77.6 million for the quarter, at a 35% gross margin and was $301.9 million for fiscal year 2026, which was up 12.3% and drove a 35.2% margin. International operating income reached $56.8 million, representing a 25.6% operating margin. International ASPs were up 3.3% in the quarter and 7.3% on a full year basis. International insurance ASPs increased 3.3% for the quarter and 5.2% for the full year. Internationally, the story is 1 of continued momentum.
+
+Total units sold increased 10% in the quarter with insurance units up 11.2% and non insurance units up 6%. Fee units increased 11.5% for the quarter, and 4.6% for the fiscal year and were primarily driven by our UK and Canadian operations. While purchase units increased 0.2% for the quarter and declined 2.1% for the full year. For fiscal year 26, total international units grew 3.7% International inventory ended the quarter up 10.4% from a year ago period, and international assignments grew 10% in the quarter. Our performance continues to reflect the investments we are making in complementary products and services.
+
+And as I mentioned earlier, this includes TitleExpress for insurance customers, long haul delivery for our members, and dedicated wholesale facilities for our dealer and commercial. On that last point, today, we have 25 dedicated wholesale facilities colocated at existing Copart locations in the top US metro markets, which serve 80% of the addressable wholesale market. Our investments to date have included facility upgrades, the hiring of skilled technicians, and the implementation of technology capabilities to serve this segment of our customers at a superior level. And finally, turning to our capital structure and liquidity. Copart remains in an exceptionally strong financial position.
+
+As of the end of July, we had approximately $5.7 billion of liquidity comprised of $4.5 billion in cash, cash equivalents, and held to maturity securities. Plus $2.05 billion of capacity under our revolving credit facility with no debt outstanding. Our balance sheet gives us tremendous flexibility to be opportunistic investors throughout business and credit cycles. Accounting for the consideration associated with the ACV transaction, we announced a short while ago, we will still retain significant financial flexibility to drive further accretive investments. We continue to focus on driving best in class outcomes for our customers while generating superior long term returns for our shareholders. Thank you. And with that, Jan and I would be happy to take your questions.
+
+Operator: Thank you. Before pressing the star keys to ask a question. And the first question comes from the line of Bob Labick with CJS Securities. Please proceed.
+
+Bob Labick: Good afternoon and congratulations on buying a great company and getting a great management team as well.
+
+A. Jayson Adair: Thank you, Bob. We are excited about it.
+
+Bob Labick: Really exciting. And just on that, can you talk a little bit about the fit of ACV into the Copart culture? Could you guys have such a strong culture and tell us how they fit into it?
+
+A. Jayson Adair: Sure. George and I have gotten to know each other really well as well as many of his senior team. You know, it is 1 of the things I talked about. They really they have a start up mentality the way they run the company. They think very agile, and they are as noncorporate And I would say as non-large public company as you can get. They think scrappy like we do, and you have heard me use those terms in the past. We are a very scrappy company that can make decisions very quickly. And they have that same they have very much that same culture. Additionally, I would say, there is a friendship culture that they have.
+
+We are all friends in this company. We get along. I mean, we do not just get along. We hang out together. So it is 1 of those things where we are all pretty chummy, and I noticed that with them as well. So they are going to fit in perfectly. We are about winning. They are about results driven. Culture, and I think we are just going to get along great. We are going to put these 2 companies together, it is going to be-- it is going to be amazing.
+
+Bob Labick: that is great. And then you said they are gonna operate as a subsidiary. So I am assuming that means you will retain each of the brands.
+
+A. Jayson Adair: Yes, that-- we are going to-- yes for sure. We are gonna maintain both brands. But look, make no mistake. We are going to integrate buyers. We are gonna integrate the liquidity of the buyers so that they are available on both platforms. But they will be marketing that product separately They will be selling those cars on that website separately from Copart. They will be utilizing the logistics of Copart. You know, we can move a vehicle anywhere in the country in less than 24 hours, and we do it sometimes over 15 to 20 thousand times a day.
+
+So there is a bunch that we bring to the table, but there is also a bunch that they bring to the table their technology. And their buyer base. So it is-- they are going to be separate brands, but they will be integrated on some level. Between, you know, between buyers and experiences, that kind of thing. But, again, separately, separate websites, separately operating.
+
+Bob Labick: Okay. Great. And last 1 for me. I will jump back. I promise. But obviously, you already have some whole cars, and you have massive auction liquidity. Just thinking over the next several years, how does growing your liquidity in whole car and going up value in dealer to dealer Ultimately, ultimately benefit your insurance customers as well.
+
+A. Jayson Adair: Well, I think it is just going to-- it is obvious it is going I mean, I feel like it is a loaded question. You just you knew the answer, but you want me to answer it anyway. It is obvious that as we bring in more independent dealers yes. You are right. We have a huge number of independent dealers today as we bring in more independent dealers. In their case, more franchise dealers. Have more franchise dealers than we do. So as we bring in more of those buyers, that will improve returns, especially when you start to look at insurance vehicles.
+
+More often than not now, you are seeing cars that do not look like they should have been totaled, but they are economic totals. And so while they are still drivable, while they are repairable, they are economically totaled. So that is going to help on that front. On their units, they have a certain amount of trade ins that are on the lower end that our international buyers, especially Mexico, just love those vehicles. And so given our network, you know, 1 of the things that you challenge logistically is if you buy 50 cars from dealerships, and they are staying at the dealership, how does a 9 car get in there to pick those up?
+
+With Copart, we can move those vehicles over to Copart, and then a 9 car coming through can pick those up on their time and bring them down to Mexico or bring them to a port where they are gonna be shipped. So the international play and the logistics play is going to become real powerful.
+
+Bob Labick: that is great. Really exciting stuff. Thanks, Jay.
+
+A. Jayson Adair: Thank you. Thanks, Bob.
+
+Operator: The next question comes from the line of Craig Kennison with Baird. Please proceed.
+
+Craig Kennison: Hey, good afternoon. Thank you for taking my question as well. Wanted to ask, Jay, I am trying to anticipate, I guess, where you may want to invest in ACV to accelerate the growth plan Sounds like you plan to leverage existing land Do you need to invest in people or technology or do you need new parts of the business like wholesale financing or intend to get into reconditioning? Just trying to get the scope and scale of where your investments may be Sure.
+
+A. Jayson Adair: Some of the investment, Craig, is gonna be in training. So we have got a we have got to bring the ACV folks up to speed on what Copart can do and what offerings we have, and we have got to do the same thing for Copart. So we have got to bring some of the Copart folks up to speed on what ACV products and services are Some of the investment will be in making areas for our facilities that are specialty for ACV. So that they are not considered Copart areas. They will be part partitioned off and separated so that they are for ACV. And then part of the investment will be technology.
+
+We are going to-- you know, we are going to keep-- we are-- we are doubling down on tech right now. I mean, there is no question about that. We are there is a buzz at Copart right now about all that we are accomplishing and that getting done at Copart on the technology front, and that will continue with this deal. So you will see a continued investment in ACV as well as Copart on tech and making tech that enables the buyer to come in and access both products. So they are separate, but they feel-- they feel connected.
+
+Craig Kennison: Thank you. And then with respect to your core operations, Jay, I think you mentioned your operating costs per vehicle were they were up 12%. And you had a plan to address that. Can you help us understand that plan?
+
+A. Jayson Adair: I mean, we are on it. that is really all I can tell you. We are aware of it. We have identified it. And we are on it. We are gonna be focusing on reducing cost. And getting that cost down. And so, you know, in just focusing on the cost, that is gonna be 1 piece of it. The other side is as we bring more units through, we are gonna leverage those costs through more units. So the per car, I fully anticipate per car cost to go down.
+
+Craig Kennison: And on that unit side, I know you mentioned 1 customer loss, but has the drama died down Or are there still RFPs out there that lead to uncertainty?
+
+A. Jayson Adair: You know, I do not think there is any drama. I mean, if anything, there is swagger maybe right now is what I would say at Copart. We are pretty pumped up about where we are headed. And we have got we have got a lot of great people that are kicking ass, and that is going to continue. that is not gonna change. And I feel wonderful about our relationships with our existing customers. So, everything's good. I do not I do not really have anything that I would say right now is drama. I think everything's really positive.
+
+Craig Kennison: Great. Well, thank you.
+
+A. Jayson Adair: Thanks, Craig.
+
+Operator: The next question comes from the line of Chris Bottiglieri with BNP Paribas. Please proceed.
+
+Chris Bottiglieri: Hey. This is Chris Davis on for Chris. Jay, first 1 for me is how should we think about opportunities for future M&A from here? You think this acquisition precludes you from doing another deal of substantial size for a little while. I know there were some rumors floating around for other opportunities. Towards tech services. So I just wanted to your thoughts on other acquisitions and maybe SaaS based models that could further improve your access to data from here.
+
+A. Jayson Adair: No, I do not think this prohibits us from doing any future acquisitions. We are looking at other businesses that we may want to acquire in the auction space. So you know, we have got a lot of options. Even with this deal done, we have got over $2 billion of cash on our balance sheet. So I think we are in a great spot. What really matters to me is that we buy companies that make sense that fit in with Copart, and that Copart can add a lot of value. I am not really big on buying businesses that are you know, I am not gonna go out and buy hotels tomorrow.
+
+Because Copart you know, books hotel rooms across the country. that is not that is not synergistic enough. In this case, this is gonna be a sharing of customers, sharing of buyers, Remember, we do a bunch of wholesale today already. A bunch of the customers that are with ACV are with Copart. So we are sharing customers. We are we are we are we are sharing buyers in some cases, and now we have the ability to put this network of facilities and logistics network. By the way, ACV's got a logistics engine internally that they have developed as well. So there is a lot of benefit here.
+
+If there is something in the future that has similar benefit, we will look at it.
+
+Chris Bottiglieri: Got it. that is helpful. And then I think thinking about that international pillar, what is the frame-- the frame-- you know, the way to frame your thinking there? You know, is this something that you-- you know, you want to strike a balance between greater depth and expanded capabilities in existing international markets, or maybe pursuing completely new international markets? Is that you know, how should we think about that for the coming year or 2, and what role would, you know, potential bolt on M&A play into that part?
+
+A. Jayson Adair: We are profitable in all of our international markets now, and that was something that we wanted to see. But do we want to expand on the existing markets? Absolutely. Think what we said for the quarter, we were up 10%. So we want to expand in the existing markets. Do we want to expand outside of those markets into new countries? The answer is yes.
+
+Chris Bottiglieri: Got it. Thanks a lot. Appreciate it.
+
+A. Jayson Adair: You bet.
+
+Operator: The next question comes from the line of John Healy with Northcoast Research. Please proceed.
+
+John Healy: Thanks for taking my question. Jay, I wanted to ask just about how the transaction is structured with the tender offer. I know you mentioned that helps close faster. But curious if there is any sort of guardrails on the transaction Is there any sort of, like, breakup fee or is there anything that prohibits a competing tender offer that would you guys have evaluated or any parameters or, you know, I mean, any way you have kind of attempted to get deal certainty with us?
+
+A. Jayson Adair: I mean it is a publicly held company. So some of the what you would expect in terms of GoShop or breakup fees exist. But at the end of the day, think we have I think, you know, we negotiated a good deal for both of us. I think it makes sense for both companies.
+
+John Healy: Okay. Could you share with us? Because I have not seen any filings with those might be, the breakups or go shops or anything like that?
+
+A. Jayson Adair: No. No. Not really. I think it is best that it just comes out in the filings. Okay? I do not think I do not think it is I do not think it is appropriate for the call. But for 1,
+
+Analyst: But for 2, I am not a lawyer.
+
+Leah C. Stearns: So, John, the inquiry is on file, so you should be able to see the detail there.
+
+John Healy: Okay. And then, you know, you know, you guys have made a go at whole car in the past. And, you know, you have had the blue car. I think you had Copart Go. You had Copart Dealer Services. And some different iterations of things. And just curious your thoughts kind of thinking backward, You have had traction, but maybe not as big of a splash as maybe we would have thought. Or maybe hoped for. So was it just the branding And maybe that is a big part of the ACV value to you guys is just kinda keeping it distinctly and kind of their presence in the mind of dealers.
+
+Just kind of curious what you have kind of learned and in the past iterations of the whole car strategy and how that might have evolved with what you are going to do going forward? Thanks.
+
+A. Jayson Adair: Sure. Happy to do that for you. If you go back 20 years ago, literally, there was no dealer services at Copart. We founded that in 2007. And there is definitely no blue car. And yet if you look at noninsurance, it is 25% or 26%, 24%, give or take. Around a quarter. Okay. So it is roughly a quarter of our volume today. So given that, I think we have been very successful. But to get into those franchise dealers and get into the higher end trades, I think, does take a different product. An ACV is a different product than Copart. The way they inventory the vehicle all the way through to the condition report, it is different.
+
+So I think this opens up the world and our ability to do a lot more vehicles in that space.
+
+John Healy: Understood and great. Good luck with things.
+
+A. Jayson Adair: Thanks. Thank you, sir. Appreciate it.
+
+Operator: The next question comes from the line of Bret Jordan with Jefferies. Please proceed.
+
+Bret Jordan: Hey, guys. How's it going? Good. On the, you know, 1 of your peers seems to have been using price to gain some volume and I guess could you talk about what you are seeing sort of in the market on the insurance side around pricing, is behavior getting back to rational?
+
+A. Jayson Adair: I mean, look, there is you have 2 options in this business. You either generate the liquidity and get the returns on the units. That are going to generate-- you know, that are going to bring the dollars in for the customer. Or you have just got to cut pricing dramatically because you are not getting the return and that is how you offset that weakness. And at the end of the day, we do not need to play that game. We have got we have got an amazing liquidity. This is only going to make it better. We are gonna be that much stronger. In terms of our returns and our prices.
+
+I mean, think about every car that is that is not damaged or lightly damaged is gonna be put in front of thousands of dealers. I mean, that alone gets me excited. So, I am not I am not concerned about pricing per se going forward. I am focused on in improving liquidity so it is even more compelling.
+
+Bret Jordan: Great. And then I guess you mentioned ACV's bank relationships on the commercial side, giving you a physical real estate. Could you sort of expand a repo business with this relationship, or is that something just a path you do not want to-- I mean, we do not know.
+
+A. Jayson Adair: We did not we did not buy a repo business. We are not repossessing the car. We are not a business just given the bank relationships that they may have. We love selling repos. I do not think I want to be the guy on television. That picks the car up at someone's house. So I do not think we want to actually do the repo, but we love selling repos. We love picking them up from the repo lots and then auctioning them off. So we are gonna focus heavily on that.
+
+Bret Jordan: Great. Thank you.
+
+A. Jayson Adair: You bet.
+
+Operator: The next question comes from the line of Jeffrey Lick with Stephens. Please proceed.
+
+Jeff Licht: Good afternoon. Thanks for taking my question. I will add my congratulations as a great acquisition. I think you guys are going to do great with it. Thanks, Jeff. I was curious, you mentioned your real estate in your properties and kind of melding that in with ACV. And I was curious, is that along the lines of their commercial business? Or do you see a way on their dealer business as well? Obviously, part of the allure or the value of the digital business is the car sits there, those you do not have the cost of the move. Sometimes you can actually consider wholesaling it or retailing it at the same time.
+
+Do you see ways where you might actually be able to bolster the product offering on the dealer side as well using physical locations?
+
+A. Jayson Adair: Well, let me start by saying they built an amazing business selling over 800 thousand+ cars, of which the majority are sold at the dealership. That said, there are some dealers that get frustrated that the vehicles they have got limited inventory. They want the vehicles moved. So I think it is both is the answer to your question. it is going to enhance vehicles that are sold at dealerships where they need to be moved. it is gonna enhance when the buyer has bought the vehicle, but they do not want to pick it up for 2 weeks. We can move it to our location and store it until the buyer has time to get it.
+
+And then I say both because then it is also gonna help on the commercial side. So when it comes to repos, that was the last question. Repossessions cannot be kept at the repo lot and sold. They have to be brought to Copart. So we will bring them in, and then we will auctioning them off. So I think it is both.
+
+Jeff Licht: And then just a quick follow-up on international. During your introductory call, you would mentioned about Germany and how you are using that as a model on the consignment side. Was wondering it is always struck me as a little counterintuitive that Europe is not a little more into the salvage business. If you could just kind of update where that is in other countries?
+
+A. Jayson Adair: Sure. I mean there is some markets that are similar to The U. S. Model and there is some markets that are similar to the German model. And I would say the good news is that we figured out the German model. We have had The US model figured out for quite a while. But we have now got the German model figured out. So it is time to start growing and time to start expanding across Europe, and we are going to be doing that.
+
+Jeff Licht: And do you think the current growth rate you are at where you are kind of growing low double digits, that is sustainable for a real period of time?
+
+A. Jayson Adair: I never give guidance on growth. I am just telling you, as the CEO that we are going to start growing in those markets.
+
+Jeff Licht: Awesome. Thank you very much, and best of luck.
+
+A. Jayson Adair: You bet. Thank you.
+
+Operator: The next question comes from the line of John Babcock with Barclays. Please proceed.
+
+Analyst: First 1 is a clarification question. I think in the press release, you have mentioned you expect the deal to be accretive in fiscal 28. I was just quite curious because I think you might have mentioned accretive this year. So is it supposed to be accretive this year or next? Sorry, Jay.
+
+Leah C. Stearns: Well, we expect the transaction to be breakeven in the current and effectively accretive in the first full year Which will be in FY 28. Okay. Gotcha. that is helpful. And then the next-- you know, it depends. I said given there is uncertainty in terms of when it closes, we have just guided to 28 months. And then the next 1, was wondering, I just wanted a little bit of clarity on the increase in spending that you had. I was wondering how much of that is driven by your own decision to increase investments in the business versus increases in cost that you cannot control?
+
+So the majority of it is driven by the introduction of new products and services. So for example, I think $17 million of the year over year increase in our facility operations cost was driven by increased costs associated with our long haul delivery service. And again, that is a business that we typically generate a nice margin on. So from where we stand, some of this is purely discretionary. We see the revenue coming from a product like that, we are willing to forego we are we are we are willing to take on the additional cost associated with it.
+
+And the vast majority of the costs that we have incurred year over year have been associated with products and services that we have introduced for customers as well as bringing on additional capacity with new facilities. So only a small portion was related to the increase in fuel costs. For example, as a result of some of the elevated cost environment the broader economy is experiencing. Okay. And then I guess just as a follow-up to that, On the call in early July, you talked about increasing spending and I mean, that basically happened partway through the quarter.
+
+I am just kind of curious, should we expect that the magnitude of spending should increase further in the coming quarter as you start to hit more of a run rate for the quarter? Or how would you have us think about that? So we do not sorry. We do not guide specifically to cost or to any of the metrics on the P and L. But I would say we continue to see opportunities to drive growth across the new products and services that we are offering. So that, you can extrapolate your expectation. With respect to how costs will trend.
+
+Analyst: Okay. Thanks. And then just 1 last question, if you do not mind. You mentioned that you are not concerned about pricing Should we think that margins should be comparable next year? Or are there pressures that could weigh on them?
+
+A. Jayson Adair: I mean, like Leah said, I am gonna jump in because we just do not give guidance on earnings or any of that. We are very focused on making sure our customers are happy, and we are very focused on increasing buyer liquidity. And we are we are focused on cost control. We are going to try and reduce cost per car. So that is that is what we are letting the street know, and then you will see the results.
+
+Analyst: Sounds good. Thanks for the help. Thank you, John.
+
+Operator: As a reminder, if you would like to ask a question, please press the star keys. And the next question comes from the line of Jash Patwa with JPMorgan. Please proceed.
+
+Analyst: Congratulations on the acquisition announcement as well. Thank you. Just on ACV Auctions, you know, the Viper technology in particular seems like a very compelling tool I was curious if that is something you would look to deploy at the salvage yards to accelerate intake and condition reporting. And, relatedly, is there an opportunity to bring ACVs dealer to dealer wholesale auction capabilities to international markets? Thanks for the follow-up.
+
+A. Jayson Adair: We are going to look at-- we are going to look at everything that we can do internally. So we will be forming a team to see what benefits we can bring from ACV over to Copart, what benefits we can bring from Copart over to ACV. And we have I have made it very clear that we are looking at expanding domestically in whole car right now. And internationally in insurance and in salvage. And so we are gonna continue on that path.
+
+Analyst: that is fair. Thanks. And just as a quick follow-up, could you give us a refresher on RPU composition within the U.S. insurance business? I am just wondering how large a share is the fixed fee from insurance carriers today and how that has evolved over the past few years. And more broadly, as the value of your service improvements compounds, you know, with rising repair and rental car costs, is there an opportunity to capture more of that in how you are compensated and where else in the claim process do you see room to take on more for carriers? Thank you.
+
+Leah C. Stearns: So, Jash, I would say we do not speak specifically to our pricing strategy, but we certainly have had an opportunity to expand products like Title Express to our customers, which is driven an increase in revenue per unit over the course of the last several years. So we will continue to look for ways to add incremental value, for example, offering loan payoff products for our carrier customers. Those will come along with additional fee opportunities, but we will not speak specifically to the mix or how that pricing strategy is developed.
+
+Analyst: that is helpful. Thanks, and good luck. Thank you.
+
+A. Jayson Adair: Thank you.
+
+Operator: This concludes our Q and A session. And I would like to hand the call back to Jay Adair for closing remarks.
+
+A. Jayson Adair: Thanks, sir. Appreciate it. George, if you are listening, we are excited and I could not be more excited to be your partner on this. it is great to be back at Copart. I look forward to, all that we are going to do together. Again, I am going to reiterate the fact that we are focused on speed, and that we are as a team, we have got great people, and we are super fired up. So I cannot wait. To report on the next quarter. I look forward to all that we are going to do, and I thank you for attending today. Thanks so much. Bye.
+
+Operator: Thank you. This concludes today's conference. You may disconnect your lines at this time. We thank you for your participation.

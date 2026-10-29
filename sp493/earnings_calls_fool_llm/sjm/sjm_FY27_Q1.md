@@ -1,0 +1,202 @@
+# J.M. Smucker Company (The) — FY27_Q1 Earnings Call (transcript)
+
+- **Company:** J.M. Smucker Company (The) (SJM); fiscal year ends April (SEC fiscalYearEnd 0430)
+- **Ticker:** SJM
+- **CIK:** 0000091419
+- **Period:** FY27_Q1 (call held August 26, 2026; date from page DATE section)
+- **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/08/26/smucker-sjm-q1-2027-earnings-call-transcript/
+- **Source type:** third_party_transcript_motley_fool_llm
+- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Source SHA-256:** 17c8288fa28bb2ea494aee67cf2d1e542d160b51244fba839f69c0c9f228d074
+- **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
+- **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing
+- **Quality warning:** Fool 2025+ layout. The page says parts were created with LLMs; text is close to but not verbatim (86.8-89.4% word match to official transcripts), the IR opening is usually dropped and analysts are often unlabeled. Tier B: not filtered or pooled until calibrated
+
+---
+
+Full Conference Call Transcript
+
+Operator: Good morning, and welcome to the J.M. Smucker Company's Fiscal 2027 First Quarter Earnings Question-and-Answer Session. This conference call is being recorded. [Operator Instructions] I will now turn the conference call over to Crystal Beiting, Vice President, Investor Relations, Financial Planning and Analysis. Thank you. You may begin.
+
+Crystal Beiting: Good morning, and thank you for joining our fiscal 2027 first quarter earnings question-and-answer session. I hope everyone had a chance to review our results as detailed in this morning's press release and management's prepared remarks, which are available on our corporate website at jmsmucker.com. We will also post an audio replay of this call at the conclusion of this morning's Q&A session. During today's call, we may make forward-looking statements that reflect our current expectations about future plans and performance. These statements rely on assumptions and estimates, and actual results could differ materially due to risks and uncertainties. Additionally, we use non-GAAP results to evaluate performance internally.
+
+I encourage you to read the full disclosure concerning forward-looking statements and details on our non-GAAP measures in this morning's press release. Participating on this call are Mark Smucker, Chief Executive Officer, President and Chair of the Board; and Tucker Marshall, Chief Financial Officer, Executive Vice President, Frozen Handheld and Spreads and Sweet Baked Snacks. We will now open the call for questions. Operator, please queue up the first question.
+
+Operator: [Operator Instructions] Our first question is coming from Andrew Lazar from Barclays.
+
+Andrew Lazar: I guess as I understand it, it looks like you received an $0.84 tariff refund benefit in fiscal 1Q and anticipate about a $0.60 benefit for the full year, net of some incremental costs and spend back. I was wondering if you're able to give us a better sense of what's incorporated in that sort of $0.24 differential in SG&A. I guess how much is higher admin expenses for the build-out of McCalla versus higher brand spend or something else?
+
+Tucker Marshall: Andrew, yes, we did receive an $0.84 benefit from tariff refunds in our first quarter, and we are choosing to reinvest a portion of that in SG&A expenses, largely coming through administrative expense, along with some incremental marketing spend and advancing preproduction expenses associated with our McCalla, Alabama facility, all in support of the Uncrustables brand and then acknowledging too, that we would use the balance of earnings or cash to pay down debt.
+
+Andrew Lazar: Got it. Okay. Okay. And then you're still looking for coffee volume to decrease for the full year by low single digits. And I just wanted to explore this a bit more just because you've seen coffee volume actually increase despite the higher pricing more recently. So I guess with the understanding that elasticity has been modest as prices went up, why would we expect volume to weaken even as coffee shelf prices moderate from here? And maybe it's just conservatism at this point, but just curious on that.
+
+Mark Smucker: Andrew, it's Mark. Thanks for the question. You are correct. Because the commodity has continued to be very volatile, which particularly this time of year is not unusual, we just feel that it's prudent given not only the commodity, but category dynamics and the consumer environment to just think about the coffee business from a prudent perspective. I would highlight that, as you pointed out, great results in the quarter on all 3 of our key brands with Bustelo growing, supported by the Game Face campaign around soccer and then Dunkin' having relative pricing in line with where it needs to be, all of that has been supportive.
+
+But it's just, again, making sure that we're thinking about the go-forward from a prudent perspective.
+
+Operator: Next question is coming from Peter Galbo from Bank of America.
+
+Peter Galbo: If I could pick up on coffee. I think there are quite a bit of investor questions just around how you're thinking about the recent run-up on, I guess, more speculative nature of Super El Nino at this point. And there was a change in terms of how you have the outlook for the year on the pricing side to actually expecting less of a headwind on coffee price for the year to go, I think, than previously. Just how kind of the recent move in coffee prices are impacting that decision? Had you planned a larger list price decrease now you're calling back on it's [indiscernible] trade promotion?
+
+Just any additional detail on how we might think about the price piece as it relates to coffee.
+
+Mark Smucker: Sure, Peter. It's Mark. So as I just mentioned, this time of year and obviously, speculation around weather and so forth is not unusual. And we had contemplated a list price decline at the end of the fiscal and wanted to just acknowledge that the commodity, the base commodity is down versus last year, but we have not crossed key thresholds that would actually justify nor have we seen sustained deflation at this point. So having not crossed key thresholds, we won't take a list price decline at this point. But we have passed along some of that deflation to consumers in the form of trade using those levers, which is pretty normal.
+
+We will continue to watch the crop the indications are having essentially finished the harvest that the crop is healthy and there could be a surplus. But at this point, since we have not seen that flow through, we'll just pause and continue to watch where the commodity goes and again, take a prudent approach.
+
+Peter Galbo: Great. Very clear and helpful. Tucker, I noticed that in the prepared remarks, you reinserted maybe a bit more forcefully commentary around share repurchase, just given where the leverage has landed, some of that being tied to obviously the tariff refund. But maybe it felt intentional. So just curious if you can expand a little bit on potential for share repurchase, what we might be able to see, it seems like potentially this year, which again seems like a bit of a pull forward. So I'll leave it there.
+
+Tucker Marshall: Peter, we remain committed to a balanced capital deployment model where we can reinvest in the business and also return capital to shareholders. So we are on the journey to pay down about $500 million of debt this year and achieve the 3x leverage ratio, which candidly we did in this first quarter. So we're a little ahead of expectations. And we remain committed to the quarterly dividend, which we recently announced an increase. And we now have the flexibility to begin contemplating share repurchases as we move forward.
+
+Operator: Our next question is coming from Tom Palmer from JPMorgan.
+
+Thomas Palmer: Maybe just to start out, I wanted to clarify some of the COGS inflation commentary. I think it's still mid-single digits, but 100 basis points higher than previously. How much of this is just related to coffee versus other costs moving around such as freight?
+
+Tucker Marshall: Yes. We are experiencing mid-single-digit inflation as you isolate the effects of green coffee tariffs and tariff refunds. And when you think of that sort of underlying mid-single-digit inflation, we're seeing an increase from our initial expectations coming into the year, largely driven by freight and some commodity and other ingredients, and that's been factored into our guidance for the balance of the year.
+
+Thomas Palmer: Okay. And then I wanted to ask on the Frozen Handheld and Spreads segment. We have seen stronger margins the last couple of quarters. There's also -- I know the plant start-up costs here and I think maybe higher marketing. What -- I guess, how sustainable do you think about the margins we've been seeing lately in this business? And at what point do we really start to see the preproduction costs at McCalla become a factor?
+
+Tucker Marshall: Yes. We delivered a nice first quarter, both from a top line momentum standpoint and also the profitability flow through as well. As we think about the business, we continue to support growth. We now expect sort of high single-digit growth for the Uncrustables brand, total company, total venture. And as we move forward, we'll continue to support the portfolio with ongoing marketing investments and also ensuring that we continue to bring production along as we support demand. And as you can see or you may have read, we are increasing preproduction expenses for the year in support of the McCalla, Alabama facility.
+
+And so the margin profile may take a slight step back in our next few quarters, but the profile continues to remain strong.
+
+Operator: The next question is coming from Robert Moskow from TD Cowen.
+
+Robert Moskow: Maybe I'll ask about retail pet food. I think you have volume mix for dog snacks flat and -- but Milk-Bone volume mix was positive. Can you tell me a little bit more about like how you're trying to manage that overall dog snacks business, which has been kind of challenged. What -- do you have any new views on kind of the tail brands like Pup-Peroni and things like that? Like are -- they've been a drag? Do you have any specific actions to try to stabilize them? Or could there be portfolio change longer term?
+
+Mark Smucker: Sure, Rob, it's Mark. Actually, really solid quarter on dog snacks and in particular, Pup-Peroni. We still feel that the category of dog snacks is a great one. So we do want to continue to participate with the brands we have. Pup-Peroni was up 5% in net sales and 7%. So it was a strong quarter, largely driven by some brand reset, fresh, sharper marketing and some specific -- some events at some of our larger customers that were helpful. And then Milk-Bone also had a good quarter, returning it to volume growth that was supported by innovation, winning in the soft and chewy segment, good marketing there.
+
+I do -- I think we've said in quarters past that we continue to focus on continuing to stabilize the biscuit segment through messaging around dog enjoyment and functional benefits. So more to come on that. But ultimately, very positive on the dog snacks category. And then it goes without saying we had a solid quarter on cat food as well.
+
+Robert Moskow: Okay. Pardon me for getting the brands wrong. So were any of the snack brands down then? Because if Pup-Peroni is up and Milk-Bone is up, then there must be something else down.
+
+Mark Smucker: Jerky Treats was down.
+
+Operator: Next question is coming from Chris Carey from Wells Fargo Securities.
+
+Christopher Carey: I wanted to ask about expectations going into fiscal Q2, quite a sharp reversal, yet it feels like momentum is good on Frozen Handheld, comps get easier, similar dynamic on pet Away From Home is doing well, supported by Uncrustables. Is this just a substantial reversal in coffee in Q2? Or is the Sweet Baked Snacks business expected to get worse going into Q2? Can you just help frame the outlook going into the next quarter and some of the key drivers in the delta relative to the run rates that you're at right post Q1?
+
+Tucker Marshall: Yes, Chris, we do believe that there is ongoing business momentum as we head into our second quarter. And we continue to acknowledge that coffee had great volume delivery in the first quarter and that we are being very prudent in our volume assumptions in the next 9 months on that portfolio. We're also sort of reversing a contemplated list price decline and bringing back the promotional activity to get to those right price points within coffee. We see ongoing momentum in the Frozen Handheld and Spreads portfolio, largely driven by the Uncrustables sandwich. And then really, the rest of the businesses are doing what we anticipated coming into this fiscal year.
+
+And so we believe that Q2 really is coming in line with sort of the expectations and has enabled us to support sort of our guidance revision for the year.
+
+Christopher Carey: Okay. And on the Sweet Baked Snacks business specifically, is -- was Q1 more or less in line with your expectations? I don't know why it felt maybe a touch light on the top line, but I think even in that response just now, you had suggested that the business, I suppose, is still running roughly in line with your expectations. Just give us a sense of where you see the business from a top line standpoint and also margins where there's been a bit of volatility in your ability to have more visibility into the segment? And just slightly connected, and apologies for, I guess, the third one here, but how are you thinking about broader portfolio?
+
+You've been nimble about making decisions when required. I just wonder what the current state of affairs as you digest your current lineup.
+
+Mark Smucker: Chris, it's Mark. The performance on Hostess in the quarter was essentially right where we expected it to be. So making progress on the stabilization journey, recognizing the journey itself is -- it's slow and steady, but we do feel good about the progress we made. And there were a couple of bright spots, honestly, Donettes has been performing really well, outperforming, particularly in the larger bag size as well as some innovation on like the mini churro doughnuts. Also the morning time occasion seems to be very strong. And that performance on Donettes was supported largely in the U.S. retail channels.
+
+We do recognize that the convenience channel as a whole continues to be challenges in terms of traffic and we have not lapped SKU rationalization. So that might be a little bit of what you're seeing, but we do -- and then some innovation like on Suzy Q's also performing well. So a couple of bright spots. And then our goal is just to continue to make incremental progress quarter-over-quarter.
+
+Operator: Your next question today is coming from Nik Modi from RBC Capital Markets.
+
+Nik Modi: One is just on coffee. When you think about what's going on between the out-of-home and in-home, it seems like while higher income consumers are certainly enjoying themselves out-of-home, some of the lower and middle-income consumers are feeling the pressure. And I'm just wondering if, Mark, do you think there's a marketing opportunity, kind of a value kind of conscious message that you can kind of be more aggressive with just to capture some of those consumers. So I just wanted to get your thoughts on that. And then I have a second question.
+
+Mark Smucker: Nik, I like that point. I do think there's an opportunity. And we've been pretty consistent in talking about this more than 70 cups, 70% of cups consumed are consumed at home. And the fact that our portfolio meets a variety of value points for the consumer. And so we agree with you. We do think that, that will continue to be an opportunity. I would note Folgers being one of our more affordable brands had some great performance around America 250. There was some specific SKUs that we supported over the holiday period in July. And so I appreciate the feedback.
+
+Nik Modi: Great. Helpful. And then I guess this one is kind of an off-the-wall question, but some observations from recent trade shows in the pet space would suggest devices are really apps and devices are really the big kind of growth drivers, right? I think treats have been under pressure, dog has been under pressure. And it just looks like with all kind of the AI enablement and kind of tracking your pet's health more in real time. I'm just curious now that leverage is where it is, like how do you think about capital allocation in the pet space? And is that something you've ever thought about?
+
+Mark Smucker: Well, it's a good question. Strategically, we have considered over time, where can we play and where can we win. And I would say our priority is going to remain on consumables, right, things that dogs eat and cats eat. So not that we wouldn't continue to think about that. But I would say right now, it's really focused on dog snacks and cat food.
+
+Operator: Next question is coming from David Palmer from Evercore ISI.
+
+David Palmer: Fiscal '27 is already going to be an investment year. Now it looks like you have the ability to lean in a little bit more, maybe $10 million to $20 million more, I guess, as of this morning. I'm wondering, I think people are used to feeling good about investment spend because they think that easy comparisons on that spend next year just increases visibility. But I think that people are equally doubtful that there's going to be a return on investment from growth spending in the food space. And I know you're leaning in on -- or you've in the past said you're leaning in on Uncrustables, dog treats and peanut butter. Uncrustables is crushing it.
+
+I wonder if you could give some detail on the types of spending you're making on those big 3 and maybe if the incremental isn't going into those, what you're spending that on? And I have a follow-up.
+
+Mark Smucker: Dave, it's Mark. Yes, we have been very disciplined in terms of where we spend dollars, and we have tools that enable us to evaluate how much bang for the buck we get and where we're going to get incremental ROI. And with Katie Williams on board as our new Chief Marketing Officer, she brings to bear also a lot of expertise in that area, along with all of our marketers that support each of our brands. And so I feel pretty confident that we can be choiceful and prudent with the dollars and put them where we're actually going to get a meaningful return.
+
+David Palmer: And when we look at the dog treats data, peanut butter data, those are 2 areas that I would say you're going to want to stabilize going into next year. Is there a sort of cadence that we should be looking at for improvement in those 2 areas that those are 2 of the 3? And any sort of color about the -- what you're doing with Uncrustables and the frozen for soft product that seems to be working.
+
+Tucker Marshall: Yes. Dave, we remain committed to advancing all of our brands. And as you noted, in dog treats, it's important for us to continue to build the brand, Milk-Bone and continue to advance its relevance in the treating occasion, and we will continue to do that. And that's certainly in our plans and has been an objective since we stepped into this fiscal year. It's important that we demonstrate our leadership in the spreads category, in particular, with peanut butter and fruit. And then as you think about Uncrustables, it continues to be a great story. It's going to demonstrate another year of growth. It continues to demonstrate growth in traditional U.S. retail channels.
+
+And also in the Away From Home channel. We're also acknowledging that we're bringing along innovation. We're supporting brand building, and we are increasing capacity in support of ongoing demand. So it continues to be a good story. And much of what you're asking is built into our outlook and is a part of our, so to speak, blocking and tackling as we build these brands and deliver organic growth.
+
+Operator: Your next question today is coming from Max Gumport from BNP Paribas.
+
+Max Andrew Gumport: First, I just wanted to go back to Uncrustables. So there has been a very clear reacceleration in track channel data. So I was hoping you could talk about consumer and retailer reception you're seeing with regards to the fridge friendly conversion and also how the innovation that you come out with is performing.
+
+Mark Smucker: Max, thanks for the question. It's a great follow-on from David's. Yes, Uncrustables, I would sum it up this way. All the fundamentals are right. In other words, we've got new marketing, the launch of fridge friendly. So obviously, you can keep the Uncrustables stored in your fridge for 5 days. So instant consumption, if you will. Price-pack architecture is right. So just competitively, I think we're sort of in the sweet spot there. The breadth of our offerings, whether that's new flavors, some of those flavors are limited time offerings, obviously, hitting on day parts with the higher protein offerings as well.
+
+And so just the combination of all of those things has led to also stronger distribution gains and our Away From Home business is performing well, still building out our C-store presence with the larger chain customers. So I would just say it's a tale of just doing all of those important things right.
+
+Max Andrew Gumport: Great. And then a follow-up on coffee. I'm hearing your commentary about how you paused the list price cut plans and you're choosing instead to lean more into promotional activity. Just curious on Folgers specifically, we are seeing the exact opposite dynamic in terms of seeing actually non-promoted list prices come down in recent weeks and then promotional activity, both in terms of frequency and depth of promotion actually get pulled back in recent weeks. So just curious how we should be reading the data for Folgers, whether this is maybe just some weekly volatility or if there's anything else going on?
+
+Mark Smucker: Yes. Our comment around just the promotional is really thinking about the full year, right? And so we have -- because of the pass-through category, wanting to make sure that customers and consumers are benefiting from a deflationary commodity even if we're not crossing thresholds that would dictate a list price decline. So it's a bit of both, right? There is some opportunity to hold prices at a slightly lower level, but also enhance promotions.
+
+Tucker Marshall: And Matt acknowledge that in the first quarter, Folgers did grow and it effectively was sort of in line with flattish Meow Mix. And we continue to be very prudent in our volume mix assumptions for the coffee portfolio as we move forward. And we've been taking that approach consistently over the last several fiscal years.
+
+Operator: Next question is coming from Peter Grom from UBS.
+
+Peter Grom: So I wanted to just follow-up on Sweet Baked Snacks. I mean your commentary at this situation especially will be helpful. But I'm just curious from a Q4 standpoint, how much is the...
+
+Crystal Beiting: Peter, sorry to interrupt you. We were just having a tough time hearing you. You sound very muffled.
+
+Peter Grom: Is it sounds better.
+
+Crystal Beiting: That is better.
+
+Peter Grom: Yes. Sorry about that. So I wanted to just follow up on Sweet Baked Snacks. And I guess I'm just trying to understand the C-store pressure. How much of it is the traffic dynamic you mentioned versus kind of lapping of the SKU rationalization? And then you reiterated plans for stabilization. The quarter was in line with your expectations. So in that context, how should we think about top line performance evolving from here?
+
+Mark Smucker: I'll start. The traffic dynamic is -- seems to be somewhat persistent. It's hard to really pin down exactly what's driving it, but I would submit that gas prices are part of that, right, where folks are filling up their tanks, but not necessarily continuing on into the store. I think that is part of the dynamic on the traffic. So I do think we are maybe cautiously optimistic that an improvement or reduction in prices at the pump might lead to better traffic, but I think we have to -- it remains to be seen.
+
+Tucker Marshall: And with respect to the top line, on a full year basis, we're probably advancing that business to being down low single digits, and that was as expected, as anticipated. Your first 2 quarters are going to be down more than that, largely driven by lapping the SKU rationalization of a year ago. And therefore, your back half is going to feel more flattish in terms of the cadence of top line flow.
+
+Peter Grom: That's very helpful. And then maybe pivoting to peanut butter and spreads still under a bit of pressure here. So can you maybe just unpack what you're seeing from a category standpoint and then as well from a market share perspective? And then you touched on some of the actions you're taking with -- around the Jif brand. So kind of curious how you see performance evolving from here.
+
+Mark Smucker: Sure, Peter. So we do still -- we're confident in our spreads business, both peanut butter and fruit spreads. We do consider them if you think holistically with our Frozen Handheld, right? PB&J sandwiches, it's all part of the same occasion in many cases. And the softness in peanut butter in the category, we don't believe is structural. And we still have a lot of activity on Jif. We recently have refreshed the packaging on the brand. We just launched some new marketing that's only a few weeks in market that is really focused on expanding usage occasions, largely around snacking. It's pretty heavy on social right now, but there will be some broadcast media there as well.
+
+And so continuing just to lead with brand building and share of voice is important. And then addressing consumer trends like shorter ingredient decks. We just launched Jif Simply, which is actually performing very well. It's a 2 to 3 ingredient offerings of Jif, right, very simple formulas. And then we also have 4 of the top 5 natural brands. So we still feel very good about peanut butter. And then fruit spreads, we have acknowledged there's been some competitive activity, but we're at the beginning stages of a brand refresh on fruit spreads as well, starting with packaging, and that is going to extend over a couple of years.
+
+Operator: Next question is coming from Steve Powers from Deutsche Bank.
+
+Stephen Robert Powers: I wanted to ask actually on the transformation office. It was something that you called out in June as a contributor to the '27 earnings algorithm. I didn't see an update on productivity in today's release and related comments. Just maybe an update on how you're thinking about productivity and the -- maybe the pipeline that's building even as we look -- think about beyond '27.
+
+Tucker Marshall: Steve, we continue to see benefits from our transformation office. The excellent work that the teams continue to do to deliver cost and productivity and also advanced ways of working, very much resonates in our P&L. And it's also supportive in terms of helping deliver earnings. It's supportive in helping offset cost inflation, and it's also supportive in reinvesting in key platforms of the company. Rob, under his leadership now, he will continue to advance the transformation efforts. We will provide updates over time. And likely in future events and forums, we can continue to bring you and others along in those efforts.
+
+Stephen Robert Powers: Okay. Very good. And if I could ask another follow-up on Uncrustables. The strength seems broad-based, but I'm just curious if there are particular pockets, whether retail, Away From Home, et cetera, where the business is particularly ahead of your expectations more so than others? And is it that demand side of the equation that's prompted you to accelerate Phase 2 of McCalla? Or is it the -- just the mere fact that you have a little bit more financial flexibility to accelerate it? Just curious as to the drivers of that decision.
+
+Tucker Marshall: Steve, we continue to be pleased with the momentum on that brand. Uncrustables coming into the fiscal year, total company, total venture, we had an outlook of sort of mid-single digits after achieving the $1 billion ambition last fiscal year. We've increased that outlook to sort of high single digits, really largely driven through the U.S. retail channels, but also acknowledging Away From Home channel as well has improved. And our ability to continue to support the growth in that business, we have made the decision to advance some preproduction expenses to start up capacity earlier in McCalla, Alabama.
+
+Operator: Next question is coming from Scott Marks from Jefferies.
+
+Scott Marks: I wanted to just ask about something that was noted in the prepared remarks as you were talking about the Frozen Handheld and Spreads business. I think you actually said you had lower marketing spend in the quarter. So wondering if you can help us understand why that was the case? And then as you think about the incremental marketing spend for the rest of the year, it sounds like Uncrustables is one area where you're going to put some of this incremental spend. So I was wondering if you could just help us understand that dynamic as well.
+
+Tucker Marshall: Yes. In the quarter, Frozen Handheld and Spreads has a little bit of lower marketing spend. That was largely driven by the timing of Jif, but we remain committed to the marketing spend for the full year.
+
+Scott Marks: Okay. Clear. And then just as we think about the Uncrustables brand, you made a number of comments about increased expectations for the year. You commented on some of the areas for growth there. As we sit here today, do you have kind of a size of the prize, let's say, for that brand in terms of what you think your total addressable market could be for that? How big could that brand get? And for how many years do you see mid-to-high single-digit growth as we look out from today?
+
+Mark Smucker: Scott, it's Mark. We have not made any statements about how far beyond $1 billion, we believe the brand can go. I think we're just right now focused on continuing to deliver. As time goes on, we may update our projections, but having come into the year, as Tucker just highlighted, with mid-single and now seeing some momentum, that is largely driven by all of our fundamentals being right and then just continuing to invest behind the brand. But I would just pause on making any future projections, but very, very comfortable with confidence in the continued growth of that brand and there being some really nice runway ahead, both in household penetration and just addressable market.
+
+Operator: Next question is coming from Alexia Howard from Bernstein.
+
+Alexia Howard: Can I start focusing on Café Bustelo. I mean it's obviously had incredible momentum over the last few years. 23% growth this quarter is obviously still incredibly impressive, although it's a bit of a slowdown, I think, from where we were a couple of quarters ago. Are there still distribution opportunities? My understanding is that it's still fairly concentrated regionally in the U.S. Would you expect this kind of momentum to continue out to the foreseeable future?
+
+Mark Smucker: Alexia, thank you for that question. Bustelo has been a rocket ship. And I would note that the -- almost every quarter, there's been -- or every quarter, there's been double-digit growth. Sometimes it's been a little bit lumpy. So I wouldn't necessarily take the 23% as necessarily a slowdown, but it is there's a ton of runway on Bustelo. We do aspire -- it's now a #6 brand in the category. We aspire to get it into the top 4. As you point out, there is distribution expansion opportunities. We continue to expand the brand in Central and Western regions. And we've launched new roast profiles. Those have performed very well. And then recently, just some other ready-to-drink options.
+
+So the authentic Latin heritage of that brand has really unlocked something unique with Gen Z and millennial consumers that are looking for something that's a little different and -- and I would say I mentioned our Game Face marketing campaign around the soccer event during the summer that was -- that really helped to drive sales as well. So just a really exciting brand that we continue to invest in.
+
+Alexia Howard: Great. And as a follow-up, can I just ask more broadly, what are the key sort of puts and takes or uncertainties both that could surprise positively or negatively as we look out through the rest of '27. It sounds though there might be a bit of conservatism on coffee volumes understandably. Obviously, where coffee input costs is kind of an unknown at this point. But if you had to prioritize freight costs, obviously, we don't know where those are headed. If you had to prioritize the top sort of things that could surprise positively or negatively, what would those be?
+
+Tucker Marshall: Alexia, we feel that our top line and bottom line guidance ranges are balanced. But as you think about opportunities, it would be ongoing momentum in your coffee portfolio where we've been conservative on volume mix assumptions, better-than-expected sort of volume assumptions across your frozen handheld portfolio, maybe better-than-anticipated sort of expectations in your pet portfolio as well. I think some of the downside would be consumers' reaction to sort of the ongoing dynamic environment by which sort of they live. I think also you've got the ongoing cost inflation environment that we continue to navigate as well would be another area of potential sort of downside.
+
+But those would be sort of the drivers to the up and maybe some of the drivers to the down.
+
+Operator: Our next question is coming from Rob Dickerson from U.S. Bancorp.
+
+Rob Dickerson: Just a question on Uncrustables and the new facility. Is the new facility -- and you might have stated this before, and I just don't remember, so apologies if so. But is the new facility just adding kind of standard issue capacity to what you got to do with the brand, what you've already done with the brand? Or is there anything within this build that could add other variations, the product with the brand overlay, I don't know, thinking of like Mini Muffin equivalent, right, like Uncrustable minis that kids can take back to school with a big back-to-school activation next year or something like that? That's all.
+
+Mark Smucker: Rob, it's Mark. This phase of the Alabama facility, it's a second phase. It's already been built out. Basically turning it on requires us to staff it, right, and then activate it. But it is focused on base -- our core format of crimped, soft bread, Uncrustables.
+
+Rob Dickerson: Okay. Fair enough. And then I guess just a lot of questions have been asked. So thinking through kind of the next few months, obviously, we're essentially already in the back-to-school period and then we are going into Halloween, Fall Bake. Is there anything just give you the opportunity to kind of note of like strategy into back-to-school very broadly speaking, like we have some products we will be pushing more right around the back-to-school period. There's activation on different flavor on Hostess and Halloween. Anything like that just that we should be aware of?
+
+Mark Smucker: Nothing specific to call out, but a resounding yes in terms of making sure that we are taking advantage of the key promotional periods, holidays and so forth. So we'll -- as stuff comes in the market, we'll be sure to point that out to you guys.
+
+Operator: Thank you I will now turn the conference call back to management to conclude.
+
+Mark Smucker: Thank you for joining us this morning. As we have shared in our prepared remarks, our fiscal year 2027 first quarter results highlight the strength of our differentiated portfolio, disciplined execution against our strategic priorities and the investments we continue to make in our brands and capabilities. Our strategy is working and the strong foundation we have established gives us confidence in our ability to deliver long-term growth and increase shareholder value. We hope many of you will be able to join us in Boston at the Barclays Global Consumer Staples Conference in 2 weeks. A live webcast of our presentation on September 8 at 12:45 p.m. Eastern can also be accessed from our Investor Relations website.
+
+Have a great day.
+
+Operator: Everyone, this concludes our conference call for today. Thank you all for participating, and have a nice day. All parties may now disconnect.

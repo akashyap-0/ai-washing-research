@@ -1,0 +1,640 @@
+# Gen Digital — FY27_Q1 Earnings Call (transcript)
+
+- **Company:** Gen Digital (GEN); fiscal year ends March (SEC fiscalYearEnd 0328)
+- **Ticker:** GEN
+- **CIK:** 0000849399
+- **Period:** FY27_Q1 (call held August 6, 2026; date from page DATE section)
+- **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/08/13/gen-digital-gen-q1-2027-earnings-call-transcript/
+- **Source type:** third_party_transcript_motley_fool_llm
+- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Source SHA-256:** f0c7f3765cd7b3bd07e773bd7bc8ea74920933444a812ba753c74f4ecf83e926
+- **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
+- **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing
+- **Quality warning:** Fool 2025+ layout. The page says parts were created with LLMs; text is close to but not verbatim (86.8-89.4% word match to official transcripts), the IR opening is usually dropped and analysts are often unlabeled. Tier B: not filtered or pooled until calibrated
+
+---
+
+Full Conference Call Transcript
+
+Operator
+
+0: 00:00 Good afternoon, everyone. Thank you for standing by. My name is Jen, and I will be your conference operator today. Today's call is being recorded, and all lines have been placed on mute to prevent any background noise. After the speaker's remarks, there will be a question and answer session. At this time, for opening remarks, I would like to pass the call over to Ben Lu, Head of Investor Relations.
+
+Ben Lu
+
+Head of Investor Relations
+
+0: 00:24 Thank you, Jen, and good afternoon, everyone. Welcome to Gen's First Quarter Fiscal Year 2027 Earnings Call. Joining me today are Vincent Pilette, CEO, and Natalie Derse, CFO. As a reminder, there will be a replay of this call posted on the investor relations website, along with our slides and press release. I'd like to remind everyone that during the call, all references to the financial metrics are non-GAAP, and all growth rates are year-over-year and adjusted to exclude the extra fiscal week in Q1 fiscal 2026, and to include MoneyLion's stub financials in the prior year comparison.
+
+A reconciliation of non-GAAP to GAAP measures is included in our press release and earnings presentation, both of which are available on our IR website at investor.gendigital.com. We encourage investors to monitor this website as we routinely post investor-oriented information, such as news and events and financial filings.
+
+Ben Lu
+
+Head of Investor Relations
+
+0: 01:18 Today's call contains statements regarding our business, financial performance, and operations, including the impact on our business and industry that may be considered forward-looking statements, and such statements involve risks and uncertainties that may cause actual results to differ materially from our current expectations. Those expectations and statements are based on current beliefs, assumptions as of today's date, August 6th, 2026. We undertake no obligation to update these statements as a result of new information or future events. For more information, please refer to the cautionary statement in our press release and the risk factors in our filings with the SEC, and in particular, our most recent reports on Form 10-K and Form 10-Q.
+
+Now, I will turn the call over to Vincent.
+
+Vincent Pilette
+
+CEO
+
+0: 02:00 Thank you, Ben, and good afternoon, everyone. Three months ago, we guided fiscal 2027 with a structural step-up, 8%-10% revenue growth and mid-teens EPS growth. Q1 shows why we had the conviction to do it. We delivered another better-than-expected quarter and entered the rest of FY 2027 with strategy delivering double-digit growth. Let's start with the headline. Bookings and revenue grew 11%, and non-GAAP EPS grew 19%, both above guidance. Paid customers crossed 80 million, an 11th straight quarter of sequential growth. Two segments, one platform, one mission, helping people live fearlessly in an increasingly complex and ever-expanding digital world.
+
+Our job is to be the trusted partner who reduces their risks and keep them safe, confident, and empowered online and in an AI world.
+
+Vincent Pilette
+
+CEO
+
+0: 03:03 Cyber Safety and Trust-Based Solutions are both growing revenue with growth plus margin profile above 50%, and are powered by a single platform of shared proprietary data and models, modular technology, and AI-driven personalization that scale across our brands. Our customer relationships are deepening. Membership is expanding. Cross-sell is at an all-time high, and we are beginning to unlock the opportunities from embedded financial wellness and Engine partnerships. Cyber Safety, our foundation, remains competitively strong. Bookings and revenue grew mid-single digits, sustaining last year's momentum. Customers keep telling us about their AI anxiety. For Gen, that growing need for trust and safety represents a tailwind.
+
+AI is capable of taking actions on your behalf behind the scenes, which is amazing on one hand, but on the other hand, you relinquish control and transparency. On top of that, AI is turbocharging the threat cycles.
+
+Vincent Pilette
+
+CEO
+
+0: 04:14 Threats are faster, more complex, and increasingly personalized. Threat cycles, once measured in months, are now compressed to minutes, and consumers feel it. We see it in external search, our own funnel, and consumer research. AI adoption has passed 40% of U.S. consumers, yet nearly two-thirds are highly concerned about AI misusing their data, and that number is still rising. This is exactly the environment our portfolio was built for. And we meet this growing need by staying ahead, leveraging the intelligence of Gen Threat Labs, applying AI to detect and defeat emerging threats, and putting AI-native products directly in our customers' hands.
+
+This quarter, our proprietary scam protection engine blocked over half a billion scam attacks, more than 100 every second, including deepfakes and voice clones. Demand is increasingly measurable, too.
+
+Vincent Pilette
+
+CEO
+
+0: 05:15 In our own consumer research, over 60% of consumers say AI-driven scams make them more likely to pay for protection, our strongest measured purchase driver, and concerns about AI scams are climbing double digits year-over-year in the U.S., rising even faster internationally. With nearly 500 million users across 150 countries, we are positioned to capture that demand globally. We are not only seeing new demand, but also very clearly that our existing customers are choosing more protection, not less. Norton 360's higher tier memberships, combining scam detection, identity restoration, financial protection, and insurance, have scaled to nearly half a billion dollars in annualized bookings. Those deepening customer relationships are a strong reflection of these growing consumer needs.
+
+Norton cross-sell penetration rose another point to 27%. We sealed up double digits year-over-year.
+
+Vincent Pilette
+
+CEO
+
+0: 06:15 ARPU is 8%-10% higher than two years ago, and membership adoption across Norton, Avast, Avira passed 60% with retention near record highs. The conviction is clear. The future of Cyber Safety is all-in-one membership that matches the need of your digital and financial life, not point product. And we are doubling down by making the experience simpler and more personal so customers stay on top of a complex world with less effort. Our strengths are also being validated externally. Independent labs and leading reviewers continue to recognize Norton and Avast as category leaders. Best comprehensive protection, flexibility, ease of use, and performance.
+
+Recognitions such as Tom's Guide naming our Norton VPN the best for streaming or PCMag choosing Avast One as the editor's choice reinforce the competitiveness of our portfolio and the strength of our brands and offerings.
+
+Vincent Pilette
+
+CEO
+
+0: 07:16 Let me highlight one product that makes our platform strategy tangible. Norton's Financial Scan, built on MoneyLion AI, is out of beta and now rolling out into Norton 360 across our largest markets. The concept is simple. It does for customers' financial accounts what antivirus does for their devices, watching continuously and flagging the moment something is wrong. Cyber Safety is no longer only about blocking threats. It has evolved to become the front door to a deeper, more trusted customer relationship, and every financial account a customer connects is one more opportunity to add value. In Trust-Based Solutions, the same strategy is driving growth. Bookings grew 25% with identity, personal financial management, and our Engine Marketplace all contributing.
+
+LifeLock is in motion. We rebuilt the experience for a mobile-first, scam-aware consumer, and the simpler tiered experience is moving customers to higher value plans and deeper engagement.
+
+Vincent Pilette
+
+CEO
+
+0: 08:23 Retention remains at record levels, touching 90% with NPS above 70, thanks to the same playbook we have run before. Deepen the customer relationship with expanding their protection from basic credit monitoring to financial accounts to all the assets that matter in your life. MoneyLion, in its second year within Gen, is now driving the same playbook as well. Personal financial management grew faster than we expected, led by Instacash and Credit Builder Plus. With record origination and continued margin expansion is growth with discipline. Two-thirds of our PFM revenue comes from repeat customers, underscoring the customer satisfaction, loyalty, and durability and how we help manage and smooth consumers' ever-changing cash flow needs.
+
+Vincent Pilette
+
+CEO
+
+0: 09:16 Our recently launched MoneyLion One Premium membership now put Gen scam and identity protection directly in members' hands because true financial wellness is not only about improving your access to money, it is also about protecting it. More fundamentally, MoneyLion is evolving from managing today's financial moment to helping customers stay ahead of the next one, anticipating income and bills, identifying potential shortfalls early, and guiding them towards the right action. Engine, the embedded marketplace, connects consumers to the right financial offer and powers the next step in their journey.
+
+Engine had its strongest quarter yet, passing half a billion dollars in annual revenue run rate, led by a new insurance vertical built on Trellis infrastructure that we quickly integrated in just under one quarter, a core Gen capability.
+
+Vincent Pilette
+
+CEO
+
+0: 10:14 We added more than 30 new partnerships across multiple categories, drove total network inquiries to over 425 million annually, and delivered record revenue. We will continue to leverage that strength and add new verticals that address consumers' diverse financial needs. Stepping back, two proof points tie the portfolio together. Connected financial accounts passed 110 million, up from 75 million when we acquired MoneyLion, and 35% of our paid base now engages with financial wellness. Every connection is a chance to deepen the relationship over time, and as we enrich our data and broaden the catalog, their engagement turns into monetization.
+
+We are already seeing it with Engine-enabled cross-sell into our install base, on track to double by the end of fiscal 2027, giving us the confidence that the model is working and including it in our guidance race. Our AI trust layer is moving from concept to product.
+
+Vincent Pilette
+
+CEO
+
+0: 11:20 A year ago, we said trust would be the bottleneck for agentic AI as agents begin to act for consumers, from making purchases to scheduling events. That thesis is now being validated in production. Norton Neo, the world's first secure and private AI-native browser, doubled its daily active users, driven by its contextual agentic VPN. Our open source agent security engine, Sage, is now in Norton 360 and Avast One, providing multi-layer agent security to 25 million customers. We recently launched the beta of Norton Family Assistant, co-architected with xAI and supported by multiple models, handling family and financial actions inside a Gen controlled trusted envelope built on ATH, our Agent Trust Hub. This is a long game.
+
+Agentic revenue will be modest in fiscal year 2027, but Gen holds what is hard to replicate.
+
+Vincent Pilette
+
+CEO
+
+0: 12:20 Trusted brands, consumer reach, a unified data and identity platform, and customer-focused technical capability to be the consumer's trust layer for AI. The moat widens with every new model partner, agent, and connected account we deploy in our environment. Our goal is simple, make the AI economy safe and simple for our customers. AI is also making us better operators. Following our restructuring, we move faster in smaller, more accountable teams. Profit per employee, already amongst the highest at our scale, is up double digits. That leverage keeps our segments margins durable while we invest in growth. Cyber Safety operating margin remains above 60%, while Trust-Based Solutions remains at 30%, even as our fastest-growing businesses scale.
+
+Our blended margin reflects this mix, not pressure. We are reinvesting AI productivity into growth while delivering on our mid-teen's EPS growth commitments.
+
+Vincent Pilette
+
+CEO
+
+0: 13:26 Which brings me to our outlook that reaffirms a structurally higher growth trajectory. Q1 outperformance and continued momentum gives us the confidence to raise fiscal 2027 guidance to 9%-11% revenue growth and 14%-18% non-GAAP EPS growth. Beyond fiscal 2027, embedded financial wellness, partner expansion, and engine monetization will sustain the synergy ramp and long-term growth. This is a multi-year compounding model, not a one-year acceleration. Let's step back and consider the transformation. A few years ago, many wrote off Symantec Consumer Cybersecurity as structurally challenged. Today, Gen is a $5.4 billion revenue platform spanning security, privacy, identity, and financial wellness, growing revenue and EPS double digits, returning capital while building the consumer trust layer for the AI era.
+
+Along the way, we have more than quadrupled paid customers, doubled revenue, nearly tripled EPS, and returned $6 billion to shareholders while funding acquisitions along the way.
+
+Vincent Pilette
+
+CEO
+
+0: 14:39 One truth drives the strategy. Digital threats ultimately target people and their money. Cybersecurity and financial wellness are two sides of the same mission. Our job is to earn the customer's trust, unify the platform, and help people move from protection to empowerment. That is the strategy, and it is working. To our teams, I want to thank you for a strong Q1. To our shareholder, three months ago, we said fiscal 2027 would confirm a clear trajectory shift. Q1 confirms it. With that, let me turn it over to Natalie.
+
+Natalie Derse
+
+CFO
+
+0: 15:15 Thank you, Vincent, and hello, everyone. For today's call, I will walk through our Q1 fiscal 2027 results and our raised outlook for full year fiscal 2027. I will focus on non-GAAP financials and adjusted year-over-year growth rates unless otherwise stated. I want to remind everyone that Q1 last year benefited from an extra week of revenue and earnings. Therefore, I will provide commentary on growth adjusted for the extra week, as well as MoneyLion stub financials in the prior year so that the comparisons are on a like-for-like basis. Keep in mind that our original guidance, both for the top-line measure and EPS, already reflected these two adjustments. On to our results.
+
+We delivered another exceptional quarter, exceeding the high end of our guidance, driven by record bookings and revenue, high teens EPS growth, and robust free cash flow.
+
+Natalie Derse
+
+CFO
+
+0: 16:06 Q1 is our fifth consecutive quarter of double-digit bookings growth, up 11% year-over-year to $1.28 billion, while our revenues also increased 11% year-over-year to $1.34 billion, our fastest growth rate since Gen was created, with broad-based growth across our two segments. Not only was top-line better than expected, investors count on us to be diligent in driving profitability while accelerating growth. Our operating profit grew 9%, with blended operating margins stable sequentially at 50% and consistent margins across both segments, even as we meaningfully grew MoneyLion and Engine. We have and will continue to invest in multiple business lines while managing a healthy balance of top-line growth and margins.
+
+For the Cyber Safety segment, both bookings and revenue increased 4%, delivering another quarter of mid-single-digit growth. We saw growth across brands and memberships. Our higher-tier suites performance stood out in Q1.
+
+Natalie Derse
+
+CFO
+
+0: 17:15 Norton 360 is the market-leading all-in-one membership, with our highest-tier offerings seeing double-digit growth. This reinforces the value of premium offerings that bundle security, identity protection, VPN, and many other safety features. As we expand our new Avast One membership, we are applying the same customer-centric playbook to drive membership adoption, deepen engagement, and increase customer lifetime value. Cross-sells and up-sells continue to exceed our expectations, up double digits in the Norton base, with the strongest growth we've delivered in the past two years as we improve targeting across new cohorts.
+
+While we continue to refine our AI product recommender with an expanded product portfolio, enriched data, and hyper-personalization powered by the Gen platform, we believe we're just getting started and meaningful opportunities are ahead.
+
+Natalie Derse
+
+CFO
+
+0: 18:13 Cyber Safety margins remained stable at 61%, reflecting another quarter of disciplined execution as we continue to deliver on our mid-single-digit top-line growth targets while sustaining best-in-class profitability. In Trust-Based Solutions, Q1 bookings increased 25% year-over-year, while revenues grew 24% year-over-year. Identity continues to demonstrate strong momentum, and the early indicators of the impact of our reimagined LifeLock product are positive, with higher sales conversion as customers engage with the improved experience. Retention also remains healthy at nearly 90%, particularly among more mature cohorts that have experienced the full breadth of the value proposition, from monitoring their financial assets to full-service restoration, enforcing our ability to build highly trusted customer relationships.
+
+LifeLock also delivers the strongest unit economics across our portfolio, supported by highly recurring revenue, durable retention, and proven ability to drive ARPU gains through customer support and upsell.
+
+Natalie Derse
+
+CFO
+
+0: 19:24 Personal financial management growth was driven by record Instacash originations across both new and repeat customers. Our proprietary underwriting algorithm remains a critical component of the customer acquisition engine while continued optimization of loss ratios is driving performance ahead of target. The durability of this business continues to be underwritten by the fact that more than two-thirds of first-party revenue is generated by repeat customers. While the performance continues to improve, as a reminder, our Instacash receivables are sold to Sound Point, further limiting our balance sheet exposure as the business scales.
+
+Looking forward, the recent launch of MoneyLion One membership also brings many of our core identity features to members and is designed to deepen customer relationships beyond individual financial transactions through a more integrated value proposition.
+
+Natalie Derse
+
+CFO
+
+0: 20:24 While it's still early innings, MoneyLion One is the first synergistic product that brings together identity and financial wellness as users build and scale their financial lives. Engine Marketplace is quickly becoming one of our fastest-growing categories at roughly half a billion revenue run rate as we drive growth across all vectors: partners, products, verticals, and distribution. In the quarter, we added more than 30 new partners, expanded our offering with additional premium products, scaled into additional verticals like the fast-growing insurance market. We are also extending our reach through strategic relationships with leading platforms such as Equifax, providing access to new audiences and additional high-intent customer demand.
+
+As the marketplace scales, the combination of broader supply, deeper partner integration, and greater product relevance strengthens engagement and conversion while reinforcing the network effects that make Engine increasingly valuable to both consumers and partners.
+
+Natalie Derse
+
+CFO
+
+0: 21:36 Trust-Based Solutions segment margin remained stable at 30%, even as we invested behind rapid growth across identity, personal financial management, and Engine. We are increasingly excited about the many opportunities in this segment to come and will drive strong top-line growth with a disciplined investment lens. Direct revenue grew 6%, consistent with prior quarterly trends. Our partner business increased 31% and has surpassed $1 billion on an annualized run rate basis, with particular strength coming from employee benefits, which was up double digits, and our Engine Marketplace, which benefited from expanded partners and verticals.
+
+As we deploy our capabilities to drive enhancements and personalization into our product offerings, we will leverage our omnichannel approach to quickly drive expansion and adoption. Paid customers continue to increase, reaching 81 million this quarter, up from 79 million last quarter and up from 76 million a year ago.
+
+Natalie Derse
+
+CFO
+
+0: 22:46 The growth in paid customers was driven by both growth in our subscriber base, supported by continued product portfolio expansion across various consumer pain points, as well as accelerated marketplace performance from onboarding new partners and verticals. Gross margin in the quarter was 82%, slightly down entirely due to product mix. Keep in mind that some of our fastest-growing marketplace categories have a unique business model where it has slightly lower gross margin due to revenue share but also carries a lower OpEx burden. As we ramp up new partners and verticals in our Engine Marketplace, you should expect to see this mix dynamic continue to play out.
+
+Our Q1 non-GAAP operating income was $668 million, up 9% year-over-year, with margins stable sequentially at 50%. You should continue to expect us to be disciplined and rigorous with balancing our investments and spending that supports scalable revenue growth.
+
+Natalie Derse
+
+CFO
+
+0: 23:50 Total OpEx was $425 million or 32% of sales, down 60 basis points year-over-year and down 150 basis points sequentially. Sales and marketing was $284 million or 21% of revenue, which is roughly flat year-over-year, but down seasonally 250 basis points versus the prior quarter, as the second half of each fiscal year typically has higher marketing spend around events. The holidays and tax season. In marketing, one of the standout developments in Q1 was how quickly AI is becoming a real advantage in how we build and scale demand.
+
+For instance, AI is allowing us to produce AI-enabled creative and content workflows to improve efficiency and sharpen execution, while continuing to invest behind the biggest growth opportunities across the portfolio. Creative piloting in key media channels is showing 25% efficiency improvement with our ability to create twice the number of assets with AI.
+
+Natalie Derse
+
+CFO
+
+0: 24:59 R&D spending increased to $105 million, or 8% of sales, as we continue to strengthen our platform and enhance our cyber safety and identity solutions in an environment where there is increasing consumer AI angst and where digital threat surfaces are ever evolving. We continue to manage our G&A in a very disciplined manner at less than 3% of revenue. Q1 net income was $431 million, and diluted EPS was $0.71, beating the high end of our guided range of $0.68-$0.70 and increasing 19% year-over-year versus our target of 13%-17% growth. Interest expense was $119 million in Q1, and our non-GAAP tax rate remained steady at 22%.
+
+We reduced our weighted average ending share count to 603 million, down 21 million year-over-year, reflecting the impact of share repurchases.
+
+Natalie Derse
+
+CFO
+
+0: 26:04 Our philosophy of driving earnings growth faster than revenue growth continues to be our North Star. We believe this is the best way to deliver value to our shareholders by pulling multiple levers to achieve both revenue growth combined with earnings leverage and disciplined capital allocation. Turning to our balance sheet and cash flow. Q1 ending cash balance was $564 million, up from $411 million in Q4, and representing over $2 billion of liquidity when including our $1.5 billion revolver. We generated $434 million in operating cash flow and $430 million in free cash flow. We continued to de-lever below our 3x net leverage target, paying down our debt by $45 million with ending net leverage of 2.95x.
+
+We also returned $181 million of capital to shareholders in the form of $100 million of share repurchases and $81 million of dividends.
+
+Natalie Derse
+
+CFO
+
+0: 27:13 For Q1 fiscal 2027, the board of directors approved a regular quarterly cash dividend of $0.125 per common share to be paid on September 9th, 2026, for all shareholders of record as of the close of business on August 17th, 2026. Going forward, there is no change in how we view our capital allocation strategy. We will continue to operate with balance and the flexibility to simultaneously invest in growth, both organic and inorganic, strengthen our balance sheet, and return meaningful capital to shareholders. Now, let me discuss our Q2 and raised fiscal 2027 guidance and some of the assumptions that underpin it.
+
+We expect our strong Q1 momentum to carry into Q2 with revenue of $1.325 billion-$1.35 billion, up 9%-11%.
+
+Natalie Derse
+
+CFO
+
+0: 28:08 We are raising our fiscal 2027 revenue to $5.375 billion-$5.475 billion, reflecting growth of 9%-11% versus prior guidance of 8%-10% growth. We expect Q2 non-GAAP EPS to be in the range of $0.71-$0.73, representing growth of 15%-18%, and we are raising fiscal 2027 non-GAAP EPS to $2.87-$2.97, up 14%-18%. We enter this fiscal year excited about the strong momentum we are seeing across our portfolio and are even more optimistic about what lies ahead. As you can tell from our raised growth forecast for both top-line and earnings growth, this powerful combination of growth and earnings leverage gives us the confidence and capacity to invest across our integrated capabilities to further scale the business.
+
+Natalie Derse
+
+CFO
+
+0: 29:08 I want to thank our entire Gen employees around the world for their contribution to this success, and we look forward to delivering great value for our employees, customers, and shareholders. As always, thank you for your time today, and I will now turn the call back to the operator to take your questions. Operator?
+
+Operator
+
+0: 29:28 Thank you. We will now begin the question and answer session. If you would like to ask a question, please press star one to raise your hand. To withdraw your question, press star one again. We ask that you pick up your handset when asking a question to allow for optimum sound quality. If you are muted locally, please remember to unmute your device. Please stand by while we compile the Q&A roster. Your first question comes from the line of Saket Kalia with Barclays. Your line is open. Please go ahead.
+
+Ryan Powderly
+
+Analyst
+
+0: 30:07 Good evening team. This is Ryan Powderly for Saket tonight. Thanks for taking the question. Vincent, maybe to start with you. I think in the past, we've talked about Avast and the overall international business being a bit more device security weighted and earlier on in their identity journey. What have you seen from the international markets contributing to the growth and these improvements in retention rates that you're seeing at the overall company level, which has been really nice to see?
+
+Vincent Pilette
+
+CEO
+
+0: 30:33 A good question, Ryan, and thanks for the question. We actually, as you know, are very global, 150 countries from a Cyber Safety protection, and in Cyber Safety, more security anchored. We've been driving growth across all countries by expanding from that core security into the privacy and the identity space. We continue to see good momentum, adding privacy monitoring, adding other feature, dark web monitoring into the overall. We see a balanced growth, I would say a mid-single digit when you neutralize for currency. Obviously with currency momentum for now, Europe is growing higher and Asia slower, but when you pro forma that out, it's about that mid-single digit. A good expansion.
+
+Financial wellness is really concentrated in the U.S. As you know, there's a lot of opportunity to transform that category and then make that category better embedded and combined with that security need.
+
+Vincent Pilette
+
+CEO
+
+0: 31:36 As we get more proof point in the U.S., we will then extend internationally, but that's a long-term game. That's why also in my remark, I say this is not just a one-year acceleration. We see a lot of opportunities to replicate the full portfolio success and momentum we currently see in the U.S. across all of our countries.
+
+Ryan Powderly
+
+Analyst
+
+0: 31:59 Awesome. That's super helpful. Natalie, maybe from a follow-up for you. I want to just go back to the gross margin point, which I think was a helpful piece of information. Given we expect the Engine business to be one of the primary growth engines for the company as a whole, how should we think about where gross margins might trend from here, understanding that operating margins should be relatively stable, about 50%? Just how should the gross margin mix kind of evolve as we get more growth from that Engine business?
+
+Natalie Derse
+
+CFO
+
+0: 32:25 Yeah, there's a lot of dynamics going on in the Engine business. I would say MoneyLion overall, there's a lot of different relationships, whether you're talking about the supply or the demand side of that marketplace, and every relationship is different. What you can count on us to do is really optimize in terms of the quality of the inventory and making sure that we're providing the best customer experience with the best supply, and the financials will come in terms of from a balance perspective.
+
+Yes, your gross margin dynamics in the overall company are going to mix, but within each of the segments, we are very disciplined to drive margin, not only at the gross margin side, but also balancing OpEx so that we are able to really deliver strong operating margin in each of those segments.
+
+Natalie Derse
+
+CFO
+
+0: 33:12 Gross margin for us, whether you're talking about the CS side or the TBS side, very strong. The team is committed to driving as much profitability as we possibly can. Even when you mix together with Gen, we're in a very strong position.
+
+Vincent Pilette
+
+CEO
+
+0: 33:25 If I can add one dynamic within the marketplace, Ryan, it is that we have different margin profiles. I would refer to our investor event last September when Rick presented the 30-60 model. When a customer comes to Engine and when a customer is on an install base, we have the opportunity to retarget it with a first or third-party product, there's different margin profiles. The longevity of the relationship and the ability to present offers at various moments of their digital and financial lives is critical. That's why I say this is really about building that trust relationship, over time, move that to a long-term value which delivers better margin.
+
+Ryan Powderly
+
+Analyst
+
+0: 34:09
+
+Very helpful. Thanks, guys.
+
+Natalie Derse
+
+CFO
+
+0: 34:12
+
+Thank you.
+
+Operator
+
+0: 34:14 Your next question comes from the line of Richard Poland with Wells Fargo. Your line is open. Please go ahead.
+
+Richard Poland
+
+Analyst
+
+0: 34:24 Hey, thanks for taking my question. I think first one, the FY 2027 revenue midpoint, good to see that move higher. I think it was by $50 million with half of it coming in Q1 and half coming with the remainder of the year. EPS, it seems like it was mostly just flung through the Q1 upside. I guess the question is, can you kind of bridge first where the incremental revenue is coming from for the rest of the year? Should we think about it as Cyber Safety or more on the Trust-Based side of things? The follow-up is just why for the remainder of the year are we not seeing that convert to EPS?
+
+Are there any incremental investments or conservatism to just keep in mind?
+
+Vincent Pilette
+
+CEO
+
+0: 35:12 Let me first take the momentum. You're right. We raised the top line guidance to a double-digit growth rate, 10% adjusted, and by $50 million, as you mentioned. It's 40% coming from the flow through in Q1. We carried that momentum through the next quarter to a degree, and also embedded our increased confidence in the financial synergies coming from the embedded financial wellness, the $100 million I had quoted in my last earnings script, if you recall. We're getting more and more confident that the levers we have in our control to make the platform concept a reality, if you want, is getting higher and higher, so we folded that into the guidance.
+
+Vincent Pilette
+
+CEO
+
+0: 35:55 Obviously, when it comes to investing for growth and transforming the company, we're very pleased to be able to transform Gen, as I mentioned in my earnings remarks, strong transformation while delivering on our commitment, and that commitment is to grow EPS mid-teens on the now very many quarters, about 11 quarters in a row. We invest into transforming into a platform, bringing our capabilities, building AI capabilities, unifying our data, launching new products, launching new verticals. We integrated Trellis insurance capability into more than 10 partners here in the quarter, and we continue to go and expand those capabilities, and investment goes towards that growth while we fund our commitment on EPS.
+
+I guess the EPS flow too is just a result of that.
+
+Vincent Pilette
+
+CEO
+
+0: 36:45 The growth drivers for the upside, as you imagine with what I mentioned at the beginning of my answer, is coming more from that financial wellness and marketplace-oriented view, while we see very solid, sustainable momentum in cyber safety.
+
+Richard Poland
+
+Analyst
+
+0: 37:04 Thank you, guys. That's very helpful. Just to follow up on the cyber safety side, it's good to see that growth rate holding relatively stable over recent quarters. When we think about deconstructing what's holding that stable, it sounds like a lot of just continued upsell into the Norton 360. Is there anything, any context you could provide from just how maybe the new user side of things is going and just how we can think conceptually about that?
+
+Vincent Pilette
+
+CEO
+
+0: 37:36 Absolutely. First of all, we have an entire set of strategic initiatives in cyber safety. You mentioned, or I've mentioned, and you repeat it here, the move of moving to that full all-in-one membership. Cross-sell is improving, as you've heard, and then moving from a cross-sell to a full membership is also that. The highest tier plans growing double digit is showing that effect. We're not stopping there because we know we need to meet the consumers where they are at the moment of need. Perfecting our entry doors is very, very important. We obviously already have the best antivirus, which is the old stable entry door.
+
+Vincent Pilette
+
+CEO
+
+0: 38:16 Moving into that privacy, both with Norton VPN, I think you've read online all of the improvement we brought to that product, integrating anti-track, PMA, other version of protecting your privacy, understanding your personal data being exposed, giving you the opportunity to eliminate, delete your profile online to be more anonymous. I think it's all part of those new entry doors that bring consumer in. From a channel perspective, consciously expanding the channel set, moving where into the AI chat, we now have more than two-third of our brand showing up into AI type of search. We extend into and continue to reinforce new accounts with our employee benefit program. The full channel diversification is also at play.
+
+When you sum all of those seven, you cannot favor one versus the other.
+
+Vincent Pilette
+
+CEO
+
+0: 39:10 We're able to really see that long-term, continued adoption of that full security posture.
+
+Richard Poland
+
+Analyst
+
+0: 39:20
+
+Thank you very much.
+
+Operator
+
+0: 39:24 Your next question comes from the line of Meta Marshall with Morgan Stanley. Your line is open. Please go ahead.
+
+Meta Marshall
+
+Analyst
+
+0: 39:32 Great. Thanks so much. A couple of questions. Just in terms of, you noted upside from the higher tier suites, I know you guys have done some testing, but how does that inform how you think about the targeting for the MoneyLion One memberships? And then maybe as a second question, you noted investments picking up on Trust-Based Solutions, obviously given the traction that you're seeing. Should we envision that most of those are the Engine Marketplace and more on the gross margin line item, or just if you could lay out some of the investments there. Thanks.
+
+Vincent Pilette
+
+CEO
+
+0: 40:12 Very good. So definitely in Cyber Safety, you know we were the first one to come with Norton 360 full membership all-in-one for cybersecurity, and it got very strong adoption from Norton in the first 18 months. As we brought more new lines of businesses into that full Cyber Safety portfolio, we also embedded into the suites and the movement from a first-level plan to a higher tier, if you want, is long in the journey. Building the trust, building the right messaging, the right experience, proving the value of the product at all-important moment, is helping the consumer move towards that higher tier. Building that trust relationship is what we've applied to almost every asset we've brought in.
+
+MoneyLion PFM, the financial management solution is no different.
+
+Vincent Pilette
+
+CEO
+
+0: 41:09 Initially, it was essentially a transactional business at the time of the need. We also know that 80% of the victims of scam actually are people who don't have a lot of means and have financial needs. Bringing all of that together, protection and financial need, rewarding the ongoing usage with better usage or better plan or better pricing or better discount, is all part of that view. Really building on that relationship over time. We launched MoneyLion One. It got good feedback initially. It's still a little too early to project upside from that specifically, but the move towards a membership across all of our assets is part of the playbook, you'll see the same in PFM.
+
+Natalie Derse
+
+CFO
+
+0: 41:56 To your investment question, you've heard from Vincent a couple of times today, even around investing in transformation, launching new products, scaling the synergistic wins across both segments driven by the marketplace and just operating the company completely integrated. Those investments are going to come through mostly gross margin as well as we invest in the innovation, as we invest in AI, it's going to come through R&D as well. Of course, as we launch these great new products and services, we're going to go to market. So you'll most likely see us increase our sales and marketing line as well.
+
+It'll be across, I would say what I would leave you with is that we will always, we always have, and we always will have a disciplined approach as we evaluate those areas of investment. We are on a transformation.
+
+Natalie Derse
+
+CFO
+
+0: 42:51 Quarter in, quarter out, it'll be at different capacities and rates, but we'll always be disciplined, and we will always be in pursuit of accelerating sustainable revenue growth.
+
+Meta Marshall
+
+Analyst
+
+0: 43:05
+
+Great. Thank you.
+
+Operator
+
+0: 43:09 Your next question comes from the line of Dan Bergstrom with RBC. Your line is open. Please go ahead.
+
+Dan Bergstrom
+
+Analyst
+
+0: 43:17 Hey, it's Dan Bergstrom for Matt Hedberg. Thanks for taking our questions. You talked to adding new verticals in Engine. Any sense of potential adjacent areas that could be of interest to customers? With insurance, seems like you had really rapid success around integration. Is that something that could be repeatable with the Engine infrastructure?
+
+Vincent Pilette
+
+CEO
+
+0: 43:39 Yeah, very good, Dan. Thanks for your question. Definitely. You referred to adding a new vertical last quarter, or now four months ago, which is insurance. Currently, our Engine marketplace was more specific around loans and credit cards, and now adding insurance. The technology's important. AI-driven matching process, understanding the workflow of each vertical between the partner and the consumers to eliminate every friction. Our marketplace, which is not just a simple marketplace, it's an embedded marketplace with an AI matching engine under, is very important. Eliminate those friction points and making almost like a one-click process for a financial product, which as you know in this world is complicated to achieve, is the long-term strategy.
+
+We build that vertical based on the capability we had acquired from Trellis, quickly integrated, then the team did a fantastic job integrating to our current partner set.
+
+Vincent Pilette
+
+CEO
+
+0: 44:37 We already did 10 more partners active and selling. Continuously driving and expanding, it has a strong growth. You'll see us continue organically and inorganically to build those verticals. I don't want to give you any one in particular, but I'm sure they're pretty easy to think about, and almost everything that's around that protecting your digital life and financial life would be a valid candidate to look at.
+
+Dan Bergstrom
+
+Analyst
+
+0: 45:08 That's helpful. I guess realizing it's still early, can you talk to the response around Avast One and maybe more generally, the concept of a more comprehensive free tier? Is that something you've done historically or could look to do more broadly? Maybe touch on the timeline of running the 360 playbook at Avast One.
+
+Vincent Pilette
+
+CEO
+
+0: 45:30 Excellent. Excellent, Dan. You touch on many things that I want to repeat, if you don't mind. First of all, yes, we have a playbook that we've approached and developed at the thesis of the creation of Gen at the time called NortonLifeLock, which was merging two point products, security and identity protection, into Norton 360, a full membership. For a membership fee, our customers have access not only on the product from a protection perspective, but all the way to the service at the higher tiers of restoration services and insurance. A full peace of mind if you want. That has been a very successful playbook. It still at play. It's a long run.
+
+Even though the vast majority of Norton customer are in membership, they're still at various level of the tiers.
+
+Vincent Pilette
+
+CEO
+
+0: 46:14 As we evolve as a trusted partner along the journey, we keep moving them to that higher value. That playbook was the one to apply on Avast. With Avast, we acquired a few capabilities. The first one is a freemium. We know that in the consumer world, starting with a freemium, giving you a taste for the product, understanding the basic value you can have, and from there, getting to higher value that you would be ready to pay for is the business model we've acquired. We digested it. We move a few products already into freemium since we acquired Avast. There are some we have not yet.
+
+A full identity protection, we have not, and we definitely intend over time to move basic functionalities as they commoditize into an identity freemium.
+
+Vincent Pilette
+
+CEO
+
+0: 46:56 Avast One is the third dimension, which is we know the future of Cyber Safety is all-in-one. How do you move a freemium all-in-one? We decided to be a lot more a la carte. You start with an all-in-one freemium, you have a basic taste of the various different functionality, and then with the same architecture in the same product, you can decide to pay for the features that you use versus all of them. That's the strategy behind our Avast One approach. We launched it in the fall last year, have good traction in France and Germany.
+
+We're not pushing it across all countries, and we very methodically ramp and move it up, and you'll see us continue to talk about the success of Avast One as it evolves and expands across all countries.
+
+Dan Bergstrom
+
+Analyst
+
+0: 47:44
+
+Thank you.
+
+Vincent Pilette
+
+CEO
+
+0: 47:45
+
+All right.
+
+Operator
+
+0: 47:48 Your next question comes from the line of Robert Culbreth with Evercore ISI. Your line is open. Please go ahead.
+
+Vincent Pilette
+
+CEO
+
+0: 47:56
+
+Hey, Robert.
+
+Robert Culbreth
+
+Analyst
+
+0: 47:59 Great. Thank you for taking the question. I want to ask, on MoneyLion One, any sort of puts or takes from a monetization perspective versus the existing PFM offerings, or do you think about that as mainly just expanding your surface area with those customers and potentially expanding the monetization opportunity? Any opportunity do you think to bring more of the cybersecurity end of things, put those products in front of the MoneyLion customer base? Finally on cyber safety, I wanted to ask on your view of the backdrop right now, it seems like a couple times a week now we're hearing more about frontier models accidentally hacking other services.
+
+I think it was Muse Spark in the news today.
+
+Robert Culbreth
+
+Analyst
+
+0: 48:46 How are you preparing the products for what seems like it's going to be a significantly threat environment, what kind of opportunity as those threats emerge do you think that presents for consumer interest in the category? Thank you.
+
+Vincent Pilette
+
+CEO
+
+0: 49:09 Excellent question, Robert, let me take one by one. MoneyLion One expansion and strategy, again, I'll repeat what I said in my remarks, which is we're basically running the same playbook, but tailored for that specific business model. It's about building the trust relationship with the customers, dealing with their security or dealing with their financials require the same level of trust, security, and privacy. That's how we're expanding. Moving a membership structure is the long-term goal, and behind the membership, you should view that as building the value into that long-term relationship and not focusing only on a one-time transaction monetization, but maximizing the value for the consumers and for us maximizing the CLV over time.
+
+That's what MoneyLion is intending to do. For that, you need to show them that you offer more and more value at what they need.
+
+Vincent Pilette
+
+CEO
+
+0: 50:08 MoneyLion One integrating obviously the basic cash flow needs, and inside the membership, you will see us addressing various and different needs over time. Then wrapping that up with an identity and anti-scam protection, basic features at the lower level that gives you a sense of comfort at a minimum, an alert, and a better level of basic protection. Then moving that up to higher level as you grow into your financial journey.
+
+It is definitely, as all of our business, a long-term view we take on growing that relationship, and I think if some investor love in enterprise because it is bounded by multi-year contract and unlike consumer because it can change every day, our view is that by building that trust relationship, it is equivalent to the value of a long-term contract in the enterprise world. In terms of cybersecurity, definitely continue to expand.
+
+Vincent Pilette
+
+CEO
+
+0: 51:06 Our goal long term, Robert, is to continue to move up our customers through the financial journey and move from subprime to mid-prime to prime customers, introducing that financial wellness into our cyber safety customers, which we are in the process of doing. Then basically the full protection for both your digital life and financial life basically is two faces of the same coin, not even saying it separately in the overall. We right now are putting safety in front of the MoneyLion customers in the membership, which is an indirect way of monetization, but not in a direct sales process.
+
+Although we do put LifeLock into our Engine Marketplace because as you know, the marketplace is embedded into also third-party distributors that use the marketplace for their own customers, and there we sell security.
+
+Vincent Pilette
+
+CEO
+
+0: 52:00 The last point on AI, you are totally right, continue to be a very volatile, evolving environment. First, everybody embracing the curiousness and the power of AI. I would say at least in our consumer base, in our consumer research, the anxiety is at an all-time high, some of which is fed by what you read in the newspaper, including your AI model breaching into other enterprises. Even if it does not exactly concern the consumer directly, they read about it and increase the fear. That fear is supported by what we see the most relevant today, which is the veracity, the precision of the scams, and the way to fool consumers driven by AI is increased significantly.
+
+I think I mentioned it in my prepared remark, it has moved as our number one sales driver when we question our customers why they buy consumer cyber safety.
+
+Vincent Pilette
+
+CEO
+
+0: 52:55 What it means for long, long term, I cannot tell you, but I think we are right there. We use AI to protect against AI, and we will always try to stay ahead of that environment.
+
+Robert Culbreth
+
+Analyst
+
+0: 53:07
+
+Great. Thank you very much.
+
+Vincent Pilette
+
+CEO
+
+0: 53:09
+
+Yep.
+
+Operator
+
+0: 53:11 Your next question comes from the line of Joseph Gallo with Jefferies. Your line is open. Please go ahead.
+
+Grant Darling
+
+Analyst
+
+0: 53:18 Hi, this is Grant Darling on for Joe Gallo. Thanks for taking the questions and congrats on the results, guys. Stepping back when you evaluate the quarter, how much of the upside that you saw would you attribute to MoneyLion versus the rest of the business? Any more color on MoneyLion growth and what we should be benchmarking to for the rest of the year? Has this changed from prior commentary?
+
+Natalie Derse
+
+CFO
+
+0: 53:39 Hi, Grant. Thanks for the questions. The growth was pretty broad-based. I would say you can see in each of the segments, just in CS, very consistent mid-single digit rate of growth with that industry leading margin rate. Combine that with the strength that we saw in overall TBS. Those segments both outperformed, and delivering really, really strong margins, blending to a stable 50% operating margin. On a go-forward basis, you can see what we assumed in the raised full-year guidance, whether you're thinking of revenue or EPS. It's consistent acceleration on the Trust-Based Solutions side, mostly driven by the marketplace and engine.
+
+You heard from Vincent earlier that we are going to be continuously investing in the transformation and launching new products. A lot of that transformation and new product launches are coming through the MoneyLion and the TBS vertical, but I don't want to leave CS behind.
+
+Natalie Derse
+
+CFO
+
+0: 54:38 We've reimagined LifeLock. We're reimagining Norton. We're focusing on customer service in terms of as we navigate those customers through an upwards motion in the membership tiers. The cross-sell in Norton has been the best ever even since our last Analyst Day almost three years ago. Things are really, really clicking in both of those segments, and therefore the strength and the confidence that we have as we raise the full-year outlook, I expect both of those segments to deliver.
+
+Grant Darling
+
+Analyst
+
+0: 55:15 Got it. That's very helpful. Maybe just to follow up, it was great to see some of that partner strength. I just wanted to ask on the channel expansion, you think about the Copilot and Equifax integrations, certainly exposing your marketplace to large external audiences. How much is this attributing to the increased confidence in the $100 million incremental annual revenue opportunity you called out? Just any guardrail for how much that number could potentially materialize just this year?
+
+Vincent Pilette
+
+CEO
+
+0: 55:46 Very good question. Definitely the marketplace is kind of a wrapper, if you want, around our strategy and the various offering, a great way to reach the consumers at the right time in their digital journey for a financial need. We'll continue to expand on the verticals. We'll continue to expand on distribution. Equifax just went live this summer. We're working on all the integrations. That distribution expansion is more like a B2B before the B2B2C, if you want, right? It takes a little bit of time to employ, it's a long-term relationship and a great upper funnel as we keep the capability to retargeting those engine customers. Very strategic, very long-term growth.
+
+In term of the $100 million revenue synergies, it definitely contributes to a third to about half of that revenue synergies.
+
+Vincent Pilette
+
+CEO
+
+0: 56:34 You'll see us at the next event give a little bit more breakdown as we penetrate. I said second half of FY 2027 we'll be deploying, if you want more the visibility on that. A very strategic one and a long-term opportunity.
+
+Grant Darling
+
+Analyst
+
+0: 56:52
+
+Perfect. Thanks very much.
+
+Operator
+
+0: 56:57 There are no further questions at this time. I will now turn the call back to Vincent Pilette for closing remarks.
+
+Vincent Pilette
+
+CEO
+
+0: 57:04 Thank you, operator, and thank you everybody for listening. We have built a durable, capitalized, high cash flow business at the intersection of AI, safety, financial wellness, and trust. We have delivered 11 straight quarters of mid-teens EPS growth with a faster revenue growth model and a robust balance sheet. Gen is transforming while performing, or I should say, Gen is performing while transforming, and we are just getting started. Thank you for your interest and support.
+
+Operator
+
+0: 57:41 This concludes today's call. Thank you for attending. You may now disconnect.
