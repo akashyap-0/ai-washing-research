@@ -1,0 +1,290 @@
+# Fair Isaac — FY26_Q3 Earnings Call (transcript)
+
+- **Company:** Fair Isaac (FICO); fiscal year ends September (SEC fiscalYearEnd 0930)
+- **Ticker:** FICO
+- **CIK:** 0000814547
+- **Period:** FY26_Q3 (call held July 29, 2026; date from page DATE section)
+- **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/08/07/fico-fico-q3-2026-earnings-call-transcript/
+- **Source type:** third_party_transcript_motley_fool_llm
+- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Source SHA-256:** 8c5fec4946a683661e418c5edf201d46cb58eaa47de745e129f70f1e7cfbe3c1
+- **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
+- **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing
+- **Quality warning:** Fool 2025+ layout. The page says parts were created with LLMs; text is close to but not verbatim (86.8-89.4% word match to official transcripts), the IR opening is usually dropped and analysts are often unlabeled. Tier B: not filtered or pooled until calibrated
+
+---
+
+Full Conference Call Transcript
+
+Operator: Good day and welcome to the Q3 2026 FICO Earnings Conference Call. Please be advised that today's conference is being recorded. It is now my pleasure to introduce Dave Singleton. Please go ahead.
+
+Dave Singleton: Good afternoon and thank you for attending FICO's third quarter earnings call. I'm Dave Singleton, Vice President of Investor Relations and I'm joined today by our CEO, Will Lansing; and our CFO, Steve Weber. Today, we issued a press release that describes financial results compared to the prior year. On this call, management will also discuss results in comparison with the prior quarter to facilitate an understanding of the run rate of the business. Certain statements made in this presentation are forward-looking under the Private Securities Litigation Reform Act of 1995. Those statements involve many risks and uncertainties that could cause actual results to differ materially.
+
+Information concerning these risks and uncertainties is contained in the company's filings with the SEC, particularly in the risk factors and forward-looking statements portions of such filings. Copies are available from the SEC, from the FICO website or from our Investor Relations team. This call will also include statements regarding certain non-GAAP financial measures. Please refer to the company's earnings release and Regulation G schedule issued today for a reconciliation of these non-GAAP financial measures to the most comparable GAAP measure. The earnings release and Regulation G schedule are available on the Investor Relations page of the company's website at fico.com or on the SEC's website at sec.gov. A replay of this webcast will be available through July 29, 2027.
+
+Our quarterly investor presentation is available in the Investor Relations section of our website. We will refer to this presentation during today's earnings announcement. I will now turn the call over to our CEO, Will Lansing.
+
+William Lansing: Thanks, Dave and thank you, everyone, for joining us for our third quarter earnings call. With another strong quarter, we are increasing our fiscal 2026 guidance. We reported Q3 revenues of $674 million, up 26% over last year, as shown on Page 5 of our investor presentation. For the quarter, we reported $237 million in GAAP net income, up 30% and GAAP earnings of $10.45 per share, up 41% from the prior year. We reported $277 million in non-GAAP net income, up 31% and non-GAAP earnings of $12.18 per share, up 42% from the prior year. We delivered free cash flow of $370 million in our third quarter.
+
+Over the last 4 quarters, we delivered $961 million in free cash flow, an increase of 28% over the prior 4-quarter period. In Q3, we returned significant capital to shareholders through share repurchases with repurchase spending exceeding 3x the historical record quarter. Including our accelerated share repurchase plan, we bought back $1.96 billion or 1.705 million shares at an average price of $1,149 per share. At the segment level shown on Page 6, Scores segment revenues in our third quarter were $459 million, up 41% versus the prior year. While B2B Scores were the key driver of growth, we also experienced continued growth in B2C Scores. In our Software segment, we delivered $215 million in Q3 revenues, up 2% year-over-year.
+
+Results included 66% platform revenue growth and a 25% decline in non-platform revenue. Steve will provide additional revenue segment level details later. Beyond the financial results, we continue to make meaningful progress against the strategic priorities that position FICO for long-term growth. With more than 70 years of innovation, FICO has been the trusted backbone of high stakes decision-making, turning data into intelligence and intelligence into better business outcomes. That leadership continued this quarter with the GSE release of the FICO Score 10T data sets and UltraFICO general availability. Fannie Mae and Freddie Mac recently released expanded historical level data sets for FICO Score 10T, enabling mortgage ecosystem participants to independently evaluate credit score performance using real-world GSE mortgage data.
+
+Independent analysis by Milliman, a leading global actuarial and risk management firm [Audio Gap] these findings, concluding that FICO Score 10T outperforms Vantage 4 on all 3 key statistical measures of predictiveness and across every origination year studied, both individually and in aggregate. Milliman found that FICO Score 10T delivers more than a 10% predictive advantage for first-time homebuyers and more than an 8% predictive advantage over Vantage 4 for the most recent origination years, an especially important cohort because it exhibits some of the highest default rates in the data set. FICO's predictive advantage is not driven by access to different data. FICO Score 10T and Vantage 4 are built on the same underlying data sets.
+
+The comparison of the models can be found in our investor presentation on Page 10. The difference lies in FICO's decades of experience developing predictive credit risk models and how FICO transforms that data into a more accurate assessment of default risk. That predictive advantage has meaningful implications across the mortgage ecosystems. For lenders and originators, a more predictive score enables better risk assessment, more confident lending decisions, improved portfolio performance and the ability to responsibly expand access for borrowers. For investors and capital markets participants, stronger default prediction supports more accurate risk measurement, pricing confidence and ultimately a more resilient housing finance system. For consumers, it enables more precise risk-based pricing, broader access to credit and better borrowing outcomes.
+
+The FICO Score 10T Adopter Program provides lenders with historical data and makes FICO Score 10T available at no additional cost alongside classic FICO, enabling production testing and validation within existing workflows. Ecosystem participants actively opt in and FICO works directly with them to evaluate and prepare for production deployment. The program has grown to 70 lenders, spanning both conforming and nonconforming mortgage markets. The program now represents about 55% of the volume generated by the top 50 mortgage originators, $587 billion in eligible annual originations based on 2025 HMDA data and more than $1.87 trillion in eligible annual servicing. Complementing the adopter program, FICO has expanded the technology infrastructure supporting FICO Score 10T adoption.
+
+To further streamline implementation and deployment, FICO Score 10T is now integrated into Optimal Blue's market-leading mortgage platform and LoanPASS's automated product pricing and eligibility platform. These integrations enable lenders to leverage the industry's most predictive credit score throughout the mortgage life cycle, including loan eligibility, pricing, hedging, trading and portfolio evaluation. This allows lenders to adopt FICO Score 10T using the platforms and workflows they already rely on today. Now turning to UltraFICO. We recently announced the general availability of the next-generation UltraFICO Score developed in partnership with Plaid.
+
+The new score combines the FICO Score with consumer permissioned cash flow data from Plaid's network of more than 12,000 financial institutions, giving lenders a more complete view of credit risk on the same score scale they already use today. Our initial target market for this score is subprime and near-prime consumers across card, personal loan and auto lending. Our analysis shows that 79% of nonprime applicants with a history of positive account balances saw higher scores under UltraFICO, reflecting the score's ability to recognize positive financial behavior that isn't captured by traditional credit file data for this population.
+
+We also found a 7% relative increase in approvals with no incremental risk and a 15% relative performance lift for prime applicants with limited credit histories, showing that predictiveness improves beyond what traditional credit scoring alone can capture. Since general availability began just this past May, we're still in the early days of adoption. A pipeline of lender interest exists today. As we continue to build that pipeline, we expect to onboard clients for testing. Another strategic priority is the FICO Mortgage Direct Licensing Program, which is still under review by the GSEs. This remains the key milestone for the program to go live and for lenders to realize cost savings through performance model pricing.
+
+Lender interest in the program remains strong and we continue to expand reseller participation. We signed direct license agreements with partners and resellers representing about 60% of mortgage volume and we're in active negotiations with the remaining material resellers that would bring us closer to 90% of mortgage volume once finalized. This past quarter, we hosted FICO World 2026, where customers and partners echoed a consistent theme. AI adoption is accelerating at an unprecedented pace, reshaping how businesses operate and how consumers interact with financial institutions. Three structural forces are driving this shift, the need to operationalize AI at enterprise scale, rising regulatory demands for governance and explainability and evolving customer expectations for personalized real-time decisions as AI agents emerge.
+
+For our customers, the real challenge is not investing in AI or experimenting with AI. It's turning their AI investment into business outcomes and measuring business value while keeping every decision governed, explainable and auditable. Customers are answering the challenge by integrating FICO Platform, the world's leading AI decisioning platform for the financial services industry into their enterprise architecture and building their business solutions on FICO Platform. The FICO Platform is differentiated by a number of things. First, FICO leverages 70 years of domain expertise in financial services. Second, FICO Platform benefits from proprietary data sets such as our fraud consortium data spanning thousands of financial institutions.
+
+Third, FICO Platform clients that leverage multiple use cases benefit from a compounding feedback loop that can create a more complete picture of the customer, utilizing the always-on and always available AI-powered customer profile engine. Fourth, our FICO Platform architecture enables responsible AI through decisions that are auditable, transparent and explainable, allowing clients to more easily adhere to governance and regulatory requirements. Fifth, FICO Platform decisioning capabilities are deeply embedded into enterprise workflows, delivering complex decisions in real time at scale in milliseconds and with a high degree of reliability. Our investments are focused on development and distribution of market-leading and differentiated intellectual property.
+
+These include the development of FICO Platform and technologies such as focused sequence models and focused language models. This requires limited CapEx as we leverage cloud providers for scalability. We continue to deliver healthy year-over-year growth in bookings, ARR, DBNRR and enterprise platform clients, demonstrating real-world value for our customers and tangible results from our investments. Our near-term focus has been on driving top line growth, while our long-term focus is on driving margin expansion. We've advanced 2 initiatives that will support these objectives. First, in July, we expanded our collaboration with Accenture by pairing the FICO Platform with Accenture's experience in risk, AI and industry operations.
+
+This partnership will help enterprises turn investments into real business results, faster decisions, stronger risk controls and outcomes that hold up under regulatory scrutiny. Our immediate focus is go-to-market and enablement with a phased-in geographic rollout. Second, later this calendar year, we anticipate the general availability of our next-generation FICO Platform, which includes our enterprise fraud solution. With incremental IP and expanded distribution, we anticipate greater penetration of FICO Platform within our current 500 named target accounts and an expansion of our operating market beyond those accounts. I'll now pass this to Steve to provide further financial details.
+
+Steven Weber: Thanks, Will and good afternoon, everyone. As Will mentioned, our Scores segment revenues for the quarter were $459 million, up 41% from the prior year. As shown on Page 17 of our presentation, B2B revenues were up 49%, primarily attributable to a higher mortgage origination score unit price. In the prior year quarter, FICO recognized approximately $16 million on a multiyear U.S. license renewal on our insurance score product. Normalizing for that, [indiscernible] Scores revenues were up 49% and B2B revenues grew 59%, respectively. Our B2C revenues were up 5% versus the prior year. In our mortgage origination scores business, third quarter volumes grew low single digit versus the prior year.
+
+Our mortgage originations revenues were up 97% from the prior year. Mortgage origination revenues accounted for 71% of B2B revenues and 62% of total Scores revenues. Auto originations revenues were up 15%, while credit card, personal loan and other originations revenues were up 9% from the prior year. For your reference, Page 18 of our presentation provides quarterly trending for Scores segment metrics. Turning to our Software segment. Our software ACV bookings for the quarter were $29 million, as shown on Page 19 of the presentation. On a trailing 12-month basis, ACV bookings reached $128 million this quarter, an increase of 39% from the same period last year. We continue to see strong growth in our sales pipeline.
+
+Our total software ARR, as shown on Page 20, was $816 million, a 10% increase over the prior year. Platform ARR grew 62% versus the prior year to $413 million and represented 51% of our total Q3 '26 ARR, while non-platform declined 17% to $403 million for the quarter. For the first time, platform ARR dollars exceed non-platform ARR dollars, marking an important milestone that reflects the successful execution of our long-term strategy and the returns we are realizing from our strategic investments. Excluding migrations, platform ARR growth was in the mid-30% range, reflecting strong execution in new customer wins as well as expanded use cases and volumes from existing customers.
+
+In our non-platform business, ARR declined year-over-year, driven mostly by migrations and to a lesser extent, end-of-life products. Our dollar-based net retention rate in the quarter was 109%. Platform NRR was 148%, while our non-platform NRR was 82%. Platform NRR was driven by a combination of new use cases, increased usage of existing use cases and migrations. Third quarter Software segment revenues detailed on Page 21 were $215 million, up 2% versus the prior year. Within the segment, our SaaS revenues grew 21%, driven by continued strength in FICO Platform. Our on-premises revenues declined 16%, driven by lower point-in-time revenue as we had fewer non-platform license renewal opportunities compared to the prior year quarter.
+
+Our professional services revenues declined 24% as the prior year quarter includes revenue from the completion of a large deal milestone. Normalizing for point-in-time revenue and professional services revenue, the Software segment revenues grew 10% versus the prior year. Platform revenues exceeded non-platform revenues for the first time in FICO history. Year-over-year platform revenues grew 66%, driven by success in our land and expand strategy. Excluding migrations, platform revenues grew in the high 30% range. Non-platform revenues declined 25%, driven by migrations and lower point-in-time revenue. As a reminder, platform and non-platform revenues exclude professional services revenues.
+
+From a regional perspective, 91% of total company revenues this quarter were derived from our Americas region, which is the combination of our North America and Latin America regions. Our EMEA region generated 6% of revenues and the Asia Pacific region delivered 3%. Operating expenses for the quarter, as shown on Page 22, were $312 million this quarter compared to $289 million in the prior year, an increase of 8% quarter-over-quarter, driven by marketing for FICO World and some personnel expenses.
+
+Our updated guidance includes fourth quarter operating expenses that are modestly higher than in our third quarter due to incremental front-end loaded marketing expenses to support the launch of our new partnership with Accenture, as well as some anticipated onetime restructuring charges. Our non-GAAP operating margin, as shown on Page 23, was 62% for the quarter compared with 57% in the same quarter last year. We delivered year-over-year non-GAAP operating margin expansion of 479 basis points. The effective tax rate for the quarter was 24.6%. We expect a full year operating tax rate of 25% to 26% and an effective tax rate of around 24%. At the end of the quarter, we had $305 million in cash and marketable investments.
+
+Our total debt at quarter end was $5.58 billion with a weighted average interest rate of 5.64%. This includes the June issuance of a $1.5 billion term loan to fund the accelerated share repurchase. As a result, we expect fourth quarter interest expense to be higher than in the third quarter. As of June 30, 2026, 60% of our debt was held in senior notes, while 40% of our debt was held in term loans or a balance on our revolving line of credit, both of which are repayable at any time. As Will highlighted, we had a record quarter for returning capital to our shareholders through buybacks.
+
+As shown on Page 25, in Q3, we repurchased 1.705 million shares for a total cost of $1.96 billion. In the near term, we will be using cash to pay down debt. Beyond that, we continue to view share repurchases as an attractive use of cash. And with that, I'll turn it back to Will for his closing comments.
+
+William Lansing: Thanks, Steve. Elevated interest rates and ongoing affordability challenges continue to weigh on the mortgage market, keeping loan originations below historical norms. While the macro environment remains fluid, our strategy, innovation and execution remain disciplined and consistent. I'm quite pleased to report that today, we're raising our full year guidance as we enter the fourth quarter. As shown on Page 26 of our presentation, revenue guidance is now $2.53 billion, an increase of 20% versus prior year. GAAP net income guidance is now $850 million, with GAAP earnings per share of $36.86, an increase of 30% and 39%, respectively. Non-GAAP net income guidance is now $979 million, with non-GAAP earnings per share of $42.43.
+
+Those are increases of 33% and 42%, respectively. With that, I'll turn the call back to Dave and we'll open up for Q&A.
+
+Dave Singleton: Thanks, Will. This concludes our prepared remarks and we're now ready to take questions. Operator, please open the lines.
+
+Operator: Our first question comes from the line of Manav Patnaik with Barclays.
+
+Manav Patnaik: I just had a question on the DLP program that you said is under review by the GSEs. I believe one of them had already signed off. So just trying to appreciate why or what the next steps for the other one are? And then with respect to that, you talked about the signed agreements with 60% -- resellers representing 60% of the U.S. mortgage volumes. Is that -- are they also interested specifically in the performance fee model? Just looking for that incremental color.
+
+William Lansing: Yes. So with respect to the DLP, not a lot of new news. We're literally waiting on certification from one of the GSEs so that we can go live. The operational stuff is all set up, ready to go. And as we've pointed out, we have agreements already covering 60% of the reseller volume. We are also very close to signing 2 additional resellers. So that's -- we're literally waiting for their okay. The -- in terms of interest from the resellers in the performance model, yes, there is significant interest in the performance model. And we and they are anxious to get it out into the marketplace. We think it will be very beneficial.
+
+Manav Patnaik: Okay. And then just on the release of the 10T data, just curious, I don't know if you guys have had any feedback worth sharing from your -- from the industry or your clients in terms of that versus the other alternatives out there.
+
+William Lansing: Well, they now have an opportunity to test the 10T data as provided by the GSEs. And although we'd like to see 10T approved sooner rather than later, there is kind of a time, an elapsed time between releasing the data and doing the analysis and then approving 10T. There's a lot of interest. And as you know from my earlier remarks today, third parties like Milliman and others have done the analysis and 10T is more predictive than Vantage, pure and simple. And so there's a lot of market demand for it.
+
+Operator: And our next question comes from the line of Jason Haas with Wells Fargo.
+
+Jason Haas: As you know, there's now some data out there that shows VantageScore gaining some share in the MBS market. I'm curious from the lenders that are in that pilot program, are you seeing them drop FICO pulls at any point in the mortgage process? Or are they simply pulling the same number of FICO scores and just also adding in VantageScore? And then maybe when it's time to submit that loan to the GSE, they're submitting with a VantageScore?
+
+William Lansing: Jason, that's a very good question. So just a bit of -- to take a step back, you know that we're not crazy about lenders choice as a policy. We think it's bad policy because it encourages gaming. And that's the primary reason that one might consider buying a VantageScore is to try to deliver to a consumer a better rate when some of the time the VantageScore produces -- is higher than the FICO Score. So we knew that gaming was going to happen and that's what we're seeing is that it is happening. And to your specific question, are we seeing volume loss? No, we are not, which suggests that they're pulling both scores.
+
+And you have to pull both scores if you're going to try to do the gaming. You need both scores to figure out which one is going to deliver a bigger benefit to the consumer. So there's not a lot of surprise in what we're seeing. You got a 2-score system, which has its own kind of structural problems. You have the gaming that you would expect. You have the most sophisticated biggest players experimenting with it. But I guess the thing to remember is you need to pull both a FICO Score and a VantageScore if you're going to do the gaming. A VantageScore by itself doesn't really get you there.
+
+We -- and I guess just to round it out, we're not seeing volume loss. So I don't think it's instead of, the VantageScore is additive to the market, makes the market bigger.
+
+Jason Haas: Got it. That's very helpful. That all makes sense. Can you also just comment on the mortgage origination revenue growth decelerated on a year-over-year basis. It was also down quarter-over-quarter. I'm sure part of it was just mortgage volumes being a bit softer in 3Q. I assume that was the case. But any other comments on what's driving that? And I don't know if you could give us any sort of framework for how to think about 4Q, just to level set expectations here.
+
+Steven Weber: Yes, that's a great question. So if you look on a year-over-year basis, we were up, we said low single-digit volumes, which I think is pretty much in line. If you take all the bureaus together and average them, that's probably what you get or take them as a total universe. So I think what we're -- we're seeing similar volumes to what the bureaus are seeing. There definitely was a slowdown as the bureaus talked about as well. As rates tick up, the volumes do slow down. So that's what happened there on a year-over-year basis and that's also what caused the quarter-over-quarter. So again, it's really just about the slowdown in the mortgage market as rates crept up.
+
+Operator: And our next question comes from the line of Jeff Meuler with Baird.
+
+Jeffrey Meuler: Yes. A follow-up on that last question. Maybe this is just asking -- rehashing old news. But the 127% growth that you had last quarter, it was always hard to get there based upon market volume and based upon a $10 versus $4.95 price. So was there anything else that was inflating that number? Or is there anything like timing -- I know it's an annual calendar year rate card but anything on when timing of the pricing actually took effect last year versus this year or anything like that?
+
+Steven Weber: Yes. I think there's some of the timing piece. And I think there's some of how maybe our quarter cutoff versus what the bureau quarter cutoffs are. And when you have markets that are moving very rapidly when rates are moving, you can have -- every week can have different kind of volumes. I think you might see some of that. We don't have access to what the bureaus -- the data, the underlying data that they report. So I can't tell you. All I can tell you is the scores that were pulled by us on a year-over-year basis and what we charge for them. So that's really it.
+
+I think if you -- the shorter you parse apart the segments, if you get down to week by week, it's probably even less or month by month, there's less correlation and especially when the markets are moving like they are. But over time, it all works out but there are some quarters here and there where you see anomalies like last quarter.
+
+Operator: And our next question comes from the line of Simon Clinch with Rothschild and Redburn.
+
+Simon Alistair Clinch: Was wondering, Will, if you could talk -- you mentioned that, of course, you're not seeing any volume loss. I'm just wondering, given you are pretty much all of the market, how easy is it for you to actually monitor any sort of evidence of volume loss in that regard?
+
+William Lansing: It's not that easy. It's not -- I mean, honestly, it's not that easy. But relative to our forecast and expectations, we're not seeing it.
+
+Steven Weber: And I think you can see that in our numbers for the full quarter that we just did. I mean the volumes we saw are pretty much in line with what the volumes that the bureaus reported on a year-over-year basis. So we're pretty confident in that. But we triangulate on a lot of different factors. We see mortgage, public mortgage data. So we try to triangulate as much as we can. I mean I think we don't have exact numbers but we're pretty confident that what we're seeing is representative of what's happening.
+
+Simon Alistair Clinch: Okay. Great. And just following up on the other segments, the auto, card and personal loans. Could you just give us a bit of color as to how things are progressing there in terms of your sort of pricing initiatives, testing, elasticity of the market, et cetera?
+
+William Lansing: Yes. Well, it's obviously early in the year for us to be suggesting where the pricing will go for next year. But as you know, we are constantly exploring where and how to get revenue growth. And each year, we get a little bit better at getting more precise, more surgical, identifying the pockets where it creates the least amount of pain, has the least amount of market reaction. And so we're obviously working our way through those things this year as we always do. No final decisions have been made about other -- about any of the sectors, frankly, about mortgage or auto or card or personal. I mean we're -- it's early days.
+
+So yes, lots of analysis going on. Our pricing team, our strategy team are working on all these things but really nothing to share with you right now.
+
+Operator: Our next question comes from the line of Surinder Thind with Jefferies.
+
+Surinder Thind: Just switching gears over to platform. Can you maybe talk about just the next-generation product, the next-generation platform? And just the client conversations you're having in terms of the uptake. Obviously, it seems like there's some clients that are moving from non-platform to platform as well. And just any color on the dynamics. Is that something that we should just expect to accelerate as more features, functionality and go forward? Or how should we think about that?
+
+William Lansing: Yes, that's exactly what you should expect is for it to continue to accelerate. We've got tremendous interest and tremendous uptake. And you can see in our numbers, tremendous platform growth. We do continue to release into the market new features and functionality that just increase the use cases. And with that, the utility of the platform because it's all -- as I said earlier, it's reinforcing the more use cases you have on the platform, the more value you get out of it, the lower cost it is to bring on additional functionality. And so our whole land and expand strategy is built around that.
+
+It's like get started and then work with our customers to get the full benefit out of it. We absolutely see more growth.
+
+Surinder Thind: I guess just following on from that is, would you -- now that platform is larger than non-platform and you're also seeing some volatility from the licensing component. Would you start considering like end-of-life certain products at this point? Or how do we think about that? Understanding the strategy here. So...
+
+William Lansing: Yes, absolutely. So we've talked in the past about our end of life and our migration strategy. And at that -- in quarters past, what we've said is that we're not forcing migration. We're not cannibalizing legacy to achieve growth in the new platform. And that remains true. However, there's a tremendous benefit to FICO in simplifying our product set, our catalog. And we have some products that are old in the tooth that really should be end of life. And so we're finally getting around to doing it.
+
+We have the capacity to move our customers on those older products to newer, better products that are going to wind up, well, to the platform and to the functionality they get with the platform and they'll be able to get more functionality at a lower cost. So long answer to your question but yes, we are -- we have an active end-of-life strategy that we're working through.
+
+Operator: Our next question comes from the line of Ashish Sabadra with RBC Capital Markets.
+
+Ashish Sabadra: Just wanted to follow up on that earlier question around the VantageScore market share in conforming loans. If we look at some of the bigger players there, particularly UWM and Rocket, the market share for VantageScore seems to be closer to 20%. I understand it's both pulls initially but like are they still using both pulls when they close the loan? And also like the pace of adoption, like how does that compare to what your expectations were? And how do we -- like any thoughts around what FICO can do to regain its -- the market share?
+
+William Lansing: Yes. So I think, first of all, we have a week of numbers that have a 2 handle on them, okay? So that -- so it will take some time for us to really digest and see what the steady state is. That said, we don't anticipate a lot more than the 20s or we don't anticipate more than the 20s for Vantage share because, as I said earlier, it's really tied to the gaming. And when you do the math on what percent of the time a consumer is advantaged by using a higher VantageScore than a FICO Score, that number, which in our mind, represents a theoretical maximum is in the 20s.
+
+So I think we'll just have to wait and see how things play out. I think it is a reality that Vantage is selling scores and is -- or sending them along with FICO Scores, I should say. And gaming is a reality and we're going to have gaming. I mean the rules of the road, the environment that we're operating in is a gaming environment. The FHFA has put it in place. The GSEs have accepted it. And so that's the world we have. And so I think we can -- we should all do our own math but I can tell you our math says that the number is in the 20s.
+
+Ashish Sabadra: That's very helpful color. And from a pricing strategy perspective, is there things that FICO can implement to help influence that going forward? Or does that change your pricing strategy for '27 or going forward?
+
+William Lansing: Well, of course, there are many, many things that FICO can do and we're not in a position to share them on this call. But we -- of course, we have a lot of work going on in the strategy for everything we do, for how we monetize our IP, for how we set our prices, for what features and functionality we put in the products. All of that is on the table. And so we have lots of degrees of freedom in how to respond.
+
+Operator: And our next question comes from the line of Faiza Alwy with Deutsche Bank.
+
+Faiza Alwy: First, I just wanted to ask about the revenue guidance raise because it seems like it was pretty significant relative to what it should be this quarter. And so I'm wondering if there's anything out of the ordinary, maybe you're expecting some licensing revenues in the fourth quarter or maybe you had previously assumed the direct program would come through and that might cause a lag in revenue. So just a bit more color on what led to the revenue guidance raise.
+
+Steven Weber: Yes. I think it's more of the latter. I mean we had planned that if the DLP was to go live with the performance piece that we would push some revenues out, more revenues out. So as the year goes along, that hasn't happened yet. So there's that piece. And I think, frankly, actually, the mortgage market has been better than what we had originally guided to and our volumes are better than what we had originally guided to. We -- there were a lot of concerns about rates. The rates haven't -- they haven't gone down but they haven't gotten worse. So the mortgage markets held up fairly decently.
+
+And for a period of time, it actually popped a little bit but now it's back to kind of low single-digit growth. But that's really where it's coming from.
+
+Faiza Alwy: Okay. Understood. And then just to follow up on the Vantage pilot. I guess with 10T sort of in the picture now, how are you thinking things will evolve? Are you -- is there -- are you anticipating a separate pilot for 10T? Would lenders pull kind of all 3 scores for gaming purposes? Just curious on how you expect things to evolve from here.
+
+William Lansing: Yes, that's a great point, Faiza. It really is because if we have a 3 score market, then there's an incentive to pull all 3 scores and see which one produces the best outcome for the consumer. How it will actually shake out? It's hard to say but it's hard to imagine retiring classic and not anytime soon. And so most likely, 10T will come into the mix and you'll have classic and Vantage and 10T. And you're absolutely right. I mean that's kind of a shopping -- a score shopping environment.
+
+Faiza Alwy: Sorry, just to follow up on that. Would you charge extra -- would 10T be an additional price? Or would it -- would you offer it for free alongside FICO classic?
+
+William Lansing: As you know, today, we have a tremendous amount of volume in our 10T pilot program, right, 55%, I said earlier. So 10T is increasingly being used. 10T is the most predictive score. If you care about credit risk, 10T is the answer. If you care about gaming, 10T might be the answer some of the time, classic might be the answer some of the time and Vantage might be the answer some of the time. And that's a gaming world. In terms of how we price it and how we bundle it, today, as you know, we bundle 10T with classic. And if you pay for classic, you get 10T free.
+
+And I would imagine we would continue to do something like that because we want to encourage adoption. That said, we have not made final pricing decisions. Everything is on the table. One could easily imagine a revenue jump at FICO if we were to charge separately for the 2. But that's not the current plan. The current plan is more of a continuing with the bundle as we have it today.
+
+Operator: And our next question comes from the line of Alexander Hess with JPMorgan.
+
+Alexander EM Hess: I want to maybe ask about -- we'll start with the 10T question, of course. There have been a bunch of analyses out there -- I'm sorry, of classic FICO versus Vantage and whether or not there is a meaningful coupon differential at -- obviously, when you look at one VantageScore at a certain given number, say, at an 800, of course, there's a differential versus a FICO at 800 for a mortgage loan, given the presumably shadow LLPA grid that exists for them. But then when you correct for those sorts of factors, it seems that a lot of the spread goes away, at least by some of our team's analysis.
+
+How do you think about the mortgage level and then the pool level spreads for firms that are using the competitor's score?
+
+William Lansing: Yes, that's a great question. And frankly, I'd refer you back to your own MBS traders to really get the insights there. But as a matter of theory, there's a lot less history with Vantage. Vantage has never been through a down cycle. And so there's more uncertainty around it. And so investors, if they're rational, should analyze paper that's not as well understood. So that's the theory behind the 30 basis points estimate that we've kind of talked about in the past. How it will really shake out? It's hard to say. I mean it really kind of depends on the rationality of the market.
+
+Now today, Vantage is such a small part of the market, it's not clear that any of it is really providing real signal. As you know, what has been securitized with Vantage is largely mixed into much bigger FICO pools. So I would just encourage you to talk to your traders and see what they say. But they are rational. And so in the -- as they dig into this, I think we ought to see the differential appear.
+
+Alexander EM Hess: And then maybe thinking about the monetization across the Scores business holistically, Will, obviously, there's a price point for the FICO and mortgage applications. But there are entire pools of the market where I think you guys would say you're pretty undermonetized and even underpenetrated. Rental comes to my mind but maybe something else comes to your mind, overseas perhaps. How are you thinking about maybe -- at some point, the mortgage market does reach an equilibrium on FICO pricing. I don't know when it is. But how are you thinking about the next leg or future legs of monetization for Scores holistically and what might that look like?
+
+William Lansing: Yes. I very much appreciate that question because too often, people think about our Scores IP as being single threaded through mortgage. And yes, obviously, we have a lot of mortgage concentration but we do have a lot of opportunity in other verticals and we have a lot of opportunity with new scores that rely on different data sets that can score new populations and provide new avenues for us to make money. We're working on all those things. I mean, I mentioned UltraFICO and our partnership with Plaid. UltraFICO is a next-generation score.
+
+It's a consumer permissioned score that captures everything that you get today in a FICO Score, the credit file data and everything, all the caloric value that you get out of the credit file but it augments it with cash flow data. And when you do that, you get much better insights. And so that's very much a next-generation score. It's not widely adopted. We're just getting going now and you know that the adoption curve for new scores, it can take 4 years for a new score to really get established. And so we are very much driving ahead with UltraFICO 2. There's an UltraFICO 3 that's being readied that has some additional functionality. And so that's one example.
+
+But they're -- we're -- there's also FICO 11 in the lab. So we're constantly innovating, constantly trying to figure out how are we going to get a little more signal. There really are limits to how much more signal you can derive from the credit file. I mean that's -- it's been pretty well picked over. And so we tend to focus on other data sets to get more predictive power.
+
+Operator: And our next question comes from the line of Kyle Peterson with Needham.
+
+Kyle Peterson: I wanted to start off on the DLP program. I know we've -- gaming has come up several times on this call already. But I guess just how have those conversations with potential lenders gone? I guess, do you think there might be any slowdown in adoption from that by people that are gaming, given at least right now, if they buy from the bureaus, they can get the Vantage for free and save the buck. So I guess just any thought on if gaming would impact the adoption curve on DLP would be good.
+
+William Lansing: Yes. Good question. We don't think so. We think that the benefits of the performance model with DLP are pretty significant from a cost standpoint. What it really does is encourages more customer acquisition, more speculative effort to identify potential borrowers. It broadens the market, more access. So it does all those kinds of things, which are very desirable to the big lenders. So we see continued interest in it. And I don't think the gaming is going to put any kind of a damper in it.
+
+Kyle Peterson: Okay. That's helpful. And then I guess just a quick follow-up on capital return. Obviously, good to see the ASR big signal. And I think you guys have said a couple of times now that kind of prioritizing leverage reduction in the near term. I guess, should we interpret that as that you'll likely be more or less totally out of the market for the next couple of quarters? Or -- any color there on how much you guys want to prioritize and for how long you guys will be prioritizing debt versus incremental buybacks?
+
+Steven Weber: Yes. I mean we drive -- we have a lot of free cash flow. So we delever pretty quickly. So we'll see. We'll update you next quarter on what it looks like then and we'll determine where we're at. I mean it's probably not likely we're going to buy any shares -- additional shares beyond what's already in the ASR this quarter. But then when we give our next quarter results, we'll talk about where we are there because we do delever pretty quickly. So this is an acceleration certainly of our buyback but you've also seen our EBITDA and our cash generation grow pretty dramatically. So we're delevering even quicker than we normally did.
+
+Operator: Our next question comes from the line of George Tong with Goldman Sachs.
+
+Keen Fai Tong: You're on the cusp of having your 10T score go live pending DLP approval. Can you share feedback you've received from lenders on 10T's pricing, including the funding fee component?
+
+William Lansing: Well, we have explored the performance model and the funding fee component with lenders. And as you can imagine, there's -- some like it and some don't like it so much. And so we know that there's appetite for it. I think that is one of the driving forces behind DLP adoption, will be the opportunity to get the funding fee model and performance model. So -- but is it for everyone? No, it's not -- I mean not everyone will love it, particularly if you hardly pull -- if you don't pull many scores per closed loan, it's less attractive. I mean that kind of goes without saying.
+
+Operator: And our next question comes from the line of Ryan Griffin with BMO Capital Markets.
+
+Ryan Griffin: Just on the software business, I was wondering if you could talk about the retention rate dynamics. Is that the best way to think about that just land and expand? And then on the ACV bookings, are you still expecting those to accelerate in 2 half versus first half?
+
+William Lansing: So in reverse order, bookings, yes, we see continued acceleration. But the first part of your question is, yes, land and expand is very much our strategy. You see it in the DBNRR. We are doing a little more migration now than we were, say, 3 or 4 quarters ago. Some of our CCS business is migrating. So there's a bit more migration and that's why you saw the legacy retention rate go down. But on balance, we're pretty happy with the way it's all playing out. I mean, 146% (sic) [ 148% ] DBNRR on the platform business and that being now the bigger half of our business, that's pretty good. We have very, very low churn.
+
+Ryan Griffin: And for the follow-up, just on the recent trigger loan legislation, we heard that shook things up between the pre-qual market and the hard inquiry market. I was just wondering to what extent that impacted the mortgage volume side of your business?
+
+William Lansing: We haven't seen a lot.
+
+Steven Weber: There's a little.
+
+William Lansing: I mean, we noticed a bit but I wouldn't say anything dramatic.
+
+Operator: And our next question comes from the line of Owen Lau with Clear Street.
+
+Owen Lau: Going back to software, you mentioned booking was strong, platform ARR growth accelerated but non-platform was weak. Should we expect these kind of like divergence continue? I mean, because the delta was pretty high. I'm just thinking about how to think about this going forward.
+
+William Lansing: Yes. I mean the short answer is yes. I mean we had held off on migrating legacy to platform for many, many quarters, partly because we didn't have the capacity to handle it on the new platform. We are so busy bringing on new customers. But again, kind of going back to one of the earlier questions about end of life, there really are some legacy offerings that ought to be wound down over the next several years and we're actively doing it. And we're going to give our customers a better alternative on the platform. So yes, I would say you will continue to see the divergence that you're seeing right now.
+
+It's -- I mean we don't think it's a bad thing. As long as on balance, we're going up, I think we're pretty happy. We will have continued migrations. We have a plan for migrations. We have a team that makes sure that they go smoothly. But all that said, I don't want you to get the impression that the growth in platform is being driven by us cannibalizing the legacy because the truth is, our pipeline is growing. It's expanding. It's growing. We -- the land and expand strategy works. We have a lot of net -- we have a lot of new.
+
+But unlike a year ago, 2 years ago, some amount of the platform growth is coming from migration.
+
+Owen Lau: Got it. That's helpful. And then quickly on the VantageScore pilot program. I'm wondering if 10T is actually dependent on the VantageScore pilot or there's a path to run both in parallel? I mean if 10T is further delayed, how would that impact the implementation of other FICO Score you just mentioned like UltraFICO 2 or FICO 11?
+
+William Lansing: Well, so obviously, the FHFA and the GSEs are going to have to decide when they approve 10T. I mean it's approved but when they accept it, right? That's on them and that's their schedule. That said, we know that 10T is absolutely the best score in the world for measuring credit default risk. And you're seeing it in the nonconforming market. You're seeing tremendous adoption of 10T in the nonconforming market. And so to the extent people care about credit default, 10T is the answer. When the GSEs and the agency side decide that they want to mix that in is up to them. I think that they are actively working on it.
+
+I think they want it out there but it's going to take a certain amount of time for them to get comfortable. They just released the data, so it's going to take them a little while.
+
+Operator: And our next question comes from the line of Scott Wurtzel with Wolfe Research.
+
+Scott Wurtzel: Just one for me on the direct license program and in terms of the remaining resellers that are still out there to be signed up. Just wondering if you can give us kind of an update on where the process stands with those 2 and maybe what's unique about them that's maybe taking a little bit longer.
+
+William Lansing: We have 2 big ones that are signed. We have 2 big ones that are almost signed, very, very close and then we have the tail. So that's where we stand. We're pretty close.
+
+Operator: And our next question comes from the line of Sean Kennedy with Mizuho.
+
+Sean Kennedy: On software, I was wondering how impactful partnerships like Accenture are for platform growth. Does it significantly help FICO Platform's customer reach? And is there any particular type of customer that you're targeting in terms of geography or size?
+
+William Lansing: Sean, thank you for that question. We have talked for many years about FICO's challenge in distribution. We're IP-rich and distribution poor and we've always had so much more IP than we can sell with our direct sales force. And that's as true today as -- it's not quite as true today as it was in years past but it's still true. And so for several years now, we've been very focused on how do we partner with SIs who can take our IP to market with us, for us, different approaches.
+
+And we are super pleased to now be in this significant strategic partnership with one of the top SIs in the world, where they're going to be going to market with us, with our IP and their capabilities. They have relationships that we don't have. We have relationships and can send work their way. So it's really truly a strategic partnership for both of us. We're super excited. I think it's the beginning of seeing the indirect side of our business grow. I think you're going to see increasingly, we'll wind up getting -- monetizing our IP through partners and not just through our direct sales force.
+
+Sean Kennedy: Got it. That's great to hear. And then the platform retention rate has really inflected positively this year. Is it partially due to AI and FICO's capabilities there? Or are there certain platform products that are growing significantly faster than other ones?
+
+Dave Singleton: Just repeat the first sentence you said, it just got muffled on our side.
+
+Sean Kennedy: Oh, sorry, I was saying is with the net retention rate of platform like in this trajectory, is it partially due to AI and FICO's capabilities there? Are there -- or are there certain platform products that are growing significantly faster than others?
+
+William Lansing: So I would say yes and no. So it's not yet because of AI, although we have lots of AI coming in the platform. I'd say that the platform growth we have right now reflects the current state, the current state of the platform and the functionality and capabilities that we can bring to our customers with what we have today. I mean, they get immediate payback. They're up and running very fast and they get immediate payback from it. The AI enhancements to the platform, if you want to call them that, are coming. They're close. And will that result in an uptick in platform growth? I don't know. It's certainly going to continue the growth.
+
+There's a lot of appetite for it. We've got all kinds of great AI-driven capabilities for our customers who are on the platform.
+
+Operator: And our next question comes from the line of Curtis Nagle with Bank of America.
+
+Curtis Nagle: Terrific. Will, maybe just a question for you. Just following up on all the commentary in terms of gaming -- potential gaming in the system. I guess anything you're seeing anecdotal, whether it be discounts placed on Vantage securitized loans, maybe that's a little hard to see because of commingling. But just anything else that you think is suggesting that's occurring in the market?
+
+William Lansing: I'm not sure I know how to interpret that question. We know that there's gaming. We expected gaming. We're seeing gaming. We think there's a limit to how big gaming can get. And so I don't know what -- the anecdotal is what you see with Rocket, UWM. I mean that would be your anecdotal evidence of how much is happening and who's doing it. But it's -- I mean, it's -- it is a reality that there will be gaming. I mean the structure that's been put in place invites lenders and originators to score shop and so they will.
+
+Operator: And our next question comes from the line of Craig Huber with Huber Research Partners.
+
+Craig Huber: First I wanted to ask, on the performance model, given that we're almost into August here, just talk a little bit further about just the usage of it out there, the feedback that you're getting. Where are we at on that right now, please?
+
+William Lansing: Yes. So just to be clear, the performance model is to be distributed through the direct license program with the resellers. That program is not yet live. And we thought it would be live months ago but it's not yet live because it's waiting on the certification from one of the GSEs. So I can't speak to usage of the performance model because it's not available yet. It's theoretical until it gets certified. That said, are we hours away, days away, weeks away? I mean this isn't that hard a thing to do. The market wants the model. It gets us -- we're happy because it gets a lower price point out into the market, makes us more competitive.
+
+The lenders who want it really want it. The resellers want it. So I think we're in a waiting game here to get certified.
+
+Craig Huber: And there's really no commentary you can give like on the nonconforming part of the market for the usage of it? Is that all tied to the conforming piece, so there's not really much uptake there either, this is also a waiting pattern?
+
+William Lansing: We have not offered it. Just to be clear, we have not offered it there. It's offered in -- it is to be offered through the direct license program and that is not live yet.
+
+Craig Huber: Okay. And my other question on the software side. I just wanted to understand this a little bit better. Obviously, your software revenue in aggregate was up 2%. Your on-premise and SaaS software up, call it, 5% year-over-year. Your costs look like we're up about 12% year-over-year, similar cost growth to the March quarter. Just what's going on there with the cost growth significantly outpacing the revenue growth?
+
+Steven Weber: Well, so there's a couple of pieces there. So on the revenue side, we have a lot less point-in-time revenue, significantly less point-in-time revenue. So that's essentially revenue that -- it's lumpiness. There's still a little bit of that lumpiness in the model. We have less of it than we had in the past and we'll have less going forward. So there's that piece. And then this quarter, we had a pretty significant uptick from FICO World, which is a bigger event than what we had last year. And then we had some other kind of AWS that has increased too as the SaaS piece has gone up. And we've done some investing on that side.
+
+So I mean, there's -- we've done some investing and you're going to see the margin growth probably next year, you'll start to see some growth off of that. But there is some lumpiness on the software point in time side that will give you some lumpiness in the margin.
+
+Operator: And our next question comes from the line of Rayna Kumar with Oppenheimer.
+
+Rayna Kumar: So even with the DLP, the credit bureaus are likely to remain large customers of FICO. So I'm just wondering if you can comment on how your relationship with them has evolved over this process and where you stand now?
+
+William Lansing: That's a great question. We get along great with the bureaus. They are our partners. We get a lot of revenue from them. They are our channel partners for our Scores IP. We sell into lots of other verticals with them and it's been a strong, healthy relationship. And then particularly with Experian, we have a big consumer business together. So I would say healthy and strong relationship. But at the same time, we're now competing in mortgage scores and that's not a secret. We're obviously doing it. They've been pushing Vantage for 20 years and now they're finally getting a little bit of traction in mortgage because of the Lender Choice program.
+
+And so is that a thing that stands between us and being the best of friends? Yes. But I would say the relationships are strong, healthy and we will compete in this space.
+
+Operator: Thank you. Ladies and gentlemen, thank you for participating. This does conclude today's program and you may now disconnect.
