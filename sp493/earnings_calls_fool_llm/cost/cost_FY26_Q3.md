@@ -4,7 +4,7 @@
 - **Ticker:** COST
 - **CIK:** 0000909832
 - **Period:** FY26_Q3 (call held May 28, 2026; date from page DATE section)
-- **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/05/28/costco-cost-q3-2026-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
 - **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)

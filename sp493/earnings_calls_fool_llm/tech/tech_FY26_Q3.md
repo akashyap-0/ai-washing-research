@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/05/06/bio-techne-tech-q3-2026-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 5b9fdd0d707eaab5c69503fc971cfd7ef66f9a32880056957e77d2f1563ce223
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

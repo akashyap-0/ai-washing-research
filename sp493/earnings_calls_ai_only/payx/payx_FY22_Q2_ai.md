@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2021 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2021/12/23/paychex-payx-q2-2022-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 6513e3863c60e4b07ea265940bfc6bcba945ebf17c6cbdf918bfcf3598e12576
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

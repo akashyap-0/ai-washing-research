@@ -4,7 +4,7 @@
 - **Ticker:** COST
 - **CIK:** 0000909832
 - **Period:** FY23_Q3 (call held May 25, 2023; date from page date line)
-- **Calendar quarter:** 2023 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Calendar quarter:** 2023 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2023/05/26/costco-wholesale-cost-q3-2023-earnings-call-transc/
 - **Source type:** third_party_transcript_motley_fool
 - **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)

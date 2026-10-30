@@ -3,7 +3,7 @@
 - **Company:** Jacobs Solutions (J); fiscal year ends September (SEC fiscalYearEnd 1002)
 - **Ticker:** J
 - **CIK:** 0000052988
-- **Period:** FY25_Q3 (call held August 5, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY25_Q3 (call held August 5, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/08/05/jacobs-j-q3-2025-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

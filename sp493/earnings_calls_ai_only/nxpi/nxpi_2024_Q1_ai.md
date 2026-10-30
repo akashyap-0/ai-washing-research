@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2024 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2024/04/30/nxp-semiconductors-nxpi-q1-2024-earnings-call-tran/
 - **Source type:** third_party_transcript_motley_fool
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 0579993a1d06cc04c379f7b64242305f7a93985bd03f8c2d91c8b1f83c85c794
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

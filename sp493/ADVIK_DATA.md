@@ -143,19 +143,49 @@ python -u sp493/sp493_pull.py download --half 2 > cache/sp493_sources/download_h
 - **The last line of the log** looks like
   `raw files written; availability for 246 firms x 19 quarters: {...}`. Half 1 got
   `tierA 1276, tierB 873, missing 2544`, and half 2 should be similar.
-- **If you ran Step 3 with a copy of `sp493_pull.py` from before Tanush's date fix:** that version
-  misdated Fool backfills, for example Ametek Q3 2024 filed as 2026. Pull the fixed script, then
-  delete only the *generated* outputs:
-  - `sp493/earnings_calls/`
-  - `sp493/earnings_calls_fool_llm/`
-  - `sp493/earnings_calls_ai_only/`
-  - `sp493/coverage/half2_calls.csv`
-  - `sp493/coverage/half2_availability.csv`
-  - `sp493/coverage/half2_call_units.csv`
-  - `sp493/coverage/half2_coverage_summary.csv`
+- **Half 1 got `tierA 1280, tierB 912, missing 2501`.** Half 2 should be similar.
 
-  Then re-run Step 3. Every page is already cached, so it rebuilds in about a minute without
-  downloading anything. Never delete `cache/` or `acquisition/`.
+### Rebuilding half 2 (needed: the first run used the old script)
+
+The first half-2 build ran on `sp493_pull.py` from before the fixes in
+SEARCH_AND_PULL_METHOD.md §4.4a. In it, 583 Tier B rows use Fool's publication date as the call
+date, some quarters hold the wrong call, and 31 pages were never matched.
+
+**Rebuild on Advik's laptop.** The cache of already-downloaded pages is there. Only about 30 to 60
+new pages are fetched, which takes about 3 minutes. Deleting the generated half-2 outputs is
+approved for this one rebuild.
+
+```bash
+git checkout main && git pull origin main
+python sp493/sp493_pull.py selftest
+python sp493/sp493_pull.py discover --half 2
+python - <<'PY'
+import csv, shutil, pathlib
+half = {r["folder"]: r["assigned_half"] for r in csv.DictReader(open("sp493/universe.csv"))}
+for d in ["earnings_calls", "earnings_calls_fool_llm", "earnings_calls_ai_only"]:
+    for p in pathlib.Path("sp493", d).iterdir():
+        if p.is_dir() and half.get(p.name) == "2":
+            shutil.rmtree(p)                     # half-2 ticker folders only
+for f in ["sp493/earnings_calls_ai_only/_stats_half2.json", "sp493/coverage/half2_calls.csv",
+          "sp493/coverage/half2_availability.csv", "sp493/coverage/half2_call_units.csv",
+          "sp493/coverage/half2_coverage_summary.csv"]:
+    pathlib.Path(f).unlink(missing_ok=True)
+PY
+python -u sp493/sp493_pull.py download --half 2 > cache/sp493_sources/download_half2.log 2>&1
+python sp493/sp493_pull.py filter --half 2
+python sp493/sp493_pull.py report --half 2
+```
+
+**What to expect.** The download log starts with `moved N slug-keyed cache files to per-URL
+names`, then fetches only the new pages. Afterwards:
+
+- `git status` should show changes only in half-2 files and half-2 ticker folders.
+- Most of the changes are header lines: `Retrieved`, now from the fetch log, and the `Period`
+  call date.
+- Commit on a branch, `sp493-half2-rebuild`, push it, and open a PR into `main`. Don't touch
+  half-1 files.
+
+Never delete `cache/` or `acquisition/`.
 
 **Spot-check after the download.** Do all of these and put the answers in your report:
 

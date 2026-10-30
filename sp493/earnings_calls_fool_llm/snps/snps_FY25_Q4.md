@@ -3,11 +3,11 @@
 - **Company:** Synopsys (SNPS); fiscal year ends October (SEC fiscalYearEnd 1031)
 - **Ticker:** SNPS
 - **CIK:** 0000883241
-- **Period:** FY25_Q4 (call held December 11, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY25_Q4 (call held December 10, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/12/10/synopsys-snps-q4-2025-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 3887b587f5b4f0039cb25ca659f64ded13e9e6b9251ff6f27580a42916c06862
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

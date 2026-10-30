@@ -272,6 +272,39 @@ not a matching error.
 - **Coverage file:** `sp493/coverage/half<N>_availability.csv` has one row per company × calendar
   quarter, with status `tierA`, `tierB` or `missing`.
 
+### 4.4a Fixes from the half-1 completeness audit (2026-10-29)
+
+The audit is in `coverage/half1_completeness_audit.md`. It checked Fool's own pages for 16 firms
+against what we found; all 83 transcript links matched, so the sitemaps look complete. It then
+found these pipeline bugs, all now fixed in `sp493_pull.py`:
+
+- **Slugs that carry only a ticker** (`txn-q1-2026-…`) **or only a name**
+  (`texas-instruments-q2-2025-…`) now match. That recovered 32 URLs in half 1.
+- **The `Date` heading** is read in any case. Before, only `DATE` was read, and 277 pages fell back
+  to their publication date.
+- **The fiscal label is read the way that fits the call date** (quarter end from 31 days before
+  to 120 days after the call). This fixes Costco, whose quarters end mid-month and whose calls
+  come less than a week after the assumed month end. It also fixes retailers that name the fiscal
+  year by the year it starts.
+- **The page title must name the firm.** Its ticker, an old ticker for ticker-change matches, or
+  its name must appear, and no other ticker in parentheses. This removed a Minerals Technologies
+  page that had been matched to Bio-Techne (TECH).
+- **One call served at two URLs is kept once.** When the same text appears under two URLs, only
+  the earliest is kept, logged as `same text as …`. Example: CME's Q4 2024 call also appears at
+  its Q1 2026 URL.
+- **The cache is keyed by URL** (`<yyyy-mm-dd>_<slug>.html.gz`), so two URLs sharing a generic
+  slug are both fetched. Older slug-keyed files are moved automatically. 404s are retried on every
+  run.
+- **Brown & Brown's year end is overridden to December** (`FYE_OVERRIDE`). SEC lists it as 0119.
+  `universe.csv` itself is unchanged.
+- **The `Retrieved` line comes from the fetch log** (UTC date), not the rebuild date, so rebuilds
+  are reproducible.
+
+The rebuild deleted the generated half-1 outputs and regenerated them from the cache, plus 33 new
+fetches. That is the one approved exception to the never-overwrite rule. Half 1 went from
+Tier A 1,276 / Tier B 873 / missing 2,544 to **Tier A 1,280 / Tier B 912 / missing 2,501**. The
+before/after firm counts (93 / 41 / 13 / 100) did not change.
+
 ### 4.5 Step 3: filter
 
 `python sp493/sp493_pull.py filter --half N`

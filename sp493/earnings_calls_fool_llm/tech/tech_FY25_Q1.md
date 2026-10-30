@@ -3,11 +3,11 @@
 - **Company:** Bio-Techne (TECH); fiscal year ends June (SEC fiscalYearEnd 0630)
 - **Ticker:** TECH
 - **CIK:** 0000842023
-- **Period:** FY25_Q1 (call held May 6, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY25_Q1 (call held October 30, 2024; date from page DATE section)
 - **Calendar quarter:** 2024 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/05/06/bio-techne-tech-q1-2025-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 11263409f7d6128bdb1564ed206e9412c6739ea7867f7bc2436d68148095cda7
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

@@ -11663,6 +11663,50 @@
       "Unknown speaker"
     ]
   },
+  "cost_FY22_Q2": {
+    "company": "cost",
+    "file": "cost_FY22_Q2.md",
+    "period": "FY22_Q2",
+    "format": "fool",
+    "total": 635,
+    "ai": 1,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 1
+    },
+    "total_by_section": {
+      "Prepared remarks": 167,
+      "Q&A": 468
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 3,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 1
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 31,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brandon Cheatham, Citi, Analyst",
+      "Chris Horvers, J.P. Morgan, Analyst",
+      "Chuck Grom, Gordon Haskett, Analyst",
+      "John Heinbockel, Guggenheim Securities, Analyst",
+      "Karen Short, Barclays, Analyst",
+      "Kelly Bania, BMO Capital Markets, Analyst",
+      "Laura Champine, Loop Capital Markets, Analyst",
+      "Michael Lasser, UBS",
+      "Mike Baker, D.A. Davidson, Analyst",
+      "Operator",
+      "Peter Benedict, Baird, Analyst",
+      "Richard Galanti, Director, Executive Vice President, and Chief Financial Officer",
+      "Rupesh Parikh, Oppenheimer and Company, Analyst",
+      "Scot Ciccarelli, Truist Securities, Analyst",
+      "Simeon Gutman, Morgan Stanley, Analyst"
+    ]
+  },
   "cost_FY22_Q3": {
     "company": "cost",
     "file": "cost_FY22_Q3.md",
@@ -11792,6 +11836,50 @@
       "Rupesh Parikh, Oppenheimer and Company, Analyst",
       "Scot Ciccarelli, Truist Securities, Analyst",
       "Simeon Gutman, Morgan Stanley, Analyst"
+    ]
+  },
+  "cost_FY23_Q2": {
+    "company": "cost",
+    "file": "cost_FY23_Q2.md",
+    "period": "FY23_Q2",
+    "format": "fool",
+    "total": 624,
+    "ai": 4,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 4
+    },
+    "total_by_section": {
+      "Prepared remarks": 127,
+      "Q&A": 497
+    },
+    "borderline_auto": 2,
+    "borderline_infra": 1,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 4
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 31,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brandon Cheatham, Citi, Analyst",
+      "Christopher Horvers, J.P. Morgan, Analyst",
+      "Chuck Grom, Gordon Haskett, Analyst",
+      "Greg Melich, Evercore ISI, Analyst",
+      "John Heinbockel, Guggenheim Partners, Analyst",
+      "Karen Short, Credit Suisse, Analyst",
+      "Kelly Bania, BMO Capital Markets, Analyst",
+      "Michael Lasser, UBS, Analyst",
+      "Operator",
+      "Richard Galanti, Chief Financial Officer",
+      "Scot Ciccarelli, Truist Securities, Analyst",
+      "Scott Mushkin, R5 Capital, Analyst",
+      "Simeon Gutman, Morgan Stanley, Analyst",
+      "Tom Boyes, Cowen and Company, Analyst",
+      "Unknown speaker"
     ]
   },
   "cost_FY23_Q3": {
@@ -11971,6 +12059,53 @@
       "Simeon Gutman, Morgan Stanley, Analyst"
     ]
   },
+  "cost_FY24_Q3": {
+    "company": "cost",
+    "file": "cost_FY24_Q3.md",
+    "period": "FY24_Q3",
+    "format": "fool",
+    "total": 679,
+    "ai": 8,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 8
+    },
+    "total_by_section": {
+      "Prepared remarks": 118,
+      "Q&A": 561
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 8
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 37,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Brandon Cheatham, Citi, Analyst",
+      "Christian Carlino, JPMorgan Chase and Company, Analyst",
+      "Chuck Grom, Gordon Haskett Research Advisors, Analyst",
+      "Ed Kelly, Wells Fargo Securities, Analyst",
+      "Gary Millerchip, Executive Vice President, Chief Financial Officer",
+      "Greg Melich, Evercore ISI, Analyst",
+      "Joe Feldman, Telsey Advisory Group, Analyst",
+      "John Heinbockel, Guggenheim Partners, Analyst",
+      "Kelly Bania, BMO Capital Markets, Analyst",
+      "Michael Lasser, UBS, Analyst",
+      "Oliver Chen, TD Cowen, Analyst",
+      "Operator",
+      "Peter Benedict, Robert W. Baird and Company, Analyst",
+      "Ron Vachris, President and Chief Executive Officer",
+      "Rupesh Parikh, Oppenheimer and Company, Analyst",
+      "Scot Ciccarelli, Truist Securities, Analyst",
+      "Scott Mushkin, R5 Capital, Analyst",
+      "Simeon Gutman, Morgan Stanley, Analyst"
+    ]
+  },
   "cost_FY24_Q4": {
     "company": "cost",
     "file": "cost_FY24_Q4.md",
@@ -12061,6 +12196,53 @@
       "Ron Vachris, President and Chief Executive Officer",
       "Rupesh Parikh, Analyst",
       "Scott Mushkin, Analyst",
+      "Simeon Gutman, Analyst",
+      "Zhihan Ma, Analyst"
+    ]
+  },
+  "cost_FY25_Q2": {
+    "company": "cost",
+    "file": "cost_FY25_Q2.md",
+    "period": "FY25_Q2",
+    "format": "fool",
+    "total": 595,
+    "ai": 1,
+    "ai_by_section": {
+      "Prepared remarks": 0,
+      "Q&A": 1
+    },
+    "total_by_section": {
+      "Prepared remarks": 169,
+      "Q&A": 426
+    },
+    "borderline_auto": 0,
+    "borderline_infra": 2,
+    "false_positive_ai_tokens": 0,
+    "flag_counts": {
+      "uncertain": 1
+    },
+    "parse_notes": {
+      "lines_after_call_dropped": 41,
+      "format": "fool"
+    },
+    "parse_flags": [],
+    "speakers": [
+      "Christopher Horvers, Analyst",
+      "Chuck Grom, Analyst",
+      "Edward Kelly, Analyst",
+      "Gary Millerchip, Executive Vice President, Chief Financial Officer",
+      "Greg Melich, Analyst",
+      "Joe Feldman, Analyst",
+      "John Heinbockel, Analyst",
+      "Kelly Bania, Analyst",
+      "Michael Lasser, Analyst",
+      "Mike Baker, D.A. Davidson, Analyst",
+      "Oliver Chen, Analyst",
+      "Operator",
+      "Robert Ohmes, Analyst",
+      "Ron Vachris, President and Chief Executive Officer",
+      "Rupesh Parikh, Analyst",
+      "Scot Ciccarelli, Analyst",
       "Simeon Gutman, Analyst",
       "Zhihan Ma, Analyst"
     ]

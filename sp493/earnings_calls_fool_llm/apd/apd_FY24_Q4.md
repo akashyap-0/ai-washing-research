@@ -3,7 +3,7 @@
 - **Company:** Air Products (APD); fiscal year ends September (SEC fiscalYearEnd 0930)
 - **Ticker:** APD
 - **CIK:** 0000002969
-- **Period:** FY24_Q4 (call held April 22, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY24_Q4 (call held November 7, 2024; date from page DATE section)
 - **Calendar quarter:** 2024 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/04/22/air-products-apd-q4-2024-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

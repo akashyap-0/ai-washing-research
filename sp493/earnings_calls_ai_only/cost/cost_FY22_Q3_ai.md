@@ -4,7 +4,7 @@
 - **Ticker:** COST
 - **CIK:** 0000909832
 - **Period:** FY22_Q3 (call held May 26, 2022; date from page date line)
-- **Calendar quarter:** 2022 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Calendar quarter:** 2022 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2022/05/27/costco-wholesale-cost-q3-2022-earnings-call-transc/
 - **Source type:** third_party_transcript_motley_fool
 - **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)

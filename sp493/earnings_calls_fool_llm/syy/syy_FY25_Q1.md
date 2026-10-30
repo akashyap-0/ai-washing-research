@@ -3,11 +3,11 @@
 - **Company:** Sysco (SYY); fiscal year ends June (SEC fiscalYearEnd 0627)
 - **Ticker:** SYY
 - **CIK:** 0000096021
-- **Period:** FY25_Q1 (call held January 26, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY25_Q1 (call held October 29, 2024; date from page DATE section)
 - **Calendar quarter:** 2024 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/01/26/sysco-syy-q1-2025-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 1e4787ed47fb72ed3642ac342be034b397e088a48adc893e9af1e4a9900d856a
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

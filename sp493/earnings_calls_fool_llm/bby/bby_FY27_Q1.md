@@ -3,7 +3,7 @@
 - **Company:** Best Buy (BBY); fiscal year ends January (SEC fiscalYearEnd 0130)
 - **Ticker:** BBY
 - **CIK:** 0000764478
-- **Period:** FY27_Q1 (call held May 29, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY27_Q1 (call held May 28, 2026; date from page DATE section)
 - **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/05/29/best-buy-bby-q1-2027-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

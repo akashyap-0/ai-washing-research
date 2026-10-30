@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2022 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2023/01/13/unitedhealth-group-unh-q4-2022-earnings-call-trans/
 - **Source type:** third_party_transcript_motley_fool
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** c389ef10a51a393b9b7dd33837a25eb843aee9421ad4b15b6d1d4ac8c74f577a
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2022 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2023/02/01/ptc-ptc-q1-2023-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 62f41ba22a1c130f40afd74ee81d630d4f352e42dee0cf46e0e05068d3c7ce71
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

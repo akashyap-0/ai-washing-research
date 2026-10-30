@@ -1,0 +1,34 @@
+ticker,url,url_date,slug,fool_q,fool_y,est_calendar_quarter,current_status_of_that_quarter,miss_reason
+ADM,https://www.fool.com/earnings/call-transcripts/2026/05/05/adm-q1-2026-earnings-call-transcript/,2026-05-05,adm-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+AEP,https://www.fool.com/earnings/call-transcripts/2026/05/05/aep-q1-2026-earnings-transcript/,2026-05-05,aep-q1-2026-earnings-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+AEP,https://www.fool.com/earnings/call-transcripts/2026/10/28/aep-q3-2026-earnings-call-transcript/,2026-10-28,aep-q3-2026-earnings-call-transcript,3,2026,2026Q3,outside window,ticker-only slug (no name token)
+CINF,https://www.fool.com/earnings/call-transcripts/2026/04/28/cinf-q1-2026-earnings-transcript/,2026-04-28,cinf-q1-2026-earnings-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+CINF,https://www.fool.com/earnings/call-transcripts/2026/05/13/cinf-q1-2025-earnings-transcript/,2026-05-13,cinf-q1-2025-earnings-transcript,1,2025,2025Q1,missing,ticker-only slug (no name token)
+COP,https://www.fool.com/earnings/call-transcripts/2025/11/06/conocophillips-q3-2025-earnings-transcript/,2025-11-06,conocophillips-q3-2025-earnings-transcript,3,2025,2025Q3,missing,name-only slug without ticker
+FIS,https://www.fool.com/earnings/call-transcripts/2026/06/01/fis-q1-2026-earnings-call-transcript/,2026-06-01,fis-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+FRT,https://www.fool.com/earnings/call-transcripts/2026/08/03/frt-q2-2026-earnings-call-transcript/,2026-08-03,frt-q2-2026-earnings-call-transcript,2,2026,2026Q2,missing,ticker-only slug (no name token)
+GM,https://www.fool.com/earnings/call-transcripts/2026/04/28/gm-q1-2026-earnings-call-transcript/,2026-04-28,gm-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+HCA,https://www.fool.com/earnings/call-transcripts/2025/10/24/hca-healthcare-q3-2025-earnings-transcript/,2025-10-24,hca-healthcare-q3-2025-earnings-transcript,3,2025,2025Q3,missing,name-only slug without ticker
+HPE,https://www.fool.com/earnings/call-transcripts/2026/06/01/hpe-q2-2026-earnings-call-transcript/,2026-06-01,hpe-q2-2026-earnings-call-transcript,2,2026,2026Q1,missing,ticker-only slug (no name token)
+IFF,https://www.fool.com/earnings/call-transcripts/2026/02/12/iff-q4-2025-earnings-call-transcript/,2026-02-12,iff-q4-2025-earnings-call-transcript,4,2025,2025Q4,missing,ticker-only slug (no name token)
+IFF,https://www.fool.com/earnings/call-transcripts/2026/05/06/iff-q1-2026-earnings-call-transcript/,2026-05-06,iff-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+IP,https://www.fool.com/earnings/call-transcripts/2026/04/30/ip-q1-2026-earnings-transcript/,2026-04-30,ip-q1-2026-earnings-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+ISRG,https://www.fool.com/earnings/call-transcripts/2026/04/21/isrg-q1-2026-earnings-transcript/,2026-04-21,isrg-q1-2026-earnings-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+ISRG,https://www.fool.com/earnings/call-transcripts/2026/04/22/isrg-q3-2024-earnings-transcript/,2026-04-22,isrg-q3-2024-earnings-transcript,3,2024,2024Q3,tierA,ticker-only slug (no name token)
+ISRG,https://www.fool.com/earnings/call-transcripts/2026/04/22/isrg-q4-2024-earnings-transcript/,2026-04-22,isrg-q4-2024-earnings-transcript,4,2024,2024Q4,tierA,ticker-only slug (no name token)
+ITW,https://www.fool.com/earnings/call-transcripts/2026/04/30/itw-q1-2026-earnings-call-transcript/,2026-04-30,itw-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+MAA,https://www.fool.com/earnings/call-transcripts/2026/04/30/maa-q1-2026-earnings-call-transcript/,2026-04-30,maa-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+MLM,https://www.fool.com/earnings/call-transcripts/2026/07/30/mlm-q2-2026-earnings-call-transcript/,2026-07-30,mlm-q2-2026-earnings-call-transcript,2,2026,2026Q2,missing,ticker-only slug (no name token)
+MLM,https://www.fool.com/earnings/call-transcripts/2026/08/03/mlm-q2-2026-earnings-call-transcript/,2026-08-03,mlm-q2-2026-earnings-call-transcript,2,2026,2026Q2,missing,ticker-only slug (no name token)
+MPWR,https://www.fool.com/earnings/call-transcripts/2026/05/01/mpwr-q1-2026-earnings-call-transcript/,2026-05-01,mpwr-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+SWK,https://www.fool.com/earnings/call-transcripts/2026/04/21/swk-q2-2025-earnings-transcript/,2026-04-21,swk-q2-2025-earnings-transcript,2,2025,2025Q2,missing,ticker-only slug (no name token)
+SWK,https://www.fool.com/earnings/call-transcripts/2026/04/21/swk-q3-2025-earnings-transcript/,2026-04-21,swk-q3-2025-earnings-transcript,3,2025,2025Q3,missing,ticker-only slug (no name token)
+SWK,https://www.fool.com/earnings/call-transcripts/2026/04/29/swk-q1-2026-earnings-transcript/,2026-04-29,swk-q1-2026-earnings-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+TXN,https://www.fool.com/earnings/call-transcripts/2026/04/22/txn-q1-2026-earnings-transcript/,2026-04-22,txn-q1-2026-earnings-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+UHS,https://www.fool.com/earnings/call-transcripts/2026/04/28/uhs-q1-2026-earnings-call-transcript/,2026-04-28,uhs-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+WTW,https://www.fool.com/earnings/call-transcripts/2025/10/31/willis-towers-watson-earnings-transcript/,2025-10-31,willis-towers-watson-earnings-transcript,,,2025Q3,missing,name-only slug without ticker
+WTW,https://www.fool.com/earnings/call-transcripts/2026/04/30/wtw-q1-2026-earnings-call-transcript/,2026-04-30,wtw-q1-2026-earnings-call-transcript,1,2026,2026Q1,missing,ticker-only slug (no name token)
+TXN,https://www.fool.com/earnings/call-transcripts/2025/07/22/texas-instruments-q2-2025-earnings-call-transcript/,2025-07-22,texas-instruments-q2-2025-earnings-call-transcript,2,2025,2025Q2,missing,name-only slug without ticker
+TXN,https://www.fool.com/earnings/call-transcripts/2025/10/22/texas-instruments-q3-2025-earnings-call-transcript/,2025-10-22,texas-instruments-q3-2025-earnings-call-transcript,3,2025,2025Q3,missing,name-only slug without ticker
+BKR,https://www.fool.com/earnings/call-transcripts/2025/10/24/baker-hughes-q3-2025-earnings-transcript/,2025-10-24,baker-hughes-q3-2025-earnings-transcript,3,2025,2025Q3,missing,name-only slug without ticker
+IP,https://www.fool.com/earnings/call-transcripts/2025/10/30/intl-paper-q3-2025-earnings-call-transcript/,2025-10-30,intl-paper-q3-2025-earnings-call-transcript,3,2025,2025Q3,missing,name-only slug without ticker

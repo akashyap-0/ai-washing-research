@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2022 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2022/10/26/servicenow-inc-now-q3-2022-earnings-call-transcrip/
 - **Source type:** third_party_transcript_motley_fool
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** a9e7d9d7162d902c79a45469a7612c665ca6308f8b34e34e0920606e84d1017e
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

@@ -110,8 +110,17 @@ def folder_for(ticker):
     return ticker.lower().replace(".", "-")
 
 
+# SEC data errors found by the half-1 audit. universe.csv stays as built (its hash is checked);
+# the correction is applied here so both laptops get it.
+FYE_OVERRIDE = {"BRO": "12"}   # SEC fiscalYearEnd 0119; Brown & Brown reports on the calendar year
+
+
 def load_universe(half=None):
     rows = read_csv(UNIVERSE)
+    for r in rows:
+        if r["ticker"] in FYE_OVERRIDE:
+            r["fye_month"] = FYE_OVERRIDE[r["ticker"]]
+            r["fiscal_year_end"] += f", overridden to month {r['fye_month']}"
     return [r for r in rows if half is None or r["assigned_half"] == str(half)]
 
 
@@ -355,7 +364,7 @@ def _blocks_from(start):
 def parse_fool_page(raw_html):
     """Returns dict(layout, title, fool_q, fool_y, call_date, call_date_source, body)."""
     soup = BeautifulSoup(raw_html, "html.parser")
-    h2s = {h.get_text(strip=True): h for h in soup.find_all("h2")}
+    h2s = {h.get_text(strip=True).upper(): h for h in soup.find_all("h2")}   # "DATE" or "Date"
     h1 = soup.find("h1")
     title = h1.get_text(" ", strip=True) if h1 else ""
     info = {"title": title, "fool_q": "", "fool_y": "", "call_date": "", "call_date_source": ""}
@@ -363,9 +372,9 @@ def parse_fool_page(raw_html):
     if m:
         info["fool_q"], info["fool_y"] = m.group(1), m.group(2)
 
-    if "Prepared Remarks:" in h2s:
+    if "PREPARED REMARKS:" in h2s:
         info["layout"] = "fool_verbatim"
-        info["body"] = "\n\n".join(_blocks_from(h2s["Prepared Remarks:"]))
+        info["body"] = "\n\n".join(_blocks_from(h2s["PREPARED REMARKS:"]))
         d = soup.find("span", id="date")
         if d:
             try:
@@ -373,9 +382,9 @@ def parse_fool_page(raw_html):
                 info["call_date_source"] = "page date line"
             except ValueError:
                 pass
-    elif "Full Conference Call Transcript" in h2s:
+    elif "FULL CONFERENCE CALL TRANSCRIPT" in h2s:
         info["layout"] = "fool_llm"
-        blocks = _blocks_from(h2s["Full Conference Call Transcript"])
+        blocks = _blocks_from(h2s["FULL CONFERENCE CALL TRANSCRIPT"])
         info["body"] = "\n\n".join(blocks)
         if "DATE" in h2s:
             nxt = h2s["DATE"].find_next(["p", "ul", "div"])
@@ -528,13 +537,14 @@ def cmd_discover(args):
                 toks.pop()
             firm, how, name = None, "", toks
             for k in (2, 1):                                  # 'brk-b' before 'b'
-                if len(toks) > k and norm_ticker("".join(toks[-k:])) in by_tick:
+                if len(toks) >= k and norm_ticker("".join(toks[-k:])) in by_tick:
                     cand = by_tick[norm_ticker("".join(toks[-k:]))]
                     firm, name = cand, toks[:-k]
                     if names_agree(toks[:-k], cand):
                         how = "ticker+name"
-                    else:                             # short or old names: amex, ibm, raytheon
-                        how = "ticker only (name differs)"
+                    else:                             # 'txn-q1-2026', or short/old names: amex, ibm
+                        how = ("ticker only (no name in slug)" if not toks[:-k]
+                               else "ticker only (name differs)")
                         rejected.append({"url": url, "slug_ticker": "-".join(toks[-k:]),
                                          "slug_name": "-".join(toks[:-k]),
                                          "universe_ticker": cand["ticker"],
@@ -544,6 +554,10 @@ def cmd_discover(args):
                 key = "".join(t for t in toks[:-1] if t not in NAME_STOP)
                 if key in by_name:
                     firm, how = by_name[key], "name only (ticker differs)"
+            if firm is None:                                  # 'texas-instruments-q2-2025': no ticker
+                key = "".join(t for t in toks if t not in NAME_STOP)
+                if key in by_name:
+                    firm, how = by_name[key], "name only (no ticker in slug)"
             if firm is None or firm["ticker"] not in mine:
                 continue
             matched.append({"ticker": firm["ticker"], "url": url,
@@ -554,7 +568,7 @@ def cmd_discover(args):
     for r in matched:                                 # first page under its current ticker
         if not r["matched_by"].startswith("name"):
             first_ticker_page[r["ticker"]] = min(r["url_date"], first_ticker_page.get(r["ticker"], "9999"))
-    dropped = [r for r in matched if r["matched_by"].startswith("name")
+    dropped = [r for r in matched if r["matched_by"] == "name only (ticker differs)"
                and r["url_date"] >= first_ticker_page.get(r["ticker"], "9999")]
     matched = [r for r in matched if r not in dropped]
     for r in matched:
@@ -638,7 +652,32 @@ def prelim_summary(half, rows, mine):
 # download
 # ---------------------------------------------------------------------------
 
-def header_block(firm, info, url, sha, period_label, cy, cq, half, layout):
+TITLE_NOISE = re.compile(r"\b(?:Q[1-4]|FY|20\d\d|Earnings|Call|Conference|Transcripts?)\b", re.I)
+
+
+def old_tickers(cand):
+    """A page matched through a ticker change (Block SQ -> XYZ) may show the old ticker."""
+    if cand.get("matched_by") != "name only (ticker differs)":
+        return ()
+    m = SLUG.match(cand["slug"])
+    return ((m.group("pre") if m else cand["slug"]).split("-")[-1].upper(),)
+
+
+def title_names_firm(title, firm, old_tickers=()):
+    """The page title must carry one of the firm's tickers (as written) or its name, and must not
+    carry a different ticker in parentheses ('Black Stone Minerals (BSM)' is not Blackstone)."""
+    mine = [firm["ticker"]] + [x for x in firm["other_tickers"].split(";") if x] + list(old_tickers)
+    shown = re.search(r"\(([A-Z][A-Z.\-]{0,6})\)", title)
+    if shown and norm_ticker(shown.group(1)) not in {norm_ticker(t) for t in mine}:
+        return False
+    for t in mine:
+        for v in {t, t.replace(".", "-"), t.replace(".", "")}:
+            if re.search(rf"(?<![A-Za-z]){re.escape(v)}(?![A-Za-z])", title):
+                return True
+    return names_agree(name_tokens(TITLE_NOISE.sub(" ", title)), firm)
+
+
+def header_block(firm, info, url, sha, period_label, cy, cq, half, layout, retrieved):
     d = info["call_date"]
     held = f"{MONTHS[d.month - 1]} {d.day}, {d.year}"
     fye = f"{MONTHS[int(firm['fye_month']) - 1]} (SEC fiscalYearEnd {firm['fiscal_year_end']})"
@@ -654,7 +693,7 @@ def header_block(firm, info, url, sha, period_label, cy, cq, half, layout):
         f"- **Calendar quarter:** {cy} Q{cq} (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)",
         f"- **Source:** third-party transcript, The Motley Fool — {url}",
         f"- **Source type:** {stype}",
-        f"- **Retrieved:** {date.today().isoformat()} (S&P 493 pull, half {half})",
+        f"- **Retrieved:** {retrieved} (S&P 493 pull, half {half})",
         f"- **Source SHA-256:** {sha}",
         "- **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, "
         "HTML unescaped, tags stripped (sp493/sp493_pull.py)",
@@ -670,6 +709,42 @@ def header_block(firm, info, url, sha, period_label, cy, cq, half, layout):
     return "\n".join(lines) + "\n\n---\n\n"
 
 
+def cache_path(folder, url, slug):
+    """Cache file per URL: two Fool URLs can share a slug (generic 'unh-earnings-call-transcript')."""
+    y, mo, d = re.search(r"/call-transcripts/(20\d\d)/(\d\d)/(\d\d)/", url).groups()
+    return CACHE / "fool" / folder / f"{y}-{mo}-{d}_{slug}.html.gz"
+
+
+def migrate_slug_cache(half, universe, cands):
+    """Older runs cached by slug only. Give each such file to the URL it was fetched for
+    (matching the logged SHA-256), so a second URL with the same slug gets fetched."""
+    log_sha = defaultdict(list)
+    log_path = ACQ / f"half{half}_results.jsonl"
+    if log_path.exists():
+        for line in log_path.read_text(encoding="utf-8").splitlines():
+            rec = json.loads(line)
+            if rec.get("status") == 200:
+                log_sha[rec["sha256"]].append(rec["url"])
+    by_slug = defaultdict(list)
+    for r in cands:
+        by_slug[(universe[r["ticker"]]["folder"], r["slug"])].append(r)
+    moved = 0
+    for (folder, slug), rs in by_slug.items():
+        old = CACHE / "fool" / folder / f"{slug}.html.gz"
+        if not old.exists():
+            continue
+        digest = sha256(gzip.decompress(old.read_bytes()))
+        urls = {r["url"] for r in rs}
+        owner = next((u for u in log_sha.get(digest, []) if u in urls),
+                     min(rs, key=lambda r: r["url_date"])["url"])     # first run fetched earliest first
+        new = cache_path(folder, owner, slug)
+        if not new.exists():
+            os.replace(old, new)
+            moved += 1
+    if moved:
+        print(f"moved {moved} slug-keyed cache files to per-URL names")
+
+
 def cmd_download(args):
     universe = {f["ticker"]: f for f in load_universe(args.half)}
     cands = [r for r in read_csv(COVER / f"half{args.half}_fool_urls.csv")
@@ -680,16 +755,17 @@ def cmd_download(args):
     if log_path.exists():
         for line in log_path.read_text(encoding="utf-8").splitlines():
             rec = json.loads(line)
-            if rec.get("status") in (200, 404, 410):
+            if rec.get("status") in (200, 410):        # 404s are retried: Fool's are often transient
                 done.add(rec["url"])
     print(f"{len(cands)} candidate pages for half {args.half}; {len(done)} already logged")
+    migrate_slug_cache(args.half, universe, cands)
 
     fails = 0
     with open(log_path, "a", encoding="utf-8") as log:
         for i, r in enumerate(cands, 1):
             folder = universe[r["ticker"]]["folder"]
-            cpath = CACHE / "fool" / folder / f"{r['slug']}.html.gz"
-            if cpath.exists() or r["url"] in done:
+            cpath = cache_path(folder, r["url"], r["slug"])
+            if cpath.exists():
                 continue
             status, data = fool_get(r["url"])
             rec = {"ticker": r["ticker"], "url": r["url"], "status": status, "bytes": len(data),
@@ -716,16 +792,17 @@ def cmd_download(args):
 
 def write_raw(half, universe, cands):
     """Parse every cached page, keep one main call per company x calendar quarter, write raw files."""
-    shas = {}
+    shas, fetched = {}, {}                            # SHA-256 and fetch date per URL, from the log
     log_path = ACQ / f"half{half}_results.jsonl"
     for line in log_path.read_text(encoding="utf-8").splitlines():
         rec = json.loads(line)
         if rec.get("status") == 200:
             shas[rec["url"]] = rec["sha256"]
+            fetched.setdefault(rec["url"], rec["retrieved_utc"][:10])
     calls = []
     for r in cands:
         firm = universe[r["ticker"]]
-        cpath = CACHE / "fool" / firm["folder"] / f"{r['slug']}.html.gz"
+        cpath = cache_path(firm["folder"], r["url"], r["slug"])
         if not cpath.exists():
             continue
         raw = gzip.decompress(cpath.read_bytes())
@@ -750,14 +827,21 @@ def write_raw(half, universe, cands):
             status = "not a main earnings call"
         elif not info["fool_q"]:
             status = "no fiscal quarter in title or slug"
+        elif not title_names_firm(info["title"], firm, old_tickers(r)):
+            status = "title names another company"
         lab = label_quarter(int(info["fool_y"]), int(info["fool_q"]), f) if info["fool_q"] else None
+        fits = []
         if lab is not None:                           # days from the labelled quarter end to the date
-            lags = [(info["call_date"] - label_quarter_end(int(info["fool_y"]), int(info["fool_q"]), f, k)).days
-                    for k in (0, 1, -1)]
-            repost = all(x > 120 for x in lags)       # dated long after any reading of the label
+            lags = {k: (info["call_date"] - label_quarter_end(int(info["fool_y"]), int(info["fool_q"]), f, k)).days
+                    for k in (0, 1, -1)}
+            repost = all(x > 120 for x in lags.values())   # dated long after any reading of the label
+            fits = [k for k, x in lags.items() if -31 <= x <= 120]
         else:
             repost = False
-        if lab is None or (real_date and not repost):
+        if real_date and fits:                        # the label read the way that fits the call date
+            (cy, cq), method = label_quarter(int(info["fool_y"]), int(info["fool_q"]), f, fits[0]), \
+                "fiscal label (fits call date)"       # Costco-style mid-month quarter ends
+        elif lab is None or (real_date and not repost):
             cy, cq = calendar_quarter(info["call_date"], f)
             method = "call date"
         elif repost:                                  # Fool backfill: page date is the repost date
@@ -769,7 +853,17 @@ def write_raw(half, universe, cands):
         if status == "ok" and not in_window(cy, cq):
             status = "outside window"
         calls.append({"ticker": r["ticker"], "url": r["url"], "slug": r["slug"], "info": info,
-                      "cy": cy, "cq": cq, "status": status, "sha": shas.get(r["url"]) or sha256(raw)})
+                      "cy": cy, "cq": cq, "status": status, "sha": shas.get(r["url"]) or sha256(raw),
+                      "retrieved": fetched.get(r["url"], "unknown (cached before logging)")})
+
+    same = defaultdict(list)                          # Fool sometimes serves one call at two URLs
+    for c in calls:
+        if c["status"] == "ok" and c["info"]["body"]:
+            same[(c["ticker"], sha256(c["info"]["body"].encode("utf-8")))].append(c)
+    for g in same.values():
+        g.sort(key=lambda c: c["info"]["call_date"])
+        for extra in g[1:]:
+            extra["status"] = f"same text as {g[0]['slug']}"
 
     groups = defaultdict(list)
     for c in calls:
@@ -794,7 +888,7 @@ def write_raw(half, universe, cands):
             if not dest.exists():                           # never overwrite
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 dest.write_text(header_block(firm, info, c["url"], c["sha"], period, c["cy"], c["cq"],
-                                             half, info["layout"]) + info["body"] + "\n",
+                                             half, info["layout"], c["retrieved"]) + info["body"] + "\n",
                                 encoding="utf-8")
             path = str(dest.relative_to(ROOT))
         rows.append({"ticker": c["ticker"], "period_label": period, "calendar_year": c["cy"],

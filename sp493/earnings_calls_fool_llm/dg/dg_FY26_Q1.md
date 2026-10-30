@@ -3,8 +3,8 @@
 - **Company:** Dollar General (DG); fiscal year ends January (SEC fiscalYearEnd 0129)
 - **Ticker:** DG
 - **CIK:** 0000029534
-- **Period:** FY26_Q1 (call held June 2, 2026; date from page datePublished (publication date, not call date))
-- **Calendar quarter:** 2025 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Period:** FY26_Q1 (call held June 2, 2026; date from page DATE section)
+- **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/06/02/dollar-general-dg-q1-2026-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
 - **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)

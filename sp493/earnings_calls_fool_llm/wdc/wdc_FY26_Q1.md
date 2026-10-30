@@ -3,11 +3,11 @@
 - **Company:** Western Digital (WDC); fiscal year ends June (SEC fiscalYearEnd 0703)
 - **Ticker:** WDC
 - **CIK:** 0000106040
-- **Period:** FY26_Q1 (call held April 14, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q1 (call held October 30, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/04/14/western-digital-wdc-q1-2026-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 1)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 1)
 - **Source SHA-256:** 8f92c3b60da3132de92061763e795dfdc2d38b3db3f5c0a63019aad43bea8b2d
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

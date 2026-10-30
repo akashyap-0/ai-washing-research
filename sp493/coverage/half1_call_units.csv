@@ -257,15 +257,19 @@ COP,Energy,2024_Q2,2024,2,2024-08-01,False,fool,503,1,68,0,435,1,0,0,11,,sp493/e
 COP,Energy,2024_Q3,2024,3,2024-10-31,False,fool,512,0,47,0,465,0,0,0,11,,sp493/earnings_calls/cop/cop_2024_Q3.md
 COP,Energy,2024_Q4,2024,4,2025-02-06,False,fool,534,2,94,0,440,2,2,0,12,,sp493/earnings_calls/cop/cop_2024_Q4.md
 COST,Consumer Staples,FY22_Q1,2021,4,2021-12-09,True,fool,671,1,148,0,523,1,1,0,10,,sp493/earnings_calls/cost/cost_FY22_Q1.md
-COST,Consumer Staples,FY22_Q3,2022,1,2022-05-26,True,fool,603,0,165,0,438,0,0,0,2,,sp493/earnings_calls/cost/cost_FY22_Q3.md
+COST,Consumer Staples,FY22_Q2,2022,1,2022-03-03,True,fool,635,1,167,0,468,1,1,0,3,,sp493/earnings_calls/cost/cost_FY22_Q2.md
+COST,Consumer Staples,FY22_Q3,2022,2,2022-05-26,True,fool,603,0,165,0,438,0,0,0,2,,sp493/earnings_calls/cost/cost_FY22_Q3.md
 COST,Consumer Staples,FY22_Q4,2022,3,2022-09-22,True,fool,632,3,163,0,469,3,3,0,4,,sp493/earnings_calls/cost/cost_FY22_Q4.md
 COST,Consumer Staples,FY23_Q1,2022,4,2022-12-08,False,fool,622,3,121,0,501,3,3,0,2,,sp493/earnings_calls/cost/cost_FY23_Q1.md
-COST,Consumer Staples,FY23_Q3,2023,1,2023-05-25,False,fool,589,2,126,0,463,2,2,0,2,,sp493/earnings_calls/cost/cost_FY23_Q3.md
+COST,Consumer Staples,FY23_Q2,2023,1,2023-03-02,False,fool,624,4,127,0,497,4,4,2,1,,sp493/earnings_calls/cost/cost_FY23_Q2.md
+COST,Consumer Staples,FY23_Q3,2023,2,2023-05-25,False,fool,589,2,126,0,463,2,2,0,2,,sp493/earnings_calls/cost/cost_FY23_Q3.md
 COST,Consumer Staples,FY23_Q4,2023,3,2023-09-26,False,fool,626,3,123,0,503,3,3,0,1,,sp493/earnings_calls/cost/cost_FY23_Q4.md
 COST,Consumer Staples,FY24_Q1,2023,4,2023-12-14,False,fool,565,0,116,0,449,0,0,0,2,,sp493/earnings_calls/cost/cost_FY24_Q1.md
 COST,Consumer Staples,FY24_Q2,2024,1,2024-03-07,False,fool,652,3,148,0,504,3,0,0,1,,sp493/earnings_calls/cost/cost_FY24_Q2.md
+COST,Consumer Staples,FY24_Q3,2024,2,2024-05-30,False,fool,679,8,118,0,561,8,8,0,2,,sp493/earnings_calls/cost/cost_FY24_Q3.md
 COST,Consumer Staples,FY24_Q4,2024,3,2024-09-26,False,fool,561,4,154,0,407,4,4,0,3,,sp493/earnings_calls/cost/cost_FY24_Q4.md
 COST,Consumer Staples,FY25_Q1,2024,4,2024-12-12,False,fool,636,2,144,0,492,2,2,0,6,,sp493/earnings_calls/cost/cost_FY25_Q1.md
+COST,Consumer Staples,FY25_Q2,2025,1,2025-03-06,False,fool,595,1,169,0,426,1,1,0,2,,sp493/earnings_calls/cost/cost_FY25_Q2.md
 CPRT,Industrials,FY22_Q2,2021,4,2022-02-17,True,fool,369,1,91,0,278,1,1,1,2,"369 units, outside the typical 400-900",sp493/earnings_calls/cprt/cprt_FY22_Q2.md
 CPRT,Industrials,FY22_Q3,2022,1,2022-05-19,True,fool,381,1,104,0,277,1,1,0,3,"381 units, outside the typical 400-900",sp493/earnings_calls/cprt/cprt_FY22_Q3.md
 CPRT,Industrials,FY22_Q4,2022,2,2022-09-08,True,fool,409,5,130,0,279,5,5,2,4,,sp493/earnings_calls/cprt/cprt_FY22_Q4.md
