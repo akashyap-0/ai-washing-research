@@ -3,8 +3,8 @@
 - **Company:** Cardinal Health (CAH); fiscal year ends June (SEC fiscalYearEnd 0630)
 - **Ticker:** CAH
 - **CIK:** 0000721371
-- **Period:** FY25_Q1 (call held April 22, 2026; date from page datePublished (publication date, not call date))
-- **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Period:** FY25_Q1 (call held November 1, 2024; date from page DATE section)
+- **Calendar quarter:** 2024 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/04/22/cardinal-health-cah-q1-2025-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
 - **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)

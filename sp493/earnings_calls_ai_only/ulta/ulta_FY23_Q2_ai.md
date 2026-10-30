@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2023 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2023/08/24/ulta-beauty-ulta-q2-2023-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 88ca379227be64120fdc49511250997b6755ce618010150b5a3ae2064a0fc781
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

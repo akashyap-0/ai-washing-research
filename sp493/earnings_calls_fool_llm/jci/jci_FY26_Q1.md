@@ -3,11 +3,11 @@
 - **Company:** Johnson Controls (JCI); fiscal year ends September (SEC fiscalYearEnd 0930)
 - **Ticker:** JCI
 - **CIK:** 0000833444
-- **Period:** FY26_Q1 (call held February 4, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q1 (call held February 4, 2026; date from page DATE section)
 - **Calendar quarter:** 2025 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/02/04/johnson-controls-jci-q1-2026-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 9b590c108778d4bf93b9daf977d7451e7b50c839ca570fa3a4834eb30bdd8f82
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

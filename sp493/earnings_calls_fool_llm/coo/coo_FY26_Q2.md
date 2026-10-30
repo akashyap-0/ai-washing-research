@@ -3,7 +3,7 @@
 - **Company:** Cooper Companies (The) (COO); fiscal year ends October (SEC fiscalYearEnd 1031)
 - **Ticker:** COO
 - **CIK:** 0000711404
-- **Period:** FY26_Q2 (call held June 5, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q2 (call held June 4, 2026; date from page DATE section)
 - **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/06/05/cooper-coo-q2-2026-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

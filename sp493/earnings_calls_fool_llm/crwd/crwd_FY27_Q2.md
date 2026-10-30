@@ -3,7 +3,7 @@
 - **Company:** CrowdStrike (CRWD); fiscal year ends January (SEC fiscalYearEnd 0131)
 - **Ticker:** CRWD
 - **CIK:** 0001535527
-- **Period:** FY27_Q2 (call held August 31, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY27_Q2 (call held August 26, 2026; date from page DATE section)
 - **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/08/31/crowdstrike-crwd-q2-2027-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

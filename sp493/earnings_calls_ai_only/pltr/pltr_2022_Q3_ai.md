@@ -7,7 +7,7 @@
 - **Calendar quarter:** 2022 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2022/11/07/palantir-technologies-inc-pltr-q3-2022-earnings-ca/
 - **Source type:** third_party_transcript_motley_fool
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 7ece304b298c5429b3927b5d2856e6f813ad409ee14f054fe3f3edf0c4eccc16
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

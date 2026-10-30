@@ -3,11 +3,11 @@
 - **Company:** Sandisk (SNDK); fiscal year ends June (SEC fiscalYearEnd 0628)
 - **Ticker:** SNDK
 - **CIK:** 0002023554
-- **Period:** FY26_Q2 (call held January 30, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q2 (call held January 29, 2026; date from page DATE section)
 - **Calendar quarter:** 2025 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/01/29/sandisk-sndk-q2-2026-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 3653dbc8ceac0bf7fa874490789a55e1147db978410c361a78858dcc886513a4
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

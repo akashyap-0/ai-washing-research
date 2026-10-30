@@ -3,8 +3,8 @@
 - **Company:** Becton Dickinson (BDX); fiscal year ends September (SEC fiscalYearEnd 0930)
 - **Ticker:** BDX
 - **CIK:** 0000010795
-- **Period:** FY25_Q1 (call held April 14, 2026; date from page datePublished (publication date, not call date))
-- **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Period:** FY25_Q1 (call held February 6, 2025; date from page DATE section)
+- **Calendar quarter:** 2024 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/04/14/becton-dickinson-bdx-q1-2025-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
 - **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)

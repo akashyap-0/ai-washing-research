@@ -3,7 +3,7 @@
 - **Company:** Coherent Corp. (COHR); fiscal year ends June (SEC fiscalYearEnd 0630)
 - **Ticker:** COHR
 - **CIK:** 0000820318
-- **Period:** FY26_Q1 (call held November 6, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q1 (call held November 5, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/11/06/coherent-cohr-q1-2026-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
