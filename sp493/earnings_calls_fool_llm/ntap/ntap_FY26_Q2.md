@@ -3,11 +3,11 @@
 - **Company:** NetApp (NTAP); fiscal year ends April (SEC fiscalYearEnd 0424)
 - **Ticker:** NTAP
 - **CIK:** 0001002047
-- **Period:** FY26_Q2 (call held November 25, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q2 (call held November 25, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/11/25/netapp-ntap-q2-2026-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** e4242554ec5dd9737f515adc1d1bb5ac7cd54c9bb9bc8e6b8edac6a273a1b732
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

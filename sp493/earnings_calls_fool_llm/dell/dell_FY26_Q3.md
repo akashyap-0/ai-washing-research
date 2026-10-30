@@ -3,7 +3,7 @@
 - **Company:** Dell Technologies (DELL); fiscal year ends January (SEC fiscalYearEnd 0129)
 - **Ticker:** DELL
 - **CIK:** 0001571996
-- **Period:** FY26_Q3 (call held November 25, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q3 (call held November 25, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/11/25/dell-dell-q3-2026-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

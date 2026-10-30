@@ -3,11 +3,11 @@
 - **Company:** TE Connectivity (TEL); fiscal year ends September (SEC fiscalYearEnd 0925)
 - **Ticker:** TEL
 - **CIK:** 0001385157
-- **Period:** FY25_Q4 (call held April 22, 2026; date from page datePublished (publication date, not call date))
-- **Calendar quarter:** 2026 Q1 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
+- **Period:** FY25_Q4 (call held October 29, 2025; date from page DATE section)
+- **Calendar quarter:** 2025 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/04/22/te-connectivity-tel-q4-2025-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 9a85cc995fb54fcfa74e4be98ddf2a1a1a05fcf74c18cf1e398e99416b4c6957
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

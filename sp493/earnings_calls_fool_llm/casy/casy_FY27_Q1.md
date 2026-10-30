@@ -3,7 +3,7 @@
 - **Company:** Casey's (CASY); fiscal year ends April (SEC fiscalYearEnd 0430)
 - **Ticker:** CASY
 - **CIK:** 0000726958
-- **Period:** FY27_Q1 (call held September 9, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY27_Q1 (call held September 9, 2026; date from page DATE section)
 - **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/09/09/caseys-casy-q1-2027-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

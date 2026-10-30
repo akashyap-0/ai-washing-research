@@ -3,11 +3,11 @@
 - **Company:** Visa Inc. (V); fiscal year ends September (SEC fiscalYearEnd 0930)
 - **Ticker:** V
 - **CIK:** 0001403161
-- **Period:** FY25_Q3 (call held August 4, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY25_Q3 (call held July 29, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/08/04/visa-v-q3-2025-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 463498ffd8afd258d666a7661e788af4a0e282d5cdc2c7d13481594577f034a4
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

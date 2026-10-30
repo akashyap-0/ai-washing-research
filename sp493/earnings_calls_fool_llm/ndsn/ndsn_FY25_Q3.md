@@ -3,11 +3,11 @@
 - **Company:** Nordson Corporation (NDSN); fiscal year ends October (SEC fiscalYearEnd 1031)
 - **Ticker:** NDSN
 - **CIK:** 0000072331
-- **Period:** FY25_Q3 (call held August 21, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY25_Q3 (call held August 21, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/08/21/nordson-ndsn-q3-2025-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 3c557be31e99e103da32764b3d047a466f0f45895a7982ba860b9133363da334
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

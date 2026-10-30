@@ -13,6 +13,7 @@ ABBV,https://www.fool.com/earnings/call-transcripts/2024/07/25/abbvie-abbv-q2-20
 ABBV,https://www.fool.com/earnings/call-transcripts/2024/10/30/abbvie-abbv-q3-2024-earnings-call-transcript/,2024-10-30,abbvie-abbv-q3-2024-earnings-call-transcript,3,2024,ticker+name,2024Q3,True
 ABBV,https://www.fool.com/earnings/call-transcripts/2025/01/31/abbvie-abbv-q4-2024-earnings-call-transcript/,2025-01-31,abbvie-abbv-q4-2024-earnings-call-transcript,4,2024,ticker+name,2024Q4,True
 ABBV,https://www.fool.com/earnings/call-transcripts/2025/08/05/abbvie-abbv-q2-2025-earnings-call-transcript/,2025-08-05,abbvie-abbv-q2-2025-earnings-call-transcript,2,2025,ticker+name,2025Q2,True
+ABBV,https://www.fool.com/earnings/call-transcripts/2025/10/31/abbvie-q3-2025-earnings-call-transcript/,2025-10-31,abbvie-q3-2025-earnings-call-transcript,3,2025,name only (no ticker in slug),2025Q3,True
 ABBV,https://www.fool.com/earnings/call-transcripts/2026/02/04/abbvie-abbv-q4-2025-earnings-call-transcript/,2026-02-04,abbvie-abbv-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 ABBV,https://www.fool.com/earnings/call-transcripts/2026/04/29/abbvie-abbv-q1-2026-earnings-transcript/,2026-04-29,abbvie-abbv-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
 ABBV,https://www.fool.com/earnings/call-transcripts/2026/08/03/abbvie-abbv-q2-2026-earnings-call-transcript/,2026-08-03,abbvie-abbv-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
@@ -59,6 +60,7 @@ AIG,https://www.fool.com/earnings/call-transcripts/2021/11/05/american-internati
 AIG,https://www.fool.com/earnings/call-transcripts/2022/02/17/american-international-group-aig-q4-2021-earnings/,2022-02-17,american-international-group-aig-q4-2021-earnings,4,2021,ticker+name,2021Q4,True
 AIG,https://www.fool.com/earnings/call-transcripts/2022/05/04/american-international-group-aig-q1-2022-earnings/,2022-05-04,american-international-group-aig-q1-2022-earnings,1,2022,ticker+name,2022Q1,True
 AIG,https://www.fool.com/earnings/call-transcripts/2022/08/09/american-international-group-aig-q2-2022-earnings/,2022-08-09,american-international-group-aig-q2-2022-earnings,2,2022,ticker+name,2022Q2,True
+AIG,https://www.fool.com/earnings/call-transcripts/2026/02/11/aig-q4-2025-earnings-call-transcript/,2026-02-11,aig-q4-2025-earnings-call-transcript,4,2025,ticker only (no name in slug),2025Q4,True
 AIG,https://www.fool.com/earnings/call-transcripts/2026/05/01/aig-aig-q1-2026-earnings-call-transcript/,2026-05-01,aig-aig-q1-2026-earnings-call-transcript,1,2026,ticker only (name differs),2026Q1,True
 AIG,https://www.fool.com/earnings/call-transcripts/2026/08/13/aig-aig-q2-2026-earnings-call-transcript/,2026-08-13,aig-aig-q2-2026-earnings-call-transcript,2,2026,ticker only (name differs),2026Q2,True
 AJG,https://www.fool.com/earnings/call-transcripts/2026/01/29/gallagher-ajg-q4-2025-earnings-call-transcript/,2026-01-29,gallagher-ajg-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
@@ -155,6 +157,7 @@ AON,https://www.fool.com/earnings/call-transcripts/2024/04/26/aon-plc-aon-q1-202
 AON,https://www.fool.com/earnings/call-transcripts/2024/07/26/aon-plc-aon-q2-2024-earnings-call-transcript/,2024-07-26,aon-plc-aon-q2-2024-earnings-call-transcript,2,2024,ticker+name,2024Q2,True
 AON,https://www.fool.com/earnings/call-transcripts/2024/10/25/aon-plc-aon-q3-2024-earnings-call-transcript/,2024-10-25,aon-plc-aon-q3-2024-earnings-call-transcript,3,2024,ticker+name,2024Q3,True
 AON,https://www.fool.com/earnings/call-transcripts/2025/01/31/aon-plc-aon-q4-2024-earnings-call-transcript/,2025-01-31,aon-plc-aon-q4-2024-earnings-call-transcript,4,2024,ticker+name,2024Q4,True
+AON,https://www.fool.com/earnings/call-transcripts/2025/10/31/aon-q3-2025-earnings-call-transcript/,2025-10-31,aon-q3-2025-earnings-call-transcript,3,2025,ticker only (no name in slug),2025Q3,True
 AON,https://www.fool.com/earnings/call-transcripts/2026/01/30/aon-aon-q4-2025-earnings-call-transcript/,2026-01-30,aon-aon-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 AON,https://www.fool.com/earnings/call-transcripts/2026/05/01/aon-aon-q1-2026-earnings-call-transcript/,2026-05-01,aon-aon-q1-2026-earnings-call-transcript,1,2026,ticker+name,2026Q1,True
 AON,https://www.fool.com/earnings/call-transcripts/2026/08/07/aon-aon-q2-2026-earnings-call-transcript/,2026-08-07,aon-aon-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
@@ -319,6 +322,9 @@ BSX,https://www.fool.com/earnings/call-transcripts/2022/02/02/boston-scientific-
 BSX,https://www.fool.com/earnings/call-transcripts/2022/04/27/boston-scientific-bsx-q1-2022-earnings-call-transc/,2022-04-27,boston-scientific-bsx-q1-2022-earnings-call-transc,1,2022,ticker+name,2022Q1,True
 BSX,https://www.fool.com/earnings/call-transcripts/2022/07/27/boston-scientific-bsx-q2-2022-earnings-call-transc/,2022-07-27,boston-scientific-bsx-q2-2022-earnings-call-transc,2,2022,ticker+name,2022Q2,True
 BSX,https://www.fool.com/earnings/call-transcripts/2026/02/04/boston-scientific-bsx-earnings-transcript/,2026-02-04,boston-scientific-bsx-earnings-transcript,,,ticker+name,2025Q4,True
+BSX,https://www.fool.com/earnings/call-transcripts/2026/04/22/bsx-q1-2026-earnings-transcript/,2026-04-22,bsx-q1-2026-earnings-transcript,1,2026,ticker only (no name in slug),2026Q1,True
+BSX,https://www.fool.com/earnings/call-transcripts/2026/04/22/bsx-q3-2025-earnings-transcript/,2026-04-22,bsx-q3-2025-earnings-transcript,3,2025,ticker only (no name in slug),2025Q3,True
+BSX,https://www.fool.com/earnings/call-transcripts/2026/04/22/bsx-q2-2025-earnings-transcript/,2026-04-22,bsx-q2-2025-earnings-transcript,2,2025,ticker only (no name in slug),2025Q2,True
 BSX,https://www.fool.com/earnings/call-transcripts/2026/08/07/boston-scientific-bsx-q2-2026-earnings-call-transcript/,2026-08-07,boston-scientific-bsx-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
 BSX,https://www.fool.com/earnings/call-transcripts/2026/10/28/boston-scientific-bsx-q3-2026-earnings-call-transcript/,2026-10-28,boston-scientific-bsx-q3-2026-earnings-call-transcript,3,2026,ticker+name,2026Q3,True
 BXP,https://www.fool.com/earnings/call-transcripts/2026/01/26/bxp-bxp-q3-2024-earnings-call-transcript/,2026-01-26,bxp-bxp-q3-2024-earnings-call-transcript,3,2024,ticker+name,2024Q3,True
@@ -763,6 +769,7 @@ FERG,https://www.fool.com/earnings/call-transcripts/2026/04/02/ferguson-ferg-q2-
 FERG,https://www.fool.com/earnings/call-transcripts/2026/04/02/ferguson-ferg-q4-2025-earnings-call-transcript/,2026-04-02,ferguson-ferg-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 FICO,https://www.fool.com/earnings/call-transcripts/2021/11/10/fair-isaac-corporation-fico-q4-2021-earnings-call/,2021-11-10,fair-isaac-corporation-fico-q4-2021-earnings-call,4,2021,ticker+name,2021Q3,True
 FICO,https://www.fool.com/earnings/call-transcripts/2026/01/28/fair-isaac-fico-q1-2026-earnings-call-transcript/,2026-01-28,fair-isaac-fico-q1-2026-earnings-call-transcript,1,2026,ticker+name,2025Q4,True
+FICO,https://www.fool.com/earnings/call-transcripts/2026/04/21/fico-q4-2025-earnings-call-transcript/,2026-04-21,fico-q4-2025-earnings-call-transcript,4,2025,ticker only (no name in slug),2025Q3,True
 FICO,https://www.fool.com/earnings/call-transcripts/2026/04/22/fair-isaac-fico-q4-2024-earnings-transcript/,2026-04-22,fair-isaac-fico-q4-2024-earnings-transcript,4,2024,ticker+name,2024Q3,True
 FICO,https://www.fool.com/earnings/call-transcripts/2026/04/29/fair-isaac-fico-q2-2026-earnings-call-transcript/,2026-04-29,fair-isaac-fico-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q1,True
 FICO,https://www.fool.com/earnings/call-transcripts/2026/08/07/fico-fico-q3-2026-earnings-call-transcript/,2026-08-07,fico-fico-q3-2026-earnings-call-transcript,3,2026,ticker only (name differs),2026Q2,True
@@ -907,6 +914,7 @@ HD,https://www.fool.com/earnings/call-transcripts/2026/08/25/home-depot-hd-q2-20
 HII,https://www.fool.com/earnings/call-transcripts/2021/11/06/huntington-ingalls-industries-inc-hii-q3-2021-earn/,2021-11-06,huntington-ingalls-industries-inc-hii-q3-2021-earn,3,2021,ticker+name,2021Q3,True
 HII,https://www.fool.com/earnings/call-transcripts/2025/10/30/huntington-ingalls-hii-earnings-call-transcript/,2025-10-30,huntington-ingalls-hii-earnings-call-transcript,,,ticker+name,2025Q3,True
 HII,https://www.fool.com/earnings/call-transcripts/2026/02/05/huntington-ingalls-hii-earnings-call-transcript/,2026-02-05,huntington-ingalls-hii-earnings-call-transcript,,,ticker+name,2025Q4,True
+HII,https://www.fool.com/earnings/call-transcripts/2026/05/05/hii-q1-2026-earnings-call-transcript/,2026-05-05,hii-q1-2026-earnings-call-transcript,1,2026,ticker only (no name in slug),2026Q1,True
 HII,https://www.fool.com/earnings/call-transcripts/2026/07/30/huntington-ingalls-hii-q2-2026-earnings-call-transcript/,2026-07-30,huntington-ingalls-hii-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
 HII,https://www.fool.com/earnings/call-transcripts/2026/08/04/huntington-ingalls-hii-q2-2026-earnings-call-transcript/,2026-08-04,huntington-ingalls-hii-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
 HON,https://www.fool.com/earnings/call-transcripts/2022/02/03/honeywell-international-hon-q4-2021-earnings-call/,2022-02-03,honeywell-international-hon-q4-2021-earnings-call,4,2021,ticker+name,2021Q4,True
@@ -970,9 +978,14 @@ HUM,https://www.fool.com/earnings/call-transcripts/2026/08/07/humana-hum-q2-2026
 IBKR,https://www.fool.com/earnings/call-transcripts/2022/01/18/interactive-brokers-ibkr-q4-2021-earnings-call-tra/,2022-01-18,interactive-brokers-ibkr-q4-2021-earnings-call-tra,4,2021,ticker+name,2021Q4,True
 IBKR,https://www.fool.com/earnings/call-transcripts/2022/04/19/interactive-brokers-ibkr-q1-2022-earnings-call-tra/,2022-04-19,interactive-brokers-ibkr-q1-2022-earnings-call-tra,1,2022,ticker+name,2022Q1,True
 IBKR,https://www.fool.com/earnings/call-transcripts/2022/07/19/interactive-brokers-ibkr-q2-2022-earnings-call-tra/,2022-07-19,interactive-brokers-ibkr-q2-2022-earnings-call-tra,2,2022,ticker+name,2022Q2,True
+IBKR,https://www.fool.com/earnings/call-transcripts/2025/07/17/ibkr-q2-2025-earnings-call-transcript/,2025-07-17,ibkr-q2-2025-earnings-call-transcript,2,2025,ticker only (no name in slug),2025Q2,True
 IBKR,https://www.fool.com/earnings/call-transcripts/2026/01/20/interactive-brokers-ibkr-earnings-transcript/,2026-01-20,interactive-brokers-ibkr-earnings-transcript,,,ticker+name,2025Q4,True
+IBKR,https://www.fool.com/earnings/call-transcripts/2026/04/21/ibkr-q1-2026-earnings-transcript/,2026-04-21,ibkr-q1-2026-earnings-transcript,1,2026,ticker only (no name in slug),2026Q1,True
+IBKR,https://www.fool.com/earnings/call-transcripts/2026/04/22/ibkr-q3-2024-earnings-call-transcript/,2026-04-22,ibkr-q3-2024-earnings-call-transcript,3,2024,ticker only (no name in slug),2024Q3,True
 IBKR,https://www.fool.com/earnings/call-transcripts/2026/07/21/interactive-brokers-ibkr-q2-2026-earnings-call-transcript/,2026-07-21,interactive-brokers-ibkr-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
 IBKR,https://www.fool.com/earnings/call-transcripts/2026/10/16/interactive-brokers-ibkr-q3-2026-earnings-call-transcript/,2026-10-16,interactive-brokers-ibkr-q3-2026-earnings-call-transcript,3,2026,ticker+name,2026Q3,True
+ICE,https://www.fool.com/earnings/call-transcripts/2026/02/05/ice-q4-2025-earnings-call-transcript/,2026-02-05,ice-q4-2025-earnings-call-transcript,4,2025,ticker only (no name in slug),2025Q4,True
+ICE,https://www.fool.com/earnings/call-transcripts/2026/04/30/ice-q1-2026-earnings-call-transcript/,2026-04-30,ice-q1-2026-earnings-call-transcript,1,2026,ticker only (no name in slug),2026Q1,True
 ICE,https://www.fool.com/earnings/call-transcripts/2026/07/30/ice-ice-q2-2026-earnings-call-transcript/,2026-07-30,ice-ice-q2-2026-earnings-call-transcript,2,2026,ticker only (name differs),2026Q2,True
 ICE,https://www.fool.com/earnings/call-transcripts/2026/08/03/ice-ice-q2-2026-earnings-call-transcript/,2026-08-03,ice-ice-q2-2026-earnings-call-transcript,2,2026,ticker only (name differs),2026Q2,True
 IEX,https://www.fool.com/earnings/call-transcripts/2022/02/02/idex-iex-q4-2021-earnings-call-transcript/,2022-02-02,idex-iex-q4-2021-earnings-call-transcript,4,2021,ticker+name,2021Q4,True
@@ -1010,6 +1023,7 @@ INTC,https://www.fool.com/earnings/call-transcripts/2026/04/22/intel-intc-q3-202
 INTC,https://www.fool.com/earnings/call-transcripts/2026/04/23/intel-intc-q1-2026-earnings-transcript/,2026-04-23,intel-intc-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
 INVH,https://www.fool.com/earnings/call-transcripts/2025/10/30/invitation-homes-invh-earnings-call-transcript/,2025-10-30,invitation-homes-invh-earnings-call-transcript,,,ticker+name,2025Q3,True
 INVH,https://www.fool.com/earnings/call-transcripts/2026/02/19/invitation-homes-invh-earnings-transcript/,2026-02-19,invitation-homes-invh-earnings-transcript,,,ticker+name,2025Q4,True
+INVH,https://www.fool.com/earnings/call-transcripts/2026/04/30/invh-q1-2026-earnings-transcript/,2026-04-30,invh-q1-2026-earnings-transcript,1,2026,ticker only (no name in slug),2026Q1,True
 INVH,https://www.fool.com/earnings/call-transcripts/2026/08/07/invitation-homes-invh-q2-2026-earnings-call-transcript/,2026-08-07,invitation-homes-invh-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
 IQV,https://www.fool.com/earnings/call-transcripts/2022/02/15/iqvia-holdings-inc-iqv-q4-2021-earnings-call-trans/,2022-02-15,iqvia-holdings-inc-iqv-q4-2021-earnings-call-trans,4,2021,ticker+name,2021Q4,True
 IQV,https://www.fool.com/earnings/call-transcripts/2022/04/27/iqvia-holdings-inc-iqv-q1-2022-earnings-call-trans/,2022-04-27,iqvia-holdings-inc-iqv-q1-2022-earnings-call-trans,1,2022,ticker+name,2022Q1,True
@@ -1083,6 +1097,7 @@ JNJ,https://www.fool.com/earnings/call-transcripts/2024/04/16/johnson-johnson-jn
 JNJ,https://www.fool.com/earnings/call-transcripts/2024/07/17/johnson-johnson-jnj-q2-2024-earnings-call-transcri/,2024-07-17,johnson-johnson-jnj-q2-2024-earnings-call-transcri,2,2024,ticker+name,2024Q2,True
 JNJ,https://www.fool.com/earnings/call-transcripts/2024/10/15/johnson-johnson-jnj-q3-2024-earnings-call-transcri/,2024-10-15,johnson-johnson-jnj-q3-2024-earnings-call-transcri,3,2024,ticker+name,2024Q3,True
 JNJ,https://www.fool.com/earnings/call-transcripts/2025/01/22/johnson-johnson-jnj-q4-2024-earnings-call-transcri/,2025-01-22,johnson-johnson-jnj-q4-2024-earnings-call-transcri,4,2024,ticker+name,2024Q4,True
+JNJ,https://www.fool.com/earnings/call-transcripts/2025/07/16/johnson-johnson-q2-2025-earnings-call-transcript/,2025-07-16,johnson-johnson-q2-2025-earnings-call-transcript,2,2025,name only (no ticker in slug),2025Q2,True
 JNJ,https://www.fool.com/earnings/call-transcripts/2026/01/21/johnson-johnson-jnj-earnings-call-transcript/,2026-01-21,johnson-johnson-jnj-earnings-call-transcript,,,ticker+name,2025Q4,True
 JNJ,https://www.fool.com/earnings/call-transcripts/2026/10/13/jj-jnj-q3-2026-earnings-call-transcript/,2026-10-13,jj-jnj-q3-2026-earnings-call-transcript,3,2026,ticker only (name differs),2026Q3,True
 KDP,https://www.fool.com/earnings/call-transcripts/2025/07/24/keurig-dr-pepper-kdp-q2-2025-earnings-transcript/,2025-07-24,keurig-dr-pepper-kdp-q2-2025-earnings-transcript,2,2025,ticker+name,2025Q2,True
@@ -1173,6 +1188,7 @@ LHX,https://www.fool.com/earnings/call-transcripts/2025/07/24/l3harris-lhx-q2-20
 LHX,https://www.fool.com/earnings/call-transcripts/2026/01/29/l3harris-lhx-q4-2025-earnings-call-transcript/,2026-01-29,l3harris-lhx-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 LHX,https://www.fool.com/earnings/call-transcripts/2026/04/30/l3harris-lhx-q1-2026-earnings-transcript/,2026-04-30,l3harris-lhx-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
 LIN,https://www.fool.com/earnings/call-transcripts/2025/08/06/linde-lin-q2-2025-earnings-call-transcript/,2025-08-06,linde-lin-q2-2025-earnings-call-transcript,2,2025,ticker+name,2025Q2,True
+LIN,https://www.fool.com/earnings/call-transcripts/2025/10/31/linde-q3-2025-earnings-call-transcript/,2025-10-31,linde-q3-2025-earnings-call-transcript,3,2025,name only (no ticker in slug),2025Q3,True
 LIN,https://www.fool.com/earnings/call-transcripts/2026/02/05/linde-lin-q4-2025-earnings-call-transcript/,2026-02-05,linde-lin-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 LIN,https://www.fool.com/earnings/call-transcripts/2026/05/01/linde-lin-q1-2026-earnings-call-transcript/,2026-05-01,linde-lin-q1-2026-earnings-call-transcript,1,2026,ticker+name,2026Q1,True
 LIN,https://www.fool.com/earnings/call-transcripts/2026/08/03/linde-lin-q2-2026-earnings-call-transcript/,2026-08-03,linde-lin-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
@@ -1257,6 +1273,7 @@ MA,https://www.fool.com/earnings/call-transcripts/2024/05/01/mastercard-ma-q1-20
 MA,https://www.fool.com/earnings/call-transcripts/2024/07/31/mastercard-ma-q2-2024-earnings-call-transcript/,2024-07-31,mastercard-ma-q2-2024-earnings-call-transcript,2,2024,ticker+name,2024Q2,True
 MA,https://www.fool.com/earnings/call-transcripts/2024/10/31/mastercard-ma-q3-2024-earnings-call-transcript/,2024-10-31,mastercard-ma-q3-2024-earnings-call-transcript,3,2024,ticker+name,2024Q3,True
 MA,https://www.fool.com/earnings/call-transcripts/2025/01/30/mastercard-ma-q4-2024-earnings-call-transcript/,2025-01-30,mastercard-ma-q4-2024-earnings-call-transcript,4,2024,ticker+name,2024Q4,True
+MA,https://www.fool.com/earnings/call-transcripts/2025/10/30/mastercard-q3-2025-earnings-call-transcript/,2025-10-30,mastercard-q3-2025-earnings-call-transcript,3,2025,name only (no ticker in slug),2025Q3,True
 MA,https://www.fool.com/earnings/call-transcripts/2026/01/29/mastercard-ma-q4-2025-earnings-call-transcript/,2026-01-29,mastercard-ma-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 MA,https://www.fool.com/earnings/call-transcripts/2026/04/30/mastercard-ma-q1-2026-earnings-transcript/,2026-04-30,mastercard-ma-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
 MA,https://www.fool.com/earnings/call-transcripts/2026/08/07/mastercard-ma-q2-2026-earnings-call-transcript/,2026-08-07,mastercard-ma-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
@@ -1376,6 +1393,7 @@ MRK,https://www.fool.com/earnings/call-transcripts/2024/07/30/merck-mrk-q2-2024-
 MRK,https://www.fool.com/earnings/call-transcripts/2024/10/31/merck-mrk-q3-2024-earnings-call-transcript/,2024-10-31,merck-mrk-q3-2024-earnings-call-transcript,3,2024,ticker+name,2024Q3,True
 MRK,https://www.fool.com/earnings/call-transcripts/2025/02/04/merck-mrk-q4-2024-earnings-call-transcript/,2025-02-04,merck-mrk-q4-2024-earnings-call-transcript,4,2024,ticker+name,2024Q4,True
 MRK,https://www.fool.com/earnings/call-transcripts/2025/08/04/merck-mrk-q2-2025-earnings-call-transcript/,2025-08-04,merck-mrk-q2-2025-earnings-call-transcript,2,2025,ticker+name,2025Q2,True
+MRK,https://www.fool.com/earnings/call-transcripts/2025/10/31/merck-q3-2025-earnings-call-transcript/,2025-10-31,merck-q3-2025-earnings-call-transcript,3,2025,name only (no ticker in slug),2025Q3,True
 MRK,https://www.fool.com/earnings/call-transcripts/2026/02/03/merck-mrk-q4-2025-earnings-call-transcript/,2026-02-03,merck-mrk-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 MRK,https://www.fool.com/earnings/call-transcripts/2026/04/30/merck-mrk-q1-2026-earnings-call-transcript/,2026-04-30,merck-mrk-q1-2026-earnings-call-transcript,1,2026,ticker+name,2026Q1,True
 MRK,https://www.fool.com/earnings/call-transcripts/2026/08/11/merck-mrk-q2-2026-earnings-call-transcript/,2026-08-11,merck-mrk-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
@@ -1402,6 +1420,7 @@ MS,https://www.fool.com/earnings/call-transcripts/2026/10/14/morgan-stanley-ms-q
 MSI,https://www.fool.com/earnings/call-transcripts/2021/11/05/motorola-solutions-inc-msi-q3-2021-earnings-call-t/,2021-11-05,motorola-solutions-inc-msi-q3-2021-earnings-call-t,3,2021,ticker+name,2021Q3,True
 MSI,https://www.fool.com/earnings/call-transcripts/2025/08/08/motorola-solutions-msi-earnings-transcript/,2025-08-08,motorola-solutions-msi-earnings-transcript,,,ticker+name,2025Q2,True
 MSI,https://www.fool.com/earnings/call-transcripts/2026/02/11/motorola-solutions-msi-earnings-transcript/,2026-02-11,motorola-solutions-msi-earnings-transcript,,,ticker+name,2025Q4,True
+MSI,https://www.fool.com/earnings/call-transcripts/2026/05/08/msi-q1-2026-earnings-transcript/,2026-05-08,msi-q1-2026-earnings-transcript,1,2026,ticker only (no name in slug),2026Q1,True
 MSI,https://www.fool.com/earnings/call-transcripts/2026/08/12/motorola-solutions-msi-q2-2026-earnings-call-transcript/,2026-08-12,motorola-solutions-msi-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
 MTD,https://www.fool.com/earnings/call-transcripts/2021/11/05/mettler-toledo-international-inc-mtd-q3-2021-earni/,2021-11-05,mettler-toledo-international-inc-mtd-q3-2021-earni,3,2021,ticker+name,2021Q3,True
 MTD,https://www.fool.com/earnings/call-transcripts/2026/06/01/mettler-toledo-mtd-q1-2026-earnings-transcript/,2026-06-01,mettler-toledo-mtd-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
@@ -1556,6 +1575,7 @@ PANW,https://www.fool.com/earnings/call-transcripts/2024/08/19/palo-alto-network
 PANW,https://www.fool.com/earnings/call-transcripts/2024/11/20/palo-alto-networks-panw-q1-2025-earnings-call-tran/,2024-11-20,palo-alto-networks-panw-q1-2025-earnings-call-tran,1,2025,ticker+name,2024Q3,True
 PANW,https://www.fool.com/earnings/call-transcripts/2025/02/13/palo-alto-networks-panw-q2-2025-earnings-call-tran/,2025-02-13,palo-alto-networks-panw-q2-2025-earnings-call-tran,2,2025,ticker+name,2024Q4,True
 PANW,https://www.fool.com/earnings/call-transcripts/2025/11/19/palo-alto-networks-panw-earnings-transcript/,2025-11-19,palo-alto-networks-panw-earnings-transcript,,,ticker+name,2025Q3,True
+PANW,https://www.fool.com/earnings/call-transcripts/2026/06/02/panw-q3-2026-earnings-transcript/,2026-06-02,panw-q3-2026-earnings-transcript,3,2026,ticker only (no name in slug),2026Q1,True
 PANW,https://www.fool.com/earnings/call-transcripts/2026/09/08/palo-alto-networks-panw-q4-2026-earnings-call-transcript/,2026-09-08,palo-alto-networks-panw-q4-2026-earnings-call-transcript,4,2026,ticker+name,2026Q2,True
 PCAR,https://www.fool.com/earnings/call-transcripts/2025/10/21/paccar-pcar-q3-2025-earnings-call-transcript/,2025-10-21,paccar-pcar-q3-2025-earnings-call-transcript,3,2025,ticker+name,2025Q3,True
 PCAR,https://www.fool.com/earnings/call-transcripts/2026/01/26/paccar-pcar-q3-2024-earnings-call-transcript/,2026-01-26,paccar-pcar-q3-2024-earnings-call-transcript,3,2024,ticker+name,2024Q3,True
@@ -1566,6 +1586,7 @@ PCAR,https://www.fool.com/earnings/call-transcripts/2026/10/27/paccar-pcar-q3-20
 PEG,https://www.fool.com/earnings/call-transcripts/2021/11/02/public-service-enterprise-group-incorporated-peg-q/,2021-11-02,public-service-enterprise-group-incorporated-peg-q,,,ticker+name,2021Q3,False
 PEG,https://www.fool.com/earnings/call-transcripts/2025/11/03/pseg-peg-q3-2025-earnings-call-transcript/,2025-11-03,pseg-peg-q3-2025-earnings-call-transcript,3,2025,ticker only (name differs),2025Q3,True
 PEG,https://www.fool.com/earnings/call-transcripts/2026/02/26/pseg-peg-q4-2025-earnings-call-transcript/,2026-02-26,pseg-peg-q4-2025-earnings-call-transcript,4,2025,ticker only (name differs),2025Q4,True
+PEG,https://www.fool.com/earnings/call-transcripts/2026/05/05/peg-q1-2026-earnings-call-transcript/,2026-05-05,peg-q1-2026-earnings-call-transcript,1,2026,ticker only (no name in slug),2026Q1,True
 PEG,https://www.fool.com/earnings/call-transcripts/2026/08/11/pseg-peg-q2-2026-earnings-call-transcript/,2026-08-11,pseg-peg-q2-2026-earnings-call-transcript,2,2026,ticker only (name differs),2026Q2,True
 PFE,https://www.fool.com/earnings/call-transcripts/2021/11/03/pfizer-pfe-q3-2021-earnings-call-transcript/,2021-11-03,pfizer-pfe-q3-2021-earnings-call-transcript,3,2021,ticker+name,2021Q3,True
 PFE,https://www.fool.com/earnings/call-transcripts/2022/02/08/pfizer-pfe-q4-2021-earnings-call-transcript/,2022-02-08,pfizer-pfe-q4-2021-earnings-call-transcript,4,2021,ticker+name,2021Q4,True
@@ -1590,6 +1611,7 @@ PFE,https://www.fool.com/earnings/call-transcripts/2026/08/11/pfizer-pfe-q2-2026
 PG,https://www.fool.com/earnings/call-transcripts/2025/10/24/pg-pg-q1-2026-earnings-call-transcript/,2025-10-24,pg-pg-q1-2026-earnings-call-transcript,1,2026,ticker only (name differs),2025Q3,True
 PG,https://www.fool.com/earnings/call-transcripts/2026/01/22/pg-pg-q2-2026-earnings-call-transcript/,2026-01-22,pg-pg-q2-2026-earnings-call-transcript,2,2026,ticker only (name differs),2025Q4,True
 PG,https://www.fool.com/earnings/call-transcripts/2026/04/21/procter-gamble-pg-q4-2025-earnings-transcript/,2026-04-21,procter-gamble-pg-q4-2025-earnings-transcript,4,2025,ticker+name,2025Q2,True
+PG,https://www.fool.com/earnings/call-transcripts/2026/04/24/procter-and-gamble-q3-2026-earnings-call-transcript/,2026-04-24,procter-and-gamble-q3-2026-earnings-call-transcript,3,2026,name only (no ticker in slug),2026Q1,True
 PG,https://www.fool.com/earnings/call-transcripts/2026/08/07/procter-gamble-pg-q4-2026-earnings-call-transcript/,2026-08-07,procter-gamble-pg-q4-2026-earnings-call-transcript,4,2026,ticker+name,2026Q2,True
 PG,https://www.fool.com/earnings/call-transcripts/2026/10/22/pg-pg-q1-2027-earnings-call-transcript/,2026-10-22,pg-pg-q1-2027-earnings-call-transcript,1,2027,ticker only (name differs),2026Q3,True
 PH,https://www.fool.com/earnings/call-transcripts/2021/11/04/parker-hannifin-corporation-ph-q3-2021-earnings-ca/,2021-11-04,parker-hannifin-corporation-ph-q3-2021-earnings-ca,3,2021,ticker+name,2021Q1,True
@@ -1934,9 +1956,12 @@ TMO,https://www.fool.com/earnings/call-transcripts/2025/01/30/thermo-fisher-scie
 TMO,https://www.fool.com/earnings/call-transcripts/2026/01/29/thermo-fisher-tmo-q4-2025-earnings-transcript/,2026-01-29,thermo-fisher-tmo-q4-2025-earnings-transcript,4,2025,ticker+name,2025Q4,True
 TMO,https://www.fool.com/earnings/call-transcripts/2026/04/22/thermo-fisher-tmo-q4-2024-earnings-transcript/,2026-04-22,thermo-fisher-tmo-q4-2024-earnings-transcript,4,2024,ticker+name,2024Q4,True
 TMO,https://www.fool.com/earnings/call-transcripts/2026/04/23/thermo-fisher-tmo-q1-2026-earnings-transcript/,2026-04-23,thermo-fisher-tmo-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
+TMO,https://www.fool.com/earnings/call-transcripts/2026/07/23/tmo-q2-2026-earnings-call-transcript/,2026-07-23,tmo-q2-2026-earnings-call-transcript,2,2026,ticker only (no name in slug),2026Q2,True
 TMO,https://www.fool.com/earnings/call-transcripts/2026/10/21/thermo-fisher-tmo-q3-2026-earnings-call-transcript/,2026-10-21,thermo-fisher-tmo-q3-2026-earnings-call-transcript,3,2026,ticker+name,2026Q3,True
 TPL,https://www.fool.com/earnings/call-transcripts/2021/11/05/texas-pacific-land-corporation-tpl-q3-2021-earning/,2021-11-05,texas-pacific-land-corporation-tpl-q3-2021-earning,3,2021,ticker+name,2021Q3,True
+TPL,https://www.fool.com/earnings/call-transcripts/2025/08/07/texas-pacific-land-earnings-call-transcript/,2025-08-07,texas-pacific-land-earnings-call-transcript,,,name only (no ticker in slug),2025Q2,True
 TPL,https://www.fool.com/earnings/call-transcripts/2026/02/19/texas-pacific-land-tpl-earnings-call-transcript/,2026-02-19,texas-pacific-land-tpl-earnings-call-transcript,,,ticker+name,2025Q4,True
+TPL,https://www.fool.com/earnings/call-transcripts/2026/05/07/tpl-q1-2026-earnings-transcript/,2026-05-07,tpl-q1-2026-earnings-transcript,1,2026,ticker only (no name in slug),2026Q1,True
 TPL,https://www.fool.com/earnings/call-transcripts/2026/08/12/texas-pacific-land-tpl-q2-2026-earnings-call-transcript/,2026-08-12,texas-pacific-land-tpl-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
 TRGP,https://www.fool.com/earnings/call-transcripts/2021/11/04/targa-resources-corp-trgp-q3-2021-earnings-call-tr/,2021-11-04,targa-resources-corp-trgp-q3-2021-earnings-call-tr,3,2021,ticker+name,2021Q3,True
 TRGP,https://www.fool.com/earnings/call-transcripts/2025/08/07/targa-trgp-q2-2025-earnings-call-transcript/,2025-08-07,targa-trgp-q2-2025-earnings-call-transcript,2,2025,ticker+name,2025Q2,True
@@ -1955,6 +1980,7 @@ TSCO,https://www.fool.com/earnings/call-transcripts/2026/01/29/tractor-supply-ts
 TSCO,https://www.fool.com/earnings/call-transcripts/2026/04/21/tractor-supply-tsco-q1-2026-earnings-transcript/,2026-04-21,tractor-supply-tsco-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
 TSCO,https://www.fool.com/earnings/call-transcripts/2026/10/22/tractor-supply-tsco-q3-2026-earnings-call-transcript/,2026-10-22,tractor-supply-tsco-q3-2026-earnings-call-transcript,3,2026,ticker+name,2026Q3,True
 TT,https://www.fool.com/earnings/call-transcripts/2021/11/03/trane-technologies-plc-tt-q3-2021-earnings-call-tr/,2021-11-03,trane-technologies-plc-tt-q3-2021-earnings-call-tr,3,2021,ticker+name,2021Q3,True
+TT,https://www.fool.com/earnings/call-transcripts/2025/10/31/trane-q3-2025-earnings-call-transcript/,2025-10-31,trane-q3-2025-earnings-call-transcript,3,2025,name only (no ticker in slug),2025Q3,True
 TT,https://www.fool.com/earnings/call-transcripts/2026/01/29/trane-tt-q4-2025-earnings-call-transcript/,2026-01-29,trane-tt-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 TT,https://www.fool.com/earnings/call-transcripts/2026/04/22/trane-tt-q3-2024-earnings-call-transcript/,2026-04-22,trane-tt-q3-2024-earnings-call-transcript,3,2024,ticker+name,2024Q3,True
 TT,https://www.fool.com/earnings/call-transcripts/2026/04/30/trane-tt-q1-2026-earnings-call-transcript/,2026-04-30,trane-tt-q1-2026-earnings-call-transcript,1,2026,ticker+name,2026Q1,True
@@ -2144,6 +2170,7 @@ WMB,https://www.fool.com/earnings/call-transcripts/2026/08/10/williams-wmb-q2-20
 WRB,https://www.fool.com/earnings/call-transcripts/2025/04/22/w-r-berkley-wrb-q1-2025-earnings-call/,2025-04-22,w-r-berkley-wrb-q1-2025-earnings-call,1,2025,ticker+name,2025Q1,True
 WRB,https://www.fool.com/earnings/call-transcripts/2025/07/21/w-r-berkley-wrb-q2-2025-earnings-call-transcript/,2025-07-21,w-r-berkley-wrb-q2-2025-earnings-call-transcript,2,2025,ticker+name,2025Q2,True
 WRB,https://www.fool.com/earnings/call-transcripts/2026/01/27/w-r-berkley-wrb-q4-2025-earnings-call-transcript/,2026-01-27,w-r-berkley-wrb-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
+WRB,https://www.fool.com/earnings/call-transcripts/2026/04/21/wrb-q1-2026-earnings-call-transcript/,2026-04-21,wrb-q1-2026-earnings-call-transcript,1,2026,ticker only (no name in slug),2026Q1,True
 WRB,https://www.fool.com/earnings/call-transcripts/2026/10/20/w-r-berkley-wrb-q3-2026-earnings-call-transcript/,2026-10-20,w-r-berkley-wrb-q3-2026-earnings-call-transcript,3,2026,ticker+name,2026Q3,True
 WST,https://www.fool.com/earnings/call-transcripts/2022/02/17/west-pharmaceutical-services-wst-q4-2021-earnings/,2022-02-17,west-pharmaceutical-services-wst-q4-2021-earnings,4,2021,ticker+name,2021Q4,True
 WST,https://www.fool.com/earnings/call-transcripts/2022/04/29/west-pharmaceutical-services-wst-q1-2022-earnings/,2022-04-29,west-pharmaceutical-services-wst-q1-2022-earnings,1,2022,ticker+name,2022Q1,True
@@ -2154,6 +2181,7 @@ WY,https://www.fool.com/earnings/call-transcripts/2025/08/05/weyerhaeuser-wy-q2-
 WY,https://www.fool.com/earnings/call-transcripts/2025/11/03/weyerhaeuser-wy-q3-2025-earnings-call-transcript/,2025-11-03,weyerhaeuser-wy-q3-2025-earnings-call-transcript,3,2025,ticker+name,2025Q3,True
 WY,https://www.fool.com/earnings/call-transcripts/2026/05/01/weyerhaeuser-wy-q1-2026-earnings-transcript/,2026-05-01,weyerhaeuser-wy-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
 WY,https://www.fool.com/earnings/call-transcripts/2026/08/07/weyerhaeuser-wy-q2-2026-earnings-call-transcript/,2026-08-07,weyerhaeuser-wy-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True
+XEL,https://www.fool.com/earnings/call-transcripts/2025/10/31/xcel-energy-q3-2025-earnings-call-transcript/,2025-10-31,xcel-energy-q3-2025-earnings-call-transcript,3,2025,name only (no ticker in slug),2025Q3,True
 XEL,https://www.fool.com/earnings/call-transcripts/2026/02/05/xcel-energy-xel-q4-2025-earnings-call-transcript/,2026-02-05,xcel-energy-xel-q4-2025-earnings-call-transcript,4,2025,ticker+name,2025Q4,True
 XEL,https://www.fool.com/earnings/call-transcripts/2026/04/30/xcel-energy-xel-q1-2026-earnings-transcript/,2026-04-30,xcel-energy-xel-q1-2026-earnings-transcript,1,2026,ticker+name,2026Q1,True
 XEL,https://www.fool.com/earnings/call-transcripts/2026/07/30/xcel-energy-xel-q2-2026-earnings-call-transcript/,2026-07-30,xcel-energy-xel-q2-2026-earnings-call-transcript,2,2026,ticker+name,2026Q2,True

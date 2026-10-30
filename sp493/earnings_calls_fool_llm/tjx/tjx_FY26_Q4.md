@@ -3,11 +3,11 @@
 - **Company:** TJX Companies (TJX); fiscal year ends January (SEC fiscalYearEnd 0201)
 - **Ticker:** TJX
 - **CIK:** 0000109198
-- **Period:** FY26_Q4 (call held February 25, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q4 (call held February 25, 2026; date from page DATE section)
 - **Calendar quarter:** 2025 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/02/25/tjx-tjx-q4-2026-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** e12884dd19e124375c92bc6ce927de1f30baf972ef866d77590dfaa8e65a5605
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

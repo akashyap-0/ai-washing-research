@@ -3,11 +3,11 @@
 - **Company:** Lennar (LEN); fiscal year ends November (SEC fiscalYearEnd 1130)
 - **Ticker:** LEN
 - **CIK:** 0000920760
-- **Period:** FY26_Q2 (call held June 12, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q2 (call held June 12, 2026; date from page DATE section)
 - **Calendar quarter:** 2026 Q2 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/06/12/lennar-len-q2-2026-earnings-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** d0124a84762716c20a937f94470d4bd0c6fc60c43b02cdf16a797c8f5156cfdd
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing

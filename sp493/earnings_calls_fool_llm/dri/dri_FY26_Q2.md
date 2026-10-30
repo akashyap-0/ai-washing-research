@@ -3,7 +3,7 @@
 - **Company:** Darden Restaurants (DRI); fiscal year ends May (SEC fiscalYearEnd 0530)
 - **Ticker:** DRI
 - **CIK:** 0000940944
-- **Period:** FY26_Q2 (call held December 18, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q2 (call held December 18, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/12/18/darden-dri-q2-2026-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

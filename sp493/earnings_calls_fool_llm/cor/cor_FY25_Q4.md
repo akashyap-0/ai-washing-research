@@ -3,7 +3,7 @@
 - **Company:** Cencora (COR); fiscal year ends September (SEC fiscalYearEnd 0930)
 - **Ticker:** COR
 - **CIK:** 0001140859
-- **Period:** FY25_Q4 (call held November 5, 2025; date from page datePublished (publication date, not call date))
+- **Period:** FY25_Q4 (call held November 5, 2025; date from page DATE section)
 - **Calendar quarter:** 2025 Q3 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2025/11/05/cencora-cor-q4-2025-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm

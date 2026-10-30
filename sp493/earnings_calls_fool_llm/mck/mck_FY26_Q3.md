@@ -3,11 +3,11 @@
 - **Company:** McKesson (MCK); fiscal year ends March (SEC fiscalYearEnd 0331)
 - **Ticker:** MCK
 - **CIK:** 0000927653
-- **Period:** FY26_Q3 (call held February 4, 2026; date from page datePublished (publication date, not call date))
+- **Period:** FY26_Q3 (call held February 4, 2026; date from page DATE section)
 - **Calendar quarter:** 2025 Q4 (middle-month rule, sp493/SEARCH_AND_PULL_METHOD.md §4.2)
 - **Source:** third-party transcript, The Motley Fool — https://www.fool.com/earnings/call-transcripts/2026/02/04/mckesson-mck-q3-2026-earnings-call-transcript/
 - **Source type:** third_party_transcript_motley_fool_llm
-- **Retrieved:** 2026-10-28 (S&P 493 pull, half 2)
+- **Retrieved:** 2026-10-29 (S&P 493 pull, half 2)
 - **Source SHA-256:** 46bf5623e0bc1d5365623a0b7ab101a41fd8a828f6e3d68ac0c6938e0d49bf39
 - **Extraction:** article <h2>/<p> blocks, one per line with a blank line between, HTML unescaped, tags stripped (sp493/sp493_pull.py)
 - **Note:** official company transcripts were not searched for in this pull. Fool transcripts have speaker labels but are third-party (minor errors possible); fine for private research, check terms before redistributing
